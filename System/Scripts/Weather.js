@@ -230,12 +230,20 @@ const app = {
 		      ">
 		          <i class="fas fa-cloud-rain"></i> 
 		          ${pr_dp}%<br>
-		          <i class="fas fa-wind"></i> 
-		          ${day.wind_speed}m/s &#64; ${day.wind_deg}&deg;<br>
+		      </div>
+		  </p>
+		  <p>
+		      <div style="
+			  text-align:center;
+		      ">
 			  <b>${day_wind_dir}</b>
 			  <div style="transform:rotate(${-45 + 180 + day.wind_deg}deg);">
 			      <i class="fa-solid fa-location-arrow"></i>
 			  </div>
+		          <small style="border:1px solid var(--font);padding:0.25em;">
+			      <i class="fas fa-wind"></i> 
+		              ${day.wind_speed}m/s &#64; ${day.wind_deg}&deg;
+			  </small>
 		      </div>
 		  </p>
               </div>
@@ -252,9 +260,9 @@ const app = {
 		      <div style="
 			  text-align:center;
 		      ">
-		          <i class="fas fa-sun"></i>
+		          <i class="fas fa-sun" style="color:#EE6600"></i>
 		          ${sr}<br>
-		          <i class="fas fa-moon"></i>
+		          <i class="fas fa-moon" style="color:#0C317A"></i>
 		          ${ss}
 		      </div>
 		  </p>
@@ -329,6 +337,43 @@ const app = {
 	      hour_temp_col = "#00A3E0";
 	      hour_temp_font = '#FFFFFF';
 	  }
+          let hour_wind_dir = '';
+	  if ((hour.wind_deg) >= 348.76) {
+	     hour_wind_dir = 'N';
+	  } else if ((hour.wind_deg) >= 0 && (hour.wind_deg) <= 11.25) {
+	     hour_wind_dir = 'N';
+	  } else if ((hour.wind_deg) >= 11.26 && (hour.wind_deg) <= 33.75) {
+	     hour_wind_dir = 'N/NE';
+	  } else if ((hour.wind_deg) >= 33.76 && (hour.wind_deg) <= 56.25) {
+	     hour_wind_dir = 'NE';
+	  } else if ((hour.wind_deg) >= 56.26 && (hour.wind_deg) <= 78.75) {
+	     hour_wind_dir = 'E/NE';
+	  } else if ((hour.wind_deg) >= 78.76 && (hour.wind_deg) <= 101.25) {
+	     hour_wind_dir = 'E';
+	  } else if ((hour.wind_deg) >= 101.26 && (hour.wind_deg) <= 123.75) {
+	     hour_wind_dir = 'E/SE';
+	  } else if ((hour.wind_deg) >= 123.76 && (hour.wind_deg) <= 146.25) {
+	     hour_wind_dir = 'SE';
+	  } else if ((hour.wind_deg) >= 146.26 && (hour.wind_deg) <= 168.75) {
+	     hour_wind_dir = 'S/SE';
+	  } else if ((hour.wind_deg) >= 168.76 && (hour.wind_deg) <= 191.25) {
+	     hour_wind_dir = 'S';
+	  } else if ((hour.wind_deg) >= 191.26 && (hour.wind_deg) <= 213.75) {
+	     hour_wind_dir = 'S/SW';
+	  } else if ((hour.wind_deg) >= 213.76 && (hour.wind_deg) <= 236.25) {
+	     hour_wind_dir = 'SW';
+	  } else if ((hour.wind_deg) >= 236.26 && (hour.wind_deg) <= 258.75) {
+	     hour_wind_dir = 'W/SW';
+	  } else if ((hour.wind_deg) >= 258.76 && (hour.wind_deg) <= 281.25) {
+	     hour_wind_dir = 'W';
+	  } else if ((hour.wind_deg) >= 281.26 && (hour.wind_deg) <= 303.75) {
+	     hour_wind_dir = 'W/NW';
+	  } else if ((hour.wind_deg) >= 303.76 && (hour.wind_deg) <= 326.25) {
+	     hour_wind_dir = 'NW';
+	  } else if ((hour.wind_deg) >= 326.26 && (hour.wind_deg) <= 348.75) {
+	     hour_wind_dir = 'N/NW';
+	  }
+
 	  return `<div class="weathercol">
 	      <h3 style="text-align:center;">${dt}</h3>
       	      <p style="font-size:32px;text-align:center;">${wicon}</p>
@@ -353,11 +398,25 @@ const app = {
 		      ">
 		          <i class="fas fa-cloud-rain"></i> 
 		          ${pr_dp}%<br>
-		          <i class="fas fa-wind"></i> 
-		          ${hour.wind_speed}m/s &#64; ${hour.wind_deg}&deg;<br>
-		          <i class="fas fa-wind"></i>
-		          <i class="fas fa-wind"></i> 
-		          ${hour.wind_gust}m/s
+		      </div>
+		  </p>
+		  <p>
+		      <div style="
+			  text-align:center;
+		      ">
+			  <b>${hour_wind_dir}</b>
+			  <div style="transform:rotate(${-45 + 180 + hour.wind_deg}deg);">
+			      <i class="fa-solid fa-location-arrow"></i>
+			  </div>
+			  <small style="font-size:10px;border:1px solid var(--font);padding:0.25em;">
+		              <i class="fas fa-wind"></i> 
+		              ${hour.wind_speed}m/s &#64; ${hour.wind_deg}&deg;
+			  </small><br>
+			  <small style="font-size:10px;border:1px solid var(--font);padding:0.25em;">
+		              <i class="fas fa-wind"></i>
+		              <i class="fas fa-wind"></i> 
+		              ${hour.wind_gust}m/s<br>
+			  </small>
 		      </div>
 		  </p>
 	      </div>
