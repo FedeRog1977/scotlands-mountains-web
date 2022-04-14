@@ -1,4 +1,4 @@
-fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json?token=GHSAT0AAAAAABTAJOXCFHK3K7XOXL4IMY3IYSYER7Q')
+fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json?token=GHSAT0AAAAAABTAJOXDPTXSFDMRRQQMB2VIYSYEVVQ')
     .then((resp) => {
         return resp.json();
     })

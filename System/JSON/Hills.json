@@ -3,37 +3,50 @@
         {
             "name": "Bidean nam Bian",
 	    "type": "Mountain",
+	    "sub-type": "Massif",
 	    "peaks": 3,
 	    "munros": 2,
 	    "munro": [ 
 		{
-		    "name": "Bidean nam Bian (Munro)",
+		    "name": "Bidean nam Bian",
                     "lat": 56.6413,
                     "lon": 5.0271,
 	            "OS-grid": "NN143542",
-	            "elevation": 3772.96,
-	            "prominence": 2772.31
+	            "elevation": 3772,
+	            "prominence": 2772
 		},
                 {
 		    "name": "Stob Coire Sgreamhach",
-                    "lat": 56.63822,
-                    "lon": -5.01067,
+                    "lat": 56.6382,
+                    "lon": -5.0106,
 	            "OS-grid": "NN155536",
-	            "elevation": 3517.06,
-	            "prominence": 419.94
+	            "elevation": 3517,
+	            "prominence": 419
 		}
 	    ],
 	    "munro-tops": 1,
+	    "munro-top": [ 
+		{
+		    "name": "Stob Coire nan Lochan",
+                    "lat": 56.6488,
+                    "lon": -5.0218,
+	            "OS-grid": "",
+	            "elevation": 3278,
+	            "prominence": 380
+		}
+	    ],
 	    "corbetts": 0,
-	    "corbett-tops": 0,
+	    "corbett": [],
+	    "corbett-tops": 2,
+	    "corbett-top": [],
 	    "grahams": 0,
-	    "cairns": "No Clue",
+	    "graham": [],
 	    "gully": true,
 	    "corrie": true,
-	    "lochain": true,
+	    "lochain": false,
 	    "waterfall": true,
 	    "boulder-field": true,
-	    "parent-peak": "Ben Nevis",
+	    "parent-landmass": "Ben Nevis",
 	    "NUTS0-sovereign": "United Kingdom",
 	    "NUTS1-country": "Scotland",
 	    "NUTS2-region": "Highlands & Islands",
