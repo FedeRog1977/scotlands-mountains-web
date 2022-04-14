@@ -1,11 +1,11 @@
-fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/JSON/Hills.json?token=GHSAT0AAAAAABTAJOXDBR34QOP5WAXA2MZ6YSX7FZA')
+fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/JSON/Hills.json?token=GHSAT0AAAAAABTAJOXDZ4VBYKYG6WV5IO3SYSX7RRA')
     .then((resp) => {
         return resp.json();
     })
     .then((data) => {
         const hills = data;
         const test = document.getElementById("test");
-        test.innerHTML = hills.munro[0].name;
+        test.innerHTML = hills.corbett[0].name;
     })
 
 const app = {
