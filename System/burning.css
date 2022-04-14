@@ -437,6 +437,12 @@ table {
 			padding: 0.5em;
 		}
 
+			.sub-sub-element {
+				border: 1px dashed var(--font);
+				margin: 0;
+				padding: 0 2em 0 2em;
+			}
+
 .weatherrow {
 	display: flex;
 	flex-wrap: wrap;

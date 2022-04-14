@@ -5,33 +5,6 @@ author:
 - Lewis Britton
 ---
 
-TABLE AMENDMENT:
-
-*Also check that screenshot on phone*
-
-* Region
-* Subregion
-* Land Mass Type
-* Land Mass Name
-* Hill Type
-* Hill Name(s)
-* Peak Height
-* Prominance
-* Number of Overall Peaks
-* Number of Munros
-* Number of Munro Tops
-* Number of Corbetts
-* Number of Corbett Tops
-* Number of Grahams
-* Number of Cairns
-* Does it Have a Gully?
-* Does it Have a Corrie?
-* Does it Have a Lochain?
-* Does it Have a Runoff Stream / Tributory?
-* Does it Have Waterfalls?
-* Does it Have a Boulder Field?
-* ...
-
 # Major Regions
 
 ## Description
@@ -54,7 +27,6 @@ TABLE AMENDMENT:
 
 ## Regional Breakdown
 
-* Northwest Highlands (Including Some Inner & Outer Hebrides)
 	- Achnashellach Forest
 	- Applecross
 	- Assynt
@@ -68,7 +40,6 @@ TABLE AMENDMENT:
 		- Cuillin (The Black & Red Cuillins) (Mountain Range)
 			- ...
 	- ...
-* Grampian Mountains | Parent Heirarchy: Ben Nevis, Ben More, Ben Lui, Ben Ime
 	- Arrochar Alps & Loch Lomond and the Trossachs | Parent Peak: Ben Ime
 		- Beinn Ime (Mountain)
 			- Beinn Ime (Munro) | 1011m | Prominence: \^...m

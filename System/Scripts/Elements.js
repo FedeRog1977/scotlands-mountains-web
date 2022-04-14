@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const conditioningEquipment = document.querySelector("#userEquipment");
     const conditioningWeather = document.querySelector("#userWeather");
     const conditioningWeatherKey = document.querySelector("#userWeatherKey");
+    const conditioningWeatherSugClouds = document.querySelector("#userWeatherSugClouds");
+    const conditioningWeatherSugBearings = document.querySelector("#userWeatherSugBearings");
 
     document.querySelector("#userOverviewOpt").addEventListener("click", e => {
         e.preventDefault();
@@ -81,6 +83,24 @@ document.addEventListener("DOMContentLoaded", () => {
             conditioningWeatherKey.classList.remove("hidden");
         } else {
             conditioningWeatherKey.classList.add("hidden");
+	}
+    });
+
+    document.querySelector("#userWeatherSugCloudsOpt").addEventListener("click", e => {
+        e.preventDefault();
+        if (conditioningWeatherSugClouds.classList.contains("hidden")) {
+            conditioningWeatherSugClouds.classList.remove("hidden");
+        } else {
+            conditioningWeatherSugClouds.classList.add("hidden");
+	}
+    });
+
+    document.querySelector("#userWeatherSugBearingsOpt").addEventListener("click", e => {
+        e.preventDefault();
+        if (conditioningWeatherSugBearings.classList.contains("hidden")) {
+            conditioningWeatherSugBearings.classList.remove("hidden");
+        } else {
+            conditioningWeatherSugBearings.classList.add("hidden");
 	}
     });
 

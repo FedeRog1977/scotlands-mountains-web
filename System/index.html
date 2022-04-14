@@ -94,7 +94,7 @@
 			</div>
 
 			<h1>
-				<marquee behavior="scroll" direction="left">Welcome to <i>Burning Roots</i>. From the creator of <a href="http://lewisbritton.com/">lewisbritton.com</a></marquee>
+				<marquee behavior="scroll" direction="left">Welcome to <i>Burning Roots</i>. From the creator of <a href="http://lewisbritton.com/">lewisbritton.com</a>, keeping the geography dream alive!</marquee>
 			</h1>
 
 			<p>Every passionate outdoorsman has that <i>burning</i> desire for freedom in the sweet country air; to love what you do and to keep improving. Sometimes it takes effort from your deepest <i>roots</i> to obtain PR after PR. So, with this fully interactive and informative GPS mapping application, take to the trails and the roads with more motivation than ever; being the fastest, most efficient, most prepared and the most endured athlete on your <i>routes</i>. Burning Roots allows you to plan and optimize routes more precisely and autistically than ever before. Either create your routes manually or import existing ones from a GPX file to get started.</p>
@@ -196,8 +196,9 @@
 					To-Do:
 					- Drop down select for hills w/ assigned coordinates
 						- Hill json
+						- Munro drop-down javascript file
+						- Corbett drop-down javascript file
 					- Clouds table
-					- Bearings table
 				-->
 
 				<p>Your <b>weather forecast</b> summary appears here.</p>
@@ -209,16 +210,14 @@
 							<tr>
 								<td style="text-align:right;">Select a Munro:</td>
 								<td>
-									<select>
-										<option>Ben More</option>
-										<option>Stob Binnein</option>
+									<select id="userWeatherSelectMunro">
 									</select>
 								</td>
 							</tr>
 							<tr>
 								<td style="text-align:right;">Select a Corbett:</td>
 								<td>
-									<select>
+									<select id="userWeatherSelectCorbett">
 										<option>Ben Sharik Malik</option>
 										<option>Ben Corbett</option>
 									</select>
@@ -275,22 +274,19 @@
 						</table>
         				</div>
 
-					<div id="userWeatherResults">
-						<h3>
-							Five-day forecast for 
-							<span id="userWeatherResultsLoc"></span>
-						</h3>
+					<div id="userWeatherResults" class="hidden">
+						<h3>Five-day forecast for <span id="userWeatherResultsLoc"></span></h3>
 						<div id="userWeatherResultsDay" class="weatherrow day"></div>
-						<h3>
-							Six-hour forecast for 
-							<span id="userWeatherResultsLoc"></span> 
-						</h3>
+						<h3>Six-hour forecast for <span id="userWeatherResultsLoc"></span></h3>
         					<div id="userWeatherResultsHour" class="weatherrow hour"></div>
       					</div>
 
-					<h3>Show Key <small><a><i id="userWeatherKeyOpt" class="fas fa-angle-down"></i></a></small></h3>
+					<h3 style="text-align:center">
+						Key 
+						<small><a><i id="userWeatherKeyOpt" class="fas fa-angle-down"></i></a></small>
+					</h3>
 
-					<div id="userWeatherKey" class="hidden">
+					<div id="userWeatherKey" class="sub-sub-element hidden">
 						<p>
 							<table class="data">
 								<th colspan=9 style="border-bottom: double var(--font);">Conditions</th>
@@ -477,9 +473,12 @@
 						</p>
 					</div>
 
-					<h3>Show Suggested Reading on Cloud Types <small><a><i id="userWeatherSugCloudsOpt" class="fas fa-angle-down"></i></a></small></h3>
+					<h3 style="text-align:center">
+						Suggested Reading on Cloud Types 
+						<small><a><i id="userWeatherSugCloudsOpt" class="fas fa-angle-down"></i></a></small>
+					</h3>
 
-					<div id="userWeatherSugClouds">
+					<div id="userWeatherSugClouds" class="sub-sub-element hidden">
 						<p>
 							<table class="data">
 								<th colspan=6 style="border-bottom: double var(--font);">Cloud Types</th>
@@ -493,6 +492,124 @@
 								</tr>
 								<tr>
 									<td colspan=6 style="border-top: double var(--font);">
+								</tr>
+							</table>
+						</p>
+					</div>
+
+					<h3 style="text-align:center">
+						Suggested Reading on Bearings 
+						<small><a><i id="userWeatherSugBearingsOpt" class="fas fa-angle-down"></i></a></small>
+					</h3>
+
+					<div id="userWeatherSugBearings" class="sub-sub-element hidden">
+						<p>
+							<table class="data">
+								<th colspan=4 style="border-bottom: double var(--font);">Bearings</th>
+								<tr>
+									<td style="border-bottom: 1px solid var(--font);">Bearing</td>
+									<td style="border-bottom: 1px solid var(--font);">Symbol</td>
+									<td style="border-bottom: 1px solid var(--font);">Angular Range</td>
+									<td style="border-bottom: 1px solid var(--font);">Absolute Angle</td>
+								</tr>
+								<tr>
+									<td>North</td>
+									<td><b>N</b></td>
+									<td>348.76&deg; &rarr; 11.25&deg;</td>
+									<td>360&deg;/0&deg;</td>
+								</tr>
+								<tr>
+									<td>NorthNorthEast</td>
+									<td>N/NE</td>
+									<td>11.26&deg; &rarr; 33.75&deg;</td>
+									<td>22.5&deg;</td>
+								</tr>
+								<tr>
+									<td>NorthEast</td>
+									<td>NE</td>
+									<td>33.76&deg; &rarr; 56.25&deg;</td>
+									<td>45&deg;</td>
+								</tr>
+								<tr>
+									<td>EastNorthEast</td>
+									<td>E/NE</td>
+									<td>56.26&deg; &rarr; 78.75&deg;</td>
+									<td>67.5&deg;</td>
+								</tr>
+								<tr>
+									<td>East</td>
+									<td><b>E</b></td>
+									<td>78.76&deg; &rarr; 101.25&deg;</td>
+									<td>90&deg;</td>
+								</tr>
+								<tr>
+									<td>EastSouthEast</td>
+									<td>E/SE</td>
+									<td>101.26&deg; &rarr; 123.75&deg;</td>
+									<td>112.5&deg;</td>
+								</tr>
+								<tr>
+									<td>SouthEast</td>
+									<td>SE</td>
+									<td>123.76&deg; &rarr; 146.25&deg;</td>
+									<td>135&deg;</td>
+								</tr>
+								<tr>
+									<td>SouthSouthEast</td>
+									<td>S/SE</td>
+									<td>146.26&deg; &rarr; 168.75&deg;</td>
+									<td>157.5&deg;</td>
+								</tr>
+								<tr>
+									<td>South</td>
+									<td><b>S</b></td>
+									<td>168.76&deg; &rarr; 191.25&deg;</td>
+									<td>180&deg;</td>
+								</tr>
+								<tr>
+									<td>SouthSouthWest</td>
+									<td>S/SW</td>
+									<td>191.26&deg; &rarr; 213.75&deg;</td>
+									<td>202.5&deg;</td>
+								</tr>
+								<tr>
+									<td>SouthWest</td>
+									<td>SW</td>
+									<td>213.76&deg; &rarr; 236.25&deg;</td>
+									<td>225&deg;</td>
+								</tr>
+								<tr>
+									<td>WestSouthWest</td>
+									<td>W/SW</td>
+									<td>236.26&deg; &rarr; 258.75&deg;</td>
+									<td>247.5&deg;</td>
+								</tr>
+								<tr>
+									<td>West</td>
+									<td><b>W</b></td>
+									<td>258.76&deg; &rarr; 281.25&deg;</td>
+									<td>270&deg;</td>
+								</tr>
+								<tr>
+									<td>WestNorthWest</td>
+									<td>W/NW</td>
+									<td>281.26&deg; &rarr; 303.75&deg;</td>
+									<td>292.5&deg;</td>
+								</tr>
+								<tr>
+									<td>NorthWest</td>
+									<td>NW</td>
+									<td>303.76&deg; &rarr; 326.25&deg;</td>
+									<td>315&deg;</td>
+								</tr>
+								<tr>
+									<td>NorthNorthWest</td>
+									<td>N/NW</td>
+									<td>326.26&deg; &rarr; 348.75&deg;</td>
+									<td>337.5&deg;</td>
+								</tr>
+								<tr>
+									<td colspan=4 style="border-top: double var(--font);">
 								</tr>
 							</table>
 						</p>
@@ -539,6 +656,7 @@
 	<script src="Scripts/Drop.js"></script>
 	<script src="Scripts/Elements.js"></script>
 	<script src="Scripts/Weather.js" defer></script>
+	<script src="Scripts/selectMunro.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

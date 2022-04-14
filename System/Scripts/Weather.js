@@ -53,6 +53,8 @@ const app = {
     console.error(err);
   },
   showWeather: (resp) => {
+    const conditioningWeatherResults = document.querySelector("#userWeatherResults");
+    conditioningWeatherResults.classList.remove("hidden");
     console.log(resp);
     let rowDaily = document.querySelector(".weatherrow.day");
     // rowDaily.innerHTML = '';

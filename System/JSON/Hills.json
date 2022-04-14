@@ -1,9 +1,32 @@
 {
     "munro": [
         {
-            "name": "Ben Alder",
-            "lat": 56.8138,
-            "lon": 4.4651
+            "name": "Bidean nam Bian",
+            "lat": 56.6413,
+            "lon": 5.0271,
+	    "OS-grid": "NN143542",
+	    "elevation": 3772.96,
+	    "prominence": 2772.31,
+	    "landmass-type": "Mountain",
+	    "landmass-name": "Bidean nam Bian",
+	    "landmass-peaks": 3,
+	    "landmass-munros": 2,
+	    "landmass-munro-tops": 1,
+	    "landmass-corbetts": 0,
+	    "landmass-corbett-tops": 0,
+	    "landmass-grahams": 0,
+	    "landmass-cairns": "No Clue",
+	    "gully": true,
+	    "corrie": true,
+	    "lochain": true,
+	    "waterfall": true,
+	    "boulder-field": true,
+	    "parent-peak": "Ben Nevis",
+	    "NUTS0-sovereign": "United Kingdom",
+	    "NUTS1-country": "Scotland",
+	    "NUTS2-region": "Highlands & Islands",
+	    "NUTS3-province": "Lochaber",
+	    "informal-region": "Glencoe"
         },
         {
             "name": "Ben More",
