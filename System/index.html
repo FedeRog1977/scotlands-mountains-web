@@ -121,6 +121,8 @@
 	
 		<div class="body">
 
+			<h1 id="test"></h1>
+
 			<h1>Profile</h1>
 
 			<div style="float:right;">
@@ -193,6 +195,9 @@
 				<!--
 					To-Do:
 					- Drop down select for hills w/ assigned coordinates
+						- Hill json
+					- Clouds table
+					- Bearings table
 				-->
 
 				<p>Your <b>weather forecast</b> summary appears here.</p>
@@ -201,6 +206,24 @@
 
         				<div>
 						<table>
+							<tr>
+								<td style="text-align:right;">Select a Munro:</td>
+								<td>
+									<select>
+										<option>Ben More</option>
+										<option>Stob Binnein</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align:right;">Select a Corbett:</td>
+								<td>
+									<select>
+										<option>Ben Sharik Malik</option>
+										<option>Ben Corbett</option>
+									</select>
+								</td>
+							</tr>
 							<tr>
 								<td style="text-align:right;">
 									<span id="basic-addon1">Latitude:</span>
@@ -219,7 +242,7 @@
 								</td>
 							<tr>
 							</tr>
-								<td>
+								<td style="text-align:right;">
 									<span id="basic-addon1">Longitude:</span>
 								</td>
 								<td style="text-align:right;">
@@ -251,6 +274,19 @@
 							</tr>
 						</table>
         				</div>
+
+					<div id="userWeatherResults">
+						<h3>
+							Five-day forecast for 
+							<span id="userWeatherResultsLoc"></span>
+						</h3>
+						<div id="userWeatherResultsDay" class="weatherrow day"></div>
+						<h3>
+							Six-hour forecast for 
+							<span id="userWeatherResultsLoc"></span> 
+						</h3>
+        					<div id="userWeatherResultsHour" class="weatherrow hour"></div>
+      					</div>
 
 					<h3>Show Key <small><a><i id="userWeatherKeyOpt" class="fas fa-angle-down"></i></a></small></h3>
 
@@ -441,20 +477,6 @@
 						</p>
 					</div>
 
-					<div id="userWeatherResults">
-						<h3>
-							Five-day forecast for 
-							<span id="userWeatherResultsLoc"></span>
-						</h3>
-						<div id="userWeatherResultsDay" class="weatherrow day"></div>
-						<h3>
-							Six-hour forecast for 
-							<span id="userWeatherResultsLoc"></span> 
-						</h3>
-        					<div id="userWeatherResultsHour" class="weatherrow hour"></div>
-						<p style="text-align:center;"><small>2022 OpenWeather&reg;</small></p>
-      					</div>
-
 					<h3>Show Suggested Reading on Cloud Types <small><a><i id="userWeatherSugCloudsOpt" class="fas fa-angle-down"></i></a></small></h3>
 
 					<div id="userWeatherSugClouds">
@@ -475,6 +497,8 @@
 							</table>
 						</p>
 					</div>
+
+					<p style="text-align:center;"><small>2022 OpenWeather&reg;</small></p>
 
 				</div>
 

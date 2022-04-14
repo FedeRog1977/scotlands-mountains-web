@@ -1,3 +1,48 @@
+/*const hillsJson = `
+    {
+        "munro": [
+	    {
+	        "name": "Ben Alder",
+	        "lat": 56.8138,
+	        "long": 4.4651
+	    },
+	    {
+	        "name": "Ben More",
+		"lat": 56.3859,
+		"lon": 4.5401
+	    }
+	],
+	"corbett": [
+	    {
+		"name": "Shariq",
+		"lat": 1,
+		"lon": 2,
+		"elev": 200
+	    },
+	    {
+		"name": "Malik",
+		"lat": 1,
+		"lon": 2,
+		"elev": 200
+	    }
+	]
+    }
+`;*/
+
+"use strict";
+
+fetch('../JSON/Hills.json')
+    .then(function(resp) {
+        return resp.json();
+    })
+    .then(function(data) {
+        const hills = data;
+    })
+
+//const hills = JSON.parse(hillsJson);
+const test = document.getElementById("test");
+test.innerHTML = hills.munro[1].name;
+
 const app = {
   init: () => {
     document
