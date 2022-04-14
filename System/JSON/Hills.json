@@ -15,7 +15,12 @@
 	            "prominence": 2772.31
 		},
                 {
-		    "name": "Stob Coire Sgreamhach", 
+		    "name": "Stob Coire Sgreamhach",
+                    "lat": 56.63822,
+                    "lon": -5.01067,
+	            "OS-grid": "NN155536",
+	            "elevation": 3517.06,
+	            "prominence": 419.94
 		}
 	    ],
 	    "munro-tops": 1,
