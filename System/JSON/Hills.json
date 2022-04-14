@@ -2,24 +2,27 @@
     "landmass": [
         {
             "name": "Bidean nam Bian",
-            "lat": 56.6413,
-            "lon": 5.0271,
-	    "OS-grid": "NN143542",
-	    "elevation": 3772.96,
-	    "prominence": 2772.31,
-	    "landmass-type": "Mountain",
-	    "landmass-name": "Bidean nam Bian",
-	    "landmass-peaks": 3,
-	    "landmass-munros": 2,
-	    "munro": [
-		"Bidean nam Bian (Munro)",
-		"Stob Coire Sgreamhach"
+	    "type": "Mountain",
+	    "peaks": 3,
+	    "munros": 2,
+	    "munro": [ 
+		{
+		    "name": "Bidean nam Bian (Munro)",
+                    "lat": 56.6413,
+                    "lon": 5.0271,
+	            "OS-grid": "NN143542",
+	            "elevation": 3772.96,
+	            "prominence": 2772.31
+		},
+                {
+		    "name": "Stob Coire Sgreamhach", 
+		}
 	    ],
-	    "landmass-munro-tops": 1,
-	    "landmass-corbetts": 0,
-	    "landmass-corbett-tops": 0,
-	    "landmass-grahams": 0,
-	    "landmass-cairns": "No Clue",
+	    "munro-tops": 1,
+	    "corbetts": 0,
+	    "corbett-tops": 0,
+	    "grahams": 0,
+	    "cairns": "No Clue",
 	    "gully": true,
 	    "corrie": true,
 	    "lochain": true,
