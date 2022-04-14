@@ -1,5 +1,5 @@
 {
-    "munro": [
+    "landmass": [
         {
             "name": "Bidean nam Bian",
             "lat": 56.6413,
@@ -30,18 +30,6 @@
         },
         {
             "name": "Ben More",
-            "lat": 56.3859,
-            "lon": 4.5401
-        }
-    ],
-    "corbett": [
-        {
-            "name": "Ben Sultans",
-            "lat": 56.8138,
-            "lon": 4.4651
-        },
-        {
-            "name": "Ben Swing",
             "lat": 56.3859,
             "lon": 4.5401
         }
