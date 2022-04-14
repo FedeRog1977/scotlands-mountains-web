@@ -11,6 +11,10 @@
 	    "landmass-name": "Bidean nam Bian",
 	    "landmass-peaks": 3,
 	    "landmass-munros": 2,
+	    "munro": [
+		"Bidean nam Bian (Munro)",
+		"Stob Coire Sgreamhach"
+	    ],
 	    "landmass-munro-tops": 1,
 	    "landmass-corbetts": 0,
 	    "landmass-corbett-tops": 0,
