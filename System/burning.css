@@ -87,15 +87,11 @@ small {
         }
 
 		.title h1 {
-			font-size: 30px;
-			font-variant: small-caps;
-			/*color: #002366;*/
-                }
-
-                .title h2 {
-			font-size: 25px;
-			font-variant: small-caps;
-			/*color: #002366;*/
+			font-family: Giant;
+			font-size: 24px;
+			/*color: #E6281E;*/
+			margin: 0.25em 0 0 0;
+			padding: 0;
                 }
 
 	.navigation {
@@ -331,6 +327,13 @@ small {
 		transform: translate(-50%, -50%);
 	}
 
+	.imgtext-top {
+		position: absolute;
+		top: 12.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
 	.imgtext-center {
 		position: absolute;
 		top: 50%;
@@ -388,6 +391,16 @@ table {
 	color: #FFFFFF;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
+
+.burning-pic {
+	max-width: 250px;
+}
+
+	@media (max-width: 768px) {
+		.burning-pic {
+			max-width: 125px;
+		}
+	}
 
 .profile-pic {
 	max-width: 125px;

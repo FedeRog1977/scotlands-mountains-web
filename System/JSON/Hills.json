@@ -1,4 +1,6 @@
 {
+    "region": [
+    ],
     "landmass": [
         {
             "name": "Bidean nam Bian",
@@ -30,7 +32,7 @@
 		    "name": "Stob Coire nan Lochan",
                     "lat": 56.6488,
                     "lon": -5.0218,
-	            "OS-grid": "",
+	            "OS-grid": "NN148548",
 	            "elevation": 3278,
 	            "prominence": 380
 		}
@@ -43,7 +45,7 @@
 	    "graham": [],
 	    "gully": true,
 	    "corrie": true,
-	    "lochain": false,
+	    "lochain": true,
 	    "waterfall": true,
 	    "boulder-field": true,
 	    "parent-landmass": "Ben Nevis",

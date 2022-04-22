@@ -12,19 +12,12 @@
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 	</head>
 
-	<!--
-		APIs:
-		- Ordnance Survey
-		- Geolocation
-		- OpenWeatherMap
-	-->
-
 <body>
 
 	<div class="header">
                 <div class="title">
-                        <h1>Burning Roots</h1>
-                        <h2>Drafting Room</h2>
+			<img src="./Photos/Logo.png" style="max-width:250px;"></img>
+			<h1>Drafting Room</h1>
                 </div>
                 <div class="navigation">
                         <div class="pages-desktop">
@@ -88,8 +81,8 @@
 
 			<div class="imgtext-cont">
 				<img src="./Photos/lochnagar.jpg" style="width:100%">
-				<div class="imgtext-center">
-					<h1 class="burning">Burning Roots</h1>
+				<div class="imgtext-top">
+					<img class="burning-pic" src="./Photos/Logo.png"></img>
 				</div>
 			</div>
 
@@ -97,7 +90,7 @@
 				<marquee behavior="scroll" direction="left">Welcome to <i>Burning Roots</i>. From the creator of <a href="http://lewisbritton.com/">lewisbritton.com</a>, keeping the geography dream alive!</marquee>
 			</h1>
 
-			<p>Every passionate outdoorsman has that <i>burning</i> desire for freedom in the sweet country air; to love what you do and to keep improving. Sometimes it takes effort from your deepest <i>roots</i> to obtain PR after PR. So, with this fully interactive and informative GPS mapping application, take to the trails and the roads with more motivation than ever; being the fastest, most efficient, most prepared and the most endured athlete on your <i>routes</i>. Burning Roots allows you to plan and optimize routes more precisely and autistically than ever before. Either create your routes manually or import existing ones from a GPX file to get started.</p>
+			<p>Every passionate outdoorsman has that <i>burning</i> desire for freedom in the sweet country air; to love what you do and to keep improving. Sometimes it takes effort from your deepest <i>roots</i> to obtain PR after PR. So, with this fully interactive and informative GPS mapping application, take to the trails and the roads with more motivation than ever; being the fastest, most efficient, most prepared and the most endured athlete on your <i>routes</i>. Burning Roots allows you to plan and optimize routes more precisely than ever before. Either create your routes manually or import existing ones from a GPX file to get started.</p>
 
                         <h1 style="text-align:center;"><i class="fas fa-map-marked-alt"></i> Where Are You?</h1>
 
@@ -184,6 +177,12 @@
 				<p>Your <b>equipment</b> including <b>packs and travel goods</b>, <b>technology</b>, <b>footwear</b> and <b>clothing</b> appears here.</p>
 
 				<div id="userEquipment" class="sub-element hidden">
+
+					<h3 style="text-align:center">
+						Suggested Reading on Boots &amp; Crampons
+						<small><a><i id="userWeatherSugBootsOpt" class="fas fa-angle-down"></i></a></small>
+					</h3>
+
 				</div>
 
 				<h2>
@@ -481,7 +480,7 @@
 					<div id="userWeatherSugClouds" class="sub-sub-element hidden">
 						<p>
 							<table class="data">
-								<th colspan=6 style="border-bottom: double var(--font);">Cloud Types</th>
+								<th colspan=7 style="border-bottom: double var(--font);">Cloud Types</th>
 								<tr>
 									<td>Atmospheric Elevation</td>
 									<td>Atmospheric Classification</td>
@@ -489,6 +488,7 @@
 									<td>Symbol</td>
 									<td>Description</td>
 									<td>Illustration</td>
+									<td>Hill Relevance</td>
 								</tr>
 								<tr>
 									<td colspan=6 style="border-top: double var(--font);">
