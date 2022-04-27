@@ -1,7 +1,7 @@
 const selectMunroList = document.getElementById('userWeatherSelectMunro');
 
 const selectMunroListCont = `
-    <option></option>
+    <option>Meall a&rsquo; Bhuiridh</option>
     <option></option>
     <option></option>
     <option></option>

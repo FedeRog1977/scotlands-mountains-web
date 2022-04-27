@@ -1,15 +1,8 @@
----
-title:
-- Data Collection
-author:
-- Lewis Britton
----
+1. Boots \& Crampons
 
-# Boots \& Crampons
+1.1 Crampons
 
-## Crampons
-
-### Purposes (from Basic to Advanced)
+1.1.1. Purposes (from Basic to Advanced)
 
 1) Prolong the life of a boot/shoe's sole
 2) Provide greater traction on slippery and/or greasy surfaces
@@ -19,7 +12,7 @@ author:
 6) Provide greater (horizontal movement) traction across very compact snow/ice
 7) Provide greater (vertical movement) traction and climbing ability on solid ice
 
-### Types
+1.1.2. Types
 
 Snow Grips:
 	- Small chains to assist with every day urban tasks when the weather is more challenging
@@ -43,16 +36,16 @@ C3 (Rigid):
 	- 10-12 overall spikes
 	- (1), (2), (4), (5), (6), (7)
 
-### Dangers
+1.1.3. Dangers
 
 * Shoes too flexible for crampons: crampons can break apart or be destroyed
 * Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death
 * Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing
 * Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury
 
-## Boots
+1.2. Boots
 
-### Types
+1.2.1. Types
 
 * B0:
 	- City, Running, Fell Running, Approach, Climbing, etc.
@@ -68,10 +61,9 @@ C3 (Rigid):
 	- Rigid boots with stirdy ankle, heel and sole support. Designed for Alpine hiking and climbing. Also suitable for ice climbing. Often made from tough leather or plastic and do not generally bend. Usually have enforced soles and toe caps. Often equipped with more advanced insulation
 	- [C1], [C2], [C3]
 
-\newpage
 
-# Rock
+2. Rock
 
-## Rock Face
+2.1. Rock Face
 
-## Boulder Fields
+2.2. Boulder Fields

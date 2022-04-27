@@ -11,3 +11,63 @@ Restrictions
 To-Do
 
 * Glossary of terms for hills JSON
+
+Some Descriptions
+
+* Region: Major Region
+* Subregion: Mountain Region / Parent Mountain Range
+* Land Mass Type: Mountain / Mountain Range / Stand Alone
+        - Mountain: One land mass containing multiple hills (Munro/Corbett) and tops. To be included in a mountain, Munros, Corbetts, tops and cairns must be present before any contour declines
+to under 600m
+        - Mountain Range: Range of land masses containing multiple hills (Munro/Corbett) and tops. To be included in a mountain range, Munros, Corbetts, tops and cairns must be present before an
+y contour declines to under 400m
+        - Stand Alone: One land mass containing one hill (Munro/Corbett) but unlimited tops. Stand Alones with only a top or a carin marking their summit (not a Munro/Corbett) are not included
+* Hill Type: Munro / Munro Top / Corbett / Corbett Top / Graham / Cairn
+        - Munro: Munro
+        - Munro Top: A peak, perhaps marked by a cairn or trig point, which sits at the height of a munro. Must be present at a maximum stationery point
+        - Corbett: Corbett
+        - Corbett Top: A peak, perhaps marked by a cairn or trig point, which sits at the height of a munro. Must be present at a maximum stationery point
+        - Graham: Graham
+        - Cairn: A cairn marking a significant point on a land mass. These may be at the height of a Munro or Corbett but not considered a `top' if present at an increasing stationary point (poi
+nt of inflection)
+
+Regions
+
+*
+
+Subdivisions (Districts / Council Regions)
+
+* These 32 Council Regions succeed the pre-1996 Counties and Shires*
+
+* Aberdeen
+* Aberdeenshire
+* Angus
+* Argyll and Bute
+* Clackmannanshire
+* Dumfries and Galloway
+* Dundee
+* East Ayrshire
+* East Dumbartonshire
+* East Lothian
+* East Renfrewshire
+* Edinburgh
+* Falkirk
+* Fife
+* Glasgow
+* Highland
+* Inverclyde
+* Midlothian
+* Moray
+* Na h-Eileanan an Iar
+* North Ayrshire
+* North Lanarkshire
+* Orkney Islands
+* Perth and Kinross
+* * Renfrewshire
+* Scottish Borders
+* Shetland Islands
+* South Ayrshire
+* South Lanarkshire
+* Stirlingshire
+* West Dumbartonshire
+* West Lothian
