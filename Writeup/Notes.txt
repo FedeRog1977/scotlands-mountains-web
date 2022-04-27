@@ -1,0 +1,13 @@
+Restrictions
+
+* Limited to the South-West Highlands
+* Grahams, Donalds, Sub2000s (and their tops) omitted
+* Isolation not provided for some corbett tops
+* Details not provided for some more insignificant tops, apart from their OS grid-ref
+* Munro, Munro top, Corbett and Corbett top listings run from highest to lowest
+* Corries and other features run from south to north
+* Everything up to corries have attached attributes as they appear on OS maps, features form then on such as gullies and small lochains which are not named on an OS map do not
+
+To-Do
+
+* Glossary of terms for hills JSON
