@@ -5,7 +5,7 @@ fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/
     .then((data) => {
         const hills = data;
         const test = document.getElementById("test");
-        test.innerHTML = hills.landmass[0].corrie[1].name;
+        test.innerHTML = hills.landmass[1].corrie[1].name;
     })
 
 const app = {

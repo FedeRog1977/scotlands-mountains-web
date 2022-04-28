@@ -762,34 +762,28 @@
 		    "name": "Fife &amp; Stirling",
 		    "sub-sub-region": [
 		        {
-			    "name": ""
+			    "name": "St. Andrews"
 			},
 		        {
-			    "name": ""
+			    "name": "East Neuk"
 			},
 		        {
-			    "name": ""
+			    "name": "Lomond Hills"
 			},
 		        {
-			    "name": ""
+			    "name": "Central Fife"
 			},
 		        {
-			    "name": ""
+			    "name": "Stirling"
 			},
 		        {
-			    "name": ""
+			    "name": "Clackmannan"
 			},
 		        {
-			    "name": ""
+			    "name": "Ochils"
 			},
 		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
+			    "name": "Falkirk"
 			}
 		    ]
 		},
@@ -797,34 +791,25 @@
 		    "name": "Glasgow, Ayrshire &amp; Lanark",
 		    "sub-sub-region": [
 		        {
-			    "name": ""
+			    "name": "Glasgow"
 			},
 		        {
-			    "name": ""
+			    "name": "Inverclyde"
 			},
 		        {
-			    "name": ""
+			    "name": "Campsies"
 			},
 		        {
-			    "name": ""
+			    "name": "Kilpatricks"
 			},
 		        {
-			    "name": ""
+			    "name": "Gargunnock Hills"
 			},
 		        {
-			    "name": ""
+			    "name": "Ayrshire"
 			},
 		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
+			    "name": "Lanarkshire"
 			}
 		    ]
 		},
@@ -832,34 +817,22 @@
 		    "name": "Edinburgh &amp; Lothian",
 		    "sub-sub-region": [
 		        {
-			    "name": ""
+			    "name": "Edinburgh"
 			},
 		        {
-			    "name": ""
+			    "name": "East Lothian"
 			},
 		        {
-			    "name": ""
+			    "name": "North Berwick"
 			},
 		        {
-			    "name": ""
+			    "name": "Dunbar"
 			},
 		        {
-			    "name": ""
+			    "name": "Pentland Hills"
 			},
 		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
+			    "name": "Mid &amp; West Lothian"
 			}
 		    ]
 		},
@@ -867,34 +840,34 @@
 		    "name": "Galloway &amp; Dumfries",
 		    "sub-sub-region": [
 		        {
-			    "name": ""
+			    "name": "Newton Stewart"
 			},
 		        {
-			    "name": ""
+			    "name": "Wigtown"
 			},
 		        {
-			    "name": ""
+			    "name": "Stranraer"
 			},
 		        {
-			    "name": ""
+			    "name": "Castle Douglas"
 			},
 		        {
-			    "name": ""
+			    "name": "Dalbeattie"
 			},
 		        {
-			    "name": ""
+			    "name": "Kirkcudbright"
 			},
 		        {
-			    "name": ""
+			    "name": "Dumfries"
 			},
 		        {
-			    "name": ""
+			    "name": "Thornhill"
 			},
 		        {
-			    "name": ""
+			    "name": "Moffat"
 			},
 		        {
-			    "name": ""
+			    "name": "Langholm"
 			}
 		    ]
 		},
@@ -902,34 +875,31 @@
 		    "name": "Scottish Borders",
 		    "sub-sub-region": [
 		        {
-			    "name": ""
+			    "name": "Peebles"
 			},
 		        {
-			    "name": ""
+			    "name": "Innerleithen"
 			},
 		        {
-			    "name": ""
+			    "name": "Melrose"
 			},
 		        {
-			    "name": ""
+			    "name": "Selkirk"
 			},
 		        {
-			    "name": ""
+			    "name": "Kelso"
 			},
 		        {
-			    "name": ""
+			    "name": "Hawick"
 			},
 		        {
-			    "name": ""
+			    "name": "Newcastleton"
 			},
 		        {
-			    "name": ""
+			    "name": "Eyemouth"
 			},
 		        {
-			    "name": ""
-			},
-		        {
-			    "name": ""
+			    "name": "Coldstream"
 			}
 		    ]
 		}
@@ -937,29 +907,6 @@
 	}
     ],
     "landmass": [
-        {
-            "name": "",
-	    "type": "",
-	    "sub-type": "",
-	    "munro": [],
-	    "munro-top": [],
-	    "corbett": [],
-	    "corbett-top": [],
-	    "corrie": [],
-	    "gully": ,
-	    "lochain": ,
-	    "waterfall": ,
-	    "peat-bog": ,
-	    "mud-bog": ,
-	    "boulder-field": ,
-	    "shoulder": ,
-	    "arete": ,
-	    "human-features": [],
-	    "parent-landmass": "",
-	    "parent-peak": "",
-	    "region": "",
-	    "informal-region": ""
-        },
         {
             "name": "Black Mount Range",
 	    "type": "Mountain Range",

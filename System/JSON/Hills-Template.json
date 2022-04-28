@@ -1,0 +1,27 @@
+{
+    "landmass": [
+        {
+            "name": "",
+	    "type": "",
+	    "sub-type": "",
+	    "munro": [],
+	    "munro-top": [],
+	    "corbett": [],
+	    "corbett-top": [],
+	    "corrie": [],
+	    "gully": ,
+	    "lochain": ,
+	    "waterfall": ,
+	    "peat-bog": ,
+	    "mud-bog": ,
+	    "boulder-field": ,
+	    "shoulder": ,
+	    "arete": ,
+	    "human-features": [],
+	    "parent-landmass": "",
+	    "parent-peak": "",
+	    "region": "",
+	    "informal-region": ""
+        }
+    ]
+}
