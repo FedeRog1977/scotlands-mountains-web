@@ -1,11 +1,11 @@
-fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json')
+fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills-BU.json')
     .then((resp) => {
         return resp.json();
     })
     .then((data) => {
         const hills = data;
         const test = document.getElementById("test");
-        test.innerHTML = hills.landmass[1].munro[0].name;
+        test.innerHTML = hills.landmass[0].munro[0].name;
     })
 
 const app = {
