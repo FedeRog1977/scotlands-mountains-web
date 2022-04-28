@@ -1,11 +1,15 @@
-fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills-BU.json')
+fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json')
     .then((resp) => {
         return resp.json();
     })
     .then((data) => {
-        const hills = data;
         const test = document.getElementById("test");
-        test.innerHTML = hills.landmass[1].corrie[1].name;
+        const hills = data;
+
+	munroName = hills.landmass[0].munro[3].name;
+	munroElev = hills.landmass[0].munro[3].elevation;
+
+        test.innerHTML = munroName + " sits at " + munroElev + "ft";
     })
 
 const app = {
