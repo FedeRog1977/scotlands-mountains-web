@@ -1,4 +1,4 @@
-fetch('')
+fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json')
     .then((resp) => {
         return resp.json();
     })
