@@ -1,16 +1,47 @@
-fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json')
-    .then((resp) => {
-        return resp.json();
-    })
-    .then((data) => {
-        const test = document.getElementById("test");
-        const hills = data;
+let locations = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json';
 
-	munroName = hills.landmass[0].munro[3].name;
-	munroElev = hills.landmass[0].munro[3].elevation;
+function searchLocation() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+	    const munroInp = document.getElementById("testLocSearchInp").value.toLowerCase();
+            const locationOut = document.getElementById("testLocSearch");
 
-        test.innerHTML = munroName + " sits at " + munroElev + "ft";
-    })
+	    for (var i in hills.landmass) {
+	        for (var k in hills.landmass[i].munro) {
+                    if (hills.landmass[i].munro[k].name.toLowerCase() === munroInp) {
+	                let hillName = hills.landmass[i].munro[k].name;
+	                let hillElev = hills.landmass[i].munro[k].elevation;
+	                let hillLat = hills.landmass[i].munro[k].lat;
+	                let hillProm = hills.landmass[i].munro[k].prominence;
+	                let hillIso = hills.landmass[i].munro[k].isolation;
+			let hillLatDir = "";
+			if (hills.landmass[i].munro[k].lat < 0) {
+                            hillLatDir = "S";
+			} else if (hills.landmass[i].munro[k].lat > 0) {
+			    hillLatDir = "N";
+			}
+	                let hillLon = hills.landmass[i].munro[k].lon;
+			let hillLonDir = "";
+			if (hills.landmass[i].munro[k].lon < 0) {
+                            hillLonDir = "W";
+			} else if (hills.landmass[i].munro[k].lon > 0) {
+			    hillLonDir = "E";
+			}
+	                locationOut.innerHTML = 
+			    hillName + " sits at " + hillElev + "ft<br>" 
+			    + "It has a prominance of " + hillProm + "ft and is isolated by " + hillIso + "mi<br>"
+			    + "It&rsquo;s located at: " 
+			    + hillLat + "&deg;" + hillLatDir + ", " 
+			    + hillLon + "&deg;" + hillLonDir;
+		    }
+	        }
+	    }
+        })
+}
 
 const app = {
   init: () => {
@@ -53,7 +84,6 @@ const app = {
       position.coords.longitude.toFixed(2);
   },
   wtf: (err) => {
-    //geolocation failed
     console.error(err);
   },
   showWeather: (resp) => {
@@ -67,7 +97,7 @@ const app = {
         if (idx <= 4) {
 	  let pr = day.pop * 100;
 	  let pr_dp = pr.toFixed(2);
-          let dt = new Date(day.dt * 1000).toDateString(); //timestamp * 1000
+          let dt = new Date(day.dt * 1000).toDateString();
           let sr = new Date(day.sunrise * 1000).toLocaleTimeString();
           let ss = new Date(day.sunset * 1000).toLocaleTimeString();
 	  let wicon = '';
