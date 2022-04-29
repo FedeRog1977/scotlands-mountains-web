@@ -1,16 +1,19 @@
 To-Do
 
-* Glossary of terms for hills JSON
+* JSON
+	- (-) negative before all lon's
+	- Glossary of terms for hills JSON
 
-JSON Restrictions
+Restrictions
 
-* Limited to the South-West Highlands
-* Grahams, Donalds, Sub2000s (and their tops) omitted
-* Isolation not provided for some corbett tops
-* Details not provided for some more insignificant tops, apart from their OS grid-ref
-* Munro, Munro top, Corbett and Corbett top listings run from highest to lowest
-* Corries and other features run from south to north
-* Everything up to corries have attached attributes as they appear on OS maps, features form then on such as gullies and small lochains which are not named on an OS map do not
+* JSON
+	- Limited to the South-West Highlands
+	- Grahams, Donalds, Sub2000s (and their tops) omitted
+	- Isolation not provided for some corbett tops
+	- Details not provided for some more insignificant tops, apart from their OS grid-ref
+	- Munro, Munro top, Corbett and Corbett top listings run from highest to lowest
+	- Corries and other features run from south to north
+	- Everything up to corries have attached attributes as they appear on OS maps, features form then on such as gullies and small lochains which are not named on an OS map do not
 
 Some Descriptions
 
@@ -28,45 +31,7 @@ y contour declines to under 400m
         - Corbett: Corbett
         - Corbett Top: A peak, perhaps marked by a cairn or trig point, which sits at the height of a munro. Must be present at a maximum stationery point
         - Graham: Graham
-        - Cairn: A cairn marking a significant point on a land mass. These may be at the height of a Munro or Corbett but not considered a `top' if present at an increasing stationary point (poi
-nt of inflection)
-
-Subdivisions (Districts / Council Regions)
-
-* These 32 Council Regions succeed the pre-1996 Counties and Shires*
-
-* Aberdeen
-* Aberdeenshire
-* Angus
-* Argyll and Bute
-* Clackmannanshire
-* Dumfries and Galloway
-* Dundee
-* East Ayrshire
-* East Dumbartonshire
-* East Lothian
-* East Renfrewshire
-* Edinburgh
-* Falkirk
-* Fife
-* Glasgow
-* Highland
-* Inverclyde
-* Midlothian
-* Moray
-* Na h-Eileanan an Iar
-* North Ayrshire
-* North Lanarkshire
-* Orkney Islands
-* Perth and Kinross
-* Renfrewshire
-* Scottish Borders
-* Shetland Islands
-* South Ayrshire
-* South Lanarkshire
-* Stirlingshire
-* West Dumbartonshire
-* West Lothian
+        - Cairn: A cairn marking a significant point on a land mass. These may be at the height of a Munro or Corbett but not considered a `top' if present at an increasing stationary point (point of inflection)
 
 Crampons
 

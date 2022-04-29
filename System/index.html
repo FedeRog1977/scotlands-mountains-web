@@ -196,15 +196,6 @@
 					<small><a><i id="userWeatherOpt" class="fas fa-angle-down"></i></a></small>
 				</h2>
 
-				<!--
-					To-Do:
-					- Drop down select for hills w/ assigned coordinates
-						- Hill json
-						- Munro drop-down javascript file
-						- Corbett drop-down javascript file
-					- Clouds table
-				-->
-
 				<p>Your <b>weather forecast</b> summary appears here.</p>
 
 				<div id="userWeather" class="sub-element hidden">
@@ -213,25 +204,27 @@
 						<table>
 							<tr>
 								<td style="text-align:right;">Select a Munro:</td>
-								<td>
-									<select id="userWeatherSelectMunro">
-									</select>
+								<td style="text-align:left;">
+									<select id="userWeatherSelectMunro"></select>
 								</td>
 							</tr>
 							<tr>
 								<td style="text-align:right;">Select a Corbett:</td>
-								<td>
-									<select id="userWeatherSelectCorbett">
-										<option>Ben Sharik Malik</option>
-										<option>Ben Corbett</option>
-									</select>
+								<td style="text-align:left;">
+									<select id="userWeatherSelectCorbett"></select>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align:right;">Select a County:</td>
+								<td style="text-align:left;">
+									<select id="userWeatherSelectCounty"></select>
 								</td>
 							</tr>
 							<tr>
 								<td style="text-align:right;">
 									<span id="basic-addon1">Latitude:</span>
 								</td>
-								<td>
+								<td style="text-align:left;">
 									<input 
 										type="text" 
 										class="form-control" 
@@ -248,7 +241,7 @@
 								<td style="text-align:right;">
 									<span id="basic-addon1">Longitude:</span>
 								</td>
-								<td style="text-align:right;">
+								<td style="text-align:left;">
 									<input 
 										type="text" 
 										class="form-control" 
@@ -661,7 +654,7 @@
 	<script src="Scripts/Drop.js"></script>
 	<script src="Scripts/Elements.js"></script>
 	<script src="Scripts/Weather.js" defer></script>
-	<script src="Scripts/selectMunro.js"></script>
+	<script src="Scripts/selectArea.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

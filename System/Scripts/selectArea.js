@@ -1,4 +1,6 @@
 const selectMunroList = document.getElementById('userWeatherSelectMunro');
+const selectCorbettList = document.getElementById('userWeatherSelectCorbett');
+const selectCountyList = document.getElementById('userWeatherSelectCounty');
 
 const selectMunroListCont = `
     <option>A&rsquo; Bhuidheanach Bheag</option>
@@ -282,7 +284,268 @@ const selectMunroListCont = `
     <option>Tom a&rsquo; Ch&ograve;inich</option>
     <option>Tom Buidhe</option>
     <option>Tom na Gruagaich (Beinn Alligin)</option>
-    <option>fs i missed one</option>
+`;
+
+const selectCorbettListCont = `
+    <option>Ainshval</option>
+    <option>Am Bathach</option>
+    <option>An D&ugrave;n</option>
+    <option>An Ruadh-stac</option>
+    <option>An S&igrave;dhean</option>
+    <option>An Stac</option>
+    <option>Aonach Buidhe</option>
+    <option>Aonach Shasuinn</option>
+    <option>Arkle</option>
+    <option>Askival</option>
+    <option>Auchnafree Hill</option>
+    <option>Bac an Eich</option>
+    <option>Baosbheinn</option>
+    <option>Beinn a&rsquo; Bha&rsquo;ach Ard</option>
+    <option>Beinn a&rsquo; Bhuiridh</option>
+    <option>Beinn a&rsquo; Chaisgein M&ograve;r</option>
+    <option>Beinn a&rsquo; Chaisteil (Auch)</option>
+    <option>Beinn a&rsquo; Chaisteil (Strath Vaich)</option>
+    <option>Beinn a&rsquo; Chlaidheimh</option>
+    <option>Beinn a&rsquo; Choin</option>
+    <option>Beinn a&rsquo; Chr&ugrave;laiste</option>
+    <option>Beinn a&rsquo; Chuallaich</option>
+    <option>Beinn Airigh Charr</option>
+    <option>Beinn an Eoin</option>
+    <option>Beinn an Lochain</option>
+    <option>Beinn an &Ograve;ir</option>
+    <option>Beinn Bhan</option>
+    <option>Beinn Bhan (Great Glen)</option>
+    <option>Beinn Bheula</option>
+    <option>Beinn Bhreac</option>
+    <option>Beinn Bhreac-liath</option>
+    <option>Beinn Bhuidhe</option>
+    <option>Beinn Chaorach</option>
+    <option>Beinn Chuirn</option>
+    <option>Beinn Damh</option>
+    <option>Beinn Dearg (Glen Lyon)</option>
+    <option>Beinn Dearg (Torridon)</option>
+    <option>Beinn Dearg Bheag</option>
+    <option>Beinn Dearg M&ograve;r</option>
+    <option>Beinn Dronaig</option>
+    <option>Beinn Each</option>
+    <option>Beinn Enaiglair</option>
+    <option>Beinn Iaruinn</option>
+    <option>Beinn Lair</option>
+    <option>Beinn Leo&igrave;d</option>
+    <option>Beinn Liath Mh&ograve;r a&rsquo; Ghiubhais Li</option>
+    <option>Beinn Loinne</option>
+    <option>Beinn Luibhean</option>
+    <option>Beinn Maol Chaluim</option>
+    <option>Beinn Mheadhonach</option>
+    <option>Beinn Mhic Cedidh</option>
+    <option>Beinn Mhic Chasgaig</option>
+    <option>Beinn Mhic-Mhonaidh</option>
+    <option>Beinn Mholach</option>
+    <option>Beinn na Caillich</option>
+    <option>Beinn na h-Eaglaise</option>
+    <option>Beinn na h-Uamha</option>
+    <option>Beinn nam Fuaran</option>
+    <option>Beinn nan Caorach</option>
+    <option>Beinn nan Imirean</option>
+    <option>Beinn nan Oighreag</option>
+    <option>Beinn Odhar</option>
+    <option>Beinn Odhar Bheag</option>
+    <option>Beinn Pharlagain</option>
+    <option>Beinn Resipol</option>
+    <option>Beinn Spionnaidh</option>
+    <option>Beinn Stacath</option>
+    <option>Beinn Tarsuinn</option>
+    <option>Beinn Tharsuinn</option>
+    <option>Beinn Trilleachan</option>
+    <option>Beinn Udlaidh</option>
+    <option>Ben Aden</option>
+    <option>Ben Donich</option>
+    <option>Ben Gulabin</option>
+    <option>Ben Hee</option>
+    <option>Ben Ledi</option>
+    <option>Ben Loyal</option>
+    <option>Ben Rinnes</option>
+    <option>Ben Tee</option>
+    <option>Ben Tirran</option>
+    <option>Ben Vrackie</option>
+    <option>Ben Vuirich</option>
+    <option>Benvane</option>
+    <option>Bidein a&rsquo; Chabair</option>
+    <option>Binnein an Fh&igrave;dhleir (or Stob Coire Creagach)</option>
+    <option>Braigh nan Uamhachan</option>
+    <option>Breabag</option>
+    <option>Broad Law</option>
+    <option>Brown Cow Hill</option>
+    <option>Buidhe Bheinn</option>
+    <option>Cairnsmore of Carsphairn</option>
+    <option>Caisteal Abhail</option>
+    <option>Cam Chreag (Auch)</option>
+    <option>Cam Chreag (Glen Lyon)</option>
+    <option>Canisp</option>
+    <option>C&agrave;rn a&rsquo; Choire Ghairbh</option>
+    <option>C&agrave;rn a&rsquo; Chuilinn</option>
+    <option>C&agrave;rn an Fhreiceadain</option>
+    <option>C&agrave;rn B&agrave;n</option>
+    <option>C&agrave;rn Chuinneag</option>
+    <option>C&agrave;rn Dearg (North of Gleann Eachach)</option>
+    <option>C&agrave;rn Dearg (South of Gleann Eachach)</option>
+    <option>C&agrave;rn Dearg - Glen Roy</option>
+    <option>C&agrave;rn Dearg M&ograve;r</option>
+    <option>C&agrave;rn Ealasaid</option>
+    <option>C&agrave;rn M&ograve;r (Glen Dessarry)</option>
+    <option>C&agrave;rn M&ograve;r (Ladder Hills)</option>
+    <option>C&agrave;rn na Drochaide</option>
+    <option>C&agrave;rn na Nathrach</option>
+    <option>C&agrave;rn na Saobhaidhe</option>
+    <option>C&igrave;r M&ograve;r</option>
+    <option>Clisham</option>
+    <option>Cnoc Coinnich</option>
+    <option>Conachcraig</option>
+    <option>Corryhabbie Hill</option>
+    <option>Corserine</option>
+    <option>Cranstackie</option>
+    <option>Creach Bheinn (Loch Creran)</option>
+    <option>Creach Bheinn (Morvern)</option>
+    <option>Creag an Dail Bheag</option>
+    <option>Creag Mac Ranaich</option>
+    <option>Creag Mh&ograve;r</option>
+    <option>Creag nan Gabhar</option>
+    <option>Creag Rainich</option>
+    <option>Creag Uchdag</option>
+    <option>Creagan na Beinne</option>
+    <option>Cruach Innse</option>
+    <option>C&ugrave;l Beag</option>
+    <option>C&ugrave;l M&ograve;r</option>
+    <option>Culardoch</option>
+    <option>Druim Tarsuinn</option>
+    <option>D&ugrave;n da Ghaoithe</option>
+    <option>Faochaig</option>
+    <option>Farragon Hill</option>
+    <option>Foinaven</option>
+    <option>Fraoch Bheinn</option>
+    <option>Fraochaidh</option>
+    <option>Fuar Bheinn</option>
+    <option>Fuar Tholl</option>
+    <option>Gairbeinn</option>
+    <option>Garbh Bheinn (Ardgour)</option>
+    <option>Garbh Bheinn (Loch Leven)</option>
+    <option>Garbh-bheinn (Skye)</option>
+    <option>Geal Charn (Arkaig)</option>
+    <option>Geal Charn (Dorback)</option>
+    <option>Geal-charn M&ograve;r</option>
+    <option>Glamaig</option>
+    <option>Glas Bheinn (Assynt)</option>
+    <option>Glas Bheinn (Kinlochleven)</option>
+    <option>Goat Fell</option>
+    <option>Hart Fell</option>
+    <option>Leathad an Taobhain</option>
+    <option>Leum Uilleim</option>
+    <option>Little Wyvis</option>
+    <option>Mam na Gualainn</option>
+    <option>Maol Creag an Loch (A&rsquo; Chaoirnich)</option>
+    <option>Meall a&rsquo; Bhuachaille</option>
+    <option>Meall a&rsquo; Ghiubhais</option>
+    <option>Meall a&rsquo; Ph&ugrave;buill</option>
+    <option>Meall an Fhudair</option>
+    <option>Meall an t-Seallaidh</option>
+    <option>Meall Buidhe</option>
+    <option>Meall Dubh</option>
+    <option>Meall Horn</option>
+    <option>Meall Lighiche</option>
+    <option>Meall na Fearna</option>
+    <option>Meall na h-Aisre</option>
+    <option>Meall na h-Eilde</option>
+    <option>Meall na Leitreach</option>
+    <option>Meall nam Maigheach</option>
+    <option>Meall nan Subh</option>
+    <option>Meall Tairneachan</option>
+    <option>Meallach Mh&ograve;r</option>
+    <option>Meallan Liath Coire Mhic Dhughaill</option>
+    <option>Meallan nan Uan</option>
+    <option>Merrick</option>
+    <option>Monamenach</option>
+    <option>Morrone</option>
+    <option>Morven</option>
+    <option>Mount Battock</option>
+    <option>Quinag - Sail Gharbh</option>
+    <option>Quinag - Sail Gorm</option>
+    <option>Quinag - Spidean Coinich</option>
+    <option>Rois-Bheinn</option>
+    <option>Ruadh-stac Beag</option>
+    <option>Sail Mh&ograve;r</option>
+    <option>Sg&ograve;r M&ograve;r</option>
+    <option>Sg&ograve;rr Craobh a&rsquo; Chaorainn</option>
+    <option>Sg&ograve;rr na Diollaid</option>
+    <option>Sg&ograve;rr nan Lochan Uaine</option>
+    <option>Sguman Coinntich</option>
+    <option>Sg&ugrave;rr a&rsquo; Chaorachain</option>
+    <option>Sg&ugrave;rr a&rsquo; Choire-bheithe</option>
+    <option>Sg&ugrave;rr a&rsquo; Mhuilinn</option>
+    <option>Sg&ugrave;rr an Airgid</option>
+    <option>Sg&ugrave;rr an Fhuarain</option>
+    <option>Sg&ugrave;rr an Utha</option>
+    <option>Sg&ugrave;rr Coire Choinnichean</option>
+    <option>Sg&ugrave;rr Cos na Breachd-laoidh</option>
+    <option>Sg&ugrave;rr Dhomhnuill</option>
+    <option>Sg&ugrave;rr Dubh</option>
+    <option>Sg&ugrave;rr Gaorsaic</option>
+    <option>Sg&ugrave;rr Ghiubhsachain</option>
+    <option>Sg&ugrave;rr Innse</option>
+    <option>Sg&ugrave;rr Mhic Bharraich</option>
+    <option>Sg&ugrave;rr Mhurlagain</option>
+    <option>Sg&ugrave;rr na Ba Glaise</option>
+    <option>Sg&ugrave;rr na Feartaig</option>
+    <option>Sg&ugrave;rr nan Ceannaichean</option>
+    <option>Sg&ugrave;rr nan Eugallt</option>
+    <option>Shalloch on Minnoch</option>
+    <option>Sron a&rsquo; Choire Chnapanich</option>
+    <option>Stob a&rsquo; Choin</option>
+    <option>Stob an Aonaich Mh&ograve;ir</option>
+    <option>Stob Coire a&rsquo; Chearcaill</option>
+    <option>Stob Dubh</option>
+    <option>Streap</option>
+    <option>The Brack</option>
+    <option>The Cobbler</option>
+    <option>The Fara</option>
+    <option>The Sow of Atholl</option>
+    <option>White Coomb</option>
+`;
+
+const selectCountyListCont = `
+    <option>Aberdeen City</option>
+    <option>Aberdeenshire</option>
+    <option>Angus</option>
+    <option>Argyll and Bute</option>
+    <option>Clackmannanshire</option>
+    <option>Dumfries and Galloway</option>
+    <option>Dundee</option>
+    <option>East Ayrshire</option>
+    <option>East Dumbartonshire</option>
+    <option>East Lothian</option>
+    <option>East Renfrewshire</option>
+    <option>Edinburgh</option>
+    <option>Falkirk</option>
+    <option>Fife</option>
+    <option>Glasgow</option>
+    <option>Highland</option>
+    <option>Inverclyde</option>
+    <option>Midlothian</option>
+    <option>Moray</option>
+    <option>Na h-Eileanan an Iar</option>
+    <option>North Ayrshire</option>
+    <option>North Lanarkshire</option>
+    <option>Orkney Islands</option>
+    <option>Perth and Kinross</option>
+    <option>Renfrewshire</option>
+    <option>Scottish Borders</option>
+    <option>Shetland Islands</option>
+    <option>South Ayrshire</option>
+    <option>South Lanarkshire</option>
+    <option>Stirlingshire</option>
+    <option>West Dumbartonshire</option>
+    <option>West Lothian</option>
 `;
 
 selectMunroList.innerHTML = selectMunroListCont;
+selectCorbettList.innerHTML = selectCorbettListCont;
+selectCountyList.innerHTML = selectCountyListCont;
