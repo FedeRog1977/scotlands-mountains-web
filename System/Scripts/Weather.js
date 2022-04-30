@@ -15,22 +15,22 @@ function searchLocation() {
                     if (hills.landmass[i].munro[k].name.toLowerCase() === munroInp) {
 	                let hillName = hills.landmass[i].munro[k].name;
 	                let hillElev = hills.landmass[i].munro[k].elevation;
-	                let hillLat = hills.landmass[i].munro[k].lat;
-	                let hillProm = hills.landmass[i].munro[k].prominence;
-	                let hillIso = hills.landmass[i].munro[k].isolation;
+	                let hillLat = Math.abs(hills.landmass[i].munro[k].lat);
 			let hillLatDir = "";
 			if (hills.landmass[i].munro[k].lat < 0) {
                             hillLatDir = "S";
 			} else if (hills.landmass[i].munro[k].lat > 0) {
 			    hillLatDir = "N";
 			}
-	                let hillLon = hills.landmass[i].munro[k].lon;
+	                let hillLon = Math.abs(hills.landmass[i].munro[k].lon);
 			let hillLonDir = "";
 			if (hills.landmass[i].munro[k].lon < 0) {
                             hillLonDir = "W";
 			} else if (hills.landmass[i].munro[k].lon > 0) {
 			    hillLonDir = "E";
 			}
+	                let hillProm = hills.landmass[i].munro[k].prominence;
+	                let hillIso = hills.landmass[i].munro[k].isolation;
 	                locationOut.innerHTML = 
 			    hillName + " sits at " + hillElev + "ft<br>" 
 			    + "It has a prominance of " + hillProm + "ft and is isolated by " + hillIso + "mi<br>"
