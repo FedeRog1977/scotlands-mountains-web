@@ -1,8 +1,71 @@
 To-Do
 
 * JSON
-	- (-) negative before all lon's
 	- Glossary of terms for hills JSON
+
+Determination of Attributes (JSON)
+
+* ADD POSSIBLE VALUES SECTION
+
+* name: string - name of formation
+* type: string - type of formation
+* sub-type: string - sub-type of formation
+* sub-sub-type: string - sub-sub-type of formation
+* munro: list - dictionaries of attributes relating to munros on this landmass
+	- name: string - name of munro marked on an OS map
+	- lat: number - latitude of munro summit
+	- lon: number - longitude of munro summit
+	- OS-grid: string - OS grid coordinates of munro summit
+	- elevation: number - maximum elevation above sea level of munro (units: feet)
+	- prominence: number - vertical distance between the nearest drop which connects the munro to a higher peak, and the summit (units: feet)
+	- isolation: number - horizontal distance between the summit and the next higher peak (units: miles)
+	- trig: boolean - whether or not there is a triangulation station marked on an OS map
+* munro-top: list - dictionaries of attributes relating to munro tops on this landmass
+	- name: string - name of munro top marked on an OS map
+	- lat: number - latitude of munro top summit
+	- lon: number - longitude of munro top summit
+	- OS-grid: string - OS grid coordinates of munro top summit
+	- elevation: number - maximum elevation above sea level of munro top (units: feet)
+	- prominence: number - vertical distance between the nearest drop which connects the munro top to a higher peak, and the summit (units: feet)
+	- isolation: number - horizontal distance between the munro top and the next higher peak (units: miles)
+	- trig: boolean - whether or not there is a triangulation station marked on an OS map
+* corbett: list - dictionaries of attributes relating to corbetts on this landmass
+	- name: string - name of corbett marked on an OS map
+	- lat: number - latitude of corbett summit
+	- lon: number - longitude of corbett summit
+	- OS-grid: string - OS grid coordinates of corbett summit
+	- elevation: number - maximum elevation above sea level of corbett (units: feet)
+	- prominence: number - vertical distance between the nearest drop which connects the corbett to a higher peak, and the summit (units: feet)
+	- isolation: number - horizontal distance between the corbett and the next higher peak (units: miles)
+	- trig: boolean - whether or not there is a triangulation station marked on an OS map
+* corbett-top: list - dictionaries of attributes relating to corbett tops on this landmass
+	- name: string - name of corbett top marked on an OS map
+	- lat: number - latitude of corbett top summit
+	- lon: number - longitude of corbett top summit
+	- OS-grid: string - OS grid coordinates of corbett top summit
+	- elevation: number - maximum elevation above sea level of corbett top (units: feet)
+	- prominence: number - vertical distance between the nearest drop which connects the corbett top to a higher peak, and the summit (units: feet)
+	- isolation: number - horizontal distance between the corbett top and the next higher peak (units: miles)
+	- trig: boolean - whether or not there is a triangulation station marked on an OS map
+* corrie: list - dictionaries of attributes relating to corries on this landmass
+	- name: string - name of corrie marked on an OS map, on this formation
+* gully: boolean - in-line with my field surveillance, whether or not there are any gullies on land on this formation
+* lochain: boolean - whether or not there are one or more lochains marked on the OS map
+* waterfall: boolean - whether or not there are one or more waterfalls marked on the OS map
+* peat-bog: boolean - in-line with my field surveillance, whether or not there is any peat-boggy land on this formation
+* mud-bog: boolean - in-line with my field surveillance, whether or not there is any mud-boggy land on this formation
+* boulder-field: boolean - whether or not there are one or more boulder fields marked on the OS map
+* scree: boolean - in-line with my field surveillance, whether or not there is any scree on this formation
+* shoulder: boolean - whether or not this formation has one or more shoulders
+* arete: boolean - whether or not this formation has one or more aretes
+* human-features: list - dictionaries of attributes relating to human features on this formation
+	- name: string - name of human feature
+	- type: string - type of feature
+* parent-landmass: string - name of the parent landmass to this landmass
+* parent-peak: string - name of the highest peak on the parent landmass to this landmass
+* region: sting - name of the region in which this formation is located
+* sub-region: string - name of the sub-region of the region in which this formation is located
+* informal-region: string - name of the informal region in which this formation is located
 
 Restrictions
 

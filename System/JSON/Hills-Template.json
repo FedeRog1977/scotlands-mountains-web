@@ -20,7 +20,11 @@
 	    "munro-top": [],
 	    "corbett": [],
 	    "corbett-top": [],
-	    "corrie": [],
+	    "corrie": [
+                {
+		    "name": ""
+		}
+ 	    ],
 	    "gully": ,
 	    "lochain": ,
 	    "waterfall": ,
