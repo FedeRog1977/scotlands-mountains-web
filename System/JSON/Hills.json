@@ -2921,7 +2921,7 @@
             "name": "Bidean nam Bian",
 	    "type": "Mountain",
 	    "sub-type": "Massif",
-	    "sub-sub-type": "null,
+	    "sub-sub-type": null,
 	    "munro": [ 
 		{
 		    "name": "Bidean nam Bian",
