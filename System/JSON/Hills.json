@@ -3079,6 +3079,7 @@
                     "prominence": 800,
                     "isolation": 1.03,
                     "trig": null
+		}
             ],
             "munro-top": [
                 {
@@ -3090,6 +3091,7 @@
                     "prominence": 151,
                     "isolation": 0.33,
                     "trig": null
+		}
 	    ],
             "corbett": [],
             "corbett-top": [],
