@@ -1,0 +1,480 @@
+\documentclass[11pt, english]{article}
+	\usepackage{geometry}
+ 		\geometry{
+ 			a4paper,total={210mm,297mm},
+ 			tmargin=40.8mm,
+			bmargin=40.8mm,
+			lmargin=32.6mm,
+			rmargin=32.6mm,
+ 		}
+
+	\usepackage{fancyhdr}
+	\usepackage{lipsum}
+		\pagestyle{fancy}
+		\fancyhf{} 
+		\fancyhead[L]{\leftmark}
+		\fancyhead[R]{\thepage}
+		\fancyfoot[C]{\thepage}
+		\renewcommand{\headrulewidth}{0.5pt}
+
+	\usepackage{tocloft}
+		
+		\renewcommand{\cfttoctitlefont}{\fontsize{18}{16}\scshape}
+		\renewcommand{\cftlottitlefont}{\fontsize{18}{16}\scshape}
+		\renewcommand{\cftloftitlefont}{\fontsize{18}{16}\scshape}
+
+		\renewcommand{\cftsecfont}{\scshape}
+		\renewcommand{\cftsubsecfont}{\scshape}
+		\renewcommand{\cftsubsubsecfont}{\scshape}
+		\renewcommand{\cftparafont}{\scshape}
+
+	\usepackage{abstract}
+		\renewcommand{\abstractnamefont}{\fontsize{11}{0}\scshape}
+
+	\renewcommand{\thesection}{\arabic{section}}
+	\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+	\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+	\renewcommand{\theparagraph}{\thesubsubsection.\arabic{paragraph}}
+
+	\usepackage{titlesec}
+
+		\titleformat{\section}
+			{\fontsize{18}{16}\scshape}{\thesection}{0.5em}{}
+
+		\titleformat{\subsection}
+			{\fontsize{14}{16}\scshape}{\thesubsection}{1em}{}
+
+		\titleformat{\subsubsection}
+			{\fontsize{11}{16}\scshape}{\thesubsubsection}{1em}{}
+
+		\titleformat{\paragraph}
+			{\fontsize{11}{16}\scshape}{\theparagraph}{1em}{}
+
+	\usepackage{hyperref} 
+		\hypersetup{          
+        		colorlinks=true,        
+        		linkcolor=black,  
+        		filecolor=magenta,
+        		urlcolor=cyan,
+        		}
+
+	\usepackage[labelfont=sc,textfont=sc,font=small,skip=8pt]{caption}
+
+	\usepackage{float}
+
+		\renewcommand{\thetable}
+			{\thesection.\arabic{table}}
+
+		\renewcommand{\thefigure}
+			{\arabic{figure}}
+
+	\setlength{\parindent}{0pt}
+
+	\renewcommand{\baselinestretch}{1.25}
+	\usepackage{setspace}
+
+	\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+		\setcounter{tocdepth}{5}
+		\setcounter{secnumdepth}{5}
+
+	\usepackage{longtable}
+	\usepackage{multicol}
+	\usepackage{multirow}
+
+	\usepackage{amsmath}
+	\usepackage{amssymb}
+
+	\usepackage{graphicx}
+	\graphicspath{{./Figures/}}
+
+	\usepackage{tipa}
+
+	\usepackage{babel}
+
+\begin{document}
+
+% Title Page
+
+\pagenumbering{gobble}
+
+	\title{
+                \HRule{0.5pt}\\ [0.3cm]
+                \huge\textsc{CS958 Project}\\
+                \Large\textsc{Coursework Assignment}\\ [0.25cm]
+                \HRule{0.5pt}
+                }
+	\author{\textsc{Lewis W. Britton}\\
+                \textsc{202194412}\\
+                \textsc{University of Strathclyde}\\
+		\textit{Glasgow City, Scotland}
+                }
+	\date{}
+	\maketitle
+
+        \begin{center}
+                \textsc{Burning Roots: }
+        \end{center}
+
+        \vspace{\fill}
+
+	\begin{center}
+		\textsc{Written \& Directed By}\\ \textit{John Hughes}\\
+		\textsc{Executive Producer}\\ \textit{Michael Mann}\\
+		\textsc{Created By}\\ \textit{Anthony Yerkovich}\\
+		\textsc{Music Composed \& Performed By}\\ \textit{Jan Hammer}
+	\end{center}
+
+	\begin{center}
+		\fbox{\textsc{... Words}}
+	\end{center}
+
+	\begin{center}
+        	\textsc{Dissertation Submitted in Partial Fulfilment of the Requirements for the Degree of Master of Science Software Development at the University of Strathclyde}
+	\end{center}
+
+	\begin{center}
+		\textsc{Academic Year 2020/2021}
+	\end{center}
+
+\newpage
+
+\pagenumbering{roman}
+
+	\begin{abstract}
+	\end{abstract}
+
+	\textsc{Index terms:}
+
+\newpage
+% Declaration
+
+	\section*{Declaration \& Information}
+
+	This dissertation is submitted in partial fulfilment of the requirements for the degree of Master of Science Software Development at the University of Strathclyde. It accords with the University’s regulations for the programme as detailed in the University Calendar.
+
+	\begin{center}
+		\small
+	\begin{tabular}{p{5.45cm}|p{5.45cm}}
+		\textsc{Mail To:} wi.lbritton@yahoo.com & \textsc{Telephone:} 07415 212 ***\\
+		\textsc{Website:} \href{http://lewisbritton.com}{lewisbritton.com} & \textsc{GitHub:} \href{https://github.com/FedeRog1977}{FedeRog1977}\\
+	\end{tabular}
+	\end{center}
+
+	This document’s presentation reflects the use of {\LaTeX} typesetting (Figure B7), using Computer Modern Unicode (Figure B8) (I haven't reached my GNU Troff phase yet). This escapes the inane formatting requirements of my institution. References are presented using \textsc{Bib}{\TeX}, favouring \textsl{oblique} over \textit{italic}, in-line with Donald E. Knuth’s preference (Knuth, 2020). The process is executed in command line using Vim, which is a very powerful editor that has many commands, too many to explain in a tutor such as this. For maximum optical pleasure, the use of M$\mu$PDF is vigorously advised with [-I]. Navigate this document using h($\leftarrow$), j($\downarrow$), k($\uparrow$), l($\rightarrow$), ensuring that the Caps-Lock, Super-Key `mod', or any other command key is not depressed. Note that the Oxford Serial Comma is favoured throughout this text. This study's sentence structure focuses on pragmatics and syntax, disregarding bloated filler content. Arguments are coherent, logical, definitive and straight-to-the-point. Nugatory theory is ignored. If you are curious about any of the mathematical, operational, logical, etc., symbols or notation used in this report, a comprehensive {\LaTeX}-syntax-based symbolist will be available from my \href{http://lewisbritton.com/Library.html}{website library} from approximately summer 2021.\\
+ 
+	The word count of this piece reflects relevant content from titles, heading classes 1, 2 and 3, paragraphs, footnotes, tables (excluding [results] tables 4.7, 5.10 $\rightarrow$ 5.20), table titles, figures, and figure titles in \textit{Chapters 1 $\rightarrow$ 6}. Word count excludes any pre/succeeding content from \textit{Abstract}, \textit{Declaration \& Information}, \textit{Acknowledgements}, \textit{Table of Contents}, \textit{Appendices}, and \textit{Bibliography}.\\
+
+	I declare that this document embodies the results of my own work and that it has been composed by myself. Following normal academic conventions, I have made due acknowledgement of the work of others.\\
+
+	Signed:\\ 
+
+	Date:
+
+\newpage
+% Acknowledgements
+
+	\section*{Acknowledgements}
+
+I would like to thank my dissertation supervisor, Dr Devraj Basu, for his approach with regards belief that students must be self-disciplined, organised, structured and punctual to their own degree. This closely relates to my own personally practiced work ethic and philosophy of the ASAP standard.\\
+
+I would like to give credit for the computational aspect of this study to one of my biggest inspirations, John ``The Tzar'' Kelly. He inspired my love for everything barebones computational, from simple arrays (of hope), through Hyperthreading-enabled, all the way to x86 Assembly. I would also like to accredit Luke Smith for the foundation of my knowledge of Bram Moolenaar’s Vim and {\LaTeX}. This study’s presentation would not have optimal without Smith (2015).\\
+
+This piece would not have been as efficient without the aid of the only acceptable Linux distribution, `distro’ if you will, Arch Linux. I would like to thank Judd Vinet for his eye-opening and life-altering contribution to the development and computer-system enthusiast community. ‘The Arch Principal’ is certainly out in high force. Finally, for making use of this software mechanically efficient, I would like to thank IBM for the creation of the ThinkPad T23, X30, T42, R50e, T60, X60, X200, X220 and T420 neoVimPads, the UltraDock, and the 1987 Model M \textit{Catastrophically Buckling Compression Column Switch and Actuator} typehorse (US369 9296A, 1972). For your convenience, one of my \href{http://lewisbritton.com/Blog/ThinkFlow.html}{blog posts} can satisfy your interest in this. 
+
+\newpage
+
+	\renewcommand{\contentsname}{Table of Contents}
+
+	\tableofcontents
+
+\newpage
+
+	\listoftables
+
+\newpage
+
+	\listoffigures
+
+\newpage
+
+\pagenumbering{arabic}
+
+\section{Introduction}\label{ch1}
+
+	\subsection{Purpose \& Industry}
+
+	\subsection{System Structure}
+
+	\subsection{Users}
+
+	\subsection{Development Process}
+
+	\subsection{Disposition}
+
+\newpage
+
+\section{Research \& Evidential Background}\label{ch2}
+
+	\subsection{Areas of Exploration}
+
+		\subsubsection{Hiking Routes}
+
+		\subsubsection{Hiking Equipment}
+
+		\subsubsection{Personal Fitness \& Ability}
+
+		\subsubsection{Geography}
+
+	\subsection{Existing Material \& Services}
+
+	\subsection{Heuristic Evaluations}
+
+\newpage
+
+\section{Data Processing \& Methodology}\label{ch3}
+
+	\subsection{Data Acquisition}
+
+		\subsubsection{Location}
+
+		\subsubsection{Self-Declared Attributes -- Ability}
+
+		Body statistics: height, body mass, body fat, muscle mass
+
+		Basics: average resting rate, 5k run average rate, 30 mile ride average rate, 10 mile hike average rate, 20 mile hike average rate
+
+		\subsubsection{Self-Declared Attributes -- Equipment}
+
+		\subsubsection{Weather}
+
+		\subsubsection{Route Data}
+
+		Overview no longer gives an overview of user stats on routes, it now breaks down the routes.\\
+
+		Type of route: hillwalk, mountaineer, climb
+
+		Route stages: pre-walk-in, walk-in, on the hill, walk-out, post-walk-out
+
+		Terrain type: road, forestry commission road, off-road, farm path, tourist path, footpath erosion, stalker's path, shepherd's path, sheep path, off-path
+
+		Terrain difficulty: sustained plateau, concrete, grassy, stone staircase, broken stone, broken rock, grass with scattered rock, talus (coarse scree), scree (fine scree), rocky talus scramble, crag scramble, notched slab scramble, smooth slab scramble, grade 3 scramble, grade 2 scramble, grade 1 scramble, crag scramble (grades table), smooth slab climb (grades table), available bouldering (grades table)
+
+		Route difficulty: distance, elevation gain, max elevation, N munros, N munro tops, N corbetts, N corbett tops, written description
+
+		Route option ratings: ice climb (based on gullies, equipment), possibility of fell run (based on type, terrain, difficulty, equipment)
+
+		\subsubsection{Regional Data}
+
+		\subsubsection{Landmass Data}
+
+	\subsection{Data Manipulation \& Output}
+
+		\subsubsection{Route Overview}	
+	
+		Basics: distance, elevation gain, estimated time (based on ability, equipment), estimates energy output (based on user stats, ability)
+
+		Difficulty rating: playground, normie, enthusiast, trad, gigachad
+
+		CONQUER ROUTE
+
+		\subsubsection{Weather System}
+
+		\subsubsection{`Ranger' Calculator}
+
+		Route recommendations, 
+
+		\subsubsection{Regional \& Landmass General}
+
+	\subsection{Information Acquisition \& Output}
+
+		\subsubsection{Purpose}
+
+		\subsubsection{Keys \& Suggested Reading}
+
+\newpage
+
+\section{System Requirements}\label{ch4}
+
+	\subsection{Scale \& Scope}
+
+	\subsection{Gathering \& Prioritization Methodology}
+
+	\subsection{Functional \& Non-Functional}
+
+\newpage
+
+\section{System Design}\label{ch5}
+
+	\subsection{System Architecture}
+
+	\subsection{User Interface}
+
+		\subsubsection{Logical Design}
+
+		\subsubsection{Graphic Design \& Communication}
+
+		\subsubsection{Interface Tree}
+
+		\subsubsection{Use Case Diagram}
+
+		\subsubsection{Primary Use Case Examples}
+
+	\subsection{Data Structure}
+
+\newpage
+
+\section{System Construction \& Implementation}\label{ch6}
+
+	\subsection{Development \& Languages}
+
+		\subsubsection{Development Environment}
+
+		\subsubsection{Front-End \& User Interface}
+
+		\subsubsection{Semi-Rear-End \& Supporting Data}
+
+		\subsubsection{Rear-End \& Data Management}
+
+		Entities and attributes table, entity relationship models
+
+	\subsection{Application Programming Interfaces (APIs)}
+
+		\subsubsection{Geolocation}
+
+		\subsubsection{Ordnance Survey}
+
+		OS Road (1 : 250 000), OS Landranger (1 : 50 000), OS Explorer (1 : 25 000)
+
+		\subsubsection{Open Weather}
+
+	\subsection{Project Management}
+
+		\subsubsection{Life-Cycle \& Timing}
+
+		\subsection{Supporting Tools}
+
+\newpage
+
+\section{Evaluation}\label{ch7}
+
+	\subsection{Requirements}
+
+	\subsection{Design, Construction \& Implementation}
+
+		\subsubsection{Heuristic Evaluation}
+
+		\subsubsection{User Acceptance (UAT), Accessibility \& Usability}
+
+		\subsubsection{`Prototyping' \& Constant Evaluation}
+
+	\subsection{Additional Testing}
+
+		\subsubsection{`Test-Driven' Development}
+
+		\subsubsection{Unit Testing}
+
+	\subsection{Constrictions}
+
+	Restricted to Glen Coe and Glen Etive
+
+\newpage
+
+\section{Development Conclusions}\label{ch8}
+
+	\vspace{\fill}
+
+	\begin{center}
+		\textsc{A Michael Mann Production}\\
+		\textsc{\textcopyright 1984 Orion Pictures Corporation}\\
+		\textsc{\small{All Rights Reserved}}\\
+		\textsc{Dolby Stereo\texttrademark In Selected Theatres}
+	\end{center}
+
+\newpage
+
+\pagenumbering{Roman}
+
+\fancyhead[L]{\textsc{APPENDICES}}
+
+\section*{Appendices}
+
+	Testing questionnaires, test cards (exp. result etc.), heuristic evaluation of system
+
+	\subsection*{Appendix 1: Existing Figures}
+
+		\subsubsection*{Figure A1:}
+			
+			\begin{center}
+				%\includegraphics[width=7cm,height=3.5cm]{} 
+			\end{center}
+
+			(Draper, Paudyal, 1999)
+
+		\subsubsection*{Figure A2:}
+
+			\begin{center}
+                                %\includegraphics[width=7cm,height=3.5cm]{}
+                        \end{center}
+
+			(Draper, Paudyal, 1999)
+
+
+	\subsection*{Appendix 2: Foundational Material}
+
+		\subsubsection*{Author's Note}
+
+			\textit{The following content is manufactured by myself in aid of basic understanding of the background to contexts, data and methods present within this study. It is presented as teaching material, in a format I would output if in such position.}
+		\subsubsection*{Figure B1: Linguistics of `{\LaTeX}'}
+
+		{\LaTeX} (or LaTeX, even latex (Donald E. Knuth's more recent installment of {\TeX})) is usually pronounced /la\textlengthmark t$\varepsilon$k/ (`lah') or /le\textsc{i}t$\varepsilon$k/ (`lei'/`lay') in English (that is, not with the /ks/ pronunciation English speakers normally associate with X, but with a /k/). The characters T, E, X in the name come from capital Greek letters tau, epsilon, and chi, as the name of {\TeX} derives from the Greek: $\tau\varepsilon\chi\nu\eta$ (skill, art, technique, precision); for this reason, Donald E. Knuth promotes a pronunciation of /t$\varepsilon$k/ (tekh) (that is, with a voiceless velar fricative as in Modern Greek, similar to the last sound of the German word ``Bach", the Spanish ``j" sound, or as ``ch'' in a Scottish `loch'). 
+
+		%F\"{u}hrer
+		\subsubsection*{Figure B2: Don. Knuth's Computer Modern Unicode (CMU) Font Family}
+
+		\begin{table}[h]
+			\scriptsize
+			\renewcommand{\arraystretch}{1.25}
+		\begin{center}
+			\begin{tabular}{p{4cm}p{4cm}p{4cm}}
+			\hline
+			\multicolumn{1}{c}{\textbf{Serif}} & \multicolumn{1}{c}{\textbf{Sans Serif}} & \multicolumn{1}{c}{\textbf{Monospaced}}\\
+			\hline
+			CMU Serif Roman & \textsf{CMU Sans Serif} & \texttt{CMU Concrete}\\
+			\textbf{CMU Serif Bold} & \sffamily \textbf{CMU Sans Serif Bold} & \\ 
+				\textit{CMU Serif Italic} & & \ttfamily \textit{CMU Concrete Italic}\\
+			\textsl{CMU Serif Oblique} & \sffamily \textsl{CMU Sans Serif Oblique} & \ttfamily \textsl{CMU Concrete Oblique}\\
+				\textsc{CMU Serif Small Caps} & & \ttfamily \textsc{CMU Concrete Small Caps}\\
+			\hline
+				\multicolumn{3}{p{13cm}}{\textit{In the presence of traditionalists, a suitable alternative to Donald E. Knuth's Computer Modern Unicode font family may be considered: Andale Mono.}}\\
+			\hline
+		\end{tabular}
+		\end{center}
+		\end{table}
+
+		\subsubsection*{Figure B3: Why My Pre-Title’s Right and You’re Wrong}
+
+		I have received numerous comments which anyone would regard na\"{i}ve and under-educated regarding my pre-title of this study: \textit{AG436 Dissertation Coursework Assignment}. The argument originates in the `Coursework Assignment’ portion. People argue that a dissertation `is not’/`does not have’ an assignment. Not only is this poor characteristic recognition, it is semantically wrong. \textit{AG436: Dissertation} is a class just like any other. However under this class, there are no lectures, no tutorials and therefore no exams as there is no [taught] content. Do not confuse this with the class `having no content’ though. AG436’s content is apparent through literature of the student’s choice. Therefore, it is possible for a `coursework assignment’ to be based on this. Hence, any further comments are null.
+
+\newpage
+
+	\renewcommand\refname{Bibliography}
+
+	\fancyhead[L]{\leftmark}
+
+	\begin{thebibliography}{9}
+
+	\bibitem{a}
+		Abraham, A., Ikenberry, D. L. (1994).
+		\textsl{The Individual Investor and the Weekend Effect.}
+		Journal of Financial and Quantitative Analysis. Volume 29. Issue 2. Pages 263-277.
+	
+	\bibitem{b}
+		Investopedia. (2020).
+		\textsl{What’s the Most Expensive Stock of All Time?}
+		Available At:
+		\texttt{https://www.investopedia.com/ask/answers/081314/whats- most-expensive-stock-all-time.asp.}
+		(Accessed: 08/10/2020).
+
+	\end{thebibliography}
+
+\end{document}

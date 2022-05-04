@@ -21,13 +21,4 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
     });
 
-    document.querySelector("#cyclingDrop").addEventListener("click", e => {
-        e.preventDefault();
-        if (pagesCycling.classList.contains("hidden")) {
-            pagesCycling.classList.remove("hidden");
-        } else {
-	    pagesCycling.classList.add("hidden");
-	}
-    });
-
 });
