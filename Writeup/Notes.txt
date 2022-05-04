@@ -158,9 +158,3 @@ Boots - Types
         - Rigid boots with stirdy ankle, heel and sole support. Designed for Alpine hiking and climbing. Also suitable for ice climbing. Often made from tough leather or plastic and do not gener
 ally bend. Usually have enforced soles and toe caps. Often equipped with more advanced insulation
         - [C1], [C2], [C3]
-
-Rock
-
-Rock - Rock Face
-
-Rock - Boulder Fields

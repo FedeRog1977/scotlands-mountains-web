@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.2.1)  4 MAY 2022 13:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.2.1)  4 MAY 2022 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -776,7 +776,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
@@ -789,6 +819,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -835,9 +899,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9]
+
 LaTeX Font Warning: Font shape `TS1/cmr/m/sc' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textcopyright' on input line 372.
+(Font)              for symbol `textcopyright' on input line 398.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -847,20 +920,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 411.
+[10]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 437.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 411.
+(Font)              size <5> substituted on input line 437.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 411.
+(Font)              size <5> substituted on input line 437.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 411.
+(Font)              size <5> substituted on input line 437.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -883,13 +956,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-Underfull \hbox (badness 5893) in paragraph at lines 456--461
+Underfull \hbox (badness 5893) in paragraph at lines 482--487
 []\OT1/cmr/m/n/10.95 Investopedia. (2020). \OT1/cmr/m/sl/10.95 What's the Most 
 Ex-pen-sive Stock of All Time?
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 456--461
+Underfull \hbox (badness 2680) in paragraph at lines 482--487
 \OT1/cmr/m/n/10.95 Avail-able At: \OT1/cmtt/m/n/10.95 https://www.investopedia.
 com/ask/answers/081314/whats-
  []
@@ -911,12 +984,12 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Writeup_Lewis_Britton.out' has not changed.
-(rerunfilecheck)             Checksum: 78194FD44D5BA14B0FA0A1DAFCCE35B1;11486.
+(rerunfilecheck)             Checksum: 5721B8E18EABEF818364B164A0D194BB;11496.
  ) 
 Here is how much of TeX's memory you used:
- 14900 strings out of 478353
- 237529 string characters out of 5854636
- 635938 words of memory out of 5000000
+ 14901 strings out of 478353
+ 237546 string characters out of 5854636
+ 635942 words of memory out of 5000000
  32705 multiletter control sequences out of 15000+600000
  421501 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -940,10 +1013,10 @@ fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm
 1095.pfb></usr/share/texmf-dist/fonts/type1/public/tipa/tipa10.pfb>
-Output written on Writeup_Lewis_Britton.pdf (22 pages, 285919 bytes).
+Output written on Writeup_Lewis_Britton.pdf (23 pages, 288132 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 510 compressed objects within 6 object streams
- 94 named destinations out of 1000 (max. 500000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 95 named destinations out of 1000 (max. 500000)
  545 words of extra memory for PDF output out of 10000 (max. 10000000)
 
