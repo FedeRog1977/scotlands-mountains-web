@@ -56,7 +56,8 @@ h3 {
 
 body {
 	background-color: var(--bg);
-	margin: 0em;
+	margin: 0;
+	padding: 0;
 }
 
 b {
@@ -507,13 +508,11 @@ table {
 /* Conquest Map */
 
 #map {
-	display: block;
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 1275px;
-	height: 750px;
-	border: 1px solid var(--font);
+	width: 100%;
+	z-index: -1;
 }
 
         @media only screen and (max-width: 1026px) {
@@ -522,6 +521,23 @@ table {
 			height: 100%;
                 }
         }
+
+#menu {
+        font-family: Garamond-Serif;
+        position: absolute;
+        background: #fff;
+	border-radius: 0 0 0.5em 0.5em;
+	z-index: 1;
+	margin: 0 0 0 3.4em;
+        padding: 10px;
+    }
+    #menu input[type="radio"] {
+        margin-top: -1px;
+        vertical-align: middle;
+    }
+    #menu label {
+        margin-right: 8px;
+    }
 
 	
 
