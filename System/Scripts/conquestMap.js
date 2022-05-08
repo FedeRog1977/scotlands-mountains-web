@@ -22,7 +22,7 @@ var mapOptions = {
     crs: crs,
     minZoom: 0,
     maxZoom: 9,
-    center: [56.653921,-5.171510], // OS National Grid: 205685, 755842
+    center: [56.6539,-5.1715], // OS National Grid: 205685, 755842
     zoom: 6,
     maxBounds: [
         transformCoords([-238375,0]),
