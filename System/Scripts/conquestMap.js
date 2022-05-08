@@ -70,14 +70,33 @@ var mountainIcon = new L.Icon({
     iconSize: [30, 36],
 });
 
-function createMarker(hillid,hill,elev,lat,lon,icontype) {
+function createMarker(hill,elev,lat,lon,icontype) {
     var marker = [];
-    var popup = hill + '<br>' + elev + 'ft'
-    marker[hillid] = new L.marker([lat,lon],{icon:icontype}).addTo(map).bindPopup(popup);
+    var popup = hill + '<br>' + elev + 'ft<br>' + lat + ', ' + lon;
+    marker[hill] = new L.marker([lat,lon],{icon:icontype}).addTo(map).bindPopup(popup);
         return marker;
 }
 
-createMarker('1','Sg&ograve;rr Dearg',3359,56.6539,-5.1715,mountainIcon);
+let locations = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json';
+
+fetch(locations)
+    .then((resp) => {
+        return resp.json();
+    })
+    .then((data) => {
+        const hills = data;
+        for (var i = 0; i < hills.landmass.length; i++) {
+            for (var k = 0; k < hills.landmass[i].munro.length; k++) {
+                createMarker(
+		    hills.landmass[i].munro[k].name,
+		    hills.landmass[i].munro[k].elevation,
+		    hills.landmass[i].munro[k].lat,
+		    hills.landmass[i].munro[k].lon,
+		    mountainIcon
+		);
+            }
+        }
+    })
 
 // Testing Transform Coords
 
