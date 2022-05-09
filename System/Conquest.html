@@ -22,7 +22,7 @@
 	<div class="header">
                 <div class="title">
                         <img src="./Photos/Logo.png" style="max-width:250px;"></img>
-                        <h1>Drafting Room</h1>
+                        <h1>Conquest Map</h1>
                 </div>
                 <div class="navigation">
                         <div class="pages-desktop">
@@ -65,20 +65,39 @@
 	https://registry.gsg.org.uk/sr/registrysearch.php
 	-->
 
-		<div id="test" style="background-color:white;font-family:Garamond-Serif;text-align:center;"></div>
 		<div id="map"></div>
-		<div id="menu">
-    			<input id="leisure" type="radio" name="toggle" value="Leisure" checked="checked">
-    			<label for="leisure">Leisure</label>
-    			<input id="road" type="radio" name="toggle" value="Road">
-    			<label for="road">Road</label>
-    			<input id="outdoor" type="radio" name="toggle" value="Outdoor">
-    			<label for="outdoor">Outdoor</label>
+		<div id="scope"></div>
+
+		<div class="options-container">
+			<div id="menu">
+    				<input id="leisure" type="radio" name="toggle" value="Leisure" checked="checked">
+    				<label for="leisure">Leisure</label>
+    				<input id="road" type="radio" name="toggle" value="Road">
+    				<label for="road">Road</label>
+    				<input id="outdoor" type="radio" name="toggle" value="Outdoor">
+    				<label for="outdoor">Outdoor</label>
+			</div>
+			<div id="optionsOpt">
+				<div id="optionsOptOpen">
+					<a onclick="openOptions()"><i class="fas fa-angle-double-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="options">
+			<a id="optionsOptClose" onclick="closeOptions()">&times;</a>
+			<div id="optionsCont">
+				<h1>Hill Options</h1>
+				<a href="#" id="optionsShowMunros" onclick="showMunros()"><i class="fas fa-mountain"></i> Show Munros</a>
+				<a href="#" id="optionsShowMunros" onclick="showMunroTops()"><i class="fas fa-mountain"></i> Show Munro Tops</a>
+				<a href="#" id="optionsShowMunros" onclick="showCorbetts()"><i class="fas fa-mountain"></i> Show Corbetts</a>
+				<a href="#" id="optionsShowMunros" onclick="showCorbettTops()"><i class="fas fa-mountain"></i> Show Corbett Tops</a>
+			</div>
 		</div>
 
 </body>
 
-	<script src="Scripts/Drop.js"></script>
+	<script src="./Scripts/Drop.js"></script>
 	<script src="./Scripts/conquestMap.js"></script>
 
 </html>

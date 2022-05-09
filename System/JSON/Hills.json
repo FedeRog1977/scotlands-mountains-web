@@ -1584,7 +1584,7 @@
                     "name": "Ben Cruachan",
                     "lat": 56.4267,
                     "lon": -5.1319,
-                    "OS-grid": "NN069304",
+                    "OSgrid": "NN069304",
                     "elevation": 3694,
                     "prominence": 2884,
                     "isolation": 12.43,
@@ -1594,7 +1594,7 @@
                     "name": "Stob Daimh",
                     "lat": 56.4312,
                     "lon": -5.0913,
-                    "OS-grid": "NN094308",
+                    "OSgrid": "NN094308",
                     "elevation": 3274,
                     "prominence": 436,
                     "isolation": 0.71,
@@ -1604,7 +1604,7 @@
                     "name": "Beinn Eunaich",
                     "lat": 56.4503,
                     "lon": -5.0266,
-                    "OS-grid": "NN135327",
+                    "OSgrid": "NN135327",
                     "elevation": 3245,
                     "prominence": 1395,
                     "isolation": 2.81,
@@ -1614,19 +1614,19 @@
                     "name": "Beinn a&rsquo; Chochuill",
                     "lat": 56.4497,
                     "lon": -5.0685,
-                    "OS-grid": "NN109328",
+                    "OSgrid": "NN109328",
                     "elevation": 3215,
                     "prominence": 827,
                     "isolation": 1.53,
                     "trig": null
                 }
             ],
-            "munro-top": [
+            "munrotop": [
                 {
                     "name": "Stob Dearg",
                     "lat": 56.4289,
                     "lon": -5.1437,
-                    "OS-grid": "NN062307",
+                    "OSgrid": "NN062307",
                     "elevation": 3619,
                     "prominence": 318,
                     "isolation": 0.48,
@@ -1636,7 +1636,7 @@
                     "name": "Drochaid Ghlas",
                     "lat": 56.4300,
                     "lon": -5.109844,
-                    "OS-grid": "NN083307",
+                    "OSgrid": "NN083307",
                     "elevation": 3360,
                     "prominence": 299,
                     "isolation": 0.67,
@@ -1646,7 +1646,7 @@
                     "name": "Stob Garbh",
                     "lat": 56.4258,
                     "lon": -5.0896,
-                    "OS-grid": "NN095302",
+                    "OSgrid": "NN095302",
                     "elevation": 3222,
                     "prominence": 171,
                     "isolation": 0.38,
@@ -1656,7 +1656,7 @@
                     "name": "Sron An Isean",
                     "lat": 56.4340,
                     "lon": -5.0842,
-                    "OS-grid": "NN099311",
+                    "OSgrid": "NN099311",
                     "elevation": 3173,
                     "prominence": 181,
                     "isolation": 0.33,
@@ -1666,7 +1666,7 @@
                     "name": "Meall Cuanail",
                     "lat": 56.4186,
                     "lon": -5.1309,
-                    "OS-grid": "NN069295",
+                    "OSgrid": "NN069295",
                     "elevation": 3018,
                     "prominence": 308,
                     "isolation": 0.32,
@@ -1678,14 +1678,14 @@
                     "name": "Beinn a&rsquo; Bhuiridh",
                     "lat": 56.4089,
                     "lon": -5.090,
-                    "OS-grid": "NN094283",
+                    "OSgrid": "NN094283",
                     "elevation": 2943,
                     "prominence": 555,
                     "isolation": 0.89,
                     "trig": null
                 }
 	    ],
-            "corbett-top": [],
+            "corbetttop": [],
             "corrie": [
 		{
                     "name": "Coire Glas"
@@ -1745,13 +1745,13 @@
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Whaleback",
             "munro": [],
-            "munro-top": [],
+            "munrotop": [],
             "corbett": [
                 {
                     "name": "Beinn Udlaidh",
                     "lat": 56.4588,
                     "lon": -4.7919,
-                    "OS-grid": "NN280332",
+                    "OSgrid": "NN280332",
                     "elevation": 2756,
                     "prominence": 1713,
                     "isolation": 2.34,
@@ -1761,14 +1761,14 @@
                     "name": "Beinn Bhreac-liath",
                     "lat": 56.4667,
                     "lon": -4.7565,
-                    "OS-grid": "NN302339",
+                    "OSgrid": "NN302339",
                     "elevation": 2631,
                     "prominence": 705,
                     "isolation": 1.35,
                     "trig": null
                 }
 	    ],
-            "corbett-top": [],
+            "corbetttop": [],
             "corrie": [
 		{
 		    "name": "Coire Sheileach"
@@ -1805,20 +1805,20 @@
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Ridge",
             "munro": [],
-            "munro-top": [],
+            "munrotop": [],
             "corbett": [
                 {
                     "name": "Beinn Mhic-Mhonaidh",
                     "lat": 56.4730,
                     "lon": -4.9097,
-                    "OS-grid": "NN208350",
+                    "OSgrid": "NN208350",
                     "elevation": 2612,
                     "prominence": 1378,
                     "isolation": 3.96,
                     "trig": null
                 }
 	    ],
-            "corbett-top": [],
+            "corbetttop": [],
             "corrie": [
 		{
 		    "name": "Coire Chailleach"
@@ -1846,20 +1846,20 @@
             "sub-type": "Stand-Alone",
             "sub-sub-type": null,
             "munro": [],
-            "munro-top": [],
+            "munrotop": [],
             "corbett": [
                 {
                     "name": "Creach Bheinn (Loch Creran)",
                     "lat": 56.5304,
                     "lon": -5.2150,
-                    "OS-grid": "NN023422",
+                    "OSgrid": "NN023422",
                     "elevation": 2657,
                     "prominence": 803,
                     "isolation": 1.85,
                     "trig": "Pillar (Round)"
                 }
 	    ],
-            "corbett-top": [],
+            "corbetttop": [],
             "corrie": [
                 {
                     "name": "Coire Creach Bheinn"
@@ -1897,7 +1897,7 @@
                     "name": "Ben Starav",
                     "lat": 56.5389,
                     "lon": -5.0497,
-                    "OS-grid": "NN125427",
+                    "OSgrid": "NN125427",
                     "elevation": 3537,
                     "prominence": 1464,
                     "isolation": 6.71,
@@ -1907,7 +1907,7 @@
                     "name": "Stob Coir&rsquo;an Albannaich",
                     "lat": 56.5549,
                     "lon":  -4.9798,
-                    "OS-grid": "NN169443",
+                    "OSgrid": "NN169443",
                     "elevation": 3425,
                     "prominence": 1004,
                     "isolation": 2.8,
@@ -1917,7 +1917,7 @@
                     "name": "Glas Bheinn Mh&ograve;r",
                     "lat": 56.5424,
                     "lon": -5.0052,
-                    "OS-grid": "NN153429",
+                    "OSgrid": "NN153429",
                     "elevation": 3271,
                     "prominence": 758,
                     "isolation": 1.21,
@@ -1927,7 +1927,7 @@
                     "name": "Beinn nan Aighenan",
                     "lat": 56.5202,
                     "lon": -5.0112,
-                    "OS-grid": "NN148405",
+                    "OSgrid": "NN148405",
                     "elevation": 3150,
                     "prominence": 1126,
                     "isolation": 1.5,
@@ -1937,19 +1937,19 @@
                     "name": "Meall nan Eun",
                     "lat": 56.5611,
                     "lon": -4.9429,
-                    "OS-grid": "NN192449",
+                    "OSgrid": "NN192449",
                     "elevation": 3045,
                     "prominence": 571,
                     "isolation": 1.21,
                     "trig": null
                 }
             ],
-            "munro-top": [
+            "munrotop": [
                 {
                     "name": "Stob Coire Dheirg",
                     "lat": 56.5387,
                     "lon": -5.0406,
-                    "OS-grid": "NN131426",
+                    "OSgrid": "NN131426",
                     "elevation": 3373,
                     "prominence": 43,
                     "isolation": 0.19,
@@ -1959,7 +1959,7 @@
                     "name": "Meall Cruidh",
                     "lat": 56.5287,
                     "lon": -5.0434,
-                    "OS-grid": "NN129415",
+                    "OSgrid": "NN129415",
                     "elevation": 3051,
                     "prominence": 115,
                     "isolation": 0.32,
@@ -1969,7 +1969,7 @@
                     "name": "Stob an Duine Ruaidh",
                     "lat": 56.5234,
                     "lon": -5.0503,
-                    "OS-grid": "NN124409",
+                    "OSgrid": "NN124409",
                     "elevation": 3012,
                     "prominence": 217,
                     "isolation": 0.43,
@@ -1977,12 +1977,12 @@
                 }
 	    ],
             "corbett": [],
-            "corbett-top": [
+            "corbetttop": [
                 {
                     "name": "Meall nan Tri Tighearnan",
                     "lat": 56.5383,
                     "lon": -5.0177,
-                    "OS-grid": "NN145425",
+                    "OSgrid": "NN145425",
                     "elevation": 2927,
                     "prominence": 230,
                     "isolation": 0.38,
@@ -1992,7 +1992,7 @@
                     "name": "Meall Tarsuinn",
                     "lat": 56.5607,
                     "lon": -4.9644,
-                    "OS-grid": "NN179449",
+                    "OSgrid": "NN179449",
                     "elevation": 2877,
                     "prominence": 302,
                     "isolation": 0.48,
@@ -2122,25 +2122,25 @@
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Whaleback",
             "munro": [],
-            "munro-top": [],
+            "munrotop": [],
             "corbett": [
                 {
                     "name": "Beinn Trilleachan",
                     "lat": 56.5479,
                     "lon": -5.1144,
-                    "OS-grid": "NN086439",
+                    "OSgrid": "NN086439",
                     "elevation": 2756,
                     "prominence": 1568,
                     "isolation": 2.23,
                     "trig": null
                 }
 	    ],
-            "corbett-top": [
+            "corbetttop": [
                 {
                     "name": "Beinn Trilleachan North-East Top",
                     "lat": 56.5554,
                     "lon": -5.0995,
-                    "OS-grid": null,
+                    "OSgrid": null,
                     "elevation": 2516,
                     "prominence": 242,
                     "isolation": 0.59,
@@ -2184,7 +2184,7 @@
 		    "name": "Meall a&rsquo; Bhuiridh",
                     "lat": 56.6122,
                     "lon": -4.8520,
-	            "OS-grid": "NN250503",
+	            "OSgrid": "NN250503",
 	            "elevation": 3635,
 	            "prominence": 2608,
 		    "isolation": 6.95,
@@ -2194,7 +2194,7 @@
 		    "name": "Creise",
                     "lat": 56.6144,
                     "lon": -4.8719,
-	            "OS-grid": "NN238506",
+	            "OSgrid": "NN238506",
 	            "elevation": 3606,
 	            "prominence": 555,
 		    "isolation": 0.76,
@@ -2204,7 +2204,7 @@
 		    "name": "Stob Ghabhar",
                     "lat": 56.5680,
                     "lon": -4.8821,
-	            "OS-grid": "NN230455",
+	            "OSgrid": "NN230455",
 	            "elevation": 3576,
 	            "prominence": 1289,
 		    "isolation": 2.44,
@@ -2214,19 +2214,19 @@
 		    "name": "Stob a&rsquo; Choire Odhair",
                     "lat": 56.5733,
                     "lon": -4.8382,
-	            "OS-grid": "NN257459",
+	            "OSgrid": "NN257459",
 	            "elevation": 3100,
 	            "prominence": 908,
 		    "isolation": 1.28,
 		    "trig": null
 		}
 	    ],
-	    "munro-top": [
+	    "munrotop": [
 		{
 		    "name": "Clach Leathad",
                     "lat": 56.6026,
                     "lon": -4.8681,
-	            "OS-grid": "NN240493",
+	            "OSgrid": "NN240493",
 	            "elevation": 3606,
 	            "prominence": 223,
 		    "isolation": 0.9,
@@ -2236,7 +2236,7 @@
 		    "name": "Mam Coire Easain",
                     "lat": 56.6088,
                     "lon": -4.8710,
-	            "OS-grid": "NN238500",
+	            "OSgrid": "NN238500",
 	            "elevation": 3510,
 	            "prominence": 26,
 		    "isolation": null,
@@ -2246,7 +2246,7 @@
 		    "name": "Stob a&rsquo; Ghlais Choire",
                     "lat": 56.6232,
                     "lon": -4.8703,
-	            "OS-grid": "NN239516",
+	            "OSgrid": "NN239516",
 	            "elevation": 3268,
 	            "prominence": 89,
 		    "isolation": 0.28,
@@ -2256,7 +2256,7 @@
 		    "name": "Aonach Eagach",
                     "lat": 56.5666,
                     "lon": -4.8708,
-	            "OS-grid": "NN235453",
+	            "OSgrid": "NN235453",
 	            "elevation": 3251,
 	            "prominence": null,
 		    "isolation": null,
@@ -2266,7 +2266,7 @@
 		    "name": "Sron a&rsquo; Ghearrain",
                     "lat": 56.56906,
                     "lon": -4.8970,
-	            "OS-grid": "NN221456",
+	            "OSgrid": "NN221456",
 	            "elevation": 3248,
 	            "prominence": 46,
 		    "isolation": 0.37,
@@ -2276,7 +2276,7 @@
 		    "name": "Sron nan Giubhas",
                     "lat": 56.5746,
                     "lon": -4.8820,
-	            "OS-grid": "NN230461",
+	            "OSgrid": "NN230461",
 	            "elevation": 3202,
 	            "prominence": null,
 		    "isolation": null,
@@ -2286,7 +2286,7 @@
 		    "name": "Stob a&rsquo; Bhruaich Leith",
                     "lat": 56.5715,
                     "lon": -4.9174,
-	            "OS-grid": "NN208459",
+	            "OSgrid": "NN208459",
 	            "elevation": 3087,
 	            "prominence": 138,
 		    "isolation": 0.51,
@@ -2298,19 +2298,19 @@
 		    "name": "Beinn Mhic Chasgaig",
                     "lat": 56.6100,
                     "lon": -4.8994,
-	            "OS-grid": "NN221502",
+	            "OSgrid": "NN221502",
 	            "elevation": 2835,
 	            "prominence": 545,
 		    "isolation": 0.55,
 		    "trig": null
 		}
 	    ],
-	    "corbett-top": [
+	    "corbetttop": [
 		{
 		    "name": "Beinn Toaig",
                     "lat": 56.5694,
                     "lon": -4.8302,
-	            "OS-grid": "NN262455",
+	            "OSgrid": "NN262455",
 	            "elevation": 2736,
 	            "prominence": null,
 		    "isolation": null,
@@ -2408,21 +2408,21 @@
                     "name": "Beinn Sgulaird",
                     "lat": 56.5662,
                     "lon":  -5.1703,
-                    "OS-grid": "NN053460",
+                    "OSgrid": "NN053460",
                     "elevation": 3074,
                     "prominence": 2172,
                     "isolation": 3.43,
                     "trig": null
                 }
             ],
-            "munro-top": [],
+            "munrotop": [],
             "corbett": [],
-            "corbett-top": [
+            "corbetttop": [
                 {
                     "name": "Beinn Sgulaird South Top",
                     "lat": 56.5543,
                     "lon": -5.1859,
-                    "OS-grid": "NN042448",
+                    "OSgrid": "NN042448",
                     "elevation": 2831,
                     "prominence": 256,
                     "isolation": 1.02,
@@ -2432,7 +2432,7 @@
                     "name": "Meall Garbh",
                     "lat": 56.5583,
                     "lon": -5.1781,
-                    "OS-grid": "NN167367",
+                    "OSgrid": "NN167367",
                     "elevation": 2782,
                     "prominence": 197,
                     "isolation": 0.41,
@@ -2472,20 +2472,20 @@
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Ridge",
             "munro": [],
-            "munro-top": [],
+            "munrotop": [],
             "corbett": [
                 {
                     "name": "Fraochaidh",
                     "lat": 56.6156,
                     "lon": -5.2137,
-                    "OS-grid": "NN029517",
+                    "OSgrid": "NN029517",
                     "elevation": 2884,
                     "prominence": 1808,
                     "isolation": 2.16,
                     "trig": null
                 }
 	    ],
-            "corbett-top": [],
+            "corbetttop": [],
             "corrie": [
                 {
                     "name": "Coire Mulrooney"
@@ -2532,21 +2532,21 @@
                     "name": "Beinn Fhionnlaidh",
                     "lat": 56.6010,
                     "lon": -5.1049,
-                    "OS-grid": "NN095497",
+                    "OSgrid": "NN095497",
                     "elevation": 3146,
                     "prominence": 1673,
                     "isolation": 1.55,
                     "trig": "Pillar (Round)"
                 }
             ],
-            "munro-top": [],
+            "munrotop": [],
             "corbett": [],
-            "corbett-top": [
+            "corbetttop": [
                 {
                     "name": "Beinn Fhionnlaidh East Top",
                     "lat": 56.6016,
                     "lon": -5.0854,
-                    "OS-grid": "NN106497",
+                    "OSgrid": "NN106497",
                     "elevation": 2759,
                     "prominence": 151,
                     "isolation": null,
@@ -2599,19 +2599,19 @@
                     "name": "Sg&ograve;r na h-Ulaidh",
                     "lat": 56.6198,
                     "lon": -5.0800,
-                    "OS-grid": "NN111517",
+                    "OSgrid": "NN111517",
                     "elevation": 3261,
                     "prominence": 1361,
                     "isolation": 1361,
                     "trig": null
                 }
             ],
-            "munro-top": [
+            "munrotop": [
                 {
                     "name": "Stob an Fhuarain",
                     "lat": 56.6247,
                     "lon": -5.0690,
-                    "OS-grid": "NN118523",
+                    "OSgrid": "NN118523",
                     "elevation": 3176,
                     "prominence": 338,
                     "isolation": 0.53,
@@ -2623,19 +2623,19 @@
                     "name": "Meall Lighiche",
                     "lat": 56.6284,
                     "lon": -5.1074,
-                    "OS-grid": "NN097528",
+                    "OSgrid": "NN097528",
                     "elevation": 2533,
                     "prominence": 811,
                     "isolation": 0.87,
                     "trig": null
                 }
 	    ],
-            "corbett-top": [
+            "corbetttop": [
                 {
                     "name": "Aonach Dubh a&rsquo; Ghlinne",
                     "lat": 56.6336,
                     "lon": -5.0667,
-                    "OS-grid": "NN119534",
+                    "OSgrid": "NN119534",
                     "elevation": 2772,
                     "prominence": 154,
                     "isolation": 0.43,
@@ -2678,25 +2678,25 @@
 	    "sub-type": "Stand-Alone",
 	    "sub-sub-type": "Mound",
 	    "munro": [],
-	    "munro-top": [],
+	    "munrotop": [],
 	    "corbett": [
 		{
 		    "name": "Stob Dubh",
                     "lat": 56.5954,
                     "lon": -4.9881,
-	            "OS-grid": "NN166488",
+	            "OSgrid": "NN166488",
 	            "elevation": 2897,
 	            "prominence": 1709,
 		    "isolation": 2.4,
 		    "trig": null
 		}
 	    ],
-	    "corbett-top": [
+	    "corbetttop": [
 		{
 		    "name": "Beinn Ceitlein",
                     "lat": null,
                     "lon": null,
-	            "OS-grid": "NN173488",
+	            "OSgrid": "NN173488",
 	            "elevation": 2772,
 	            "prominence": null,
 		    "isolation": null,
@@ -2706,7 +2706,7 @@
 		    "name": "Beinn Ceitlein North Top",
                     "lat": null,
                     "lon": null,
-	            "OS-grid": "NN177492",
+	            "OSgrid": "NN177492",
 	            "elevation": 2736,
 	            "prominence": null,
 		    "isolation": null,
@@ -2716,7 +2716,7 @@
 		    "name": "Beinn Ceitlein NE Ridge Top (i)",
                     "lat": null,
                     "lon": null,
-	            "OS-grid": "NN177494",
+	            "OSgrid": "NN177494",
 	            "elevation": 2624,
 	            "prominence": null,
 		    "isolation": null,
@@ -2726,7 +2726,7 @@
 		    "name": "Beinn Ceitlein NE Ridge Top (ii)",
                     "lat": null,
                     "lon": null,
-	            "OS-grid": "NN178496",
+	            "OSgrid": "NN178496",
 	            "elevation": 2624,
 	            "prominence": null,
 		    "isolation": null,
@@ -2773,7 +2773,7 @@
 		    "name": "Stob Dearg",
                     "lat": 56.6462,
                     "lon": -4.9003,
-	            "OS-grid": "NN222542",
+	            "OSgrid": "NN222542",
 	            "elevation": 3351,
 	            "prominence": 1746,
 		    "isolation": 2.48,
@@ -2783,19 +2783,19 @@
 		    "name": "Stob na Broige",
                     "lat": 56.6298,
                     "lon": -4.9511,
-	            "OS-grid": "NN190525",
+	            "OSgrid": "NN190525",
 	            "elevation": 3136,
 	            "prominence": 439,
 		    "isolation": 0.94,
 		    "trig": null
 		}
 	    ],
-	    "munro-top": [
+	    "munrotop": [
 		{
 		    "name": "Stob na Doire",
                     "lat": 56.6367,
                     "lon": -4.9242,
-	            "OS-grid": "NN207532",
+	            "OSgrid": "NN207532",
 	            "elevation": 3317,
 	            "prominence": 473,
 		    "isolation": 1.11,
@@ -2805,7 +2805,7 @@
 		    "name": "Stob Coire Altruim",
                     "lat": 56.6347,
                     "lon": -4.9397,
-	            "OS-grid": "NN197530",
+	            "OSgrid": "NN197530",
 	            "elevation": 3081,
 	            "prominence": 115,
 		    "isolation": 0.54,
@@ -2813,12 +2813,12 @@
 		}
 	    ],
 	    "corbett": [],
-	    "corbett-top": [
+	    "corbetttop": [
 		{
 		    "name": "Stob Coire na Tulaich",
                     "lat": 56.6455,
                     "lon": -4.9149,
-	            "OS-grid": "NN213542",
+	            "OSgrid": "NN213542",
 	            "elevation": 2959,
 	            "prominence": 95,
 		    "isolation": 0.29,
@@ -2865,7 +2865,7 @@
 		    "name": "Stob Dubh",
                     "lat": 56.6381,
                     "lon": -4.9708,
-	            "OS-grid": "NN179535",
+	            "OSgrid": "NN179535",
 	            "elevation": 3143,
 	            "prominence": 1539,
 		    "isolation": 1.34,
@@ -2875,21 +2875,21 @@
 		    "name": "Stob Coire Raineach",
                     "lat": 56.6499,
                     "lon": -4.9516,
-	            "OS-grid": "NN191547",
+	            "OSgrid": "NN191547",
 	            "elevation": 3035,
 	            "prominence": 581,
 		    "isolation": 1.09,
 		    "trig": null
 		}
 	    ],
-	    "munro-top": [],
+	    "munrotop": [],
 	    "corbett": [],
-	    "corbett-top": [
+	    "corbetttop": [
 		{
 		    "name": "Stob Dubh North Top",
                     "lat": 56.6439,
                     "lon": -4.9625,
-	            "OS-grid": "NN184541",
+	            "OSgrid": "NN184541",
 	            "elevation": 2959,
 	            "prominence": 72,
 		    "isolation": 0.48,
@@ -2927,7 +2927,7 @@
 		    "name": "Bidean nam Bian",
                     "lat": 56.6413,
                     "lon": -5.0271,
-	            "OS-grid": "NN143542",
+	            "OSgrid": "NN143542",
 	            "elevation": 3772,
 	            "prominence": 2772,
 		    "isolation": 10.49,
@@ -2937,19 +2937,19 @@
 		    "name": "Stob Coire Sgreamhach",
                     "lat": 56.6382,
                     "lon": -5.0106,
-	            "OS-grid": "NN155536",
+	            "OSgrid": "NN155536",
 	            "elevation": 3517,
 	            "prominence": 419,
 		    "isolation": 0.64,
 		    "trig": null
 		}
 	    ],
-	    "munro-top": [ 
+	    "munrotop": [ 
 		{
 		    "name": "Bidean nam Bian West Top",
                     "lat": 56.6430,
                     "lon": -5.0327,
-	            "OS-grid": "NN141542",
+	            "OSgrid": "NN141542",
 	            "elevation": 3743,
 	            "prominence": null,
 		    "isolation": null,
@@ -2959,7 +2959,7 @@
 		    "name": "Stob Coire nan Lochan",
                     "lat": 56.6488,
                     "lon": -5.0218,
-	            "OS-grid": "NN148548",
+	            "OSgrid": "NN148548",
 	            "elevation": 3278,
 	            "prominence": 380,
 		    "isolation": 0.5,
@@ -2969,7 +2969,7 @@
 		    "name": "Stob Coire nam Beith",
                     "lat": 56.6452,
                     "lon": -5.0367,
-	            "OS-grid": "NN138546",
+	            "OSgrid": "NN138546",
 	            "elevation": 3632,
 	            "prominence": 105,
 		    "isolation": 0.19,
@@ -2979,7 +2979,7 @@
 		    "name": "Beinn Fhada",
                     "lat": 56.6420,
                     "lon": -5.0027,
-	            "OS-grid": "NN159540",
+	            "OSgrid": "NN159540",
 	            "elevation": 3123,
 	            "prominence": 164,
 		    "isolation": 0.29,
@@ -2989,7 +2989,7 @@
 		    "name": "Beinn Fhada NE Top",
                     "lat": 56.6445,
                     "lon": -4.9954,
-	            "OS-grid": "NN164543",
+	            "OSgrid": "NN164543",
 	            "elevation": 3054,
 	            "prominence": 180,
 		    "isolation": 0.33,
@@ -3001,19 +3001,19 @@
 		    "name": "Beinn Maol Chaluim",
                     "lat": 56.6278,
                     "lon": -5.0419,
-	            "OS-grid": "NN134525",
+	            "OSgrid": "NN134525",
 	            "elevation": 2976,
 	            "prominence": 650,
 		    "isolation": 0.86,
 		    "trig": null
 		}
 	    ],
-	    "corbett-top": [
+	    "corbetttop": [
 		{
 		    "name": "Aonach Dubh",
                     "lat": 56.6576,
                     "lon": -5.0199,
-	            "OS-grid": "NN149558",
+	            "OSgrid": "NN149558",
 	            "elevation": 2920,
 	            "prominence": 115,
 		    "isolation": null,
@@ -3023,7 +3023,7 @@
 		    "name": "Beinn Fhada Far North Top",
                     "lat": 56.6499,
                     "lon": -4.9872,
-	            "OS-grid": "NN169550",
+	            "OSgrid": "NN169550",
 	            "elevation": 2700,
 	            "prominence": 131,
 		    "isolation": null,
@@ -3064,7 +3064,7 @@
                     "name": "Sgorr Dhearg",
                     "lat": 56.6540,
                     "lon": -5.1714,
-                    "OS-grid": "NN056558",
+                    "OSgrid": "NN056558",
                     "elevation": 3360,
                     "prominence": 2392,
                     "isolation": 5.07,
@@ -3074,19 +3074,19 @@
                     "name": "Sgorr Dhonuill",
                     "lat": 56.6504,
                     "lon": -5.1977,
-                    "OS-grid": "NN040555",
+                    "OSgrid": "NN040555",
                     "elevation": 3284,
                     "prominence": 800,
                     "isolation": 1.03,
                     "trig": null
 		}
             ],
-            "munro-top": [
+            "munrotop": [
                 {
                     "name": "Sgorr Bhan",
                     "lat": 56.6560,
                     "lon": -5.1621,
-                    "OS-grid": "NN062560",
+                    "OSgrid": "NN062560",
                     "elevation": 3107,
                     "prominence": 151,
                     "isolation": 0.33,
@@ -3094,7 +3094,7 @@
 		}
 	    ],
             "corbett": [],
-            "corbett-top": [],
+            "corbetttop": [],
             "corrie": [
 		{
 		    "name": "Coire Dearg"
@@ -3128,20 +3128,20 @@
             "sub-type": "Stand-Alone",
 	    "sub-sub-type": "Whaleback",
             "munro": [],
-            "munro-top": [],
+            "munrotop": [],
             "corbett": [
                 {
                     "name": "Beinn a&rsquo; Chrulaiste",
                     "lat": 56.66890,
                     "lon": -4.8635,
-                    "OS-grid": "NN246566",
+                    "OSgrid": "NN246566",
                     "elevation": 2812,
                     "prominence": 1523,
                     "isolation": 1.91,
 		    "trig": "Pillar (Round)"
                 }
 	    ],
-            "corbett-top": [],
+            "corbetttop": [],
             "corrie": [
 		{
 		    "name": "Coire Bhalach"
@@ -3182,7 +3182,7 @@
 		    "name": "Sg&ograve;rr nam Fiannaidh (Aonach Eagach)",
                     "lat": 56.6793,
                     "lon": -5.0371,
-	            "OS-grid": "NN140583",
+	            "OSgrid": "NN140583",
 	            "elevation": 3173,
 	            "prominence": 2041,
 		    "isolation": 1.92,
@@ -3192,19 +3192,19 @@
 		    "name": "Meall Dearg",
                     "lat": 56.6807,
                     "lon":  -5.0032,
-	            "OS-grid": "NN161583",
+	            "OSgrid": "NN161583",
 	            "elevation": 3123,
 	            "prominence": 393,
 		    "isolation": 1.29,
 		    "trig": null
 		}
 	    ],
-            "munro-top": [
+            "munrotop": [
 		{
 		    "name": "Am Bodach",
                     "lat": 56.6779,
                     "lon": -4.9914,
-	            "OS-grid": "NN168580",
+	            "OSgrid": "NN168580",
 	            "elevation": 3091,
 	            "prominence": 247,
 		    "isolation": 0.49,
@@ -3214,7 +3214,7 @@
 		    "name": "Stob Coire Leith",
                     "lat": 56.6813,
                     "lon":  -5.0227,
-	            "OS-grid": "NN149584",
+	            "OSgrid": "NN149584",
 	            "elevation": 3081,
 	            "prominence": 200,
 		    "isolation": 0.55,
@@ -3224,7 +3224,7 @@
 		    "name": "Meall Dearg East Top",
                     "lat": 56.6794,
                     "lon": -5.0005,
-	            "OS-grid": "NN162582",
+	            "OSgrid": "NN162582",
 	            "elevation": 3025,
 	            "prominence": null,
 		    "isolation": null,
@@ -3232,12 +3232,12 @@
 		}
 	    ],
             "corbett": [],
-            "corbett-top": [
+            "corbetttop": [
 		{
 		    "name": "Aonach Eagach East Peak",
                     "lat": 56.6798,
                     "lon": -5.0129,
-	            "OS-grid": "NN155582",
+	            "OSgrid": "NN155582",
 	            "elevation": 2976,
 	            "prominence": 109,
 		    "isolation": null,
@@ -3247,7 +3247,7 @@
 		    "name": "Aonach Eagach West Peak",
                     "lat": 56.6797,
                     "lon":  -5.0158,
-	            "OS-grid": "NN153582",
+	            "OSgrid": "NN153582",
 	            "elevation": 2969,
 	            "prominence": 105,
 		    "isolation": null,
@@ -3257,7 +3257,7 @@
 		    "name": "A&rsquo;Chailleach",
                     "lat": 56.6778,
                     "lon":  -4.9554,
-	            "OS-grid": "NN189579",
+	            "OSgrid": "NN189579",
 	            "elevation": 2963,
 	            "prominence": 470,
 		    "isolation": null,
@@ -3267,7 +3267,7 @@
 		    "name": "Sr&ograve;n Gharbh",
                     "lat": 56.6822,
                     "lon": -4.9766,
-	            "OS-grid": "NN177584",
+	            "OSgrid": "NN177584",
 	            "elevation": 2867,
 	            "prominence": 196,
 		    "isolation": null,
@@ -3277,7 +3277,7 @@
 		    "name": "Sron a&rsquo; Choire Odhair Bhig",
                     "lat": 56.6765,
                     "lon": -4.9413,
-	            "OS-grid": null,
+	            "OSgrid": null,
 	            "elevation": 2644,
 	            "prominence": 59,
 		    "isolation": null,

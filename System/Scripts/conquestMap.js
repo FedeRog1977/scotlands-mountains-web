@@ -1,7 +1,6 @@
 /*
  * API
  */
-
 var apiKey = 'VfSaBhJrLbr7vR7GLkAAGH02AZM6lzkP';
 var serviceUrl = 'https://api.os.uk/maps/raster/v1/zxy';
 
@@ -37,7 +36,6 @@ var basemap = L.tileLayer(serviceUrl + '/Leisure_27700/{z}/{x}/{y}.png?key=' + a
 /*
  * Change Map Layer
  */
-
 var layerList = document.getElementById('menu');
 var inputs = layerList.getElementsByTagName('input');
 
@@ -64,7 +62,6 @@ function switchLayer() {
 /*
  * Map Icons
  */
-
 var mountainIcon = new L.Icon({
     iconUrl: './Photos/Map/mountain.png',
     iconSize: [30, 36],
@@ -77,29 +74,112 @@ function createMarker(hill,elev,lat,lon,icontype) {
         return marker;
 }
 
+function removeMarker() {
+    for (i = 0; i < marker.length; i++) {
+        map.L.marker(marker[i]);
+    }  
+}
+
 let locations = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json';
 
-fetch(locations)
-    .then((resp) => {
-        return resp.json();
-    })
-    .then((data) => {
-        const hills = data;
-        for (var i = 0; i < hills.landmass.length; i++) {
-            for (var k = 0; k < hills.landmass[i].munro.length; k++) {
-                createMarker(
-		    hills.landmass[i].munro[k].name,
-		    hills.landmass[i].munro[k].elevation,
-		    hills.landmass[i].munro[k].lat,
-		    hills.landmass[i].munro[k].lon,
-		    mountainIcon
-		);
+function showMunros() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+    	    removeMarker();
+            for (var i = 0; i < hills.landmass.length; i++) {
+                for (var k = 0; k < hills.landmass[i].munro.length; k++) {
+                    createMarker(
+		        hills.landmass[i].munro[k].name,
+		        hills.landmass[i].munro[k].elevation,
+		        hills.landmass[i].munro[k].lat,
+		        hills.landmass[i].munro[k].lon,
+		        mountainIcon
+		    );
+                }
             }
-        }
-    })
+        })
+}
+
+function showMunroTops() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            for (var i = 0; i < hills.landmass.length; i++) {
+                for (var k = 0; k < hills.landmass[i].munro-top.length; k++) {
+                    createMarker(
+		        hills.landmass[i].munro-top[k].name,
+		        hills.landmass[i].munro-top[k].elevation,
+		        hills.landmass[i].munro-top[k].lat,
+		        hills.landmass[i].munro-top[k].lon,
+		        mountainIcon
+		    );
+                }
+            }
+        })
+}
+
+function showCorbetts() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            for (var i = 0; i < hills.landmass.length; i++) {
+                for (var k = 0; k < hills.landmass[i].corbett.length; k++) {
+                    createMarker(
+		        hills.landmass[i].corbett[k].name,
+		        hills.landmass[i].corbett[k].elevation,
+		        hills.landmass[i].corbett[k].lat,
+		        hills.landmass[i].corbett[k].lon,
+		        mountainIcon
+		    );
+                }
+            }
+        })
+}
+
+function showCorbettTops() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            for (var i = 0; i < hills.landmass.length; i++) {
+                for (var k = 0; k < hills.landmass[i].corbett-top.length; k++) {
+                    createMarker(
+		        hills.landmass[i].corbett-top[k].name,
+		        hills.landmass[i].corbett-top[k].elevation,
+		        hills.landmass[i].corbett-top[k].lat,
+		        hills.landmass[i].corbett-top[k].lon,
+		        mountainIcon
+		    );
+                }
+            }
+        })
+}
 
 // Testing Transform Coords
 
-const test = document.getElementById('test');
+const test = document.getElementById('scope');
 var testText = transformCoords([205685,755842]);
 test.innerHTML = testText.toString();
+
+/*
+ * Option Menu
+ */
+function openOptions() {
+    document.getElementById('options').style.width = "300px";
+}
+
+function closeOptions() {
+    document.getElementById('options').style.width = "0";
+}
