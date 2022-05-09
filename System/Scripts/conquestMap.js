@@ -188,9 +188,36 @@ function closeOptions() {
  * Add Routes
  */
 
+/*
 var routeCoords = [
     [56.65, -5.17],
     [56.65, -5.9]
 ];
+*/
 
-var polyline = L.polyline(routeCoords,{color:'red',opacity: 0.5}).addTo(map);
+map.on('load', function() {
+    fetch('../GPX/creise.gpx')
+        .then(response => response.text())
+        .then(str => new DOMParser().parseFromString(str, "text/xml"))
+        .then(doc => {
+	    data = toGeoJSON.gpx(doc);
+		
+            //var points = [];
+	    //var lat = data.features[0].geometry.coordinates[0][0];
+	    //var lat = data.features[0].geometry.coordinates[0][1];
+            //var point = new L.LatLng(lat, lon);
+            //points.push(point);
+            //var poly = new L.polyline(points).addTo(map);
+
+            //const nodes = [...doc.getElementsByTagName('trkpt')];
+            //nodes.forEach(node => {
+                //var lat = node.getAttribute("lat");
+                //var lon = node.getAttribute("lon");
+                //var point = new L.LatLng(lat, lon);
+                //points.push(point);
+            //})
+            //var poly = new L.polyline(points).addTo(map);
+        })
+});
+
+//var polyline = L.polyline(routeCoords,{color:'red',opacity: 0.5}).addTo(map);
