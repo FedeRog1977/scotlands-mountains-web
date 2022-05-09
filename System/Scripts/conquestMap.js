@@ -67,17 +67,14 @@ var mountainIcon = new L.Icon({
     iconSize: [30, 36],
 });
 
-function createMarker(hill,elev,lat,lon,icontype) {
-    var marker = [];
-    var popup = hill + '<br>' + elev + 'ft<br>' + lat + ', ' + lon;
-    marker[hill] = new L.marker([lat,lon],{icon:icontype}).addTo(map).bindPopup(popup);
-        return marker;
+function createMarker(hill,type,elev,lat,lon,icontype) {
+    var popup = '<h3>' + hill + '</h3>' + type + ' at ' + elev + 'ft<br>' + lat + ', ' + lon + '<br><img src="./Photos/lochnagar.jpg" style="width:150px;"></img>';
+    marker = L.marker([lat,lon],{icon:icontype}).addTo(map).bindPopup(popup);
+    return marker;
 }
 
 function removeMarker() {
-    for (i = 0; i < marker.length; i++) {
-        map.L.marker(marker[i]);
-    }  
+    map.removeLayer(marker);
 }
 
 let locations = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json';
@@ -89,11 +86,11 @@ function showMunros() {
         })
         .then((data) => {
             const hills = data;
-    	    removeMarker();
             for (var i = 0; i < hills.landmass.length; i++) {
                 for (var k = 0; k < hills.landmass[i].munro.length; k++) {
                     createMarker(
 		        hills.landmass[i].munro[k].name,
+			'Munro',
 		        hills.landmass[i].munro[k].elevation,
 		        hills.landmass[i].munro[k].lat,
 		        hills.landmass[i].munro[k].lon,
@@ -112,12 +109,13 @@ function showMunroTops() {
         .then((data) => {
             const hills = data;
             for (var i = 0; i < hills.landmass.length; i++) {
-                for (var k = 0; k < hills.landmass[i].munro-top.length; k++) {
+                for (var k = 0; k < hills.landmass[i].munrotop.length; k++) {
                     createMarker(
-		        hills.landmass[i].munro-top[k].name,
-		        hills.landmass[i].munro-top[k].elevation,
-		        hills.landmass[i].munro-top[k].lat,
-		        hills.landmass[i].munro-top[k].lon,
+		        hills.landmass[i].munrotop[k].name,
+			'Munro Top',
+		        hills.landmass[i].munrotop[k].elevation,
+		        hills.landmass[i].munrotop[k].lat,
+		        hills.landmass[i].munrotop[k].lon,
 		        mountainIcon
 		    );
                 }
@@ -136,6 +134,7 @@ function showCorbetts() {
                 for (var k = 0; k < hills.landmass[i].corbett.length; k++) {
                     createMarker(
 		        hills.landmass[i].corbett[k].name,
+			'Corbett',
 		        hills.landmass[i].corbett[k].elevation,
 		        hills.landmass[i].corbett[k].lat,
 		        hills.landmass[i].corbett[k].lon,
@@ -154,12 +153,13 @@ function showCorbettTops() {
         .then((data) => {
             const hills = data;
             for (var i = 0; i < hills.landmass.length; i++) {
-                for (var k = 0; k < hills.landmass[i].corbett-top.length; k++) {
+                for (var k = 0; k < hills.landmass[i].corbetttop.length; k++) {
                     createMarker(
-		        hills.landmass[i].corbett-top[k].name,
-		        hills.landmass[i].corbett-top[k].elevation,
-		        hills.landmass[i].corbett-top[k].lat,
-		        hills.landmass[i].corbett-top[k].lon,
+		        hills.landmass[i].corbetttop[k].name,
+			'Corbett Top',
+		        hills.landmass[i].corbetttop[k].elevation,
+		        hills.landmass[i].corbetttop[k].lat,
+		        hills.landmass[i].corbetttop[k].lon,
 		        mountainIcon
 		    );
                 }
@@ -183,3 +183,14 @@ function openOptions() {
 function closeOptions() {
     document.getElementById('options').style.width = "0";
 }
+
+/*
+ * Add Routes
+ */
+
+var routeCoords = [
+    [56.65, -5.17],
+    [56.65, -5.9]
+];
+
+var polyline = L.polyline(routeCoords,{color:'red',opacity: 0.5}).addTo(map);
