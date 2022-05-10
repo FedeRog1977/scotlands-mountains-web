@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Walkhighlands">
+<metadata>
+	<desc>GPX file from Walkhighlands; file is copyright Walkhighlands and must not be publicly shared on other websites. Do not remove this notice.</desc>
+	<copyright author="Walkhighlands"><year>2019</year></copyright>
+</metadata>
+<rte>
+<name>Lost Valley (Coire Gabhail), Glen Coe</name>
+<rtept lat="56.6674646946195" lon="-4.98635795191089">
+<ele>151.639214033389</ele>
+<name>WPT 1</name>
+</rtept>
+<rtept lat="56.6668454459233" lon="-4.98414429164197">
+<ele>151.816318023634</ele>
+<name>WPT 2</name>
+</rtept>
+<rtept lat="56.6654104852225" lon="-4.98280975916262">
+<ele>167.722885298729</ele>
+<name>WPT 3</name>
+</rtept>
+<rtept lat="56.6646180496387" lon="-4.98271936046267">
+<ele>153.829396246576</ele>
+<name>WPT 4</name>
+</rtept>
+<rtept lat="56.6633574515984" lon="-4.98239771364111">
+<ele>147.944785966611</ele>
+<name>WPT 5</name>
+</rtept>
+<rtept lat="56.6631243660323" lon="-4.98224054476295">
+<ele>154.391728075027</ele>
+<name>WPT 6</name>
+</rtept>
+<rtept lat="56.6620427694098" lon="-4.98337598322129">
+<ele>186.683902670956</ele>
+<name>WPT 7</name>
+</rtept>
+<rtept lat="56.6614591607193" lon="-4.98477272829728">
+<ele>231.3819040658</ele>
+<name>WPT 8</name>
+</rtept>
+<rtept lat="56.6602535663884" lon="-4.98534329587044">
+<ele>260.971112698197</ele>
+<name>WPT 9</name>
+</rtept>
+<rtept lat="56.6587687061523" lon="-4.98736226370143">
+<ele>288.165276887226</ele>
+<name>WPT 10</name>
+</rtept>
+<rtept lat="56.6574148359572" lon="-4.98869782915372">
+<ele>353.67471971488</ele>
+<name>WPT 11</name>
+</rtept>
+<rtept lat="56.6562635242594" lon="-4.99018806896098">
+<ele>394.026955904436</ele>
+<name>WPT 12</name>
+</rtept>
+<rtept lat="56.6552860185726" lon="-4.990804208932">
+<ele>405.64118243016</ele>
+<name>WPT 13</name>
+</rtept>
+<rtept lat="56.6545383460532" lon="-4.99393538809715">
+<ele>367.649479127666</ele>
+<name>WPT 14</name>
+</rtept>
+<rtept lat="56.6552866842508" lon="-4.99077651832271">
+<ele>404.859228920114</ele>
+<name>WPT 15</name>
+</rtept>
+<rtept lat="56.6562946934743" lon="-4.99016279436073">
+<ele>374.755702173138</ele>
+<name>WPT 16</name>
+</rtept>
+<rtept lat="56.6574168316164" lon="-4.98861475248106">
+<ele>357.65271971488</ele>
+<name>WPT 17</name>
+</rtept>
+<rtept lat="56.6587756671399" lon="-4.9873905606325">
+<ele>289.049276887226</ele>
+<name>WPT 18</name>
+</rtept>
+<rtept lat="56.6602701472758" lon="-4.9852891136768">
+<ele>263.283112698209</ele>
+<name>WPT 19</name>
+</rtept>
+<rtept lat="56.6614890001194" lon="-4.98480283647217">
+<ele>229.477904065704</ele>
+<name>WPT 20</name>
+</rtept>
+<rtept lat="56.6621057692801" lon="-4.98329771942032">
+<ele>181.549902670956</ele>
+<name>WPT 21</name>
+</rtept>
+<rtept lat="56.6632178690763" lon="-4.98216468777653">
+<ele>148.148785966611</ele>
+<name>WPT 22</name>
+</rtept>
+<rtept lat="56.6633816572177" lon="-4.98234412846872">
+<ele>147.468785966611</ele>
+<name>WPT 23</name>
+</rtept>
+<rtept lat="56.6646187135892" lon="-4.98269166280686">
+<ele>153.897396246576</ele>
+<name>WPT 24</name>
+</rtept>
+<rtept lat="56.6654416530254" lon="-4.98278447254822">
+<ele>168.198885298729</ele>
+<name>WPT 25</name>
+</rtept>
+<rtept lat="56.6668461102075" lon="-4.98411659238829">
+<ele>151.918318023634</ele>
+<name>WPT 26</name>
+</rtept>
+<rtept lat="56.6670562861242" lon="-4.98491027206849">
+<ele>147.370150088882</ele>
+<name>WPT 27</name>
+</rtept>
+<rtept lat="56.667449442761" lon="-4.9863567445641">
+<ele>151.503214033389</ele>
+<name>WPT 28</name>
+</rtept>
+</rte>
+</gpx>

@@ -186,21 +186,12 @@ function closeOptions() {
 
 /*
  * Add Routes
+ * Using GPX to GeoJSON Method
  */
+let loadRoute = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/bidean.gpx';
 
-/*
-// Polyline Method
-var routeCoords = [
-    [56.65, -5.17],
-    [56.65, -5.9]
-];
-
-var polyline = L.polyline(routeCoords,{color:'red',opacity: 0.5}).addTo(map);
-*/
-
-// GPX to GeoJSON Method
 function showRoute() {
-    fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/creise.gpx')
+    fetch(loadRoute)
         .then(response => response.text())
         .then(str => new DOMParser().parseFromString(str, "text/xml"))
         .then(doc => {
@@ -213,7 +204,13 @@ function showRoute() {
 showRoute();
 
 /*
-// GeoJSON Method
+var routeCoords = [
+    [56.65, -5.17],
+    [56.65, -5.9]
+];
+
+var polyline = L.polyline(routeCoords,{color:'red',opacity: 0.5}).addTo(map);
+
 function showRoute() {
     fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/creise/routes.geojson')
         .then(response => response.json())
