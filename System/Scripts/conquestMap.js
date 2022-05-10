@@ -188,7 +188,7 @@ function closeOptions() {
  * Add Routes
  * Using GPX to GeoJSON Method
  */
-let loadRoute = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/bidean.gpx';
+let loadRoute = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/aonach_eagach/ridge_scree.gpx';
 
 function showRoute() {
     fetch(loadRoute)
@@ -202,23 +202,3 @@ function showRoute() {
 }
 
 showRoute();
-
-/*
-var routeCoords = [
-    [56.65, -5.17],
-    [56.65, -5.9]
-];
-
-var polyline = L.polyline(routeCoords,{color:'red',opacity: 0.5}).addTo(map);
-
-function showRoute() {
-    fetch('https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/creise/routes.geojson')
-        .then(response => response.json())
-	.then((data) => {
-	    const route = data;
-	    L.geoJSON(route,{color:'#A80606'}).addTo(map);
-	});
-}
-
-showRoute();
-*/
