@@ -1289,7 +1289,7 @@
 		    "name": "Small Isles",
 		    "sub-sub-region": [
 		        {
-			    "name": "Isle of Turee",
+			    "name": "Isle of Tiree",
 			    "lat": 56.4932,
 			    "lon": -6.9070
 			},
@@ -1579,6 +1579,208 @@
             "type": "Mountain Range",
             "sub-type": "Ridge",
             "sub-sub-type": "Ar&ecirc;te",
+	    "route": [
+		{
+		    "name": "Cruachan Four",
+		    "distance": 16.66,
+		    "elevationgain": 6423,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"stone staircase",
+			"broken rock",
+			"rocky talus",
+			"crag",
+			"smooth slab"
+		    ],
+		    "gear": [
+			"helmet"
+		    ],
+		    "munro": [
+		        "Ben Cruchan",
+			"Stob Daimh",
+			"Beinn a&rsquo; Chochuill",
+			"Beinn Eunaich"
+		    ],
+		    "munrotop": [
+                        "Drochaid Ghlas",
+			"Stob Garbh",
+			"Meall Cuanail"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "cruachan_range/cruachan-four.gpx"
+		},
+		{
+		    "name": "Ben Cruachan and Stob Daimh",
+		    "distance": 8.5,
+		    "elevationgain": 4514,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"stone staircase",
+			"broken rock",
+			"rocky talus",
+			"crag",
+			"smooth slab"
+		    ],
+		    "gear": [
+			"helmet"
+		    ],
+		    "munro": [
+		        "Ben Cruchan",
+			"Stob Daimh"
+		    ],
+		    "munrotop": [
+                        "Drochaid Ghlas",
+			"Stob Garbh"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "cruachan_range/cruachan_daimh.gpx"
+		},
+		{
+		    "name": "Ben Cruachan, Stob Daimh and Beinn a&rsquo; Bh&ugrave;iridh",
+		    "distance": 8.01,
+		    "elevationgain": 5318,
+		    "stdtime": 8.5,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"stone staircase",
+			"broken rock",
+			"rocky talus",
+			"crag",
+			"smooth slab"
+		    ],
+		    "gear": [
+			"helmet"
+		    ],
+		    "munro": [
+		        "Ben Cruchan",
+			"Stob Daimh"
+		    ],
+		    "munrotop": [
+                        "Drochaid Ghlas",
+			"Stob Garbh",
+                        "Sron An Isean",
+			"Meall Cuanail"
+		    ],
+		    "corbett": [
+                        "Beinn a&rsquo; Bhuiridh"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "cruachan_range/cruachan-two_bhuiridh.gpx"
+		},
+		{
+		    "name": "Beinn a&rsquo; Chochuill and Beinn Eunaich",
+		    "distance": 8.5,
+		    "elevationgain": 4005,
+		    "stdtime": 6.5,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"farm path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"broken rock",
+			"grass",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [
+			"Beinn a&rsquo; Chochuill",
+			"Beinn Eunaich"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "cruachan_range/eunaich_chochuill.gpx"
+		},
+		{
+		    "name": "Beinn a&rsquo; Bh&ugrave;iridh",
+		    "distance": 7.25,
+		    "elevationgain": 2828,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"broken rock",
+			"grass",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn a&rsquo; Bh&ugrave;iridh"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "cruachan_range/bhuiridh.gpx"
+		}
+	    ],
             "munro": [
                 {
                     "name": "Ben Cruachan",
@@ -1588,7 +1790,7 @@
                     "elevation": 3694,
                     "prominence": 2884,
                     "isolation": 12.43,
-                    "trig": "Pillar (Round (Destroyed))"
+                    "summit": "Triangulation Station [Pillar (Round (Destroyed))]"
                 },
                 {
                     "name": "Stob Daimh",
@@ -1598,7 +1800,7 @@
                     "elevation": 3274,
                     "prominence": 436,
                     "isolation": 0.71,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Beinn Eunaich",
@@ -1608,7 +1810,7 @@
                     "elevation": 3245,
                     "prominence": 1395,
                     "isolation": 2.81,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Beinn a&rsquo; Chochuill",
@@ -1618,7 +1820,7 @@
                     "elevation": 3215,
                     "prominence": 827,
                     "isolation": 1.53,
-                    "trig": null
+                    "summit": "cairn"
                 }
             ],
             "munrotop": [
@@ -1630,7 +1832,7 @@
                     "elevation": 3619,
                     "prominence": 318,
                     "isolation": 0.48,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Drochaid Ghlas",
@@ -1640,7 +1842,7 @@
                     "elevation": 3360,
                     "prominence": 299,
                     "isolation": 0.67,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Stob Garbh",
@@ -1650,7 +1852,7 @@
                     "elevation": 3222,
                     "prominence": 171,
                     "isolation": 0.38,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Sron An Isean",
@@ -1660,7 +1862,7 @@
                     "elevation": 3173,
                     "prominence": 181,
                     "isolation": 0.33,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Meall Cuanail",
@@ -1670,7 +1872,7 @@
                     "elevation": 3018,
                     "prominence": 308,
                     "isolation": 0.32,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbett": [
@@ -1682,7 +1884,7 @@
                     "elevation": 2943,
                     "prominence": 555,
                     "isolation": 0.89,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbetttop": [],
@@ -1744,6 +1946,38 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Whaleback",
+	    "route": [
+		{
+		    "name": "Beinn Udlaidh and Beinn Bhreac-liath",
+		    "distance": 7.5,
+		    "elevationgain": 2989,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill"
+		    ],
+		    "terraintype": [
+			"forestry commission road",
+			"path"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn Udlaidh",
+                        "Beinn Bhreac-liath"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "udlaidh_bhreac-liath/udlaidh_bhreac-liath.gpx"
+		}
+	    ],
             "munro": [],
             "munrotop": [],
             "corbett": [
@@ -1755,7 +1989,7 @@
                     "elevation": 2756,
                     "prominence": 1713,
                     "isolation": 2.34,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Beinn Bhreac-liath",
@@ -1765,7 +1999,7 @@
                     "elevation": 2631,
                     "prominence": 705,
                     "isolation": 1.35,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbetttop": [],
@@ -1804,6 +2038,37 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Ridge",
+	    "route": [
+		{
+		    "name": "Beinn Mhic-Mhonaidh",
+		    "distance": 8.5,
+		    "elevationgain": 2467,
+		    "stdtime": 5,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn Mhic-Mhonaidh"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "mhic-mhonaidh/mhic-mhonaidh.gpx"
+		}
+	    ],
             "munro": [],
             "munrotop": [],
             "corbett": [
@@ -1815,7 +2080,7 @@
                     "elevation": 2612,
                     "prominence": 1378,
                     "isolation": 3.96,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbetttop": [],
@@ -1845,6 +2110,41 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": null,
+	    "route": [
+		{
+		    "name": "Creach Bheinn",
+		    "distance": 8.75,
+		    "elevationgain": 2949,
+		    "stdtime": 6,
+		    "type": [
+			"hillawalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"farm path",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Creach Bheinn"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "chreach-bheinn/creach-bheinn.gpx"
+		}
+	    ],
             "munro": [],
             "munrotop": [],
             "corbett": [
@@ -1856,7 +2156,7 @@
                     "elevation": 2657,
                     "prominence": 803,
                     "isolation": 1.85,
-                    "trig": "Pillar (Round)"
+                    "summit": "Triangulation Station [Pillar (Round)]"
                 }
 	    ],
             "corbetttop": [],
@@ -1892,6 +2192,292 @@
             "type": "Mountain Range",
             "sub-type": "Ridge",
             "sub-sub-type": "Ar&ecirc;te",
+	    "route": [
+		{
+		    "name": "Starav Eight",
+		    "distance": 34.85,
+		    "elevationgain": 14406,
+		    "stdtime": 15,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Ben Starav",
+		        "Glas Bheinn Mh&ograve;r",
+		        "Stob Coir&rsquo;an Albannaich",
+		        "Meall nan Eun",
+		        "Meall a&rsquo; Bhuiridh",
+		        "Creise",
+		        "Stob Ghabhar",
+		        "Stob a&rsquo; Choire Odhair"
+		    ],
+		    "munrotop": [
+                        "Stob Coire Dheirg",
+			"Meall Cruidh",
+			"Stob an Duine Ruaidh",
+			"Clach Leathad",
+			"Mam Coire Easain",
+			"Stob a&rsquo; Ghlais Choire",
+			"Aonach Eagach",
+			"Sron a&rsquo; Ghearrain",
+			"Sron nan Giubhas",
+			"Stob a&rsquo; Bhruaich Leith"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Meall nan Tri Tighearnan",
+			"Meall Tarsuinn"
+		    ],
+		    "GPX": "starav_range/starav-eight.gpx"
+		},
+		{
+		    "name": "Starav Seven",
+		    "distance": 33.55,
+		    "elevationgain": 12667,
+		    "stdtime": 16.5,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Ben Starav",
+			"Beinn nan Aighenan",
+		        "Glas Bheinn Mh&ograve;r",
+		        "Stob Coir&rsquo;an Albannaich",
+		        "Meall nan Eun",
+		        "Stob Ghabhar",
+		        "Stob a&rsquo; Choire Odhair"
+		    ],
+		    "munrotop": [
+                        "Stob Coire Dheirg",
+			"Aonach Eagach",
+			"Sron a&rsquo; Ghearrain",
+			"Stob a&rsquo; Bhruaich Leith"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Meall nan Tri Tighearnan",
+			"Meall Tarsuinn"
+		    ],
+		    "GPX": "starav_range/starav-seven.gpx"
+		},
+		{
+		    "name": "Starav Five",
+		    "distance": 17,
+		    "elevationgain": 7372,
+		    "stdtime": 10.5,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Ben Starav",
+			"Beinn nan Aighenan",
+		        "Glas Bheinn Mh&ograve;r",
+		        "Stob Coir&rsquo;an Albannaich",
+		        "Meall nan Eun"
+		    ],
+		    "munrotop": [
+                        "Stob Coire Dheirg"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Meall nan Tri Tighearnan",
+			"Meall Tarsuinn"
+		    ],
+		    "GPX": "starav_range/starav-five.gpx"
+		},
+		{
+		    "name": "Ben Starav and Glas Bheinn Mh&ograve;r",
+		    "distance": 10,
+		    "elevationgain": 4668,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Ben Starav",
+		        "Glas Bheinn Mh&ograve;r"
+		    ],
+		    "munrotop": [
+                        "Stob Coire Dheirg"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Meall nan Tri Tighearnan"
+		    ],
+		    "GPX": "starav_range/starav_mhor.gpx"
+		},
+		{
+		    "name": "Beinn nan Aighenan and Meall nan Eun",
+		    "distance": 11.25,
+		    "elevationgain": 4353,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Stob Coir&rsquo;an Albannaich",
+		        "Meall nan Eun"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [
+			"Meall Tarsuinn"
+		    ],
+		    "GPX": "starav_range/albannaich_nan-eun.gpx"
+		},
+		{
+		    "name": "Beinn nan Aighenan",
+		    "distance": 9.75,
+		    "elevationgain": 4330,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [
+			"Beinn nan Aighenan"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "starav_range/aighenan.gpx"
+		}
+	    ],
             "munro": [
                 {
                     "name": "Ben Starav",
@@ -1901,7 +2487,7 @@
                     "elevation": 3537,
                     "prominence": 1464,
                     "isolation": 6.71,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Stob Coir&rsquo;an Albannaich",
@@ -1911,7 +2497,7 @@
                     "elevation": 3425,
                     "prominence": 1004,
                     "isolation": 2.8,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Glas Bheinn Mh&ograve;r",
@@ -1921,7 +2507,7 @@
                     "elevation": 3271,
                     "prominence": 758,
                     "isolation": 1.21,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Beinn nan Aighenan",
@@ -1931,7 +2517,7 @@
                     "elevation": 3150,
                     "prominence": 1126,
                     "isolation": 1.5,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Meall nan Eun",
@@ -1941,7 +2527,7 @@
                     "elevation": 3045,
                     "prominence": 571,
                     "isolation": 1.21,
-                    "trig": null
+                    "summit": "cairn"
                 }
             ],
             "munrotop": [
@@ -1953,7 +2539,7 @@
                     "elevation": 3373,
                     "prominence": 43,
                     "isolation": 0.19,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Meall Cruidh",
@@ -1963,7 +2549,7 @@
                     "elevation": 3051,
                     "prominence": 115,
                     "isolation": 0.32,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Stob an Duine Ruaidh",
@@ -1973,7 +2559,7 @@
                     "elevation": 3012,
                     "prominence": 217,
                     "isolation": 0.43,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbett": [],
@@ -1986,7 +2572,7 @@
                     "elevation": 2927,
                     "prominence": 230,
                     "isolation": 0.38,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Meall Tarsuinn",
@@ -1996,7 +2582,7 @@
                     "elevation": 2877,
                     "prominence": 302,
                     "isolation": 0.48,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corrie": [
@@ -2121,6 +2707,43 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Whaleback",
+	    "route": [
+		{
+		    "name": "Beinn Trilleachan",
+		    "distance": 5.5,
+		    "elevationgain": 3280,
+		    "stdtime": 7,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn Trilleachan"
+		    ],
+		    "corbetttop": [
+                        "Beinn Trilleachan North-East Top"
+		    ],
+		    "GPX": "trilleachan/trilleachan.gpx"
+		}
+	    ],
             "munro": [],
             "munrotop": [],
             "corbett": [
@@ -2132,7 +2755,7 @@
                     "elevation": 2756,
                     "prominence": 1568,
                     "isolation": 2.23,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbetttop": [
@@ -2144,7 +2767,7 @@
                     "elevation": 2516,
                     "prominence": 242,
                     "isolation": 0.59,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corrie": [
@@ -2179,6 +2802,325 @@
 	    "type": "Mountain Range",
 	    "sub-type": null,
 	    "sub-sub-type": null,
+	    "route": [
+		{
+		    "name": "Starav Eight",
+		    "distance": 34.85,
+		    "elevationgain": 14406,
+		    "stdtime": 15,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Ben Starav",
+		        "Glas Bheinn Mh&ograve;r",
+		        "Stob Coir&rsquo;an Albannaich",
+		        "Meall nan Eun",
+		        "Meall a&rsquo; Bhuiridh",
+		        "Creise",
+		        "Stob Ghabhar",
+		        "Stob a&rsquo; Choire Odhair"
+		    ],
+		    "munrotop": [
+                        "Stob Coire Dheirg",
+			"Meall Cruidh",
+			"Stob an Duine Ruaidh",
+			"Clach Leathad",
+			"Mam Coire Easain",
+			"Stob a&rsquo; Ghlais Choire",
+			"Aonach Eagach",
+			"Sron a&rsquo; Ghearrain",
+			"Sron nan Giubhas",
+			"Stob a&rsquo; Bhruaich Leith"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Meall nan Tri Tighearnan",
+			"Meall Tarsuinn"
+		    ],
+		    "GPX": "starav_range/starav-eight.gpx"
+		},
+		{
+		    "name": "Starav Seven",
+		    "distance": 33.55,
+		    "elevationgain": 12667,
+		    "stdtime": 16.5,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Ben Starav",
+			"Beinn nan Aighenan",
+		        "Glas Bheinn Mh&ograve;r",
+		        "Stob Coir&rsquo;an Albannaich",
+		        "Meall nan Eun",
+		        "Stob Ghabhar",
+		        "Stob a&rsquo; Choire Odhair"
+		    ],
+		    "munrotop": [
+                        "Stob Coire Dheirg",
+			"Aonach Eagach",
+			"Sron a&rsquo; Ghearrain",
+			"Stob a&rsquo; Bhruaich Leith"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Meall nan Tri Tighearnan",
+			"Meall Tarsuinn"
+		    ],
+		    "GPX": "starav_range/starav-seven.gpx"
+		},
+		{
+		    "name": "Black Mount Four",
+		    "distance": 15.53,
+		    "elevationgain": 7152,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Meall a&rsquo; Bhuiridh",
+		        "Creise",
+		        "Stob Ghabhar",
+		        "Stob a&rsquo; Choire Odhair"
+		    ],
+		    "munrotop": [
+			"Clach Leathad",
+			"Mam Coire Easain",
+			"Aonach Eagach",
+			"Sron nan Giubhas"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Beinn Toaig"
+		    ],
+		    "GPX": "black_mount_range/blackmount-four.gpx"
+		},
+		{
+		    "name": "Meall a&rsquo; Bhuiridh and Creise",
+		    "distance": 6.5,
+		    "elevationgain": 3585,
+		    "stdtime": 7,
+		    "type": [
+			"hillwalk",
+			"ridgewalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Meall a&rsquo; Bhuiridh",
+		        "Creise"
+		    ],
+		    "munrotop": [
+			"Mam Coire Easain"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "black_mount_range/creise_bhuiridh.gpx"
+		},
+		{
+		    "name": "Stob Ghabhar and Stob a&rsquo; Choire Odhair",
+		    "distance": 10,
+		    "elevationgain": 4064,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"forestry commission road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Stob Ghabhar",
+		        "Stob a&rsquo; Choire Odhair"
+		    ],
+		    "munrotop": [
+			"Aonach Eagach",
+			"Sron nan Giubhas"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Beinn Toaig"
+		    ],
+		    "GPX": "black_mount_range/ghabhar_odhair.gpx"
+		},
+		{
+		    "name": "Beinn Mhic Chasgaig and Stob Dubh",
+		    "distance": 9.63,
+		    "elevationgain": 5544,
+		    "stdtime": 7,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn Mhic Chasgaig",
+                        "Stob Dubh"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "black_mount_range/chasgaig_dubh.gpx"
+		},
+		{
+		    "name": "Beinn Mhic Chasgaig",
+		    "distance": 6,
+		    "elevationgain": 2467,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn Mhic Chasgaig"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "black_mount_range/chasgaig.gpx"
+		}
+	    ],
 	    "munro": [
 		{
 		    "name": "Meall a&rsquo; Bhuiridh",
@@ -2188,7 +3130,7 @@
 	            "elevation": 3635,
 	            "prominence": 2608,
 		    "isolation": 6.95,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Creise",
@@ -2198,7 +3140,7 @@
 	            "elevation": 3606,
 	            "prominence": 555,
 		    "isolation": 0.76,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob Ghabhar",
@@ -2208,7 +3150,7 @@
 	            "elevation": 3576,
 	            "prominence": 1289,
 		    "isolation": 2.44,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob a&rsquo; Choire Odhair",
@@ -2218,7 +3160,7 @@
 	            "elevation": 3100,
 	            "prominence": 908,
 		    "isolation": 1.28,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "munrotop": [
@@ -2230,7 +3172,7 @@
 	            "elevation": 3606,
 	            "prominence": 223,
 		    "isolation": 0.9,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Mam Coire Easain",
@@ -2240,7 +3182,7 @@
 	            "elevation": 3510,
 	            "prominence": 26,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob a&rsquo; Ghlais Choire",
@@ -2250,7 +3192,7 @@
 	            "elevation": 3268,
 	            "prominence": 89,
 		    "isolation": 0.28,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Aonach Eagach",
@@ -2260,7 +3202,7 @@
 	            "elevation": 3251,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Sron a&rsquo; Ghearrain",
@@ -2270,7 +3212,7 @@
 	            "elevation": 3248,
 	            "prominence": 46,
 		    "isolation": 0.37,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Sron nan Giubhas",
@@ -2280,7 +3222,7 @@
 	            "elevation": 3202,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob a&rsquo; Bhruaich Leith",
@@ -2290,7 +3232,7 @@
 	            "elevation": 3087,
 	            "prominence": 138,
 		    "isolation": 0.51,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corbett": [
@@ -2302,7 +3244,7 @@
 	            "elevation": 2835,
 	            "prominence": 545,
 		    "isolation": 0.55,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corbetttop": [
@@ -2314,7 +3256,7 @@
 	            "elevation": 2736,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corrie": [
@@ -2403,6 +3345,168 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Ridge",
+	    "route": [
+		{
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sg&ograve;r na h-Ulaidh and Beinn Maol Chaluim",
+		    "distance": 19.88,
+		    "elevationgain": 10305,
+		    "stdtime": 12,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+		        "Beinn Fhionnlaidh",
+		        "Sg&ograve;r na h-Ulaidh"
+		    ],
+		    "munrotop": [
+                        "Stob an Fhuarain"
+		    ],
+		    "corbett": [
+                        "Beinn Maol Chaluim"
+		    ],
+		    "corbetttop": [
+                        "Beinn Fhionnlaidh East Top"
+		    ],
+		    "GPX": "sgulaird/sgulaird_fhionnlaidh_h-ulaidh_chaluim.gpx"
+		},
+		{
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sg&ograve;r na h-Ulaidh from Glen Etive",
+		    "distance": 20,
+		    "elevationgain": 9022,
+		    "stdtime": 12,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+		        "Beinn Fhionnlaidh",
+		        "Sg&ograve;r na h-Ulaidh"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Beinn Fhionnlaidh East Top"
+		    ],
+		    "GPX": "sgulaird/sgulaird_fhionnlaidh_h-ulaidh_etive.gpx"
+		},
+		{
+		    "name": "Beinn Sgulaird and Beinn Fhionnlaidh from Glen Etive",
+		    "distance": 14.6,
+		    "elevationgain": 7014,
+		    "stdtime": 10,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+			"Beinn Fhionnlaidh"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "sgulaird/sgulaird_fhionnlaidh_etive.gpx"
+		},
+		{
+		    "name": "Beinn Sgulaird",
+		    "distance": 8,
+		    "elevationgain": 4068,
+		    "stdtime": 8,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Beinn Sgulaird South Top",
+                        "Meall Garbh"
+		    ],
+		    "GPX": "sgulaird/sgulaird.gpx"
+		}
+	    ],
             "munro": [
                 {
                     "name": "Beinn Sgulaird",
@@ -2412,7 +3516,7 @@
                     "elevation": 3074,
                     "prominence": 2172,
                     "isolation": 3.43,
-                    "trig": null
+                    "summit": "cairn"
                 }
             ],
             "munrotop": [],
@@ -2426,7 +3530,7 @@
                     "elevation": 2831,
                     "prominence": 256,
                     "isolation": 1.02,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Meall Garbh",
@@ -2436,7 +3540,7 @@
                     "elevation": 2782,
                     "prominence": 197,
                     "isolation": 0.41,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corrie": [
@@ -2471,6 +3575,43 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Ridge",
+	    "route": [
+		{
+		    "name": "Fraochaidh from Ballachulish",
+		    "distance": 13,
+		    "elevationgain": 3651,
+		    "stdtime": 8,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Fraochaidh"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "fraochaidh/fraochaidh.gpx"
+		}
+	    ],
             "munro": [],
             "munrotop": [],
             "corbett": [
@@ -2482,7 +3623,7 @@
                     "elevation": 2884,
                     "prominence": 1808,
                     "isolation": 2.16,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbetttop": [],
@@ -2527,6 +3668,163 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Ridge",
+	    "route": [
+		{
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sg&ograve;r na h-Ulaidh and Beinn Maol Chaluim",
+		    "distance": 19.88,
+		    "elevationgain": 10305,
+		    "stdtime": 12,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+		        "Beinn Fhionnlaidh",
+		        "Sg&ograve;r na h-Ulaidh"
+		    ],
+		    "munrotop": [
+                        "Stob an Fhuarain"
+		    ],
+		    "corbett": [
+                        "Beinn Maol Chaluim"
+		    ],
+		    "corbetttop": [
+                        "Beinn Fhionnlaidh East Top"
+		    ],
+		    "GPX": "fhionnlaidh/sgulaird_fhionnlaidh_h-ulaidh_chaluim.gpx"
+		},
+		{
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sg&ograve;r na h-Ulaidh from Glen Etive",
+		    "distance": 20,
+		    "elevationgain": 9022,
+		    "stdtime": 12,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+		        "Beinn Fhionnlaidh",
+		        "Sg&ograve;r na h-Ulaidh"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Beinn Fhionnlaidh East Top"
+		    ],
+		    "GPX": "fhionnlaidh/sgulaird_fhionnlaidh_h-ulaidh_etive.gpx"
+		},
+		{
+		    "name": "Beinn Sgulaird and Beinn Fhionnlaidh from Glen Etive",
+		    "distance": 14.6,
+		    "elevationgain": 7014,
+		    "stdtime": 10,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+			"Beinn Fhionnlaidh"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "fhionnlaidh/sgulaird_fhionnlaidh_etive.gpx"
+		},
+		{
+		    "name": "Beinn Fhionnlaidh",
+		    "distance": 9,
+		    "elevationgain": 3215,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Fhionnlaidh"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "fhionnlaidh/fhionnlaidh.gpx"
+		}
+	    ],
             "munro": [
                 {
                     "name": "Beinn Fhionnlaidh",
@@ -2536,7 +3834,7 @@
                     "elevation": 3146,
                     "prominence": 1673,
                     "isolation": 1.55,
-                    "trig": "Pillar (Round)"
+                    "summit": "Triangulation Station [Pillar (Round)]"
                 }
             ],
             "munrotop": [],
@@ -2550,7 +3848,7 @@
                     "elevation": 2759,
                     "prominence": 151,
                     "isolation": null,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corrie": [
@@ -2594,6 +3892,131 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Ridge",
+	    "route": [
+		{
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sg&ograve;r na h-Ulaidh and Beinn Maol Chaluim",
+		    "distance": 19.88,
+		    "elevationgain": 10305,
+		    "stdtime": 12,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+		        "Beinn Fhionnlaidh",
+		        "Sg&ograve;r na h-Ulaidh"
+		    ],
+		    "munrotop": [
+                        "Stob an Fhuarain"
+		    ],
+		    "corbett": [
+                        "Beinn Maol Chaluim"
+		    ],
+		    "corbetttop": [
+                        "Beinn Fhionnlaidh East Top"
+		    ],
+		    "GPX": "h-ulaidh/sgulaird_fhionnlaidh_h-ulaidh_chaluim.gpx"
+		},
+		{
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sg&ograve;r na h-Ulaidh from Glen Etive",
+		    "distance": 20,
+		    "elevationgain": 9022,
+		    "stdtime": 12,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+		        "Beinn Fhionnlaidh",
+		        "Sg&ograve;r na h-Ulaidh"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [
+                        "Beinn Fhionnlaidh East Top"
+		    ],
+		    "GPX": "h-ulaidh/sgulaird_fhionnlaidh_h-ulaidh_etive.gpx"
+		},
+		{
+		    "name": "Sg&ograve;r na h-Ulaidh from Glen Etive",
+		    "distance": 10,
+		    "elevationgain": 4238,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Sg&ograve;r na h-Ulaidh"
+		    ],
+		    "munrotop": [
+                        "Stob an Fhuarain"
+		    ],
+		    "corbett": [
+                        "Meall Lighiche"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "h-ulaidh/h-ulaidh_lighiche.gpx"
+		}
+	    ],
             "munro": [
                 {
                     "name": "Sg&ograve;r na h-Ulaidh",
@@ -2603,7 +4026,7 @@
                     "elevation": 3261,
                     "prominence": 1361,
                     "isolation": 1361,
-                    "trig": null
+                    "summit": "cairn"
                 }
             ],
             "munrotop": [
@@ -2615,7 +4038,7 @@
                     "elevation": 3176,
                     "prominence": 338,
                     "isolation": 0.53,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbett": [
@@ -2627,7 +4050,7 @@
                     "elevation": 2533,
                     "prominence": 811,
                     "isolation": 0.87,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corbetttop": [
@@ -2639,7 +4062,7 @@
                     "elevation": 2772,
                     "prominence": 154,
                     "isolation": 0.43,
-                    "trig": null
+                    "summit": "cairn"
                 }
 	    ],
             "corrie": [
@@ -2677,6 +4100,75 @@
 	    "type": "Mountain",
 	    "sub-type": "Stand-Alone",
 	    "sub-sub-type": "Mound",
+	    "route": [
+		{
+		    "name": "Beinn Mhic Chasgaig and Stob Dubh",
+		    "distance": 9.63,
+		    "elevationgain": 5544,
+		    "stdtime": 7,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn Mhic Chasgaig",
+                        "Stob Dubh"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "dubh/chasgaig_dubh.gpx"
+		},
+		{
+		    "name": "Stob Dubh",
+		    "distance": 7.25,
+		    "elevationgain": 3297,
+		    "stdtime": 8,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Stob Dubh"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "dubh/dubh.gpx"
+		}
+	    ],
 	    "munro": [],
 	    "munrotop": [],
 	    "corbett": [
@@ -2688,7 +4180,7 @@
 	            "elevation": 2897,
 	            "prominence": 1709,
 		    "isolation": 2.4,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corbetttop": [
@@ -2700,7 +4192,7 @@
 	            "elevation": 2772,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Beinn Ceitlein North Top",
@@ -2710,7 +4202,7 @@
 	            "elevation": 2736,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Beinn Ceitlein NE Ridge Top (i)",
@@ -2720,7 +4212,7 @@
 	            "elevation": 2624,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Beinn Ceitlein NE Ridge Top (ii)",
@@ -2730,7 +4222,7 @@
 	            "elevation": 2624,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corrie": [
@@ -2768,6 +4260,168 @@
 	    "type": "Mountain",
 	    "sub-type": "Ridge",
 	    "sub-sub-type": "Plateau",
+	    "route": [
+		{
+		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive M&ograve;r",
+		    "distance": 18.01,
+		    "elevationgain": 10305,
+		    "stdtime": 11,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"rocky talus",
+			"talus (coarse scree)",
+			"crag",
+			"notched slab"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Bidean nam Bian",
+		        "Stob Coire Sgreamhach",
+		        "Stob Dubh",
+		        "Stob Coire Raineach",
+		        "Stob na Broige",
+		        "Stob Dearg"
+		    ],
+		    "munrotop": [
+                        "Bidean nam Bian West Top",
+                        "Stob Coire Altruim",
+                        "Stob na Doire"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "etive-mor/mor_beag_bidean.gpx"
+		},
+		{
+		    "name": "Buacaille Etive Mor via Tourist Path",
+		    "distance": 8,
+		    "elevationgain": 3641,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"broken rock",
+			"rocky talus"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Stob Dearg",
+		        "Stob na Broige"
+		    ],
+		    "munrotop": [
+                        "Stob na Doire",
+                        "Stob Coire Altruim"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "etive-mor/ridge.gpx"
+		},
+		{
+		    "name": "Buachaille Etive Mor via Curved Ridge",
+		    "distance": 4.97,
+		    "elevationgain": 4265,
+		    "stdtime": 10,
+		    "type": [
+			"hillwalk",
+			"scramble"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"broken rock",
+			"rocky talus",
+			"scree",
+			"crag (grade 2 (moderate))",
+			"notched slab (grade 2 (moderate))"
+		    ],
+		    "gear": [
+			"helmet"
+		    ],
+		    "munro": [
+		        "Stob Dearg",
+		        "Stob na Broige"
+		    ],
+		    "munrotop": [
+                        "Bidean nam Bian West Top",
+                        "Stob Coire Altruim",
+                        "Stob na Doire"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "etive-mor/ridge_curved-ridge.gpx"
+		},
+		{
+		    "name": "Agag&rsquo;s Groove",
+		    "distance": 3.79,
+		    "elevationgain": 2585,
+		    "stdtime": 8.5,
+		    "type": [
+			"hillwalk",
+			"scramble",
+			"climb"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"broken rock",
+			"rocky talus",
+			"scree",
+			"crag (grade 3 (moderate))",
+			"notched slab (grade 3 (moderate))"
+		    ],
+		    "gear": [
+			"helmet"
+		    ],
+		    "munro": [
+		        "Stob Dearg"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "etive-mor/agags-groove.gpx"
+		}
+	    ],
 	    "munro": [
 		{
 		    "name": "Stob Dearg",
@@ -2777,7 +4431,7 @@
 	            "elevation": 3351,
 	            "prominence": 1746,
 		    "isolation": 2.48,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob na Broige",
@@ -2787,7 +4441,7 @@
 	            "elevation": 3136,
 	            "prominence": 439,
 		    "isolation": 0.94,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "munrotop": [
@@ -2799,7 +4453,7 @@
 	            "elevation": 3317,
 	            "prominence": 473,
 		    "isolation": 1.11,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob Coire Altruim",
@@ -2809,7 +4463,7 @@
 	            "elevation": 3081,
 	            "prominence": 115,
 		    "isolation": 0.54,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corbett": [],
@@ -2822,7 +4476,7 @@
 	            "elevation": 2959,
 	            "prominence": 95,
 		    "isolation": 0.29,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corrie": [
@@ -2860,6 +4514,86 @@
 	    "type": "Mountain",
 	    "sub-type": "Ridge",
 	    "sub-sub-type": "Plateau",
+	    "route": [
+		{
+		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive M&ograve;r",
+		    "distance": 18.01,
+		    "elevationgain": 10305,
+		    "stdtime": 11,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"rocky talus",
+			"talus (coarse scree)",
+			"crag",
+			"notched slab"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Bidean nam Bian",
+		        "Stob Coire Sgreamhach",
+		        "Stob Dubh",
+		        "Stob Coire Raineach",
+		        "Stob na Broige",
+		        "Stob Dearg"
+		    ],
+		    "munrotop": [
+                        "Bidean nam Bian West Top",
+                        "Stob Coire Altruim",
+                        "Stob na Doire"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "etive-beag/mor_beag_bidean.gpx"
+		},
+		{
+		    "name": "Buachaille Etive Beag",
+		    "distance": 5,
+		    "elevationgain": 2952,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"rocky talus"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Stob Dubh",
+			"Stob Coire Raineach"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "etive-beag/ridge.gpx"
+		}
+	    ],
 	    "munro": [ 
 		{
 		    "name": "Stob Dubh",
@@ -2869,7 +4603,7 @@
 	            "elevation": 3143,
 	            "prominence": 1539,
 		    "isolation": 1.34,
-		    "trig": null
+		    "summit": "cairn"
 		},
                 {
 		    "name": "Stob Coire Raineach",
@@ -2879,7 +4613,7 @@
 	            "elevation": 3035,
 	            "prominence": 581,
 		    "isolation": 1.09,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "munrotop": [],
@@ -2893,7 +4627,7 @@
 	            "elevation": 2959,
 	            "prominence": 72,
 		    "isolation": 0.48,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corrie": [
@@ -2922,6 +4656,256 @@
 	    "type": "Mountain",
 	    "sub-type": "Massif",
 	    "sub-sub-type": null,
+	    "route": [
+		{
+		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive M&ograve;r",
+		    "distance": 18.01,
+		    "elevationgain": 10305,
+		    "stdtime": 11,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"rocky talus",
+			"talus (coarse scree)",
+			"crag",
+			"notched slab"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Bidean nam Bian",
+		        "Stob Coire Sgreamhach",
+		        "Stob Dubh",
+		        "Stob Coire Raineach",
+		        "Stob na Broige",
+		        "Stob Dearg"
+		    ],
+		    "munrotop": [
+                        "Bidean nam Bian West Top",
+                        "Stob Coire Altruim",
+                        "Stob na Doire"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "bidean_nam_bian/mor_beag_bidean.gpx"
+		},
+		{
+		    "name": "Bidean nam Bian and Stob Coire Sgreamhach",
+		    "distance": 6.75,
+		    "elevationgain": 4317,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"broken rock",
+			"rocky talus",
+			"notched slab"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Bidean nam Bian",
+		        "Stob Coire Sgreamhach"
+		    ],
+		    "munrotop": [
+                        "Stob Coire nan Lochan"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "bidean_nam_bian/bidean_coire-sgreamhach.gpx"
+		},
+		{
+		    "name": "Bidean nam Bian Central Gully",
+		    "distance": 5.28,
+		    "elevationgain": 4101,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk",
+			"scramble"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"broken rock",
+			"crag"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Bidean nam Bian"
+		    ],
+		    "munrotop": [
+                        "Stob Coire nam Beith",
+                        "Bidean nam Bian West Top"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "bidean_nam_bian/bidean_central-gully.gpx"
+		},
+		{
+		    "name": "Stob Coire nan Lochan Central Buttress",
+		    "distance": 5.59,
+		    "elevationgain": 3204,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"broken rock",
+			"crag",
+			"notched slab"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [
+                        "Stob Coire nan Lochan"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "bidean_nam_bian/lochan_central-buttress.gpx"
+		},
+		{
+		    "name": "The Lost Valley",
+		    "distance": 2.48,
+		    "elevationgain": 1099,
+		    "stdtime": 4,
+		    "type": [
+			"walk"
+		    ],
+		    "stage": [
+			"approach"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"stone staircase",
+			"notched slab"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "bidean_nam_bian/lost-valley.gpx"
+		},
+		{
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sg&ograve;r na h-Ulaidh and Beinn Maol Chaluim",
+		    "distance": 19.88,
+		    "elevationgain": 10305,
+		    "stdtime": 12,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"off-road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"grass with scattered rock",
+			"rocky talus",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Beinn Sgulaird",
+		        "Beinn Fhionnlaidh",
+		        "Sg&ograve;r na h-Ulaidh"
+		    ],
+		    "munrotop": [
+                        "Stob an Fhuarain"
+		    ],
+		    "corbett": [
+                        "Beinn Maol Chaluim"
+		    ],
+		    "corbetttop": [
+                        "Beinn Fhionnlaidh East Top"
+		    ],
+		    "GPX": "bidean_nam_bian/sgulaird_fhionnlaidh_h-ulaidh_chaluim.gpx"
+		},
+
+		{
+		    "name": "Beinn Maol Chaluim",
+		    "distance": 5,
+		    "elevationgain": 2769,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn Maol Chaluim"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "bidean_nam_bian/.gpx"
+		}
+	    ],
 	    "munro": [ 
 		{
 		    "name": "Bidean nam Bian",
@@ -2931,7 +4915,7 @@
 	            "elevation": 3772,
 	            "prominence": 2772,
 		    "isolation": 10.49,
-		    "trig": null
+		    "summit": "cairn"
 		},
                 {
 		    "name": "Stob Coire Sgreamhach",
@@ -2941,7 +4925,7 @@
 	            "elevation": 3517,
 	            "prominence": 419,
 		    "isolation": 0.64,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "munrotop": [ 
@@ -2953,7 +4937,7 @@
 	            "elevation": 3743,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob Coire nan Lochan",
@@ -2963,7 +4947,7 @@
 	            "elevation": 3278,
 	            "prominence": 380,
 		    "isolation": 0.5,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob Coire nam Beith",
@@ -2973,7 +4957,7 @@
 	            "elevation": 3632,
 	            "prominence": 105,
 		    "isolation": 0.19,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Beinn Fhada",
@@ -2983,7 +4967,7 @@
 	            "elevation": 3123,
 	            "prominence": 164,
 		    "isolation": 0.29,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Beinn Fhada NE Top",
@@ -2993,7 +4977,7 @@
 	            "elevation": 3054,
 	            "prominence": 180,
 		    "isolation": 0.33,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corbett": [
@@ -3005,7 +4989,7 @@
 	            "elevation": 2976,
 	            "prominence": 650,
 		    "isolation": 0.86,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corbetttop": [
@@ -3017,7 +5001,7 @@
 	            "elevation": 2920,
 	            "prominence": 115,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Beinn Fhada Far North Top",
@@ -3027,7 +5011,7 @@
 	            "elevation": 2700,
 	            "prominence": 131,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
 	    "corrie": [
@@ -3059,6 +5043,85 @@
             "type": "Mountain",
             "sub-type": "Ridge",
             "sub-sub-type": "Ar&ecirc;te",
+	    "route": [
+		{
+		    "name": "Beinn a&rsquo; Bheithir via Schoolhouse Ridge",
+		    "distance": 9.75,
+		    "elevationgain": 4550,
+		    "stdtime": 9,
+		    "type": [
+			"hillwalk",
+			"scramble"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"farm path",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"talus (coarse scree)",
+			"crag (grade 1 (easy))",
+			"notched slab (grade 1 (easy))"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Sgorr Dhearg",
+		        "Sgorr Dhonuill"
+		    ],
+		    "munrotop": [
+                        "Sgorr Bhan"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "bheithir/schoolhouse.gpx"
+		},
+		{
+		    "name": "Beinn a&rsquo; Bheithir",
+		    "distance": 9.63,
+		    "elevationgain": 4822,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"walk-in",
+			"approach",
+			"on-hill",
+			"walk-out"
+		    ],
+		    "terraintype": [
+			"road",
+			"farm path",
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+			"concrete",
+			"grass",
+			"broken rock",
+			"talus (coarse scree)"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Sgorr Dhearg",
+		        "Sgorr Dhonuill"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "bheithir/standard.gpx"
+		}
+	    ],
             "munro": [
                 {
                     "name": "Sgorr Dhearg",
@@ -3068,7 +5131,7 @@
                     "elevation": 3360,
                     "prominence": 2392,
                     "isolation": 5.07,
-                    "trig": null
+                    "summit": "cairn"
                 },
                 {
                     "name": "Sgorr Dhonuill",
@@ -3078,7 +5141,7 @@
                     "elevation": 3284,
                     "prominence": 800,
                     "isolation": 1.03,
-                    "trig": null
+                    "summit": "cairn"
 		}
             ],
             "munrotop": [
@@ -3090,7 +5153,7 @@
                     "elevation": 3107,
                     "prominence": 151,
                     "isolation": 0.33,
-                    "trig": null
+                    "summit": "cairn"
 		}
 	    ],
             "corbett": [],
@@ -3127,6 +5190,38 @@
             "type": "Mountain",
             "sub-type": "Stand-Alone",
 	    "sub-sub-type": "Whaleback",
+	    "route": [
+		{
+		    "name": "Beinn a&rsquo; Chrulaiste",
+		    "distance": 6.75,
+		    "elevationgain": 2139,
+		    "stdtime": 5,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion",
+			"off-path"
+		    ],
+		    "terraindiff": [
+			"grass",
+			"grass with scattered rock"
+		    ],
+		    "gear": [],
+		    "munro": [],
+		    "munrotop": [],
+		    "corbett": [
+                        "Beinn a&rsquo; Chrulaiste"
+		    ],
+		    "corbetttop": [],
+		    "GPX": "chrulaiste/chrulaiste.gpx"
+		}
+	    ],
             "munro": [],
             "munrotop": [],
             "corbett": [
@@ -3138,7 +5233,7 @@
                     "elevation": 2812,
                     "prominence": 1523,
                     "isolation": 1.91,
-		    "trig": "Pillar (Round)"
+		    "summit": "Triangulation Station [Pillar (Round)]"
                 }
 	    ],
             "corbetttop": [],
@@ -3177,6 +5272,119 @@
             "type": "Mountain",
             "sub-type": "Ridge",
             "sub-sub-type": "Ar&ecirc;te",
+	    "route": [
+		{
+		    "name": "Aonach Eagach Full Traverse",
+		    "distance": 6,
+		    "elevationgain": 3608,
+		    "stdtime": 8,
+		    "type": [
+			"hillwalk",
+			"scramble"
+		    ],
+		    "stage": [
+			"on-hill"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+		    	"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"scree (fine scree)",
+			"crag (grade 2 (moderate))",
+			"notched slab (grade 2 (moderate))"
+		    ],
+		    "gear": [
+			"helmet"
+		    ],
+		    "munro": [
+		        "Sg&ograve;rr nam Fiannaidh (Aonach Eagach)",
+		        "Meall Dearg"
+		    ],
+		    "munrotop": [
+		        "Am Bodach",
+		        "Stob Coire Leith",
+                        "Meall Dearg East Top"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "aonach_eagach/ridge.gpx"
+		},
+		{
+		    "name": "Aonach Eagach Traverse (Scree Descent)",
+		    "distance": 4.41,
+		    "elevationgain": 4091,
+		    "stdtime": 7,
+		    "type": [
+			"hillwalk",
+			"scramble"
+		    ],
+		    "stage": [
+			"on-hill"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+		    	"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"scree (fine scree)",
+			"crag (grade 2 (moderate))",
+			"notched slab (grade 2 (moderate))"
+		    ],
+		    "gear": [
+			"helmet"
+		    ],
+		    "munro": [
+		        "Sg&ograve;rr nam Fiannaidh (Aonach Eagach)",
+		        "Meall Dearg"
+		    ],
+		    "munrotop": [
+		        "Am Bodach",
+		        "Stob Coire Leith",
+                        "Meall Dearg East Top"
+		    ],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "aonach_eagach/ridge_scree.gpx"
+		},
+		{
+		    "name": "Meall Dearg from Loch Leven",
+		    "distance": 5.25,
+		    "elevationgain": 2969,
+		    "stdtime": 6,
+		    "type": [
+			"hillwalk"
+		    ],
+		    "stage": [
+			"approach",
+			"on-hill"
+		    ],
+		    "terraintype": [
+			"path",
+			"footpath erosion"
+		    ],
+		    "terraindiff": [
+		    	"grass",
+			"broken rock",
+			"grass with scattered rock",
+			"crag"
+		    ],
+		    "gear": [],
+		    "munro": [
+		        "Meall Dearg"
+		    ],
+		    "munrotop": [],
+		    "corbett": [],
+		    "corbetttop": [],
+		    "GPX": "aonach_eagach/meall_dearg_loch_leven.gpx"
+		}
+	    ],
             "munro": [
 		{
 		    "name": "Sg&ograve;rr nam Fiannaidh (Aonach Eagach)",
@@ -3186,7 +5394,7 @@
 	            "elevation": 3173,
 	            "prominence": 2041,
 		    "isolation": 1.92,
-		    "trig": "Pillar (Stonebuilt)"
+		    "summit": "Triangulation Station [Pillar (Stonebuilt)]"
 		},
 		{
 		    "name": "Meall Dearg",
@@ -3196,7 +5404,7 @@
 	            "elevation": 3123,
 	            "prominence": 393,
 		    "isolation": 1.29,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
             "munrotop": [
@@ -3208,7 +5416,7 @@
 	            "elevation": 3091,
 	            "prominence": 247,
 		    "isolation": 0.49,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Stob Coire Leith",
@@ -3218,7 +5426,7 @@
 	            "elevation": 3081,
 	            "prominence": 200,
 		    "isolation": 0.55,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Meall Dearg East Top",
@@ -3228,7 +5436,7 @@
 	            "elevation": 3025,
 	            "prominence": null,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
             "corbett": [],
@@ -3241,7 +5449,7 @@
 	            "elevation": 2976,
 	            "prominence": 109,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Aonach Eagach West Peak",
@@ -3251,7 +5459,7 @@
 	            "elevation": 2969,
 	            "prominence": 105,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "A&rsquo;Chailleach",
@@ -3261,7 +5469,7 @@
 	            "elevation": 2963,
 	            "prominence": 470,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Sr&ograve;n Gharbh",
@@ -3271,7 +5479,7 @@
 	            "elevation": 2867,
 	            "prominence": 196,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		},
 		{
 		    "name": "Sron a&rsquo; Choire Odhair Bhig",
@@ -3281,7 +5489,7 @@
 	            "elevation": 2644,
 	            "prominence": 59,
 		    "isolation": null,
-		    "trig": null
+		    "summit": "cairn"
 		}
 	    ],
             "corrie": [

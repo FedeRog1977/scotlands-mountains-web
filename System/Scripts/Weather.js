@@ -286,7 +286,7 @@ const app = {
 			  <div style="transform:rotate(${-45 + 180 + day.wind_deg}deg);">
 			      <i class="fa-solid fa-location-arrow"></i>
 			  </div>
-		          <small style="border:1px solid var(--font);padding:0.25em;">
+		          <small>
 			      <i class="fas fa-wind"></i> 
 		              ${day.wind_speed}m/s &#64; ${day.wind_deg}&deg;
 			  </small>
@@ -454,11 +454,11 @@ const app = {
 			  <div style="transform:rotate(${-45 + 180 + hour.wind_deg}deg);">
 			      <i class="fa-solid fa-location-arrow"></i>
 			  </div>
-			  <small style="font-size:10px;border:1px solid var(--font);padding:0.25em;">
+			  <small>
 		              <i class="fas fa-wind"></i> 
 		              ${hour.wind_speed}m/s &#64; ${hour.wind_deg}&deg;
 			  </small><br>
-			  <small style="font-size:10px;border:1px solid var(--font);padding:0.25em;">
+			  <small>
 		              <i class="fas fa-wind"></i>
 		              <i class="fas fa-wind"></i> 
 		              ${hour.wind_gust}m/s<br>

@@ -188,14 +188,32 @@ function closeOptions() {
  * Add Routes
  * Using GPX to GeoJSON Method
  */
-let loadRoute = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/aonach_eagach/ridge_scree.gpx';
+
+let loadRoutePrefix = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/";
+let loadRoute = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/bheithir/shoolhouse.gpx";
+
+/*
+fetch(locations)
+    .then((resp) => {
+        return resp.json();
+    })
+    .then((data) => {
+        const hills = data;
+        for (var i in hills.landmass) {
+	    for (var k in hills.landmass[i].munro) {
+		if (hills.landmass[i].munro[k].name === loadRoute) {
+		    showRoute(loadRoute);
+		}
+	    }
+	}
+*/
 
 function showRoute() {
     fetch(loadRoute)
         .then(response => response.text())
         .then(str => new DOMParser().parseFromString(str, "text/xml"))
         .then(doc => {
-	    data = toGeoJSON.gpx(doc);
+	    let data = toGeoJSON.gpx(doc);
 	    const route = data;
 	    L.geoJSON(route,{color:'#A80606'}).addTo(map);
         })
