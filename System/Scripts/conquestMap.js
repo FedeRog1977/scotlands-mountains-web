@@ -190,7 +190,7 @@ function closeOptions() {
  */
 
 let loadRoutePrefix = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/";
-let loadRoute = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/bheithir/shoolhouse.gpx";
+let loadRoute = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/bheithir/schoolhouse.gpx";
 
 /*
 fetch(locations)
