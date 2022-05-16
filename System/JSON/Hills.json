@@ -1791,7 +1791,7 @@
                     "prominence": 2884,
                     "isolation": 12.43,
                     "summit": "Triangulation Station [Pillar (Round (Destroyed))]",
-		    "image": "<img src='Photos/Munros/cruachan.jpg' style='width:150px;'></img>"
+		    "image": "cruachan.jpg"
                 },
                 {
                     "name": "Stob Daimh",
