@@ -31,12 +31,15 @@ function searchLocation() {
 			}
 	                let hillProm = hills.landmass[i].munro[k].prominence;
 	                let hillIso = hills.landmass[i].munro[k].isolation;
+	                let hillSum = hills.landmass[i].munro[k].summit;
+			let hillImg = hills.landmass[i].munro[k].image;
 	                locationOut.innerHTML = 
 			    hillName + " sits at " + hillElev + "ft<br>" 
 			    + "It has a prominance of " + hillProm + "ft and is isolated by " + hillIso + "mi<br>"
 			    + "It&rsquo;s located at: " 
 			    + hillLat + "&deg;" + hillLatDir + ", " 
-			    + hillLon + "&deg;" + hillLonDir;
+			    + hillLon + "&deg;" + hillLonDir + "<br>"
+			    + "It has summit feature " + hillSum + <br>;
 		    }
 	        }
 	    }
