@@ -14,6 +14,26 @@
 }
 
 @font-face {
+        font-family: Audi-Extended;
+        src: url(Fonts/Audi/Extended-Bold.ttf);
+}
+
+@font-face {
+        font-family: Audi-Regular;
+        src: url(Fonts/Audi/Normal.ttf);
+}
+
+@font-face {
+        font-family: Audi-Bold;
+        src: url(Fonts/Audi/Bold.ttf);
+}
+
+@font-face {
+        font-family: Audi-Italic;
+        src: url(Fonts/Audi/Italic.ttf);
+}
+
+@font-face {
         font-family: Giant;
         src: url(Fonts/NFS.ttf);
 }
@@ -34,21 +54,21 @@
 /* Preliminaries */
 
 h1 {
-	font-family: Garamond-Bold;
+	font-family: Audi-Extended;
 	font-size: 24px;
 	font-weight: normal;
 	color: var(--font);
 }
 
 h2 {
-	font-family: Garamond-Bold;
+	font-family: Audi-Extended;
 	font-size: 20px;
 	font-weight: normal;
 	color: var(--font);
 }
 
 h3 {
-	font-family: Garamond-Bold;
+	font-family: Audi-Extended;
 	font-size: 18px;
 	font-weight: normal;
 	color: var(--font);
@@ -61,11 +81,11 @@ body {
 }
 
 b {
-	font-family: Garamond-Bold;
+	font-family: Audi-Bold;
 }
 
 i {
-	font-family: Garamond-Italic;
+	font-family: Audi-Italic;
 }
 
 small {
@@ -96,7 +116,7 @@ small {
                 }
 
 	.navigation {
-		font-family: Garamond-Bold;
+		font-family: Giant;
 		text-align: right;
                 word-spacing: 15px;
 		padding: 3.75em 0 0 0;
@@ -127,13 +147,13 @@ small {
 
 		.pages-desktop, .pages-mobile, .pages-mobile-button {
                         font-size: 20px;
-                        font-variant: small-caps;
+			letter-spacing: 1.25px;
 			color: var(--font-header-footer);
                         transition: color var(--dark-trans);
                 }
 
 		.pages-mobile {
-		        font-family: Proxima;
+		        font-family: Giant;
 			color: var(--font);
                         background-color: var(--drop);
                         text-align: right;
@@ -198,7 +218,7 @@ small {
                         }
 
 .footer {
-	font-family: Garamond-Serif;
+	font-family: Audi-Extended;
         font-size: 16px;
         text-align: center;
         color: var(--font-header-footer);
@@ -245,7 +265,7 @@ small {
 	}
 
 	.body {
-		font-family: Garamond-Serif;
+		font-family: Audi-Regular;
 		color: var(--font);
 		background-color: var(--fg);
 		border-radius: 0.5em;
@@ -410,8 +430,8 @@ table {
 }
 
 .elements-profile {
+	font-family: Audi-Extended;
         font-size: 20px;
-        font-variant: small-caps;
 	word-spacing: 10px;
 	color: var(--font-header-footer);
 	border-top: 2px solid var(--font);
@@ -524,7 +544,7 @@ table {
 
 #scope {
 	background-color: white;
-	font-family: Garamond-Serif;
+	font-family: Audi-Regular;
 	text-align: center;
 }	
 
@@ -543,7 +563,7 @@ table {
 	}
 
 	#menu {
-		font-family: Garamond-Serif;
+		font-family: Audi-Extended;
 		margin: 0 0 0 3em;
 		padding: 10px;
 	}
@@ -569,7 +589,7 @@ table {
 		}
 
 #options {
-	font-family: Garamond-Serif;
+	font-family: Audi-Regular;
 	text-align: left;
 	background-color: var(--fg);
 	height: 100%;
@@ -591,18 +611,39 @@ table {
 		margin: 0 0 0 50px;
 	}
 
-	#optionsCont {
-		padding: 25px;
+	.optionsCont {
+		margin: 1.25em;
+		border: 1px solid black;
 	}
 
-	#options a {
-		text-decoration: none;
+	#options button {
 		color: var(--font);
-		display: block;
+		border: 2px solid var(--font);
+		border-radius: 0.25em;
+		background: #FFFFFF;
+		height: 30px;
+		width: 30px;
 		transition: var(--link-trans);
 	}
 
-	#options a:hover {
+	#options button:hover {
+		cursor: pointer;
 		color: var(--font-hover);
+		border: 2px solid var(--font-hover);
 		transition: var(--link-trans);
 	}
+
+		.optionsRow {
+			text-align: center;
+			margin: 0.5em 0 0.5em 0;
+		}
+
+		.optionsCol {
+			text-align: center;
+			display: inline-block;
+		}
+
+		.optionsLabel {
+			font-size: 14px;
+			display: block;
+		}

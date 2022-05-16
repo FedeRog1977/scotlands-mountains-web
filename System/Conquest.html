@@ -82,13 +82,33 @@
 
 	<div id="options">
 		<a id="optionsOptClose" onclick="closeOptions()">&times;</a>
-		<div id="optionsCont">
-			<h1>Hill Options</h1>
-			<a href="#" onclick="showMunros()"><i class="fas fa-mountain"></i> Show Munros</a>
-			<a href="#" onclick="showMunroTops()"><i class="fas fa-mountain"></i> Show Munro Tops</a>
-			<a href="#" onclick="showCorbetts()"><i class="fas fa-mountain"></i> Show Corbetts</a>
-			<a href="#" onclick="showCorbettTops()"><i class="fas fa-mountain"></i> Show Corbett Tops</a>
-			<!--<a href="#" onclick="removeMarker()"><i class="fas fa-mountain" style="color:white;"></i> Hide All Icons</a>-->
+		<div class="optionsCont">
+			<h1>Options</h1>
+			<h2>Hill Options</h2>
+			<div class="optionsRow">
+				<div class="optionsCol">
+					<button id="munros" onclick="showMunros()"><i class="fas fa-mountain"></i></button>
+					<label for="munros" class="optionsLabel">Munros</label>
+				</div>
+				<div class="optionsCol">
+					<button id="munrotops" onclick="showMunroTops()"><i class="fas fa-mountain"></i></button>
+					<label for="munrotops" class="optionsLabel">Munro Tops</label>
+				</div>
+				<div class="optionsCol">
+					<button id="corbetts" onclick="showCorbetts()"><i class="fas fa-mountain"></i></button>
+					<label for="corbetts" class="optionsLabel">Corbetts</label>
+				</div>
+				<div class="optionsCol">
+					<button id="corbetttops" onclick="showCorbettTops()"><i class="fas fa-mountain"></i></button>
+					<label for="corbetttops" class="optionsLabel">Corbett Tops</label>
+				</div>
+			</div>
+			<div class="optionsRow">
+				<div class="optionsCol">
+					<button id="hideMarkers" onclick="hideMarkers()"><i class="fas fa-mountain" style="color:white;"></i></button>
+					<label for="hideMarkers" class="optionsLabel">Hide</label>
+				</div>
+			</div>
 		</div>
 	</div>
 
