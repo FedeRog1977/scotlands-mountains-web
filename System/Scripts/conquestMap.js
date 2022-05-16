@@ -69,7 +69,7 @@ var mountainIcon = new L.Icon({
 
 function createMarker(hill,type,elev,lat,lon,img,iconType) {
     var popup = "<h3 style='margin:0 0 0.25em 0;'>" + hill + "</h3>" 
-        + type + " at " + elev + "ft<br>" 
+        + type + elev + "ft<br>" 
 	+ lat + "&deg;" + ", " + lon + "&deg;" + "<br>" 
 	+ "<img src='Photos/" + img + "' style='width:150px;'></img>";
     marker = L.marker([lat,lon],{icon:iconType}).addTo(map).bindPopup(popup);
@@ -93,7 +93,7 @@ function showMunros() {
                 for (var k = 0; k < hills.landmass[i].munro.length; k++) {
                     createMarker(
 		        hills.landmass[i].munro[k].name,
-			'Munro',
+			"Munro at ",
 		        hills.landmass[i].munro[k].elevation,
 		        hills.landmass[i].munro[k].lat,
 		        hills.landmass[i].munro[k].lon,
@@ -116,7 +116,7 @@ function showMunroTops() {
                 for (var k = 0; k < hills.landmass[i].munrotop.length; k++) {
                     createMarker(
 		        hills.landmass[i].munrotop[k].name,
-			'Munro Top',
+			"Munro Top at",
 		        hills.landmass[i].munrotop[k].elevation,
 		        hills.landmass[i].munrotop[k].lat,
 		        hills.landmass[i].munrotop[k].lon,
@@ -139,7 +139,7 @@ function showCorbetts() {
                 for (var k = 0; k < hills.landmass[i].corbett.length; k++) {
                     createMarker(
 		        hills.landmass[i].corbett[k].name,
-			'Corbett',
+			"Corbett at ",
 		        hills.landmass[i].corbett[k].elevation,
 		        hills.landmass[i].corbett[k].lat,
 		        hills.landmass[i].corbett[k].lon,
@@ -162,7 +162,7 @@ function showCorbettTops() {
                 for (var k = 0; k < hills.landmass[i].corbetttop.length; k++) {
                     createMarker(
 		        hills.landmass[i].corbetttop[k].name,
-			'Corbett Top',
+			"Corbett Top at ",
 		        hills.landmass[i].corbetttop[k].elevation,
 		        hills.landmass[i].corbetttop[k].lat,
 		        hills.landmass[i].corbetttop[k].lon,
