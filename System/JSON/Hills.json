@@ -1888,7 +1888,8 @@
                     "elevation": 2943,
                     "prominence": 555,
                     "isolation": 0.89,
-                    "summit": "cairn"
+                    "summit": "cairn",
+		    "image": "Corbetts/bhuiridhcorb.jpg"
                 }
 	    ],
             "corbetttop": [],
@@ -3263,7 +3264,7 @@
 	            "prominence": 545,
 		    "isolation": 0.55,
 		    "summit": "cairn",
-		    "image": "Corbetts/mhic-chasgaig..jpg"
+		    "image": "Corbetts/mhic-chasgaig.jpg"
 		}
 	    ],
 	    "corbetttop": [
