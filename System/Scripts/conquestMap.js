@@ -71,7 +71,7 @@ function createMarker(hill,type,elev,lat,lon,img,iconType) {
     var popup = "<h3 style='margin:0 0 0.25em 0;'>" + hill + "</h3>" 
         + type + " at " + elev + "ft<br>" 
 	+ lat + "&deg;" + ", " + lon + "&deg;" + "<br>" 
-	+ "<img src='Photos/Munros/" + img + "' style='width:150px;'></img>";
+	+ "<img src='Photos/" + img + "' style='width:150px;'></img>";
     marker = L.marker([lat,lon],{icon:iconType}).addTo(map).bindPopup(popup);
     return marker;
 }
