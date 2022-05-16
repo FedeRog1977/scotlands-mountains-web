@@ -67,8 +67,8 @@ var mountainIcon = new L.Icon({
     iconSize: [30, 36],
 });
 
-function createMarker(hill,type,elev,lat,lon,icontype) {
-    var popup = '<h3>' + hill + '</h3>' + type + ' at ' + elev + 'ft<br>' + lat + ', ' + lon + '<br><img src="./Photos/lochnagar.jpg" style="width:150px;"></img>';
+function createMarker(hill,type,elev,lat,lon,img,icontype) {
+    var popup = '<h3>' + hill + '</h3>' + type + ' at ' + elev + 'ft<br>' + lat + ', ' + lon + "<br>" + img;
     marker = L.marker([lat,lon],{icon:icontype}).addTo(map).bindPopup(popup);
     return marker;
 }
@@ -94,6 +94,7 @@ function showMunros() {
 		        hills.landmass[i].munro[k].elevation,
 		        hills.landmass[i].munro[k].lat,
 		        hills.landmass[i].munro[k].lon,
+			hills.landmass[i].munro[k].image,
 		        mountainIcon
 		    );
                 }
@@ -116,6 +117,7 @@ function showMunroTops() {
 		        hills.landmass[i].munrotop[k].elevation,
 		        hills.landmass[i].munrotop[k].lat,
 		        hills.landmass[i].munrotop[k].lon,
+			hills.landmass[i].munrotop[k].image,
 		        mountainIcon
 		    );
                 }
@@ -138,6 +140,7 @@ function showCorbetts() {
 		        hills.landmass[i].corbett[k].elevation,
 		        hills.landmass[i].corbett[k].lat,
 		        hills.landmass[i].corbett[k].lon,
+			hills.landmass[i].corbett[k].image,
 		        mountainIcon
 		    );
                 }
@@ -160,6 +163,7 @@ function showCorbettTops() {
 		        hills.landmass[i].corbetttop[k].elevation,
 		        hills.landmass[i].corbetttop[k].lat,
 		        hills.landmass[i].corbetttop[k].lon,
+			hills.landmass[i].corbetttop[k].image,
 		        mountainIcon
 		    );
                 }

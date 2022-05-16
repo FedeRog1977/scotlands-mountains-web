@@ -39,7 +39,8 @@ function searchLocation() {
 			    + "It&rsquo;s located at: " 
 			    + hillLat + "&deg;" + hillLatDir + ", " 
 			    + hillLon + "&deg;" + hillLonDir + "<br>"
-			    + "It has summit feature " + hillSum + <br>;
+			    + "It has summit feature " + hillSum + "<br>"
+			    + hillImg;
 		    }
 	        }
 	    }
