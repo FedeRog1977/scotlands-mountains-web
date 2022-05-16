@@ -2792,7 +2792,8 @@
                     "elevation": 2516,
                     "prominence": 242,
                     "isolation": 0.59,
-                    "summit": "cairn"
+                    "summit": "cairn",
+		    "image": "noimage.png"
                 }
 	    ],
             "corrie": [
