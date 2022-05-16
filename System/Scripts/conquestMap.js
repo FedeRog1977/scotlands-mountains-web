@@ -116,7 +116,7 @@ function showMunroTops() {
                 for (var k = 0; k < hills.landmass[i].munrotop.length; k++) {
                     createMarker(
 		        hills.landmass[i].munrotop[k].name,
-			"Munro Top at",
+			"Munro Top at ",
 		        hills.landmass[i].munrotop[k].elevation,
 		        hills.landmass[i].munrotop[k].lat,
 		        hills.landmass[i].munrotop[k].lon,
