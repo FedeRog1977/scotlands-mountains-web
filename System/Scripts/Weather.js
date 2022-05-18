@@ -9,7 +9,6 @@ function searchLocation() {
             const hills = data;
 	    const munroInp = document.getElementById("testLocSearchInp").value.toLowerCase();
             const locationOut = document.getElementById("testLocSearch");
-
 	    for (var i in hills.landmass) {
 	        for (var k in hills.landmass[i].munro) {
                     if (hills.landmass[i].munro[k].name.toLowerCase() === munroInp) {
@@ -47,14 +46,147 @@ function searchLocation() {
         })
 }
 
+function selectMunroOpt() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            const lat = document.getElementById("latitude");
+            const lon = document.getElementById("longitude");
+            const selectMunro = document.getElementById("userWeatherSelectMunro").value.toLowerCase();
+            const locOutFive = document.getElementById("userWeatherResultsLocFive");
+            const locOutSix = document.getElementById("userWeatherResultsLocSix");
+	    locOutFive.innerHTML = "";
+	    locOutSix.innerHTML = "";
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].munro) {
+	            if (hills.landmass[i].munro[k].name.toLowerCase() === selectMunro) {
+		        lat.value = hills.landmass[i].munro[k].lat;
+		        lon.value = hills.landmass[i].munro[k].lon;
+			locOutFive.innerHTML = hills.landmass[i].munro[k].name;
+			locOutSix.innerHTML = hills.landmass[i].munro[k].name;
+		    }
+                }
+            }
+        })
+}
+
+function inpMunroOpt() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            const lat = document.getElementById("latitude");
+            const lon = document.getElementById("longitude");
+	    const inpMunro = document.getElementById("userWeatherInputMunro").value.toLowerCase();
+            const locOutFive = document.getElementById("userWeatherResultsLocFive");
+            const locOutSix = document.getElementById("userWeatherResultsLocSix");
+	    locOutFive.innerHTML = "";
+	    locOutSix.innerHTML = "";
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].munro) {
+	            if (hills.landmass[i].munro[k].name.toLowerCase() === inpMunro) {
+		        lat.value = hills.landmass[i].munro[k].lat;
+		        lon.value = hills.landmass[i].munro[k].lon;
+			locOutFive.innerHTML = hills.landmass[i].munro[k].name;
+			locOutSix.innerHTML = hills.landmass[i].munro[k].name;
+		    }
+                }
+            }
+        })
+}
+
+function selectCorbettOpt() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            const lat = document.getElementById("latitude");
+            const lon = document.getElementById("longitude");
+            const selectCorbett = document.getElementById("userWeatherSelectCorbett").value.toLowerCase();
+            const locOutFive = document.getElementById("userWeatherResultsLocFive");
+            const locOutSix = document.getElementById("userWeatherResultsLocSix");
+	    locOutFive.innerHTML = "";
+	    locOutSix.innerHTML = "";
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].corbett) {
+	            if (hills.landmass[i].corbett[k].name.toLowerCase() === selectCorbett) {
+		        lat.value = hills.landmass[i].corbett[k].lat;
+		        lon.value = hills.landmass[i].corbett[k].lon;
+			locOutFive.innerHTML = hills.landmass[i].corbett[k].name;
+			locOutSix.innerHTML = hills.landmass[i].corbett[k].name;
+		    }
+                }
+            }
+        })
+}
+
+function inpCorbettOpt() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            const lat = document.getElementById("latitude");
+            const lon = document.getElementById("longitude");
+	    const inpCorbett = document.getElementById("userWeatherInputCorbett").value.toLowerCase();
+            const locOutFive = document.getElementById("userWeatherResultsLocFive");
+            const locOutSix = document.getElementById("userWeatherResultsLocSix");
+	    locOutFive.innerHTML = "";
+	    locOutSix.innerHTML = "";
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].corbett) {
+	            if (hills.landmass[i].corbett[k].name.toLowerCase() === inpCorbett) {
+		        lat.value = hills.landmass[i].corbett[k].lat;
+		        lon.value = hills.landmass[i].corbett[k].lon;
+			locOutFive.innerHTML = hills.landmass[i].corbett[k].name;
+			locOutSix.innerHTML = hills.landmass[i].corbett[k].name;
+		    }
+                }
+            }
+        })
+}
+
+function selectCounty() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            const lat = document.getElementById("latitude");
+            const lon = document.getElementById("longitude");
+	    const selectCounty = document.getElementById("userWeatherSelectCounty").value.toLowerCase();
+            const locOutFive = document.getElementById("userWeatherResultsLocFive");
+            const locOutSix = document.getElementById("userWeatherResultsLocSix");
+	    locOutFive.innerHTML = "";
+	    locOutSix.innerHTML = "";
+            for (var i in hills.county) {
+	        if (hills.county[i].name.toLowerCase() === selectCounty) {
+		    lat.value = hills.county[i].lat;
+		    lon.value = hills.county[i].lon;
+		    locOutFive.innerHTML = hills.county[i].name;
+		    locOutSix.innerHTML = hills.county[i].name;
+		}
+            }
+        })
+}
+
 const app = {
   init: () => {
     document
-      .getElementById('searchWeather')
+      .getElementById("searchWeather")
       .addEventListener('click', app.fetchWeather);
     document
-      .getElementById('currLocWeather')
-      .addEventListener('click', app.getLocation);
+      .getElementById("currLocWeather")
+      .addEventListener("click", app.getLocation);
   },
   fetchWeather: (ev) => {
     let lat = document.getElementById('latitude').value;

@@ -78,6 +78,10 @@ Restrictions
 	- Corries and other features run from south to north
 	- Everything up to corries have attached attributes as they appear on OS maps, features form then on such as gullies and small lochains which are not named on an OS map do not
 
+Issues
+
+* origin of EPSG:27700 coordinate system required manual calibration in order to function with EPSG:4326
+
 Some Descriptions
 
 * Region: Major Region

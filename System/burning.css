@@ -55,21 +55,21 @@
 
 h1 {
 	font-family: Audi-Extended;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: normal;
 	color: var(--font);
 }
 
 h2 {
 	font-family: Audi-Extended;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: normal;
 	color: var(--font);
 }
 
 h3 {
 	font-family: Audi-Extended;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 	color: var(--font);
 }
@@ -89,7 +89,7 @@ i {
 }
 
 small {
-	font-size: 12px;
+	font-size: 10px;
 }
 
 /* Header */
@@ -98,7 +98,7 @@ small {
         background-image: var(--header-footer);
 	height: 150px;
 	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
-        padding: 0 6.25% 0 6.25%;
+        padding: 0 8.75% 0 8.75%;
 }
 
         .title {
@@ -134,7 +134,7 @@ small {
 			}
 
 			.pages-drop-cont {
-				font-size: 15px;
+				font-size: 14px;
 				text-align: left;
 				line-height: 25px;
 				background-image: var(--header-footer);
@@ -146,7 +146,7 @@ small {
 			}
 
 		.pages-desktop, .pages-mobile, .pages-mobile-button {
-                        font-size: 20px;
+                        font-size: 24px;
 			letter-spacing: 1.25px;
 			color: var(--font-header-footer);
                         transition: color var(--dark-trans);
@@ -266,6 +266,7 @@ small {
 
 	.body {
 		font-family: Audi-Regular;
+		font-size: 14px;
 		color: var(--font);
 		background-color: var(--fg);
 		border-radius: 0.5em;
@@ -337,9 +338,20 @@ small {
 		}
 
 .imgtext-cont {
-	position: relative;
+	background-image: url("./Photos/home-bg.jpg");
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
+	padding: 12.5% 12.5% 25% 12.5%;
 }
+
+	@media only screen and (max-width: 1026px) {
+		.imgtext-cont {
+			display: none;
+		}
+	}
 
 	.imgtext-left {
 		position: absolute;
@@ -349,10 +361,7 @@ small {
 	}
 
 	.imgtext-top {
-		position: absolute;
-		top: 12.5%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		margin: 0 0 25px 0;
 	}
 
 	.imgtext-center {
@@ -361,6 +370,23 @@ small {
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
+	.imgtext-buttons {
+		margin: 0;
+	}
+
+		.imgtext-button {
+			font-family: Audi-Extended;
+			font-size: 18px;
+			background: rgba(0, 0, 0, 0);
+			border: 2px solid #000000;
+			padding: 10px;
+		}
+
+		.imgtext-button a {
+			color: #000000;
+			text-decoration: none;
+		}
 
 /* Tables */
 
@@ -374,9 +400,9 @@ table {
 	}
 
 	th {
+		font-family: Audi-Extended;
 		text-align: center;
 		font-weight: normal;
-		font-variant: small-caps;
 		transition: border var(--dark-trans);
 		padding: 0.25em 0.75em 0.25em 0.75em;
 	}
@@ -414,14 +440,12 @@ table {
 }
 
 .burning-pic {
-	max-width: 250px;
+	max-width: 500px;
+	-webkit-filter: drop-shadow(0 0 40px rgba(0, 0, 0, 1));
+  	/*filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));*/
+	margin: 0;
+	padding: 0;
 }
-
-	@media (max-width: 768px) {
-		.burning-pic {
-			max-width: 125px;
-		}
-	}
 
 .profile-pic {
 	max-width: 125px;
@@ -431,7 +455,7 @@ table {
 
 .elements-profile {
 	font-family: Audi-Extended;
-        font-size: 20px;
+        font-size: 18px;
 	word-spacing: 10px;
 	color: var(--font-header-footer);
 	border-top: 2px solid var(--font);
@@ -472,7 +496,8 @@ table {
 		}
 
 			.sub-sub-element {
-				border: 1px dashed var(--font);
+				/*border: 1px dashed var(--font);*/
+				background: var(--fg);
 				margin: 0;
 				padding: 0 2em 0 2em;
 			}

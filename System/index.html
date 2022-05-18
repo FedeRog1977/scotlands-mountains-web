@@ -55,16 +55,19 @@
                 </u>
         </div>
 
+	<div class="imgtext-cont">
+		<div class="imgtext-top">
+			<img class="burning-pic" src="./Photos/Logo.png"></img>
+		</div>
+		<div class="imgtext-buttons">
+			<button class="imgtext-button"><a href="./Conquest.html">Conquest</a></button>
+			<button class="imgtext-button"><a href="./Ranger.html">Ranger</a></button>
+		</div>
+	</div>
+
 	<div class="bodycage">
 	
 		<div class="body">
-
-			<div class="imgtext-cont">
-				<img src="./Photos/lochnagar.jpg" style="width:100%">
-				<div class="imgtext-top">
-					<img class="burning-pic" src="./Photos/Logo.png"></img>
-				</div>
-			</div>
 
 			<h1>
 				<marquee behavior="scroll" direction="left">Welcome to Burning Roots. From the creator of <a href="http://lewisbritton.com/">lewisbritton.com</a>, keeping the geography dream alive!</marquee>
@@ -176,19 +179,31 @@
 						<tr>
 							<td style="text-align:right;">Select a Munro:</td>
 							<td style="text-align:left;">
-								<select id="userWeatherSelectMunro"></select>
+								<select id="userWeatherSelectMunro" onchange="selectMunroOpt()"></select>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align:right;">Input a Munro:</td>
+							<td style="text-align:left;">
+								<input id="userWeatherInputMunro" onchange="inpMunroOpt()" type="text"></input>
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align:right;">Select a Corbett:</td>
 							<td style="text-align:left;">
-								<select id="userWeatherSelectCorbett"></select>
+								<select id="userWeatherSelectCorbett" onchange="selectCorbettOpt()"></select>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align:right;">Input a Corbett:</td>
+							<td style="text-align:left;">
+								<input id="userWeatherInputCorbett" onchange="inpCorbettOpt()" type="text"></input>
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align:right;">Select a County:</td>
 							<td style="text-align:left;">
-								<select id="userWeatherSelectCounty"></select>
+								<select id="userWeatherSelectCounty" onchange="selectCounty()"></select>
 							</td>
 						</tr>
 						<tr>
@@ -204,7 +219,6 @@
 									placeholder="latitude" 
 									aria-label="latitude" 
 									aria-describedby="basic-addon1" 
-									value="56.6535" 
 								/>
 							</td>
 						<tr>
@@ -221,31 +235,26 @@
 									placeholder="longitude" 
 									aria-label="longitude" 
 									aria-describedby="basic-addon1" 
-									value="-5.1717" 
 								/>
 							</td>
 						</tr>
 						<tr>
 							<td colspan=2 style="text-align:center;">
-								<button id="currLocWeather" type="button" class="btn btn-primary mb-3">
-									Use Current Location
-								</button>
+								<button id="currLocWeather" type="button">Use Current Location</button>
 							</td>
 						</tr>
 						<tr>
 							<td colspan=2 style="text-align:center;">
-								<button id="searchWeather" type="button" class="btn btn-primary mb-3">
-									Get Weather
-								</button>
+								<button id="searchWeather" type="button">Get Weather</button>
 							</td>
 						</tr>
 					</table>
         			</div>
 
 				<div id="userWeatherResults" class="hidden">
-					<h3>Five-day forecast for <span id="userWeatherResultsLoc"></span></h3>
+					<h3>Five-day forecast for <span id="userWeatherResultsLocFive"></span></h3>
 					<div id="userWeatherResultsDay" class="weatherrow day"></div>
-					<h3>Six-hour forecast for <span id="userWeatherResultsLoc"></span></h3>
+					<h3>Six-hour forecast for <span id="userWeatherResultsLocSix"></span></h3>
         				<div id="userWeatherResultsHour" class="weatherrow hour"></div>
       				</div>
 
