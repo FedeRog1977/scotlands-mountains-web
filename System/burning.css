@@ -41,12 +41,16 @@
 :root {
 	--bg: #F5F5F5;
 	--fg: #FFFFFF; /*#FBEACF;*/
-	--header-footer: linear-gradient(to bottom left, #C7AD7F 40%, #A57A5A);
+	/*--header-footer: linear-gradient(to bottom left, #C7AD7F 40%, #A57A5A);*/
+	/*--header-footer: linear-gradient(to bottom left, #87CEEB 10%, #D8F2FF);*/
+	--header-footer: linear-gradient(to bottom left, #404040 100%, #404040);
 	--drop: #E8E8E8;
         --font: #000000;
         --font2: #96B9EE;
-	--font-header-footer: #FFFFFF;
-	--font-hover: #7F5539;
+	/*--font-header-footer: #FFFFFF;*/
+	--font-header-footer: #808080;
+	/*--font-hover: #7F5539;*/
+	--font-hover: #87CEEB;
 	--link-trans: 0.25s;
 	--dark-trans: 0.5s;
 }
@@ -98,19 +102,20 @@ small {
         background-image: var(--header-footer);
 	height: 150px;
 	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
-        padding: 0 8.75% 0 8.75%;
+        padding: 0 12.5% 0 12.5%;
 }
 
         .title {
                 float: left;
                 line-height: 15px;
+		background-color: white;
 		padding-top: 30px;
         }
 
 		.title h1 {
 			font-family: Giant;
 			font-size: 24px;
-			/*color: #E6281E;*/
+			text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 			margin: 0.25em 0 0 0;
 			padding: 0;
                 }
@@ -128,6 +133,17 @@ small {
 			margin: 0;
 		        padding: 0;
 		}
+
+			.pages-drop p {
+				margin: 0;
+                                transition: color var(--link-trans);
+			}
+
+			.pages-drop p:hover {
+				color: var(--font-hover);
+				cursor: pointer;
+                                transition: color var(--link-trans);
+			}
 
 			.pages-drop:hover .pages-drop-cont {
 			        display: block;
@@ -353,6 +369,38 @@ small {
 		}
 	}
 
+	.imgtext-cont h1, .imgtext-cont p, .imgtext-buttons {
+		margin: 1.25em 0 1.25em 0;
+	}
+
+	.imgtext-cont h1 {
+		color: #FFFFFF;
+		opacity: 0.8;
+		border: 1px solid black;
+	}
+
+	.imgtext-cont p {
+		font-family: Audi-Extended;
+		text-align: justify;
+    		text-align-last: center;
+		color: #FFFFFF;
+		line-height: 25px;
+		opacity: 0.5;
+		margin: 0;
+		border: 1px solid black;
+	}
+
+	.imgtext-cont a {
+		color: #FFFFFF;
+		text-decoration: none;
+		transition: color var(--link-trans);
+	}
+
+	.imgtext-cont a:hover {
+		color: var(--font-hover);
+		transition: color var(--link-trans);
+	}
+
 	.imgtext-left {
 		position: absolute;
 		top: 7.5%;
@@ -372,20 +420,33 @@ small {
 	}
 
 	.imgtext-buttons {
-		margin: 0;
+		border: 1px solid black;
 	}
 
 		.imgtext-button {
 			font-family: Audi-Extended;
 			font-size: 18px;
 			background: rgba(0, 0, 0, 0);
-			border: 2px solid #000000;
+			border: 2px solid rgba(255, 255, 255, 0.8);
+			margin: 0 0.25em 0 0.25em;
 			padding: 10px;
+			transition: border var(--link-trans), background var(--link-trans);
+		}
+
+		.imgtext-button:hover {
+			background: rgba(135, 206, 235, 0.8);
+			border: 2px solid rgba(135, 206, 235, 0.8);
+			transition: border var(--link-trans), background var(--link-trans);
 		}
 
 		.imgtext-button a {
-			color: #000000;
+			color: rgba(255, 255, 255, 0.8);
 			text-decoration: none;
+			transition: color var(--link-trans);
+		}
+
+		.imgtext-button a:hover {
+			transition: color var(--link-trans);
 		}
 
 /* Tables */
@@ -445,6 +506,7 @@ table {
   	/*filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));*/
 	margin: 0;
 	padding: 0;
+	border: 1px solid black;
 }
 
 .profile-pic {
@@ -648,14 +710,14 @@ table {
 		background: #FFFFFF;
 		height: 30px;
 		width: 30px;
-		transition: var(--link-trans);
+		transition: color var(--link-trans);
 	}
 
 	#options button:hover {
 		cursor: pointer;
 		color: var(--font-hover);
 		border: 2px solid var(--font-hover);
-		transition: var(--link-trans);
+		transition: color var(--link-trans);
 	}
 
 		.optionsRow {
