@@ -1578,7 +1578,7 @@
             "name": "Cruachan Range",
             "type": "Mountain Range",
             "sub-type": "Ridge",
-            "sub-sub-type": "Ar&ecirc;te",
+            "sub-sub-type": "Arete",
 	    "route": [
 		{
 		    "name": "Cruachan Four",
@@ -1613,7 +1613,7 @@
 		    "munro": [
 		        "Ben Cruchan",
 			"Stob Daimh",
-			"Beinn a&rsquo; Chochuill",
+			"Beinn a Chochuill",
 			"Beinn Eunaich"
 		    ],
 		    "munrotop": [
@@ -1668,7 +1668,7 @@
 		    "GPX": "cruachan_range/cruachan_daimh.gpx"
 		},
 		{
-		    "name": "Ben Cruachan, Stob Daimh and Beinn a&rsquo; Bh&ugrave;iridh",
+		    "name": "Ben Cruachan, Stob Daimh and Beinn a Bhuiridh",
 		    "distance": 8.01,
 		    "elevationgain": 5318,
 		    "stdtime": 8.5,
@@ -1708,13 +1708,13 @@
 			"Meall Cuanail"
 		    ],
 		    "corbett": [
-                        "Beinn a&rsquo; Bhuiridh"
+                        "Beinn a Bhuiridh"
 		    ],
 		    "corbetttop": [],
 		    "GPX": "cruachan_range/cruachan-two_bhuiridh.gpx"
 		},
 		{
-		    "name": "Beinn a&rsquo; Chochuill and Beinn Eunaich",
+		    "name": "Beinn a Chochuill and Beinn Eunaich",
 		    "distance": 8.5,
 		    "elevationgain": 4005,
 		    "stdtime": 6.5,
@@ -1740,7 +1740,7 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-			"Beinn a&rsquo; Chochuill",
+			"Beinn a Chochuill",
 			"Beinn Eunaich"
 		    ],
 		    "munrotop": [],
@@ -1749,7 +1749,7 @@
 		    "GPX": "cruachan_range/eunaich_chochuill.gpx"
 		},
 		{
-		    "name": "Beinn a&rsquo; Bh&ugrave;iridh",
+		    "name": "Beinn a Bhuiridh",
 		    "distance": 7.25,
 		    "elevationgain": 2828,
 		    "stdtime": 6,
@@ -1775,7 +1775,7 @@
 		    "munro": [],
 		    "munrotop": [],
 		    "corbett": [
-                        "Beinn a&rsquo; Bh&ugrave;iridh"
+                        "Beinn a Bhuiridh"
 		    ],
 		    "corbetttop": [],
 		    "GPX": "cruachan_range/bhuiridh.gpx"
@@ -1816,7 +1816,7 @@
 		    "image": "Munros/eunaich.jpg"
                 },
                 {
-                    "name": "Beinn a&rsquo; Chochuill",
+                    "name": "Beinn a Chochuill",
                     "lat": 56.4497,
                     "lon": -5.0685,
                     "OSgrid": "NN109328",
@@ -1886,7 +1886,7 @@
 	    ],
             "corbett": [
                 {
-                    "name": "Beinn a&rsquo; Bhuiridh",
+                    "name": "Beinn a Bhuiridh",
                     "lat": 56.4089,
                     "lon": -5.090,
                     "OSgrid": "NN094283",
@@ -1903,7 +1903,7 @@
                     "name": "Coire Glas"
                 },
 		{
-                    "name": "Coire a&rsquo; Bhachail"
+                    "name": "Coire a Bhachail"
                 },
 		{
                     "name": "Coire Dearg"
@@ -1927,7 +1927,7 @@
                     "name": "Coire an t-Sneachd"
                 },
 		{
-                    "name": "Coire a&rsquo; Bhrait"
+                    "name": "Coire a Bhrait"
                 }
 	    ],
             "gully": true,
@@ -2152,7 +2152,7 @@
 		    "munro": [],
 		    "munrotop": [],
 		    "corbett": [
-                        "Creach Bheinn"
+                        "Creach Bheinn (Loch Creran)"
 		    ],
 		    "corbetttop": [],
 		    "GPX": "chreach-bheinn/creach-bheinn.gpx"
@@ -2205,7 +2205,7 @@
             "name": "Starav Range",
             "type": "Mountain Range",
             "sub-type": "Ridge",
-            "sub-sub-type": "Ar&ecirc;te",
+            "sub-sub-type": "Arete",
 	    "route": [
 		{
 		    "name": "Starav Eight",
@@ -2241,13 +2241,13 @@
 		    "gear": [],
 		    "munro": [
 		        "Ben Starav",
-		        "Glas Bheinn Mh&ograve;r",
-		        "Stob Coir&rsquo;an Albannaich",
+		        "Glas Bheinn Mhor",
+		        "Stob Coir an Albannaich",
 		        "Meall nan Eun",
-		        "Meall a&rsquo; Bhuiridh",
+		        "Meall a Bhuiridh",
 		        "Creise",
 		        "Stob Ghabhar",
-		        "Stob a&rsquo; Choire Odhair"
+		        "Stob a Choire Odhair"
 		    ],
 		    "munrotop": [
                         "Stob Coire Dheirg",
@@ -2255,11 +2255,11 @@
 			"Stob an Duine Ruaidh",
 			"Clach Leathad",
 			"Mam Coire Easain",
-			"Stob a&rsquo; Ghlais Choire",
+			"Stob a Ghlais Choire",
 			"Aonach Eagach",
-			"Sron a&rsquo; Ghearrain",
+			"Sron a Ghearrain",
 			"Sron nan Giubhas",
-			"Stob a&rsquo; Bhruaich Leith"
+			"Stob a Bhruaich Leith"
 		    ],
 		    "corbett": [],
 		    "corbetttop": [
@@ -2303,17 +2303,17 @@
 		    "munro": [
 		        "Ben Starav",
 			"Beinn nan Aighenan",
-		        "Glas Bheinn Mh&ograve;r",
-		        "Stob Coir&rsquo;an Albannaich",
+		        "Glas Bheinn Mhor",
+		        "Stob Coir an Albannaich",
 		        "Meall nan Eun",
 		        "Stob Ghabhar",
-		        "Stob a&rsquo; Choire Odhair"
+		        "Stob a Choire Odhair"
 		    ],
 		    "munrotop": [
                         "Stob Coire Dheirg",
 			"Aonach Eagach",
-			"Sron a&rsquo; Ghearrain",
-			"Stob a&rsquo; Bhruaich Leith"
+			"Sron a Ghearrain",
+			"Stob a Bhruaich Leith"
 		    ],
 		    "corbett": [],
 		    "corbetttop": [
@@ -2357,8 +2357,8 @@
 		    "munro": [
 		        "Ben Starav",
 			"Beinn nan Aighenan",
-		        "Glas Bheinn Mh&ograve;r",
-		        "Stob Coir&rsquo;an Albannaich",
+		        "Glas Bheinn Mhor",
+		        "Stob Coir an Albannaich",
 		        "Meall nan Eun"
 		    ],
 		    "munrotop": [
@@ -2372,7 +2372,7 @@
 		    "GPX": "starav_range/starav-five.gpx"
 		},
 		{
-		    "name": "Ben Starav and Glas Bheinn Mh&ograve;r",
+		    "name": "Ben Starav and Glas Bheinn Mhor",
 		    "distance": 10,
 		    "elevationgain": 4668,
 		    "stdtime": 9,
@@ -2405,7 +2405,7 @@
 		    "gear": [],
 		    "munro": [
 		        "Ben Starav",
-		        "Glas Bheinn Mh&ograve;r"
+		        "Glas Bheinn Mhor"
 		    ],
 		    "munrotop": [
                         "Stob Coire Dheirg"
@@ -2445,7 +2445,7 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Stob Coir&rsquo;an Albannaich",
+		        "Stob Coir an Albannaich",
 		        "Meall nan Eun"
 		    ],
 		    "munrotop": [],
@@ -2505,7 +2505,7 @@
 		    "image": "Munros/starav.jpg"
                 },
                 {
-                    "name": "Stob Coir&rsquo;an Albannaich",
+                    "name": "Stob Coir an Albannaich",
                     "lat": 56.5549,
                     "lon":  -4.9798,
                     "OSgrid": "NN169443",
@@ -2516,7 +2516,7 @@
 		    "image": "Munros/albann.jpg"
                 },
                 {
-                    "name": "Glas Bheinn Mh&ograve;r",
+                    "name": "Glas Bheinn Mhor",
                     "lat": 56.5424,
                     "lon": -5.0052,
                     "OSgrid": "NN153429",
@@ -2617,13 +2617,13 @@
 		    "name": "Coire Coinnich"
 		},
 		{
-		    "name": "Coire a&rsquo; Bhinnein"
+		    "name": "Coire a Bhinnein"
 		},
 		{
 		    "name": "Coire Ghiusachan"
 		},
 		{
-		    "name": "Coire a&rsquo; Caradh"
+		    "name": "Coire a Caradh"
 		},
 		{
 		    "name": "Coire nam Fuaran"
@@ -2635,7 +2635,7 @@
 		    "name": "Coire na Caime"
 		},
 		{
-		    "name": "Coire na L&agrave;rach"
+		    "name": "Coire na Larach"
 		},
 		{
 		    "name": "Coire na Caime"
@@ -2665,16 +2665,16 @@
 		    "name": "Coire Odhar"
 		},
 		{
-		    "name": "Coire and Fhir L&egrave;ith"
+		    "name": "Coire and Fhir Leith"
 		},
 		{
-		    "name": "Coire Sgr&igrave;odain"
+		    "name": "Coire Sgriodain"
 		},
 		{
 		    "name": "Coire nam Ban"
 		},
 		{
-		    "name": "Coir&rsquo;an Albannaich"
+		    "name": "Coir an Albannaich"
 		},
 		{
 		    "name": "Coire da Chomhid"
@@ -2804,7 +2804,7 @@
                     "name": "Coire Leacach"
                 },
                 {
-                    "name": "Coire Cr&igrave;che"
+                    "name": "Coire Criche"
                 }
             ],
             "gully": false,
@@ -2863,13 +2863,13 @@
 		    "gear": [],
 		    "munro": [
 		        "Ben Starav",
-		        "Glas Bheinn Mh&ograve;r",
-		        "Stob Coir&rsquo;an Albannaich",
+		        "Glas Bheinn Mhor",
+		        "Stob Coir an Albannaich",
 		        "Meall nan Eun",
-		        "Meall a&rsquo; Bhuiridh",
+		        "Meall a Bhuiridh",
 		        "Creise",
 		        "Stob Ghabhar",
-		        "Stob a&rsquo; Choire Odhair"
+		        "Stob a Choire Odhair"
 		    ],
 		    "munrotop": [
                         "Stob Coire Dheirg",
@@ -2877,11 +2877,11 @@
 			"Stob an Duine Ruaidh",
 			"Clach Leathad",
 			"Mam Coire Easain",
-			"Stob a&rsquo; Ghlais Choire",
+			"Stob a Ghlais Choire",
 			"Aonach Eagach",
-			"Sron a&rsquo; Ghearrain",
+			"Sron a Ghearrain",
 			"Sron nan Giubhas",
-			"Stob a&rsquo; Bhruaich Leith"
+			"Stob a Bhruaich Leith"
 		    ],
 		    "corbett": [],
 		    "corbetttop": [
@@ -2925,17 +2925,17 @@
 		    "munro": [
 		        "Ben Starav",
 			"Beinn nan Aighenan",
-		        "Glas Bheinn Mh&ograve;r",
-		        "Stob Coir&rsquo;an Albannaich",
+		        "Glas Bheinn Mhor",
+		        "Stob Coir an Albannaich",
 		        "Meall nan Eun",
 		        "Stob Ghabhar",
-		        "Stob a&rsquo; Choire Odhair"
+		        "Stob a Choire Odhair"
 		    ],
 		    "munrotop": [
                         "Stob Coire Dheirg",
 			"Aonach Eagach",
-			"Sron a&rsquo; Ghearrain",
-			"Stob a&rsquo; Bhruaich Leith"
+			"Sron a Ghearrain",
+			"Stob a Bhruaich Leith"
 		    ],
 		    "corbett": [],
 		    "corbetttop": [
@@ -2976,10 +2976,10 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Meall a&rsquo; Bhuiridh",
+		        "Meall a Bhuiridh",
 		        "Creise",
 		        "Stob Ghabhar",
-		        "Stob a&rsquo; Choire Odhair"
+		        "Stob a Choire Odhair"
 		    ],
 		    "munrotop": [
 			"Clach Leathad",
@@ -2994,7 +2994,7 @@
 		    "GPX": "black_mount_range/blackmount-four.gpx"
 		},
 		{
-		    "name": "Meall a&rsquo; Bhuiridh and Creise",
+		    "name": "Meall a Bhuiridh and Creise",
 		    "distance": 6.5,
 		    "elevationgain": 3585,
 		    "stdtime": 7,
@@ -3025,7 +3025,7 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Meall a&rsquo; Bhuiridh",
+		        "Meall a Bhuiridh",
 		        "Creise"
 		    ],
 		    "munrotop": [
@@ -3036,7 +3036,7 @@
 		    "GPX": "black_mount_range/creise_bhuiridh.gpx"
 		},
 		{
-		    "name": "Stob Ghabhar and Stob a&rsquo; Choire Odhair",
+		    "name": "Stob Ghabhar and Stob a Choire Odhair",
 		    "distance": 10,
 		    "elevationgain": 4064,
 		    "stdtime": 9,
@@ -3067,7 +3067,7 @@
 		    "gear": [],
 		    "munro": [
 		        "Stob Ghabhar",
-		        "Stob a&rsquo; Choire Odhair"
+		        "Stob a Choire Odhair"
 		    ],
 		    "munrotop": [
 			"Aonach Eagach",
@@ -3149,7 +3149,7 @@
 	    ],
 	    "munro": [
 		{
-		    "name": "Meall a&rsquo; Bhuiridh",
+		    "name": "Meall a Bhuiridh",
                     "lat": 56.6122,
                     "lon": -4.8520,
 	            "OSgrid": "NN250503",
@@ -3182,7 +3182,7 @@
 		    "image": "Munros/ghabhar.jpg"
 		},
 		{
-		    "name": "Stob a&rsquo; Choire Odhair",
+		    "name": "Stob a Choire Odhair",
                     "lat": 56.5733,
                     "lon": -4.8382,
 	            "OSgrid": "NN257459",
@@ -3217,7 +3217,7 @@
 		    "image": "noimage.png"
 		},
 		{
-		    "name": "Stob a&rsquo; Ghlais Choire",
+		    "name": "Stob a Ghlais Choire",
                     "lat": 56.6232,
                     "lon": -4.8703,
 	            "OSgrid": "NN239516",
@@ -3239,7 +3239,7 @@
 		    "image": "noimage.png"
 		},
 		{
-		    "name": "Sron a&rsquo; Ghearrain",
+		    "name": "Sron a Ghearrain",
                     "lat": 56.56906,
                     "lon": -4.8970,
 	            "OSgrid": "NN221456",
@@ -3261,7 +3261,7 @@
 		    "image": "noimage.png"
 		},
 		{
-		    "name": "Stob a&rsquo; Bhruaich Leith",
+		    "name": "Stob a Bhruaich Leith",
                     "lat": 56.5715,
                     "lon": -4.9174,
 	            "OSgrid": "NN208459",
@@ -3324,7 +3324,7 @@
 		    "name": "Coire Dhearbhadh"
 		},
                 {
-		    "name": "Coire a&rsquo; Chaolain"
+		    "name": "Coire a Chaolain"
 		},
                 {
 		    "name": "Coire Laoghan"
@@ -3354,7 +3354,7 @@
 		    "name": "Coire Leacach"
 		},
                 {
-		    "name": "M&agrave;m Coire Easain"
+		    "name": "Mam Coire Easain"
 		},
                 {
 		    "name": "Coire Pollach"
@@ -3386,7 +3386,7 @@
             "sub-sub-type": "Ridge",
 	    "route": [
 		{
-		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sg&ograve;r na h-Ulaidh and Beinn Maol Chaluim",
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sgor na h-Ulaidh and Beinn Maol Chaluim",
 		    "distance": 19.88,
 		    "elevationgain": 10305,
 		    "stdtime": 12,
@@ -3416,7 +3416,7 @@
 		    "munro": [
 		        "Beinn Sgulaird",
 		        "Beinn Fhionnlaidh",
-		        "Sg&ograve;r na h-Ulaidh"
+		        "Sgor na h-Ulaidh"
 		    ],
 		    "munrotop": [
                         "Stob an Fhuarain"
@@ -3430,7 +3430,7 @@
 		    "GPX": "sgulaird/sgulaird_fhionnlaidh_h-ulaidh_chaluim.gpx"
 		},
 		{
-		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sg&ograve;r na h-Ulaidh from Glen Etive",
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sgor na h-Ulaidh from Glen Etive",
 		    "distance": 20,
 		    "elevationgain": 9022,
 		    "stdtime": 12,
@@ -3460,7 +3460,7 @@
 		    "munro": [
 		        "Beinn Sgulaird",
 		        "Beinn Fhionnlaidh",
-		        "Sg&ograve;r na h-Ulaidh"
+		        "Sgor na h-Ulaidh"
 		    ],
 		    "munrotop": [],
 		    "corbett": [],
@@ -3713,7 +3713,7 @@
             "sub-sub-type": "Ridge",
 	    "route": [
 		{
-		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sg&ograve;r na h-Ulaidh and Beinn Maol Chaluim",
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sgor na h-Ulaidh and Beinn Maol Chaluim",
 		    "distance": 19.88,
 		    "elevationgain": 10305,
 		    "stdtime": 12,
@@ -3743,7 +3743,7 @@
 		    "munro": [
 		        "Beinn Sgulaird",
 		        "Beinn Fhionnlaidh",
-		        "Sg&ograve;r na h-Ulaidh"
+		        "Sgor na h-Ulaidh"
 		    ],
 		    "munrotop": [
                         "Stob an Fhuarain"
@@ -3757,7 +3757,7 @@
 		    "GPX": "fhionnlaidh/sgulaird_fhionnlaidh_h-ulaidh_chaluim.gpx"
 		},
 		{
-		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sg&ograve;r na h-Ulaidh from Glen Etive",
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sgor na h-Ulaidh from Glen Etive",
 		    "distance": 20,
 		    "elevationgain": 9022,
 		    "stdtime": 12,
@@ -3787,7 +3787,7 @@
 		    "munro": [
 		        "Beinn Sgulaird",
 		        "Beinn Fhionnlaidh",
-		        "Sg&ograve;r na h-Ulaidh"
+		        "Sgor na h-Ulaidh"
 		    ],
 		    "munrotop": [],
 		    "corbett": [],
@@ -3907,7 +3907,7 @@
 		    "name": "Coire na Tullaich"
 		},
 		{
-		    "name": "Coire a&rsquo; Chait"
+		    "name": "Coire a Chait"
 		},
 		{
 		    "name": "Coire Laogh"
@@ -3933,13 +3933,13 @@
             "informal-region": "Glen Creran"
         },
 	{
-            "name": "Sg&ograve;r na h-Ulaidh",
+            "name": "Sgor na h-Ulaidh",
             "type": "Mountain",
             "sub-type": "Stand-Alone",
             "sub-sub-type": "Ridge",
 	    "route": [
 		{
-		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sg&ograve;r na h-Ulaidh and Beinn Maol Chaluim",
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sgor na h-Ulaidh and Beinn Maol Chaluim",
 		    "distance": 19.88,
 		    "elevationgain": 10305,
 		    "stdtime": 12,
@@ -3969,7 +3969,7 @@
 		    "munro": [
 		        "Beinn Sgulaird",
 		        "Beinn Fhionnlaidh",
-		        "Sg&ograve;r na h-Ulaidh"
+		        "Sgor na h-Ulaidh"
 		    ],
 		    "munrotop": [
                         "Stob an Fhuarain"
@@ -3983,7 +3983,7 @@
 		    "GPX": "h-ulaidh/sgulaird_fhionnlaidh_h-ulaidh_chaluim.gpx"
 		},
 		{
-		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sg&ograve;r na h-Ulaidh from Glen Etive",
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh and Sgor na h-Ulaidh from Glen Etive",
 		    "distance": 20,
 		    "elevationgain": 9022,
 		    "stdtime": 12,
@@ -4013,7 +4013,7 @@
 		    "munro": [
 		        "Beinn Sgulaird",
 		        "Beinn Fhionnlaidh",
-		        "Sg&ograve;r na h-Ulaidh"
+		        "Sgor na h-Ulaidh"
 		    ],
 		    "munrotop": [],
 		    "corbett": [],
@@ -4023,7 +4023,7 @@
 		    "GPX": "h-ulaidh/sgulaird_fhionnlaidh_h-ulaidh_etive.gpx"
 		},
 		{
-		    "name": "Sg&ograve;r na h-Ulaidh from Glen Etive",
+		    "name": "Sgor na h-Ulaidh from Glen Etive",
 		    "distance": 10,
 		    "elevationgain": 4238,
 		    "stdtime": 9,
@@ -4050,7 +4050,7 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Sg&ograve;r na h-Ulaidh"
+		        "Sgor na h-Ulaidh"
 		    ],
 		    "munrotop": [
                         "Stob an Fhuarain"
@@ -4064,7 +4064,7 @@
 	    ],
             "munro": [
                 {
-                    "name": "Sg&ograve;r na h-Ulaidh",
+                    "name": "Sgor na h-Ulaidh",
                     "lat": 56.6198,
                     "lon": -5.0800,
                     "OSgrid": "NN111517",
@@ -4103,7 +4103,7 @@
 	    ],
             "corbetttop": [
                 {
-                    "name": "Aonach Dubh a&rsquo; Ghlinne",
+                    "name": "Aonach Dubh a Ghlinne",
                     "lat": 56.6336,
                     "lon": -5.0667,
                     "OSgrid": "NN119534",
@@ -4125,7 +4125,7 @@
 		    "name": "Coire Dubh"
 		},
 		{
-		    "name": "Coire Cn&agrave;imh"
+		    "name": "Coire Cnaimh"
 		}
 	    ],
             "gully": true,
@@ -4290,7 +4290,7 @@
 		    "name": "Coire Dionachd"
 		},
                 {
-		    "name": "Coire Dubh-m&ograve;r"
+		    "name": "Coire Dubh-mor"
 		}
 	    ],
 	    "gully": true,
@@ -4310,13 +4310,13 @@
 	    "informal-region": "Glen Etive"
         },
         {
-            "name": "Buachaille Etive M&ograve;r",
+            "name": "Buachaille Etive Mor",
 	    "type": "Mountain",
 	    "sub-type": "Ridge",
 	    "sub-sub-type": "Plateau",
 	    "route": [
 		{
-		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive M&ograve;r",
+		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive Mor",
 		    "distance": 18.01,
 		    "elevationgain": 10305,
 		    "stdtime": 11,
@@ -4346,10 +4346,10 @@
 		    "munro": [
 		        "Bidean nam Bian",
 		        "Stob Coire Sgreamhach",
-		        "Stob Dubh",
-		        "Stob Coire Raineach",
-		        "Stob na Broige",
-		        "Stob Dearg"
+		        "Stob Dubh (Buachaille Etive Beag)",
+		        "Stob Coire Raineach (Buachaille Etive Beag)",
+		        "Stob na Broige (Buachaille Etive Mor)",
+		        "Stob Dearg (Buachaille Etive Mor)"
 		    ],
 		    "munrotop": [
                         "Bidean nam Bian West Top",
@@ -4384,8 +4384,8 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Stob Dearg",
-		        "Stob na Broige"
+		        "Stob Dearg (Buachaille Etive Mor)",
+		        "Stob na Broige (Buachaille Etive Mor)"
 		    ],
 		    "munrotop": [
                         "Stob na Doire",
@@ -4425,8 +4425,8 @@
 			"helmet"
 		    ],
 		    "munro": [
-		        "Stob Dearg",
-		        "Stob na Broige"
+		        "Stob Dearg (Buachaille Etive Mor)",
+		        "Stob na Broige (Buachaille Etive Mor)"
 		    ],
 		    "munrotop": [
                         "Bidean nam Bian West Top",
@@ -4438,7 +4438,7 @@
 		    "GPX": "etive-mor/ridge_curved-ridge.gpx"
 		},
 		{
-		    "name": "Agag&rsquo;s Groove",
+		    "name": "Agags Groove",
 		    "distance": 3.79,
 		    "elevationgain": 2585,
 		    "stdtime": 8.5,
@@ -4468,7 +4468,7 @@
 			"helmet"
 		    ],
 		    "munro": [
-		        "Stob Dearg"
+		        "Stob Dearg (Buachaille Etive Mor)"
 		    ],
 		    "munrotop": [],
 		    "corbett": [],
@@ -4478,7 +4478,7 @@
 	    ],
 	    "munro": [
 		{
-		    "name": "Stob Dearg",
+		    "name": "Stob Dearg (Buachaille Etive Mor)",
                     "lat": 56.6462,
                     "lon": -4.9003,
 	            "OSgrid": "NN222542",
@@ -4489,7 +4489,7 @@
 		    "image": "Munros/deargmor.jpg"
 		},
 		{
-		    "name": "Stob na Broige",
+		    "name": "Stob na Broige (Buachaille Etive Mor)",
                     "lat": 56.6298,
                     "lon": -4.9511,
 	            "OSgrid": "NN190525",
@@ -4575,7 +4575,7 @@
 	    "sub-sub-type": "Plateau",
 	    "route": [
 		{
-		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive M&ograve;r",
+		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive Mor",
 		    "distance": 18.01,
 		    "elevationgain": 10305,
 		    "stdtime": 11,
@@ -4605,10 +4605,10 @@
 		    "munro": [
 		        "Bidean nam Bian",
 		        "Stob Coire Sgreamhach",
-		        "Stob Dubh",
-		        "Stob Coire Raineach",
-		        "Stob na Broige",
-		        "Stob Dearg"
+		        "Stob Dubh (Buachaille Etive Beag)",
+		        "Stob Coire Raineach (Buachaille Etive Beag)",
+		        "Stob na Broige (Buachaille Etive Mor)",
+		        "Stob Dearg (Buachaille Etive Mor)"
 		    ],
 		    "munrotop": [
                         "Bidean nam Bian West Top",
@@ -4644,8 +4644,8 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Stob Dubh",
-			"Stob Coire Raineach"
+		        "Stob Dubh (Buachaille Etive Beag)",
+			"Stob Coire Raineach (Buachaille Etive Beag)"
 		    ],
 		    "munrotop": [],
 		    "corbett": [],
@@ -4655,7 +4655,7 @@
 	    ],
 	    "munro": [ 
 		{
-		    "name": "Stob Dubh",
+		    "name": "Stob Dubh (Buachaille Etive Beag)",
                     "lat": 56.6381,
                     "lon": -4.9708,
 	            "OSgrid": "NN179535",
@@ -4720,7 +4720,7 @@
 	    "sub-sub-type": null,
 	    "route": [
 		{
-		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive M&ograve;r",
+		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive Mor",
 		    "distance": 18.01,
 		    "elevationgain": 10305,
 		    "stdtime": 11,
@@ -4750,10 +4750,10 @@
 		    "munro": [
 		        "Bidean nam Bian",
 		        "Stob Coire Sgreamhach",
-		        "Stob Dubh",
-		        "Stob Coire Raineach",
-		        "Stob na Broige",
-		        "Stob Dearg"
+		        "Stob Dubh (Buachaille Etive Beag)",
+		        "Stob Coire Raineach (Buachaille Etive Beag)",
+		        "Stob na Broige (Buachaille Etive Mor)",
+		        "Stob Dearg (Buachaille Etive Mor)"
 		    ],
 		    "munrotop": [
                         "Bidean nam Bian West Top",
@@ -4892,7 +4892,7 @@
 		    "GPX": "bidean_nam_bian/lost-valley.gpx"
 		},
 		{
-		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sg&ograve;r na h-Ulaidh and Beinn Maol Chaluim",
+		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sgor na h-Ulaidh and Beinn Maol Chaluim",
 		    "distance": 19.88,
 		    "elevationgain": 10305,
 		    "stdtime": 12,
@@ -4922,7 +4922,7 @@
 		    "munro": [
 		        "Beinn Sgulaird",
 		        "Beinn Fhionnlaidh",
-		        "Sg&ograve;r na h-Ulaidh"
+		        "Sgor na h-Ulaidh"
 		    ],
 		    "munrotop": [
                         "Stob an Fhuarain"
@@ -5111,13 +5111,13 @@
 	    "informal-region": "Glen Coe"
         },
 	{
-            "name": "Beinn a&rsquo; Bheithir",
+            "name": "Beinn a Bheithir",
             "type": "Mountain",
             "sub-type": "Ridge",
-            "sub-sub-type": "Ar&ecirc;te",
+            "sub-sub-type": "Arete",
 	    "route": [
 		{
-		    "name": "Beinn a&rsquo; Bheithir via Schoolhouse Ridge",
+		    "name": "Beinn a Bheithir via Schoolhouse Ridge",
 		    "distance": 9.75,
 		    "elevationgain": 4550,
 		    "stdtime": 9,
@@ -5147,8 +5147,8 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Sgorr Dhearg",
-		        "Sgorr Dhonuill"
+		        "Sgorr Dhearg (Beinn a Bheithir)",
+		        "Sgorr Dhonuill (Beinn a Bheithir)"
 		    ],
 		    "munrotop": [
                         "Sgorr Bhan"
@@ -5158,7 +5158,7 @@
 		    "GPX": "bheithir/schoolhouse.gpx"
 		},
 		{
-		    "name": "Beinn a&rsquo; Bheithir",
+		    "name": "Beinn a Bheithir",
 		    "distance": 9.63,
 		    "elevationgain": 4822,
 		    "stdtime": 6,
@@ -5185,8 +5185,8 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Sgorr Dhearg",
-		        "Sgorr Dhonuill"
+		        "Sgorr Dhearg (Beinn a Bheithir)",
+		        "Sgorr Dhonuill (Beinn a Bheithir)"
 		    ],
 		    "munrotop": [],
 		    "corbett": [],
@@ -5196,7 +5196,7 @@
 	    ],
             "munro": [
                 {
-                    "name": "Sgorr Dhearg",
+                    "name": "Sgorr Dhearg (Beinn a Bheithir)",
                     "lat": 56.6540,
                     "lon": -5.1714,
                     "OSgrid": "NN056558",
@@ -5207,7 +5207,7 @@
 		    "image": "Munros/dheargbheithir.jpg"
                 },
                 {
-                    "name": "Sgorr Dhonuill",
+                    "name": "Sgorr Dhonuill (Beinn a Bheithir)",
                     "lat": 56.6504,
                     "lon": -5.1977,
                     "OSgrid": "NN040555",
@@ -5261,13 +5261,13 @@
             "informal-region": "Ballachulish"
         },
 	{
-            "name": "Beinn a&rsquo; Chrulaiste",
+            "name": "Beinn a Chrulaiste",
             "type": "Mountain",
             "sub-type": "Stand-Alone",
 	    "sub-sub-type": "Whaleback",
 	    "route": [
 		{
-		    "name": "Beinn a&rsquo; Chrulaiste",
+		    "name": "Beinn a Chrulaiste",
 		    "distance": 6.75,
 		    "elevationgain": 2139,
 		    "stdtime": 5,
@@ -5291,7 +5291,7 @@
 		    "munro": [],
 		    "munrotop": [],
 		    "corbett": [
-                        "Beinn a&rsquo; Chrulaiste"
+                        "Beinn a Chrulaiste"
 		    ],
 		    "corbetttop": [],
 		    "GPX": "chrulaiste/chrulaiste.gpx"
@@ -5301,7 +5301,7 @@
             "munrotop": [],
             "corbett": [
                 {
-                    "name": "Beinn a&rsquo; Chrulaiste",
+                    "name": "Beinn a Chrulaiste",
                     "lat": 56.66890,
                     "lon": -4.8635,
                     "OSgrid": "NN246566",
@@ -5347,7 +5347,7 @@
             "name": "Aonach Eagach",
             "type": "Mountain",
             "sub-type": "Ridge",
-            "sub-sub-type": "Ar&ecirc;te",
+            "sub-sub-type": "Arete",
 	    "route": [
 		{
 		    "name": "Aonach Eagach Full Traverse",
@@ -5377,8 +5377,8 @@
 			"helmet"
 		    ],
 		    "munro": [
-		        "Sg&ograve;rr nam Fiannaidh (Aonach Eagach)",
-		        "Meall Dearg"
+		        "Sgorr nam Fiannaidh (Aonach Eagach)",
+		        "Meall Dearg (Aonach Eagach)"
 		    ],
 		    "munrotop": [
 		        "Am Bodach",
@@ -5417,8 +5417,8 @@
 			"helmet"
 		    ],
 		    "munro": [
-		        "Sg&ograve;rr nam Fiannaidh (Aonach Eagach)",
-		        "Meall Dearg"
+		        "Sgorr nam Fiannaidh (Aonach Eagach)",
+		        "Meall Dearg (Aonach Eagach)"
 		    ],
 		    "munrotop": [
 		        "Am Bodach",
@@ -5453,7 +5453,7 @@
 		    ],
 		    "gear": [],
 		    "munro": [
-		        "Meall Dearg"
+		        "Meall Dearg (Aonach Eagach)"
 		    ],
 		    "munrotop": [],
 		    "corbett": [],
@@ -5463,7 +5463,7 @@
 	    ],
             "munro": [
 		{
-		    "name": "Sg&ograve;rr nam Fiannaidh (Aonach Eagach)",
+		    "name": "Sgorr nam Fiannaidh (Aonach Eagach)",
                     "lat": 56.6793,
                     "lon": -5.0371,
 	            "OSgrid": "NN140583",
@@ -5474,7 +5474,7 @@
 		    "image": "Munros/fiannaidh.jpg"
 		},
 		{
-		    "name": "Meall Dearg",
+		    "name": "Meall Dearg (Aonach Eagach)",
                     "lat": 56.6807,
                     "lon":  -5.0032,
 	            "OSgrid": "NN161583",
@@ -5545,7 +5545,7 @@
 		    "image": "noimage.png"
 		},
 		{
-		    "name": "A&rsquo;Chailleach",
+		    "name": "A Chailleach",
                     "lat": 56.6778,
                     "lon":  -4.9554,
 	            "OSgrid": "NN189579",
@@ -5556,7 +5556,7 @@
 		    "image": "noimage.png"
 		},
 		{
-		    "name": "Sr&ograve;n Gharbh",
+		    "name": "Sron Gharbh",
                     "lat": 56.6822,
                     "lon": -4.9766,
 	            "OSgrid": "NN177584",
@@ -5567,7 +5567,7 @@
 		    "image": "noimage.png"
 		},
 		{
-		    "name": "Sron a&rsquo; Choire Odhair Bhig",
+		    "name": "Sron a Choire Odhair Bhig",
                     "lat": 56.6765,
                     "lon": -4.9413,
 	            "OSgrid": null,
@@ -5604,7 +5604,7 @@
 		    "name": "Coire nan Lab"
 		},
 		{
-		    "name": "Coire Odhar-m&ograve;r"
+		    "name": "Coire Odhar-mor"
 		},
 		{
 		    "name": "Coire Mhorair"
@@ -5613,7 +5613,7 @@
 		    "name": "Coire Cam"
 		},
 		{
-		    "name": "Coire na C&igrave;che"
+		    "name": "Coire na Ciche"
 		},
 		{
 		    "name": "Coire na Steill"

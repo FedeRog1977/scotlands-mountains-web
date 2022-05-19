@@ -77,6 +77,7 @@ Restrictions
 	- Munro, Munro top, Corbett and Corbett top listings run from highest to lowest
 	- Corries and other features run from south to north
 	- Everything up to corries have attached attributes as they appear on OS maps, features form then on such as gullies and small lochains which are not named on an OS map do not
+	- Removed HTML symbols such as &ograve; from gaelic names as it would have been an unnecessary hassle to build the search system and looping through hills around this
 
 Issues
 

@@ -44,6 +44,7 @@
 	/*--header-footer: linear-gradient(to bottom left, #C7AD7F 40%, #A57A5A);*/
 	/*--header-footer: linear-gradient(to bottom left, #87CEEB 10%, #D8F2FF);*/
 	--header-footer: linear-gradient(to bottom left, #404040 100%, #404040);
+	/*--title: radial-gradient(#87CEEB, #404040 70%);*/
 	--drop: #E8E8E8;
         --font: #000000;
         --font2: #96B9EE;
@@ -108,17 +109,21 @@ small {
         .title {
                 float: left;
                 line-height: 15px;
-		background-color: white;
-		padding-top: 30px;
+		margin: 30px 0 0 0;
         }
 
 		.title h1 {
 			font-family: Giant;
 			font-size: 24px;
-			text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+			text-shadow: 0 0 10px rgba(135, 206, 235, 0.5);
 			margin: 0.25em 0 0 0;
 			padding: 0;
                 }
+
+		.title img {
+			max-width: 250px;
+			-webkit-filter: drop-shadow(0 0 5px rgba(135, 206, 235, 0.5));
+		}
 
 	.navigation {
 		font-family: Giant;
@@ -285,9 +290,9 @@ small {
 		font-size: 14px;
 		color: var(--font);
 		background-color: var(--fg);
-		border-radius: 0.5em;
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-		margin: 1.25em;
+		/*border-radius: 0.5em;*/
+		/*box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);*/
+		margin: 0.75em 0 0.75em 0;
 		padding: 2.5em;
 		transition: color var(--link-trans);
 	}
@@ -390,17 +395,6 @@ small {
 		border: 1px solid black;
 	}
 
-	.imgtext-cont a {
-		color: #FFFFFF;
-		text-decoration: none;
-		transition: color var(--link-trans);
-	}
-
-	.imgtext-cont a:hover {
-		color: var(--font-hover);
-		transition: color var(--link-trans);
-	}
-
 	.imgtext-left {
 		position: absolute;
 		top: 7.5%;
@@ -426,26 +420,32 @@ small {
 		.imgtext-button {
 			font-family: Audi-Extended;
 			font-size: 18px;
+			color: rgba(255, 255, 255, 0.8);
 			background: rgba(0, 0, 0, 0);
 			border: 2px solid rgba(255, 255, 255, 0.8);
 			margin: 0 0.25em 0 0.25em;
 			padding: 10px;
-			transition: border var(--link-trans), background var(--link-trans);
+			transition: color var(--link-trans), border var(--link-trans), background var(--link-trans);
 		}
 
 		.imgtext-button:hover {
 			background: rgba(135, 206, 235, 0.8);
-			border: 2px solid rgba(135, 206, 235, 0.8);
-			transition: border var(--link-trans), background var(--link-trans);
+			border: 2px solid rgba(135, 206, 235, 0);
+			cursor: pointer;
+			transition: color var(--link-trans), border var(--link-trans), background var(--link-trans);
 		}
 
-		.imgtext-button a {
-			color: rgba(255, 255, 255, 0.8);
+	.imgtext-title {
+	}
+
+		.imgtext-title a {
+			color: #FFFFFF;
 			text-decoration: none;
 			transition: color var(--link-trans);
 		}
 
-		.imgtext-button a:hover {
+		.imgtext-title a:hover {
+			color: var(--font-hover);
 			transition: color var(--link-trans);
 		}
 
@@ -545,14 +545,12 @@ table {
 
 	.element {
 		background-color: var(--bg);
-		border-radius: 0.5em;
 		margin: 0;
 		padding: 0.5em;
 	}
 
 		.sub-element {
 			background-color: var(--fg);
-			border-radius: 0.5em;
 			margin: 0;
 			padding: 0.5em;
 		}
@@ -578,7 +576,6 @@ table {
 	.weathercol {
 		text-align: left;
 		background-color: var(--bg);
-		border-radius: 0.5em;
 		margin: 0.5em 0.25em 0.5em 0.25em;
 		padding: 0.5em;
 	}
@@ -591,7 +588,6 @@ table {
 
 	.weather-std, .weather-atm, .weather-dyt {
 		background-color: var(--fg);
-		border-radius: 0.25em;
 		margin: 0.5em 0 0.5em 0;
 		padding: 0.125em 0.75em 0.125em 0.75em;
 	}

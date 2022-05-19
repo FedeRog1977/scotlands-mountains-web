@@ -3,7 +3,7 @@ const selectCorbettList = document.getElementById("userWeatherSelectCorbett");
 const selectCountyList = document.getElementById("userWeatherSelectCounty");
 
 const selectMunroListCont = `
-    <option>Beinn a&rsquo; Chochuill</option>
+    <option>Beinn a Chochuill</option>
     <option>Beinn Eunaich</option>
     <option>Beinn Fhionnlaidh</option>
     <option>Beinn nan Aighenan</option>
@@ -11,27 +11,27 @@ const selectMunroListCont = `
     <option>Ben Cruachan</option>
     <option>Ben Starav</option>
     <option>Bidean nam Bian</option>
-    <option>Glas Bheinn Mh&ograve;r</option>
-    <option>Meall a&rsquo; Bh&ugrave;iridh</option>
+    <option>Glas Bheinn Mhor</option>
+    <option>Meall a Bhuiridh</option>
     <option>Meall Dearg (Aonach Eagach)</option>
     <option>Meall nan Eun</option>
-    <option>Sg&ograve;r na h-Ulaidh</option>
-    <option>Sg&ograve;rr Dhearg (Beinn a&rsquo; Bheithir)</option>
-    <option>Sg&ograve;rr Dh&ograve;nuill (Beinn a&rsquo; Bheithir)</option>
-    <option>Sg&ograve;rr nam Fiannaidh (Aonach Eagach)</option>
-    <option>Stob a&rsquo; Choire Odhair</option>
+    <option>Sgor na h-Ulaidh</option>
+    <option>Sgorr Dhearg (Beinn a Bheithir)</option>
+    <option>Sgorr Dhonuill (Beinn a Bheithir)</option>
+    <option>Sgorr nam Fiannaidh (Aonach Eagach)</option>
+    <option>Stob a Choire Odhair</option>
     <option>Stob Coir an Albannaich</option>
     <option>Stob Coire Raineach (Buachaille Etive Beag)</option>
     <option>Stob Coire Sgreamhach</option>
     <option>Stob Daimh</option>
-    <option>Stob Dearg (Buachaille Etive M&ograve;r)</option>
+    <option>Stob Dearg (Buachaille Etive Mor)</option>
     <option>Stob Dubh (Buachaille Etive Beag)</option>
     <option>Stob Ghabhar</option>
-    <option>Stob na Br&ograve;ige (Buachaille Etive M&ograve;r)</option>
+    <option>Stob na Broige (Buachaille Etive Mor)</option>
 `;
 
 const selectCorbettListCont = `
-    <option>Beinn a&rsquo; Bhuiridh</option>
+    <option>Beinn a Bhuiridh</option>
     <option>Beinn Bhreac-liath</option>
     <option>Beinn Maol Chaluim</option>
     <option>Beinn Mhic Chasgaig</option>
