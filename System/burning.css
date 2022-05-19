@@ -43,8 +43,8 @@
 	--fg: #FFFFFF; /*#FBEACF;*/
 	/*--header-footer: linear-gradient(to bottom left, #C7AD7F 40%, #A57A5A);*/
 	/*--header-footer: linear-gradient(to bottom left, #87CEEB 10%, #D8F2FF);*/
-	--header-footer: linear-gradient(to bottom left, #404040 100%, #404040);
-	/*--title: radial-gradient(#87CEEB, #404040 70%);*/
+	--header-footer: linear-gradient(to bottom left, #303030 100%, #303030);
+	/*--title: radial-gradient(#87CEEB, #303030 70%);*/
 	--drop: #E8E8E8;
         --font: #000000;
         --font2: #96B9EE;
@@ -102,7 +102,7 @@ small {
 .header {
         background-image: var(--header-footer);
 	height: 150px;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+	/*box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);*/
         padding: 0 12.5% 0 12.5%;
 }
 
@@ -110,19 +110,27 @@ small {
                 float: left;
                 line-height: 15px;
 		margin: 30px 0 0 0;
+		animation-name: burn-in;
+		animation-duration: 2s;
         }
 
 		.title h1 {
 			font-family: Giant;
 			font-size: 24px;
-			text-shadow: 0 0 10px rgba(135, 206, 235, 0.5);
+			/*text-shadow: 0 0 20px rgba(135, 206, 235, 0.5);*/
 			margin: 0.25em 0 0 0;
 			padding: 0;
                 }
 
 		.title img {
 			max-width: 250px;
-			-webkit-filter: drop-shadow(0 0 5px rgba(135, 206, 235, 0.5));
+			/*-webkit-filter: drop-shadow(0 0 10px rgba(135, 206, 235, 0.5));*/
+		}
+
+		@keyframes burn-in {
+  			0%   {transform: translate(-100%, 0%); padding-left: -200px;}
+  			50%  {padding-left: 100px;}
+  			100% {padding-left: 0px;}
 		}
 
 	.navigation {
@@ -245,7 +253,7 @@ small {
         color: var(--font-header-footer);
         background-image: var(--header-footer);
         transition: color var(--dark-trans), background var(--dark-trans);
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+	/*box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);*/
         margin: 0;
         padding: 1.25em 12.5% 1.25em 12.5%;
 }
@@ -292,8 +300,8 @@ small {
 		background-color: var(--fg);
 		/*border-radius: 0.5em;*/
 		/*box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);*/
-		margin: 0.75em 0 0.75em 0;
-		padding: 2.5em;
+		margin: 0.25em 0 0.25em 0;
+		padding: 1.25em;
 		transition: color var(--link-trans);
 	}
 
@@ -365,7 +373,7 @@ small {
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-	padding: 12.5% 12.5% 25% 12.5%;
+	padding: 12.5% 12.5% 12.5% 12.5%;
 }
 
 	@media only screen and (max-width: 1026px) {

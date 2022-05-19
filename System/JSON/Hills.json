@@ -1790,7 +1790,7 @@
                     "elevation": 3694,
                     "prominence": 2884,
                     "isolation": 12.43,
-                    "summit": "Triangulation Station [Pillar (Round (Destroyed))]",
+                    "summit": "Triangulation Station TP1263 [Pillar (Round (Destroyed))] at NN 06965 30471",
 		    "image": "Munros/cruachan.jpg"
                 },
                 {
@@ -2169,7 +2169,7 @@
                     "elevation": 2657,
                     "prominence": 803,
                     "isolation": 1.85,
-                    "summit": "Triangulation Station [Pillar (Round)]",
+                    "summit": "Triangulation Station TP2548 [Pillar (Round)] at NM 87060 57649",
 		    "image": "Corbetts/creach-bheinn.jpg"
                 }
 	    ],
@@ -3877,7 +3877,7 @@
                     "elevation": 3146,
                     "prominence": 1673,
                     "isolation": 1.55,
-                    "summit": "Triangulation Station [Pillar (Round)]",
+                    "summit": "Triangulation Station TP1187 [Pillar (Round)] at NN 09500 49772",
 		    "image": "Munros/fhionnlaidh.jpg"
                 }
             ],
@@ -5308,7 +5308,7 @@
                     "elevation": 2812,
                     "prominence": 1523,
                     "isolation": 1.91,
-		    "summit": "Triangulation Station [Pillar (Round)]",
+		    "summit": "Triangulation Station TP1142 [Pillar (Round)] at NN 24626 56687",
 		    "image": "Corbetts/chrulaiste.jpg"
                 }
 	    ],
@@ -5470,7 +5470,7 @@
 	            "elevation": 3173,
 	            "prominence": 2041,
 		    "isolation": 1.92,
-		    "summit": "Triangulation Station [Pillar (Stonebuilt)]",
+		    "summit": "Triangulation Station TP5884 [Pillar (Stonebuilt)] at NN 14043 58305",
 		    "image": "Munros/fiannaidh.jpg"
 		},
 		{

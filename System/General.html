@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Conquest Map | Burning Roots</title>
+		<title>General Search | Burning Roots</title>
 		<link rel="stylesheet" href="./burning.css">
 		<link rel="stylesheet" href="https://labs.os.uk/public/os-api-branding/v0.3.0/os-api-branding.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,7 +23,7 @@
 	<div class="header">
                 <div class="title">
                         <img src="./Photos/Logo.png"></img>
-                        <h1>Conquest Map</h1>
+                        <h1>General Search</h1>
                 </div>
                 <div class="navigation">
                         <div class="pages-desktop">
@@ -61,60 +61,37 @@
                 </u>
         </div>
 
-	<div id="map"></div>
-	<div id="scope"></div>
+	<div class="bodycage">
 
-	<div class="options-container">
-		<div id="menu">
-    			<input id="leisure" type="radio" name="toggle" value="Leisure" checked="checked">
-    			<label for="leisure">Leisure</label>
-    			<input id="road" type="radio" name="toggle" value="Road">
-    			<label for="road">Road</label>
-    			<input id="outdoor" type="radio" name="toggle" value="Outdoor">
-    			<label for="outdoor">Outdoor</label>
+		<div class="body">
+
+			<h1>Search Location</h1>
+
+			<input type="text" id="locSearchInp"></input>
+			<button onclick="searchLocation()">Search</button>
+			<p id="locSearchOut"></p>
+		
 		</div>
-		<div id="optionsOpt">
-			<div id="optionsOptOpen">
-				<a onclick="openOptions()"><i class="fas fa-angle-double-right"></i></a>
-			</div>
-		</div>
+
 	</div>
 
-	<div id="options">
-		<a id="optionsOptClose" onclick="closeOptions()">&times;</a>
-		<div class="optionsCont">
-			<h1>Options</h1>
-			<h2>Hill Options</h2>
-			<div class="optionsRow">
-				<div class="optionsCol">
-					<button id="munros" onclick="showMunros()"><i class="fas fa-mountain"></i></button>
-					<label for="munros" class="optionsLabel">Munros</label>
-				</div>
-				<div class="optionsCol">
-					<button id="munrotops" onclick="showMunroTops()"><i class="fas fa-mountain"></i></button>
-					<label for="munrotops" class="optionsLabel">Munro Tops</label>
-				</div>
-				<div class="optionsCol">
-					<button id="corbetts" onclick="showCorbetts()"><i class="fas fa-mountain"></i></button>
-					<label for="corbetts" class="optionsLabel">Corbetts</label>
-				</div>
-				<div class="optionsCol">
-					<button id="corbetttops" onclick="showCorbettTops()"><i class="fas fa-mountain"></i></button>
-					<label for="corbetttops" class="optionsLabel">Corbett Tops</label>
-				</div>
-			</div>
-			<div class="optionsRow">
-				<div class="optionsCol">
-					<button id="hideMarkers" onclick="hideMarkers()"><i class="fas fa-mountain" style="color:white;"></i></button>
-					<label for="hideMarkers" class="optionsLabel">Hide</label>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="footer">
+
+                <p>
+                        A Lewis Britton Authentic HyperText&reg; Markup Language Original
+                        <br>
+                        Not One of Those Garbage Template Sites Like Squarespace or Wix
+                </p>
+
+                <p>
+                        &#169; Lewis Britton 2022
+                </p>
+
+        </div>
 
 </body>
 
 	<script src="./Scripts/Drop.js"></script>
-	<script src="./Scripts/conquestMap.js"></script>
+	<script src="./Scripts/generalSearch.js"></script>
 
 </html>
