@@ -321,29 +321,29 @@ const app = {
 	     day_wind_dir = 'N/NW';
 	  }
           return `<div class="weathercol">
-              <h2 style="text-align:center;">${dt}</h2>
-	      <p style="font-size:32px;text-align:center;">${wicon}</p>
-              <p><b>${day.weather[0].main}</b>: ${day.weather[0].description}</p>
+	      <div class="weather-int">
+                  <h2 style="text-align:center;padding:0.75em;">${dt}</h2>
+	          <p style="font-size:32px;text-align:center;">${wicon}</p>
+                  <p style="text-align:center;"><b>${day.weather[0].main}</b>: ${day.weather[0].description}</p>
+	      </div>
 	      <div class="weather-std">
                   <p>
 		      <div style="
 			  text-align:center;
 			  color:${day_temp_font};
 			  background-color:${day_temp_col};
-			  padding:0.125em;
+			  padding:0.5em;
 		      ">
 		          <i class="fas fa-temperature-high"></i> 
 		          ${day.temp.max}&deg;C<br>
 		          <i class="fas fa-temperature-low"></i> 
 		          ${day.temp.min}&deg;C
 		      </div>
-		  </p>
-                  <p>
 		      <div style="
 			  text-align:center;
 			  color:${day_fl_temp_font};
 			  background-color:${day_fl_temp_col};
-			  padding:0.125em;
+			  padding:0.5em 0.5em 0 0.5em;
 		      ">
 		          <i class="fas fa-sun"></i>
 			  <i class="fas fa-temperature-high"></i> 
@@ -353,7 +353,7 @@ const app = {
 			  text-align:center;
 			  color:${night_fl_temp_font};
 			  background-color:${night_fl_temp_col};
-			  padding:0.125em;
+			  padding:0 0.5em 0.5em 0.5em;
 		      ">
 		          <i class="fas fa-moon"></i>
 			  <i class="fas fa-temperature-high"></i> 
@@ -511,8 +511,10 @@ const app = {
 	  }
 
 	  return `<div class="weathercol">
-	      <h3 style="text-align:center;">${dt}</h3>
-      	      <p style="font-size:32px;text-align:center;">${wicon}</p>
+	      <div class="weather-int">
+	          <h3 style="text-align:center;">${dt}</h3>
+      	          <p style="font-size:32px;text-align:center;">${wicon}</p>
+	      </div>
 	      <div class="weather-std hr">
                   <p>
 		      <div style="

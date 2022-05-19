@@ -560,7 +560,7 @@ table {
 		.sub-element {
 			background-color: var(--fg);
 			margin: 0;
-			padding: 0.5em;
+			padding: 0;
 		}
 
 			.sub-sub-element {
@@ -584,8 +584,8 @@ table {
 	.weathercol {
 		text-align: left;
 		background-color: var(--bg);
-		margin: 0.5em 0.25em 0.5em 0.25em;
-		padding: 0.5em;
+		margin: 0.5em 0.125em 0.5em 0.125em;
+		padding: 0.5em 0 0.5em 0;
 	}
 
 		@media (min-width: 768px) {
@@ -594,10 +594,14 @@ table {
 			}
 		}
 
-	.weather-std, .weather-atm, .weather-dyt {
+	.weather-int, .weather-std, .weather-atm, .weather-dyt {
 		background-color: var(--fg);
-		margin: 0.5em 0 0.5em 0;
+		margin: 0.75em 0 0.75em 0;
 		padding: 0.125em 0.75em 0.125em 0.75em;
+	}
+
+	.weather-int {
+		margin-top: 0;
 	}
 
 	.weather-std {
