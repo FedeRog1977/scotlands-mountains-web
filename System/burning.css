@@ -494,6 +494,29 @@ table {
 			}
 		}
 
+/* Inputs */
+
+select, input[type="text"], button {
+	font-family: Audi-Regular;
+	color: #FFFFFF;
+	background-image: var(--header-footer);
+	border: none;
+	border-radius: 0.125em;
+	padding: 0.5em;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+	option {
+		color: var(--font);
+	}
+
 
 
 
@@ -553,7 +576,7 @@ table {
 
 	.element {
 		background-color: var(--bg);
-		margin: 0;
+		margin: 0.5em 0 0.5em 0;
 		padding: 0.5em;
 	}
 
@@ -612,13 +635,45 @@ table {
 			font-size: 12px;
 		}
 
+.fa-sun {
+	color: #EE6600;
+}
 
+.fa-moon {
+	color: #0C317A;
+}
 
-/*.fas {
-	color: grey;
-}*/
+.fa-cloud-sun {
+	color: #D3D3D3;
+}
 
+.fa-cloud-moon {
+	color: #D3D3D3;
+}
 
+.fa-cloud {
+	color: #D3D3D3;
+}
+
+.fa-cloud-sun-rain {
+	color: #A0A0A0;
+}
+
+.fa-cloud-rain {
+	color: #696969;
+}
+
+.fa-thunderstorm {
+	color: #696969;
+}
+
+.fa-snowflake {
+	color: #D3D3D3;
+}
+
+.fa-smog {
+	color: #D3D3D3;
+}
 
 /* Conquest Map */
 

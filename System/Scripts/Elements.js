@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const overview = document.querySelector("#userOverview");
     const conditioning = document.querySelector("#userConditioning");
     const weather = document.querySelector("#userWeather");
+    const weatherReading = document.querySelector("#userWeatherReading");
     const weatherKey = document.querySelector("#userWeatherKey");
     const weatherSugClouds = document.querySelector("#userWeatherSugClouds");
     const weatherSugBearings = document.querySelector("#userWeatherSugBearings");
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 	conditioning.classList.add("hidden");
 	weather.classList.add("hidden");
+        weatherReading.classList.add("hidden");
     });
 
     document.querySelector("#userConditioningOpt").addEventListener("click", e => {
@@ -24,12 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 	overview.classList.add("hidden");
 	weather.classList.add("hidden");
+        weatherReading.classList.add("hidden");
     });
 
     document.querySelector("#userWeatherOpt").addEventListener("click", e => {
         e.preventDefault();
-        if (weather.classList.contains("hidden")) {
+        if (weather.classList.contains("hidden") && weatherReading.classList.contains("hidden")) {
             weather.classList.remove("hidden");
+            weatherReading.classList.remove("hidden");
         }
 	overview.classList.add("hidden");
 	conditioning.classList.add("hidden");

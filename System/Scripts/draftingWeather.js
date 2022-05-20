@@ -209,9 +209,9 @@ const app = {
 	      } else if (day.weather[i].icon === '04n') {
 	          wicon = '<i class="fas fa-cloud"></i>';
 	      } else if (day.weather[i].icon === '09d') {
-                  wicon = '<i class="fas fa-cloud-drizzle"></i>';
+                  wicon = '<i class="fas fa-cloud-sun-rain"></i>';
 	      } else if (day.weather[i].icon === '09n') {
-	          wicon = '<i class="fas fa-cloud-drizzle"></i>';
+	          wicon = '<i class="fas fa-cloud-sun-rain"></i>';
 	      } else if (day.weather[i].icon === '10d') {
 	          wicon = '<i class="fas fa-cloud-rain"></i>';
 	      } else if (day.weather[i].icon === '10n') {
@@ -225,9 +225,9 @@ const app = {
 	      } else if (day.weather[i].icon === '13n') {
 	          wicon = '<i class="fas fa-snowflake"></i>';
 	      } else if (day.weather[i].icon === '50d') {
-                  wicon = '<i class="fas fa-fog"></i>';
+                  wicon = '<i class="fas fa-smog"></i>';
 	      } else if (day.weather[i].icon === '50n') {
-	          wicon = '<i class="fas fa-fog"></i>';
+	          wicon = '<i class="fas fa-smog"></i>';
 	      }
 	  }
           let day_temp_col = '';
@@ -396,9 +396,9 @@ const app = {
 		      <div style="
 			  text-align:center;
 		      ">
-		          <i class="fas fa-sun" style="color:#EE6600"></i>
+		          <i class="fas fa-sun"></i>
 		          ${sr}<br>
-		          <i class="fas fa-moon" style="color:#0C317A"></i>
+		          <i class="fas fa-moon"></i>
 		          ${ss}
 		      </div>
 		  </p>
@@ -450,9 +450,9 @@ const app = {
 	      } else if (hour.weather[i].icon === '13n') {
 	          wicon = '<i class="fas fa-snowflake"></i>';
 	      } else if (hour.weather[i].icon === '50d') {
-                  wicon = '<i class="fas fa-fog"></i>';
+                  wicon = '<i class="fas fa-smog"></i>';
 	      } else if (hour.weather[i].icon === '50n') {
-	          wicon = '<i class="fas fa-fog"></i>';
+	          wicon = '<i class="fas fa-smog"></i>';
 	      }
 	  }
 	  let hour_temp_col = '';
