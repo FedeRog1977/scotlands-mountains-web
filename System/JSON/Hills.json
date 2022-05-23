@@ -1577,8 +1577,8 @@
 	{
             "name": "Cruachan Range",
             "type": "Mountain Range",
-            "sub-type": "Ridge",
-            "sub-sub-type": "Arete",
+            "subtype": "Ridge",
+            "subsubtype": "Arete",
 	    "route": [
 		{
 		    "name": "Cruachan Four",
@@ -1954,8 +1954,8 @@
 	{
             "name": "Beinn Udlaidh and Beinn Bhreac-liath",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-            "sub-sub-type": "Whaleback",
+            "subtype": "Stand-Alone",
+            "subsubtype": "Whaleback",
 	    "route": [
 		{
 		    "name": "Beinn Udlaidh and Beinn Bhreac-liath",
@@ -2048,8 +2048,8 @@
 	{
             "name": "Beinn Mhic-Mhonaidh",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-            "sub-sub-type": "Ridge",
+            "subtype": "Stand-Alone",
+            "subsubtype": "Ridge",
 	    "route": [
 		{
 		    "name": "Beinn Mhic-Mhonaidh",
@@ -2121,8 +2121,8 @@
 	{
             "name": "Creach Bheinn (Loch Creran)",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-            "sub-sub-type": null,
+            "subtype": "Stand-Alone",
+            "subsubtype": null,
 	    "route": [
 		{
 		    "name": "Creach Bheinn",
@@ -2204,8 +2204,8 @@
 	{
             "name": "Starav Range",
             "type": "Mountain Range",
-            "sub-type": "Ridge",
-            "sub-sub-type": "Arete",
+            "subtype": "Ridge",
+            "subsubtype": "Arete",
 	    "route": [
 		{
 		    "name": "Starav Eight",
@@ -2729,8 +2729,8 @@
 	{
             "name": "Beinn Trilleachan",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-            "sub-sub-type": "Whaleback",
+            "subtype": "Stand-Alone",
+            "subsubtype": "Whaleback",
 	    "route": [
 		{
 		    "name": "Beinn Trilleachan",
@@ -2826,8 +2826,8 @@
         {
             "name": "Black Mount Range",
 	    "type": "Mountain Range",
-	    "sub-type": null,
-	    "sub-sub-type": null,
+	    "subtype": null,
+	    "subsubtype": null,
 	    "route": [
 		{
 		    "name": "Starav Eight",
@@ -3382,8 +3382,8 @@
 	{
             "name": "Beinn Sgulaird",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-            "sub-sub-type": "Ridge",
+            "subtype": "Stand-Alone",
+            "subsubtype": "Ridge",
 	    "route": [
 		{
 		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sgor na h-Ulaidh and Beinn Maol Chaluim",
@@ -3615,8 +3615,8 @@
 	{
             "name": "Fraochaidh",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-            "sub-sub-type": "Ridge",
+            "subtype": "Stand-Alone",
+            "subsubtype": "Ridge",
 	    "route": [
 		{
 		    "name": "Fraochaidh from Ballachulish",
@@ -3709,8 +3709,8 @@
 	{
             "name": "Beinn Fhionnlaidh",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-            "sub-sub-type": "Ridge",
+            "subtype": "Stand-Alone",
+            "subsubtype": "Ridge",
 	    "route": [
 		{
 		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sgor na h-Ulaidh and Beinn Maol Chaluim",
@@ -3935,8 +3935,8 @@
 	{
             "name": "Sgor na h-Ulaidh",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-            "sub-sub-type": "Ridge",
+            "subtype": "Stand-Alone",
+            "subsubtype": "Ridge",
 	    "route": [
 		{
 		    "name": "Beinn Sgulaird, Beinn Fhionnlaidh, Sgor na h-Ulaidh and Beinn Maol Chaluim",
@@ -4147,8 +4147,8 @@
         {
             "name": "Stob Dubh",
 	    "type": "Mountain",
-	    "sub-type": "Stand-Alone",
-	    "sub-sub-type": "Mound",
+	    "subtype": "Stand-Alone",
+	    "subsubtype": "Mound",
 	    "route": [
 		{
 		    "name": "Beinn Mhic Chasgaig and Stob Dubh",
@@ -4312,8 +4312,8 @@
         {
             "name": "Buachaille Etive Mor",
 	    "type": "Mountain",
-	    "sub-type": "Ridge",
-	    "sub-sub-type": "Plateau",
+	    "subtype": "Ridge",
+	    "subsubtype": "Plateau",
 	    "route": [
 		{
 		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive Mor",
@@ -4571,8 +4571,8 @@
         {
             "name": "Buachaille Etive Beag",
 	    "type": "Mountain",
-	    "sub-type": "Ridge",
-	    "sub-sub-type": "Plateau",
+	    "subtype": "Ridge",
+	    "subsubtype": "Plateau",
 	    "route": [
 		{
 		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive Mor",
@@ -4716,8 +4716,8 @@
         {
             "name": "Bidean nam Bian",
 	    "type": "Mountain",
-	    "sub-type": "Massif",
-	    "sub-sub-type": null,
+	    "subtype": "Massif",
+	    "subsubtype": null,
 	    "route": [
 		{
 		    "name": "Bidean nam Bian, Buachaille Etive Beag and Buachaille Etive Mor",
@@ -5113,8 +5113,8 @@
 	{
             "name": "Beinn a Bheithir",
             "type": "Mountain",
-            "sub-type": "Ridge",
-            "sub-sub-type": "Arete",
+            "subtype": "Ridge",
+            "subsubtype": "Arete",
 	    "route": [
 		{
 		    "name": "Beinn a Bheithir via Schoolhouse Ridge",
@@ -5263,8 +5263,8 @@
 	{
             "name": "Beinn a Chrulaiste",
             "type": "Mountain",
-            "sub-type": "Stand-Alone",
-	    "sub-sub-type": "Whaleback",
+            "subtype": "Stand-Alone",
+	    "subsubtype": "Whaleback",
 	    "route": [
 		{
 		    "name": "Beinn a Chrulaiste",
@@ -5346,8 +5346,8 @@
 	{
             "name": "Aonach Eagach",
             "type": "Mountain",
-            "sub-type": "Ridge",
-            "sub-sub-type": "Arete",
+            "subtype": "Ridge",
+            "subsubtype": "Arete",
 	    "route": [
 		{
 		    "name": "Aonach Eagach Full Traverse",

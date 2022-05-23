@@ -193,7 +193,6 @@ small {
                 }
 
 			.pages-hiking, .pages-cycling {
-				border: 1px dashed black;
 				background-color: var(--bg);
 				margin: 0.25em 0 0.25em 0;
 				padding: 0.25em 0.5em 0.25em 0;
@@ -289,7 +288,7 @@ small {
 
 	@media only screen and (max-width: 1026px) {
         	.bodycage {
-			padding: 0;
+			padding: 1.25em;
         	}
 	}
 
@@ -311,7 +310,7 @@ small {
 
 		@media only screen and (max-width: 1026px) {
         	        .body {
-				min-height: 100vh;
+				min-height: 50vh;
         	        }
         	}
 
@@ -565,13 +564,7 @@ button:active {
 
         .elements-profile a:hover, .elements-profile a:active {
                 color: var(--font-hover);
-                text-decoration: none;
-		border-bottom: 2px solid var(--font-hover);
-                transition: color var(--link-trans), border var(--link-trans);
-        }
-
-        .elements-profile li:hover {
-                color: var(--font-hover);
+                transition: color var(--link-trans);
         }
 
 	.element {
@@ -797,3 +790,18 @@ button:active {
 			font-size: 14px;
 			display: block;
 		}
+
+/* General Search */
+
+#statsOut a {
+	font-family: Audi-Extended;
+	color: var(--font);
+	text-decoration: none;
+	transition: color var(--link-trans);
+}
+
+#statsOut a:hover {
+	color: var(--font-hover);
+	transition: color var(--link-trans);
+}
+

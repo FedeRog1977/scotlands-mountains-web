@@ -52,8 +52,8 @@
                 <li>Hiking <a id="hikingDrop" href="#">&#9662;</a></li>
                 <div id="pagesHiking" class="pages-hiking hidden">
                         <u>
-                        <li><a href="./Conquest.html"><i>Conquest Map</i></a></li>
-                        <li><a href="./Ranger.html"><i>Ranger Calculator</i></a></li>
+                        <li><a href="./Conquest.html">Conquest Map</a></li>
+                        <li><a href="./Ranger.html">Ranger Calculator</a></li>
                         <li><a href="./General.html">General Search</a></li>
                         <li><a href="./Key.html">Comprehensive Key</a></li>
                         </u>
@@ -67,9 +67,12 @@
 
 			<h1>Search Location</h1>
 
-			<input type="text" id="locSearchInp"></input>
+			<input type="text" id="inpLocation"></input>
 			<button onclick="searchLocation()">Search Location</button>
-			<p id="locSearchOut"></p>
+			<div class="element">
+				<p id="locationPre" style="text-align:center;">Find a Munro, Munro Top, Corbett or Corbett Top</p>
+				<p id="locationOut"></p>
+			</div>
 
 		</div>
 
@@ -88,145 +91,114 @@
 			<div id="selectRouteCruachanCont" class="hidden">
 				<h3>Cruachan Range Routes</h3>
 				<select id="selectRouteCruachan"></select>
-				<button onclick="getRouteCruachanDiff()">Search</button>
-				<p id="statsCruachanOut"></p>
-				<p id="scoreCruachanOut"></p>
+				<button onclick="searchRoute('Cruachan')">Search</button>
 			</div>
 
 			<div id="selectRouteUdlaidhCont" class="hidden">
 				<h3>Beinn Udlaidh and Beinn Bhreac-liath Routes</h3>
 				<select id="selectRouteUdlaidh"></select>
-				<button onclick="getRouteUdlaidhDiff()">Search</button>
-				<p id="statsUdlaidhOut"></p>
-				<p id="scoreUdlaidhOut"></p>
+				<button onclick="searchRoute('Udlaidh')">Search</button>
 			</div>
 
 			<div id="selectRouteMhicCont" class="hidden">
 				<h3>Beinn Mhic-Mhonaidh Routes</h3>
 				<select id="selectRouteMhic"></select>
-				<button onclick="getRouteMhicDiff()">Search</button>
-				<p id="statsMhicOut"></p>
-				<p id="scoreMhicOut"></p>
+				<button onclick="searchRoute('Mhic')">Search</button>
 			</div>
 
 			<div id="selectRouteCreachCont" class="hidden">
 				<h3>Creach Bheinn (Loch Creran) Routes</h3>
 				<select id="selectRouteCreach"></select>
-				<button onclick="getRouteCreachDiff()">Search</button>
-				<p id="statsCreachOut"></p>
-				<p id="scoreCreachOut"></p>
+				<button onclick="searchRoute('Creach')">Search</button>
 			</div>
 
 			<div id="selectRouteStaravCont" class="hidden">
 				<h3>Starav Range Routes</h3>
 				<select id="selectRouteStarav"></select>
-				<button onclick="getRouteStaravDiff()">Search</button>
-				<p id="statsStaravOut"></p>
-				<p id="scoreStaravOut"></p>
+				<button onclick="searchRoute('Starav')">Search</button>
 			</div>
 
 			<div id="selectRouteTrilleachanCont" class="hidden">
 				<h3>Beinn Trilleachan Routes</h3>
 				<select id="selectRouteTrilleachan"></select>
-				<button onclick="getRouteTrilleachanDiff()">Search</button>
-				<p id="statsTrilleachanOut"></p>
-				<p id="scoreTrilleachanOut"></p>
+				<button onclick="searchRoute('Trilleachan')">Search</button>
 			</div>
 
 			<div id="selectRouteBlackCont" class="hidden">
 				<h3>Black Mount Range Routes</h3>
 				<select id="selectRouteBlack"></select>
-				<button onclick="getRouteBlackDiff()">Search</button>
-				<p id="statsBlackOut"></p>
-				<p id="scoreBlackOut"></p>
+				<button onclick="searchRoute('Black')">Search</button>
 			</div>
 
 			<div id="selectRouteSgulairdCont" class="hidden">
 				<h3>Beinn Sgulaird Routes</h3>
 				<select id="selectRouteSgulaird"></select>
-				<button onclick="getRouteSgulairdDiff()">Search</button>
-				<p id="statsSgulairdOut"></p>
-				<p id="scoreSgulairdOut"></p>
+				<button onclick="searchRoute('Sgulaird')">Search</button>
 			</div>
 
 			<div id="selectRouteFraochaidhCont" class="hidden">
 				<h3>Fraochaidh Routes</h3>
 				<select id="selectRouteFraochaidh"></select>
-				<button onclick="getRouteFraochaidhDiff()">Search</button>
-				<p id="statsFraochaidhOut"></p>
-				<p id="scoreFraochaidhOut"></p>
+				<button onclick="searchRoute('Fraochaidh')">Search</button>
 			</div>
 
 			<div id="selectRouteFhionnlaidhCont" class="hidden">
 				<h3>Beinn Fhionnlaidh Routes</h3>
 				<select id="selectRouteFhionnlaidh"></select>
-				<button onclick="getRouteFhionnlaidhDiff()">Search</button>
-				<p id="statsFhionnlaidhOut"></p>
-				<p id="scoreFhionnlaidhOut"></p>
+				<button onclick="searchRoute('Fhionnlaidh')">Search</button>
 			</div>
 
 			<div id="selectRouteHulaidhCont" class="hidden">
 				<h3>Sgor na h-Ulaidh Routes</h3>
 				<select id="selectRouteHulaidh"></select>
-				<button onclick="getRouteHulaidhDiff()">Search</button>
-				<p id="statsHulaidhOut"></p>
-				<p id="scoreHulaidhOut"></p>
+				<button onclick="searchRoute('Hulaidh')">Search</button>
 			</div>
 
 			<div id="selectRouteDubhCont" class="hidden">
 				<h3>Stob Dubh Routes</h3>
 				<select id="selectRouteDubh"></select>
-				<button onclick="getRouteDubhDiff()">Search</button>
-				<p id="statsDubhOut"></p>
-				<p id="scoreDubhOut"></p>
+				<button onclick="searchRoute('Dubh')">Search</button>
 			</div>
 
 			<div id="selectRouteMorCont" class="hidden">
 				<h3>Buachaille Etive Mor Routes</h3>
 				<select id="selectRouteMor"></select>
-				<button onclick="getRouteMorDiff()">Search</button>
-				<p id="statsMorOut"></p>
-				<p id="scoreMorOut"></p>
+				<button onclick="searchRoute('Mor')">Search</button>
 			</div>
 
 			<div id="selectRouteBeagCont" class="hidden">
 				<h3>Buachaille Etive Beag Routes</h3>
 				<select id="selectRouteBeag"></select>
-				<button onclick="getRouteBeagDiff()">Search</button>
-				<p id="statsBeagOut"></p>
-				<p id="scoreBeagOut"></p>
+				<button onclick="searchRoute('Beag')">Search</button>
 			</div>
 
 			<div id="selectRouteBideanCont" class="hidden">
 				<h3>Bidean nam Bian Routes</h3>
 				<select id="selectRouteBidean"></select>
-				<button onclick="getRouteDiff()">Search</button>
-				<p id="statsOut"></p>
-				<p id="scoreOut"></p>
+				<button onclick="searchRoute('Bidean')">Search</button>
 			</div>
 
 			<div id="selectRouteBheithirCont" class="hidden">
 				<h3>Beinn a Bheithir Routes</h3>
 				<select id="selectRouteBheithir"></select>
-				<button onclick="getRouteBideanDiff()">Search</button>
-				<p id="statsBideanOut"></p>
-				<p id="scoreBideanOut"></p>
+				<button onclick="searchRoute('Bheithir')">Search</button>
 			</div>
 
 			<div id="selectRouteChrulaisteCont" class="hidden">
 				<h3>Beinn a Chrulaiste Routes</h3>
 				<select id="selectRouteChrulaiste"></select>
-				<button onclick="getRouteChrulaisteDiff()">Search</button>
-				<p id="statsChrulaisteOut"></p>
-				<p id="scoreChrulaisteOut"></p>
+				<button onclick="searchRoute('Chrulaiste')">Search</button>
 			</div>
 
 			<div id="selectRouteEagachCont" class="hidden">
 				<h3>Aonach Eagach Routes</h3>
 				<select id="selectRouteEagach"></select>
-				<button onclick="getRouteEagachDiff()">Search</button>
-				<p id="statsEagachOut"></p>
-				<p id="scoreEagachOut"></p>
+				<button onclick="searchRoute('Eagach')">Search</button>
+			</div>
+
+			<div class="element">
+				<p id="statsPre" style="text-align:center;">Find routes on landmasses</p>
+				<p id="statsOut"></p>
 			</div>
 
 		</div>
@@ -252,6 +224,5 @@
 	<script src="./Scripts/Drop.js"></script>
 	<script src="./Scripts/selectRoute.js"></script>
 	<script src="./Scripts/generalSearch.js"></script>
-	<script src="./Scripts/conquestMath.js"></script>
 
 </html>

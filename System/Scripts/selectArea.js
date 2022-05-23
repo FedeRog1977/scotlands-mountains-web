@@ -53,7 +53,7 @@ const selectCountyListCont = `
     <option>Dumfries and Galloway</option>
     <option>Dundee</option>
     <option>East Ayrshire</option>
-    <option>East Dumbartonshire</option>
+    <option>East Dunbartonshire</option>
     <option>East Lothian</option>
     <option>East Renfrewshire</option>
     <option>Edinburgh</option>
