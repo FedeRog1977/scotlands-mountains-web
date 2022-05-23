@@ -12,11 +12,15 @@ function searchLocation() {
             const locationOut = document.getElementById("locationOut");
 	    for (var i in hills.landmass) {
 	        for (var k in hills.landmass[i].munro) {
-                    if (hills.landmass[i].munro[k].name.toLowerCase() === inpMunro) {
+                    if (hills.landmass[i].munro[k].name.toLowerCase().match(inpMunro)) {
 	                let hillName = hills.landmass[i].munro[k].name;
 			let landmassName = hills.landmass[i].name;
 			let landmassType = hills.landmass[i].type;
-			let landmassParent = hills.landmass[i].type;
+			let landmassParentLandmass = hills.landmass[i].parentlandmass;
+			let landmassParentPeak = hills.landmass[i].parentpeak;
+			let landmassRegion = hills.landmass[i].region;
+			let landmassSubregion = hills.landmass[i].subregion;
+			let landmassInformalRegion = hills.landmass[i].informalregion;
 
 			let landmassSubtype = "";
 			if (hills.landmass[i].subtype == null) {
@@ -54,21 +58,24 @@ function searchLocation() {
 	                let hillIso = hills.landmass[i].munro[k].isolation;
 	                let hillSum = hills.landmass[i].munro[k].summit;
 			let hillImg = hills.landmass[i].munro[k].image;
-			let hillRoutes = "";
 
 	                locationOut.innerHTML = 
 			    "<h1>" + hillName + "</h1>"
 			    + hillName + " is a Munro on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br>"
-			    + landmassSubsubtype + "<hr>"
+			    + landmassSubsubtype 
+			    + "Parent Landmass: " + landmassParentLandmass + "<br>"
+			    + "Parent Peak: " + landmassParentPeak + "<br>"
+			    + "Region: " + landmassRegion + "<br>"
+			    + "Sub-Region: " + landmassSubregion + "<br>"
+			    + "Informal Region: " + landmassInformalRegion + "<br><hr>"
 			    + "<b>Elevation</b>: " + hillElev + "ft<br>" 
 			    + "<b>Prominance</b>: " + hillProm + "ft<br>"
-			    + "<b>Isolation</b>: " + hillIso + "mi<br><hr>"
+			    + "<b>Isolation</b>: " + hillIso + "mi<br>"
 			    + "<b>Located at</b>: " 
 			    + hillLat + "&deg;" + hillLatDir + ", " 
-			    + hillLon + "&deg;" + hillLonDir + "<br><hr>"
+			    + hillLon + "&deg;" + hillLonDir + "<br>"
 			    + "<b>Summit Feature</b>: " + hillSum + "<br><hr>"
-			    + "<img src='./Photos/" + hillImg + "' style='width:300px;'></img>" 
-			    + hillRoutes;
+			    + "<div style='text-align:center;'><img src='./Photos/" + hillImg + "' style='width:400px;height:275px;'></img></div>";
 
 			locationPre.classList.add("hidden");
 		    }
@@ -95,7 +102,7 @@ function searchRoute(landmass) {
 			let routeDist = hills.landmass[i].route[k].distance;
 			let routeElev = hills.landmass[i].route[k].elevationgain;
 			let routeTime = hills.landmass[i].route[k].stdtime;
-			let routeType = hills.landmass[i].route[k].type.join(", a ");
+			let routeType = hills.landmass[i].route[k].type.join(", ");
 			let routeStage = hills.landmass[i].route[k].stage.join(", ");
 			let routeTerrainType = hills.landmass[i].route[k].terraintype.join(", ");
 			let routeTerrainDiff = hills.landmass[i].route[k].terraindiff.join(", ");
