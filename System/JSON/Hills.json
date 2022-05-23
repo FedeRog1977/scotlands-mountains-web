@@ -164,10 +164,10 @@
     "region": [
 	{
 	    "name": "Highlands",
-	    "sub-region": [
+	    "subregion": [
 	        {
 		    "name": "Sutherland",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Caithness",
 			    "lat": 58.4389,
@@ -217,7 +217,7 @@
 		},
 	        {
 		    "name": "Ullapool",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Lochinver",
 			    "lat": 58.1462,
@@ -267,7 +267,7 @@
 		},
 	        {
 		    "name": "Torridon",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Gairloch",
 			    "lat": 57.7282,
@@ -317,7 +317,7 @@
 		},
 	        {
 		    "name": "Loch Ness",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Loch Ness",
 			    "lat": 57.3229,
@@ -367,7 +367,7 @@
 		},
 	        {
 		    "name": "Kintail",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Glen Shiel",
 			    "lat": 57.1667,
@@ -407,7 +407,7 @@
 		},
 	        {
 		    "name": "Moray",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Nairn",
 			    "lat": 57.5864,
@@ -447,7 +447,7 @@
 		},
 	        {
 		    "name": "Aberdeenshire",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Banff",
 			    "lat": 57.6665,
@@ -497,7 +497,7 @@
 		},
 	        {
 		    "name": "Fort William, Lochaber and Lorn",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Fort William",
 			    "lat": 56.8198,
@@ -562,7 +562,7 @@
 		},
 	        {
 		    "name": "Cairngorms",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Kingussie",
 			    "lat": 57.0814,
@@ -647,7 +647,7 @@
 		},
 	        {
 		    "name": "Perthshire",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Pitlochry",
 			    "lat": 56.7044,
@@ -722,7 +722,7 @@
 		},
 	        {
 		    "name": "Argyll and Bute",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Oban",
 			    "lat": 56.4152,
@@ -797,7 +797,7 @@
 		},
 	        {
 		    "name": "Loch Lomond and The Trossachs",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "The Trossachs",
 			    "lat": 56.2343,
@@ -857,7 +857,7 @@
 		},
 	        {
 		    "name": "Angus",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Angus Glens",
 			    "lat": 56.6980,
@@ -894,10 +894,10 @@
 	},
 	{
 	    "name": "Islands",
-	    "sub-region": [
+	    "subregion": [
 	        {
 		    "name": "Isle of Skye and Raasay",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Trotternish",
 			    "lat": 57.6441,
@@ -982,7 +982,7 @@
 		},
 	        {
 		    "name": "Isle of Mull, Ulva and Iona",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Tobermory",
 			    "lat": 56.6228,
@@ -1027,7 +1027,7 @@
 		},
 	        {
 		    "name": "Outer Hebrides",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Isle of Lewis",
 			    "lat": 58.2416,
@@ -1077,7 +1077,7 @@
 		},
 	        {
 		    "name": "Orkney",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Mainland",
 			    "lat": 58.9809,
@@ -1167,7 +1167,7 @@
 		},
 	        {
 		    "name": "Shetland",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Unst",
 			    "lat": 60.7416,
@@ -1247,7 +1247,7 @@
 		},
 	        {
 		    "name": "Isle of Arran",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Brodick",
 			    "lat": 55.5751,
@@ -1287,7 +1287,7 @@
 		},
 	        {
 		    "name": "Small Isles",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Isle of Tiree",
 			    "lat": 56.4932,
@@ -1322,7 +1322,7 @@
 		},
 	        {
 		    "name": "Islay, Jura and Colonsay",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Islay",
 			    "lat": 55.7363,
@@ -1344,10 +1344,10 @@
 	},
 	{
 	    "name": "Lowlands",
-	    "sub-region": [
+	    "subregion": [
 	        {
 		    "name": "Fife and Stirling",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "St. Andrews",
 			    "lat": 56.3398,
@@ -1392,7 +1392,7 @@
 		},
 	        {
 		    "name": "Glasgow, Ayrshire and Lanark",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Glasgow",
 			    "lat": 55.8642,
@@ -1432,7 +1432,7 @@
 		},
 	        {
 		    "name": "Edinburgh and Lothian",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Edinburgh",
 			    "lat": 55.9533,
@@ -1467,7 +1467,7 @@
 		},
 	        {
 		    "name": "Galloway and Dumfries",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Newton Stewart",
 			    "lat": 54.9603,
@@ -1522,7 +1522,7 @@
 		},
 	        {
 		    "name": "Scottish Borders",
-		    "sub-sub-region": [
+		    "sub-subregion": [
 		        {
 			    "name": "Peebles",
 			    "lat": 55.6531,
@@ -1933,23 +1933,23 @@
             "gully": true,
             "lochain": true,
             "waterfall": true,
-            "peat-bog": false,
-            "mud-bog": true,
-            "boulder-field": true,
+            "peatbog": false,
+            "mudbog": true,
+            "boulderfield": true,
             "scree": true,
             "shoulder": true,
             "arete": true,
-            "human-features": [
+            "humanfeatures": [
 		{
                     "name": "Cruachan Reservoir",
 		    "type": "Reservoir"
                 }
 	    ],
-            "parent-landmass": "Starav Range",
-            "parent-peak": "Ben Starav",
+            "parentlandmass": "Starav Range",
+            "parentpeak": "Ben Starav",
             "region": "Highlands",
-            "sub-region": "Argyll and Bute",
-            "informal-region": "Loch Awe"
+            "subregion": "Argyll and Bute",
+            "informalregion": "Loch Awe"
         },
 	{
             "name": "Beinn Udlaidh and Beinn Bhreac-liath",
@@ -2032,18 +2032,18 @@
             "gully": false,
             "lochain": false,
             "waterfall": false,
-            "peat-bog": true,
-            "mud-bog": false,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": false,
+            "boulderfield": false,
             "scree": true,
             "shoulder": true,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Lui Range",
-            "parent-peak": "Ben Lui",
+            "humanfeatures": [],
+            "parentlandmass": "Lui Range",
+            "parentpeak": "Ben Lui",
             "region": "Highlands",
-            "sub-region": "Argyle and Bute",
-            "informal-region": "Glen Lochy"
+            "subregion": "Argyle and Bute",
+            "informalregion": "Glen Lochy"
         },
 	{
             "name": "Beinn Mhic-Mhonaidh",
@@ -2105,18 +2105,18 @@
             "gully": false,
             "lochain": false,
             "waterfall": false,
-            "peat-bog": false,
-            "mud-bog": false,
-            "boulder-field": false,
+            "peatbog": false,
+            "mudbog": false,
+            "boulderfield": false,
             "scree": true,
             "shoulder": false,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Lui Range",
-            "parent-peak": "Ben Lui",
+            "humanfeatures": [],
+            "parentlandmass": "Lui Range",
+            "parentpeak": "Ben Lui",
             "region": "Highlands",
-            "sub-region": "Argyll and Bute",
-            "informal-region": "Glen Strae"
+            "subregion": "Argyll and Bute",
+            "informalregion": "Glen Strae"
         },
 	{
             "name": "Creach Bheinn (Loch Creran)",
@@ -2188,18 +2188,18 @@
             "gully": false,
             "lochain": false,
             "waterfall": true,
-            "peat-bog": true,
-            "mud-bog": true,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": true,
+            "boulderfield": false,
             "scree": false,
             "shoulder": false,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Starav Range",
-            "parent-peak": "Ben Starav",
+            "humanfeatures": [],
+            "parentlandmass": "Starav Range",
+            "parentpeak": "Ben Starav",
             "region": "Highlands",
-            "sub-region": "Argyll and Bute",
-            "informal-region": "Loch Creran"
+            "subregion": "Argyll and Bute",
+            "informalregion": "Loch Creran"
         },
 	{
             "name": "Starav Range",
@@ -2713,18 +2713,18 @@
             "gully": true,
             "lochain": false,
             "waterfall": true,
-            "peat-bog": false,
-            "mud-bog": false,
-            "boulder-field": false,
+            "peatbog": false,
+            "mudbog": false,
+            "boulderfield": false,
             "scree": true,
             "shoulder": true,
             "arete": true,
-            "human-features": [],
-            "parent-landmass": "Bidean nam Bian",
-            "parent-peak": "Bidean nam Bian",
+            "humanfeatures": [],
+            "parentlandmass": "Bidean nam Bian",
+            "parentpeak": "Bidean nam Bian",
             "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-            "informal-region": "Glen Etive"
+            "subregion": "Fort William, Lochaber and Lorn",
+            "informalregion": "Glen Etive"
         },
 	{
             "name": "Beinn Trilleachan",
@@ -2810,18 +2810,18 @@
             "gully": false,
             "lochain": false,
             "waterfall": false,
-            "peat-bog": true,
-            "mud-bog": true,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": true,
+            "boulderfield": false,
             "scree": false,
             "shoulder": true,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Starav Range",
-            "parent-peak": "Ben Starav",
+            "humanfeatures": [],
+            "parentlandmass": "Starav Range",
+            "parentpeak": "Ben Starav",
             "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-            "informal-region": "Glen Etive"
+            "subregion": "Fort William, Lochaber and Lorn",
+            "informalregion": "Glen Etive"
         },
         {
             "name": "Black Mount Range",
@@ -3366,18 +3366,18 @@
 	    "gully": true,
 	    "lochain": true,
 	    "waterfall": true,
-	    "peat-bog": true,
-	    "mud-bog": true,
-	    "boulder-field": true,
+	    "peatbog": true,
+	    "mudbog": true,
+	    "boulderfield": true,
             "scree": true,
 	    "shoulder": false,
 	    "arete": false,
-	    "human-features": [],
-	    "parent-landmass": "Bidean nam Bian",
-	    "parent-peak": "Bidean nam Bian",
+	    "humanfeatures": [],
+	    "parentlandmass": "Bidean nam Bian",
+	    "parentpeak": "Bidean nam Bian",
 	    "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-	    "informal-region": "Glen Orchy and Glen Coe"
+            "subregion": "Fort William, Lochaber and Lorn",
+	    "informalregion": "Glen Orchy and Glen Coe"
         },
 	{
             "name": "Beinn Sgulaird",
@@ -3599,18 +3599,18 @@
             "gully": false,
             "lochain": false,
             "waterfall": true,
-            "peat-bog": true,
-            "mud-bog": false,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": false,
+            "boulderfield": false,
             "scree": true,
             "shoulder": false,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Bidean nam Bian",
-            "parent-peak": "Bidean nam Bian",
+            "humanfeatures": [],
+            "parentlandmass": "Bidean nam Bian",
+            "parentpeak": "Bidean nam Bian",
             "region": "Highlands",
-            "sub-region": "Argyll and Bute",
-            "informal-region": "Glen Creran"
+            "subregion": "Argyll and Bute",
+            "informalregion": "Glen Creran"
         },
 	{
             "name": "Fraochaidh",
@@ -3693,18 +3693,18 @@
             "gully": false,
             "lochain": false,
             "waterfall": false,
-            "peat-bog": true,
-            "mud-bog": true,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": true,
+            "boulderfield": false,
             "scree": true,
             "shoulder": true,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Bidean nam Bian",
-            "parent-peak": "Bidean nam Bian",
+            "humanfeatures": [],
+            "parentlandmass": "Bidean nam Bian",
+            "parentpeak": "Bidean nam Bian",
             "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-            "informal-region": "Glen Creran"
+            "subregion": "Fort William, Lochaber and Lorn",
+            "informalregion": "Glen Creran"
         },
 	{
             "name": "Beinn Fhionnlaidh",
@@ -3919,18 +3919,18 @@
             "gully": false,
             "lochain": true,
             "waterfall": true,
-            "peat-bog": true,
-            "mud-bog": true,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": true,
+            "boulderfield": false,
             "scree": false,
             "shoulder": false,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Bidean nam Bian",
-            "parent-peak": "Bidean nam Bian",
+            "humanfeatures": [],
+            "parentlandmass": "Bidean nam Bian",
+            "parentpeak": "Bidean nam Bian",
             "region": "Highlands",
-            "sub-region": "Argyll and Bute",
-            "informal-region": "Glen Creran"
+            "subregion": "Argyll and Bute",
+            "informalregion": "Glen Creran"
         },
 	{
             "name": "Sgor na h-Ulaidh",
@@ -4131,18 +4131,18 @@
             "gully": true,
             "lochain": false,
             "waterfall": true,
-            "peat-bog": true,
-            "mud-bog": true,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": true,
+            "boulderfield": false,
             "scree": true,
             "shoulder": true,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Bidean nam Bian",
-            "parent-peak": "Bian nam Bian",
+            "humanfeatures": [],
+            "parentlandmass": "Bidean nam Bian",
+            "parentpeak": "Bian nam Bian",
             "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-            "informal-region": "Glen Coe"
+            "subregion": "Fort William, Lochaber and Lorn",
+            "informalregion": "Glen Coe"
         },
         {
             "name": "Stob Dubh",
@@ -4296,18 +4296,18 @@
 	    "gully": true,
 	    "lochain": true,
 	    "waterfall": true,
-	    "peat-bog": true,
-	    "mud-bog": true,
-	    "boulder-field": false,
+	    "peatbog": true,
+	    "mudbog": true,
+	    "boulderfield": false,
             "scree": false,
 	    "shoulder": false,
 	    "arete": false,
-	    "human-features": [],
-	    "parent-landmass": "Nevis Range",
-	    "parent-peak": "Ben Nevis",
+	    "humanfeatures": [],
+	    "parentlandmass": "Nevis Range",
+	    "parentpeak": "Ben Nevis",
 	    "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-	    "informal-region": "Glen Etive"
+            "subregion": "Fort William, Lochaber and Lorn",
+	    "informalregion": "Glen Etive"
         },
         {
             "name": "Buachaille Etive Mor",
@@ -4555,18 +4555,18 @@
 	    "gully": true,
 	    "lochain": true,
 	    "waterfall": true,
-	    "peat-bog": false,
-	    "mud-bog": false,
-	    "boulder-field": false,
+	    "peatbog": false,
+	    "mudbog": false,
+	    "boulderfield": false,
 	    "scree": true,
 	    "shoulder": false,
 	    "arete": false,
-	    "human-features": [],
-	    "parent-landmass": "Nevis Range",
-	    "parent-peak": "Ben Nevis",
+	    "humanfeatures": [],
+	    "parentlandmass": "Nevis Range",
+	    "parentpeak": "Ben Nevis",
 	    "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-	    "informal-region": "Glen Coe"
+            "subregion": "Fort William, Lochaber and Lorn",
+	    "informalregion": "Glen Coe"
         },
         {
             "name": "Buachaille Etive Beag",
@@ -4700,18 +4700,18 @@
 	    "gully": true,
 	    "lochain": false,
 	    "waterfall": false,
-	    "peat-bog": false,
-	    "mud-bog": false,
-	    "boulder-field": false,
+	    "peatbog": false,
+	    "mudbog": false,
+	    "boulderfield": false,
 	    "scree": true,
 	    "shoulder": false,
 	    "arete": false,
-	    "human-features": [],
-	    "parent-landmass": "Nevis Range",
-	    "parent-peak": "Ben Nevis",
+	    "humanfeatures": [],
+	    "parentlandmass": "Nevis Range",
+	    "parentpeak": "Ben Nevis",
 	    "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-	    "informal-region": "Glen Coe"
+            "subregion": "Fort William, Lochaber and Lorn",
+	    "informalregion": "Glen Coe"
         },
         {
             "name": "Bidean nam Bian",
@@ -5097,18 +5097,18 @@
 	    "gully": true,
 	    "lochain": true,
 	    "waterfall": true,
-	    "peat-bog": true,
-	    "mud-bog": true,
-	    "boulder-field": true,
+	    "peatbog": true,
+	    "mudbog": true,
+	    "boulderfield": true,
 	    "scree": true,
 	    "shoulder": true,
 	    "arete": false,
-	    "human-features": [],
-	    "parent-landmass": "Nevis Range",
-	    "parent-peak": "Ben Nevis",
+	    "humanfeatures": [],
+	    "parentlandmass": "Nevis Range",
+	    "parentpeak": "Ben Nevis",
 	    "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-	    "informal-region": "Glen Coe"
+            "subregion": "Fort William, Lochaber and Lorn",
+	    "informalregion": "Glen Coe"
         },
 	{
             "name": "Beinn a Bheithir",
@@ -5247,18 +5247,18 @@
             "gully": false,
             "lochain": false,
             "waterfall": false,
-            "peat-bog": true,
-            "mud-bog": true,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": true,
+            "boulderfield": false,
             "scree": true,
             "shoulder": true,
             "arete": true,
-            "human-features": [],
-            "parent-landmass": "Nevis Range",
-            "parent-peak": "Ben Nevis",
+            "humanfeatures": [],
+            "parentlandmass": "Nevis Range",
+            "parentpeak": "Ben Nevis",
             "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-            "informal-region": "Ballachulish"
+            "subregion": "Fort William, Lochaber and Lorn",
+            "informalregion": "Ballachulish"
         },
 	{
             "name": "Beinn a Chrulaiste",
@@ -5330,18 +5330,18 @@
             "gully": false,
             "lochain": false,
             "waterfall": false,
-            "peat-bog": true,
-            "mud-bog": true,
-            "boulder-field": false,
+            "peatbog": true,
+            "mudbog": true,
+            "boulderfield": false,
 	    "scree": false,
             "shoulder": false,
             "arete": false,
-            "human-features": [],
-            "parent-landmass": "Nevis Range",
-            "parent-peak": "Ben Nevis",
+            "humanfeatures": [],
+            "parentlandmass": "Nevis Range",
+            "parentpeak": "Ben Nevis",
             "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-            "informal-region": "Glen Coe"
+            "subregion": "Fort William, Lochaber and Lorn",
+            "informalregion": "Glen Coe"
         },
 	{
             "name": "Aonach Eagach",
@@ -5622,18 +5622,18 @@
             "gully": true,
             "lochain": false,
             "waterfall": true,
-            "peat-bog": false,
-            "mud-bog": false,
-            "boulder-field": false,
+            "peatbog": false,
+            "mudbog": false,
+            "boulderfield": false,
             "scree": true,
             "shoulder": true,
             "arete": true,
-            "human-features": [],
-            "parent-landmass": "Nevis Range",
-            "parent-peak": "Ben Nevis",
+            "humanfeatures": [],
+            "parentlandmass": "Nevis Range",
+            "parentpeak": "Ben Nevis",
             "region": "Highlands",
-            "sub-region": "Fort William, Lochaber and Lorn",
-            "informal-region": "Glen Coe"
+            "subregion": "Fort William, Lochaber and Lorn",
+            "informalregion": "Glen Coe"
         }
     ]
 }

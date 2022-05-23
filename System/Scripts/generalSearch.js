@@ -16,19 +16,20 @@ function searchLocation() {
 	                let hillName = hills.landmass[i].munro[k].name;
 			let landmassName = hills.landmass[i].name;
 			let landmassType = hills.landmass[i].type;
+			let landmassParent = hills.landmass[i].type;
 
 			let landmassSubtype = "";
-			if (hills.landmass[i].sub-type == null) {
+			if (hills.landmass[i].subtype == null) {
 			    landmassSubtype = "";
 			} else {
-			    landmassSubtype = hills.landmass[i].sub-type;
+			    landmassSubtype = " (" + hills.landmass[i].subtype + ")";
 			}
 
 			let landmassSubsubtype = "";
-			if (hills.landmass[i].sub-sub-type == null) {
+			if (hills.landmass[i].subsubtype == null) {
 			    landmassSubsubtype = "";
 			} else {
-			    landmassSubsubtype = hills.landmass[i].sub-sub-type;
+			    landmassSubsubtype = "Prominent feature: " + hills.landmass[i].subsubtype + "<br>";
 			}
 
 	                let hillElev = hills.landmass[i].munro[k].elevation;
@@ -57,8 +58,8 @@ function searchLocation() {
 
 	                locationOut.innerHTML = 
 			    "<h1>" + hillName + "</h1>"
-			    + hillName + " is a Munro on the " + landmassName + " " + landmassType + " (" + landmassSubtype + ")<br>"
-			    + "The prominent feature of this landmass is " + landmassSubsubtype + "<br>"
+			    + hillName + " is a Munro on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br>"
+			    + landmassSubsubtype + "<hr>"
 			    + "<b>Elevation</b>: " + hillElev + "ft<br>" 
 			    + "<b>Prominance</b>: " + hillProm + "ft<br>"
 			    + "<b>Isolation</b>: " + hillIso + "mi<br><hr>"
