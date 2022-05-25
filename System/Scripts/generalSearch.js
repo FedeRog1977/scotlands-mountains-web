@@ -103,13 +103,12 @@ function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
     var terrDiffElementWeight = 1 / terrDiff.length;
 
     var typeValues = [];
-    //var stageValues = [];
-    //var terrTypeValues = [];
+    var stageValues = [];
+    var terrTypeValues = [];
     //var terrDiffValues = [];
 
     var typeScore = 0;
-    // Stage uses linear scoring (each rated equally)
-    var stageScore = stageElementWeight * stage.length;
+    var stageScore = 0;
     var terrTypeScore = terrTypeElementWeight * terrType.length;
     var terrDiffScore = terrDiffElementWeight * terrDiff.length;
 
@@ -155,6 +154,158 @@ function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
 	    + (typeElementWeight * typeValues[1])
 	    + (typeElementWeight * typeValues[2]);
     }
+
+    if (stage.includes("walk-in")) {
+	stageValues = [1];
+	stageScore = stageElementWeight * stageValues[0];
+    } else if (stage.includes("apporach")) {
+	stageValues = [1];
+	stageScore = stageElementWeight * stageValues[0];
+    } else if (stage.includes("on-hill")) {
+	stageValues = [1];
+	stageScore = stageElementWeight * stageValues[0];
+    } else if (stage.includes("walk-out")) {
+	stageValues = [1];
+	stageScore = stageElementWeight * stageValues[0];
+    } else if (stage.includes("walk-in")
+        && stage.includes("on-hill")
+        && stage.includes("walk-out")) {	
+	stageValues = [1, 1, 1];
+	stageScore = (stageElementWeight * stageValues[0])
+	    + (stageElementWeight * stageValues[1])
+	    + (stageElementWeight * stageValues[2]);
+    } else if (stage.includes("walk-in")
+        && stage.includes("approach")
+        && stage.includes("on-hill")
+        && stage.includes("walk-out")) {
+	stageValues = [1, 1, 1, 1];
+	stageScore = (stageElementWeight * stageValues[0])
+	    + (stageElementWeight * stageValues[1])
+	    + (stageElementWeight * stageValues[2])
+	    + (stageElementWeight * stageValues[3]);
+    } else if (stage.includes("approach")
+        && stage.includes("on-hill")) {
+	stageValues = [1, 1];
+	stageScore = (stageElementWeight * stageValues[0])
+	    + (stageElementWeight * stageValues[1]);
+    } else if (stage.includes("approach")
+        && stage.includes("on-hill")
+        && stage.includes("walk-out")) {	
+	stageValues = [1, 1, 1];
+	stageScore = (stageElementWeight * stageValues[0])
+	    + (stageElementWeight * stageValues[1])
+	    + (stageElementWeight * stageValues[2]);
+    }
+
+    if (terrType.includes("road")
+        && terrType.includes("path")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1]);
+    } else if (terrType.includes("road")
+        && terrType.includes("farm path")
+        && terrType.includes("footpath erosion")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1])
+	    + (terrTypeElementWeight * terrTypeValues[2]);
+    } else if (terrType.includes("road")
+        && terrType.includes("path")
+        && terrType.includes("footpath erosion")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1])
+	    + (terrTypeElementWeight * terrTypeValues[2]);
+    } else if (terrType.includes("road")
+        && terrType.includes("forestry commission road")
+        && terrType.includes("off-road")
+        && terrType.includes("path")
+        && terrType.includes("footpath erosion")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1])
+	    + (terrTypeElementWeight * terrTypeValues[2])
+	    + (terrTypeElementWeight * terrTypeValues[3])
+	    + (terrTypeElementWeight * terrTypeValues[4]);
+    } else if (terrType.includes("road")
+        && terrType.includes("off-road")
+        && terrType.includes("path")
+        && terrType.includes("footpath erosion")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1])
+	    + (terrTypeElementWeight * terrTypeValues[2])
+	    + (terrTypeElementWeight * terrTypeValues[3]);
+    } else if (terrType.includes("road")
+        && terrType.includes("farm path")
+        && terrType.includes("path")
+        && terrType.includes("footpath erosion")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1])
+	    + (terrTypeElementWeight * terrTypeValues[2])
+	    + (terrTypeElementWeight * terrTypeValues[3]);
+    } else if (terrType.includes("path")
+        && terrType.includes("footpath erosion")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1]);
+    } else if (terrType.includes("path")
+        && terrType.includes("footpath erosion")
+        && terrType.includes("off-path")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1])
+	    + (terrTypeElementWeight * terrTypeValues[2]);
+    } else if (terrType.includes("forestry commission road")
+        && terrType.includes("path")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1]);
+    } else if (terrType.includes("farm path")
+        && terrType.includes("path")
+        && terrType.includes("footpath erosion")) {
+	terrTypeValues = [];
+	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
+	    + (terrTypeElementWeight * terrTypeValues[1])
+	    + (terrTypeElementWeight * terrTypeValues[2]);
+    }
+
+    [road, path], 2
+    [road, farm path, footpath erosion], 3
+    [road, path, footpath erosion], 3
+    [road, forestry commission road, off-road, path, footpath erosion], 5
+    [road, off-road, path, footpath erosion], 4
+    [road, farm path, path, footpath erosion], 4
+    [path, footpath erosion], 2
+    [path, footpath erosion, off-path], 3
+    [forestry commission road, path], 2
+    [farm path, path, footpath erosion], 3
+
+    [concrete, stone staircase, broken rock, rocky talus, crag, smooth slab],
+    [concrete, broken rock, grass, grass with scattered rock],
+    [grass, grass with scattered rock],
+    [grass, broken rock, grass with scattered rock],
+    [concrete, grass, broken rock, grass with scattered rock, crag, rocky talus, talus (coarse scree)],
+    [concrete, grass, broken rock, grass with scattered rock],
+    [concrete, grass, broken rock, grass with scattered rock, rocky talus, talus (coarse scree)],
+    [concrete, grass, grass with scattered rock, rocky talus, talus (coarse scree)],
+    [concrete, grass, grass with scattered rock],
+    [concrete, grass, grass with scattered rock, rocky talus],
+    [concrete, grass, grass with scattered rock, rocky talus, talus (coarse scree)],
+    [concrete, grass, broken rock, talus (coarse scree)],
+    [concrete, grass, broken rock, rocky talus, talus (coarse scree), crag, notched slab]
+    [concrete, grass, broken rock, talus (coarse scree), crag (grade 1 (easy)), notched slab (grade 1 (easy))]
+    [grass, grass with scattered rock]
+    [grass, broken rock, rocky talus],
+    [grass, broken rock, crag],
+    [grass, broken rock, grass with scattered rock, crag],
+    [grass, broken rock, crag, notched slab],
+    [grass, stone staircase, notched slab],
+    [grass, broken rock, rocky talus, notched slab],
+    [grass, broken rock, rocky talus, scree (fine scree), crag (grade 2 (moderate)), notched slab (grade 2 (moderate))],
+    [grass, broken rock, grass with scattered rock, scree (fine scree), crag (grade 2 (moderate)), notched slab (grade 2 (moderate))],
+    [grass, broken rock, grass with scattered rock, rocky talus]
 
     // `Number of tops achieved per vertical meter gained per horizontal meter,
     // scaled by type, stages, terrain, and terrain difficulty elements of the route'
