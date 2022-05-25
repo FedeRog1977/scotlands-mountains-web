@@ -33,7 +33,7 @@ function searchLocation() {
 			if (hills.landmass[i].subsubtype == null) {
 			    landmassSubsubtype = "";
 			} else {
-			    landmassSubsubtype = "Prominent feature: " + hills.landmass[i].subsubtype + "<br>";
+			    landmassSubsubtype = "<b>Prominent feature</b>: " + hills.landmass[i].subsubtype + "<br>";
 			}
 
 	                let hillElev = hills.landmass[i].munro[k].elevation;
@@ -63,11 +63,11 @@ function searchLocation() {
 			    "<h1>" + hillName + "</h1>"
 			    + hillName + " is a Munro on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br>"
 			    + landmassSubsubtype 
-			    + "Parent Landmass: " + landmassParentLandmass + "<br>"
-			    + "Parent Peak: " + landmassParentPeak + "<br>"
-			    + "Region: " + landmassRegion + "<br>"
-			    + "Sub-Region: " + landmassSubregion + "<br>"
-			    + "Informal Region: " + landmassInformalRegion + "<br><hr>"
+			    + "<b>Parent Landmass</b>: " + landmassParentLandmass + "<br>"
+			    + "<b>Parent Peak</b>: " + landmassParentPeak + "<br>"
+			    + "<b>Region</b>: " + landmassRegion + "<br>"
+			    + "<b>Sub-Region</b>: " + landmassSubregion + "<br>"
+			    + "<b>Informal Region</b>: " + landmassInformalRegion + "<br><hr>"
 			    + "<b>Elevation</b>: " + hillElev + "ft<br>" 
 			    + "<b>Prominance</b>: " + hillProm + "ft<br>"
 			    + "<b>Isolation</b>: " + hillIso + "mi<br>"
@@ -82,6 +82,90 @@ function searchLocation() {
 	        }
 	    }
         })
+}
+
+function scoreRoute(elev,dist,type) {
+    //,stage,terrType,terrDiff
+    const conv_const_ft = 0.3048;
+    const conv_const_mi = 1.60934;
+
+    var multiplier = (conv_const_ft * elev) / ((conv_const_mi * dist) * 100)
+
+    const typeWeight = 0.2;
+    /*
+    const stageWeight = 0.2;
+    const terrTypeWeight = 0.25;
+    const terrDiffWeight = 0.35;
+    */
+
+    var typeElementWeight = 1 / type.length;
+    /*
+    var stageElementWeight = 1 / stage.length;
+    var terrTypeElementWeight = 1 / terrType.length;
+    var terrDiffElementWeight = 1 / terrDiff.length;
+    */
+
+    var typeValues = [];
+    /*
+    var stageValues = [];
+    var terrTypeValues = [];
+    var terrDiffValues = [];
+    */
+
+    var typeScore = 0;
+    /*
+    // Stage uses linear scoring (each rated equally)
+    var stageScore = stageElementWeight * stage.length;
+    var terrTypeScore = 0;
+    var terrDiffScore = 0;
+    */
+
+    // Type weightings if exhausted: [0.7, 1, 1.05, 1.1, 1.15] = 5
+    // Stage weightings if exhausted: [1, 1, 1, 1] = 4
+    // Terrain type weightings if exhausted: [0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.05, 1.1, 1.15, 1.2, 1.25] = 11
+    // Terrain difficulty weightings if exhausted: [0.25, 0.25, 1, 1.05, 1.05, 1.1, 1.15, 1.15, 1, 1.05, 1.1, 1.15, 1, 1.05, 1.1, 1.15, 1, 1.075, 1.125, 1.2] = 20
+
+    if (type.includes("walk")) {
+	typeValues = [0.7];
+        typeScore = typeElementWeight * typeValues[0];
+    } else if (type.includes("hillwalk")) {
+	typeValues = [1];
+        typeScore = typeElementWeight * typeValues[0];
+    } else if (type.includes("ridgewalk")) {
+	typeValues = [1.05];
+        typeScore = typeElementWeight * typeValues[0];
+    } else if (type.includes("scramble")) {
+	typeValues = [1.1];
+        typeScore = typeElementWeight * typeValues[0];
+    } else if (type.includes("climb")) {
+	typeValues = [1.15];
+        typeScore = typeElementWeight * typeValues[0];
+    }
+    /*
+    } else if (type.includes("hillwalk")
+        && type.includes("ridgewalk")) {
+	typeValues = [1, 1.025];
+        typeScore = (typeElementWeight * typeValues[0])
+	    + (typeElementWeight * typeValues[1]);
+    } else if (type.includes("hillwalk")
+        && type.includes("scramble")) {
+	typeValues = [1, 1.1];
+        typeScore = (typeElementWeight * typeValues[0])
+	    + (typeElementWeight * typeValues[1]);
+    } else if (type.includes("hillwalk")
+        && type.includes("scramble"))
+        && type.includes("climb")) {
+	typeValues = [1, 1.1, 1.15];
+        typeScore = (typeElementWeight * typeValues[0])
+	    + (typeElementWeight * typeValues[1])
+	    + (typeElementWeight * typeValues[2]);
+    }
+    */
+
+    var score = multiplier * ((typeWeight * typeScore));
+    // + (stageWeight * stageScore) + (terrTypeWeight * terrTypeScore) + (terrDiffWeight * terrDiffScore)
+
+    return score;
 }
 
 function searchRoute(landmass) {
@@ -156,6 +240,7 @@ function searchRoute(landmass) {
 			    "<h1>" + routeName + "</h1>"
 			    + "<b>Distance</b>: " + routeDist + "mi<br>" + "<b>Elevation Gain:</b> " + routeElev + "ft<br>"
 			    + "<b>Estimated Duration</b>: " + routeTime + "hrs (average user)<br><hr>"
+			    + "<b>Relative Route Score:</b> " + scoreRoute(9329,23,hills.landmass[i].route[k].type) + "<br>"
 			    + "<b>Movement Dynamic(s)</b>: " + routeType + "<br>"
 			    + "<b>Route Stage(s)</b>: " + routeStage + "<br>"
 			    + "<b>Terrain Type(s)</b>: " + routeTerrainType + "<br>"

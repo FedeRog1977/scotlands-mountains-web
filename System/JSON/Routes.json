@@ -3,7 +3,6 @@
 	"walk",
 	"hillwalk",
 	"ridgewalk",
-	"mountaineer",
 	"scramble",
 	"climb"
     ],
@@ -27,9 +26,8 @@
 	"off-path"
     ],
     "terraindiff": [
-	"concrete",
-	"sustained plateau",
 	"grass",
+	"concrete",
 	"stone staircase",
 	"broken rock",
 	"grass with scattered rock",

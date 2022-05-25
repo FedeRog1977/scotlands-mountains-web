@@ -2130,7 +2130,7 @@
 		    "elevationgain": 2949,
 		    "stdtime": 6,
 		    "type": [
-			"hillawalk"
+			"hillwalk"
 		    ],
 		    "stage": [
 			"walk-in",
