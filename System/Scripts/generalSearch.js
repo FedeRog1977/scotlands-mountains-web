@@ -105,12 +105,12 @@ function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
     var typeValues = [];
     var stageValues = [];
     var terrTypeValues = [];
-    //var terrDiffValues = [];
+    var terrDiffValues = [];
 
     var typeScore = 0;
     var stageScore = 0;
-    var terrTypeScore = terrTypeElementWeight * terrType.length;
-    var terrDiffScore = terrDiffElementWeight * terrDiff.length;
+    var terrTypeScore = 0;
+    var terrDiffScore = 0;
 
     // Type weightings if exhausted:
 	// [0.7, 1, 1.05, 1.1, 1.15] = 5
@@ -199,20 +199,20 @@ function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
 
     if (terrType.includes("road")
         && terrType.includes("path")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.75, 1];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1]);
     } else if (terrType.includes("road")
         && terrType.includes("farm path")
         && terrType.includes("footpath erosion")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.75, 0.9, 1.05];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1])
 	    + (terrTypeElementWeight * terrTypeValues[2]);
     } else if (terrType.includes("road")
         && terrType.includes("path")
         && terrType.includes("footpath erosion")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.75, 1, 1.05];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1])
 	    + (terrTypeElementWeight * terrTypeValues[2]);
@@ -221,7 +221,7 @@ function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
         && terrType.includes("off-road")
         && terrType.includes("path")
         && terrType.includes("footpath erosion")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.75, 0.8, 0.85, 1, 1.05];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1])
 	    + (terrTypeElementWeight * terrTypeValues[2])
@@ -231,7 +231,7 @@ function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
         && terrType.includes("off-road")
         && terrType.includes("path")
         && terrType.includes("footpath erosion")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.75, 0.85, 1, 1.05];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1])
 	    + (terrTypeElementWeight * terrTypeValues[2])
@@ -240,72 +240,263 @@ function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
         && terrType.includes("farm path")
         && terrType.includes("path")
         && terrType.includes("footpath erosion")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.75, 0.9, 1, 1.05];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1])
 	    + (terrTypeElementWeight * terrTypeValues[2])
 	    + (terrTypeElementWeight * terrTypeValues[3]);
     } else if (terrType.includes("path")
         && terrType.includes("footpath erosion")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.75, 1.05];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1]);
     } else if (terrType.includes("path")
         && terrType.includes("footpath erosion")
         && terrType.includes("off-path")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.75, 1.05, 1.25];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1])
 	    + (terrTypeElementWeight * terrTypeValues[2]);
     } else if (terrType.includes("forestry commission road")
         && terrType.includes("path")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.8, 1];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1]);
     } else if (terrType.includes("farm path")
         && terrType.includes("path")
         && terrType.includes("footpath erosion")) {
-	terrTypeValues = [];
+	terrTypeValues = [0.9, 1, 1.05];
 	terrTypeScore = (terrTypeElementWeight * terrTypeValues[0])
 	    + (terrTypeElementWeight * terrTypeValues[1])
 	    + (terrTypeElementWeight * terrTypeValues[2]);
     }
 
-    [road, path], 2
-    [road, farm path, footpath erosion], 3
-    [road, path, footpath erosion], 3
-    [road, forestry commission road, off-road, path, footpath erosion], 5
-    [road, off-road, path, footpath erosion], 4
-    [road, farm path, path, footpath erosion], 4
-    [path, footpath erosion], 2
-    [path, footpath erosion, off-path], 3
-    [forestry commission road, path], 2
-    [farm path, path, footpath erosion], 3
-
-    [concrete, stone staircase, broken rock, rocky talus, crag, smooth slab],
-    [concrete, broken rock, grass, grass with scattered rock],
-    [grass, grass with scattered rock],
-    [grass, broken rock, grass with scattered rock],
-    [concrete, grass, broken rock, grass with scattered rock, crag, rocky talus, talus (coarse scree)],
-    [concrete, grass, broken rock, grass with scattered rock],
-    [concrete, grass, broken rock, grass with scattered rock, rocky talus, talus (coarse scree)],
-    [concrete, grass, grass with scattered rock, rocky talus, talus (coarse scree)],
-    [concrete, grass, grass with scattered rock],
-    [concrete, grass, grass with scattered rock, rocky talus],
-    [concrete, grass, grass with scattered rock, rocky talus, talus (coarse scree)],
-    [concrete, grass, broken rock, talus (coarse scree)],
-    [concrete, grass, broken rock, rocky talus, talus (coarse scree), crag, notched slab]
-    [concrete, grass, broken rock, talus (coarse scree), crag (grade 1 (easy)), notched slab (grade 1 (easy))]
-    [grass, grass with scattered rock]
-    [grass, broken rock, rocky talus],
-    [grass, broken rock, crag],
-    [grass, broken rock, grass with scattered rock, crag],
-    [grass, broken rock, crag, notched slab],
-    [grass, stone staircase, notched slab],
-    [grass, broken rock, rocky talus, notched slab],
-    [grass, broken rock, rocky talus, scree (fine scree), crag (grade 2 (moderate)), notched slab (grade 2 (moderate))],
-    [grass, broken rock, grass with scattered rock, scree (fine scree), crag (grade 2 (moderate)), notched slab (grade 2 (moderate))],
-    [grass, broken rock, grass with scattered rock, rocky talus]
+    if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("stone staircase")
+	&& terrDiff.inludes("broken rock")
+        && terrDiff.inludes("rocky talus")
+        && terrDiff.inludes("crag")
+        && terrDiff.inludes("smooth slab")) {
+	terrDiffValues = [0.25, 1, 1.05, 1.1, 1, 1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4])
+	    + (terrDiffElementWeight * terrDiffValues[5]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+	&& terrDiff.inludes("broken rock")
+	&& terrDiff.inludes("grass with scattered rock")
+        && terrDiff.inludes("crag")
+        && terrDiff.inludes("rocky talus")
+        && terrDiff.inludes("talus (coarse scree)")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.05, 1, 1.1, 1.15];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4])
+	    + (terrDiffElementWeight * terrDiffValues[5])
+	    + (terrDiffElementWeight * terrDiffValues[6]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("grass with scattered rock")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.05];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+	&& terrDiff.inludes("broken rock")
+        && terrDiff.inludes("grass with scattered rock")
+        && terrDiff.inludes("rocky talus")
+        && terrDiff.inludes("talus (coarse scree)")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.1, 1.15];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4])
+	    + (terrDiffElementWeight * terrDiffValues[5]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+        && terrDiff.inludes("grass with scattered rock")
+        && terrDiff.inludes("rocky talus")
+        && terrDiff.inludes("talus (coarse scree)")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.1, 1.15];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+        && terrDiff.inludes("grass with scattered rock")) {
+	terrDiffValues = [0.25, 0.25, 1.05];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+        && terrDiff.inludes("grass with scattered rock")
+        && terrDiff.inludes("rocky talus")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+        && terrDiff.inludes("grass with scattered rock")
+        && terrDiff.inludes("rocky talus")
+        && terrDiff.inludes("talus (coarse scree)")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.1, 1.15];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("talus (coarse scree)")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.15];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+	&& terrDiff.inludes("broken rock")
+	&& terrDiff.inludes("rocky talus")
+        && terrDiff.inludes("talus (coarse scree)")
+        && terrDiff.inludes("crag")
+        && terrDiff.inludes("notched slab")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.1, 1.15, 1, 1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4])
+	    + (terrDiffElementWeight * terrDiffValues[5])
+	    + (terrDiffElementWeight * terrDiffValues[6]);
+    } else if (terrDiff.inludes("concrete")
+        && terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("talus (coarse scree)")
+        && terrDiff.inludes("crag (grade 1 (easy))")
+        && terrDiff.inludes("notched slab (grade 1 (easy))")) {
+	terrDiffValues = [0.25, 0.25, 1.05, 1.15, 1.05, 1.05];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4])
+	    + (terrDiffElementWeight * terrDiffValues[5]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("grass with scattered rock")) {
+	terrDiffValues = [0.25, 1.05];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("grass with scattered rock")) {
+	terrDiffValues = [0.25, 1.05, 1.05];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("grass with scattered rock")) {
+	terrDiffValues = [0.25, 1.05];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("rocky talus")) {
+	terrDiffValues = [0.25, 1.05, 1.1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("crag")) {
+	terrDiffValues = [0.25, 1.05, 1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("grass with scattered rock")
+        && terrDiff.inludes("crag")) {
+	terrDiffValues = [0.25, 1.05, 1.05, 1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("crag")
+        && terrDiff.inludes("notched slab")) {
+	terrDiffValues = [0.25, 1.05, 1, 1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("stone staircase")
+        && terrDiff.inludes("notched slab")) {
+	terrDiffValues = [0.25, 1, 1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("rocky talus")
+        && terrDiff.inludes("notched slab")) {
+	terrDiffValues = [0.25, 1.05, 1.1, 1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("rocky talus")
+        && terrDiff.inludes("scree (fine scree)")
+        && terrDiff.inludes("crag (grade 2 (moderate))")
+        && terrDiff.inludes("notched slab (grade 2 (moderate))")) {
+	terrDiffValues = [0.25, 1.05, 1.1, 1.15, 1.1, 1.1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4])
+	    + (terrDiffElementWeight * terrDiffValues[5]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("grass with scattered rock")
+        && terrDiff.inludes("scree (fine scree)")
+        && terrDiff.inludes("crag (grade 2 (moderate))")
+        && terrDiff.inludes("notched slab (grade 2 (moderate))")) {
+	terrDiffValues = [0.25, 1.05, 1.05, 1.15, 1.1, 1.1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3])
+	    + (terrDiffElementWeight * terrDiffValues[4])
+	    + (terrDiffElementWeight * terrDiffValues[5]);
+    } else if (terrDiff.inludes("grass")
+        && terrDiff.inludes("broken rock")
+        && terrDiff.inludes("grass with scattered rock")
+        && terrDiff.inludes("rocky talus")) {
+	terrDiffValues = [0.25, 1.05, 1.05, 1.1];
+	terrDiffScore = (terrDiffElementWeight * terrDiffValues[0])
+	    + (terrDiffElementWeight * terrDiffValues[1])
+	    + (terrDiffElementWeight * terrDiffValues[2])
+	    + (terrDiffElementWeight * terrDiffValues[3]);
+    }
 
     // `Number of tops achieved per vertical meter gained per horizontal meter,
     // scaled by type, stages, terrain, and terrain difficulty elements of the route'
