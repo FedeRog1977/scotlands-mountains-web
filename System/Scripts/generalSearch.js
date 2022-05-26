@@ -36,7 +36,7 @@ function searchLocation() {
 			    landmassSubsubtype = "<b>Prominent feature</b>: " + hills.landmass[i].subsubtype + "<br>";
 			}
 
-	                let hillElev = hills.landmass[i].munro[k].elevation;
+	                let hillElev = hills.landmass[i].munro[k].elevation.toLocaleString("en-US");
 
 	                let hillLat = Math.abs(hills.landmass[i].munro[k].lat);
 			let hillLatDir = "";
@@ -54,7 +54,7 @@ function searchLocation() {
 			    hillLonDir = "E";
 			}
 
-	                let hillProm = hills.landmass[i].munro[k].prominence;
+	                let hillProm = hills.landmass[i].munro[k].prominence.toLocaleString("en-US");
 	                let hillIso = hills.landmass[i].munro[k].isolation;
 	                let hillSum = hills.landmass[i].munro[k].summit;
 			let hillImg = hills.landmass[i].munro[k].image;
@@ -92,10 +92,10 @@ function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
     var multiplier = n_tops / ((conv_const_ft * elev) / ((conv_const_mi * dist) * 1000));
 
     // Subjective survey-based statistics
-    const typeWeight = 0.2;
-    const stageWeight = 0.2;
-    const terrTypeWeight = 0.25;
-    const terrDiffWeight = 0.35;
+    const typeWeight = 0.4;
+    const stageWeight = 0.1;
+    const terrTypeWeight = 0.2;
+    const terrDiffWeight = 0.3;
 
     var typeElementWeight = 1 / type.length;
     var stageElementWeight = 1 / stage.length;
@@ -526,8 +526,35 @@ function searchRoute(landmass) {
                     if (hills.landmass[i].route[k].name.toLowerCase() === selectRoute) {
 			let routeName = hills.landmass[i].route[k].name;
 			let routeDist = hills.landmass[i].route[k].distance;
-			let routeElev = hills.landmass[i].route[k].elevationgain;
+			let routeElev = hills.landmass[i].route[k].elevationgain.toLocaleString("en-US");
 			let routeTime = hills.landmass[i].route[k].stdtime;
+
+			let routeScore = scoreRoute(
+			    hills.landmass[i].route[k].elevationgain,
+			    hills.landmass[i].route[k].distance,
+			    (
+				hills.landmass[i].route[k].munro.length
+				+ hills.landmass[i].route[k].munrotop.length
+				+ hills.landmass[i].route[k].corbett.length
+				+ hills.landmass[i].route[k].corbetttop.length
+			    ),
+			    hills.landmass[i].route[k].type,
+			    hills.landmass[i].route[k].stage,
+			    hills.landmass[i].route[k].terraintype,
+			    hills.landmass[i].route[k].terraindiff
+			);
+			
+			let routeDiff = "";
+			if (routeScore >= 0 && routeScore <= 33.3334) {
+			    routeDiff = "Amateur";
+			} else if (routeScore > 33.3333 && routeScore <= 66.6667) {
+			    routeDiff = "Easy";
+			} else if (routeScore > 66.6667 && routeScore <= 100) {
+			    routeDiff = "Moderate";
+			} else if (routeScore > 100) {
+			    routeDiff = "Challenging";
+			}
+
 			let routeType = hills.landmass[i].route[k].type.join(", ");
 			let routeStage = hills.landmass[i].route[k].stage.join(", ");
 			let routeTerrainType = hills.landmass[i].route[k].terraintype.join(", ");
@@ -582,22 +609,8 @@ function searchRoute(landmass) {
 			    "<h1>" + routeName + "</h1>"
 			    + "<b>Distance</b>: " + routeDist + "mi<br>" + "<b>Elevation Gain:</b> " + routeElev + "ft<br>"
 			    + "<b>Estimated Duration</b>: " + routeTime + "hrs (average user)<br><hr>"
-			    + "<b>Relative Route Score:</b> "
-			    + scoreRoute(
-				hills.landmass[i].route[k].elevationgain,
-				hills.landmass[i].route[k].distance,
-				(
-				    hills.landmass[i].route[k].munro.length
-				    + hills.landmass[i].route[k].munrotop.length
-				    + hills.landmass[i].route[k].corbett.length
-				    + hills.landmass[i].route[k].corbetttop.length
-				),
-				hills.landmass[i].route[k].type,
-				hills.landmass[i].route[k].stage,
-				hills.landmass[i].route[k].terraintype,
-				hills.landmass[i].route[k].terraindiff
-			    )
-			    + "<br>"
+			    + "<b>Relative Route Score:</b> " + routeScore + "<br>"
+			    + "<b>Route Difficulty:</b> " + routeDiff + "<br>"
 			    + "<b>Movement Dynamic(s)</b>: " + routeType + "<br>"
 			    + "<b>Route Stage(s)</b>: " + routeStage + "<br>"
 			    + "<b>Terrain Type(s)</b>: " + routeTerrainType + "<br>"

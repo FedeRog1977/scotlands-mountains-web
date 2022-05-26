@@ -203,13 +203,81 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection{Purpose \& Industry}
 
+	The system developed throughout this project is a functional web application based on providing user-location-based and external GPS data. User-based GPS services are based on data relevant to the user's machine and external services are based on context-relevant data. The system, which so forth may be referred to as `the system', `the application', `the site', provides detailed information, guidance and recommendations relevant to sport and leisure, particularly hiking and its associated practices, in Scotland's fine rural outdoors and [\textit{these mist covered mountains, which are home now for me}]. Therefore, upon a hypothetical release of a full version of this system, it would be a direct competitor of services such as Walkhighlands, Strava, AllTrails, etc. Due to the autistic and comprehensive nature of its development, it would be in the market not in the competition-driven business, but in the [\href{https://youtu.be/c18_Thy6kJo?t=204}{empire business}].
+
 	\subsection{System Structure}
 
-	\subsection{Users}
+	The site upon which the system is spread is static, not dynamic, meaning any possible requests made buy the user are based on existing data. The site does not reference an external database for any purpose. Thus, no PHP or SQL-relevant content. The system is segmented into four, approximately equivalent, parts with the metric(s) determining their weight being algorithmic volume, number of services, etc.\\
+
+	The first, `home'/`drafting room', page allows the user to view a comprehensive overview of the site's offerings. It allows the user to quick-view activities in the `overview' section; analyse their projected personal ability and their projected gear performance (upon their input(s)) in the `conditioning' section under `ability' and `equipment cache'; and, view a coordinate-based weather briefing in the `weather' section. All of these sections include `key's and `suggested reading's. Yes, this site is that obnoxious.\\
+
+	The second, `conquest map', page allows the user to view and interact with various GPS and mapping features including their location and location seeking. It also includes functionality which allows pinpointing of particular features upon interaction, such as Munros, Munro Tops, Corbetts, Corbett Tops, etc. Further it includes aspects which allow the user to seek, be recommended, select and print GPX routes on the map.\\
+
+	The third segment is the `ranger calculator' which is used purely for analytical purposes and allows the user to input data relevant to their ability, equipment, routes, etc. and will deliver output in the form of statistics tables and charts based on various computations. This element does not implement any GPS functionality in-line with the system's primary focus however, is extremely relevant.\\
+
+	The final segment is the `general search' function which allows the user to input or select search criteria which returns a comprehensive overview of all statistics relevant to the match(es). Unlike the other sections, this is more subjective and informative, as opposed to being logical / statistics-oriented. That is, is exists more so for the users understanding of what they're doing and how to actually interpret some of the statistics they're being delivered in other elements. It is open to their use and interpretation.\\
+
+	The service is called `\textit{Burning Roots}'. No, the rhetorical use of satiric misspelling is not unintentional malapropism; it is in fact deliberate. In harmony with the feeling you'd experience when [racing south-west to Lone Stallion Ranch], the term references that certain `\textit{burning} desire' for freedom in the sweet country air, the one you only experience when digging to your deepest `\textit{roots}' to achieve a new personal record or firmly assert your dominance over your inferiors. This service uses and computes data to encourage a user to take to the trails with motivation to be the fastest, most efficient, most prepared and most endured athlete on their \textit{routes}.
+
+	\subsection{Users \& Platforms}
+
+	All users of this system will be sport/leisure oriented and as this is focused on a specific group of enthusiasts who have a firm set of beliefs and a strong pre-developed relationship with their sport (lifestyle), it will likely only receive traffic from athletes who are already hiking-inclined. It may encourage new hikers due to the comprehensive nature and customization opportunity of the learning and planning material however, it is unlikely. The most efficient empires dominate only one type of market. This market does however expand to: walkers, hillwalking enthusiasts, scrambling-inclined 4x4s, [T6 vanlife] climbers, and Scottish mountaineers / ice climbers.\\
+
+	Upon original briefing, this system was planned to include a road cycling section which would essentially mirror the hiking part with cycling-specific data. However, upon reflection this element is irrelevant for two reasons. The first being all functional areas are covered by the computational processes involved with hiking data. And second, road cycling has little association with hiking and therefore the adjacent sport may be seen as irrelevant by a specific user. If it were to be included, it would only be logical to implement a wider array of sports for example, excluding road cycling and including mountain biking and (fell) running, which are actually relevant to hiking. Or an even wider array if road cycling were to blend in seamlessly. This is unnecessarily [time-consooming] and only duplicates processes and would not deliver additional benefit, only diminishing returns, upon the project marking process. I'm not [the Zuck'], not only do I not have the time or resources for this, I do not have the relevant background knowledge.\\
+
+	As far as platforms go, the user arrives at this site through a web browser. This system is deployed as a website and is therefore extremely versatile and usable on any device. Browser caching of script elements allows a user to view and interact with the relevant data offline, provided they receive GPS signal. For example, they can still view their location and route on the `conquest map'. Of course, [this means that] the site is constructed using HTML, CSS and JavaScript. Elements of JavaScript allow this site to dynamically scale to various device sizes tailor relevant content to these devices.
 
 	\subsection{Development Process}
 
+	As this is a [solo project], it's one man, his [ThinkPad X220], [Artix Linux] and his [neoVim] setup. There is little requirement for extensive use of any formal [inane] project management methods such as team-based allocations or associated time-based or progress management coordination frameworks. Therefore, any adherence to processes aimed at mapping management of this project are / have been more logic-oriented and variable, allowing creative freedom. I work on an ASAP basis so one creative day of thinking may be followed by a [5am -- 11pm] of implementation, which may then be followed by 2 days of idling. Any formal micro-level plan would be redundant.\\
+
+	Succeeding acquisition of user requirements, the most important part of gaining an understanding of how this system would look and operate is determining how the user interacts with the various aspects of their sport. That is, what data/inputs must the user provide, how will this be used, and what will it be used for to satisfy the requirements. Therefore, the mapping of the functional structure of the user interface (UI) leads this in the sense that it demonstrates the logic and process of interaction relevant to this data. Thus, this creates a valid starting point. And so forth, the development process of this project reflects what follows:
+
+	\begin{center}
+		Requirement analysis\\
+		$\rightarrow$ Structural design\\
+		$\rightarrow$ Usable data construction\\
+		$\rightarrow$ Graphical user interface functionality\\
+		$\rightarrow$ Usable data implementation\\
+		$\rightarrow$ Graphical user interface graphic design\\
+		$\rightarrow$ Testing
+	\end{center}
+
+	Following the structural mapping, there is little sense in proceeding without any data to work with as incremental testing of site functionality would be challenging to impossible. So, it's at this point which the acquisition of relevant data takes place. In this case, this data accounts for non-user-centered data such as GPS coordinates, map regions, landmasses and their attributes, etc., which are essential for the majority of computations. Therefore, not only is [JavaBloat] implemented to manage site dynamics, it also computes based on data from these discussed files, in JSON format. It is only after this when the graphic design of the site can be allocated more focus, however of course much of it comes instinctively along the way also. After this, and frequent incremental developer tests, the system is ready for more expansive developer and user testing.\\
+
+	For the natural ease in workflow, for the developer's mental state, and for the minimization of [nugatory] methodologies and [bloated] task flow [cargo donkeys] such as IDEs and [froymeworks], all files (including `code', data files, notes and write-up) are [composed and performed by Lewis Britton] in [Bram Moolenaar's Neo Vi Improved], in the command line of a pragmatic dwm setup on Artix. HTML, CSS and JavaScript is written from scratch in plain text format, therefore using no environment prompts or assistance, in order to keep the process practical. All write-up documentation is transcribed using [Donald `Don' E. Knuth's \TeX]. Or as some [neomoderinists] like to use, \LaTeX. Due to time constraint, there is unfortunately no mastering the fine art of [GNU Troff], so transcriptions may not appear [optically optimal] without the famous Groff-PostScript [multi-kill].
+
 	\subsection{Disposition}
+
+	So forth, the following elements of this project are responsible for...
+
+	\textsc{2 Research \& Evidential Background}\\
+
+	Explores the areas of research and data gathering including hiking routes, hiking equipment, personal fitness and ability, geography and geology. Furthermore, presenting and examining results and conclusions to evaluations of currently existing competitors' services. This section acts as a literature review would in a paper based on, say, an empirical piece investigation; providing the foundational material upon which development aims to further succeed and `develop'.\\
+
+	\textsc{3 Data Processing \& Methodology}\\
+	
+	Mapping and justifying the data selected for use in the system. This is broken into three segments, first being data acquisition which explains how and why data is sources from third parties and inputted from users. The second section explains how this data is manipulated and the third; statistical and informative output.\\
+
+	\textsc{4 System Requirements}\\
+	
+	Describing the scale and scope of the users and their requirements for this system, and mapping how these are prioritized at the beginning of and throughout the project. This is in the context of functional and non-functional requirements.\\
+
+	\textsc{5 System Design}\\
+	
+	Displaying the structure of the system architecture and how the logic aligns with the requirements of the system. Also, describing the various aspects of the user interface's functional and graphical communication and design process. It's apparent at this point how the data structure is made relevant to the design of the system using the requirements.\\
+
+	\textsc{6 System Construction \& Implementation}\\
+	
+	Providing a closer look at and justification of the development environment, languages and protocols selected for the creation of this system and exploring the various APIs and JavaScript libraries and other supporting tools used to enhance the system and allow it to function in harmony. Also, Providing an overview of how these elements were implemented from a project management point of view.\\
+
+	\textsc{7 Evaluation}\\
+	
+	An evaluation of requirements gathering and the feasibility and tangibility of their implementation, an review of self-testing methods and additional tests, demonstrations of prototyping and various other aspects of developer' and user-centered testing.\\
+
+	\textsc{8 Development Conclusions}\\
+
+	Summaries of development conclusions which are presented pragmatically as objective, critical notes and possible segues.
 
 \newpage
 
@@ -331,11 +399,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{Semi-Rear-End \& Supporting Data}
 
-		\subsubsection{Rear-End \& Data Management}
-
-		Entities and attributes table, entity relationship models
-
-	\subsection{Application Programming Interfaces (APIs)}
+	\subsection{Application Programming Interfaces (APIs) \& Libraries}
 
 		\subsubsection{Geolocation}
 
@@ -343,17 +407,25 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		OS Road (1 : 250 000), OS Landranger (1 : 50 000), OS Explorer (1 : 25 000)\\
 
-		Leaflet JavaScript library for maps\\
+		\subsubsection{Open Weather}
+
+		\subsubsection{Leaflet}
+
+		Leaflet JavaScript library for maps
+
+		\subsubsection{Mapbox}
 
 		Mapbox script for GPX-GeoJSON conversion
 
-		\subsubsection{Open Weather}
+		\subsubsection{Chart.js}
+
+		Chart.js JavaScript library for ranger
 
 	\subsection{Project Management}
 
 		\subsubsection{Life-Cycle \& Timing}
 
-		\subsection{Supporting Tools}
+		\subsubsection{Supporting Tools}
 
 \newpage
 
