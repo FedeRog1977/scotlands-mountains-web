@@ -7,12 +7,38 @@ function searchLocation() {
         })
         .then((data) => {
             const hills = data;
-	    const inpMunro = document.getElementById("inpLocation").value.toLowerCase();
+	    const inpHill = document.getElementById("inpLocation").value.toLowerCase();
 	    const locationPre = document.getElementById("locationPre");
             const locationOut = document.getElementById("locationOut");
+	    let hillType = "";
+	    let hillName = "";
 	    for (var i in hills.landmass) {
 	        for (var k in hills.landmass[i].munro) {
-                    if (hills.landmass[i].munro[k].name.toLowerCase().match(inpMunro)) {
+		    if (hills.landmass[i].munro[k].name.toLowerCase().match(inpHill)) {
+			hillType = "hills.landmass[i].munro";
+	    		//hillName = "hills.landmass[i].munro[k].name";
+		    }
+		}
+	        for (var k in hills.landmass[i].munrotop) {
+		    if (hills.landmass[i].munrotop[k].name.toLowerCase().match(inpHill)) {
+			hillType = "hills.landmass[i].munrotop";
+	    		//hillName = "hills.landmass[i].munrotop[k].name";
+		    }
+		}
+	        for (var k in hills.landmass[i].corbett) {
+		    if (hills.landmass[i].corbett[k].name.toLowerCase().match(inpHill)) {
+			hillType = "hills.landmass[i].corbett";
+	    		//hillName = "hills.landmass[i].corbett[k].name";
+		    }
+		}
+	        for (var k in hills.landmass[i].corbetttop) {
+		    if (hills.landmass[i].corbetttop[k].name.toLowerCase().match(inpHill)) {
+			hillType = "hills.landmass[i].corbetttop";
+	    		//hillName = "hills.landmass[i].corbetttop[k].name";
+		    }
+		}
+	        for (var k in hillType) {
+                    if (hills.landmass[i].munro[k].name.toLowerCase().match(inpHill)) {
 	                let hillName = hills.landmass[i].munro[k].name;
 			let landmassName = hills.landmass[i].name;
 			let landmassType = hills.landmass[i].type;
