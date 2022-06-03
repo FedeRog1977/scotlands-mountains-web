@@ -203,7 +203,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection{Purpose \& Industry}
 
-	The system developed throughout this project is a functional web application based on providing user-location-based and external GPS data. User-based GPS services are based on data relevant to the user's machine and external services are based on context-relevant data. The system, which so forth may be referred to as `the system', `the application', `the site', provides detailed information, guidance and recommendations relevant to sport and leisure, particularly hiking and its associated practices, in Scotland's fine rural outdoors and [\textit{these mist covered mountains, which are home now for me}]. Therefore, upon a hypothetical release of a full version of this system, it would be a direct competitor of services such as Walkhighlands, Strava, AllTrails, etc. Due to the autistic and comprehensive nature of its development, it would be in the market not in the competition-driven business, but in the [\href{https://youtu.be/c18_Thy6kJo?t=204}{empire business}].
+	The system developed throughout this project is a functional web application based on providing user-location-based and external GPS data. User-based GPS services are based on data relevant to the user's machine and external services are based on context-relevant data. The system, which so forth may be referred to as `the system', `the application', `the site', provides detailed information, guidance and recommendations relevant to sport and leisure, particularly hiking and its associated practices, in Scotland's fine rural outdoors and [\textit{these mist covered mountains, which are home now for me}]. Therefore, upon a hypothetical release of a full version of this system, it would be a direct competitor of services such as Walkhighlands, Strava, Garmin Connect, AllTrials, etc. Due to the autistic and comprehensive nature of its development, it would be in the market not in the competition-driven business, but in the [\href{https://youtu.be/c18_Thy6kJo?t=204}{empire business}].
 
 	\subsection{System Structure}
 
@@ -285,7 +285,11 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection{Areas of Exploration}
 
+	This system is designed to combine and present aspects of the different types hiking routes and their attributes relative to their conditions; the recommended and available equipment for users to investigate and explore expansive opportunities within; the personal fitness and ability level of users and therefore, their ability to interact with different routes and opportunities; and, the geography and geology of various aspects of hiking routes which contributes to various other factors within user ability how users may interact with the routes themselves. 
+
 		\subsubsection{Hiking Routes}
+
+		The hiking routes are the foundation of this system. They are what gives purpose and reason to the GPS aspect of the system. There are various demonstrations of how hiking routes are implemented in different ways across slightly different platforms. Walkhighlands for example, presents very static use of these; displaying a page per routes listing manually expressed data and literature. Each route cannot be interacted with and had no dynamic attributes. They are simply listed for user interpretation. 
 
 		\subsubsection{Hiking Equipment}
 
@@ -293,9 +297,13 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{Geography}
 
-	\subsection{Existing Material \& Services}
+	\subsection{Material Investigation \& Heuristic Evaluations}
 
-		\subsubsection{Heuristic Evaluations}
+		\subsubsection{Walkhighlands}
+
+		\subsubsection{Strava}
+
+		\subsubsection{Garmin Connect}
 
 \newpage
 
@@ -361,11 +369,56 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 \section{System Requirements}\label{ch4}
 
+	System requirements gathering is essentially the stage at which the concept of a system's functionality is aligned with real-world user desires (requirements). This stage provides a context for creativity and a blueprint upon which this can be mapped. Although the founder of a system or concept may have a clear vision of the intended outcome of their development, understanding what final users need and want allows the creator to constantly tailor development. This may extend to how they and/or the software could/should gather information, store data, transact data, and output data/information.
+
 	\subsection{Scale \& Scope}
+
+	I repeat, this is a [solo project] so there are some restrictions regarding the overall scalability of the project as a whole. If this system were to be designed by a team of professionals, it would be very large-scale and offer much expansible functionality. However, due to the number of personnel assigned to the task (a.k.a. me), the time constraint, and budget constraint, the system finds itself with two major general down-scales: [1] there is no user-data back-end, meaning user accounts are unavailable on this system, which is acceptable as the static functionality of the site is most relevant; and, [2] the sample region for data collection is significantly smaller than that offered by other services, which is also acceptable as adding a wider scope of data (to the master JSON in this case) would only consist of repeating the same patterns perpetually. As this system does not aggregate this data for any form of cross-sectional statistical analysis, larger sample sizes become irrelevant after a certain point. Overall, this implies these factors are not directly related to any implemented requirements. Many of the specifics of these restrictions, and others, are discussed latterly in the \textit{Evaluation} section.\\
+
+	In an ideal world, users would be able to expand their scope of interactions within the system (i.e. different sports with a wider and varying array of attributes), and the individual scale of these. [This means that] as sports differ, attributes and statistics differ, and information and guidance differs; offering a better-rounded service. Ideally, users should have the opportunity to fully customize their experience however, to do this on such a scale feasible with the development team available (myself) would be a significant over-effort for an under-achievement. This is why user accounts have been disregarded. This decision helps keep the system and implementation of requirements more manageable and makes it easier to achieve a polished product within the time constraint. 
 
 	\subsection{Gathering \& Prioritization Methodology}
 
-	\subsection{Functional \& Non-Functional}
+	In this scenario, there are three methods of requirements gathering and inference. The first is the purely user-centred method. As I am surrounded by people who share an interest in the form of this system, including professional developers, student developers and various other [NPCs] of the sort, they act as an accurate representation of market users as they share the same attributes. The second mode is alike however, is argued to be subject to various aspects of contextual bias. This consists of creative direction explicitly from the creator, me. In this context, these inputs will generally align with those of the formerly discussed however, due to the bias, is not considered a viable user-centred method unless used in conjunction with others affirmative of said criteria. The final method involves basic inference from the \textit{Research \& Evidential Background} section. That is, much of the material investigation of Walkhighlands, Strava and Garmin Connect in this section highlights areas for linear development. These refer to aspects which generally do not require user-centered input and must be developed purely functionally.\\
+
+	Many aspects of this system are purely functional and exist to serve an objective purpose. For example, relaying GPX and JSON data related to components such as route and weather information. [This means that] the primary functionality of the system is majorly accounted for in the latter of the three requirements gathering methods, in that the goal of the system is to create wider-scoped versions of much of the existing content in the explored areas. Therefore, the two former methods generally account for improvements which can be implemented upon these predecessors throughout development, which are primarily focussed on enhancing the user's experience. Myself and the discussed group of experienced others are a credible source for this, considering the scale of the project.\\
+
+	Randomly assigning requirements to development would be irresponsible. To help better-address the importance of the components of the required functionality of a system, requirements should be analysed using some form of hierarchical tool which highlights a clearer path for the development process. In this case, the Must-Have/Should-Have/Could-Have/Won't-Have (MoSCoW) methodology is selected for this purpose. This helps differentiate between what functionality is essential to make the system run as intended, what functionality is required for optimization of the system, and what is required for additional enhancements. This approach generally shows functional requirements to average at the top-priority end and non-functional requirements to be distributed further down the hierarchy. With regards to the framework itself, note that:
+
+	\begin{itemize}
+	\setlength\itemsep{0cm}
+		\item \textit{Must-Have} implementations refer to aspects of the system which must be present in order to make it basically functional and behave as it is intended and as the user desires;
+		\item \textit{Should-Have} implementations refer to features of the system which should be implemented in order to make the essential features of the system more accessible and useable to the masses. They may also exist to improve efficiency, but [fly Under the Radar] and therefore go unnoticed by the user. They may offer additional functionality which makes the system more unique (or something of the sort) and therefore, more `creative' and attractive to users.
+		\item \textit{Could-Have} implementations refer to aspects which may become present or relevant during the development of the former two. They may add additional functionality or usability to existing aspects or simply add final touches to the system overall. They are sometimes more contemporary.
+		\item \textit{Won't Have} non-implementations refer to aspects of the system which aren't necessarily impossible or are of a nature which the system `can't have' but, which will probably be omitted or postponed due to constraints such as time, man-power, technical ability, finance, etc.
+	\end{itemize}
+
+	There is no formal client base for this system which means that no face-to-face client-oriented interviews or surveys can take place with regards to determining specific user desires. However, the aforementioned three-method protocol leads to the subsequently discussed requirements. To reiterate, the following list of requirements is generated through discussion of the desires of [1] an existing group of users of systems alike (some of whom are developers), [2] myself, another existing user of the sort, and [3] analysis of other services. This list is of course not exhaustive, as there is always room for perpetual development. However, it does account for every currently visible desire and possibility given the constraints.
+
+	\subsection{Requirements}
+
+	As discussed, it's important at this stage to clearly differentiate between essential functionality for the foundations of the system, generally accounted for in \textit{functional requirements}; and functionality which more contemporary, generally accounted for in \textit{non-functional} requirements. This is often considered `making things \textit{work} and making things \textit{relevant}'. It is also a useful method from which to infer associations between elements of the design and construction stages of development.Retaining these requirements, their position, and hierarchy at the centre of development throughout the process allows accurate amendment of software and/or requirements along the way as more functionalities and possibilities become apparent and tangible or alternatively, further from reach.
+
+		\subsubsection{Functional}
+
+		\subsubsection{Non-Functional}
+
+		\subsubsection{User Stories}
+
+		\begin{table}[h]
+			\scriptsize
+			\renewcommand{\arraystretch}{1.25}
+		\begin{center}
+		\begin{tabular}{p{4cm}p{4cm}p{4cm}}
+
+		\end{tabular}
+			\caption{System Requirements \& User Stories}
+		\end{center}
+		\end{table}
+
+	\subsection{User Accessibility}
+
+	This system is available as a website application, it could be accessed and used by anyone with access to the internet. Therefore, it is to some degree essential that users of all types are welcomed to the site, even if they have no prior knowledge of the industry or field. More importantly, the graphic design and methods of interfacing in the user interface should be accommodating of users with possible imparities, such as a [severe mental imparity], by taking a user-centered approach which considers visible accessibility controls which allow these users to interface with the system more easily. Accessibility does not however only refer to disability. Ensuring optimal accessibility also accounts for factors such as implementing clean and concise CSS and graphic design for simple and intuitive navigation, stimulation, relevance, etc. These approaches are widely considered and implemented.
 
 \newpage
 
@@ -509,7 +562,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 			\scriptsize
 			\renewcommand{\arraystretch}{1.25}
 		\begin{center}
-			\begin{tabular}{p{4cm}p{4cm}p{4cm}}
+		\begin{tabular}{p{4cm}p{4cm}p{4cm}}
 			\hline
 			\multicolumn{1}{c}{\textbf{Serif}} & \multicolumn{1}{c}{\textbf{Sans Serif}} & \multicolumn{1}{c}{\textbf{Monospaced}}\\
 			\hline

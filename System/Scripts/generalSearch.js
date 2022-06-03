@@ -110,12 +110,12 @@ function searchLocation() {
         })
 }
 
-function scoreRoute(elev,dist,n_tops,type,stage,terrType,terrDiff) {
-    const conv_const_ft = 0.3048;
-    const conv_const_mi = 1.60934;
+function scoreRoute(elev,dist,nTops,type,stage,terrType,terrDiff) {
+    const convConstFt = 0.3048;
+    const convConstMi = 1.60934;
 
     // `Number of tops achieved per vertical meter gained per horizontal meter'
-    var multiplier = n_tops / ((conv_const_ft * elev) / ((conv_const_mi * dist) * 1000));
+    var multiplier = nTops / ((convConstFt * elev) / ((convConstMi * dist) * 1000));
 
     // Subjective survey-based statistics
     const typeWeight = 0.4;
@@ -606,7 +606,7 @@ function searchRoute(landmass) {
 			if (hills.landmass[i].route[k].munrotop.length === 0) {
 			    routeMunroTops = "";
 			} else if (hills.landmass[i].route[k].munrotop.length === 1) {
-			    routeMunroTops = "<b>Munro Top:</b>" + hills.landmass[i].route[k].munrotop + "<br>";
+			    routeMunroTops = "<b>Munro Top:</b> " + hills.landmass[i].route[k].munrotop + "<br>";
 			} else {
 			    routeMunroTops = "<b>Munro Tops:</b><br>" + hills.landmass[i].route[k].munrotop.join("<br>") + "<br>";
 			}

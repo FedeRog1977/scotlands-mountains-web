@@ -75,7 +75,7 @@ const selectCountyListCont = `
     <option>South Ayrshire</option>
     <option>South Lanarkshire</option>
     <option>Stirlingshire</option>
-    <option>West Dumbartonshire</option>
+    <option>West Dunbartonshire</option>
     <option>West Lothian</option>
 `;
 
