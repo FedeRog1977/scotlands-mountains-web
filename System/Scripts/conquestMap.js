@@ -1,5 +1,5 @@
 /*
- * API
+ * Initialize API
  */
 var apiKey = 'VfSaBhJrLbr7vR7GLkAAGH02AZM6lzkP';
 var serviceUrl = 'https://api.os.uk/maps/raster/v1/zxy';
@@ -18,6 +18,7 @@ var transformCoords = function(arr) {
 };
 
 var mapOptions = {
+    //cursor: true,
     crs: crs,
     minZoom: 0,
     maxZoom: 9,
@@ -234,6 +235,71 @@ function showCorbettTops() {
         })
 }
 
+/*
+ * Crosshair Icon
+ */
+var crosshairIcon = L.icon({
+    iconUrl: "./Photos/Map/crosshair.png",
+    iconSize:     [20, 20],
+    iconAnchor:   [10, 10]
+});
+
+crosshair = new L.marker(map.getCenter(), {icon: crosshairIcon, clickable:false});
+crosshair.addTo(map);
+
+map.on("move", function(e) {
+    crosshair.setLatLng(map.getCenter());
+});
+
+
+
+
+
+
+
+
+L.CursorHandler = L.Handler.extend({
+
+    addHooks: function () {
+        this._popup = new L.Popup();
+        this._map.on('mouseover', this._open, this);
+        this._map.on('mousemove', this._update, this);
+        this._map.on('mouseout', this._close, this);
+    },
+
+    removeHooks: function () {
+        this._map.off('mouseover', this._open, this);
+        this._map.off('mousemove', this._update, this);
+        this._map.off('mouseout', this._close, this);
+    },
+    
+    _open: function (e) {
+        this._update(e);
+        this._popup.openOn(this._map);
+    },
+
+    _close: function () {
+        this._map.closePopup(this._popup);
+    },
+
+    _update: function (e) {
+        this._popup.setLatLng(e.latlng)
+            .setContent(e.latlng.toString());
+    }
+
+    
+});
+
+L.Map.addInitHook('addHandler', 'cursor', L.CursorHandler);
+
+
+
+
+
+
+
+
+
 // Testing Transform Coords
 
 const test = document.getElementById('scope');
@@ -244,7 +310,7 @@ test.innerHTML = testText.toString();
  * Option Menu
  */
 function openOptions() {
-    document.getElementById('options').style.width = "350px";
+    document.getElementById('options').style.width = "500px";
 }
 
 function closeOptions() {
@@ -256,8 +322,37 @@ function closeOptions() {
  * Using GPX to GeoJSON Method
  */
 
-let loadRoutePrefix = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/";
-let loadRoute = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/bheithir/schoolhouse.gpx";
+function showRoute(landmass) {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+	    const selectRoute = document.getElementById("selectRoute" + landmass).value.toLowerCase();
+            let loadRoutePrefix = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/";
+            let loadRouteSuffix = "";
+	    let loadRoute = "";
+	    for (var i in hills.landmass) {
+		for (var k in hills.landmass[i].route) {
+		    if (hills.landmass[i].route[k].name.toLowerCase() === selectRoute) {
+		        loadRouteSuffix = hills.landmass[i].route[k].GPX;
+			loadRoute = loadRoutePrefix + loadRouteSuffix;
+		    }
+		}
+	    }
+	})
+    fetch(loadRoute)
+        .then(response => response.text())
+        .then(str => new DOMParser().parseFromString(str, "text/xml"))
+        .then(doc => {
+	    let data = toGeoJSON.gpx(doc);
+	    const route = data;
+	    L.geoJSON(route,{color:'#A80606'}).addTo(map);
+        })
+}
+
+//showRoute();
 
 /*
 fetch(locations)
@@ -274,16 +369,3 @@ fetch(locations)
 	    }
 	}
 */
-
-function showRoute() {
-    fetch(loadRoute)
-        .then(response => response.text())
-        .then(str => new DOMParser().parseFromString(str, "text/xml"))
-        .then(doc => {
-	    let data = toGeoJSON.gpx(doc);
-	    const route = data;
-	    L.geoJSON(route,{color:'#A80606'}).addTo(map);
-        })
-}
-
-showRoute();

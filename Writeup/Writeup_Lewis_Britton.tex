@@ -289,21 +289,67 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{Hiking Routes}
 
-		The hiking routes are the foundation of this system. They are what gives purpose and reason to the GPS aspect of the system. There are various demonstrations of how hiking routes are implemented in different ways across slightly different platforms. Walkhighlands for example, presents very static use of these; displaying a page per routes listing manually expressed data and literature. Each route cannot be interacted with and had no dynamic attributes. They are simply listed for user interpretation. 
+		The hiking routes are the foundation of this system. They provide the purpose and reason to the GPS aspect of the system. There are various demonstrations of how hiking routes are implemented in different ways across slightly different platforms. Walkhighlands for example, presents very static use of these; displaying a page per routes listing manually expressed data and literature. Each route cannot be interacted with and had no dynamic attributes. They are simply listed for user interpretation. In this system, GPS routes are made relevant to the particular user interacting with them. Routes are not only selected through subjective choice, they are dynamically relevant to both user conscious and subconscious attributes.
 
 		\subsubsection{Hiking Equipment}
 
+		Hiking equipment is arguably half the battle when it comes to most effectively tackling projects. Although I've had my fair share of 15 mile proj's with approach shoes and one litre of water, alongside [Griff] in shredded boots and MTB tee-shirt and shorts; it's still pretty important. To the [Maddie Owens] of the industry. Regardless, many routes require particular components and combinations of equipment, including the appropriate knowledge of such. This means it is completely necessary that, especially under-experienced hikers, are as aware of the precautions and hazards present on selected and suggested routes. Including a metric which accounts for the user's equipment, alongside relevant literature, ensures that this site takes the implements the correct protocol to see that the user does not make any unrealistic inference regarding routes. Once again, in other services such as Strava and Garmin Connect, there are not metrics which account for these attributes. Within Walkhighlands, there is plenty of literature available however, this information is not quantified and translated into data input so therefore leaves routes static, relative to equipment.
+
 		\subsubsection{Personal Fitness \& Ability}
+
+		Fitness is undoubtedly the single most important factor in any sport. Skill, knowledge, technique, understanding of kinematics and dynamics of the human body, and things alike all contribute to the degree to which you excel at a sport. However, without raw fitness you might as well sit on the bench. Keeping the heart rate regulated, understanding which parts of your body to engage and not to engage, correctly distributing force and converting torque are all closely related to personal fitness and therefore must be quantified in such a way which reflects a user's expected effort and ability to complete a route. This effects results such as elapsed time, breaks required, fatigue and estimated recovery time, etc. Again, route planners such as Walkhighlands do not offer any form of input using these metrics. Strava and Garmin Connect do however make estimates following completion of activities however, do not allow these statistics to be re-used and inputted as variables determining results of estimates of future activities.
 
 		\subsubsection{Geography}
 
+		The use of geography within this system is fairly static and informational. That is, it is not quantified and it's attributes cannot be used as inputs which determine future estimates and results. As physical geography is out of the control of user's however, there wouldn't be much use in quantifying it. It is however useful if users have an understanding of what geographical features are and how they can have an impact on their routes. Of course this particular feature is irrelevant to much of Strava and Garmin Connect's functionality and is therefore not included in any form. Walkhighlands does include excellent educational sources however there is not much continuity and consistency to their presence. Therefore, relevance is often unaligned.
+
 	\subsection{Material Investigation \& Heuristic Evaluations}
+
+	As discussed, improving upon various features and aspects of Walkhighlands, Strava and Garmin Connect is a relevant step in developing requirements and informal desires from this system. It goes without saying that as an inexperienced sole developer, these improvements are not based on functionality and code efficiency etc. This would be intangible. Improvements are primarily focused on making particular features more relevant, accessible and usable. The three services under examination are significantly more advanced and expansive than this system is at the end of development. Therefore, features which these services include but this system does not will not be examined. So forth, the services will be examined purely under the scope of this system. That is, basic services (overview, ability, equipment) integration; map services (OS map, GPX file and map feature) integration; and, statistical processing (route and mountain information, and personal data processing).\\
+
+	As an alternative to formal empirical methodologies, Nielsen (1994) proposes a critique-based method based on a heuristic evaluation which involves analysis based on areas of expertise. A heuristic evaluation of one's own system is also argued to be a useful method of allocating time to minor issues before final user testing. Nielsen also claims that the optimal number of `experts' assigned to an evaluation is three-to-five in order to find the `optimal' number of issues relative to the cost-benefit analysis. In this case however, one examiner is used for obvious reasons. Each issue is individually listed and valued against the set of ten heuristic factors and assigned a severity rating, as seen in Table 2.1.\\
+
+	The analyses conducted subsequently are not exhaustive however, are relevant to the context and features in this system. There is no heuristic evaluation for Garmin Connect as any differing functionality from Strava is more advanced than that which this system accounts for and therefore, does not need to be evaluated.
+
+	\begin{table}[h]
+                \scriptsize
+                \renewcommand{\arraystretch}{1.25}
+        \begin{center}
+        \begin{tabular}{c}
+                \hline
+                Heuristics\\
+                \hline
+                \multicolumn{1}{l}{$\mathrm{H_{1}}$: Visibility of System Status}\\
+                \multicolumn{1}{l}{$\mathrm{H_{2}}$: System-Real-World Match}\\
+                \multicolumn{1}{l}{$\mathrm{H_{3}}$: User Control \& Freedom}\\
+                \multicolumn{1}{l}{$\mathrm{H_{4}}$: Consistency \& Standards}\\
+                \multicolumn{1}{l}{$\mathrm{H_{5}}$: Error Prevention}\\
+                \multicolumn{1}{l}{$\mathrm{H_{6}}$: Recognition Rather than Recall}\\
+                \multicolumn{1}{l}{$\mathrm{H_{7}}$: Flexibility \& Efficiency of Use}\\
+                \multicolumn{1}{l}{$\mathrm{H_{8}}$: Aesthetic \& Minimalist Design}\\
+                \multicolumn{1}{l}{$\mathrm{H_{9}}$: User Recognition, Diagnostic \& Recovery from Error}\\
+                \multicolumn{1}{l}{$\mathrm{H_{10}}$: Help \& Documentation}\\
+                \hline
+                Severity Ratings\\
+                \hline
+                \multicolumn{1}{l}{$\mathrm{S_{0}}$: Don't think it is a usability problem}\\
+                \multicolumn{1}{l}{$\mathrm{S_{1}}$: Cosmetic issue; repair in additional time}\\
+                \multicolumn{1}{l}{$\mathrm{S_{2}}$: Minor usability problem; allocate low priority to repair}\\
+                \multicolumn{1}{l}{$\mathrm{S_{3}}$: Major usability problem; allocate high priority to repair}\\
+                \multicolumn{1}{l}{$\mathrm{S_{4}}$: Critical error; repair immediately}\\
+                \hline
+        \end{tabular}
+                \caption{Heuristics \& Severity Rating}
+        \end{center}
+        \end{table}
 
 		\subsubsection{Walkhighlands}
 
+	The heuristic evaluation for Walkhighlands is listed under Figure A1 in Appendix 1.
+
 		\subsubsection{Strava}
 
-		\subsubsection{Garmin Connect}
+	The heuristic evaluation for Strava is listed under Figure A2 in Appendix 1.
 
 \newpage
 
@@ -379,7 +425,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection{Gathering \& Prioritization Methodology}
 
-	In this scenario, there are three methods of requirements gathering and inference. The first is the purely user-centred method. As I am surrounded by people who share an interest in the form of this system, including professional developers, student developers and various other [NPCs] of the sort, they act as an accurate representation of market users as they share the same attributes. The second mode is alike however, is argued to be subject to various aspects of contextual bias. This consists of creative direction explicitly from the creator, me. In this context, these inputs will generally align with those of the formerly discussed however, due to the bias, is not considered a viable user-centred method unless used in conjunction with others affirmative of said criteria. The final method involves basic inference from the \textit{Research \& Evidential Background} section. That is, much of the material investigation of Walkhighlands, Strava and Garmin Connect in this section highlights areas for linear development. These refer to aspects which generally do not require user-centered input and must be developed purely functionally.\\
+	In this scenario, there are three methods of requirements gathering and inference. The first is the purely user-centered method. As I am surrounded by people who share an interest in the form of this system, including professional developers, student developers and various other [NPCs] of the sort, they act as an accurate representation of market users as they share the same attributes. The second mode is alike however, is argued to be subject to various aspects of contextual bias. This consists of creative direction explicitly from the creator, me. In this context, these inputs will generally align with those of the formerly discussed however, due to the bias, is not considered a viable user-centered method unless used in conjunction with others affirmative of said criteria. The final method involves basic inference from the \textit{Research \& Evidential Background} section. That is, much of the material investigation of Walkhighlands, Strava and Garmin Connect in this section highlights areas for linear development. These refer to aspects which generally do not require user-centered input and must be developed purely functionally.\\
 
 	Many aspects of this system are purely functional and exist to serve an objective purpose. For example, relaying GPX and JSON data related to components such as route and weather information. [This means that] the primary functionality of the system is majorly accounted for in the latter of the three requirements gathering methods, in that the goal of the system is to create wider-scoped versions of much of the existing content in the explored areas. Therefore, the two former methods generally account for improvements which can be implemented upon these predecessors throughout development, which are primarily focussed on enhancing the user's experience. Myself and the discussed group of experienced others are a credible source for this, considering the scale of the project.\\
 
@@ -397,28 +443,69 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection{Requirements}
 
-	As discussed, it's important at this stage to clearly differentiate between essential functionality for the foundations of the system, generally accounted for in \textit{functional requirements}; and functionality which more contemporary, generally accounted for in \textit{non-functional} requirements. This is often considered `making things \textit{work} and making things \textit{relevant}'. It is also a useful method from which to infer associations between elements of the design and construction stages of development.Retaining these requirements, their position, and hierarchy at the centre of development throughout the process allows accurate amendment of software and/or requirements along the way as more functionalities and possibilities become apparent and tangible or alternatively, further from reach.
+	As discussed, it's important at this stage to clearly differentiate between essential functionality for the foundations of the system, generally accounted for in \textit{functional requirements}; and functionality which more contemporary, generally accounted for in \textit{non-functional} requirements. This is often considered `making things \textit{work} and making things \textit{relevant}'. It is also a useful method from which to infer associations between elements of the design and construction stages of development.Retaining these requirements, their position, and hierarchy at the center of development throughout the process allows accurate amendment of software and/or requirements along the way as more functionalities and possibilities become apparent and tangible or alternatively, further from reach.
 
 		\subsubsection{Functional}
 
+	Requirements here are presented in a numeric format. This does not refer to any hierarchical order, it simply creates a reference point for user stories. Hierarchy remains determined by the MoSCoW methodology. So forth, as required by the three discussed groups, users and the system \textit{must have} the ability to:
+
+	\begin{enumerate}
+	\setlength\itemsep{0cm}
+		\item Access the user's current location upon various types of request
+		\item View an `overview' of recommended routes
+		\item Accept inputs related to user `abilities' and compute and display results based on them
+		\item Accept inputs related to user `equipment' and compute and display results based on them
+		\item View a weather forecast breakdown using real weather data
+		\item Display an Ordnance Survey map
+	\end{enumerate}
+
+	Additionally, users and the system \textit{should have} the ability to:
+
+	\begin{enumerate}
+	\setlength\itemsep{0cm}
+		\item On OS Map, alternate between `OS Leisure' (primary/default), `OS Road', and `OS Outdoor' topographical structures
+		\item On OS Map, display grid markers at center-pan
+	\end{enumerate}
+
+	Additionally, given the various constraints, users and the system \textit{could have} the ability to:
+
+	\begin{enumerate}
+	\setlength\itemsep{0cm}
+		\item Create an account and have their data stored
+		\item Protect user data using an appropriate authentication and security system
+		\item Store and re-use user attributes such as the aforementioned `ability' and `equipment cache'
+		\item Choose `priority attributes' relevant to their routes which are stored and used to generate more relevant route recommendations etc.
+	\end{enumerate}
+
+	Additionally, users and the system \textit{won't have} the ability to:
+
+	\begin{enumerate}
+	\setlength\itemsep{0cm}
+		\item Store route-relevant data and display them as `historically completed routes', or something of the sort, under the aforementioned `overview'
+	\end{enumerate}
+
 		\subsubsection{Non-Functional}
+
+	To ensure a stable, trustworthy, useable and relevant system; users and the system will have the ability to / have the capacity to:
+
+	\begin{enumerate}
+	\setlength\itemsep{0cm}
+		\item Be written in such a manner which allows full compatibility with the majority of web browsers (this could effect markup languages, font packages, JavaScript libraries, etc.)
+		\item Be written in such a manner which allows full scalability between desktop and mobile use
+		\item Offer the user various descriptive background [pieces], otherwise referred to as `key's and `suggested reading's which provide aid to users' background knowledge, understanding and decision making
+		\item Offer the appropriate combination of relevant graphic design and actual functionality
+		\item Adhere to the appropriate accessibility standards, with reference primarily to graphic design and system structure
+	\end{enumerate}
 
 		\subsubsection{User Stories}
 
-		\begin{table}[h]
-			\scriptsize
-			\renewcommand{\arraystretch}{1.25}
-		\begin{center}
-		\begin{tabular}{p{4cm}p{4cm}p{4cm}}
-
-		\end{tabular}
-			\caption{System Requirements \& User Stories}
-		\end{center}
-		\end{table}
+	`User stories' are often an effective method of contextualizing requirements and presenting how they can and will be interpreted and used by the final user. Putting yourself in the hypothetical context of a user is a good method of delivering basic feedback on how to apply a solution to a requirement. Additionally, it helps identify possible negations or irrelevant content. So forth, the user stories found in Figure A3 in Appendix 1 follow the syntax: ``I wish to be able to $<$interact\_with\_feature$>$ in anticipation of $<$returned\_result$>$ which will provide me with $<$payoff$>$''. Development of the solution to these user stories listed in the figure are prioritized using the metric seen in the \textit{Priority} column.
 
 	\subsection{User Accessibility}
 
-	This system is available as a website application, it could be accessed and used by anyone with access to the internet. Therefore, it is to some degree essential that users of all types are welcomed to the site, even if they have no prior knowledge of the industry or field. More importantly, the graphic design and methods of interfacing in the user interface should be accommodating of users with possible imparities, such as a [severe mental imparity], by taking a user-centered approach which considers visible accessibility controls which allow these users to interface with the system more easily. Accessibility does not however only refer to disability. Ensuring optimal accessibility also accounts for factors such as implementing clean and concise CSS and graphic design for simple and intuitive navigation, stimulation, relevance, etc. These approaches are widely considered and implemented.
+	This system is available as a website application, it could be accessed and used by anyone with access to the internet. Therefore, it is to some degree essential that users of all types are welcomed to the site, even if they have no prior knowledge of the industry or field. More importantly, the graphic design and methods of interfacing in the user interface should be accommodating of users with possible imparities, such as a [severe mental imparity], by taking a user-centered approach which considers visible accessibility controls which allow these users to interface with the system more easily. Accessibility does not however only refer to disability. Ensuring optimal accessibility also accounts for factors such as implementing clean and concise CSS and graphic design for simple and intuitive navigation, stimulation, relevance, etc. These approaches are widely considered and implemented.\\
+
+	In context, whether using the desktop or scaled mobile version of the site, the user interface implements many `friendly' universal standards. For example, it primarily uses the readable and elegant Sans-Serif font Audi AG and Serif font Garamond, with suitable font-sizing and color etc. Hue, saturation and luminance are appropriately considered/assigned to create [maximal optical pleasure] and proper readability with the correct contrast between elements. The well respected font-family Font Awesome, which is universally recognised, to display various standard symbols. In theory, these considerations lead to more efficient understanding and transitioning between elements of the site.
 
 \newpage
 
@@ -527,15 +614,125 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	Testing questionnaires, test cards (exp. result etc.), heuristic evaluation of system
 
-	\subsection*{Appendix 1: Existing Figures}
+	\subsection*{Appendix 1: Foundational Material}
 
-		\subsubsection*{Figure A1:}
+		\subsubsection*{Figure A1: Heuristic Evaluation -- Walkhighalnds}
+
+	\begin{center}
+                \scriptsize
+        	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
+                \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
+                \hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Basic Features}}\\
+		\hline
+			\textbf{Sparse Navigation}:\newline There is not much order to the site navigation and in places thee is a lack pf relevance and hierarchy to the options. For example, some sub-sets of pages/features are listed in navigation on the same `tier'; whether that being represented by the link having the same alignment as it's parent, or something of the sort & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$ & $\mathrm{S_{3}}$ & Correctly use HTML and CSS to display the hierarchy of pages and features in this system\\
+			\textbf{Difficult Navigation}:\newline Some essential literature relating to components such as ability and equipment, as featured in this system, is difficult to find and requires a long path of navigation through pages and their children. Often some literature is simply linked through an in-body hyperlink (i.e. in a paragraph) and not even allocated it's own title etc. & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$ & $\mathrm{S_{3}}$ & Correctly use HTML and CSS to display the hierarchy of pages and features in this system. Ensure no relevance is lost in masses of text\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Map Features}}\\
+		\hline
+			\textbf{Feature Separation}: The OS Maps displaying Munros and Corbetts etc. are displayed on different pages of the site, with navigation links between them. This means that interaction with features is limited to the point where all a user can do is view the information provided about it upon a click and follow further links from there. They cannot for example, toggle on/off different features while interacting with the map meaning isolating different features on a GPS route a user is viewing is impossible. & $\mathrm{H_{3}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{3}}$ & Implement a toggle feature for access to different map feature when the user desires, as listed in requirements\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Statistical Features}}\\
+		\hline
+		...\\
+		\hline
+		\hline
+                \multicolumn{4}{l}{\textsc{Total Violations}: 3}\\
+                \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
+                \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Brows
+er (Mobile)}\\
+                \hline
+                \caption{Heuristic Analysis}
+        \end{longtable}
+        \end{center}
+
+\newpage
+
+		\subsubsection*{Figure A2: Heuristic Evaluation -- Strava}
+
+	\begin{center}
+                \scriptsize
+        	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
+                \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
+                \hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Basic Features}}\\
+		\hline
+			\textbf{Weather Misuse}:\newline Weather data is only available as part of complete routes. I.e. activities which are complete and have been saved. Strava use a weather API so it is hard to understand why they would bot integrate this as a basic summary feature on the home page or on a profile etc. Historic weather data, i.e. that printed on complete routes, is the most irrelevant use of such as, come on, the user already knows what the weather was like on their routes and if they want to show off a 20hr hike in a snow storm or something, upload a picture & $\mathrm{H_{3}}$ & $\mathrm{S_{3}}$ & Include a comprehensive weather system, as listed in requirements\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Map Features}}\\
+		\hline
+			\textbf{Map Layers}:\newline Although the Mapbox map seen throughout Strava is used very effectively in hosting many dynamic layers such as customizable GPX routes with terrain' and athlete-specific attributes, it is just a basic map with contours, not a full topographical map. This significantly limits interaction with map features and interpretation as it simply doesn't show many of the relevant aspects to hiking & $\mathrm{H_{2}}$, $\mathrm{H_{3}}$ & $\mathrm{S_{3}}$ & Utilize the OS Map API instead of a more basic one to ensure full access to topographical mapping, as listed in requirements\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Statistical Features}}\\
+		\hline
+		...\\
+		\hline
+		\hline
+                \multicolumn{4}{l}{\textsc{Total Violations}: 2}\\
+                \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
+                \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Brows
+er (Mobile)}\\
+                \hline
+                \caption{Heuristic Analysis}
+        \end{longtable}
+        \end{center}
+
+\newpage
+
+		\subsubsection*{Figure A3: User Stories, Prioritization \& Solutions}
 			
-			\begin{center}
-				%\includegraphics[width=7cm,height=3.5cm]{} 
-			\end{center}
+		\begin{center}
+			\scriptsize
+		\begin{longtable}{p{4cm}lp{1.5cm}lp{4cm}}
+			\textsc{Scenario} & \textsc{Req.} & \textsc{Relevance} & \textsc{Priority*} & \textsc{Solution}\\
+			\hline
+			\hline
+			\multicolumn{5}{c}{\textsc{Functional -- Must-Have}}\\
+			\hline
+			``I wish to be able to [use the current location of my device] in anticipation of [seeing my location printed on a map] which would allow me to [navigate towards map features relative to my location]'' & 1 & UI\newline OS Maps & 1 & Utilize \textit{Geolocation} API to fetch location of user's device\\
+			``I wish to be able to [use the current location of my device] in anticipation of [weather forecast results for my location] which would allow me to [quick-access my weather forecast, likely while on-route]'' & 1, 5 & UI\newline Weather Service & 1 & Utilize \textit{Geolocation} API to fetch location of user's device and place in weather function\\
+			``I wish to be able to [quickly view a summary of suggested routes] which would allow me to [see all the relevant attributes of a route on one return] and therefore, [select routes with less thought, time and effort]'' & 2 & UI\newline Route Summary & 1 & Include a section on the home page with this/these information/statistics\\
+			``I wish to be able to [include attributes related to my ability] which contribute to my [suggested routes] therefore, making them [more relevant to my needs]'' & 3 & UI\newline Ability Service & 1 & Include a section which accepts relevant user inputs and returns route suggestions as required\\
+			``I wish to be able to [include attributes related to the equipment I own] which contribute to my [suggested routes] therefore, making them [more relevant to my needs]'' & 4 & UI\newline Equipment Service & 1 & Include a section which accepts relevant user inputs and returns route suggestions as required\\
+			``I wish to be able to [seek locations by their name] in anticipation of the return of [weather forecast results related to their coordinates] which would allow me to [plan my routes more effectively]'' & 5 & UI\newline Weather Service & 1 & Include a section which accepts location-based inputs, whether this be pre-defined coordinates of locations or the user's current location as discussed previously, to display weather forecast results for these locations\\
+			``I wish to be able to [view an Ordance Survey map with OS Road (1 : 250 000), OS Landranger (1 : 50 000), and OS Explorer (1 : 25 000) layers simultaneously, alternative upon zoom] in anticipation of [viewing initially basic features such as my location as a symbol on the map and center-pan coordinates adjacent to the map] therefore, [making location seeking more interactive and understanable]'' & 1, 6 & UI\newline OS Maps & 1 & Utilize \textit{Ordnance Survey} API to host the map\newline Utilize \textit{Leaflet} JavaScript library to initialize and interact with the map\\
+			``I wish to have the option to [interact with the OS map] which allows me to [toggle on/off display of features], allowing me to [view only specific features I wish to include on my routes]'' & 6 & UI\newline OS Map & 1 & Utilize \textit{Leaflet} JavaScript library to display and toggle on/off symbols representing the location of various geographical features such as Munros, Munro Tops, Corbetts, and Corbett Tops\\
+			``I wish to have the option to [interact with the OS map] which allows me to [toggle on/off GPS routes based on search criteria] therefore, [making route results relevant to my subjective choice], as opposed to other factors such as recommendations based on my ability and equipment, or raw search'' & 6 & UI\newline OS Map & 1 & Utilize \textit{Leaflet} JavaScript library to display and toggle on/off GPS route (GPX data) layers over the map, relative to various search criteria\newline Utilize \textit{Mapbox GL-JS} JavaScript library to convert GeoJSON files to GPX\\
+			``I wish to be able to [search for routes close to my current location] which returns the [closest relevant GPS overlay] to my location, making it easy for me to [make a fast decision if I just want a close project]'' & 6, 1 & UI\newline OS Map & 1 & Utilize \textit{Geolocation} API to fetch location of user's device and compare to the location of all listed projects\\
+			\hline
+			\multicolumn{5}{c}{\textsc{Functional -- Should-Have}}\\
+			\hline
+			``I wish to be able to [interact with the OS Map] in order to [change its layers] which will allow me to [interpret the features and contours of the land in different ways]'' & 1 & UI\newline OS Map & 2 & Include some form of input which \textit{Leaflet} JavaScript library to allow the user to change primary map layer\\
+			``I wish to [view grid markers at the center of the OS Map] which, when panning, will [pinpoint the center coordinates displayed on the map] therefore, [making it easy to view, locate and pan to and from features and locations etc.]'' & 2 & UI\newline Map OS & 2 & Include basic HTML and CSS which displays reticle\\
+			\hline
+			\multicolumn{5}{c}{\textsc{Functional -- Could-Have}}\\
+			\hline
+			``I wish to [have my data stored] in the system so I can [access it down the line] to [use it in various site features]'' & 1 & Back-End & 3 & Implement a back-end database system to store and interact with user data\\
+			``With regards to [data access], I wish to be [assured of appropriate security measures] implemented by the system controllers which will give me [peace of mind] regarding data protection & 2 & Back-End & 3 & Implement appropriate authentication and data protection measures in the system''\\
+			``I wish to be able to [use and reuse attributes related to my account] in order to [tailor results to my own abilities and equipment], for example; allowing me to [gain a more accurate understanding of what I'm able to do] with less effort'' & 3 & UI\newline Back-End & 3 & Allow already-implemented features such as user ability and equipment services to access and use stored user data, as opposed to using basic inputs\\
+			``I wish to be able to [choose `priority attributes'] relevant to data stored upon my previous routes which returns [more relevant route recommendations] to historic ones, relevant to what I have and haven't done based on my preference; allowing me to [more dynamically choose routes]'' & 4 & UI\newline Back-end & 3 & Implement appropriate measures\\
+			\hline
+			\multicolumn{5}{c}{\textsc{Functional -- Won't Have}}\\
+			\hline
+			``I wish to use a GPS device such as a watch or cellular device to [record GPX data] which can be used to [generate route information] and [display useful route records] which I can interpret and benefit/learn from'' & 1 & Back-End & 4 & (Will not) implement functionality to accept GPX uploads and transform relevant components into human readable information\\
+			\hline
+			\multicolumn{5}{c}{\textsc{Non-Functional}}\\
+			\hline
+			``I wish to be able to [use the site on any browser] therefore meaning I can [view all content] regardless of what browser platform I use, meaning I'll be able to [consistently interact with the functionality]'' & 1 & UI\newline Browser Support & 5 & Ensure all languages, packages, libraries, etc., are using the most versatile syntax and have aggregate browser support\\
+			``I wish to be able to [us ethe site on any device platform] therefore meaning I can [view all content] regardless of what device I use, meaning I'll be able to [consistently interact with the functionality]'' & 2 & UI & 5 & Implement the correct CSS protocol to allow the site do dynamically scale to various device sizes; using appropriate adjustment and hiding/showing of content\\
+			``I wish to [view additional] literature based upon [information regarding topics I wish to explore]; [enhancing my knowledge of the components of the sport and my decision making]'' & 3 & UI\newline Research & 5 & Implement appropriate bodies of text relevant to areas upon which they may be if use to the user\\
+			``I wish to [view elements of graphic design] which [show relevance to the areas in which they appear] therefore, stimulating, engaging and immersing me further in the sport]'' & 4 & UI & 5 & Use CSS to implement the correct elements and principals of graphic design, primarily color schemes and shape/geometry, which are relevant to the outdoor context\newline Use graphic design tools (such as Serif PagePlus and GIMP) to create and implement relevant features such as logos, images and renders, which are relevant to the outdoor context\\
+			``I wish to be able to optimally interact with the site when it comes to navigation and viewing experience, regardless of any impairity or things of the sort'' & 5 & UI\newline Research & 5 & Implement appropriate design protocol to make this experience as easy as possible\\
+			\hline
+			\hline
+			\multicolumn{5}{l}{*: `Must-Have' = 1; `Should-Have' = 2; `Could-Have' = 3; Won't Have = 4; Non-Functional = 5}\\
+			\hline
+		\end{longtable}
+		\end{center}
 
-			(Draper, Paudyal, 1999)
+		Various Sources (2022)
 
 		\subsubsection*{Figure A2:}
 
@@ -589,6 +786,15 @@ This piece would not have been as efficient without the aid of the only acceptab
 	\fancyhead[L]{\leftmark}
 
 	\begin{thebibliography}{9}
+
+	\bibitem{a}
+		Nielsen, J. (1994).
+		\textsl{Heuristic Evaluation.}
+		Usability Inspection Methods, John Wiley \& Sons
+
+
+
+
 
 	\bibitem{a}
 		Abraham, A., Ikenberry, D. L. (1994).

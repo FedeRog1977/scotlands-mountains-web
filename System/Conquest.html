@@ -107,6 +107,125 @@
 					<label for="hideMarkers" class="optionsLabel">Hide</label>
 				</div>
 			</div>
+			<h2>Ability Options</h2>
+			<h2>Equipment Options</h2>
+			<h2>Search Route</h2>
+				<h3>Select Landmass</h3>
+				<select id="selectLandmass" onchange="showRouteListCont()"></select>
+				<div id="selectRouteCruachanCont" class="hidden">
+                                	<h3>Cruachan Range Routes</h3>
+                                	<select id="selectRouteCruachan"></select>
+                                	<button onclick="searchRoute('Cruachan')">Summary</button>
+                                	<button onclick="showRoute('Cruachan')">Print Route</button>
+                        	</div>
+				<div id="selectRouteUdlaidhCont" class="hidden">
+                        	        <h3>Beinn Udlaidh and Beinn Bhreac-liath Routes</h3>
+                        	        <select id="selectRouteUdlaidh"></select>
+                        	        <button onclick="searchRoute('Udlaidh')">Summary</button>
+                        	        <button onclick="showRoute('Udlaidh')">Print Route</button>
+                        	</div>
+				<div id="selectRouteMhicCont" class="hidden">
+                        	        <h3>Beinn Mhic-Mhonaidh Routes</h3>
+                        	        <select id="selectRouteMhic"></select>
+                        	        <button onclick="searchRoute('Mhic')">Summary</button>
+                        	        <button onclick="showRoute('Mhic')">Print Route</button>
+                        	</div>
+                        	<div id="selectRouteCreachCont" class="hidden">
+                        	        <h3>Creach Bheinn (Loch Creran) Routes</h3>
+                        	        <select id="selectRouteCreach"></select>
+                        	        <button onclick="searchRoute('Creach')">Summary</button>
+                        	        <button onclick="showRoute('Creach')">Print Route</button>
+                        	</div>
+				<div id="selectRouteStaravCont" class="hidden">
+                        	        <h3>Starav Range Routes</h3>
+                        	        <select id="selectRouteStarav"></select>
+                        	        <button onclick="searchRoute('Starav')">Summary</button>
+                        	        <button onclick="showRoute('Starav')">Print Route</button>
+                       		</div>
+				<div id="selectRouteTrilleachanCont" class="hidden">
+                        	        <h3>Beinn Trilleachan Routes</h3>
+                        	        <select id="selectRouteTrilleachan"></select>
+                        	        <button onclick="searchRoute('Trilleachan')">Summary</button>
+                        	        <button onclick="showRoute('Trilleachan')">Print Route</button>
+                        	</div>
+				<div id="selectRouteBlackCont" class="hidden">
+                        	        <h3>Black Mount Range Routes</h3>
+                        	        <select id="selectRouteBlack"></select>
+                        	        <button onclick="searchRoute('Black')">Summary</button>
+                        	        <button onclick="showRoute('Black')">Print Route</button>
+                       		</div>
+				<div id="selectRouteSgulairdCont" class="hidden">
+                        	        <h3>Beinn Sgulaird Routes</h3>
+                        	        <select id="selectRouteSgulaird"></select>
+                        	        <button onclick="searchRoute('Sgulaird')">Summary</button>
+                        	        <button onclick="showRoute('Sgulaird')">Print Route</button>
+                        	</div>
+				<div id="selectRouteFraochaidhCont" class="hidden">
+                       	        	<h3>Fraochaidh Routes</h3>
+                                	<select id="selectRouteFraochaidh"></select>
+                                	<button onclick="searchRoute('Fraochaidh')">Summary</button>
+                                	<button onclick="showRoute('Fraochaidh')">Print Route</button>
+                        	</div>
+                        	<div id="selectRouteFhionnlaidhCont" class="hidden">
+                        	        <h3>Beinn Fhionnlaidh Routes</h3>
+                        	        <select id="selectRouteFhionnlaidh"></select>
+                        	        <button onclick="searchRoute('Fhionnlaidh')">Summary</button>
+                        	        <button onclick="showRoute('Fhionnlaidh')">Print Route</button>
+                        	</div>
+				<div id="selectRouteHulaidhCont" class="hidden">
+                              		<h3>Sgor na h-Ulaidh Routes</h3>
+                                	<select id="selectRouteHulaidh"></select>
+                                	<button onclick="searchRoute('Hulaidh')">Summary</button>
+                                	<button onclick="showRoute('Hulaidh')">Print Route</button>
+                        	</div>
+                        	<div id="selectRouteDubhCont" class="hidden">
+                        	        <h3>Stob Dubh Routes</h3>
+                        	        <select id="selectRouteDubh"></select>
+                        	        <button onclick="searchRoute('Dubh')">Summary</button>
+                        	        <button onclick="showRoute('Dubh')">Print Route</button>
+                        	</div>
+                        	<div id="selectRouteMorCont" class="hidden">
+                        	        <h3>Buachaille Etive Mor Routes</h3>
+                        	        <select id="selectRouteMor"></select>
+                        	        <button onclick="searchRoute('Mor')">Summary</button>
+                        	        <button onclick="showRoute('Mor')">Print Route</button>
+                        	</div>
+				<div id="selectRouteBeagCont" class="hidden">
+                        	        <h3>Buachaille Etive Beag Routes</h3>
+                        	        <select id="selectRouteBeag"></select>
+                        	        <button onclick="searchRoute('Beag')">Summary</button>
+                        	        <button onclick="showRoute('Beag')">Print Route</button>
+                        	</div>
+                        	<div id="selectRouteBideanCont" class="hidden">
+                        	        <h3>Bidean nam Bian Routes</h3>
+                        	        <select id="selectRouteBidean"></select>
+                        	        <button onclick="searchRoute('Bidean')">Summary</button>
+                        	        <button onclick="showRoute('Bidean')">Print Route</button>
+                        	</div>
+                        	<div id="selectRouteBheithirCont" class="hidden">
+                        	        <h3>Beinn a Bheithir Routes</h3>
+                        	        <select id="selectRouteBheithir"></select>
+                        	        <button onclick="searchRoute('Bheithir')">Summary</button>
+                        	        <button onclick="showRoute('Bheithir')">Print Route</button>
+                       		</div>
+				<div id="selectRouteChrulaisteCont" class="hidden">
+                        	        <h3>Beinn a Chrulaiste Routes</h3>
+                        	        <select id="selectRouteChrulaiste"></select>
+                        	        <button onclick="searchRoute('Chrulaiste')">Summary</button>
+                        	        <button onclick="showRoute('Chrulaiste')">Print Route</button>
+                        	</div>
+                        	<div id="selectRouteEagachCont" class="hidden">
+                                	<h3>Aonach Eagach Routes</h3>
+                                	<select id="selectRouteEagach"></select>
+                                	<button onclick="searchRoute('Eagach')">Summary</button>
+                                	<button onclick="showRoute('Eagach')">Print Route</button>
+                        	</div>
+                        	<div class="element">
+                        	        <p id="statsPre" style="text-align:center;">Find routes</p>
+                        	        <p id="statsOut"></p>
+                        	</div>
+			<h2>Find Nearest Project</h2>
+			<button>Search</button>
 		</div>
 	</div>
 
@@ -114,5 +233,7 @@
 
 	<script src="./Scripts/Drop.js"></script>
 	<script src="./Scripts/conquestMap.js"></script>
+	<script src="./Scripts/selectRoute.js"></script>
+	<script src="./Scripts/generalSearch.js"></script>
 
 </html>
