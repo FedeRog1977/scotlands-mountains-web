@@ -29,12 +29,11 @@
                         <div class="pages-desktop">
                                 <a href="index.html">Drafting</a>
                                 <div class="pages-drop">
-					<p>Hiking</p>
+					<p>Field</p>
                                         <div class="pages-drop-cont">
                                         <u>
                                         <li><a href="./Conquest.html">Conquest Map</a></li>
                                         <li><a href="./Ranger.html">Ranger Calculator</a></li>
-                                        <li><a href="./General.html">General Search</a></li>
                                         </u>
                                         </div>
                                 </div>
@@ -48,12 +47,11 @@
         <div id="pagesDropCont" class="pages-mobile hidden">
                 <u>
                 <a href="index.html">Drafting</a>
-                <li>Hiking <a id="hikingDrop" href="#">&#9662;</a></li>
+                <li>Field <a id="hikingDrop" href="#">&#9662;</a></li>
                 <div id="pagesHiking" class="pages-hiking hidden">
                         <u>
                         <li><a href="./Conquest.html">Conquest Map</a></li>
                         <li><a href="./Ranger.html">Ranger Calculator</a></li>
-                        <li><a href="./General.html">General Search</a></li>
                         </u>
                 </div>
                 </u>
@@ -82,6 +80,17 @@
 		<a id="optionsOptClose" onclick="closeOptions()">&times;</a>
 		<div class="optionsCont">
 			<h1>Options</h1>
+			<h2>Location Options</h2>
+			<div class="optionsRow">
+				<div class="optionsCol">
+					<button id="showLocation" onclick="showLocation()"><i class="fas fa-location-arrow"></i></button>
+					<label for="showLocation" class="optionsLabel">Show<br>Location</label>
+				</div>
+				<div class="optionsCol">
+					<button id="nearest" onclick="showNearest()"><i class="fas fa-globe"></i></button>
+					<label for="nearest" class="optionsLabel">Show<br>Nearest</label>
+				</div>
+			</div>
 			<h2>Hill Options</h2>
 			<div class="optionsRow">
 				<div class="optionsCol">
@@ -100,8 +109,6 @@
 					<button id="corbetttops" onclick="showCorbettTops()"><i class="fas fa-mountain"></i></button>
 					<label for="corbetttops" class="optionsLabel">Corbett Tops</label>
 				</div>
-			</div>
-			<div class="optionsRow">
 				<div class="optionsCol">
 					<button id="hideMarkers" onclick="hideMarkers()"><i class="fas fa-mountain" style="color:white;"></i></button>
 					<label for="hideMarkers" class="optionsLabel">Hide</label>
@@ -110,130 +117,138 @@
 			<h2>Ability Options</h2>
 			<h2>Equipment Options</h2>
 			<h2>Search Route</h2>
+			<div class="optionsRow">
 				<h3>Select Landmass</h3>
 				<select id="selectLandmass" onchange="showRouteListCont()"></select>
 				<div id="selectRouteCruachanCont" class="hidden">
                                 	<h3>Cruachan Range Routes</h3>
-                                	<select id="selectRouteCruachan"></select>
-                                	<button onclick="searchRoute('Cruachan')">Summary</button>
-                                	<button onclick="showRoute('Cruachan')">Print Route</button>
+					<select id="selectRouteCruachan"></select>
+                                	<button onclick="searchRoute('Cruachan')" class="wide">Summary</button>
+                                	<button onclick="showRoute('Cruachan')" class="wide">Route</button>
                         	</div>
 				<div id="selectRouteUdlaidhCont" class="hidden">
                         	        <h3>Beinn Udlaidh and Beinn Bhreac-liath Routes</h3>
                         	        <select id="selectRouteUdlaidh"></select>
-                        	        <button onclick="searchRoute('Udlaidh')">Summary</button>
-                        	        <button onclick="showRoute('Udlaidh')">Print Route</button>
+                        	        <button onclick="searchRoute('Udlaidh')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Udlaidh')" class="wide">Route</button>
                         	</div>
 				<div id="selectRouteMhicCont" class="hidden">
                         	        <h3>Beinn Mhic-Mhonaidh Routes</h3>
                         	        <select id="selectRouteMhic"></select>
-                        	        <button onclick="searchRoute('Mhic')">Summary</button>
-                        	        <button onclick="showRoute('Mhic')">Print Route</button>
+                        	        <button onclick="searchRoute('Mhic')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Mhic')" class="wide">Route</button>
                         	</div>
                         	<div id="selectRouteCreachCont" class="hidden">
                         	        <h3>Creach Bheinn (Loch Creran) Routes</h3>
                         	        <select id="selectRouteCreach"></select>
-                        	        <button onclick="searchRoute('Creach')">Summary</button>
-                        	        <button onclick="showRoute('Creach')">Print Route</button>
+                        	        <button onclick="searchRoute('Creach')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Creach')" class="wide">Route</button>
                         	</div>
 				<div id="selectRouteStaravCont" class="hidden">
                         	        <h3>Starav Range Routes</h3>
                         	        <select id="selectRouteStarav"></select>
-                        	        <button onclick="searchRoute('Starav')">Summary</button>
-                        	        <button onclick="showRoute('Starav')">Print Route</button>
+                        	        <button onclick="searchRoute('Starav')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Starav')" class="wide">Route</button>
                        		</div>
 				<div id="selectRouteTrilleachanCont" class="hidden">
                         	        <h3>Beinn Trilleachan Routes</h3>
                         	        <select id="selectRouteTrilleachan"></select>
-                        	        <button onclick="searchRoute('Trilleachan')">Summary</button>
-                        	        <button onclick="showRoute('Trilleachan')">Print Route</button>
+                        	        <button onclick="searchRoute('Trilleachan')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Trilleachan')" class="wide">Route</button>
                         	</div>
 				<div id="selectRouteBlackCont" class="hidden">
                         	        <h3>Black Mount Range Routes</h3>
                         	        <select id="selectRouteBlack"></select>
-                        	        <button onclick="searchRoute('Black')">Summary</button>
-                        	        <button onclick="showRoute('Black')">Print Route</button>
+                        	        <button onclick="searchRoute('Black')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Black')" class="wide">Route</button>
                        		</div>
 				<div id="selectRouteSgulairdCont" class="hidden">
                         	        <h3>Beinn Sgulaird Routes</h3>
                         	        <select id="selectRouteSgulaird"></select>
-                        	        <button onclick="searchRoute('Sgulaird')">Summary</button>
-                        	        <button onclick="showRoute('Sgulaird')">Print Route</button>
+                        	        <button onclick="searchRoute('Sgulaird')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Sgulaird')" class="wide">Route</button>
                         	</div>
 				<div id="selectRouteFraochaidhCont" class="hidden">
                        	        	<h3>Fraochaidh Routes</h3>
                                 	<select id="selectRouteFraochaidh"></select>
-                                	<button onclick="searchRoute('Fraochaidh')">Summary</button>
-                                	<button onclick="showRoute('Fraochaidh')">Print Route</button>
+                                	<button onclick="searchRoute('Fraochaidh')" class="wide">Summary</button>
+                                	<button onclick="showRoute('Fraochaidh')" class="wide">Route</button>
                         	</div>
                         	<div id="selectRouteFhionnlaidhCont" class="hidden">
                         	        <h3>Beinn Fhionnlaidh Routes</h3>
                         	        <select id="selectRouteFhionnlaidh"></select>
-                        	        <button onclick="searchRoute('Fhionnlaidh')">Summary</button>
-                        	        <button onclick="showRoute('Fhionnlaidh')">Print Route</button>
+                        	        <button onclick="searchRoute('Fhionnlaidh')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Fhionnlaidh')" class="wide">Route</button>
                         	</div>
 				<div id="selectRouteHulaidhCont" class="hidden">
                               		<h3>Sgor na h-Ulaidh Routes</h3>
                                 	<select id="selectRouteHulaidh"></select>
-                                	<button onclick="searchRoute('Hulaidh')">Summary</button>
-                                	<button onclick="showRoute('Hulaidh')">Print Route</button>
+                                	<button onclick="searchRoute('Hulaidh')" class="wide">Summary</button>
+                                	<button onclick="showRoute('Hulaidh')" class="wide">Route</button>
                         	</div>
                         	<div id="selectRouteDubhCont" class="hidden">
                         	        <h3>Stob Dubh Routes</h3>
                         	        <select id="selectRouteDubh"></select>
-                        	        <button onclick="searchRoute('Dubh')">Summary</button>
-                        	        <button onclick="showRoute('Dubh')">Print Route</button>
+                        	        <button onclick="searchRoute('Dubh')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Dubh')" class="wide">Route</button>
                         	</div>
                         	<div id="selectRouteMorCont" class="hidden">
                         	        <h3>Buachaille Etive Mor Routes</h3>
                         	        <select id="selectRouteMor"></select>
-                        	        <button onclick="searchRoute('Mor')">Summary</button>
-                        	        <button onclick="showRoute('Mor')">Print Route</button>
+                        	        <button onclick="searchRoute('Mor')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Mor')" class="wide">Route</button>
                         	</div>
 				<div id="selectRouteBeagCont" class="hidden">
                         	        <h3>Buachaille Etive Beag Routes</h3>
                         	        <select id="selectRouteBeag"></select>
-                        	        <button onclick="searchRoute('Beag')">Summary</button>
-                        	        <button onclick="showRoute('Beag')">Print Route</button>
+                        	        <button onclick="searchRoute('Beag')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Beag')" class="wide">Route</button>
                         	</div>
                         	<div id="selectRouteBideanCont" class="hidden">
                         	        <h3>Bidean nam Bian Routes</h3>
                         	        <select id="selectRouteBidean"></select>
-                        	        <button onclick="searchRoute('Bidean')">Summary</button>
-                        	        <button onclick="showRoute('Bidean')">Print Route</button>
+                        	        <button onclick="searchRoute('Bidean')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Bidean')" class="wide">Route</button>
                         	</div>
                         	<div id="selectRouteBheithirCont" class="hidden">
                         	        <h3>Beinn a Bheithir Routes</h3>
                         	        <select id="selectRouteBheithir"></select>
-                        	        <button onclick="searchRoute('Bheithir')">Summary</button>
-                        	        <button onclick="showRoute('Bheithir')">Print Route</button>
+                        	        <button onclick="searchRoute('Bheithir')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Bheithir')" class="wide">Route</button>
                        		</div>
 				<div id="selectRouteChrulaisteCont" class="hidden">
                         	        <h3>Beinn a Chrulaiste Routes</h3>
                         	        <select id="selectRouteChrulaiste"></select>
-                        	        <button onclick="searchRoute('Chrulaiste')">Summary</button>
-                        	        <button onclick="showRoute('Chrulaiste')">Print Route</button>
+                        	        <button onclick="searchRoute('Chrulaiste')" class="wide">Summary</button>
+                        	        <button onclick="showRoute('Chrulaiste')" class="wide">Route</button>
                         	</div>
                         	<div id="selectRouteEagachCont" class="hidden">
                                 	<h3>Aonach Eagach Routes</h3>
                                 	<select id="selectRouteEagach"></select>
-                                	<button onclick="searchRoute('Eagach')">Summary</button>
-                                	<button onclick="showRoute('Eagach')">Print Route</button>
+                                	<button onclick="searchRoute('Eagach')" class="wide">Summary</button>
+                                	<button onclick="showRoute('Eagach')" class="wide">Route</button>
                         	</div>
-                        	<div class="element">
+                        	<div class="element" style="background-color:var(--fg);">
                         	        <p id="statsPre" style="text-align:center;">Find routes</p>
                         	        <p id="statsOut"></p>
                         	</div>
-			<h2>Find Nearest Project</h2>
-			<button>Search</button>
+			</div>
+			<h2>Search Location</h2>
+			<div class="optionsRow">
+                        	<input type="text" id="inpLocation"></input>
+                        	<button onclick="searchLocation()">Search Location</button>
+                        	<div class="element">
+                        	        <p id="locationPre" style="text-align:center;">Find a Munro, Munro Top, Corbett or Corbett Top</p>
+                        	        <p id="locationOut"></p>
+                        	</div>
+			</div>
 		</div>
 	</div>
 
 </body>
 
 	<script src="./Scripts/Drop.js"></script>
-	<script src="./Scripts/conquestMap.js"></script>
-	<script src="./Scripts/selectRoute.js"></script>
-	<script src="./Scripts/generalSearch.js"></script>
+	<script src="./Scripts/Conquest.js"></script>
+	<script src="./Scripts/Routes.js"></script>
 
 </html>

@@ -759,6 +759,10 @@ button:active {
 		border: 1px solid black;
 	}
 
+	#options select {
+		max-width: 250px;
+	}
+
 	#options button {
 		color: var(--font);
 		border: 2px solid var(--font);
@@ -766,6 +770,8 @@ button:active {
 		background: #FFFFFF;
 		height: 30px;
 		width: 30px;
+		margin: 0.625em 0 0.625em 0;
+		padding: 0.25em;
 		transition: color var(--link-trans);
 	}
 
@@ -776,14 +782,21 @@ button:active {
 		transition: color var(--link-trans);
 	}
 
+	#options button.wide {
+		width: 75px;
+	}
+
 		.optionsRow {
+			background-color: var(--bg);
 			text-align: center;
-			margin: 0.5em 0 0.5em 0;
+			margin: 1.25em 0 1.25em 0;
+			padding: 1.25em 0.5em 1.25em 0.5em;
 		}
 
 		.optionsCol {
 			text-align: center;
 			display: inline-block;
+			margin: 0 0.625em 0 0.625em;
 		}
 
 		.optionsLabel {
