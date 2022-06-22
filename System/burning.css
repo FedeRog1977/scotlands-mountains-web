@@ -52,6 +52,7 @@
 	--font-header-footer: #808080;
 	/*--font-hover: #7F5539;*/
 	--font-hover: #87CEEB;
+	--hill-hide: #BEBEBE;
 	--link-trans: 0.25s;
 	--dark-trans: 0.5s;
 }
@@ -696,12 +697,16 @@ button:active {
 	margin: 0.75em;
 }
 
-	#menu, #optionsOpt {
+	#optionsOpt, #menu {
 	        background: var(--fg);
 		border-radius: 0.25em;
 	        position: absolute;
 		height: 25px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+	}
+
+	#optionsOpt {
+		font-size: 18px;
 	}
 
 	#menu {
@@ -711,16 +716,14 @@ button:active {
 		padding: 12.5px 10px 7.5px 10px;
 	}
 
-	#optionsOpt {
-		font-size: 18px;
-	}
-
 		#menu input[type="radio"] {
+			cursor: pointer;
         		margin-top: -1px;
         		vertical-align: middle;
     		}
 
     		#menu label {
+			cursor: pointer;
     			margin-right: 8px;
     		}
 
@@ -734,6 +737,15 @@ button:active {
 		#optionsOpt a:hover {
 			cursor: pointer;
 		}
+
+	#optionsOptOpen {
+		transition: color var(--link-trans);
+	}
+
+	#optionsOptOpen:hover {
+		color: var(--font-hover);
+		transition: color var(--link-trans);
+	}
 
 #options {
 	font-family: Audi-Regular;
@@ -793,9 +805,22 @@ button:active {
 		transition: color var(--link-trans), border-color var(--link-trans);
 	}
 
+	#options button.hide {
+		color: var(--hill-hide);
+	}
+
+	#options button.hide:hover {
+		color: var(--font-hover);
+	}
+
 	#options button.wide {
 		height: 30px;
 		width: 75px;
+	}
+
+	#options button.wider {
+		height: 30px;
+		width: 100px;
 	}
 
 		.optionsRow {

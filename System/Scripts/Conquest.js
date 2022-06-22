@@ -1104,7 +1104,7 @@ function showRoute(landmass) {
 /*
  * Hide All GPX
  */
-function hideRoute() {
+function hideRoutes() {
     for (var i = 0; i < routes.length; i++) {
         map.removeLayer(routes[i]);
     }

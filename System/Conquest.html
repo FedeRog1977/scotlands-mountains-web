@@ -61,6 +61,11 @@
 	<div id="scope"></div>
 
 	<div class="options-container">
+		<div id="optionsOpt">
+			<div id="optionsOptOpen">
+				<a onclick="openOptions()"><i class="fas fa-angle-double-right"></i></a>
+			</div>
+		</div>
 		<div id="menu">
     			<input id="leisure" type="radio" name="toggle" value="Leisure" checked="checked">
     			<label for="leisure">Leisure</label>
@@ -68,11 +73,6 @@
     			<label for="road">Road</label>
     			<input id="outdoor" type="radio" name="toggle" value="Outdoor">
     			<label for="outdoor">Outdoor</label>
-		</div>
-		<div id="optionsOpt">
-			<div id="optionsOptOpen">
-				<a onclick="openOptions()"><i class="fas fa-angle-double-right"></i></a>
-			</div>
 		</div>
 	</div>
 
@@ -110,7 +110,7 @@
 					<label for="corbetttops" class="optionsLabel">Show<br>Corbett Tops</label>
 				</div>
 				<div class="optionsCol">
-					<button id="hideMarkers" onclick="hideMarkers()"><i class="fas fa-mountain" style="color:var(--bg);"></i></button>
+					<button id="hideMarkers" onclick="hideMarkers()" class="hide"><i class="fas fa-mountain"></i></button>
 					<label for="hideMarkers" class="optionsLabel">Hide<br>All</label>
 				</div>
 			</div>
@@ -235,6 +235,7 @@
                         	<div class="element" style="background-color:var(--fg);">
                         	        <p id="statsPre">Find Routes</p>
                         	        <p id="statsOut"></p>
+                                	<button onclick="hideRoutes()" class="wider">Hide Routes</button>
                         	</div>
 			</div>
 			<h2>Search Location</h2>
