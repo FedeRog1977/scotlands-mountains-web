@@ -80,8 +80,8 @@
 		<a id="optionsOptClose" onclick="closeOptions()">&times;</a>
 		<div class="optionsCont">
 			<h1>Options</h1>
-			<h2>Location Options</h2>
-			<div class="optionsRow">
+			<h2>Location</h2>
+			<div class="optionsRow flexRow">
 				<div class="optionsCol">
 					<button id="showLocation" onclick="showLocation()"><i class="fas fa-location-arrow"></i></button>
 					<label for="showLocation" class="optionsLabel">Show<br>Location</label>
@@ -91,31 +91,35 @@
 					<label for="nearest" class="optionsLabel">Show<br>Nearest</label>
 				</div>
 			</div>
-			<h2>Hill Options</h2>
-			<div class="optionsRow">
+			<h2>Landmass</h2>
+			<div class="optionsRow flexRow">
 				<div class="optionsCol">
 					<button id="munros" onclick="showMunros()"><i class="fas fa-mountain"></i></button>
-					<label for="munros" class="optionsLabel">Munros</label>
+					<label for="munros" class="optionsLabel">Show<br>Munros</label>
 				</div>
 				<div class="optionsCol">
 					<button id="munrotops" onclick="showMunroTops()"><i class="fas fa-mountain"></i></button>
-					<label for="munrotops" class="optionsLabel">Munro Tops</label>
+					<label for="munrotops" class="optionsLabel">Show<br>Munro Tops</label>
 				</div>
 				<div class="optionsCol">
 					<button id="corbetts" onclick="showCorbetts()"><i class="fas fa-mountain"></i></button>
-					<label for="corbetts" class="optionsLabel">Corbetts</label>
+					<label for="corbetts" class="optionsLabel">Show<br>Corbetts</label>
 				</div>
 				<div class="optionsCol">
 					<button id="corbetttops" onclick="showCorbettTops()"><i class="fas fa-mountain"></i></button>
-					<label for="corbetttops" class="optionsLabel">Corbett Tops</label>
+					<label for="corbetttops" class="optionsLabel">Show<br>Corbett Tops</label>
 				</div>
 				<div class="optionsCol">
-					<button id="hideMarkers" onclick="hideMarkers()"><i class="fas fa-mountain" style="color:white;"></i></button>
-					<label for="hideMarkers" class="optionsLabel">Hide</label>
+					<button id="hideMarkers" onclick="hideMarkers()"><i class="fas fa-mountain" style="color:var(--bg);"></i></button>
+					<label for="hideMarkers" class="optionsLabel">Hide<br>All</label>
 				</div>
 			</div>
-			<h2>Ability Options</h2>
-			<h2>Equipment Options</h2>
+			<h2>Ability</h2>
+			<div class="optionsRow">
+			</div>
+			<h2>Equipment</h2>
+			<div class="optionsRow">
+			</div>
 			<h2>Search Route</h2>
 			<div class="optionsRow">
 				<h3>Select Landmass</h3>
@@ -229,16 +233,16 @@
                                 	<button onclick="showRoute('Eagach')" class="wide">Route</button>
                         	</div>
                         	<div class="element" style="background-color:var(--fg);">
-                        	        <p id="statsPre" style="text-align:center;">Find routes</p>
+                        	        <p id="statsPre">Find Routes</p>
                         	        <p id="statsOut"></p>
                         	</div>
 			</div>
 			<h2>Search Location</h2>
 			<div class="optionsRow">
                         	<input type="text" id="inpLocation"></input>
-                        	<button onclick="searchLocation()">Search Location</button>
-                        	<div class="element">
-                        	        <p id="locationPre" style="text-align:center;">Find a Munro, Munro Top, Corbett or Corbett Top</p>
+                        	<button onclick="searchLocation()" class="wide">Summary</button>
+                        	<div class="element" style="background-color:var(--fg);">
+                        	        <p id="locationPre">Find a Munro, Munro Top, Corbett or Corbett Top</p>
                         	        <p id="locationOut"></p>
                         	</div>
 			</div>

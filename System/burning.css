@@ -697,7 +697,6 @@ button:active {
 }
 
 	#menu, #optionsOpt {
-		font-size: 18px;
 	        background: var(--fg);
 		border-radius: 0.25em;
 	        position: absolute;
@@ -706,9 +705,14 @@ button:active {
 	}
 
 	#menu {
+		font-size: 16px;
 		font-family: Audi-Extended;
 		margin: 0 0 0 3em;
-		padding: 10px;
+		padding: 12.5px 10px 7.5px 10px;
+	}
+
+	#optionsOpt {
+		font-size: 18px;
 	}
 
 		#menu input[type="radio"] {
@@ -743,15 +747,22 @@ button:active {
 	left: 0;
 	overflow-x: hidden;
 	transition: 0.5s; 
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }	
 
 	#options #optionsOptClose {
 		font-size: 36px;
 		cursor: pointer;
 		position: absolute;
-		top: 0;
-		right: 25px;
+		top: 0.125em;
+		right: 0.5em;
 		margin: 0 0 0 50px;
+		transition: color var(--link-trans);
+	}
+
+	#options #optionsOptClose:hover {
+		color: var(--font-hover);
+		transition: color var(--link-trans);
 	}
 
 	.optionsCont {
@@ -765,46 +776,69 @@ button:active {
 
 	#options button {
 		color: var(--font);
-		border: 2px solid var(--font);
+		border: 1.5px solid var(--font);
 		border-radius: 0.25em;
 		background: #FFFFFF;
-		height: 30px;
-		width: 30px;
+		height: 40px;
+		width: 40px;
 		margin: 0.625em 0 0.625em 0;
 		padding: 0.25em;
-		transition: color var(--link-trans);
+		transition: color var(--link-trans), border-color var(--link-trans);
 	}
 
 	#options button:hover {
 		cursor: pointer;
 		color: var(--font-hover);
-		border: 2px solid var(--font-hover);
-		transition: color var(--link-trans);
+		border-color: var(--font-hover);
+		transition: color var(--link-trans), border-color var(--link-trans);
 	}
 
 	#options button.wide {
+		height: 30px;
 		width: 75px;
 	}
 
 		.optionsRow {
-			background-color: var(--bg);
 			text-align: center;
-			margin: 1.25em 0 1.25em 0;
+			background-color: var(--bg);
+			margin: 0.625em 0.625em 1.25em 0.625em;
 			padding: 1.25em 0.5em 1.25em 0.5em;
+			border: 1px solid black;
 		}
+
+		.flexRow {
+                	display: flex;
+                	flex-wrap: wrap;
+		} 
+        
+		.flexRow > * {
+                	flex-shrink: 0;
+                	width: 100%;
+                	max-width: 100%;
+        	}
 
 		.optionsCol {
 			text-align: center;
 			display: inline-block;
-			margin: 0 0.625em 0 0.625em;
+			margin: 0 0.25em 0 0.25em;
+			border: 1px solid black;
 		}
+
+                @media (min-width: 768px) {
+                        .optionsCol {
+                                flex: 1 0;
+                        }
+                }
 
 		.optionsLabel {
-			font-size: 14px;
+			font-size: 12px;
 			display: block;
+			border: 1px solid black;
 		}
 
-/* General Search */
+#statsOut, #locationOut {
+	font-size: 14px;
+}
 
 #statsOut a {
 	font-family: Audi-Extended;

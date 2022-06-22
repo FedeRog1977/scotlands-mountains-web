@@ -4,6 +4,10 @@
 var apiKey = 'VfSaBhJrLbr7vR7GLkAAGH02AZM6lzkP';
 var serviceUrl = 'https://api.os.uk/maps/raster/v1/zxy';
 
+
+/*
+ * Define Coordinate System
+ */
 var crs = new L.Proj.CRS('EPSG:27700',
     `+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717
     +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,
@@ -14,10 +18,18 @@ var crs = new L.Proj.CRS('EPSG:27700',
         origin: [-238375,1376256]
     });
 
+
+/*
+ * Transform Coordinate Systems
+ */
 var transformCoords = function(arr) {
     return proj4('EPSG:27700', 'EPSG:4326', arr).reverse();
 };
 
+
+/*
+ * Define Map Options
+ */
 var mapOptions = {
     //cursor: true,
     crs: crs,
@@ -32,41 +44,37 @@ var mapOptions = {
     attributionControl: false
 };
 
+
+/*
+ * Create Map
+ */
 var map = L.map('map', mapOptions);
 var basemap = L.tileLayer(serviceUrl + '/Leisure_27700/{z}/{x}/{y}.png?key=' + apiKey).addTo(map);
 
 
+/*
+ * Display Options Menu
+ */
+function openOptions() {
+    document.getElementById('options').style.width = "525px";
+}
 
-
+function closeOptions() {
+    document.getElementById('options').style.width = "0";
+}
 
 
 /*
  * Center to location
+ * INCOMPLETE
  */
 function showLocation() {
     map.locate({setView: true, maxZoom: 16});
 }
 
 
-
-
-
-
 /*
- * Current Location Icon
- */
-var locationIcon = L.icon({
-    iconUrl: "./Photos/Map/mountain.png",
-    iconSize:     [30, 30],
-    iconAnchor:   [10, 10]
-});
-
-
-
-
-
-/*
- * Crosshair Icon
+ * Marker Icons
  */
 var crosshairIcon = L.icon({
     iconUrl: "./Photos/Map/crosshair.png",
@@ -74,6 +82,21 @@ var crosshairIcon = L.icon({
     iconAnchor:   [10, 10]
 });
 
+var locationIcon = L.icon({
+    iconUrl: "./Photos/Map/mountain.png",
+    iconSize:     [30, 30],
+    iconAnchor:   [10, 10]
+});
+
+var mountainIcon = new L.Icon({
+    iconUrl: "./Photos/Map/mountain.png",
+    iconSize: [30, 36],
+});
+
+
+/*
+ * Display Center Crosshair 
+ */
 crosshair = new L.marker(map.getCenter(), {icon: crosshairIcon, clickable:false});
 crosshair.addTo(map);
 
@@ -82,12 +105,9 @@ map.on("move", function(e) {
 });
 
 
-
-
-
-
 /*
  * Display Pan Coordinates
+ * INCOMPLETE
  */
 const panCoordsCont = document.getElementById('scope');
 
@@ -101,12 +121,47 @@ const panCoordsCont = document.getElementById('scope');
 //L.control.mousePosition().addTo(map);
 
 
+/*
+ * Display Pan Coordinates
+ * INCOMPLETE
+ */
+L.CursorHandler = L.Handler.extend({
 
+    addHooks: function () {
+        this._popup = new L.Popup();
+        this._map.on('mouseover', this._open, this);
+        this._map.on('mousemove', this._update, this);
+        this._map.on('mouseout', this._close, this);
+    },
 
+    removeHooks: function () {
+        this._map.off('mouseover', this._open, this);
+        this._map.off('mousemove', this._update, this);
+        this._map.off('mouseout', this._close, this);
+    },
+    
+    _open: function (e) {
+        this._update(e);
+        this._popup.openOn(this._map);
+    },
+
+    _close: function () {
+        this._map.closePopup(this._popup);
+    },
+
+    _update: function (e) {
+        this._popup.setLatLng(e.latlng)
+            .setContent(e.latlng.toString());
+    }
+
+});
+
+L.Map.addInitHook('addHandler', 'cursor', L.CursorHandler);
 
 
 /*
- * Distance from Location
+ * Display Distance from a Location
+ * INCOMPLETE
  */
 function onLocationFound(e) {
     var radius = e.accuracy;
@@ -117,11 +172,6 @@ function onLocationFound(e) {
 }
 //
 //map.on('locationfound', onLocationFound);
-
-
-
-
-
 
 
 /*
@@ -150,14 +200,16 @@ function switchLayer() {
     var basemap = L.tileLayer(serviceUrl + type + apiKey).addTo(map);
 }
 
-/*
- * Map Icons
- */
-var mountainIcon = new L.Icon({
-    iconUrl: "./Photos/Map/mountain.png",
-    iconSize: [30, 36],
-});
 
+/*
+ * Define JSON for All Locations
+ */
+let locations = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json';
+
+
+/*
+ * Create Mountain Icon
+ */
 var markers = [];
 
 function createMarker(hill,type,elev,lat,latDir,lon,lonDir,img,iconType) {
@@ -169,14 +221,10 @@ function createMarker(hill,type,elev,lat,latDir,lon,lonDir,img,iconType) {
     markers.push(hillMarker);
 }
 
-function hideMarkers() {
-    for (var i = 0; i < markers.length; i++) {
-        map.removeLayer(markers[i]);
-    }
-}
 
-let locations = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json';
-
+/*
+ * Show Munro Icons
+ */
 function showMunros() {
     fetch(locations)
         .then((resp) => {
@@ -214,6 +262,10 @@ function showMunros() {
         })
 }
 
+
+/*
+ * Show Munro Top Icons
+ */
 function showMunroTops() {
     fetch(locations)
         .then((resp) => {
@@ -251,6 +303,10 @@ function showMunroTops() {
         })
 }
 
+
+/*
+ * Show Corbett Icons
+ */
 function showCorbetts() {
     fetch(locations)
         .then((resp) => {
@@ -288,6 +344,10 @@ function showCorbetts() {
         })
 }
 
+
+/*
+ * Show Corbett Top Icons
+ */
 function showCorbettTops() {
     fetch(locations)
         .then((resp) => {
@@ -326,69 +386,14 @@ function showCorbettTops() {
 }
 
 
-
-
-
-
-
 /*
- * Coordinated Upon Pan
+ * Hide All Icons
  */
-L.CursorHandler = L.Handler.extend({
-
-    addHooks: function () {
-        this._popup = new L.Popup();
-        this._map.on('mouseover', this._open, this);
-        this._map.on('mousemove', this._update, this);
-        this._map.on('mouseout', this._close, this);
-    },
-
-    removeHooks: function () {
-        this._map.off('mouseover', this._open, this);
-        this._map.off('mousemove', this._update, this);
-        this._map.off('mouseout', this._close, this);
-    },
-    
-    _open: function (e) {
-        this._update(e);
-        this._popup.openOn(this._map);
-    },
-
-    _close: function () {
-        this._map.closePopup(this._popup);
-    },
-
-    _update: function (e) {
-        this._popup.setLatLng(e.latlng)
-            .setContent(e.latlng.toString());
+function hideMarkers() {
+    for (var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
     }
-
-    
-});
-
-L.Map.addInitHook('addHandler', 'cursor', L.CursorHandler);
-
-
-
-
-
-
-
-
-
-
-
-/*
- * Option Menu
- */
-function openOptions() {
-    document.getElementById('options').style.width = "500px";
 }
-
-function closeOptions() {
-    document.getElementById('options').style.width = "0";
-}
-
 
 
 /*
@@ -481,7 +486,7 @@ function searchLocation() {
 
                         locationOut.innerHTML =
                             "<h1>" + hillName + "</h1>"
-                            + hillName + " is a Munro on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br>"
+                            + hillName + " is a <b>Munro</b> on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br><hr>"
                             + landmassSubsubtype
                             + "<b>Parent Landmass</b>: " + landmassParentLandmass + "<br>"
                             + "<b>Parent Peak</b>: " + landmassParentPeak + "<br>"
@@ -506,7 +511,7 @@ function searchLocation() {
 
 
 /*
- * Score a Route's Difficulty
+ * Calculate a Route's Difficulty
  */
 function scoreRoute(elev,dist,nTops,type,stage,terrType,terrDiff) {
     const convConstFt = 0.3048;
@@ -1062,6 +1067,8 @@ function searchRoute(landmass) {
  * Show a Route's GPX 
  * Using GPX to GeoJSON Method
  */
+var routes = [];
+
 function showRoute(landmass) {
     fetch(locations)
         .then((resp) => {
@@ -1081,13 +1088,24 @@ function showRoute(landmass) {
 		    }
 		}
 	    }
+            fetch(loadRoute)
+                .then(response => response.text())
+                .then(str => new DOMParser().parseFromString(str, "text/xml"))
+                .then(doc => {
+	            let data = toGeoJSON.gpx(doc);
+	            const route = data;
+	            var routeTrack = new L.geoJSON(route,{color:'#A80606'}).addTo(map);
+		    routes.push(routeTrack);
+                })
 	})
-    fetch(loadRoute)
-        .then(response => response.text())
-        .then(str => new DOMParser().parseFromString(str, "text/xml"))
-        .then(doc => {
-	    let data = toGeoJSON.gpx(doc);
-	    const route = data;
-	    L.geoJSON(route,{color:'#A80606'}).addTo(map);
-        })
+}
+
+
+/*
+ * Hide All GPX
+ */
+function hideRoute() {
+    for (var i = 0; i < routes.length; i++) {
+        map.removeLayer(routes[i]);
+    }
 }
