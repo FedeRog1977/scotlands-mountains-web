@@ -83,13 +83,13 @@ var crosshairIcon = L.icon({
 });
 
 var locationIcon = L.icon({
-    iconUrl: "./Photos/Map/mountain.png",
+    iconUrl: "./Photos/Map/location.svg",
     iconSize:     [30, 30],
     iconAnchor:   [10, 10]
 });
 
 var mountainIcon = new L.Icon({
-    iconUrl: "./Photos/Map/mountain.png",
+    iconUrl: "./Photos/Map/mountain.svg",
     iconSize: [30, 36],
 });
 
@@ -103,6 +103,18 @@ crosshair.addTo(map);
 map.on("move", function(e) {
     crosshair.setLatLng(map.getCenter());
 });
+
+// Marker for location
+function onLocationFound(e) {
+    var radius = e.accuracy;
+
+    L.marker(e.latlng, {icon: locationIcon}).addTo(map)
+	.bindPopup("You&rsquo;re within an accuracy of " + radius + "m from here").openPopup();
+
+    L.circle(e.latlng, (radius*500)).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
 
 
 /*
@@ -157,21 +169,6 @@ L.CursorHandler = L.Handler.extend({
 });
 
 L.Map.addInitHook('addHandler', 'cursor', L.CursorHandler);
-
-
-/*
- * Display Distance from a Location
- * INCOMPLETE
- */
-function onLocationFound(e) {
-    var radius = e.accuracy;
-
-    L.marker(e.latlng, {icon: locationIcon}).addTo(map).bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-   //L.circle(e.latlng, radius).addTo(map);
-}
-//
-//map.on('locationfound', onLocationFound);
 
 
 /*
@@ -406,87 +403,167 @@ function searchLocation() {
         })
         .then((data) => {
             const hills = data;
-            const inpHill = document.getElementById("inpLocation").value.toLowerCase();
+            const inpLocation = document.getElementById("inpLocation").value.toLowerCase();
             const locationPre = document.getElementById("locationPre");
             const locationOut = document.getElementById("locationOut");
+	    let landmassName = "";
+	    let landmassType = "";
+	    let landmassSubtype = "";
+            let landmassSubsubtype = "";
+            let landmassParentLandmass = "";
+            let landmassParentPeak = "";
+            let landmassRegion = "";
+            let landmassSubregion = "";
+            let landmassInformalRegion = "";
+	    let hillTypeStr = "";
             let hillType = "";
+            let hillBuff = "";
             let hillName = "";
-            for (var i in hills.landmass) {
-                for (var k in hills.landmass[i].munro) {
-                    if (hills.landmass[i].munro[k].name.toLowerCase().match(inpHill)) {
-                        hillType = "hills.landmass[i].munro";
-                        //hillName = "hills.landmass[i].munro[k].name";
-                    }
-                }
-                for (var k in hills.landmass[i].munrotop) {
-                    if (hills.landmass[i].munrotop[k].name.toLowerCase().match(inpHill)) {
-                        hillType = "hills.landmass[i].munrotop";
-                        //hillName = "hills.landmass[i].munrotop[k].name";
-                    }
-                }
-                for (var k in hills.landmass[i].corbett) {
-                    if (hills.landmass[i].corbett[k].name.toLowerCase().match(inpHill)) {
-                        hillType = "hills.landmass[i].corbett";
-                        //hillName = "hills.landmass[i].corbett[k].name";
-                    }
-                }
-                for (var k in hills.landmass[i].corbetttop) {
-                    if (hills.landmass[i].corbetttop[k].name.toLowerCase().match(inpHill)) {
-                        hillType = "hills.landmass[i].corbetttop";
-                        //hillName = "hills.landmass[i].corbetttop[k].name";
-                    }
-                }
-                for (var k in hillType) {
-                    if (hills.landmass[i].munro[k].name.toLowerCase().match(inpHill)) {
-                        let hillName = hills.landmass[i].munro[k].name;
-                        let landmassName = hills.landmass[i].name;
-                        let landmassType = hills.landmass[i].type;
-                        let landmassParentLandmass = hills.landmass[i].parentlandmass;
-                        let landmassParentPeak = hills.landmass[i].parentpeak;
-                        let landmassRegion = hills.landmass[i].region;
-                        let landmassSubregion = hills.landmass[i].subregion;
-                        let landmassInformalRegion = hills.landmass[i].informalregion;
+	    for (var i in hills.landmass) {
+		for (var k in hills.landmass[i].munro) {
+        	    if (hills.landmass[i].munro[k].name.toLowerCase().match(inpLocation)) {
+			landmassName = hills.landmass[i].name;
+			landmassType = hills.landmass[i].type;
 
-                        let landmassSubtype = "";
                         if (hills.landmass[i].subtype == null) {
                             landmassSubtype = "";
                         } else {
                             landmassSubtype = " (" + hills.landmass[i].subtype + ")";
                         }
 
-                        let landmassSubsubtype = "";
                         if (hills.landmass[i].subsubtype == null) {
                             landmassSubsubtype = "";
                         } else {
                             landmassSubsubtype = "<b>Prominent feature</b>: " + hills.landmass[i].subsubtype + "<br>";
                         }
 
-                        let hillElev = hills.landmass[i].munro[k].elevation.toLocaleString("en-US");
+                        landmassParentLandmass = hills.landmass[i].parentlandmass;
+                        landmassParentPeak = hills.landmass[i].parentpeak;
+                        landmassRegion = hills.landmass[i].region;
+                        landmassSubregion = hills.landmass[i].subregion;
+                        landmassInformalRegion = hills.landmass[i].informalregion;
 
-                        let hillLat = Math.abs(hills.landmass[i].munro[k].lat);
+                    	hillTypeStr = "Munro";
+                    	hillType = hills.landmass[i].munro;
+		    	hillBuff = hills.landmass[i].munro[k];
+                    	hillName = hills.landmass[i].munro[k].name;
+		    }
+		}
+		for (var k in hills.landmass[i].munrotop) {
+                    if (hills.landmass[i].munrotop[k].name.toLowerCase().match(inpLocation)) {
+			landmassName = hills.landmass[i].name;
+			landmassType = hills.landmass[i].type;
+
+                        if (hills.landmass[i].subtype == null) {
+                            landmassSubtype = "";
+                        } else {
+                            landmassSubtype = " (" + hills.landmass[i].subtype + ")";
+                        }
+
+                        if (hills.landmass[i].subsubtype == null) {
+                            landmassSubsubtype = "";
+                        } else {
+                            landmassSubsubtype = "<b>Prominent feature</b>: " + hills.landmass[i].subsubtype + "<br>";
+                        }
+
+                        landmassParentLandmass = hills.landmass[i].parentlandmass;
+                        landmassParentPeak = hills.landmass[i].parentpeak;
+                        landmassRegion = hills.landmass[i].region;
+                        landmassSubregion = hills.landmass[i].subregion;
+                        landmassInformalRegion = hills.landmass[i].informalregion;
+
+                    	hillTypeStr = "Munro Top";
+                    	hillType = hills.landmass[i].munrotop;
+		    	hillBuff = hills.landmass[i].munrotop[k];
+                    	hillName = hills.landmass[i].munrotop[k].name;
+		    }
+		}
+		for (var k in hills.landmass[i].corbett) {
+                    if (hills.landmass[i].corbett[k].name.toLowerCase().match(inpLocation)) {
+			landmassName = hills.landmass[i].name;
+			landmassType = hills.landmass[i].type;
+
+                        if (hills.landmass[i].subtype == null) {
+                            landmassSubtype = "";
+                        } else {
+                            landmassSubtype = " (" + hills.landmass[i].subtype + ")";
+                        }
+
+                        if (hills.landmass[i].subsubtype == null) {
+                            landmassSubsubtype = "";
+                        } else {
+                            landmassSubsubtype = "<b>Prominent feature</b>: " + hills.landmass[i].subsubtype + "<br>";
+                        }
+
+                        landmassParentLandmass = hills.landmass[i].parentlandmass;
+                        landmassParentPeak = hills.landmass[i].parentpeak;
+                        landmassRegion = hills.landmass[i].region;
+                        landmassSubregion = hills.landmass[i].subregion;
+                        landmassInformalRegion = hills.landmass[i].informalregion;
+
+                    	hillTypeStr = "Corbett";
+                    	hillType = hills.landmass[i].corbett;
+		    	hillBuff = hills.landmass[i].corbett[k];
+                    	hillName = hills.landmass[i].corbett[k].name;
+		    }
+		}
+		for (var k in hills.landmass[i].corbetttop) {
+                    if (hills.landmass[i].corbetttop[k].name.toLowerCase().match(inpLocation)) {
+			landmassName = hills.landmass[i].name;
+			landmassType = hills.landmass[i].type;
+
+                        if (hills.landmass[i].subtype == null) {
+                            landmassSubtype = "";
+                        } else {
+                            landmassSubtype = " (" + hills.landmass[i].subtype + ")";
+                        }
+
+                        if (hills.landmass[i].subsubtype == null) {
+                            landmassSubsubtype = "";
+                        } else {
+                            landmassSubsubtype = "<b>Prominent feature</b>: " + hills.landmass[i].subsubtype + "<br>";
+                        }
+
+                        landmassParentLandmass = hills.landmass[i].parentlandmass;
+                        landmassParentPeak = hills.landmass[i].parentpeak;
+                        landmassRegion = hills.landmass[i].region;
+                        landmassSubregion = hills.landmass[i].subregion;
+                        landmassInformalRegion = hills.landmass[i].informalregion;
+
+                    	hillTypeStr = "Corbett Top";
+                    	hillType = hills.landmass[i].corbetttop;
+	            	hillBuff = hills.landmass[i].corbetttop[k];
+                    	hillName = hills.landmass[i].corbetttop[k].name;
+		    }
+		}
+                for (var k in hillType) {
+                    if (hillName.toLowerCase().match(inpLocation)) {
+                        let hillElev = hillBuff.elevation.toLocaleString("en-US");
+
+                        let hillLat = Math.abs(hillBuff.lat);
                         let hillLatDir = "";
-                        if (hills.landmass[i].munro[k].lat < 0) {
+                        if (hillBuff.lat < 0) {
                             hillLatDir = "S";
-                        } else if (hills.landmass[i].munro[k].lat > 0) {
+                        } else if (hillBuff.lat > 0) {
                             hillLatDir = "N";
                         }
 
-                        let hillLon = Math.abs(hills.landmass[i].munro[k].lon);
+                        let hillLon = Math.abs(hillBuff.lon);
                         let hillLonDir = "";
-                        if (hills.landmass[i].munro[k].lon < 0) {
+                        if (hillBuff.lon < 0) {
                             hillLonDir = "W";
-                        } else if (hills.landmass[i].munro[k].lon > 0) {
+                        } else if (hillBuff.lon > 0) {
                             hillLonDir = "E";
                         }
 
-                        let hillProm = hills.landmass[i].munro[k].prominence.toLocaleString("en-US");
-                        let hillIso = hills.landmass[i].munro[k].isolation;
-                        let hillSum = hills.landmass[i].munro[k].summit;
-                        let hillImg = hills.landmass[i].munro[k].image;
+                        let hillProm = hillBuff.prominence.toLocaleString("en-US");
+                        let hillIso = hillBuff.isolation;
+                        let hillSum = hillBuff.summit;
+                        let hillImg = hillBuff.image;
 
                         locationOut.innerHTML =
                             "<h1>" + hillName + "</h1>"
-                            + hillName + " is a <b>Munro</b> on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br><hr>"
+                            + hillName + " is a <b>" + hillTypeStr + "</b> on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br><hr>"
                             + landmassSubsubtype
                             + "<b>Parent Landmass</b>: " + landmassParentLandmass + "<br>"
                             + "<b>Parent Peak</b>: " + landmassParentPeak + "<br>"
