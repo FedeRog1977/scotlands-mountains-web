@@ -393,10 +393,18 @@ function hideMarkers() {
 }
 
 
+function getDistance(from,to,lat,lon) {
+    //var container = document.getElementById('distance');
+    //container.innerHTML = ("New Delhi to Mumbai - " + (from.distanceTo(to)).toFixed(0)/1000) + ' km';
+
+    L.marker([lat,lon], {icon: locationIcon}).addTo(map).bindPopup("You are " + (from.distanceTo(to)).toFixed(0)/1000 + "km from here").openPopup();
+}
+
+
 /*
  * Search Landmasses
  */
-function searchLocation() {
+function searchLocation(e) {
     fetch(locations)
         .then((resp) => {
             return resp.json();
@@ -578,6 +586,27 @@ function searchLocation() {
                             + hillLon + "&deg;" + hillLonDir + "<br>"
                             + "<b>Summit Feature</b>: " + hillSum + "<br><hr>"
                             + "<div style='text-align:center;'><img src='./Photos/" + hillImg + "' style='width:400px;height:275px;'></img></div>";
+
+                        var hillMarker = createMarker(
+		            hillBuff.name,
+			    hillTypeStr + " at ",
+		            hillBuff.elevation,
+		            hillBuff.lat,
+			    hillLatDir,
+		            hillBuff.lon,
+			    hillLonDir,
+			    hillBuff.image,
+		            mountainIcon
+		        );
+
+			map.setView([hillBuff.lat, hillBuff.lon]);
+
+			getDistance(
+			    e.latlng,
+			    hillMarker.getLatLng(),
+			    hillBuff.lat,
+			    hillBuff.lon
+			);
 
                         locationPre.classList.add("hidden");
                     }
