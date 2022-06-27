@@ -93,6 +93,11 @@ var mountainIcon = new L.Icon({
     iconSize: [30, 36],
 });
 
+var startIcon = new L.Icon({
+    iconUrl: "./Photos/Map/start.svg",
+    iconSize: [30, 36],
+});
+
 
 /*
  * Display Center Crosshair 
@@ -177,7 +182,7 @@ L.Map.addInitHook('addHandler', 'cursor', L.CursorHandler);
 var layerList = document.getElementById('menu');
 var inputs = layerList.getElementsByTagName('input');
 
-for (var i = 0; i < inputs.length; i++) {
+for (var i in inputs) {
     inputs[i].onclick = switchLayer;
 }
 
@@ -205,17 +210,37 @@ let locations = 'https://raw.githubusercontent.com/FedeRog1977/Burning/master/Sy
 
 
 /*
- * Create Mountain Icon
+ * Create Hill Icon
  */
 var markers = [];
 
-function createMarker(hill,type,elev,lat,latDir,lon,lonDir,img,iconType) {
+function createHillMarker(hill,type,elev,lat,latDir,lon,lonDir,img,iconType) {
     var popup = "<h3 style='margin:0 0 0.25em 0;'>" + hill + "</h3>" 
         + type + elev + "ft<br>" 
 	+ lat + "&deg;" + latDir + ", " + lon + "&deg;" + lonDir + "<br>" 
 	+ "<img src='Photos/" + img + "' style='width:150px;'></img>";
     var hillMarker = new L.marker([lat,lon],{icon:iconType}).addTo(map).bindPopup(popup);
     markers.push(hillMarker);
+}
+
+/*
+ * Create Route Icon
+ */
+var routeMarkers = [];
+
+function createRouteMarker(route,dist,elev,time,score,diff,munros,munrotops,corbetts,corbetttops,coords,iconType) {
+    var popup = "<h3 style='margin:0 0.5em 0.25em 0.5em;'>" + route + " - Start</h3>"
+        + "<b>Distance: </b>" + dist + "mi<br>"
+	+ "<b>Elev. Gain: </b>" + elev + "ft<br>" 
+	+ "<b>Est. Time: </b>" + time + "hrs<br><hr>"
+	+ "<b>Score: </b>" + score + "<br>"
+	+ "<b>Difficulty: </b>" + diff + "<br><hr>"
+	+ munros
+	+ munrotops
+	+ corbetts
+	+ corbetttops;
+    var routeMarker = new L.marker(coords,{icon:iconType}).addTo(map).bindPopup(popup);
+    routeMarkers.push(routeMarker);
 }
 
 
@@ -229,8 +254,8 @@ function showMunros() {
         })
         .then((data) => {
             const hills = data;
-            for (var i = 0; i < hills.landmass.length; i++) {
-                for (var k = 0; k < hills.landmass[i].munro.length; k++) {
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].munro) {
 		    let latDir = "";
 		    if (hills.landmass[i].munro[k].lat < 0) {
 			latDir = "S";
@@ -243,7 +268,7 @@ function showMunros() {
 		    } else if (hills.landmass[i].munro[k].lon > 0) {
 			lonDir = "E";
 		    }
-                    createMarker(
+                    createHillMarker(
 		        hills.landmass[i].munro[k].name,
 			"Munro at ",
 		        hills.landmass[i].munro[k].elevation,
@@ -270,8 +295,8 @@ function showMunroTops() {
         })
         .then((data) => {
             const hills = data;
-            for (var i = 0; i < hills.landmass.length; i++) {
-                for (var k = 0; k < hills.landmass[i].munrotop.length; k++) {
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].munrotop) {
 		    let latDir = "";
 		    if (hills.landmass[i].munrotop[k].lat < 0) {
 			latDir = "S";
@@ -284,7 +309,7 @@ function showMunroTops() {
 		    } else if (hills.landmass[i].munrotop[k].lon > 0) {
 			lonDir = "E";
 		    }
-                    createMarker(
+                    createHillMarker(
 		        hills.landmass[i].munrotop[k].name,
 			"Munro Top at ",
 		        hills.landmass[i].munrotop[k].elevation,
@@ -311,8 +336,8 @@ function showCorbetts() {
         })
         .then((data) => {
             const hills = data;
-            for (var i = 0; i < hills.landmass.length; i++) {
-                for (var k = 0; k < hills.landmass[i].corbett.length; k++) {
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].corbett) {
 		    let latDir = "";
 		    if (hills.landmass[i].corbett[k].lat < 0) {
 			latDir = "S";
@@ -325,7 +350,7 @@ function showCorbetts() {
 		    } else if (hills.landmass[i].corbett[k].lon > 0) {
 			lonDir = "E";
 		    }
-                    createMarker(
+                    createHillMarker(
 		        hills.landmass[i].corbett[k].name,
 			"Corbett at ",
 		        hills.landmass[i].corbett[k].elevation,
@@ -352,8 +377,8 @@ function showCorbettTops() {
         })
         .then((data) => {
             const hills = data;
-            for (var i = 0; i < hills.landmass.length; i++) {
-                for (var k = 0; k < hills.landmass[i].corbetttop.length; k++) {
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].corbetttop) {
 		    let latDir = "";
 		    if (hills.landmass[i].corbetttop[k].lat < 0) {
 			latDir = "S";
@@ -366,7 +391,7 @@ function showCorbettTops() {
 		    } else if (hills.landmass[i].corbetttop[k].lon > 0) {
 			lonDir = "E";
 		    }
-                    createMarker(
+                    createHillMarker(
 		        hills.landmass[i].corbetttop[k].name,
 			"Corbett Top at ",
 		        hills.landmass[i].corbetttop[k].elevation,
@@ -387,7 +412,7 @@ function showCorbettTops() {
  * Hide All Icons
  */
 function hideMarkers() {
-    for (var i = 0; i < markers.length; i++) {
+    for (var i in markers) {
         map.removeLayer(markers[i]);
     }
 }
@@ -587,7 +612,7 @@ function searchLocation(e) {
                             + "<b>Summit Feature</b>: " + hillSum + "<br><hr>"
                             + "<div style='text-align:center;'><img src='./Photos/" + hillImg + "' style='width:400px;height:275px;'></img></div>";
 
-                        var hillMarker = createMarker(
+                        var hillMarker = createHillMarker(
 		            hillBuff.name,
 			    hillTypeStr + " at ",
 		            hillBuff.elevation,
@@ -1047,6 +1072,26 @@ function scoreRoute(elev,dist,nTops,type,stage,terrType,terrDiff) {
 
 
 /*
+ * Describe a Route's Difficulty
+ */
+function describeRoute(score) {
+    let diff = "";
+
+    if (score >= 0 && score <= 33.3334) {
+        diff = "Amateur";
+    } else if (score > 33.3333 && score <= 66.6667) {
+	diff = "Easy";
+    } else if (score > 66.6667 && score <= 100) {
+        diff = "Moderate";
+    } else if (score > 100) {
+        diff = "Challenging";
+    }
+
+    return diff;
+}
+
+
+/*
  * Search for a Route
  */
 function searchRoute(landmass) {
@@ -1083,16 +1128,7 @@ function searchRoute(landmass) {
                             hills.landmass[i].route[k].terraindiff
                         );
 
-                        let routeDiff = "";
-                        if (routeScore >= 0 && routeScore <= 33.3334) {
-                            routeDiff = "Amateur";
-                        } else if (routeScore > 33.3333 && routeScore <= 66.6667) {
-                            routeDiff = "Easy";
-                        } else if (routeScore > 66.6667 && routeScore <= 100) {
-                            routeDiff = "Moderate";
-                        } else if (routeScore > 100) {
-                            routeDiff = "Challenging";
-                        }
+                        let routeDiff = describeRoute(routeScore);
 
                         let routeType = hills.landmass[i].route[k].type.join(", ");
                         let routeStage = hills.landmass[i].route[k].stage.join(", ");
@@ -1186,11 +1222,66 @@ function showRoute(landmass) {
             let loadRoutePrefix = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/";
             let loadRouteSuffix = "";
 	    let loadRoute = "";
+	    let routeName = "";
+	    let routeDist = "";
+	    let routeElev = "";
+	    let routeTime = "";
+	    let routeScore = "";
+            let routeMunros = "";
+            let routeMunroTops = "";
+            let routeCorbetts = "";
+            let routeCorbettTops = "";
 	    for (var i in hills.landmass) {
 		for (var k in hills.landmass[i].route) {
 		    if (hills.landmass[i].route[k].name.toLowerCase() === selectRoute) {
 		        loadRouteSuffix = hills.landmass[i].route[k].GPX;
 			loadRoute = loadRoutePrefix + loadRouteSuffix;
+
+			routeName = hills.landmass[i].route[k].name;
+                        routeDist = hills.landmass[i].route[k].distance;
+                        routeElev = hills.landmass[i].route[k].elevationgain.toLocaleString("en-US");
+                        routeTime = hills.landmass[i].route[k].stdtime;
+
+                        routeScore = scoreRoute(
+                            hills.landmass[i].route[k].elevationgain,
+                            hills.landmass[i].route[k].distance,
+                            (
+                                hills.landmass[i].route[k].munro.length
+                                + hills.landmass[i].route[k].munrotop.length
+                                + hills.landmass[i].route[k].corbett.length
+                                + hills.landmass[i].route[k].corbetttop.length
+                            ),
+                            hills.landmass[i].route[k].type,
+                            hills.landmass[i].route[k].stage,
+                            hills.landmass[i].route[k].terraintype,
+                            hills.landmass[i].route[k].terraindiff
+                        );
+
+			routeDiff = describeRoute(routeScore);
+
+                        if (hills.landmass[i].route[k].munro.length === 0) {
+                            routeMunros = "";
+                        } else if (hills.landmass[i].route[k].munro.length > 0) {
+                            routeMunros = "<b>Munros:</b> " + hills.landmass[i].route[k].munro.length + "<br>";
+                        }
+
+                        if (hills.landmass[i].route[k].munrotop.length === 0) {
+                            routeMunroTops = "";
+                        } else if (hills.landmass[i].route[k].munrotop.length > 0) {
+                            routeMunroTops = "<b>Munro Tops:</b> " + hills.landmass[i].route[k].munrotop.length + "<br>";
+                        }
+
+                        if (hills.landmass[i].route[k].corbett.length === 0) {
+                            routeCorbetts = "";
+                        } else if (hills.landmass[i].route[k].corbett.length > 0) {
+                            routeCorbetts = "<b>Corbetts:</b> " + hills.landmass[i].route[k].corbett.length + "<br>";
+                        }
+
+                        if (hills.landmass[i].route[k].corbetttop.length === 0) {
+                            routeCorbettTops = "";
+                        } else if (hills.landmass[i].route[k].corbetttop.length > 0) {
+                            routeCorbettTops = "<b>Corbett Tops:</b> " + hills.landmass[i].route[k].corbetttop.length + "<br>";
+                        }
 		    }
 		}
 	    }
@@ -1202,16 +1293,39 @@ function showRoute(landmass) {
 	            const route = data;
 	            var routeTrack = new L.geoJSON(route,{color:'#A80606'}).addTo(map);
 		    routes.push(routeTrack);
+
+		    var routeCoords = route.features[0].geometry.coordinates[0].reverse();
+
+		    map.setView(routeCoords);
+
+		    createRouteMarker(
+			routeName,
+			routeDist,
+			routeElev,
+			routeTime,
+			routeScore,
+			routeDiff,
+			routeMunros,
+			routeMunroTops,
+			routeCorbetts,
+			routeCorbettTops,
+			routeCoords,
+			startIcon
+		    );
                 })
 	})
 }
 
 
 /*
- * Hide All GPX
+ * Hide All GPX and Markers
  */
 function hideRoutes() {
-    for (var i = 0; i < routes.length; i++) {
+    for (var i in routes) {
         map.removeLayer(routes[i]);
+    }
+
+    for (var i in routeMarkers) {
+        map.removeLayer(routeMarkers[i]);
     }
 }
