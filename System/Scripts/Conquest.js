@@ -31,7 +31,7 @@ var transformCoords = function(arr) {
  * Define Map Options
  */
 var mapOptions = {
-    //cursor: true,
+    cursor: true,
     crs: crs,
     minZoom: 0,
     maxZoom: 9,
@@ -65,11 +65,26 @@ function closeOptions() {
 
 
 /*
+ * Location Information
+ */
+function onLocationFound(e) {
+    var radius = e.accuracy;
+
+    var currLocMarker = new L.marker(e.latlng, {icon: locationIcon}).addTo(map)
+	.bindPopup("You&rsquo;re within an accuracy of " + radius + "m from here").openPopup();
+
+    L.circle(e.latlng, (radius*500)).addTo(map);
+
+    return currLocMarker;
+}
+
+
+/*
  * Center to location
- * INCOMPLETE
  */
 function showLocation() {
     map.locate({setView: true, maxZoom: 16});
+    map.on('locationfound', onLocationFound);
 }
 
 
@@ -78,14 +93,14 @@ function showLocation() {
  */
 var crosshairIcon = L.icon({
     iconUrl: "./Photos/Map/crosshair.png",
-    iconSize:     [20, 20],
-    iconAnchor:   [10, 10]
+    iconSize: [20, 20],
+    iconAnchor: [10, 10]
 });
 
 var locationIcon = L.icon({
     iconUrl: "./Photos/Map/location.svg",
-    iconSize:     [30, 30],
-    iconAnchor:   [10, 10]
+    iconSize: [20, 20],
+    iconAnchor: [10, 10]
 });
 
 var mountainIcon = new L.Icon({
@@ -109,71 +124,23 @@ map.on("move", function(e) {
     crosshair.setLatLng(map.getCenter());
 });
 
-// Marker for location
-function onLocationFound(e) {
-    var radius = e.accuracy;
-
-    L.marker(e.latlng, {icon: locationIcon}).addTo(map)
-	.bindPopup("You&rsquo;re within an accuracy of " + radius + "m from here").openPopup();
-
-    L.circle(e.latlng, (radius*500)).addTo(map);
-}
-
-map.on('locationfound', onLocationFound);
-
 
 /*
  * Display Pan Coordinates
- * INCOMPLETE
  */
 const panCoordsCont = document.getElementById('scope');
+//const panCoords = getMousePosition();
 
-//map.on("move", function(e) {
-    //panCoords = map.getCenter();
-//});
-
-//var panCoords = getMousePosition();
-//panCoordsCont.innerHTML = panCoords.toString();
-
-//L.control.mousePosition().addTo(map);
-
-
-/*
- * Display Pan Coordinates
- * INCOMPLETE
- */
-L.CursorHandler = L.Handler.extend({
-
-    addHooks: function () {
-        this._popup = new L.Popup();
-        this._map.on('mouseover', this._open, this);
-        this._map.on('mousemove', this._update, this);
-        this._map.on('mouseout', this._close, this);
-    },
-
-    removeHooks: function () {
-        this._map.off('mouseover', this._open, this);
-        this._map.off('mousemove', this._update, this);
-        this._map.off('mouseout', this._close, this);
-    },
-    
-    _open: function (e) {
-        this._update(e);
-        this._popup.openOn(this._map);
-    },
-
-    _close: function () {
-        this._map.closePopup(this._popup);
-    },
-
-    _update: function (e) {
-        this._popup.setLatLng(e.latlng)
-            .setContent(e.latlng.toString());
-    }
-
+map.on("move", function(e) {
+    var panCoords = crosshair.getLatLng();
+    panCoordsCont.innerHTML = `<table>
+        <tr>
+	    <td style="padding:0.25em;">Panning:</td>
+	    <td style="padding:0.25em;">${panCoords.lat.toFixed(4)},</td>
+	    <td style="padding:0.25em;">${panCoords.lng.toFixed(4)}</td>
+	</tr>
+    </table>`;
 });
-
-L.Map.addInitHook('addHandler', 'cursor', L.CursorHandler);
 
 
 /*
@@ -418,11 +385,12 @@ function hideMarkers() {
 }
 
 
+/*
+ * Get Distance From-To
+ */
 function getDistance(from,to,lat,lon) {
-    //var container = document.getElementById('distance');
-    //container.innerHTML = ("New Delhi to Mumbai - " + (from.distanceTo(to)).toFixed(0)/1000) + ' km';
-
-    L.marker([lat,lon], {icon: locationIcon}).addTo(map).bindPopup("You are " + (from.distanceTo(to)).toFixed(0)/1000 + "km from here").openPopup();
+    L.marker([lat,lon], {icon: locationIcon}).addTo(map)
+	.bindPopup("You are " + from.distanceTo(to) + "m from here").openPopup();
 }
 
 
@@ -627,8 +595,10 @@ function searchLocation(e) {
 			map.setView([hillBuff.lat, hillBuff.lon]);
 
 			getDistance(
-			    e.latlng,
-			    hillMarker.getLatLng(),
+			    //e.latlng,
+			    //hillMarker.getLatLng(),
+			    [55, -5],
+			    [56, -4.5],
 			    hillBuff.lat,
 			    hillBuff.lon
 			);
