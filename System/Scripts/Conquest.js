@@ -67,7 +67,7 @@ function closeOptions() {
 /*
  * Location Information
  */
-function onLocationFound(e) {
+function findLocation(e) {
     var radius = e.accuracy;
 
     var currLocMarker = new L.marker(e.latlng, {icon: locationIcon}).addTo(map)
@@ -84,7 +84,7 @@ function onLocationFound(e) {
  */
 function showLocation() {
     map.locate({setView: true, maxZoom: 16});
-    map.on('locationfound', onLocationFound);
+    map.on("locationfound", findLocation);
 }
 
 
@@ -129,13 +129,13 @@ map.on("move", function(e) {
  * Display Pan Coordinates
  */
 const panCoordsCont = document.getElementById('scope');
-//const panCoords = getMousePosition();
 
 map.on("move", function(e) {
     var panCoords = crosshair.getLatLng();
+    //var panCoords = getMousePosition().getLatLng();
     panCoordsCont.innerHTML = `<table>
         <tr>
-	    <td style="padding:0.25em;">Panning:</td>
+	    <td style="padding:0.25em;">Seeking:</td>
 	    <td style="padding:0.25em;">${panCoords.lat.toFixed(4)},</td>
 	    <td style="padding:0.25em;">${panCoords.lng.toFixed(4)}</td>
 	</tr>
@@ -388,16 +388,34 @@ function hideMarkers() {
 /*
  * Get Distance From-To
  */
-function getDistance(from,to,lat,lon) {
-    L.marker([lat,lon], {icon: locationIcon}).addTo(map)
-	.bindPopup("You are " + from.distanceTo(to) + "m from here").openPopup();
+function getDistance(toCoordsLat,toCoordsLon) {
+    /*map.on("load", function(e) {
+        var currCoordsMarker = new L.marker([e.latitude, e.longitude]);
+
+    	var currCoords = currCoordsMarker.getLatLng();
+
+    	var currLat = currCoords.lat;
+    	var currLon = currCoords.lng;
+    });*/
+    	
+    //var markerFrom = new L.marker([currLat,currLon]);
+    var markerFrom = new L.marker([56.5,-5.0]);
+    var markerTo =  new L.marker([toCoordsLat,toCoordsLon]);
+    var from = markerFrom.getLatLng();
+    var to = markerTo.getLatLng();
+
+    let distM = from.distanceTo(to);
+    let distKm = distM/1000;
+    let distMi = (distKm*0.621371).toFixed(2);
+
+    return distMi;
 }
 
 
 /*
  * Search Landmasses
  */
-function searchLocation(e) {
+function searchLocation() {
     fetch(locations)
         .then((resp) => {
             return resp.json();
@@ -562,8 +580,27 @@ function searchLocation(e) {
                         let hillSum = hillBuff.summit;
                         let hillImg = hillBuff.image;
 
+                        var hillMarker = createHillMarker(
+		            hillBuff.name,
+			    hillTypeStr + " at ",
+		            hillBuff.elevation,
+		            hillBuff.lat,
+			    hillLatDir,
+		            hillBuff.lon,
+			    hillLonDir,
+			    hillBuff.image,
+		            mountainIcon
+		        );
+
+			let hillFromTo = getDistance(
+			    //crosshair.getLatLng(),
+			    hillBuff.lat,
+			    hillBuff.lon
+			);
+
                         locationOut.innerHTML =
                             "<h1>" + hillName + "</h1>"
+			    + "<b>You are " + hillFromTo + "mi from here</b><br><hr>"
                             + hillName + " is a <b>" + hillTypeStr + "</b> on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br><hr>"
                             + landmassSubsubtype
                             + "<b>Parent Landmass</b>: " + landmassParentLandmass + "<br>"
@@ -580,28 +617,7 @@ function searchLocation(e) {
                             + "<b>Summit Feature</b>: " + hillSum + "<br><hr>"
                             + "<div style='text-align:center;'><img src='./Photos/" + hillImg + "' style='width:400px;height:275px;'></img></div>";
 
-                        var hillMarker = createHillMarker(
-		            hillBuff.name,
-			    hillTypeStr + " at ",
-		            hillBuff.elevation,
-		            hillBuff.lat,
-			    hillLatDir,
-		            hillBuff.lon,
-			    hillLonDir,
-			    hillBuff.image,
-		            mountainIcon
-		        );
-
 			map.setView([hillBuff.lat, hillBuff.lon]);
-
-			getDistance(
-			    //e.latlng,
-			    //hillMarker.getLatLng(),
-			    [55, -5],
-			    [56, -4.5],
-			    hillBuff.lat,
-			    hillBuff.lon
-			);
 
                         locationPre.classList.add("hidden");
                     }
