@@ -551,8 +551,9 @@ button:active {
         font-size: 18px;
 	word-spacing: 10px;
 	color: var(--font-header-footer);
-	border-top: 2px solid var(--font);
-	padding: 0.5em;
+	border-top: 1.5px solid var(--font);
+	border-bottom: 1.5px solid var(--font);
+	padding: 1em 0.5em 1em 0.5em;
 	transition: color var(--dark-trans);
 }
 			
@@ -567,6 +568,10 @@ button:active {
                 color: var(--font-hover);
                 transition: color var(--link-trans);
         }
+
+	.element-heading {
+		text-align: center;
+	}
 
 	.element {
 		background-color: var(--bg);
@@ -629,7 +634,7 @@ button:active {
 			font-size: 12px;
 		}
 
-.fa-sun {
+#weather .fa-sun {
 	color: #EE6600;
 }
 
@@ -652,6 +657,10 @@ button:active {
 .fa-cloud-sun-rain {
 	color: #A0A0A0;
 }
+
+	.elements-profile .fa-cloud-sun {
+		color: #000000;
+	}
 
 .fa-cloud-rain {
 	color: #696969;

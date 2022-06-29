@@ -1,45 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const overview = document.querySelector("#userOverview");
-    const conditioning = document.querySelector("#userConditioning");
-    const weather = document.querySelector("#userWeather");
-    const weatherReading = document.querySelector("#userWeatherReading");
-    const weatherKey = document.querySelector("#userWeatherKey");
-    const weatherSugClouds = document.querySelector("#userWeatherSugClouds");
-    const weatherSugBearings = document.querySelector("#userWeatherSugBearings");
-    const conditioningAbility = document.querySelector("#userAbility");
-    const conditioningEquipment = document.querySelector("#userEquipment");
+    const overview = document.querySelector("#overview");
+    const conditioning = document.querySelector("#conditioning");
+    const conditioningAbility = document.querySelector("#ability");
+    const conditioningEquipment = document.querySelector("#equipment");
+    const weather = document.querySelector("#weather");
+    const weatherKey = document.querySelector("#weatherKey");
+    const weatherSugClouds = document.querySelector("#weatherSugClouds");
+    const weatherSugBearings = document.querySelector("#weatherSugBearings");
 
-    document.querySelector("#userOverviewOpt").addEventListener("click", e => {
+    document.querySelector("#overviewOpt").addEventListener("click", e => {
         e.preventDefault();
         if (overview.classList.contains("hidden")) {
             overview.classList.remove("hidden");
         }
 	conditioning.classList.add("hidden");
 	weather.classList.add("hidden");
-        weatherReading.classList.add("hidden");
     });
 
-    document.querySelector("#userConditioningOpt").addEventListener("click", e => {
+    document.querySelector("#conditioningOpt").addEventListener("click", e => {
         e.preventDefault();
         if (conditioning.classList.contains("hidden")) {
             conditioning.classList.remove("hidden");
         }
 	overview.classList.add("hidden");
 	weather.classList.add("hidden");
-        weatherReading.classList.add("hidden");
     });
 
-    document.querySelector("#userWeatherOpt").addEventListener("click", e => {
+    document.querySelector("#weatherOpt").addEventListener("click", e => {
         e.preventDefault();
-        if (weather.classList.contains("hidden") && weatherReading.classList.contains("hidden")) {
+        if (weather.classList.contains("hidden")) {
             weather.classList.remove("hidden");
-            weatherReading.classList.remove("hidden");
         }
 	overview.classList.add("hidden");
 	conditioning.classList.add("hidden");
     });
 
-    document.querySelector("#userWeatherKeyOpt").addEventListener("click", e => {
+    document.querySelector("#weatherKeyOpt").addEventListener("click", e => {
         e.preventDefault();
         if (weatherKey.classList.contains("hidden")) {
             weatherKey.classList.remove("hidden");
@@ -48,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
     });
 
-    document.querySelector("#userWeatherSugCloudsOpt").addEventListener("click", e => {
+    document.querySelector("#weatherSugCloudsOpt").addEventListener("click", e => {
         e.preventDefault();
         if (weatherSugClouds.classList.contains("hidden")) {
             weatherSugClouds.classList.remove("hidden");
@@ -57,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
     });
 
-    document.querySelector("#userWeatherSugBearingsOpt").addEventListener("click", e => {
+    document.querySelector("#weatherSugBearingsOpt").addEventListener("click", e => {
         e.preventDefault();
         if (weatherSugBearings.classList.contains("hidden")) {
             weatherSugBearings.classList.remove("hidden");
@@ -66,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
     });
 
-    document.querySelector("#userAbilityOpt").addEventListener("click", e => {
+    document.querySelector("#abilityOpt").addEventListener("click", e => {
         e.preventDefault();
         if (conditioningAbility.classList.contains("hidden")) {
             conditioningAbility.classList.remove("hidden");
@@ -75,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
     });
 
-    document.querySelector("#userEquipmentOpt").addEventListener("click", e => {
+    document.querySelector("#equipmentOpt").addEventListener("click", e => {
         e.preventDefault();
         if (conditioningEquipment.classList.contains("hidden")) {
             conditioningEquipment.classList.remove("hidden");

@@ -96,64 +96,220 @@
 			<h1>Briefing</h1>
 
 			<div class="elements-profile">
-				<a href="./" id="userOverviewOpt">Overview</a>
-				<a href="./" id="userConditioningOpt">Conditioning</a>
-				<a href="./" id="userWeatherOpt"><i class="fas fa-cloud-sun"></i>Weather</a>
+				<a href="./" id="overviewOpt"><i class="fas fa-globe"></i>Overview</a>
+				<a href="./" id="conditioningOpt"><i class="fas fa-user"></i>Conditioning</a>
+				<a href="./" id="weatherOpt"><i class="fas fa-sun"></i>Weather</a>
 			</div>
 
-			<div id="userOverview" class="element">
+			<div id="overview">
 
-				<h1>Overview</h1>
+				<h1 class="element-heading">Overview</h1>
+
+				<div class="element">
+
+				<h2>Search Route</h2>
+                        	
+				<div class="optionsRow">
+
+                                	<h3>Select Landmass</h3>
+
+                                	<select id="selectLandmass" onchange="showRouteListCont()"></select>
+                                	
+					<div id="selectRouteCruachanCont" class="hidden">
+                                	        <h3>Cruachan Range Routes</h3>
+                                	        <select id="selectRouteCruachan"></select>
+                                	        <button onclick="searchRoute('Cruachan')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteUdlaidhCont" class="hidden">
+                                        	<h3>Beinn Udlaidh and Beinn Bhreac-liath Routes</h3>
+                                        	<select id="selectRouteUdlaidh"></select>
+                                        	<button onclick="searchRoute('Udlaidh')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteMhicCont" class="hidden">
+                                	        <h3>Beinn Mhic-Mhonaidh Routes</h3>
+                                	        <select id="selectRouteMhic"></select>
+                                	        <button onclick="searchRoute('Mhic')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteCreachCont" class="hidden">
+                                	        <h3>Creach Bheinn (Loch Creran) Routes</h3>
+                                	        <select id="selectRouteCreach"></select>
+                                	        <button onclick="searchRoute('Creach')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteStaravCont" class="hidden">
+                                        	<h3>Starav Range Routes</h3>
+                                        	<select id="selectRouteStarav"></select>
+                                        	<button onclick="searchRoute('Starav')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteTrilleachanCont" class="hidden">
+                                	        <h3>Beinn Trilleachan Routes</h3>
+                                	        <select id="selectRouteTrilleachan"></select>
+                                	        <button onclick="searchRoute('Trilleachan')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteBlackCont" class="hidden">
+                                	        <h3>Black Mount Range Routes</h3>
+                                	        <select id="selectRouteBlack"></select>
+                                	        <button onclick="searchRoute('Black')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteSgulairdCont" class="hidden">
+                                	        <h3>Beinn Sgulaird Routes</h3>
+                                	        <select id="selectRouteSgulaird"></select>
+                                	        <button onclick="searchRoute('Sgulaird')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteFraochaidhCont" class="hidden">
+                                	        <h3>Fraochaidh Routes</h3>
+                                	        <select id="selectRouteFraochaidh"></select>
+                                	        <button onclick="searchRoute('Fraochaidh')" class="wide">Summary</button>
+                                	</div>
+                                	
+					<div id="selectRouteFhionnlaidhCont" class="hidden">
+                                	        <h3>Beinn Fhionnlaidh Routes</h3>
+                                	        <select id="selectRouteFhionnlaidh"></select>
+                                	        <button onclick="searchRoute('Fhionnlaidh')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteHulaidhCont" class="hidden">
+                                	        <h3>Sgor na h-Ulaidh Routes</h3>
+                                	        <select id="selectRouteHulaidh"></select>
+                                	        <button onclick="searchRoute('Hulaidh')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteDubhCont" class="hidden">
+                                	        <h3>Stob Dubh Routes</h3>
+                                	        <select id="selectRouteDubh"></select>
+                                	        <button onclick="searchRoute('Dubh')" class="wide">Summary</button>
+                                	</div>
+                                	
+					<div id="selectRouteMorCont" class="hidden">
+                                        	<h3>Buachaille Etive Mor Routes</h3>
+                                        	<select id="selectRouteMor"></select>
+                                        	<button onclick="searchRoute('Mor')" class="wide">Summary</button>
+                               		</div>
+                                
+					<div id="selectRouteBeagCont" class="hidden">
+                                        	<h3>Buachaille Etive Beag Routes</h3>
+                                        	<select id="selectRouteBeag"></select>
+                                        	<button onclick="searchRoute('Beag')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteBideanCont" class="hidden">
+                                	        <h3>Bidean nam Bian Routes</h3>
+                                        	<select id="selectRouteBidean"></select>
+                                        	<button onclick="searchRoute('Bidean')" class="wide">Summary</button>
+                               		</div>
+                                
+					<div id="selectRouteBheithirCont" class="hidden">
+                                	        <h3>Beinn a Bheithir Routes</h3>
+                                	        <select id="selectRouteBheithir"></select>
+                                	        <button onclick="searchRoute('Bheithir')" class="wide">Summary</button>
+                                	</div>
+				
+					<div id="selectRouteChrulaisteCont" class="hidden">
+                                	        <h3>Beinn a Chrulaiste Routes</h3>
+                                	        <select id="selectRouteChrulaiste"></select>
+                                	        <button onclick="searchRoute('Chrulaiste')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div id="selectRouteEagachCont" class="hidden">
+                                	        <h3>Aonach Eagach Routes</h3>
+                                	        <select id="selectRouteEagach"></select>
+                                	        <button onclick="searchRoute('Eagach')" class="wide">Summary</button>
+                                	</div>
+                                
+					<div class="element" style="background-color:var(--fg);">
+                                	        <p id="statsPre">Find Routes</p>
+                                	        <p id="statsOut"></p>
+                                	</div>
+
+				</div>
+
+				</div>
+
+				<div class="element">
+
+				<h2>Search Location</h2>
+                                
+				<div class="optionsRow">
+
+					<input type="text" id="inpLocation"></input>
+                                	<button onclick="searchLocation()" class="wide">Summary</button>
+                                	<div class="element" style="background-color:var(--fg);">
+                                        	<p id="locationPre">Find a Munro, Munro Top, Corbett or Corbett Top</p>
+                                        	<p id="locationOut"></p>
+                                	</div>
+
+				</div>
+				
+				</div>
 
 			</div>
 
-			<div id="userConditioning" class="element hidden">
+			<div id="conditioning" class="hidden">
 
-				<h1>Field Conditioning &amp; Artillery</h1>
+				<h1 class="element-heading">Field Conditioning &amp; Artillery</h1>
+
+				<div class="element">
 
 				<h2>
 					<i class="fas fa-heartbeat"></i> 
 					Ability 
-					<small><a><i id="userAbilityOpt" class="fas fa-angle-down"></i></a></small>
+					<small><a><i id="abilityOpt" class="fas fa-angle-down"></i></a></small>
 				</h2>
 
 				<p>Your <b>ability range</b> attributes appear here.</p>
 
-				<div id="userAbility" class="sub-element hidden">
+				<div id="ability" class="sub-element hidden">
 
 				<!-- A drop-down of different aspects of fitness and how they can effect routes -->
 
 				</div>
 
+				</div>
+
+				<div class="element">
+
 				<h2>
 					<i class="fas fa-hiking"></i> 
 					Equipment Cache 
-					<small><a><i id="userEquipmentOpt" class="fas fa-angle-down"></a></i></small>
+					<small><a><i id="equipmentOpt" class="fas fa-angle-down"></a></i></small>
 				</h2>
 
 				<p>Your <b>equipment</b> including <b>packs and travel goods</b>, <b>technology</b>, <b>footwear</b> and <b>clothing</b> appears here.</p>
 
-				<div id="userEquipment" class="sub-element hidden">
+				<div id="equipment" class="sub-element hidden">
 
 					<!-- A drop-down of equipment under differnt headings and literatures on where and how they can be used -->
 
 					<h3 style="text-align:center">
 						Suggested Reading on Boots &amp; Crampons
-						<small><a><i id="userEquipSugBootsOpt" class="fas fa-angle-down"></i></a></small>
+						<small><a><i id="equipSugBootsOpt" class="fas fa-angle-down"></i></a></small>
 					</h3>
 
 					<h3 style="text-align:center">
 						Suggested Reading on Triangulation Stations
-						<small><a><i id="userEquipSugTrigsOpt" class="fas fa-angle-down"></i></a></small>
+						<small><a><i id="equipSugTrigsOpt" class="fas fa-angle-down"></i></a></small>
 					</h3>
+
+				</div>
 
 				</div>
 
 			</div>
 
-			<div id="userWeather" class="element hidden">
+			<div id="weather" class="hidden">
 
-				<h3 style="text-align:center">Search Location</h3>
+				<h1 class="element-heading">Weather Forecast</h1>
+
+				<div class="element">
+
+				<h2>Search Location</h2>
 
         			<div>
 					<p>
@@ -161,13 +317,13 @@
 						<tr>
 							<td style="text-align:right;padding:0.25em;">Select a Munro</td>
 							<td style="text-align:left;padding:0.25em;">
-								<select id="userWeatherSelectMunro" onchange="selectMunroOpt()"></select>
+								<select id="weatherSelectMunro" onchange="selectMunroOpt()"></select>
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align:right;padding:0.25em;">Input a Munro</td>
 							<td style="text-align:left;padding:0.25em;">
-								<input id="userWeatherInputMunro" onchange="inpMunroOpt()" type="text"></input>
+								<input id="weatherInputMunro" onchange="inpMunroOpt()" type="text"></input>
 							</td>
 						</tr>
 					</table>
@@ -177,13 +333,13 @@
 						<tr>
 							<td style="text-align:right;padding:0.25em;">Select a Corbett</td>
 							<td style="text-align:left;padding:0.25em;">
-								<select id="userWeatherSelectCorbett" onchange="selectCorbettOpt()"></select>
+								<select id="weatherSelectCorbett" onchange="selectCorbettOpt()"></select>
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align:right;padding:0.25em;">Input a Corbett</td>
 							<td style="text-align:left;padding:0.25em;">
-								<input id="userWeatherInputCorbett" onchange="inpCorbettOpt()" type="text"></input>
+								<input id="weatherInputCorbett" onchange="inpCorbettOpt()" type="text"></input>
 							</td>
 						</tr>
 					</table>
@@ -193,7 +349,7 @@
 						<tr>
 							<td style="text-align:right;padding:0.25em;">Select a Region</td>
 							<td style="text-align:left;padding:0.25em;">
-								<select id="userWeatherSelectCounty" onchange="selectCounty()"></select>
+								<select id="weatherSelectCounty" onchange="selectCounty()"></select>
 							</td>
 						</tr>
 						<tr>
@@ -246,23 +402,25 @@
 					</p>
         			</div>
 
-				<div id="userWeatherResults" class="hidden">
-					<h3>Five-day forecast for <span id="userWeatherResultsLocFive"></span></h3>
-					<div id="userWeatherResultsDay" class="weatherrow day"></div>
-					<h3>Six-hour forecast for <span id="userWeatherResultsLocSix"></span></h3>
-        				<div id="userWeatherResultsHour" class="weatherrow hour"></div>
+				<div id="weatherResults" class="hidden">
+					<h3>Five-day forecast for <span id="weatherResultsLocFive"></span></h3>
+					<div id="weatherResultsDay" class="weatherrow day"></div>
+					<h3>Six-hour forecast for <span id="weatherResultsLocSix"></span></h3>
+        				<div id="weatherResultsHour" class="weatherrow hour"></div>
       				</div>
 
-			</div>
+				</div>
 
-			<div id="userWeatherReading" class="element hidden">
+				<div class="element">
+
+				<h2>Bonus Exclusive DLC</h2>
 
 				<h3 style="text-align:center">
 					Key 
-					<small><a><i id="userWeatherKeyOpt" class="fas fa-angle-down"></i></a></small>
+					<small><a><i id="weatherKeyOpt" class="fas fa-angle-down"></i></a></small>
 				</h3>
 
-				<div id="userWeatherKey" class="sub-sub-element hidden">
+				<div id="weatherKey" class="sub-sub-element hidden">
 					<p>
 						<table class="data">
 							<th colspan=9 style="border-bottom: double var(--font);">Conditions</th>
@@ -451,10 +609,10 @@
 
 				<h3 style="text-align:center">
 					Suggested Reading on Cloud Types 
-					<small><a><i id="userWeatherSugCloudsOpt" class="fas fa-angle-down"></i></a></small>
+					<small><a><i id="weatherSugCloudsOpt" class="fas fa-angle-down"></i></a></small>
 				</h3>
 
-				<div id="userWeatherSugClouds" class="sub-sub-element hidden">
+				<div id="weatherSugClouds" class="sub-sub-element hidden">
 					<p>
 						<table class="data">
 							<th colspan=7 style="border-bottom: double var(--font);">Cloud Types</th>
@@ -476,10 +634,10 @@
 
 				<h3 style="text-align:center">
 					Suggested Reading on Bearings 
-					<small><a><i id="userWeatherSugBearingsOpt" class="fas fa-angle-down"></i></a></small>
+					<small><a><i id="weatherSugBearingsOpt" class="fas fa-angle-down"></i></a></small>
 				</h3>
 
-				<div id="userWeatherSugBearings" class="sub-sub-element hidden">
+				<div id="weatherSugBearings" class="sub-sub-element hidden">
 					<p>
 						<table class="data">
 							<th colspan=4 style="border-bottom: double var(--font);">Bearings</th>
@@ -592,6 +750,8 @@
 					</p>
 				</div>
 
+				</div>
+
 				<p style="text-align:center;"><small>2022 OpenWeather&reg;</small></p>
 
 			</div>
@@ -620,6 +780,7 @@
 	<script src="Scripts/Elements.js"></script>
 	<script src="Scripts/Weather.js" defer></script>
 	<script src="Scripts/Areas.js"></script>
+	<script src="Scripts/Routes.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

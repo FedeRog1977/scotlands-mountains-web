@@ -1,6 +1,6 @@
-const selectMunroList = document.getElementById("userWeatherSelectMunro");
-const selectCorbettList = document.getElementById("userWeatherSelectCorbett");
-const selectCountyList = document.getElementById("userWeatherSelectCounty");
+const selectMunroList = document.getElementById("weatherSelectMunro");
+const selectCorbettList = document.getElementById("weatherSelectCorbett");
+const selectCountyList = document.getElementById("weatherSelectCounty");
 
 const selectMunroListCont = `
     <option>Beinn a Chochuill</option>
