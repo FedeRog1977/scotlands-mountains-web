@@ -801,15 +801,16 @@ function searchLocation() {
 		            mountainIcon
 		        );
 
+			/*
 			let hillFromTo = getDistanceCurr(
-			    //crosshair.getLatLng(),
 			    hillBuff.lat,
 			    hillBuff.lon
 			);
+			*/
 
                         locationOut.innerHTML =
                             "<h1>" + hillName + "</h1>"
-			    + "<b>You are " + hillFromTo + "mi from here</b><br><hr>"
+			    //+ "<b>You are " + hillFromTo + "mi from here</b><br><hr>"
                             + hillName + " is a <b>" + hillTypeStr + "</b> on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br><hr>"
                             + landmassSubsubtype
                             + "<b>Parent Landmass</b>: " + landmassParentLandmass + "<br>"
@@ -1392,7 +1393,7 @@ function searchRoute(landmass) {
                             + routeCorbettTops + "<hr>"
                             + "<a href='./GPX/" + routeGPX + "'>Download GPX</a>";
 
-                    statsPre.classList.add("hidden");
+                        statsPre.classList.add("hidden");
                     }
                 }
             }
