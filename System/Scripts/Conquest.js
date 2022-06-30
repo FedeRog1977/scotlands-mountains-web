@@ -247,6 +247,49 @@ function showMunros() {
 
 
 /*
+ * Show Munro Icon
+ */
+function showMunro(hill) {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].munro) {
+		    if (hills.landmass[i].munro[k].name === hill) {
+		        let latDir = "";
+		        if (hills.landmass[i].munro[k].lat < 0) {
+			    latDir = "S";
+		        } else if (hills.landmass[i].munro[k].lat > 0) {
+			    latDir = "N";
+		        }
+		        let lonDir = "";
+		        if (hills.landmass[i].munro[k].lon < 0) {
+			    lonDir = "W";
+		        } else if (hills.landmass[i].munro[k].lon > 0) {
+			    lonDir = "E";
+		        }
+                    	createHillMarker(
+		            hills.landmass[i].munro[k].name,
+			    "Munro at ",
+		            hills.landmass[i].munro[k].elevation,
+		            hills.landmass[i].munro[k].lat,
+			    latDir,
+		            hills.landmass[i].munro[k].lon,
+			    lonDir,
+			    hills.landmass[i].munro[k].image,
+		            mountainIcon
+		        );
+		    }
+                }
+            }
+        })
+}
+
+
+/*
  * Show Munro Top Icons
  */
 function showMunroTops() {
@@ -281,6 +324,49 @@ function showMunroTops() {
 			hills.landmass[i].munrotop[k].image,
 		        mountainIcon
 		    );
+                }
+            }
+        })
+}
+
+
+/*
+ * Show Munro Top Icon
+ */
+function showMunroTop(hill) {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].munrotop) {
+		    if (hills.landmass[i].munrotop[k].name === hill) {
+		        let latDir = "";
+		        if (hills.landmass[i].munrotop[k].lat < 0) {
+			    latDir = "S";
+		        } else if (hills.landmass[i].munrotop[k].lat > 0) {
+			    latDir = "N";
+		        }
+		        let lonDir = "";
+		        if (hills.landmass[i].munrotop[k].lon < 0) {
+			    lonDir = "W";
+		        } else if (hills.landmass[i].munrotop[k].lon > 0) {
+			    lonDir = "E";
+		        }
+                    	createHillMarker(
+		            hills.landmass[i].munrotop[k].name,
+			    "Munro Top at ",
+		            hills.landmass[i].munrotop[k].elevation,
+		            hills.landmass[i].munrotop[k].lat,
+			    latDir,
+		            hills.landmass[i].munrotop[k].lon,
+			    lonDir,
+			    hills.landmass[i].munrotop[k].image,
+		            mountainIcon
+		        );
+		    }
                 }
             }
         })
@@ -329,6 +415,49 @@ function showCorbetts() {
 
 
 /*
+ * Show Corbett Icon
+ */
+function showCorbett(hill) {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].corbett) {
+		    if (hills.landmass[i].corbett[k].name === hill) {
+		        let latDir = "";
+		        if (hills.landmass[i].corbett[k].lat < 0) {
+			    latDir = "S";
+		        } else if (hills.landmass[i].corbett[k].lat > 0) {
+			    latDir = "N";
+		        }
+		        let lonDir = "";
+		        if (hills.landmass[i].corbett[k].lon < 0) {
+			    lonDir = "W";
+		        } else if (hills.landmass[i].corbett[k].lon > 0) {
+			    lonDir = "E";
+		        }
+                    	createHillMarker(
+		            hills.landmass[i].corbett[k].name,
+			    "Corbett at ",
+		            hills.landmass[i].corbett[k].elevation,
+		            hills.landmass[i].corbett[k].lat,
+			    latDir,
+		            hills.landmass[i].corbett[k].lon,
+			    lonDir,
+			    hills.landmass[i].corbett[k].image,
+		            mountainIcon
+		        );
+		    }
+                }
+            }
+        })
+}
+
+
+/*
  * Show Corbett Top Icons
  */
 function showCorbettTops() {
@@ -370,6 +499,49 @@ function showCorbettTops() {
 
 
 /*
+ * Show Corbett Top Icon
+ */
+function showCorbettTop(hill) {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].corbetttop) {
+		    if (hills.landmass[i].corbetttop[k].name === hill) {
+		        let latDir = "";
+		        if (hills.landmass[i].corbetttop[k].lat < 0) {
+			    latDir = "S";
+		        } else if (hills.landmass[i].corbetttop[k].lat > 0) {
+			    latDir = "N";
+		        }
+		        let lonDir = "";
+		        if (hills.landmass[i].corbetttop[k].lon < 0) {
+			    lonDir = "W";
+		        } else if (hills.landmass[i].corbetttop[k].lon > 0) {
+			    lonDir = "E";
+		        }
+                    	createHillMarker(
+		            hills.landmass[i].corbetttop[k].name,
+			    "Corbett Top at ",
+		            hills.landmass[i].corbetttop[k].elevation,
+		            hills.landmass[i].corbetttop[k].lat,
+			    latDir,
+		            hills.landmass[i].corbetttop[k].lon,
+			    lonDir,
+			    hills.landmass[i].corbetttop[k].image,
+		            mountainIcon
+		        );
+		    }
+                }
+            }
+        })
+}
+
+
+/*
  * Hide All Icons
  */
 function hideMarkers() {
@@ -380,21 +552,61 @@ function hideMarkers() {
 
 
 /*
- * Get Distance From-To
+ * Get Current Latitude
+ * INCOMPLETE
  */
-function getDistance(toCoordsLat,toCoordsLon) {
-    /*map.on("load", function(e) {
-        var currCoordsMarker = new L.marker([e.latitude, e.longitude]);
+function getLat(e) {
+    //var currLocLatMarker = new L.marker([e.latitude, e.longitude]);
+    var currLocLatMarker = new L.marker(e.latlng);
+    var latLng = currLocLatMarker.getLatLng();
+    var lat = latLng.lat;
+    return lat;
+}
 
-    	var currCoords = currCoordsMarker.getLatLng();
 
-    	var currLat = currCoords.lat;
-    	var currLon = currCoords.lng;
-    });*/
-    	
-    //var markerFrom = new L.marker([currLat,currLon]);
-    var markerFrom = new L.marker([56.5,-5.0]);
-    var markerTo =  new L.marker([toCoordsLat,toCoordsLon]);
+/*
+ * Get Current Longitude
+ * INCOMPLETE
+ */
+function getLon(e) {
+    //var currLocLonMarker = new L.marker([e.latitude, e.longitude]);
+    var currLocLonMarker = new L.marker(e.latlng);
+    var latLng = currLocLonMarker.getLatLng();
+    var lon = latLng.lng;
+    return lon;
+}
+
+
+/*
+ * Get Distance From-To Using Current to Custom Location 
+ * INCOMPLETE
+ */
+function getDistanceCurr(e,toLat,toLon) {
+    var lat = map.on("load", getLat);
+    var lon = map.on("load", getLon);
+
+    var currLat = lat;
+    var currLon = lon;
+
+    var markerFrom = new L.marker([currLat,currLon]);
+    var markerTo =  new L.marker([toLat,toLon]);
+    var from = markerFrom.getLatLng();
+    var to = markerTo.getLatLng();
+
+    let distM = from.distanceTo(to);
+    let distKm = distM/1000;
+    let distMi = (distKm*0.621371).toFixed(2);
+    
+    return distMi;
+}
+
+
+/*
+ * Get Distance From-To Using Custom to Custom Location 
+ */
+function getDistance(fromLat,fromLon,toLat,toLon) {
+    var markerFrom = new L.marker([fromLat,fromLon]);
+    var markerTo =  new L.marker([toLat,toLon]);
     var from = markerFrom.getLatLng();
     var to = markerTo.getLatLng();
 
@@ -432,6 +644,9 @@ function searchLocation() {
             let hillType = "";
             let hillBuff = "";
             let hillName = "";
+
+	    hideMarkers();
+
 	    for (var i in hills.landmass) {
 		for (var k in hills.landmass[i].munro) {
         	    if (hills.landmass[i].munro[k].name.toLowerCase().match(inpLocation)) {
@@ -574,8 +789,6 @@ function searchLocation() {
                         let hillSum = hillBuff.summit;
                         let hillImg = hillBuff.image;
 
-			hideMarkers();
-
                         var hillMarker = createHillMarker(
 		            hillBuff.name,
 			    hillTypeStr + " at ",
@@ -588,7 +801,7 @@ function searchLocation() {
 		            mountainIcon
 		        );
 
-			let hillFromTo = getDistance(
+			let hillFromTo = getDistanceCurr(
 			    //crosshair.getLatLng(),
 			    hillBuff.lat,
 			    hillBuff.lon
@@ -1213,6 +1426,10 @@ function showRoute(landmass) {
             let routeMunroTops = "";
             let routeCorbetts = "";
             let routeCorbettTops = "";
+
+	    hideMarkers();
+	    hideRoutes();
+
 	    for (var i in hills.landmass) {
 		for (var k in hills.landmass[i].route) {
 		    if (hills.landmass[i].route[k].name.toLowerCase() === selectRoute) {
@@ -1264,9 +1481,42 @@ function showRoute(landmass) {
                         } else if (hills.landmass[i].route[k].corbetttop.length > 0) {
                             routeCorbettTops = "<b>Corbett Tops:</b> " + hills.landmass[i].route[k].corbetttop.length + "<br>";
                         }
+
+			for (var j in hills.landmass[i].route[k].munro) {
+			    if (hills.landmass[i].route[k].munro !== null) {
+		                showMunro(hills.landmass[i].route[k].munro[j]);
+			    } else {
+				return false;
+			    }
+			}
+
+			for (var j in hills.landmass[i].route[k].munrotop) {
+			    if (hills.landmass[i].route[k].munrotop !== null) {
+		                showMunroTop(hills.landmass[i].route[k].munrotop[j]);
+			    } else {
+				return false;
+			    }
+			}
+
+			for (var j in hills.landmass[i].route[k].corbett) {
+			    if (hills.landmass[i].route[k].corbett !== null) {
+		                showCorbett(hills.landmass[i].route[k].corbett[j]);
+			    } else {
+				return false;
+			    }
+			}
+
+			for (var j in hills.landmass[i].route[k].corbetttop) {
+			    if (hills.landmass[i].route[k].corbetttop !== null) {
+		                showCorbettTop(hills.landmass[i].route[k].corbetttop[j]);
+			    } else {
+				return false;
+			    }
+			}
 		    }
 		}
 	    }
+
             fetch(loadRoute)
                 .then(response => response.text())
                 .then(str => new DOMParser().parseFromString(str, "text/xml"))

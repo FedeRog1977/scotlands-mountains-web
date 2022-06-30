@@ -357,8 +357,8 @@ small {
 }
 
 .imghill {
-	width: 375px;
-	height: 250px;
+	width: 325px;
+	height: 225px;
 	background-color: var(--bg);
 	border: 1px solid var(--font);
 	border-radius: 0.25em;
