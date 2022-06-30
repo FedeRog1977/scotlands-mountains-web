@@ -1,5 +1,3 @@
-let locations = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/JSON/Hills.json";
-
 /*
  * Select Munro from Drop-Down
  */
@@ -15,6 +13,10 @@ function selectMunroOpt() {
             const selectMunro = document.getElementById("weatherSelectMunro").value.toLowerCase();
             const locOutFive = document.getElementById("weatherResultsLocFive");
             const locOutSix = document.getElementById("weatherResultsLocSix");
+            const locOutFiveBuff = document.getElementById("weatherResultsLocFiveBuff");
+            const locOutSixBuff = document.getElementById("weatherResultsLocSixBuff");
+	    locOutFiveBuff.classList.remove("hidden");
+	    locOutSixBuff.classList.remove("hidden");
 	    locOutFive.innerHTML = "";
 	    locOutSix.innerHTML = "";
             for (var i in hills.landmass) {
@@ -50,7 +52,7 @@ function inpMunroOpt() {
 	    locOutSix.innerHTML = "";
             for (var i in hills.landmass) {
                 for (var k in hills.landmass[i].munro) {
-	            if (hills.landmass[i].munro[k].name.toLowerCase() === inpMunro) {
+	            if (hills.landmass[i].munro[k].name.toLowerCase().match(inpMunro)) {
 		        lat.value = hills.landmass[i].munro[k].lat;
 		        lon.value = hills.landmass[i].munro[k].lon;
 			locOutFive.innerHTML = hills.landmass[i].munro[k].name;
@@ -77,6 +79,10 @@ function selectCorbettOpt() {
             const selectCorbett = document.getElementById("weatherSelectCorbett").value.toLowerCase();
             const locOutFive = document.getElementById("weatherResultsLocFive");
             const locOutSix = document.getElementById("weatherResultsLocSix");
+            const locOutFiveBuff = document.getElementById("weatherResultsLocFiveBuff");
+            const locOutSixBuff = document.getElementById("weatherResultsLocSixBuff");
+	    locOutFiveBuff.classList.remove("hidden");
+	    locOutSixBuff.classList.remove("hidden");
 	    locOutFive.innerHTML = "";
 	    locOutSix.innerHTML = "";
             for (var i in hills.landmass) {
@@ -112,7 +118,7 @@ function inpCorbettOpt() {
 	    locOutSix.innerHTML = "";
             for (var i in hills.landmass) {
                 for (var k in hills.landmass[i].corbett) {
-	            if (hills.landmass[i].corbett[k].name.toLowerCase() === inpCorbett) {
+	            if (hills.landmass[i].corbett[k].name.toLowerCase().match(inpCorbett)) {
 		        lat.value = hills.landmass[i].corbett[k].lat;
 		        lon.value = hills.landmass[i].corbett[k].lon;
 			locOutFive.innerHTML = hills.landmass[i].corbett[k].name;
@@ -139,6 +145,10 @@ function selectCounty() {
 	    const selectCounty = document.getElementById("weatherSelectCounty").value.toLowerCase();
             const locOutFive = document.getElementById("weatherResultsLocFive");
             const locOutSix = document.getElementById("weatherResultsLocSix");
+            const locOutFiveBuff = document.getElementById("weatherResultsLocFiveBuff");
+            const locOutSixBuff = document.getElementById("weatherResultsLocSixBuff");
+	    locOutFiveBuff.classList.remove("hidden");
+	    locOutSixBuff.classList.remove("hidden");
 	    locOutFive.innerHTML = "";
 	    locOutSix.innerHTML = "";
             for (var i in hills.county) {
@@ -209,7 +219,11 @@ const app = {
     },
     showWeather: (resp) => {
         const conditioningWeatherResults = document.querySelector("#weatherResults");
+        const locOutFiveBuff = document.getElementById("weatherResultsLocFiveBuff");
+        const locOutSixBuff = document.getElementById("weatherResultsLocSixBuff");
         conditioningWeatherResults.classList.remove("hidden");
+        locOutFiveBuff.classList.add("hidden");
+        locOutSixBuff.classList.add("hidden");
         console.log(resp);
         let rowDaily = document.querySelector(".weatherrow.day");
         rowDaily.innerHTML = resp.daily

@@ -40,15 +40,15 @@
 
 	<div id="pagesDropCont" class="pages-mobile hidden">
                 <u>
-                <a href="index.html">Drafting</a>
-                <li>Field <a id="hikingDrop" href="#">&#9662;</a></li>
+		<li><a href="index.html">Drafting</a></li>
+		<li><a id="hikingDrop" href="#">Field</a></li>
+                </u>
 		<div id="pagesHiking" class="pages-hiking hidden">
         	        <u>
 			<li><a href="./Conquest.html">Conquest Map</a></li>
 			<li><a href="./Ranger.html">Ranger Calculator</a></li>
                 	</u>
         	</div>
-                </u>
         </div>
 
 	<div class="imgtext-cont">
@@ -71,19 +71,46 @@
 	
 		<div class="body">
 
-                        <h1 style="text-align:center;"><i class="fas fa-map-marked-alt"></i> Where Are You?</h1>
+			<div class="imgtext-mobile-cont">
 
-			<p style="text-align:center;">
-                        	<button onclick="getLocation()">Get Coordinates</button>
-			</p>
+				<div class="imgtext-top-mobile">
+					<img class="burning-pic-mobile" src="./Photos/Logo.png"></img>
+				</div>
 
-                       	<p id="demo" style="text-align:center;"></p>
+				<div class="imgtext-mobile-buttons">
+					<button class="imgtext-mobile-button" onclick="window.location.href='./Conquest.html'">Conquest</button>
+					<button class="imgtext-mobile-button" onclick="window.location.href='./Ranger.html'">Ranger</button>
+				</div>
 
-                        <h1 style="text-align:center;"><i class="fas fa-mountain"></i> Time for a Project?</h1>
+				<div class="imgtext-mobile-title">
+					<h1>
+						<marquee behavior="scroll" direction="left">Welcome to Burning Roots. From the creator of <a href="http://lewisbritton.com/">lewisbritton.com</a>, keeping the geography dream alive!</marquee>
+					</h1>
+				</div>
 
-			<p style="text-align:center;">
-				<button onclick="getNearest()">Nearest Project</button>
-			</p>
+				<p>Every passionate outdoorsman has that burning desire for freedom in the sweet country air; to love what you do and to keep improving. Sometimes it takes effort from your deepest roots to obtain PR after PR. So, with this fully interactive and informative GPS mapping application, take to the trails and the roads with more motivation than ever; being the fastest, most efficient, most prepared and the most endured athlete on your routes. Burning Roots allows you to plan and optimize routes more precisely than ever before.</p>
+
+			</div>
+
+			<div class="imgtext-mobile-desktop">
+
+				<h1 style="text-align:center;">Quick Burn</h1>
+
+                        	<h2 style="text-align:center;"><i class="fas fa-map-marked-alt"></i> Where Are You?</h2>
+
+				<p style="text-align:center;">
+                        		<button onclick="getLocation()">Get Coordinates</button>
+				</p>
+
+                       		<p id="demo" style="text-align:center;"></p>
+
+                        	<h2 style="text-align:center;"><i class="fas fa-mountain"></i> Time for a Project?</h2>
+
+				<p style="text-align:center;">
+					<button onclick="getNearest()">Nearest Project</button>
+				</p>
+
+			</div>
 
 		</div>
 
@@ -96,21 +123,27 @@
 			<h1>Briefing</h1>
 
 			<div class="elements-profile">
-				<a href="./" id="overviewOpt"><i class="fas fa-globe"></i>Overview</a>
-				<a href="./" id="conditioningOpt"><i class="fas fa-user"></i>Conditioning</a>
-				<a href="./" id="weatherOpt"><i class="fas fa-sun"></i>Weather</a>
+				<div class="flexRow">
+					<div class="optionsCol overview-style">
+						<a href="./" id="overviewOpt"><i class="fas fa-globe"></i> Overview</a>
+					</div>
+					<div class="optionsCol overview-style">
+						<a href="./" id="conditioningOpt"><i class="fas fa-user"></i> Conditioning</a>
+					</div>
+					<div class="optionsCol overview-style">
+						<a href="./" id="weatherOpt"><i class="fas fa-sun"></i> Weather</a>
+					</div>
+				</div>
 			</div>
 
 			<div id="overview">
 
 				<h1 class="element-heading">Overview</h1>
 
-				<div class="element">
+				<div class="element" style="text-align:center;">
 
-				<h2>Search Route</h2>
+					<h2>Search Route</h2>
                         	
-				<div class="optionsRow">
-
                                 	<h3>Select Landmass</h3>
 
                                 	<select id="selectLandmass" onchange="showRouteListCont()"></select>
@@ -223,30 +256,24 @@
                                 	        <button onclick="searchRoute('Eagach')" class="wide">Summary</button>
                                 	</div>
                                 
-					<div class="element" style="background-color:var(--fg);">
-                                	        <p id="statsPre">Find Routes</p>
-                                	        <p id="statsOut"></p>
+					<div class="sub-element">
+                                	        <p id="statsPre" class="overview-fit">Find Routes</p>
+                                	        <p id="statsOut" class="overview-fit"></p>
                                 	</div>
 
 				</div>
 
-				</div>
+				<div class="element" style="text-align:center;">
 
-				<div class="element">
-
-				<h2>Search Location</h2>
+					<h2>Search Location</h2>
                                 
-				<div class="optionsRow">
-
 					<input type="text" id="inpLocation"></input>
                                 	<button onclick="searchLocation()" class="wide">Summary</button>
-                                	<div class="element" style="background-color:var(--fg);">
-                                        	<p id="locationPre">Find a Munro, Munro Top, Corbett or Corbett Top</p>
-                                        	<p id="locationOut"></p>
+                                	<div class="sub-element">
+                                        	<p id="locationPre" class="overview-fit">Find a Munro, Munro Top, Corbett or Corbett Top</p>
+                                        	<p id="locationOut" class="overview-fit"></p>
                                 	</div>
 
-				</div>
-				
 				</div>
 
 			</div>
@@ -315,13 +342,13 @@
 					<p>
 					<table>
 						<tr>
-							<td style="text-align:right;padding:0.25em;">Select a Munro</td>
+							<td style="text-align:right;padding:0.25em;">Select Munro</td>
 							<td style="text-align:left;padding:0.25em;">
 								<select id="weatherSelectMunro" onchange="selectMunroOpt()"></select>
 							</td>
 						</tr>
 						<tr>
-							<td style="text-align:right;padding:0.25em;">Input a Munro</td>
+							<td style="text-align:right;padding:0.25em;">Input Munro</td>
 							<td style="text-align:left;padding:0.25em;">
 								<input id="weatherInputMunro" onchange="inpMunroOpt()" type="text"></input>
 							</td>
@@ -331,13 +358,13 @@
 					<p>
 					<table>
 						<tr>
-							<td style="text-align:right;padding:0.25em;">Select a Corbett</td>
+							<td style="text-align:right;padding:0.25em;">Select Corbett</td>
 							<td style="text-align:left;padding:0.25em;">
 								<select id="weatherSelectCorbett" onchange="selectCorbettOpt()"></select>
 							</td>
 						</tr>
 						<tr>
-							<td style="text-align:right;padding:0.25em;">Input a Corbett</td>
+							<td style="text-align:right;padding:0.25em;">Input Corbett</td>
 							<td style="text-align:left;padding:0.25em;">
 								<input id="weatherInputCorbett" onchange="inpCorbettOpt()" type="text"></input>
 							</td>
@@ -403,9 +430,9 @@
         			</div>
 
 				<div id="weatherResults" class="hidden">
-					<h3>Five-day forecast for <span id="weatherResultsLocFive"></span></h3>
+					<h3>Five-day forecast for <span id="weatherResultsLocFive"></span><span id="weatherResultsLocFiveBuff"> ...</span></h3>
 					<div id="weatherResultsDay" class="weatherrow day"></div>
-					<h3>Six-hour forecast for <span id="weatherResultsLocSix"></span></h3>
+					<h3>Six-hour forecast for <span id="weatherResultsLocSix"></span><span id="weatherResultsLocSixBuff"> ...</span></h3>
         				<div id="weatherResultsHour" class="weatherrow hour"></div>
       				</div>
 
@@ -413,7 +440,7 @@
 
 				<div class="element">
 
-				<h2>Bonus Exclusive DLC</h2>
+				<h2>Exclusive DLC</h2>
 
 				<h3 style="text-align:center">
 					Key 
@@ -778,6 +805,8 @@
 
 	<script src="Scripts/Drop.js"></script>
 	<script src="Scripts/Elements.js"></script>
+	<script src="Scripts/Locations.js"></script>
+	<script src="Scripts/Overview.js"></script>
 	<script src="Scripts/Weather.js" defer></script>
 	<script src="Scripts/Areas.js"></script>
 	<script src="Scripts/Routes.js"></script>

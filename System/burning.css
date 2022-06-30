@@ -41,16 +41,24 @@
 :root {
 	--bg: #F5F5F5;
 	--fg: #FFFFFF; /*#FBEACF;*/
-	/*--header-footer: linear-gradient(to bottom left, #C7AD7F 40%, #A57A5A);*/
+	--header-footer: linear-gradient(90deg, #808080 -100%, #303030 100%);
 	/*--header-footer: linear-gradient(to bottom left, #87CEEB 10%, #D8F2FF);*/
-	--header-footer: linear-gradient(to bottom left, #303030 100%, #303030);
+	/*--header-footer: linear-gradient(to bottom left, #303030 100%, #303030);*/
 	/*--title: radial-gradient(#87CEEB, #303030 70%);*/
 	--drop: #E8E8E8;
         --font: #000000;
         --font2: #96B9EE;
-	/*--font-header-footer: #FFFFFF;*/
 	--font-header-footer: #808080;
-	/*--font-hover: #7F5539;*/
+	--overview-button: linear-gradient(
+		90deg,
+		rgba(135, 206, 235, 0) 0%,
+		rgba(135, 206, 235, 0.125) 12.5%,
+		rgba(135, 206, 235, 0.25) 25%,
+		rgba(135, 206, 235, 0.5) 50%,
+		rgba(135, 206, 235, 0.25) 62.5%,
+		rgba(135, 206, 235, 0.125) 75%,
+		rgba(135, 206, 235, 0) 100%
+	);
 	--font-hover: #87CEEB;
 	--hill-hide: #BEBEBE;
 	--link-trans: 0.25s;
@@ -103,9 +111,15 @@ small {
 .header {
         background-image: var(--header-footer);
 	height: 150px;
-	/*box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);*/
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
         padding: 0 12.5% 0 6.25%;
 }
+
+	@media only screen and (max-width: 1026px) {
+		.header {
+			padding: 0 6.25% 0 6.25%;
+		}
+	}
 
         .title {
                 float: left;
@@ -119,6 +133,7 @@ small {
 			font-family: Giant;
 			font-size: 24px;
 			/*text-shadow: 0 0 20px rgba(135, 206, 235, 0.5);*/
+			letter-spacing: 2px;
 			margin: 0.25em 0 0 0;
 			padding: 0;
                 }
@@ -166,6 +181,7 @@ small {
 			.pages-drop-cont {
 				font-size: 14px;
 				text-align: left;
+                                letter-spacing: 2px;
 				line-height: 25px;
 				background-image: var(--header-footer);
 				box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.5);
@@ -177,20 +193,21 @@ small {
 
 		.pages-desktop, .pages-mobile, .pages-mobile-button {
                         font-size: 24px;
-			letter-spacing: 1.25px;
+			letter-spacing: 2px;
 			color: var(--font-header-footer);
                         transition: color var(--dark-trans);
                 }
 
 		.pages-mobile {
 		        font-family: Giant;
+			letter-spacing: 2px;
 			color: var(--font);
                         background-color: var(--drop);
                         text-align: right;
                         transition: background var(--dark-trans);
 			z-index: -1;
                         margin: 0;
-                        padding: 1em 12.5% 1em 12.5%;
+                        padding: 1em 6.25% 1em 6.25%;
                 }
 
 			.pages-hiking, .pages-cycling {
@@ -226,7 +243,6 @@ small {
                         .pages-desktop u, .pages-mobile u {
                                 list-style-type: none;
                                 text-decoration: none;
-                                letter-spacing: 1px;
                                 word-spacing: 1px;
                         }
 
@@ -340,6 +356,23 @@ small {
 	padding: 0.25em;
 }
 
+.imghill {
+	width: 375px;
+	height: 250px;
+	background-color: var(--bg);
+	border: 1px solid var(--font);
+	border-radius: 0.25em;
+	margin: 0;
+	padding: 0.25em;
+}
+
+	@media only screen and (max-width: 768px) {
+		.imghill {
+			width: 275px;
+			height: 190px;
+		}
+	}
+
 .imgcage {
 	width: 100%;
 	margin: 1.25em auto 1.25em auto;
@@ -360,13 +393,13 @@ small {
 		padding: 0.25em;
 	}
 
-		@media (min-width: 768px) {
+		@media only screen and (min-width: 768px) {
 			.imgcol {
 				flex: 1 0;
 			}
 		}
 
-.imgtext-cont {
+.imgtext-cont, .imgtext-mobile-cont {
 	background-image: url("./Photos/home-bg.jpg");
 	background-attachment: fixed;
 	background-position: top;
@@ -376,12 +409,22 @@ small {
 	padding: 12.5% 12.5% 12.5% 12.5%;
 }
 
+.imgtext-mobile-cont {
+	padding: 1.25em;
+	margin: -1.25em -1.25em 1.25em -1.25em;
+}
+
 	@media only screen and (max-width: 1026px) {
 		.imgtext-cont {
 			display: none;
 		}
 	}
 
+	@media only screen and (min-width: 1026px) {
+		.imgtext-mobile-cont {
+			display: none;
+		}
+	}
 	.imgtext-cont h1, .imgtext-cont p, .imgtext-buttons {
 		margin: 1.25em 0 1.25em 0;
 	}
@@ -389,7 +432,6 @@ small {
 	.imgtext-cont h1 {
 		color: #FFFFFF;
 		opacity: 0.8;
-		border: 1px solid black;
 	}
 
 	.imgtext-cont p {
@@ -400,7 +442,15 @@ small {
 		line-height: 25px;
 		opacity: 0.5;
 		margin: 0;
-		border: 1px solid black;
+	}
+
+	.imgtext-mobile-cont p {
+		font-family: Audi-Extended;
+		text-align: justify;
+    		text-align-last: center;
+		color: var(--font);
+		line-height: 25px;
+		opacity: 0.5;
 	}
 
 	.imgtext-left {
@@ -414,6 +464,10 @@ small {
 		margin: 0 0 25px 0;
 	}
 
+	.imgtext-top-mobile {
+		margin: 25px 0 25px 0;
+	}
+
 	.imgtext-center {
 		position: absolute;
 		top: 50%;
@@ -421,9 +475,20 @@ small {
 		transform: translate(-50%, -50%);
 	}
 
-	.imgtext-buttons {
-		border: 1px solid black;
+	.imgtext-buttons, .imgtext-mobile-buttons {
+		text-align: center;
 	}
+
+		.imgtext-mobile-button {
+			font-family: Audi-Extended;
+			font-size: 18px;
+			color: rgba(0, 0, 0, 0.8);
+			background: rgba(0, 0, 0, 0);
+			border: 2px solid rgba(0, 0, 0, 0.8);
+			margin: 0 0.25em 0 0.25em;
+			padding: 7.5px;
+			transition: color var(--link-trans), border var(--link-trans), background var(--link-trans);
+		}
 
 		.imgtext-button {
 			font-family: Audi-Extended;
@@ -452,10 +517,43 @@ small {
 			transition: color var(--link-trans);
 		}
 
-		.imgtext-title a:hover {
+		.imgtext-mobile-title a {
+			color: var(--font);
+			text-decoration: none;
+			transition: color var(--link-trans);
+		}
+
+		.imgtext-title a:hover, .imgtext-mobile-title a:hover {
 			color: var(--font-hover);
 			transition: color var(--link-trans);
 		}
+
+/*
+.imgtext-mobile-trans {
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 0.5) 50%,
+		rgba(255, 255, 255, 0) 100%
+	); 
+	margin: -1.25em;
+	padding: 12.5%;
+}
+*/
+
+.imgtext-mobile-desktop {
+}
+
+	@media only screen and (max-width: 1026px) {
+		.imgtext-mobile-desktop {
+			background: linear-gradient(
+				0deg,
+				rgba(255, 255, 255, 1) 0%,
+				rgba(255, 255, 255, 0.5) 50%,
+				rgba(255, 255, 255, 0) 100%
+			); 
+		}
+	}
 
 /* Tables */
 
@@ -537,7 +635,12 @@ button:active {
   	/*filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));*/
 	margin: 0;
 	padding: 0;
-	border: 1px solid black;
+}
+
+.burning-pic-mobile {
+	text-align: center;
+	max-width: 300px;
+	-webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
 }
 
 .profile-pic {
@@ -548,12 +651,12 @@ button:active {
 
 .elements-profile {
 	font-family: Audi-Extended;
-        font-size: 18px;
+        font-size: 16px;
 	word-spacing: 10px;
-	color: var(--font-header-footer);
+	color: var(--font);
 	border-top: 1.5px solid var(--font);
 	border-bottom: 1.5px solid var(--font);
-	padding: 1em 0.5em 1em 0.5em;
+	padding: 0 0.5em 0em 0.5em;
 	transition: color var(--dark-trans);
 }
 			
@@ -576,13 +679,13 @@ button:active {
 	.element {
 		background-color: var(--bg);
 		margin: 0.5em 0 0.5em 0;
-		padding: 0.5em;
+		padding: 1.25em 2.5em 1.25em 2.5em;
 	}
 
 		.sub-element {
 			background-color: var(--fg);
-			margin: 0;
-			padding: 0;
+			margin: 1.25em 0 1.25em 0;
+			padding: 1.25em;
 		}
 
 			.sub-sub-element {
@@ -790,7 +893,6 @@ button:active {
 
 	.optionsCont {
 		margin: 1.25em;
-		border: 1px solid black;
 	}
 
 	#options select {
@@ -839,7 +941,6 @@ button:active {
 			background-color: var(--bg);
 			margin: 0.625em 0.625em 1.25em 0.625em;
 			padding: 1.25em 0.5em 1.25em 0.5em;
-			border: 1px solid black;
 		}
 
 		.flexRow {
@@ -856,9 +957,13 @@ button:active {
 		.optionsCol {
 			text-align: center;
 			display: inline-block;
-			margin: 0 0.25em 0 0.25em;
-			border: 1px solid black;
+			margin: 0.25em;
 		}
+
+			.overview-style {
+				background-image: var(--overview-button);
+				padding: 0.5em;
+			}
 
                 @media (min-width: 768px) {
                         .optionsCol {
@@ -869,12 +974,39 @@ button:active {
 		.optionsLabel {
 			font-size: 12px;
 			display: block;
-			border: 1px solid black;
 		}
 
+#statsPre, #locationPre,
 #statsOut, #locationOut {
 	font-size: 14px;
+	text-align: center;
 }
+
+	.overview-fit {
+		padding: 0 15em 0 15em;
+	}
+
+		@media only screen and (max-width: 1026px) {
+			.overview-fit {
+				padding: 0;
+			}
+		}
+
+	.overview-separate {
+		/*background-color: rgba(135, 206, 235, 0.25);*/
+		background: linear-gradient(
+			90deg,
+			rgba(135, 206, 235, 0) 0%,
+			rgba(135, 206, 235, 0.125) 12.5%,
+			rgba(135, 206, 235, 0.25) 25%,
+			rgba(135, 206, 235, 0.5) 50%,
+			rgba(135, 206, 235, 0.25) 62.5%,
+			rgba(135, 206, 235, 0.125) 75%,
+			rgba(135, 206, 235, 0) 100%
+		); 
+		margin: 1.25em 0 1.25em 0;
+		padding: 0.125em;
+	}
 
 #statsOut a {
 	font-family: Audi-Extended;

@@ -532,7 +532,3 @@ selectRouteBideanList.innerHTML = selectRouteBideanListCont;
 selectRouteBheithirList.innerHTML = selectRouteBheithirListCont;
 selectRouteChrulaisteList.innerHTML = selectRouteChrulaisteListCont;
 selectRouteEagachList.innerHTML = selectRouteEagachListCont;
-
-//function searchLandmass() {
-//    if ()
-//}
