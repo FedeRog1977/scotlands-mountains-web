@@ -59,6 +59,7 @@
 
 	<div id="map"></div>
 	<div id="scope"></div>
+	<div class="hidden"><span id="currLatBuff"></span><span id="currLonBuff"></span></div>
 
 	<div class="options-container">
 		<div id="optionsOpt">
@@ -241,7 +242,7 @@
 			<h2>Search Location</h2>
 			<div class="optionsRow">
                         	<input type="text" id="inpLocation"></input>
-                        	<button onclick="searchLocation()" class="wide">Summary</button>
+                        	<button onclick="searchLocation()" id="searchLocation" class="wide">Summary</button>
                         	<div class="element" style="background-color:var(--fg);">
                         	        <p id="locationPre">Find a Munro, Munro Top, Corbett or Corbett Top</p>
                         	        <p id="locationOut"></p>
@@ -253,7 +254,7 @@
 </body>
 
 	<script src="./Scripts/Drop.js"></script>
-	<script src="Scripts/Locations.js"></script>
+	<script src="./Scripts/Locations.js"></script>
 	<script src="./Scripts/Conquest.js"></script>
 	<script src="./Scripts/Routes.js"></script>
 

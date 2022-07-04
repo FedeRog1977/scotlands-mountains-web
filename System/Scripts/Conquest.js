@@ -175,11 +175,17 @@ function switchLayer() {
  */
 var markers = [];
 
-function createHillMarker(hill,type,elev,lat,latDir,lon,lonDir,img,iconType) {
-    var popup = "<h3 style='margin:0 0 0.25em 0;'>" + hill + "</h3>" 
-        + type + elev + "ft<br>" 
-	+ lat + "&deg;" + latDir + ", " + lon + "&deg;" + lonDir + "<br>" 
-	+ "<img src='Photos/" + img + "' style='width:150px;'></img>";
+function createHillMarker(hill,type,elev,lat,latDir,lon,lonDir,region,subregion,informalregion,img,iconType) {
+    var popup = "<div style='text-align:center;'>"
+	+ "<h2 style='margin:0 0 0.25em 0;'>" + hill + "</h2>" 
+	+ "<h3>" + type + " at " + elev + "ft</h3>" 
+        + "<p>"
+	+ lat + "&deg;(" + latDir + "), " + lon + "&deg;(" + lonDir + ")<br>" 
+	+ region + " - " + subregion + "<br>"
+	+ "(" + informalregion + ")"
+	+ "</p>"
+	+ "<img src='Photos/" + img + "' style='width:250px;'></img>"
+	+ "</div>";
     var hillMarker = new L.marker([lat,lon],{icon:iconType}).addTo(map).bindPopup(popup);
     markers.push(hillMarker);
 }
@@ -190,7 +196,7 @@ function createHillMarker(hill,type,elev,lat,latDir,lon,lonDir,img,iconType) {
 var routeMarkers = [];
 
 function createRouteMarker(route,dist,elev,time,score,diff,munros,munrotops,corbetts,corbetttops,coords,iconType) {
-    var popup = "<h3 style='margin:0 0.5em 0.25em 0.5em;'>" + route + " - Start</h3>"
+    var popup = "<h2 style='margin:0 0.5em 0.25em 0.5em;'>" + route + " - Start</h2>"
         + "<b>Distance: </b>" + dist + "mi<br>"
 	+ "<b>Elev. Gain: </b>" + elev + "ft<br>" 
 	+ "<b>Est. Time: </b>" + time + "hrs<br><hr>"
@@ -216,6 +222,9 @@ function showMunros() {
         .then((data) => {
             const hills = data;
             for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
                 for (var k in hills.landmass[i].munro) {
 		    let latDir = "";
 		    if (hills.landmass[i].munro[k].lat < 0) {
@@ -231,12 +240,15 @@ function showMunros() {
 		    }
                     createHillMarker(
 		        hills.landmass[i].munro[k].name,
-			"Munro at ",
+			"Munro",
 		        hills.landmass[i].munro[k].elevation,
 		        hills.landmass[i].munro[k].lat,
 			latDir,
 		        hills.landmass[i].munro[k].lon,
 			lonDir,
+			region,
+			subregion,
+			informalregion,
 			hills.landmass[i].munro[k].image,
 		        mountainIcon
 		    );
@@ -257,6 +269,9 @@ function showMunro(hill) {
         .then((data) => {
             const hills = data;
             for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
                 for (var k in hills.landmass[i].munro) {
 		    if (hills.landmass[i].munro[k].name === hill) {
 		        let latDir = "";
@@ -273,12 +288,15 @@ function showMunro(hill) {
 		        }
                     	createHillMarker(
 		            hills.landmass[i].munro[k].name,
-			    "Munro at ",
+			    "Munro",
 		            hills.landmass[i].munro[k].elevation,
 		            hills.landmass[i].munro[k].lat,
 			    latDir,
 		            hills.landmass[i].munro[k].lon,
 			    lonDir,
+			    region,
+			    subregion,
+			    informalregion,
 			    hills.landmass[i].munro[k].image,
 		            mountainIcon
 		        );
@@ -300,6 +318,9 @@ function showMunroTops() {
         .then((data) => {
             const hills = data;
             for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
                 for (var k in hills.landmass[i].munrotop) {
 		    let latDir = "";
 		    if (hills.landmass[i].munrotop[k].lat < 0) {
@@ -315,12 +336,15 @@ function showMunroTops() {
 		    }
                     createHillMarker(
 		        hills.landmass[i].munrotop[k].name,
-			"Munro Top at ",
+			"Munro Top",
 		        hills.landmass[i].munrotop[k].elevation,
 		        hills.landmass[i].munrotop[k].lat,
 			latDir,
 		        hills.landmass[i].munrotop[k].lon,
 			lonDir,
+			region,
+			subregion,
+			informalregion,
 			hills.landmass[i].munrotop[k].image,
 		        mountainIcon
 		    );
@@ -341,6 +365,9 @@ function showMunroTop(hill) {
         .then((data) => {
             const hills = data;
             for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
                 for (var k in hills.landmass[i].munrotop) {
 		    if (hills.landmass[i].munrotop[k].name === hill) {
 		        let latDir = "";
@@ -357,12 +384,15 @@ function showMunroTop(hill) {
 		        }
                     	createHillMarker(
 		            hills.landmass[i].munrotop[k].name,
-			    "Munro Top at ",
+			    "Munro Top",
 		            hills.landmass[i].munrotop[k].elevation,
 		            hills.landmass[i].munrotop[k].lat,
 			    latDir,
 		            hills.landmass[i].munrotop[k].lon,
 			    lonDir,
+			    region,
+			    subregion,
+			    informalregion,
 			    hills.landmass[i].munrotop[k].image,
 		            mountainIcon
 		        );
@@ -384,6 +414,9 @@ function showCorbetts() {
         .then((data) => {
             const hills = data;
             for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
                 for (var k in hills.landmass[i].corbett) {
 		    let latDir = "";
 		    if (hills.landmass[i].corbett[k].lat < 0) {
@@ -399,12 +432,15 @@ function showCorbetts() {
 		    }
                     createHillMarker(
 		        hills.landmass[i].corbett[k].name,
-			"Corbett at ",
+			"Corbett",
 		        hills.landmass[i].corbett[k].elevation,
 		        hills.landmass[i].corbett[k].lat,
 			latDir,
 		        hills.landmass[i].corbett[k].lon,
 			lonDir,
+			region,
+			subregion,
+			informalregion,
 			hills.landmass[i].corbett[k].image,
 		        mountainIcon
 		    );
@@ -425,6 +461,9 @@ function showCorbett(hill) {
         .then((data) => {
             const hills = data;
             for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
                 for (var k in hills.landmass[i].corbett) {
 		    if (hills.landmass[i].corbett[k].name === hill) {
 		        let latDir = "";
@@ -441,12 +480,15 @@ function showCorbett(hill) {
 		        }
                     	createHillMarker(
 		            hills.landmass[i].corbett[k].name,
-			    "Corbett at ",
+			    "Corbett",
 		            hills.landmass[i].corbett[k].elevation,
 		            hills.landmass[i].corbett[k].lat,
 			    latDir,
 		            hills.landmass[i].corbett[k].lon,
 			    lonDir,
+			    region,
+			    subregion,
+			    informalregion,
 			    hills.landmass[i].corbett[k].image,
 		            mountainIcon
 		        );
@@ -468,6 +510,9 @@ function showCorbettTops() {
         .then((data) => {
             const hills = data;
             for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
                 for (var k in hills.landmass[i].corbetttop) {
 		    let latDir = "";
 		    if (hills.landmass[i].corbetttop[k].lat < 0) {
@@ -483,12 +528,15 @@ function showCorbettTops() {
 		    }
                     createHillMarker(
 		        hills.landmass[i].corbetttop[k].name,
-			"Corbett Top at ",
+			"Corbett Top",
 		        hills.landmass[i].corbetttop[k].elevation,
 		        hills.landmass[i].corbetttop[k].lat,
 			latDir,
 		        hills.landmass[i].corbetttop[k].lon,
 			lonDir,
+			region,
+			subregion,
+			informalregion,
 			hills.landmass[i].corbetttop[k].image,
 		        mountainIcon
 		    );
@@ -509,6 +557,9 @@ function showCorbettTop(hill) {
         .then((data) => {
             const hills = data;
             for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
                 for (var k in hills.landmass[i].corbetttop) {
 		    if (hills.landmass[i].corbetttop[k].name === hill) {
 		        let latDir = "";
@@ -525,12 +576,15 @@ function showCorbettTop(hill) {
 		        }
                     	createHillMarker(
 		            hills.landmass[i].corbetttop[k].name,
-			    "Corbett Top at ",
+			    "Corbett Top",
 		            hills.landmass[i].corbetttop[k].elevation,
 		            hills.landmass[i].corbetttop[k].lat,
 			    latDir,
 		            hills.landmass[i].corbetttop[k].lon,
 			    lonDir,
+			    region,
+			    subregion,
+			    informalregion,
 			    hills.landmass[i].corbetttop[k].image,
 		            mountainIcon
 		        );
@@ -552,41 +606,32 @@ function hideMarkers() {
 
 
 /*
- * Get Current Latitude
- * INCOMPLETE
+ * Get Current Latitude and Longitude
  */
-function getLat(e) {
-    //var currLocLatMarker = new L.marker([e.latitude, e.longitude]);
-    var currLocLatMarker = new L.marker(e.latlng);
-    var latLng = currLocLatMarker.getLatLng();
-    var lat = latLng.lat;
-    return lat;
+const getLatLonOpts = {
+    enableHighAccuracy: true,
+    timeout: 1000*10,
+    maximumAge: 1000*60*5
 }
 
-
-/*
- * Get Current Longitude
- * INCOMPLETE
- */
-function getLon(e) {
-    //var currLocLonMarker = new L.marker([e.latitude, e.longitude]);
-    var currLocLonMarker = new L.marker(e.latlng);
-    var latLng = currLocLonMarker.getLatLng();
-    var lon = latLng.lng;
-    return lon;
+function getLatLon(position) {
+    document.getElementById("currLatBuff").innerHTML = position.coords.latitude;
+    document.getElementById("currLonBuff").innerHTML = position.coords.longitude;
 }
+
+function getLatLonFail(err) {
+    console.error(err);
+}
+
+navigator.geolocation.getCurrentPosition(getLatLon, getLatLonFail, getLatLonOpts);
 
 
 /*
  * Get Distance From-To Using Current to Custom Location 
- * INCOMPLETE
  */
-function getDistanceCurr(e,toLat,toLon) {
-    var lat = map.on("load", getLat);
-    var lon = map.on("load", getLon);
-
-    var currLat = lat;
-    var currLon = lon;
+function getDistanceCurr(toLat,toLon) {
+    var currLat = document.getElementById("currLatBuff").innerHTML;
+    var currLon = document.getElementById("currLonBuff").innerHTML;
 
     var markerFrom = new L.marker([currLat,currLon]);
     var markerTo =  new L.marker([toLat,toLon]);
@@ -801,16 +846,14 @@ function searchLocation() {
 		            mountainIcon
 		        );
 
-			/*
 			let hillFromTo = getDistanceCurr(
 			    hillBuff.lat,
 			    hillBuff.lon
 			);
-			*/
 
                         locationOut.innerHTML =
                             "<h1>" + hillName + "</h1>"
-			    //+ "<b>You are " + hillFromTo + "mi from here</b><br><hr>"
+			    + "You are <b>" + hillFromTo + "mi</b> from here<br><hr>"
                             + hillName + " is a <b>" + hillTypeStr + "</b> on the <b>" + landmassName + "</b> " + landmassType + landmassSubtype + "<br><hr>"
                             + landmassSubsubtype
                             + "<b>Parent Landmass</b>: " + landmassParentLandmass + "<br>"
