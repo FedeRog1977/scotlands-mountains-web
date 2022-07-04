@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const overview = document.querySelector("#overview");
     const conditioning = document.querySelector("#conditioning");
-    const conditioningAbility = document.querySelector("#ability");
-    const conditioningEquipment = document.querySelector("#equipment");
     const weather = document.querySelector("#weather");
     const weatherKey = document.querySelector("#weatherKey");
     const weatherSugClouds = document.querySelector("#weatherSugClouds");
@@ -59,24 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
             weatherSugBearings.classList.remove("hidden");
         } else {
             weatherSugBearings.classList.add("hidden");
-	}
-    });
-
-    document.querySelector("#abilityOpt").addEventListener("click", e => {
-        e.preventDefault();
-        if (conditioningAbility.classList.contains("hidden")) {
-            conditioningAbility.classList.remove("hidden");
-        } else {
-            conditioningAbility.classList.add("hidden");
-	}
-    });
-
-    document.querySelector("#equipmentOpt").addEventListener("click", e => {
-        e.preventDefault();
-        if (conditioningEquipment.classList.contains("hidden")) {
-            conditioningEquipment.classList.remove("hidden");
-        } else {
-            conditioningEquipment.classList.add("hidden");
 	}
     });
 

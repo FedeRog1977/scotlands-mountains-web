@@ -132,7 +132,6 @@ const panCoordsCont = document.getElementById('scope');
 
 map.on("move", function(e) {
     var panCoords = crosshair.getLatLng();
-    //var panCoords = getMousePosition().getLatLng();
     panCoordsCont.innerHTML = `<table>
         <tr>
 	    <td style="padding:0.25em;">Seeking:</td>
@@ -842,6 +841,9 @@ function searchLocation() {
 			    hillLatDir,
 		            hillBuff.lon,
 			    hillLonDir,
+			    landmassRegion,
+			    landmassSubregion,
+			    landmassInformalRegion,
 			    hillBuff.image,
 		            mountainIcon
 		        );

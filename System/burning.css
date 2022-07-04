@@ -695,6 +695,13 @@ button:active {
 				padding: 0 2em 0 2em;
 			}
 
+
+#overview .element,
+#conditioning .element,
+#weather .element {
+	text-align: center;
+}
+
 .weatherrow {
 	display: flex;
 	flex-wrap: wrap;
@@ -976,8 +983,9 @@ button:active {
 			display: block;
 		}
 
-#statsPre, #locationPre,
-#statsOut, #locationOut {
+#statsPre, #statsOut,
+#locationPre, #locationOut,
+#abilityOut, #equipmentOut {
 	font-size: 14px;
 	text-align: center;
 }
