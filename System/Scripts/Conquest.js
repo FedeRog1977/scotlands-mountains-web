@@ -690,6 +690,7 @@ function searchLocation() {
             let hillName = "";
 
 	    hideMarkers();
+	    hideRoutes();
 
 	    for (var i in hills.landmass) {
 		for (var k in hills.landmass[i].munro) {
@@ -1591,6 +1592,108 @@ function showRoute(landmass) {
 			startIcon
 		    );
                 })
+	})
+}
+
+
+/*
+ * Galactic Conquest (Show All Routes)
+ * INCOMPLETE
+ */
+var routesAll = [];
+
+function galacticConquest(landmass) {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const hills = data;
+            let loadRoutePrefix = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/";
+            let loadRouteSuffix = "";
+	    let loadRoute = "";
+	    let routeName = "";
+	    let routeDist = "";
+	    let routeElev = "";
+	    let routeTime = "";
+	    let routeScore = "";
+            let routeMunros = "";
+            let routeMunroTops = "";
+            let routeCorbetts = "";
+            let routeCorbettTops = "";
+	    let loadRoutes = [];
+
+	    hideMarkers();
+	    hideRoutes();
+
+	    for (var i in hills.landmass) {
+		for (var k in hills.landmass[i].route) {
+		    loadRouteSuffix = hills.landmass[i].route[k].GPX;
+		    loadRoute = loadRoutePrefix + loadRouteSuffix;
+		    loadRoutes.push(loadRoute);
+
+		    for (var j in hills.landmass[i].route[k].munro) {
+			if (hills.landmass[i].route[k].munro !== null) {
+		            showMunro(hills.landmass[i].route[k].munro[j]);
+			} else {
+			    return false;
+			}
+		    }
+
+		    for (var j in hills.landmass[i].route[k].munrotop) {
+			if (hills.landmass[i].route[k].munrotop !== null) {
+		            showMunroTop(hills.landmass[i].route[k].munrotop[j]);
+			} else {
+			    return false;
+			}
+		    }
+
+		    for (var j in hills.landmass[i].route[k].corbett) {
+			if (hills.landmass[i].route[k].corbett !== null) {
+		            showCorbett(hills.landmass[i].route[k].corbett[j]);
+			} else {
+			    return false;
+			}
+		    }
+
+		    for (var j in hills.landmass[i].route[k].corbetttop) {
+			if (hills.landmass[i].route[k].corbetttop !== null) {
+		            showCorbettTop(hills.landmass[i].route[k].corbetttop[j]);
+			} else {
+			    return false;
+			}
+		    }
+		}
+	    }
+
+	    for (var i in loadRoutes) {
+                fetch(loadRoutes[i])
+                    .then(response => response.text())
+                    .then(str => new DOMParser().parseFromString(str, "text/xml"))
+                    .then(doc => {
+	            	let data = toGeoJSON.gpx(doc);
+	                const route = data;
+	                var routeTrack = new L.geoJSON(route,{color:'#A80606'}).addTo(map);
+		        routesAll.push(routeTrack);
+
+		    	createRouteMarker(
+			    routeName,
+			    routeDist,
+			    routeElev,
+			    routeTime,
+			    routeScore,
+			    routeDiff,
+			    routeMunros,
+			    routeMunroTops,
+			    routeCorbetts,
+			    routeCorbettTops,
+			    routeCoords,
+			    startIcon
+		    	);
+                    })
+	    }
+
+	    alert("WARNING! You are entering a GALACTIC CONQUEST!");
 	})
 }
 

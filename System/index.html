@@ -277,17 +277,71 @@
 
 				<div class="element">
 				<h2><i class="fas fa-heartbeat"></i> Ability</h2>
-					<select id="abilitySelectComponent"></select>
+					<select id="selectAbility" onchange="showAbilityListCont()"></select>
+
+					<div id="selectAbilityHillsCont" class="hidden">
+                                	        <h3>Hill Elements</h3>
+                                	        <select id="selectAbilityHills"></select>
+                                	</div>
+
+					<div id="selectAbilityRoutesCont" class="hidden">
+                                	        <h3>Route Elements</h3>
+                                	        <select id="selectAbilityRoutes"></select>
+                                	</div>
+
+					<div id="selectAbilityRoutesTypeCont" class="hidden">
+                                	        <h3>Route Types</h3>
+                                	        <select id="selectAbilityRoutesType"></select>
+                                	</div>
+
+					<div id="selectAbiliyRoutesStageCont" class="hidden">
+                                	        <h3>Route Stages</h3>
+                                	        <select id="selectAbiliyRoutesStage"></select>
+                                	</div>
+
+					<div id="selectAbilityTerraintypeCont" class="hidden">
+                                	        <h3>Terrain Types</h3>
+                                	        <select id="selectAbilityTerraintype"></select>
+                                	</div>
+
+					<div id="selectAbilityTerraindiffCont" class="hidden">
+                                	        <h3>Terrain Difficulties</h3>
+                                	        <select id="selectAbilityTerraindiff"></select>
+                                	</div>
+
 					<div class="sub-element">
-						<p id="abilityOut">Find Ability Elements</p>
+						<p id="abilityPre">Find Ability Elements</p>
+						<p id="abilityOut"></p>
 					</div>
 				</div>
 
 				<div class="element">
 				<h2><i class="fas fa-hiking"></i> Equipment Cache</h2>
-					<select id="equipmentSelectComponent"></select>
+					<select id="selectEquipment" onchange="showEquipmentListCont()"></select>
+
+					<div id="selectEquipmentPacksCont" class="hidden">
+                                	        <h3>Packs and Travel</h3>
+                                	        <select id="selectEquipmentPacks"></select>
+                                	</div>
+
+					<div id="selectEquipmentTechnicalCont" class="hidden">
+                                	        <h3>Technical Equipment</h3>
+                                	        <select id="selectEquipmentTechnical"></select>
+                                	</div>
+
+					<div id="selectEquipmentFootwearCont" class="hidden">
+                                	        <h3>Footwear</h3>
+                                	        <select id="selectEquipmentFootwear"></select>
+                                	</div>
+
+					<div id="selectEquipmentClothingCont" class="hidden">
+                                	        <h3>Clothing</h3>
+                                	        <select id="selectEquipmentClothing"></select>
+                                	</div>
+
 					<div class="sub-element">
-						<p id="equipmentOut">Find Equipment Components</p>
+						<p id="equipmentPre">Find Equipment Components</p>
+						<p id="equipmentOut"></p>
 					</div>
 				</div>
 
@@ -765,12 +819,14 @@
 
 	<script src="./Scripts/Drop.js"></script>
 	<script src="./Scripts/Elements.js"></script>
+	<script src="./Scripts/Attributes.js"></script>
 	<script src="./Scripts/Locations.js"></script>
-	<script src="./Scripts/Overview.js"></script>
-	<script src="./Scripts/Weather.js" defer></script>
-	<script src="./Scripts/Areas.js"></script>
-	<script src="./Scripts/Routes.js"></script>
+	<script src="./Scripts/Hills-Routes.js"></script>
 	<script src="./Scripts/Abilities-Equipment.js"></script>
+	<script src="./Scripts/Weather-Areas.js"></script>
+	<script src="./Scripts/Overview.js"></script>
+	<script src="./Scripts/Conditioning.js"></script>
+	<script src="./Scripts/Weather.js" defer></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

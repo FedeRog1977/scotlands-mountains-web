@@ -985,7 +985,8 @@ button:active {
 
 #statsPre, #statsOut,
 #locationPre, #locationOut,
-#abilityOut, #equipmentOut {
+#abilityPre, #abilityOut,
+#equipmentPre, #equipmentOut {
 	font-size: 14px;
 	text-align: center;
 }
