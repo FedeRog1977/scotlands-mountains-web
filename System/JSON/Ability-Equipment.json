@@ -1,122 +1,562 @@
 {
     "type": [
-	"walk",
-	"hillwalk",
-	"ridgewalk",
-	"scramble",
-	"climb"
+	{
+	    "name": "walk",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "hillwalk",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "ridgewalk",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "scramble",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "climb",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	}
     ],
     "stage": [
-	"walk-in",
-	"approach",
-	"on-hill",
-	"walk-out"
+	{
+	    "name": "walk-in",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "approach",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "on-hill",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "walk-out",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	}
     ],
     "terraintype": [
-	"road",
-	"forestry commission road",
-	"off-road",
-	"farm path",
-	"tourist path",
-	"path",
-	"footpath erosion",
-	"stalker&rsuqo;s path",
-	"shepherd&rsquo;s path",
-	"sheep path",
-	"off-path"
+	{
+	    "name": "road",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "forestry commission road",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "off-road",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "farm path",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "tourist path",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "path",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "footpath erosion",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "stalker&rsuqo;s path",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "shepherd&rsquo;s path",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "sheep path",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "off-path",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	}
     ],
     "terraindiff": [
-	"grass",
-	"concrete",
-	"stone staircase",
-	"broken rock",
-	"grass with scattered rock",
-	"rocky talus",
-	"talus (coarse scree)",
-	"scree (fine scree)",
-	"crag",
-	"crag, grade 1 (easy)",
-	"crag, grade 2 (moderate)",
-	"crag, grade 3 (challenging)",
-	"notched slab",
-	"notched slab, grade 1 (easy)",
-	"notched slab, grade 2 (moderate)",
-	"notched slab, grade 3 (challenging)",
-	"smooth slab",
-	"smooth slab, grade 1 (easy)",
-	"smooth slab, grade 2 (moderate)",
-	"smooth slab, grade 3 (challenging)"
+	{
+	    "name": "grass",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+    	    "name": "concrete",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "stone staircase",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "broken rock",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "grass with scattered rock",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "rocky talus",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "talus (coarse scree)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "scree (fine scree)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "crag",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "crag, grade 1 (easy)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "crag, grade 2 (moderate)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "crag, grade 3 (challenging)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "notched slab",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "notched slab, grade 1 (easy)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "notched slab, grade 2 (moderate)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "notched slab, grade 3 (challenging)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "smooth slab",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "smooth slab, grade 1 (easy)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "smooth slab, grade 2 (moderate)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "smooth slab, grade 3 (challenging)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	}
     ],
     "gear": [
-	"duffel (various sizes)",
-	"rucksack, day (small)",
-	"rucksack, travel (large)",
-	"daypack",
-	"tent",
-	"sleeping bag",
-	"sleeping mat",
-	"pillow",
-	"dry sacks",
-	"wash bag",
-	"towel(s)",
-	"reservoir",
-	"insulated bottle(s)",
-	"thermal flask",
-	"food containers",
-	"mini stove",
-	"utensils",
-	"lighter / flint and steel",
-	"tweezers",
-	"wet wipes",
-	"sun cream (omit)",
-	"midge repellent (omit)",
-	"tick repellent / permethrin (omit)",
-	"GPS device",
-	"hiking poles",
-	"ice axe, safety (short)",
-	"ice axe, safety (long)",
-	"ice axe(s), ice climbing (notched)",
-	"compass",
-	"topographical maps",
-	"whistle",
-	"head torch",
-	"helmet",
-	"harness and ropes",
-	"belay loop and carabiners",
-	"cams, nuts and belay fixtures",
-	"&lsquo;quickdraws&rsquo; and slings",
-	"chalk bag and chalk",
-	"city/approach shoes",
-	"trainers / trail runners",
-	"hiking boots, flexible (b1)",
-	"hiking boots, semi-rigid (b2)",
-	"hiking/mountaineering boots, rigid (b3)",
-	"climbing shoes",
-	"replacement laces",
-	"crampons, flexible (c1)",
-	"crampons, semi-rigid (c2)",
-	"crampons, rigid (c3)",
-	"shoe brush",
-	"base layers",
-	"mid layer fleeces and hoodies",
-	"windbreaker",
-	"jacket, shoftshell (drinking beer)",
-	"jacket, hardshell (waterproof)",
-	"jacket, duvet",
-	"jacket, down",
-	"jacket, down (waterproof)",
-	"leggings",
-	"mountain pants",
-	"mountain shorts",
-	"approach socks",
-	"hiking socks",
-	"gaiters",
-	"cap (if you have a receding hairline)",
-	"beanie (if you don&rsquo;t wash)",
-	"windbreaker gloves",
-	"fleece gloves",
-	"waterproof gloves",
-	"sunglasses (omit)",
-	"ski goggles"
+	{
+	    "name": "duffel (various sizes)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "rucksack, day (small)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "rucksack, travel (large)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "daypack",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "tent",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "sleeping bag",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "sleeping mat",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "pillow",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "dry sacks",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "wash bag",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "towel(s)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "reservoir",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "insulated bottle(s)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "thermal flask",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "food containers",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "mini stove",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "utensils",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "lighter / flint and steel",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "tweezers",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "wet wipes",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "sun cream (omit)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "midge repellent (omit)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "tick repellent / permethrin (omit)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "GPS device",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "hiking poles",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "ice axe, safety (short)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "ice axe, safety (long)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "ice axe(s), ice climbing (notched)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "compass",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "topographical maps",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "whistle",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "head torch",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "helmet",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "harness and ropes",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "belay loop and carabiners",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "cams, nuts and belay fixtures",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "&lsquo;quickdraws&rsquo; and slings",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "chalk bag and chalk",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "city/approach shoes",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "trainers / trail runners",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "hiking boots, flexible (b1)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "hiking boots, semi-rigid (b2)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "hiking/mountaineering boots, rigid (b3)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "climbing shoes",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "replacement laces",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "crampons, flexible (c1)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "crampons, semi-rigid (c2)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "crampons, rigid (c3)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "shoe brush",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "base layers",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "mid layer fleeces and hoodies",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "windbreaker",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "jacket, shoftshell (drinking beer)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "jacket, hardshell (waterproof)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "jacket, duvet",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "jacket, down",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "jacket, down (waterproof)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "leggings",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "mountain pants",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "mountain shorts",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "approach socks",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "hiking socks",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "gaiters",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "cap (if you have a receding hairline)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "beanie (if you don&rsquo;t wash)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "windbreaker gloves",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "fleece gloves",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "waterproof gloves",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "sunglasses (omit)",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	},
+	{
+	    "name": "ski goggles",
+	    "desc": "",
+	    "image": "Conditioning/.jpg"
+	}
     ]
 }

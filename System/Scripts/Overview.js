@@ -635,13 +635,13 @@ function describeRoute(score) {
     let diff = "";
 
     if (score >= 0 && score <= 33.3334) {
-        diff = "Amateur";
+        diff = "Playground (Amateur)";
     } else if (score > 33.3333 && score <= 66.6667) {
-	diff = "Easy";
+	diff = "Normie (Easy)";
     } else if (score > 66.6667 && score <= 100) {
-        diff = "Moderate";
+        diff = "Trad (Moderate)";
     } else if (score > 100) {
-        diff = "Challenging";
+        diff = "GigaChad (Challenging)";
     }
 
     return diff;
