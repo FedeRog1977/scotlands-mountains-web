@@ -122,27 +122,13 @@ Crampons - Purposes (from Basic to Advanced)
 
 Crampons - Types
 
-Snow Grips:
-        - Small chains to assist with every day urban tasks when the weather is more challenging
-        - (1), (2)
 Micro Crampons:
-        - Small spikes to assist with minor snow fall and thin ice in more urban environments, or on easy winter routes
         - (1), (2), (4)
 C1 (Flexible):
-        - Designed to be flexible and have points which can easily fit into varying sizes and shapes of cracks on dry slab etc.
-        - Horizontal front spikes
-        - 6-10 overall spikes
         - (1), (2), (3), (4)
 C2 (Semi-Rigid):
-        - A general winter mountaineering crampon for light snow activities but will most likely not support the user upon vertical climbs or ice climbs
-        - Semi-horizontal (if existent) and vertical front spikes
-        - 10-12 overall spikes
         - (1), (2), (4), (5), (6)
 C3 (Rigid):
-        - Designed to be as stirdy as possible. Often have snow repelling features such as anti-balling plates made from ABS plastic to stop snow building up on the shoe sole adn in the crampon
-base
-        - Horizontal and vertical, or adjustable front spikes. Some may be modular/removable
-        - 10-12 overall spikes
         - (1), (2), (4), (5), (6), (7)
 
 Crampons - Dangers
@@ -151,22 +137,3 @@ Crampons - Dangers
 * Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death
 * Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing
 * Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury
-
-Boots
-
-Boots - Types
-
-* B0:
-        - City, Running, Fell Running, Approach, Climbing, etc.
-        - General walking or hiking boots/shoes, not designed for winter use. Usually soft leather or fabric
-        - [Snow Grips], [Micro Crampons]
-* B1 (Flexible):
-        - Flexible hiking boots with some support such as ankle and heel
-        - [Snow Grips], [Micro Crampons], [C1]
-* B2 (Semi-Rigid):
-        - Semi-rigid boots with stirdy ankle, heel and sole support. Usually intended for more advanced summer routes and low-level winter snow routes. Not ice climbs
-        - [C1], [C2]
-* B3 (Rigid):
-        - Rigid boots with stirdy ankle, heel and sole support. Designed for Alpine hiking and climbing. Also suitable for ice climbing. Often made from tough leather or plastic and do not gener
-ally bend. Usually have enforced soles and toe caps. Often equipped with more advanced insulation
-        - [C1], [C2], [C3]

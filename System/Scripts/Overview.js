@@ -209,10 +209,10 @@ function scoreRoute(elev,dist,nTops,type,stage,terrType,terrDiff) {
     var multiplier = nTops / ((convConstFt * elev) / ((convConstMi * dist) * 1000));
 
     // Subjective survey-based statistics
-    const typeWeight = 0.4;
+    const typeWeight = 0.5;
     const stageWeight = 0.1;
     const terrTypeWeight = 0.2;
-    const terrDiffWeight = 0.3;
+    const terrDiffWeight = 0.2;
 
     var typeElementWeight = 1 / type.length;
     var stageElementWeight = 1 / stage.length;
@@ -229,44 +229,35 @@ function scoreRoute(elev,dist,nTops,type,stage,terrType,terrDiff) {
     var terrTypeScore = 0;
     var terrDiffScore = 0;
 
-    // Type weightings if exhausted:
-        // [0.7, 1, 1.05, 1.1, 1.15] = 5
-    // Stage weightings if exhausted:
-        // [1, 1, 1, 1] = 4
-    // Terrain type weightings if exhausted:
-        // [0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.05, 1.1, 1.15, 1.2, 1.25] = 11
-    // Terrain difficulty weightings if exhausted:
-        // [0.25, 0.25, 1, 1.05, 1.05, 1.1, 1.15, 1.15, 1, 1.05, 1.1, 1.15, 1, 1.05, 1.1, 1.15, 1, 1.075, 1.125, 1.2] = 20
-
     if (type.includes("walk")) {
-        typeValues = [0.7];
+        typeValues = [0.25];
         typeScore = typeElementWeight * typeValues[0];
     } else if (type.includes("hillwalk")) {
-        typeValues = [1];
+        typeValues = [0.5];
         typeScore = typeElementWeight * typeValues[0];
     } else if (type.includes("ridgewalk")) {
-        typeValues = [1.05];
+        typeValues = [0.75];
         typeScore = typeElementWeight * typeValues[0];
     } else if (type.includes("scramble")) {
-        typeValues = [1.1];
+        typeValues = [1.5];
         typeScore = typeElementWeight * typeValues[0];
     } else if (type.includes("climb")) {
-        typeValues = [1.15];
+        typeValues = [2];
         typeScore = typeElementWeight * typeValues[0];
     } else if (type.includes("hillwalk")
         && type.includes("ridgewalk")) {
-        typeValues = [1, 1.025];
+        typeValues = [0.5, 0.75];
         typeScore = (typeElementWeight * typeValues[0])
             + (typeElementWeight * typeValues[1]);
     } else if (type.includes("hillwalk")
         && type.includes("scramble")) {
-        typeValues = [1, 1.1];
+        typeValues = [0.5, 1.5];
         typeScore = (typeElementWeight * typeValues[0])
             + (typeElementWeight * typeValues[1]);
     } else if (type.includes("hillwalk")
         && type.includes("scramble")
         && type.includes("climb")) {
-        typeValues = [1, 1.1, 1.15];
+        typeValues = [0.5, 1.5, 2];
         typeScore = (typeElementWeight * typeValues[0])
             + (typeElementWeight * typeValues[1])
             + (typeElementWeight * typeValues[2]);
