@@ -54,11 +54,11 @@
 	},
 	{
 	    "name": "Triangulation Station [Buried Block]",
-	    "image": "./Photos/noimage.jpg"
+	    "image": "./Photos/noimage.png"
 	},
 	{
 	    "name": "Triangulation Station [Concrete Ring]",
-	    "image": "./Photos/noimage.jpg"
+	    "image": "./Photos/noimage.png"
 	},
 	{
 	    "name": "Triangulation Station [Surface Block]",
@@ -74,7 +74,7 @@
 	},
 	{
 	    "name": "Triangulation Station [Covered Bolt]",
-	    "image": "./Photos/noimage.jpg"
+	    "image": "./Photos/noimage.png"
 	},
 	{
 	    "name": "Triangulation Station [Platform Bolt]",
@@ -98,7 +98,7 @@
 	},
 	{
 	    "name": "Triangulation Station [Disc]",
-	    "image": "./Photos/noimage.jpg"
+	    "image": "./Photos/noimage.png"
 	},
 	{
 	    "name": "Triangulation Station [Old-Style Rivet]",

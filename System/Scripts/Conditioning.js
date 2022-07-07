@@ -65,7 +65,7 @@ function selectAbility(component) {
 		abilityOut.innerHTML =
 		    "<h3>" + abilityName + "</h3>"
 		    + abilityDesc + "<br>"
-		    + abilityImg;
+		    + "<img src='" + abilityImg + "' style='width:250px;'></img>";
 
 		abilityPre.classList.add("hidden");
 	    }
