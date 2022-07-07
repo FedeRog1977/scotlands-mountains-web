@@ -113,8 +113,8 @@ const selectAbilityTerraintypeListCont = `
     <option>Tourist Path</option>
     <option>Path</option>
     <option>Footpath Erosion</option>
-    <option>Stalker&rsquo;s Path</option>
-    <option>Shepherd&rsquo;s Path</option>
+    <option>Stalkers Path</option>
+    <option>Shepherds Path</option>
     <option>Sheep Path</option>
     <option>Off-Path</option>
 `;
@@ -214,7 +214,7 @@ const selectEquipmentTechnicalListCont = `
     <option>Harness and Ropes</option>
     <option>Belay Loop and Carabiners</option>
     <option>Cams, Nuts and Belay Fixtures</option>
-    <option>&lsquo;Quickdraws&rsquo; and Slings</option>
+    <option>Quickdraws and Slings</option>
     <option>Chalk Bag and Chalk</option>
 `;
 
@@ -247,8 +247,8 @@ const selectEquipmentClothingListCont = `
     <option>Approach Socks</option>
     <option>Hiking Socks</option>
     <option>Gaiters</option>
-    <option>Cap (If You Have a Receding Hairline)</option>
-    <option>Beanie (If You Don&rsquo;t Wash)</option>
+    <option>Cap</option>
+    <option>Beanie</option>
     <option>Windbreaker Gloves</option>
     <option>Fleece Gloves</option>
     <option>Waterproof Gloves</option>

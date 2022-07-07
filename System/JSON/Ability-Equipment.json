@@ -1,4 +1,6 @@
 {
+    "elementshill": [],
+    "elementsroute": [],
     "type": [
 	{
 	    "name": "walk",
@@ -85,12 +87,12 @@
 	    "image": "Conditioning/.jpg"
 	},
 	{
-	    "name": "stalker&rsuqo;s path",
+	    "name": "stalkers path",
 	    "desc": "A form of footpath erosion made and used by stalkers when hunting deer. Don&rsquo;t be fooled by these paths, they are often mistaken for regular footpath erosion but very frequently end up leading athletes somewhere irrelevant or even far off the route.",
 	    "image": "Conditioning/.jpg"
 	},
 	{
-	    "name": "shepherd&rsquo;s path",
+	    "name": "shepherds path",
 	    "desc": "A form of footpath erosion made and used by shepherds to pass and gain leverage upon their flock of sheep when roundin&rsquo;-up, yee-haw. Don&rsquo;t be fooled by these paths, they are often mistaken for regular footpath erosion but very frequently end up leading athletes somewhere irrelevant or even far off the route.",
 	    "image": "Conditioning/.jpg"
 	},
@@ -369,7 +371,7 @@
 	    "image": "Conditioning/.jpg"
 	},
 	{
-	    "name": "&lsquo;quickdraws&rsquo; and slings",
+	    "name": "quickdraws and slings",
 	    "desc": "More apparatus to be used in conjunction with a harness, rope, belay     loop and carabiners to provide additional security and stability with your connection to the wall. Especially upon failure and falling.",
 	    "image": "Conditioning/.jpg"
 	},
@@ -538,11 +540,11 @@
 	    "image": "Conditioning/.jpg"
 	},
 	{
-	    "name": "cap (if you have a receding hairline)",
+	    "name": "cap",
 	    "image": "Conditioning/.jpg"
 	},
 	{
-	    "name": "beanie (if you don&rsquo;t wash)",
+	    "name": "beanie",
 	    "image": "Conditioning/.jpg"
 	},
 	{
