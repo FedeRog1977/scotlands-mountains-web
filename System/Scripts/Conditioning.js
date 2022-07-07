@@ -12,71 +12,71 @@ function selectAbility(component) {
             const abilityPre = document.getElementById("abilityPre");
             const abilityOut = document.getElementById("abilityOut");
             abilityOut.innerHTML = "";
-            let attributeType = "";
-            let attributeBuff = "";
+	    let abilityName = "";
+	    let abilityDesc = "";
+	    let abilityImg = "";
             for (var i in attributes.elementshill) {
 		if (attributes.elementshill[i].name.toLowerCase() === selectAbility) {
-		    attributeType = attributes.elementshill;
-		    attributeBuff = attributes.elementshill[i];
+		    //abilityName = attributeBuff.name.charAt(0).toUpperCase() + attributeBuff.name.slice(1);
+		    abilityName = attributes.elementshill[i].name;
+		    abilityDesc = attributes.elementshill[i].desc;
+		    abilityImg = "";
 		}
 	    }
             for (var i in attributes.elementsroute) {
 		if (attributes.elementsroute[i].name.toLowerCase() === selectAbility) {
-		    attributeType = attributes.elementsroute;
-		    attributeBuff = attributes.elementsroute[i];
+		    abilityName = attributes.elementsroute[i].name;
+		    abilityDesc = attributes.elementsroute[i].desc;
+		    abilityImg = "";
 		}
 	    }
             for (var i in attributes.summitfeats) {
 		if (attributes.summitfeats[i].name.toLowerCase() === selectAbility) {
-		    attributeType = attributes.summitfeats;
-		    attributeBuff = attributes.summitfeats[i];
+		    abilityName = attributes.summitfeats[i].name;
+		    abilityDesc = "";
+		    abilityImg = attributes.summitfeats[i].image;
 		}
 	    }
             for (var i in attributes.type) {
 		if (attributes.type[i].name.toLowerCase() === selectAbility) {
-		    attributeType = attributes.type;
-		    attributeBuff = attributes.type[i];
+		    abilityName = attributes.type[i].name;
+		    abilityDesc = attributes.type[i].desc;
+		    abilityImg = attributes.type[i].image;
 		}
 	    }
             for (var i in attributes.stage) {
 		if (attributes.stage[i].name.toLowerCase() === selectAbility) {
-		    attributeType = attributes.stage;
-		    attributeBuff = attributes.stage[i];
+		    abilityName = attributes.stage[i].name;
+		    abilityDesc = attributes.stage[i].desc;
+		    abilityImg = attributes.stage[i].image;
 		}
 	    }
             for (var i in attributes.terraintype) {
 		if (attributes.terraintype[i].name.toLowerCase() === selectAbility) {
-		    attributeType = attributes.terraintype;
-		    attributeBuff = attributes.terraintype[i];
+		    abilityName = attributes.terraintype[i].name;
+		    abilityDesc = attributes.terraintype[i].desc;
+		    abilityImg = attributes.terraintype[i].image;
 		}
 	    }
             for (var i in attributes.terraindiff) {
 		if (attributes.terraindiff[i].name.toLowerCase() === selectAbility) {
-		    attributeType = attributes.terraindiff;
-		    attributeBuff = attributes.terraindiff[i];
+		    abilityName = attributes.terraindiff[i].name;
+		    abilityDesc = "";
+		    abilityImg = attributes.terraindiff[i].image;
 		}
 	    }
 
-	    for (var i in attributeType) {
-		if (attributeType = attributes.summitfeats) {
-		    let abilityName = attributeBuff.name.charAt(0).toUpperCase() + attributeBuff.name.slice(1);
-		    let abilityImg = attributeBuff.image;
+	    abilityOut.innerHTML =
+	        "<h3>" + abilityName + "</h3>"
+		+ abilityDesc + "<br>"
+		+ "<img src='" + abilityImg + "' style='width:250px;'></img>";
 
-		    abilityOut.innerHTML =
-		        "<h3>" + abilityName + "</h3>"
-		        + "<img src='" + abilityImg + "' style='width:250px;'></img>";
-		} else {
-		    let abilityName = attributeBuff.name.charAt(0).toUpperCase() + attributeBuff.name.slice(1);
-		    let abilityDesc = desc; 
-		    let abilityImg = attributeBuff.image;
-
-		    abilityOut.innerHTML =
-		        "<h3>" + abilityName + "</h3>"
-		        + abilityDesc + "<br>"
-		        + "<img src='" + abilityImg + "' style='width:250px;'></img>";
-		}
-
-		abilityPre.classList.add("hidden");
-	    }
+	    abilityPre.classList.add("hidden");
 	})
 }
+
+	    let equipmentName = "";
+	    let equipmentDesc = "";
+	    let equipmentImg = "";
+	    let equipmentComp = "";
+	    let equipmentFeat = "";

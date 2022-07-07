@@ -96,9 +96,8 @@ function showAbilityListCont() {
 
 const selectAbilityHillsListCont = `
     <option>Elevation</option>
-    <option>Prominance</option>
+    <option>Prominence</option>
     <option>Isolation</option>
-    <option>Summit Features</option>
 `;
 
 const selectAbilityRoutesListCont = `
