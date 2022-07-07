@@ -95,6 +95,8 @@ function selectEquipment(component) {
 	    let equipmentImg = "";
 	    let equipmentComp = "";
 	    let equipmentFeat = "";
+	    let equipmentAdv = "";
+	    let equipmentDang = "";
             for (var i in attributes.packs) {
 		if (attributes.packs[i].name.toLowerCase() === selectEquipment) {
 		    equipmentName = attributes.packs[i].name;
@@ -117,7 +119,6 @@ function selectEquipment(component) {
 		if (attributes.shoes[i].name.toLowerCase() === selectEquipment) {
 		    equipmentName = attributes.shoes[i].name;
 		    equipmentDesc = attributes.shoes[i].desc;
-		    equipmentImg = attributes.shoes[i].image;
 
 		    if (attributes.shoes[i].comp === null) {
 			equipmentComp = "";
@@ -130,6 +131,20 @@ function selectEquipment(component) {
 		    } else {
 		        equipmentFeat = "<br><b>Features</b>:<br>" + attributes.shoes[i].feat.join("<br>");
 		    }
+
+		    if (attributes.shoes[i].adv === null) {
+			equipmentAdv = "";
+		    } else {
+		        equipmentAdv = "<br><b>Advantages</b>:<br>" + attributes.shoes[i].adv.join("<br>");
+		    }
+
+		    if (attributes.shoes[i].dangers === null) {
+			equipmentDang = "";
+		    } else {
+		        equipmentDang = "<br><b>Dangers</b>:<br>" + attributes.shoes[i].dangers.join("<br>");
+		    }
+
+		    equipmentImg = attributes.shoes[i].image;
 		}
 	    }
             for (var i in attributes.clothing) {

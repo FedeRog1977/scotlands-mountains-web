@@ -122,6 +122,7 @@
 	},
 	{
 	    "name": "Cairn",
+	    "desc": "A cairn marking a significant point on a landmass. These are of course found at the summit of most, if not every hill, even if they have a summit Triangulation Station. They may also be found at the height of a Munro or Corbett at at Munro or Corbett Top, and may occur in a similar circumstance on Munro and Corbett Top-height sections of landmasses, but where these sections are not considered a tops if present at an increasing stationary point (point of inflection)",
 	    "image": "./Photos/Conditioning/cairn.jpg"
 	}
     ],
@@ -513,6 +514,8 @@
 	    "desc": "Basic shoes for any activity that does not involve movement on non-city terrain types.",
 	    "comp": [],
 	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -522,6 +525,8 @@
 		"Micro Crampons"
 	    ],
 	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -532,6 +537,8 @@
 		"Crampons, Flexible (C1)"
 	    ],
 	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -542,6 +549,8 @@
 		"Crampons, Semi-Rigid (C2)"
 	    ],
 	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -553,6 +562,8 @@
 		"Crampons, Rigid (C3)"
 	    ],
 	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -560,6 +571,8 @@
 	    "desc": "Flat, curved shoes sometimes with rubber toe caps to enhance traction on rock face. These shoes should generally fit snug to the foot and you should be able to feel a great deal of sensation through them. It should be like climbing barefoot but with more traction.",
 	    "comp": [],
 	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -567,6 +580,8 @@
 	    "desc": "Self-explanatory. If your laces snap mid-project, this could be extremely dangerous as it will cause it severe loss of traction and control.",
 	    "comp": [],
 	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -576,6 +591,17 @@
 		"Hiking Boots, Flexible (B1)"
 	    ],
 	    "feat": [],
+	    "adv": [
+		"Prolong the life of a boot/shoe&rsquo;s sole",
+		"Provide greater traction on slippery and/or greasy surfaces",
+		"Provide greater (horizontal movement) traction on loose snow or very thin fresh/urban ice"
+	    ],
+	    "dangers": [
+		"Shoes too flexible for crampons: crampons can break apart or be destroyed",
+		"Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death",
+		"Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing",
+		"Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury"
+	    ],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -590,10 +616,22 @@
 		"Horizontal front spikes",
 		"6-10 overall spikes"
 	    ],
+	    "adv": [
+		"Prolong the life of a boot/shoe&rsquo;s sole",
+		"Provide greater traction on slippery and/or greasy surfaces",
+		"Provide greater inserts upon certain rock faces and cracks etc.",
+		"Provide greater (horizontal movement) traction on loose snow or very thin fresh/urban ice"
+	    ],
+	    "dangers": [
+		"Shoes too flexible for crampons: crampons can break apart or be destroyed",
+		"Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death",
+		"Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing",
+		"Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury"
+	    ],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
-	    "name": "crampons, semi-rigid (C2)",
+	    "name": "Crampons, Semi-Rigid (C2)",
 	    "desc": "A general winter mountaineering crampon for light snow activities but will most likely not support the user upon vertical climbs or ice climbs.",
 	    "comp": [
 		"Hiking Boots, Semi-Rigid (B2)",
@@ -602,6 +640,19 @@
 	    "feat": [
 		"Semi-horizontal (if existent) and vertical front spikes",
 		"10-12 overall spikes"
+	    ],
+	    "adv": [
+		"Prolong the life of a boot/shoe&rsquo;s sole",
+		"Provide greater traction on slippery and/or greasy surfaces",
+		"Provide greater (horizontal movement) traction on loose snow or very thin fresh/urban ice",
+		"Provide greater (semi-vertical movement) traction on more compact snow in gullies etc.",
+		"Provide greater (horizontal movement) traction across very compact snow/ice"
+	    ],
+	    "dangers": [
+		"Shoes too flexible for crampons: crampons can break apart or be destroyed",
+		"Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death",
+		"Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing",
+		"Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury"
 	    ],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
@@ -615,6 +666,20 @@
 		"Horizontal and vertical, or adjustable front spikes. Some may be modular/removable",
 		"10-12 overall spikes"
 	    ],
+	    "adv": [
+		"Prolong the life of a boot/shoe&rsquo;s sole",
+		"Provide greater traction on slippery and/or greasy surfaces",
+		"Provide greater (horizontal movement) traction on loose snow or very thin fresh/urban ice",
+		"Provide greater (semi-vertical movement) traction on more compact snow in gullies etc.",
+		"Provide greater (horizontal movement) traction across very compact snow/ice",
+		"Provide greater (vertical movement) traction and climbing ability on solid ice"
+	    ],
+	    "dangers": [
+		"Shoes too flexible for crampons: crampons can break apart or be destroyed",
+		"Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death",
+		"Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing",
+		"Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury"
+	    ],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -622,6 +687,8 @@
 	    "desc": "It&rsquo;s important to take care of your shoes to prolong their life. Dusting-off any minor dry dirt and material after walks is essential to ensure the stitching and glue stays in-tact. If shoes have been fully submerged in dirt, be sure to give them a thorough wash with cool water and a brush.",
 	    "comp": [],
 	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	}
     ],

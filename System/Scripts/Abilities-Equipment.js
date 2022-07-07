@@ -98,6 +98,18 @@ const selectAbilityHillsListCont = `
     <option>Elevation</option>
     <option>Prominence</option>
     <option>Isolation</option>
+    <option>Mountain (Landmass Type)**</option>
+    <option>Mountain Range (Landmass Type)**</option>
+    <option>Stand-Alone (Landmass Type)**</option>
+    <option>Munro**</option>
+    <option>Munro Top**</option>
+    <option>Corbett**</option>
+    <option>Corbett Top**</option>
+    <option>Graham**</option>
+    <option>Sub2000**</option>
+    <option>Sub-Region**</option>
+    <option>Informal Region**</option>
+    <option>Region**</option>
 `;
 
 const selectAbilityRoutesListCont = `
