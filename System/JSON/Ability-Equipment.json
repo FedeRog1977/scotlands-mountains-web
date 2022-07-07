@@ -511,6 +511,8 @@
 	{
 	    "name": "Trainers / Trail Runners",
 	    "desc": "Basic shoes for any activity that does not involve movement on non-city terrain types.",
+	    "comp": [],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -519,6 +521,7 @@
 	    "comp": [
 		"Micro Crampons"
 	    ],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -528,6 +531,7 @@
 		"Micro Crampons",
 		"Crampons, Flexible (C1)"
 	    ],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -537,6 +541,7 @@
 		"Crampons, Flexible (C1)",
 		"Crampons, Semi-Rigid (C2)"
 	    ],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -547,16 +552,21 @@
 		"Crampons, Semi-rigid (C2)",
 		"Crampons, Rigid (C3)"
 	    ],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
 	    "name": "Climbing Shoes",
 	    "desc": "Flat, curved shoes sometimes with rubber toe caps to enhance traction on rock face. These shoes should generally fit snug to the foot and you should be able to feel a great deal of sensation through them. It should be like climbing barefoot but with more traction.",
+	    "comp": [],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
 	    "name": "Replacement Laces",
 	    "desc": "Self-explanatory. If your laces snap mid-project, this could be extremely dangerous as it will cause it severe loss of traction and control.",
+	    "comp": [],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -565,6 +575,7 @@
 	    "comp": [
 		"Hiking Boots, Flexible (B1)"
 	    ],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	},
 	{
@@ -609,6 +620,8 @@
 	{
 	    "name": "Shoe Brush",
 	    "desc": "It&rsquo;s important to take care of your shoes to prolong their life. Dusting-off any minor dry dirt and material after walks is essential to ensure the stitching and glue stays in-tact. If shoes have been fully submerged in dirt, be sure to give them a thorough wash with cool water and a brush.",
+	    "comp": [],
+	    "feat": [],
 	    "image": ".Photos/Conditioning/.jpg"
 	}
     ],

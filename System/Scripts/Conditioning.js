@@ -100,6 +100,8 @@ function selectEquipment(component) {
 		    equipmentName = attributes.packs[i].name;
 		    equipmentDesc = attributes.packs[i].desc;
 		    equipmentImg = attributes.packs[i].image;
+	    	    equipmentComp = "";
+	    	    equipmentFeat = "";
 		}
 	    }
             for (var i in attributes.technical) {
@@ -107,6 +109,8 @@ function selectEquipment(component) {
 		    equipmentName = attributes.technical[i].name;
 		    equipmentDesc = attributes.technical[i].desc;
 		    equipmentImg = attributes.technical[i].image;
+	    	    equipmentComp = "";
+	    	    equipmentFeat = "";
 		}
 	    }
             for (var i in attributes.shoes) {
@@ -114,6 +118,18 @@ function selectEquipment(component) {
 		    equipmentName = attributes.shoes[i].name;
 		    equipmentDesc = attributes.shoes[i].desc;
 		    equipmentImg = attributes.shoes[i].image;
+
+		    if (attributes.shoes[i].comp === null) {
+			equipmentComp = "";
+		    } else {
+		        equipmentComp = "<br><b>Compatability</b>:<br>" + attributes.shoes[i].comp.join("<br>");
+		    }
+
+		    if (attributes.shoes[i].feat === null) {
+			equipmentFeat = "";
+		    } else {
+		        equipmentFeat = "<br><b>Features</b>:<br>" + attributes.shoes[i].feat.join("<br>");
+		    }
 		}
 	    }
             for (var i in attributes.clothing) {
@@ -121,12 +137,16 @@ function selectEquipment(component) {
 		    equipmentName = attributes.clothing[i].name;
 		    equipmentDesc = attributes.clothing[i].desc;
 		    equipmentImg = attributes.clothing[i].image;
+	    	    equipmentComp = "";
+	    	    equipmentFeat = "";
 		}
 	    }
 
 	    equipmentOut.innerHTML =
 	        "<h3>" + equipmentName + "</h3>"
 		+ equipmentDesc + "<br>"
+		+ equipmentComp + "<br>"
+		+ equipmentFeat + "<br>"
 		+ "<img src='" + equipmentImg + "' style='width:250px;'></img>";
 
 	    equipmentPre.classList.add("hidden");
