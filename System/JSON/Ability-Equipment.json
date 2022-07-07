@@ -313,7 +313,7 @@
 	    "image": ".Photos/Conditioning/.jpg"
 	}
     ],
-    "gear": [
+    "packs": [
 	{
 	    "name": "Duffel (Various Sizes)",
 	    "desc": "Large bag useful for carrying larger goods such as equipment not required on a route, clothing and cans.",
@@ -428,7 +428,9 @@
 	    "name": "Tick Repellent / Permethrin (Omit)",
 	    "desc": "Once again, just deal with them the proper way and don&rsquo;t ruin your skin or clothes.",
 	    "image": ".Photos/Conditioning/.jpg"
-	},
+	}
+    ],
+    "technical": [
 	{
 	    "name": "GPS Device",
 	    "desc": "Any commercial product from Garmin is highly recommended by myself and pretty much the entire community. Not only do they provide consistent GPS tracking and route recording but they can also act as emergency and safety devices with their SOS and navigation features.",
@@ -503,7 +505,9 @@
 	    "name": "Chalk Bag and Chalk",
 	    "desc": "Material used for enhanced grip when climbing or interfacing with rock.",
 	    "image": ".Photos/Conditioning/.jpg"
-	},
+	}
+    ],
+    "shoes": [
 	{
 	    "name": "Trainers / Trail Runners",
 	    "desc": "Basic shoes for any activity that does not involve movement on non-city terrain types.",
@@ -606,7 +610,9 @@
 	    "name": "Shoe Brush",
 	    "desc": "It&rsquo;s important to take care of your shoes to prolong their life. Dusting-off any minor dry dirt and material after walks is essential to ensure the stitching and glue stays in-tact. If shoes have been fully submerged in dirt, be sure to give them a thorough wash with cool water and a brush.",
 	    "image": ".Photos/Conditioning/.jpg"
-	},
+	}
+    ],
+    "clothing": [
 	{
 	    "name": "Base Layers",
 	    "image": ".Photos/Conditioning/.jpg"

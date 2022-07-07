@@ -75,8 +75,60 @@ function selectAbility(component) {
 	})
 }
 
+
+/*
+ * Select an Equipment Component
+ */
+function selectEquipment(component) {
+    fetch(attributes)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const attributes = data;
+            const selectEquipment = document.getElementById("selectEquipment" + component).value.toLowerCase();
+            const equipmentPre = document.getElementById("equipmentPre");
+            const equipmentOut = document.getElementById("equipmentOut");
+            equipmentOut.innerHTML = "";
 	    let equipmentName = "";
 	    let equipmentDesc = "";
 	    let equipmentImg = "";
 	    let equipmentComp = "";
 	    let equipmentFeat = "";
+            for (var i in attributes.packs) {
+		if (attributes.packs[i].name.toLowerCase() === selectEquipment) {
+		    equipmentName = attributes.packs[i].name;
+		    equipmentDesc = attributes.packs[i].desc;
+		    equipmentImg = attributes.packs[i].image;
+		}
+	    }
+            for (var i in attributes.technical) {
+		if (attributes.technical[i].name.toLowerCase() === selectEquipment) {
+		    equipmentName = attributes.technical[i].name;
+		    equipmentDesc = attributes.technical[i].desc;
+		    equipmentImg = attributes.technical[i].image;
+		}
+	    }
+            for (var i in attributes.shoes) {
+		if (attributes.shoes[i].name.toLowerCase() === selectEquipment) {
+		    equipmentName = attributes.shoes[i].name;
+		    equipmentDesc = attributes.shoes[i].desc;
+		    equipmentImg = attributes.shoes[i].image;
+		}
+	    }
+            for (var i in attributes.clothing) {
+		if (attributes.clothing[i].name.toLowerCase() === selectEquipment) {
+		    equipmentName = attributes.clothing[i].name;
+		    equipmentDesc = attributes.clothing[i].desc;
+		    equipmentImg = attributes.clothing[i].image;
+		}
+	    }
+
+	    equipmentOut.innerHTML =
+	        "<h3>" + equipmentName + "</h3>"
+		+ equipmentDesc + "<br>"
+		+ "<img src='" + equipmentImg + "' style='width:250px;'></img>";
+
+	    equipmentPre.classList.add("hidden");
+	})
+}
