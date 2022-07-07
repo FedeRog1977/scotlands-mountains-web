@@ -1,8 +1,9 @@
 const selectAbilityList = document.getElementById("selectAbility");
 const selectAbilityHillsList = document.getElementById("selectAbilityHills");
 const selectAbilityRoutesList = document.getElementById("selectAbilityRoutes");
+const selectAbilitySummitList = document.getElementById("selectAbilitySummit");
 const selectAbilityRoutesTypeList = document.getElementById("selectAbilityRoutesType");
-const selectAbilityRoutesStageList = document.getElementById("selectAbiliyRoutesStage");
+const selectAbilityRoutesStageList = document.getElementById("selectAbilityRoutesStage");
 const selectAbilityTerraintypeList = document.getElementById("selectAbilityTerraintype");
 const selectAbilityTerraindiffList = document.getElementById("selectAbilityTerraindiff");
 const selectEquipmentList = document.getElementById("selectEquipment");
@@ -13,8 +14,9 @@ const selectEquipmentClothingList = document.getElementById("selectEquipmentClot
 
 const selectAbilityHillsCont = document.getElementById("selectAbilityHillsCont");
 const selectAbilityRoutesCont = document.getElementById("selectAbilityRoutesCont");
+const selectAbilitySummitCont = document.getElementById("selectAbilitySummitCont");
 const selectAbilityRoutesTypeCont = document.getElementById("selectAbilityRoutesTypeCont");
-const selectAbilityRoutesStageCont = document.getElementById("selectAbiliyRoutesStageCont");
+const selectAbilityRoutesStageCont = document.getElementById("selectAbilityRoutesStageCont");
 const selectAbilityTerraintypeCont = document.getElementById("selectAbilityTerraintypeCont");
 const selectAbilityTerraindiffCont = document.getElementById("selectAbilityTerraindiffCont");
 const selectEquipmentPacksCont = document.getElementById("selectEquipmentPacksCont");
@@ -25,6 +27,7 @@ const selectEquipmentClothingCont = document.getElementById("selectEquipmentClot
 const selectAbilityListCont = `
     <option>Hill Elements</option>
     <option>Route Elements</option>
+    <option>Summit Features</option>
     <option>Route Types</option>
     <option>Route Stages</option>
     <option>Terrain Types</option>
@@ -35,6 +38,7 @@ function showAbilityListCont() {
     if (selectAbilityList.value === "Hill Elements") {
         selectAbilityHillsCont.classList.remove("hidden");
 	selectAbilityRoutesCont.classList.add("hidden");
+	selectAbilitySummitCont.classList.add("hidden");
 	selectAbilityRoutesTypeCont.classList.add("hidden");
 	selectAbilityRoutesStageCont.classList.add("hidden");
 	selectAbilityTerraintypeCont.classList.add("hidden");
@@ -42,6 +46,15 @@ function showAbilityListCont() {
     } else if (selectAbilityList.value === "Route Elements") {
 	selectAbilityHillsCont.classList.add("hidden");
 	selectAbilityRoutesCont.classList.remove("hidden");
+	selectAbilitySummitCont.classList.add("hidden");
+	selectAbilityRoutesTypeCont.classList.add("hidden");
+	selectAbilityRoutesStageCont.classList.add("hidden");
+	selectAbilityTerraintypeCont.classList.add("hidden");
+	selectAbilityTerraindiffCont.classList.add("hidden");
+    } else if (selectAbilityList.value === "Summit Features") {
+	selectAbilityHillsCont.classList.add("hidden");
+	selectAbilityRoutesCont.classList.add("hidden");
+	selectAbilitySummitCont.classList.remove("hidden");
 	selectAbilityRoutesTypeCont.classList.add("hidden");
 	selectAbilityRoutesStageCont.classList.add("hidden");
 	selectAbilityTerraintypeCont.classList.add("hidden");
@@ -49,6 +62,7 @@ function showAbilityListCont() {
     } else if (selectAbilityList.value === "Route Types") {
 	selectAbilityHillsCont.classList.add("hidden");
 	selectAbilityRoutesCont.classList.add("hidden");
+	selectAbilitySummitCont.classList.add("hidden");
 	selectAbilityRoutesTypeCont.classList.remove("hidden");
 	selectAbilityRoutesStageCont.classList.add("hidden");
 	selectAbilityTerraintypeCont.classList.add("hidden");
@@ -56,6 +70,7 @@ function showAbilityListCont() {
     } else if (selectAbilityList.value === "Route Stages") {
 	selectAbilityHillsCont.classList.add("hidden");
 	selectAbilityRoutesCont.classList.add("hidden");
+	selectAbilitySummitCont.classList.add("hidden");
 	selectAbilityRoutesTypeCont.classList.add("hidden");
 	selectAbilityRoutesStageCont.classList.remove("hidden");
 	selectAbilityTerraintypeCont.classList.add("hidden");
@@ -63,6 +78,7 @@ function showAbilityListCont() {
     } else if (selectAbilityList.value === "Terrain Types") {
 	selectAbilityHillsCont.classList.add("hidden");
 	selectAbilityRoutesCont.classList.add("hidden");
+	selectAbilitySummitCont.classList.add("hidden");
 	selectAbilityRoutesTypeCont.classList.add("hidden");
 	selectAbilityRoutesStageCont.classList.add("hidden");
 	selectAbilityTerraintypeCont.classList.remove("hidden");
@@ -70,6 +86,7 @@ function showAbilityListCont() {
     } else if (selectAbilityList.value === "Terrain Difficulties") {
 	selectAbilityHillsCont.classList.add("hidden");
 	selectAbilityRoutesCont.classList.add("hidden");
+	selectAbilitySummitCont.classList.add("hidden");
 	selectAbilityRoutesTypeCont.classList.add("hidden");
 	selectAbilityRoutesStageCont.classList.add("hidden");
 	selectAbilityTerraintypeCont.classList.add("hidden");
@@ -87,7 +104,34 @@ const selectAbilityHillsListCont = `
 const selectAbilityRoutesListCont = `
     <option>Total Distance</option>
     <option>Total Elevation Gain</option>
+    <option>Time/Duration</option>
     <option>Standard Time/Duration</option>
+    <option>Moving Time/Duration</option>
+`;
+
+selectAbilitySummitListCont = `
+    <option>Triangulation Station [Pillar (Square Hotine)]</option>
+    <option>Triangulation Station [Pillar (Round Vanessa)]</option>
+    <option>Triangulation Station [Pillar (Stonebuilt)]</option>
+    <option>Triangulation Station [Block]</option>
+    <option>Triangulation Station [Buried Block]</option>
+    <option>Triangulation Station [Concrete Ring]</option>
+    <option>Triangulation Station [Surface Block]</option>
+    <option>Triangulation Station [Curry Stool]</option>
+    <option>Triangulation Station [Bolt]</option>
+    <option>Triangulation Station [Covered Bolt]</option>
+    <option>Triangulation Station [Platform Bolt]</option>
+    <option>Triangulation Station [Brass Plate]</option>
+    <option>Triangulation Station [Cannon]</option>
+    <option>Triangulation Station [Cut]</option>
+    <option>Triangulation Station [Berntsen]</option>
+    <option>Triangulation Station [Disc]</option>
+    <option>Triangulation Station [Old-Style Rivet]</option>
+    <option>Triangulation Station [New-Style Rivet]</option>
+    <option>Triangulation Station [Fundamental Benchmark]</option>
+    <option>GPS Station</option>
+    <option>Weather Station</option>
+    <option>Cairn</option>
 `;
 
 const selectAbilityRoutesTypeListCont = `
@@ -259,6 +303,7 @@ const selectEquipmentClothingListCont = `
 selectAbilityList.innerHTML = selectAbilityListCont;
 selectAbilityHillsList.innerHTML = selectAbilityHillsListCont;
 selectAbilityRoutesList.innerHTML = selectAbilityRoutesListCont;
+selectAbilitySummitList.innerHTML = selectAbilitySummitListCont;
 selectAbilityRoutesTypeList.innerHTML = selectAbilityRoutesTypeListCont;
 selectAbilityRoutesStageList.innerHTML = selectAbilityRoutesStageListCont;
 selectAbilityTerraintypeList.innerHTML = selectAbilityTerraintypeListCont;

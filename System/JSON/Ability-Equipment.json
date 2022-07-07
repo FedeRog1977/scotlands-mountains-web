@@ -1,6 +1,130 @@
 {
-    "elementshill": [],
-    "elementsroute": [],
+    "elementshill": [
+	{
+	    "name": "Elevation",
+	    "desc": "Maximum elevation above sea level of a peak."
+	},
+	{
+	    "name": "Prominence",
+	    "desc": "Vertical distance between the lowest point of elevation on the nearest drop which connects a peak to a higher peak, and the next, higher, peak."
+	},
+	{
+	    "name": "Isolation",
+	    "desc": "Horizontal distance between the peak and the next, higher, peak."
+	}
+    ],
+    "elementsroute": [
+	{
+	    "name": "Total Distance",
+	    "desc": "The total sum of distance covered spanning the entire course of the route"
+	},
+	{
+	    "name": "Total Elevation Gain",
+	    "desc": "The total sum of elevation (height) gained spanning the entire course of the route."
+	},
+	{
+	    "name": "Time/Duration",
+	    "desc": "The total sum of time elapsed spanning the entire course of the route."
+	},
+	{
+	    "name": "Standard Time/Duration",
+	    "desc": "The total sum of time elapsed spanning the entire course of the route, taken by an athlete with an &lsquo;average&rsquo; fitness level."
+	},
+	{
+	    "name": "Moving Time/Duration",
+	    "desc": "The sum of time taken to complete segments of the route between stationary points (idling)."
+	}
+    ],
+    "summitfeats": [
+	{
+	    "name": "Triangulation Station [Pillar (Square Hotine)]",
+	    "image": "./Photos/Conditioning/pillar1.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Pillar (Round Vanessa)]",
+	    "image": "./Photos/Conditioning/pillar2.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Pillar (Stonebuilt)]",
+	    "image": "./Photos/Conditioning/pillar3.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Block]",
+	    "image": "./Photos/Conditioning/block.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Buried Block]",
+	    "image": "./Photos/noimage.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Concrete Ring]",
+	    "image": "./Photos/noimage.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Surface Block]",
+	    "image": "./Photos/Conditioning/block.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Curry Stool]",
+	    "image": "./Photos/Conditioning/curry.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Bolt]",
+	    "image": "./Photos/Conditioning/bolt.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Covered Bolt]",
+	    "image": "./Photos/noimage.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Platform Bolt]",
+	    "image": "./Photos/Conditioning/platbolt.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Brass Plate]",
+	    "image": "./Photos/Conditioning/brass.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Cannon]",
+	    "image": "./Photos/Conditioning/cannon.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Cut]",
+	    "image": "./Photos/Conditioning/cut.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Berntsen]",
+	    "image": "./Photos/Conditioning/berntsen.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Disc]",
+	    "image": "./Photos/noimage.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Old-Style Rivet]",
+	    "image": "./Photos/Conditioning/oldrivet.jpg"
+	},
+	{
+	    "name": "Triangulation Station [New-Style Rivet]",
+	    "image": "./Photos/Conditioning/newrivet.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Fundamental Benchmark]",
+	    "image": "./Photos/Conditioning/bench.jpg"
+	},
+	{
+	    "name": "GPS Station",
+	    "image": "./Photos/Conditioning/gps.jpg"
+	},
+	{
+	    "name": "Weather Station",
+	    "image": "./Photos/Conditioning/weather.jpg"
+	},
+	{
+	    "name": "Cairn",
+	    "image": "./Photos/Conditioning/cairn.jpg"
+	}
+    ],
     "type": [
 	{
 	    "name": "walk",
@@ -46,7 +170,7 @@
 	},
 	{
 	    "name": "walk-out",
-	    "desc": "This is often a repeat of the approach plus the walk-in but of course in the opposite direction. Unless you take a circular loop which bypasses part of the route already completed. For example, the end of The Cairnwell Nine takes you straight from on-hill to car park, but involves an approach from the car park to Beinn NUmber One when completing the anti-clockwise traverse.",
+	    "desc": "This is often a repeat of the approach plus the walk-in but of course in the opposite direction. Unless you take a circular loop which bypasses part of the route already completed. For example, the end of The Cairnwell Nine takes you straight from on-hill to car park, but involves an approach from the car park to Beinn Number One when completing the anti-clockwise traverse.",
 	    "image": "Conditioning/.jpg"
 	}
     ],

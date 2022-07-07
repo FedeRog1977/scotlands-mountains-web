@@ -1,5 +1,5 @@
 /*
- * Search for a Route
+ * Select an Ability Attribute
  */
 function selectAbility(component) {
     fetch(attributes)
@@ -24,6 +24,12 @@ function selectAbility(component) {
 		if (attributes.elementsroute[i].name.toLowerCase() === selectAbility) {
 		    attributeType = attributes.elementsroute;
 		    attributeBuff = attributes.elementsroute[i];
+		}
+	    }
+            for (var i in attributes.summitfeats) {
+		if (attributes.summitfeats[i].name.toLowerCase() === selectAbility) {
+		    attributeType = attributes.summitfeats;
+		    attributeBuff = attributes.summitfeats[i];
 		}
 	    }
             for (var i in attributes.type) {
