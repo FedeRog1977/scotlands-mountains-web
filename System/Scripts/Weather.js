@@ -229,8 +229,7 @@ const app = {
         rowDaily.innerHTML = resp.daily
             .map((day, idx) => {
                 if (idx <= 4) {
-	            let pr = day.pop * 100;
-	  	    let pr_dp = pr.toFixed(2);
+	            let pr = (day.pop*100).toFixed(2);
           	    let dt = new Date(day.dt * 1000).toDateString();
           	    let sr = new Date(day.sunrise * 1000).toLocaleTimeString();
           	    let ss = new Date(day.sunset * 1000).toLocaleTimeString();
@@ -409,7 +408,7 @@ const app = {
 			  	    text-align:center;
 		      		">
 		          	    <i class="fas fa-cloud-rain"></i> 
-		          	    ${pr_dp}%<br>
+		          	    ${pr}%<br>
 		      		</div>
 		  	    </p>
 		  	    <p>
@@ -454,8 +453,7 @@ const app = {
         rowHourly.innerHTML = resp.hourly
             .map((hour, idx) => {
                 if (idx <= 6) {
-	            let pr = hour.pop * 100;
-	  	    let pr_dp = pr.toFixed(2);
+	            let pr = (hour.pop*100).toFixed(2);
           	    let dt = new Date(hour.dt * 1000).toLocaleTimeString();
 	  	    let vb = hour.visibility / 100;
 	  	    let wicon = "";
@@ -577,7 +575,7 @@ const app = {
 			  	    text-align:center;
 		      		">
 		          	    <i class="fas fa-cloud-rain"></i> 
-		          	    ${pr_dp}%<br>
+		          	    ${pr}%<br>
 		      		</div>
 		  	    </p>
 		  	    <p>
