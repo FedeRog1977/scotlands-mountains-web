@@ -888,7 +888,7 @@ function searchLocation() {
  */
 function scoreRoute(elev,dist,nTops,type,stage,terrType,terrDiff) {
     const convConstFt = 0.3048;
-    const convConstMi = 1.60934;
+    const convConstMi = 1.609;
 
     // `Number of tops achieved per vertical meter gained per horizontal meter'
     var multiplier = nTops / ((convConstFt * elev) / ((convConstMi * dist) * 1000));

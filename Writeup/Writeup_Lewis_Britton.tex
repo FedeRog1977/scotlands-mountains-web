@@ -2,10 +2,10 @@
 	\usepackage{geometry}
  		\geometry{
  			a4paper,total={210mm,297mm},
- 			tmargin=40.8mm,
-			bmargin=40.8mm,
-			lmargin=32.6mm,
-			rmargin=32.6mm,
+ 			tmargin=40mm,
+			bmargin=40mm,
+			lmargin=32mm,
+			rmargin=32mm,
  		}
 
 	\usepackage{fancyhdr}
@@ -103,7 +103,7 @@
                 \Large\textsc{Coursework Assignment}\\ [0.25cm]
                 \HRule{0.5pt}
                 }
-	\author{\textsc{Lewis W. Britton}\\
+	\author{\textsc{Lewis W. Britton, L.W.B.}\\
                 \textsc{202194412}\\
                 \textsc{University of Strathclyde}\\
 		\textit{Glasgow City, Scotland}
@@ -112,7 +112,7 @@
 	\maketitle
 
         \begin{center}
-                \textsc{Burning Roots: }
+		\huge{\textsc{Burning Roots}}
         \end{center}
 
         \vspace{\fill}
@@ -133,7 +133,7 @@
 	\end{center}
 
 	\begin{center}
-		\textsc{Academic Year 2020/2021}
+		\textsc{Academic Year 2021/2022}
 	\end{center}
 
 \newpage
@@ -345,82 +345,15 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{Walkhighlands}
 
-	The heuristic evaluation for Walkhighlands is listed under Figure A2 in Appendix 1.
+	The heuristic evaluation for Walkhighlands is listed under Figure A1 in Appendix 1.
 
 		\subsubsection{Strava}
 
-	The heuristic evaluation for Strava is listed under Figure A3 in Appendix 1.
+	The heuristic evaluation for Strava is listed under Figure A2 in Appendix 1.
 
 \newpage
 
-\section{Data Processing \& Methodology}\label{ch3}
-
-	\subsection{Data Acquisition}
-
-	A program has no applicable context without the appropriate data. In this case, data is required to even present the base functionality and content related to many features. That speaks loudly for the fact that this system is primarily made of JavaScript and provides users with no utility as a pure site. At least it's static however, if that's any compensation. Seen in Figure A1 is a brief overview of all the data sources, purposes and uses throughout every component of this system, which are discussed under the seven subsequent sub-sections of this section.
-
-		\subsubsection{Location}
-
-	A digital mapping system for mountain navigation will never function as required if no location services are in place. And, at the heart of location tracking with map APIs and other services alike, is Geolocation. Once a call to \verb|navigator.geolocation| has been made which interfaces with the browser being used, the user is prompted to grant access to device location services. Once this is confirmed, GPS data is easily accessible. The two important values captured using Geolocation are of course latitude and longitude (\texttt{lat}, \texttt{lon}), which are used in two important ways. The first being \verb|Geolocation.getCurrentPosition()| which is useful for using latitude and longitude in calculations such as measures of distance, historic placement tracking, etc. The second is \verb|Geolocation.watchPosition()| which is a method of tracking location constantly upon update, clearly more useful for icon display. This is the simplest form of data collection in the this system as it only requires an API call and perhaps a few more lines to manipulate a result.
-
-		\subsubsection{Regional}
-
-	The regional data refers to GPS coordinate records of [1] all counties of Scotland, [2] all regions of Scotland, [3] all sub-regions of Scotland, and [4] all sub-sub-regions of Scotland. For example, \textit{Moray} is a County; \textit{Glenfinnan} is a sub-sub-region, in the sub-region \textit{Fort William, Lochaber and Lorn}, in the region \textit{Highlands}. All of this regional data was acquired by inspecting the `Search all walks' section of Walkhighlands (Walkhighlands, 2022), although did require some hierarchical and grouping amendments, especially throughout the [Western Ocean] and Western Isles. It is stored in a JSON file created locally by myself and hosted on my GitHub.
-
-		\subsubsection{Landmass}
-
-	Landmass data is of a similar format in that is stores records of GPS coordinate data upon the landmasses of Scotland. However, it extends to be far more complex. It includes data on landmasses themselves, which are anything resembling some significant land-form of Scotland. In this context, a landmass may either be a \textit{Mountain}, \textit{Mountain Range}, or \textit{Stand Alone}. A mountain is a single prominent feature which contains one or more hills without a contour drop of under 2000ft between summits; a mountain range is a group of prominent features which contain hills without a contour drop of under 1200ft between summits; and, a stand alone is a single prominent feature which contains one hill. `Hill' refers to \textit{Munros} and \textit{Corbetts}, not \textit{Munro/Corbett Tops}. Therefore, tops are not limited on stand alones but also do not determine a summit. For example, ``a stand alone landmass may have one Munro and two Munro Tops''. Note that \textit{Munro Tops} and \textit{Corbett Tops} sit at the height of Munros/Corbetts respectively however do not meet the elevation and distance criteria to be classed as their own hills. They must be present at maximum stationary points, not increasing points such as those at which cairns are often found. All attributes of landmasses and hills etc., and their hierarchy can be found in the breakdown of the JSON file in Figure A1.\\
-
-	Data was gathered, wait for it..., primarily manually by myself by staring at OS Explorer 376\footnote{Oban \& North Lorn}, Explorer 377\footnote{Loch Etive \& Glen Orchy} and Explorer 384\footnote{Glen Coe \& Glen Etive}. This provided access to information not yet recorded, such as Corries, Lochains and boulder fields of a landmass, for example. To ensure inclusion of all Munros and Corbetts, reference to Walkhighlands was made (Walkhighlands, 2022); and, to ensure inclusion of all Munro and Corbett Tops, Harold Street (2022) and Peakbagger.com (2022) were also investigated as they include more comprehensive community-driven data. Once again, data gathered is stored in a JSON file hosted on my GitHub.\\
-
-	Under the time constraint of the project, some omissions, amendments and notes were made as follow:
-
-	\begin{itemize}
-	\setlength\itemsep{0cm}
-		\item The sample size is limited to the South-West Highlands, which refers to the region spanning Glen Etive, Glen Orchy and Glen Coe, a.k.a. the land between the A85 to Oban and the A82 through Glen Orchy, through Glen Coe and Ballachullish (side note: don't confuse `Glen Coe' with `Glencoe' in the context of this data! Critical Errors will occur).
-		\item Sub2000s, Donalds, Grahams and Grahams tops do not appear in the data as this would have taken an inappropriate amount of time to collect and the six-thousand-line JSON was enough already.
-		\item Some details for Corbett Tops and Munro Tops, are not provided as even the most detailed aforementioned sites were lacking some data.
-		\item Munros, Munro Tops, Corbetts and Corbett Tops are ordered primarily by category and secondarily from highest-to-lowest within their category.
-		\item There is no pre-determined `order' to Corrie hierarchy on landmasses so they are simply ordered by myself from south-to-north.
-		\item Ideally, Corries, Gullies, Lochains and Waterfalls would be named and assigned GPS coordinates in the JSON file. However, OS maps were too inconsistent with naming the features so only the 100\% consistent Corrie category is given this luxury. Others are simply assigned boolean values.
-		\item HTML symbols such as \`{o} (\verb|&ograve;|) and \^{e} (\verb|&ecric;|), which appear frequently in Gaelic spellings, are unfortunately not favoured in the JSON or any other iteration of the relevant words, as much time is saved developing functions and methods to search; loop through and match the data.
-	\end{itemize}
-
-		\subsubsection{Route}
-
-		\subsubsection{Ability}
-
-		\subsubsection{Equipment}
-
-		\subsubsection{Weather}
-
-	\subsection{Data Manipulation \& Output}
-
-		\subsubsection{`Overview'}	
-
-		\subsubsection{`Conditioning'}
-	
-		\subsubsection{`Weather'}
-
-		\subsubsection{`Conquest' Map}
-
-		\subsubsection{`Ranger' Calculator}
-
-		Risk indicators: lack of visibility (based on weather), misdirection (based on weather and terrain), falling off cliffs and ridges (based on weather and terrain), rock fall (based on terrain), rock kick-back (based on terrain), dehydration (based on weather and duration etc.), sunburn (based on weather and duration etc.), confrontation with livestock etc. (based on terrain and terrain type), plants and allergens like moss and ferns etc. (based on terrain and terrain type)\\
-
-		Winter risk indicators: lack of visibility - white-out (based on weather and terrain), cornices (based on weather and terrain), avalanche (based on weather), ice fall (based on weather), hypothermia (based on weather and ability)\\
-
-		Ranger graphs: elevation profile, speed input, power input, heart rate input; Select: Constant Speed (Max); Output: Required Time and Power; Select: Constant Speed (Average); Output: Required Time and Power; Select: Constant Power Output; Output: Required Speed and Time; Input: Target Speed; Output: Required Time and Power; Input: Target Power Output; Output: Required Time and Power; Input: Target Energy Output; Output: Required Time and Power
-
-	\subsection{Information Acquisition \& Output}
-
-		\subsubsection{Purpose}
-
-		\subsubsection{Keys \& Suggested Reading}
-
-\newpage
-
-\section{System Requirements}\label{ch4}
+\section{System Requirements}\label{ch3}
 
 	System requirements gathering is essentially the stage at which the concept of a system's functionality is aligned with real-world user desires (requirements). This stage provides a context for creativity and a blueprint upon which this can be mapped. Although the founder of a system or concept may have a clear vision of the intended outcome of their development, understanding what final users need and want allows the creator to constantly tailor development. This may extend to how they and/or the software could/should gather information, store data, transact data, and output data/information.
 
@@ -506,13 +439,71 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{User Stories}
 
-	`User stories' are often an effective method of contextualizing requirements and presenting how they can and will be interpreted and used by the final user. Putting yourself in the hypothetical context of a user is a good method of delivering basic feedback on how to apply a solution to a requirement. Additionally, it helps identify possible negations or irrelevant content. So forth, the user stories found in Figure A4 in Appendix 1 follow the syntax: ``I wish to be able to $<$interact\_with\_feature$>$ in anticipation of $<$returned\_result$>$ which will provide me with $<$payoff$>$''. Development of the solution to these user stories listed in the figure are prioritized using the metric seen in the \textit{Priority} column.
+	`User stories' are often an effective method of contextualizing requirements and presenting how they can and will be interpreted and used by the final user. Putting yourself in the hypothetical context of a user is a good method of delivering basic feedback on how to apply a solution to a requirement. Additionally, it helps identify possible negations or irrelevant content. So forth, the user stories found in Figure A3 in Appendix 1 follow the syntax: ``I wish to be able to $<$interact\_with\_feature$>$ in anticipation of $<$returned\_result$>$ which will provide me with $<$payoff$>$''. Development of the solution to these user stories listed in the figure are prioritized using the metric seen in the \textit{Priority} column.
 
 	\subsection{User Accessibility}
 
 	This system is available as a website application, it could be accessed and used by anyone with access to the internet. Therefore, it is to some degree essential that users of all types are welcomed to the site, even if they have no prior knowledge of the industry or field. More importantly, the graphic design and methods of interfacing in the user interface should be accommodating of users with possible imparities, such as a [severe mental imparity], by taking a user-centered approach which considers visible accessibility controls which allow these users to interface with the system more easily. Accessibility does not however only refer to disability. Ensuring optimal accessibility also accounts for factors such as implementing clean and concise CSS and graphic design for simple and intuitive navigation, stimulation, relevance, etc. These approaches are widely considered and implemented.\\
 
 	In context, whether using the desktop or scaled mobile version of the site, the user interface implements many `friendly' universal standards. For example, it primarily uses the readable and elegant Sans-Serif font Audi AG and Serif font Garamond, with suitable font-sizing and color etc. Hue, saturation and luminance are appropriately considered/assigned to create [maximal optical pleasure] and proper readability with the correct contrast between elements. The well respected font-family Font Awesome, which is universally recognised, to display various standard symbols. In theory, these considerations lead to more efficient understanding and transitioning between elements of the site.
+
+
+\newpage
+
+\section{Data Gathering}\label{ch4}
+
+	\subsection{Data}
+
+	A program has no applicable context without the appropriate data. In this case, data is required to even present the base functionality and content related to many features. That speaks loudly for the fact that this system is primarily made of JavaScript and provides users with no utility as a pure site. At least it's static however, if that's any compensation. Seen in Figure A4 is a brief overview of all the data sources, purposes and uses throughout every component of this system, which are discussed under the seven subsequent sub-sections of this section.
+
+		\subsubsection{Location}
+
+	A digital mapping system for mountain navigation will never function as required if no location services are in place. And, at the heart of location tracking with map APIs and other services alike, is Geolocation. Once a call to \verb|navigator.geolocation| has been made which interfaces with the browser being used, the user is prompted to grant access to device location services. Once this is confirmed, GPS data is easily accessible. The two important values captured using Geolocation are of course latitude and longitude (\texttt{lat}, \texttt{lon}), which are used in two important ways. The first being \verb|Geolocation.getCurrentPosition()| which is useful for using latitude and longitude in calculations such as measures of distance, historic placement tracking, etc. The second is \verb|Geolocation.watchPosition()| which is a method of tracking location constantly upon update, clearly more useful for icon display. This is the simplest form of data collection in the this system as it only requires an API call and perhaps a few more lines to manipulate a result.
+
+		\subsubsection{Regional}
+
+	The regional data refers to GPS coordinate records of [1] all counties of Scotland, [2] all regions of Scotland, [3] all sub-regions of Scotland, and [4] all sub-sub-regions of Scotland. For example, \textit{Moray} is a County; \textit{Glenfinnan} is a sub-sub-region, in the sub-region \textit{Fort William, Lochaber and Lorn}, in the region \textit{Highlands}. All of this regional data was acquired by inspecting the `Search all walks' section of Walkhighlands (Walkhighlands, 2022), although did require some hierarchical and grouping amendments, especially throughout the [Western Ocean] and Western Isles. It is stored in a JSON file created locally by myself and hosted on my GitHub. Regions are ordered south-to-north in the file.
+
+		\subsubsection{Landmass}
+
+	Landmass data is of a similar format in that is stores records of GPS coordinate data upon the landmasses of Scotland. However, it extends to be far more complex. It includes data on landmasses themselves, which are anything resembling some significant land-form of Scotland. In this context, a landmass may either be a \textit{Mountain}, \textit{Mountain Range}, or \textit{Stand Alone}. A mountain is a single prominent feature which contains one or more hills without a contour drop of under 2000ft between summits; a mountain range is a group of prominent features which contain hills without a contour drop of under 1200ft between summits; and, a stand alone is a single prominent feature which contains one hill. `Hill' refers to \textit{Munros} and \textit{Corbetts}, not \textit{Munro/Corbett Tops}. Therefore, tops are not limited on stand alones but also do not determine a summit. For example, ``a stand alone landmass may have one Munro and two Munro Tops''. Note that \textit{Munro Tops} and \textit{Corbett Tops} sit at the height of Munros/Corbetts respectively however do not meet the elevation and distance criteria to be classed as their own hills. They must be present at maximum stationary points, not increasing points such as those at which cairns are often found. All attributes of landmasses and hills etc., and their hierarchy can be found in the breakdown of the JSON file in Figure A4.\\
+
+	Data was gathered, [wait for it...], primarily manually by myself by staring at OS Explorer 376\footnote{Oban \& North Lorn}, Explorer 377\footnote{Loch Etive \& Glen Orchy} and Explorer 384\footnote{Glen Coe \& Glen Etive}. This provided access to information not yet recorded, such as Corries, Lochains and boulder fields of a landmass, for example. To ensure inclusion of all Munros and Corbetts, reference to Walkhighlands was made (Walkhighlands, 2022); and, to ensure inclusion of all Munro and Corbett Tops, Harold Street (2022) and Peakbagger.com (2022) were also investigated as they include more comprehensive community-driven data. Once again, data is stored in a JSON file hosted on my GitHub. Landmasses and their components are ordered south-to-north in the file, which will become more relevant subsequently.\\
+
+	Under the time constraint of the project, some omissions, amendments and notes were made as follows:
+
+	\begin{itemize}
+	\setlength\itemsep{0cm}
+		\item The sample size is limited to the South-West Highlands, which refers to the region spanning Glen Etive, Glen Orchy and Glen Coe, a.k.a. the land between the A85 to Oban and the A82 through Glen Orchy, through Glen Coe, to Ballachullish (side note: don't confuse `Glen Coe' with `Glencoe' in the context of this data! Critical Errors will occur. Glencoe is the village, Glen Coe is the glen. And we aren't Mr. Walkhighlands so it isn't [`Glinco']).
+		\item Sub2000s, Donalds, Grahams and Grahams tops do not appear in the data as this would have taken an inappropriate amount of time to collect and the six-thousand-line JSON was enough already.
+		\item Some details for Corbett Tops and Munro Tops, are not provided as even the most of the aforementioned `detailed' sites were lacking some data.
+		\item Munros, Munro Tops, Corbetts and Corbett Tops are ordered primarily by category and secondarily from max elevation highest-to-lowest within their category.
+		\item There is no pre-determined `order' to Corrie hierarchy on landmasses so they are simply ordered by myself from south-to-north.
+		\item Ideally, Corries, Gullies, Lochains and Waterfalls would be named and assigned GPS coordinates in the JSON file. However, OS maps were too inconsistent with naming the features so only the 100\% consistent Corrie category is given this luxury. Others are simply assigned boolean values.
+		\item HTML symbols such as \`{o} (\verb|&ograve;|) and \^{e} (\verb|&ecric;|), which appear frequently in Gaelic spellings, are unfortunately not favoured in the JSON or any other iteration of the relevant words, as much time is saved developing functions and methods to search; loop through and match the data.
+	\end{itemize}
+
+		\subsubsection{Route}
+
+	Route data is delivered in two different forms. The first is much like the former, in fact as seen in Figure A4, the route attribute appears as a component of a landmass; ``a route on a landmass''. A route has the standard components such as a name, distance, total elevation gain, estimated duration, and of course the hills included on the route, etc. The route data was again gathered from Walkhighlands (2022), in a combination of official Walkhighlands routes, community-contributed Walkhighlands routes, and in some cases where there was no existing content, my personal \href{https://www.strava.com/athlete/training}{Strava} (often my historic record and knowledge also).\\
+
+	Another component of a route is its GPS data. Global Positioning System Exchange Format (GPS Exchange Format (GPX)) is the most commonly used file type to store GPS data uploaded to Walkhighlands and Strava. Therefore, these files were selected again from Walkhighlands' official routes, community-contributed routes and my personal Strava, and associated accordingly. Relevant paths to these files are included as attributes under the appropriate routes in the discussed JSON file. Note that JavaScript operates most efficiently using a GeoJSON GPS data file format therefore, upon use they're converted. Due to routes being components of landmasses and the south-to-north ordering of landmasses, routes also occur south-to-north in the file.
+
+		\subsubsection{Ability}
+
+	Ability data is once again manufactured data, by myself, relevant to how different people may interact with landmasses, their features and their routes. It offers characteristics relating to numerical difficulties of hills routes such as distance, elevation; summit features; types of route; stages of routes; terrain types; and terrain difficulty factors. Included are various strings describing these aspects and their purposes and implications, etc. File paths to supplementary images are also included. There isn't necessarily a data source in this case, apart from my endless hours spend in the Scottish Highlands. All of this data is stored in a JSON file which is hosted on my GitHub.
+
+		\subsubsection{Equipment}
+
+	Equipment data follows the same format again. I is data manufactured by myself which refers to a very comprehensive list of equipment including packs and travel equipment; technical equipment; footwear, footwear components and crampons, etc.; and clothing. It's constructed of basic strings describing the good and its purpose, with a file path to a supplementary image. The only source for this portion is countless hours spent browsing Tiso and talking to other enthusiasts and experts. The data is contained within a JSON file hosted on my GitHub.
+
+		\subsubsection{Weather}
+
+	Weather data is another [key component] in mountain planning. It would be unreasonable to manually gather weather data from a larger source such as the Met Office however, OpenWeather (OpenWeather 2022) offers a comprehensive API which covers all of the relevant locations to this system. All weather data used in this system originates from the OpenWeather One Call API, which provides a wide selection of minutely, hourly and daily data.
+
+	\subsection{Information}
+
+	In the context of the subsequent output of processed data, sometimes the limited parameters in which it is and can be presented is too restrictive. Hence, ongoing research is conducted into each of the elements of the theme of this system to gather and provide additional nominal guidance. This nominal guidance must then by applied in a context by the user to make it relevant to their engagements. For example, this extends to research relating to the different elements of the weather feature and displaying their definitions and origin for the user in a `key'. So far, as this process is ongoing and will continuously be added to throughout the lifespan of the system, the aforementioned key is included along with `suggested readings' on cloud types and suggested readings on compass bearings. These elements are designed not to offer a more advanced system, but to provide a more comprehensive experience and enhance knowledge, application and experience.
 
 \newpage
 
@@ -532,7 +523,224 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{Primary Use Case Examples}
 
-	\subsection{Data Structure}
+	\subsection{Data Application \& Manipulation}
+
+	All data discussed in Section 4 of this report is included in a basic input-output system [(BIOS, wheyy)] which, through functions and others methods, produces the desired outcomes which satisfy user requirements. A summary of this process can be seen below in Table 5.2. Reference to data can be observed in Figure A4.
+
+	\begin{table}[h]
+		\scriptsize
+		\renewcommand{\arraystretch}{1.25}
+	\begin{center}
+	\begin{tabular}{p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}}
+		\hline
+		\hline
+		\textsc{Function} & \textsc{Inputs} & \textsc{Data} & \textsc{Return Type} & \textsc{Output}\\
+		\hline
+		\hline
+		\multicolumn{5}{c}{\textsc{`Overview'}}\\
+		\hline
+		\multicolumn{5}{c}{\textsc{`Conditioning'}}\\
+		\hline
+		\multicolumn{5}{c}{\textsc{`Weather'}}\\
+		\hline
+		\multicolumn{5}{c}{\textsc{`Conquest Map'}}\\
+		\hline
+		\hline
+	\end{tabular}
+		\caption{Data Input-Output Summary}
+	\end{center}
+	\end{table}
+
+		\subsubsection{`Overview'}
+
+	The `Overview' portion of the home page of this site refers to a more basic iteration of the route search and landmass search functions, seen subsequently in the `Conquest Map'. For the sake of continuity, all basic features of these functions' use of data is discussed under this heading; additional data required for the `Conquest Map' version are discussed latterly.\\
+
+			\paragraph{Score Route}
+
+	This function exists purely to serve the Search Route function and has no purpose as a stand-alone. As it involves quite the lengthy arithmetic process however, it is granted its own sub-sub-sub-section. Although, to my judgement, this metric is fairly mathematically sound although will be constantly developed as I generate more ideas, it is still very subjective and based on my own experiences with and discussions about the Scottish hills and their conditions. Therefore, this `score' is not a definitive metric to describe the condition of a route to the masses. It should be judged and considered on an individual basis.\\
+
+	Henceforth, scoring a route takes into account [1] four groups of subjective scores based on weights and values of the four route element factors seen under routes in the JSON file (type, stages, terrain type(s), terrain difficulties), and [2] a more objective and logical multiplier based on total number of [Munro, `Top, Corbett, `Top] tops covered on-route, the total elevation gained, and the total distance covered. Actual values of the weights were gathered through personal consideration and conversation in the field and is therefore subject to constant adjustment. So forth, the multiplier was developed purely by myself. All parameters of this equation are as follows:
+
+	\begin{enumerate}
+	\setlength\itemsep{0cm}
+		\item Conversion constants (ft--m, mi--km) -- values
+		\item Number of tops -- value
+		\item Elevation -- value
+		\item Distance -- value
+		\item Route type (weight, \{weights, `values'\}, `score') -- matrix
+		\item Route stages (weight, \{weights, `values'\}, `score') -- matrix
+		\item Terrain type(s) (weight, \{weights, `values'\}, `score') -- matrix
+		\item Terrain difficulties (weight, \{weights, `values'\}, `score') -- matrix
+	\end{enumerate}
+
+	This site using the traditionally functional imperial system therefore, as this computation actually calls for the one and only reasonable use of the metric system (mathematical scalability), conversion constants are required for elevation and distance. These are both justified to four significant figures. Mathematical notation for each of these processes follow (excuse the notational accuracy, it's been a while).\\
+
+\newpage
+
+	[1.1] \textbf{Conversion Constants}:
+
+	$$c_{ft}=0.3048$$
+	$$c_{mi}=1.609$$
+
+	Where:\\
+	$c_{ft}=$ Conversion constant for imperial feet to metric meters\\
+	$c_{mi}=$ Conversion constant for imperial miles to metric kilometers ($\times10^{3}$m)\\
+
+	[1.2] \textbf{Number of Tops}:
+
+	$$N_{\mathrm{Tops}}=\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}$$
+	$$\lor\ N_{\mathrm{Tops}}=\vert i\vert + \vert j\vert + \vert k\vert + \vert l\vert$$
+
+	Where:\\
+	$N_{\mathrm{Tops}}=$ Total number of tops present on given route\\
+	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+
+	[1.3] \textbf{Elevation}:
+
+	$$\mathrm{Elev_{m}}=c_{ft}\mathrm{Elev_{ft}}$$
+
+	Where:\\
+	$\mathrm{Elev_{m}=}$ Total elevation gained on given route, in meters (m)\\
+	$\mathrm{Elev_{ft}=}$ Total elevation gained on given route, in feet (ft)\\
+
+	[1.4] \textbf{Distance}:
+
+	$$\mathrm{Dist_{km}}=c_{mi}\mathrm{Dist_{mi}}$$
+
+	Where:\\
+	$\mathrm{Dist_{km}=}$ Total distance covered on given route, in kilometers (km)\\
+	$\mathrm{Dist_{mi}=}$ Total distance covered on given route, in miles (mi)\\
+
+\newpage
+
+	[2.1] \textbf{Weights} for Route Type, Route Stages, Terrain Type(s), Terrain Difficulties Elements:\\
+
+	This method defines equally weighted elements by dividing 1 by the number of elements in the arrays.
+
+	$$w_{i}=\frac{1}{\sum^{I}_{i=1}N_{i}},\ w_{j}=\frac{1}{\sum^{J}_{j=1}N_{j}},\ w_{k}=\frac{1}{\sum^{K}_{k=1}N_{k}},\ w_{l}=\frac{1}{\sum^{L}_{l=1}N_{l}}$$
+	$$\lor\ w_{i}=\frac{1}{\vert i\vert},\ w_{j}=\frac{1}{\vert j\vert},\ w_{k}=\frac{1}{\vert k\vert},\ w_{l}=\frac{1}{\vert l\vert}$$
+
+	$$\therefore w_{i}, w_{j}, w_{k}, w_{l}\ \textrm{always constant and equally weighted}$$
+
+	Where:\\
+	$w_{i,j,k,l}=$ Equally weighted value based on number of elements for element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+
+	[2.2] \textbf{Scores} for Route Type, Route Stages, Terrain Type(s), Terrain Difficulties:
+
+	$$S_{i}=\sum^{I}_{i=1} w_{i}V_{i},\ S_{j}=\sum^{J}_{j=1} w_{j}V_{j},\ S_{k}=\sum^{K}_{k=1} w_{k}V_{k},\ S_{l}=\sum^{L}_{l=1} w_{l}V_{l},$$
+
+	Where:\\
+	$S_{i,j,k,l}=$ Relative score of element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$V_{i,j,k,l}=$ Subjectively defined value assigned to element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+
+\newpage
+
+	An example for the route type array ($i$) which contains three equally weighted elements follows:
+
+	$$S_{i}=w_{1}V_{1}+w_{2}V_{2}+w_{3}V_{3}$$
+	$$S_{i}=\frac{1}{3}\left(\frac{1}{4}\right)+\frac{1}{3}\left(\frac{1}{4}\right)+\frac{1}{3}\left(\frac{1}{2}\right)$$
+	$$S_{i}=\frac{1}{3}=0.\textrm{\.{3}}$$
+	
+	As these values are generated from an array, they involve single-column (no inversion) matrix algebra in the context of JavaScript. An example of the appropriate notation relating to the previous example follows (decimal values favoured in matrices):
+
+	$$S_{i}=\left[0.\textrm{\.{3}}\ 0.\textrm{\.{3}}\ 0.\textrm{\.{3}}\right]\left[0.25\ 0.25\ 0.5\right]$$
+	$$S_{i}=0.\textrm{\.{3}}$$
+
+	Again, as this is single-column matrix algebra, standard notation is also viable:
+
+	$$S_{i}=\begin{bmatrix}w_{1}\\w_{2}\\w_{3}\end{bmatrix}\begin{bmatrix}V_{1}\\V_{2}\\V_{3}\end{bmatrix}$$
+	$$S_{i}=\begin{bmatrix}0.\textrm{\.{3}}\\0.\textrm{\.{3}}\\0.\textrm{\.{3}}\\\end{bmatrix}\begin{bmatrix}0.25\\0.25\\0.5\end{bmatrix}$$
+	$$S_{i}=0.\textrm{\.{3}}$$
+
+	For each of the route element factor arrays, these are then aggregated to give a total value. However, they still do not have any context which is why a multiplier is used.\\
+
+	[2.3] \textbf{Weights} for Route Type, Route Stages, Terrain Type(s), Terrain Difficulties Elements:
+
+	$$w_{S_{i}},\ w_{S_{j}},\ w_{S_{k}},\ w_{S_{l}}$$
+
+	Do not confuse these with the equal weightings for each individual element within the arrays, these four weightings exist on a subjective basis to weight the four scores for each array.
+
+	Where:\\
+	$w_{S_{i,j,k,l}}=$ Weight values determining the importance of arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+
+	[3.1] \textbf{Complete Multiplier}:
+
+	$$m_{R}=\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}$$
+	$$\textrm{Expanded: }m_{R}=\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}$$
+
+	Where:\\
+	$m_{R}=$ Multiplier for given route $R$\\
+
+	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route''.\\
+
+	[3.2] \textbf{Complete Aggregate Route Score}:
+
+	$$S_{R}=w_{S_{i}}S_{i}+w_{S_{j}}S_{j}+w_{S_{k}}S_{k}+w_{S_{l}}S_{l}$$
+	$$\textrm{Expanded (1): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)$$
+	$$\textrm{Expanded (2): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)$$
+
+	Where:\\
+	$S_{R}=$ Aggregate route score for given route $R$\\
+
+	[4] \textbf{Complete Adjusted Route Score}:
+
+	$$S_{R(A)}=m_{R}\left(w_{S_{i}}S_{i}+w_{S_{j}}S_{j}+w_{S_{k}}S_{k}+w_{S_{l}}S_{l}\right)$$
+	$$\textrm{Expanded (1): }S_{R(A)}=\left(\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}\right)\left(w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)\right)$$
+	$$\textrm{Expanded (2): }S_{R(A)}=\left(\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}\right)$$
+	$$+\left(w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)\right)$$
+
+	Where:\\
+	$S_{R(A)}=$ Adjusted route score for given route $R$\\
+
+	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route; scaled by the route type, route stages, terrain type(s), and terrain difficulty elements found on-route''.\\
+
+	Given the time constraint of the project, some restrictions have been applied and notes made, as follows:
+
+	\begin{itemize}
+	\setlength\itemsep{0cm}
+		\item Writing the score route function would be too-lengthy-a-process if calculating the score of each of the four route elements based on the individual values of the 5, 4, 11 and 20 sub-elements respectively using the factorial method, so the latter 3 are calculated simply by volume/variety. This does not accurately reflect the difficulty of terrain for example as a route with grass and concrete will be considered more difficult than a route with grade 3 slab, simply because it has one more element. In this context it doesn't matter too much as the math has been demonstrated successfully however.
+		\item If using the exhaustive method, volume is accounted for by the inclusion and exclusion of values which, if all-inclusive, should add up to N sub-elements in that group. But this is rare.
+		\item All four of the route elements do not include consistent examinations of their sub-elements (value ($V_{i,j,k,l}$)) when scoring a route. That is, for example using the route type array, sub-element $i=1$ and $i=5$ may not be examined together if they do not appear as a combination in the JSON file and therefore don't critically need to be examined. Equally, in the route stage array, perhaps sub-element $j=3$ isn't examined soley because it doesn't appear on its own in the JSON file. In a perfect world, every combination and isolation would be examined however, with the time allocated here, it is not worth the effort.
+	\end{itemize}
+
+			\paragraph{Describe Route Score}
+
+	This is a small function which is used simply to evaluate the meaning of the given route score and translate it into more appropriate and understandable human terms. It's based on multiple increments from 0--100+, including: 0-33.\.{3}: ``Playground (Amateur)''; 34--66.\.{6}: ``Normie (Easy)''; 67--100: ``Trad (Moderate)''; 100+: ``GigaChad (Challenging)''. It gives the user a slightly better indication of their what the route requires from their ability.
+
+			\paragraph{Search Route}
+
+	This function searches JSON [1] (Figure A4) for data under a \texttt{landmass} $\rightarrow$ \texttt{route} for a match with input from a two-tier HTML \texttt{select} process. The first \texttt{select} allows the user to choose their desired landmass from their names matching those in the JSON file. Once an \texttt{option} has been selected, a relevant element is generated which displays the second \texttt{select} process that allows users to view and select from routes, matching those with names in the JSON file, on their selected landmass. This process could of course be executed using a manual text \texttt{input} process however, this relies on the user having pre-existing knowledge of landmasses and their routes and takes away from the comprehensiveness and inclusiveness of allowing them to view all possibilities. Essentially, this function outputs a body of text which fetches and displays the different attributes of routes in a human-readable context, including a mathematically computed unique and elegant `route score' and the option to download the route's GPX file. This is the fasted method I have witnessed from landing on a site to being able to access a route, download it and use it.
+
+			\paragraph{Search Landmass}
+
+	This function searches JSON [1] (Figure A4) for data under a \texttt{landmass} $\rightarrow$ \texttt{munro}, \texttt{munrotop}, \texttt{corbetttop} or \texttt{corbett} for a match with input from an HTML text \texttt{input} process. This input allows users to choose their desired hill which appears on a landmass; landmasses are looped until a Munro, Munro Top, Corbett or Corbett Top name appearing under a landmass is matched with the user's input. Note two things: search criteria does not have to be character-matching, case-matching or syntactically correct as there is JavaScript protocol in place to ensure more `loose' data matching; and [2] if there are multiple matches under a user input, results are prioritized firstly by landmass appearance in the JSON file (as landmasses are ordered south-to-north and the majority of users will live south of the highlands, this will produce a more logical results), and secondly by hierarchy of peak (Munro, `Top, Corbett, `Top) according to their ordering in the file (which is also logical as users most often are searching for Munros). This function outputs a body of text which fetches and displays attributes of hills and the landmasses on which they appear, in a human-readable context. Also included is an image of the hill.
+
+		\subsubsection{`Conditioning'}
+
+	The `Conditioning' portion of the home page of this site presents the user with the ability to [1] view `Ability' attribute, and [2] view `Equipment' attributes. This, like the `Overview' section is a simplified and more informative version of what the user will see and use ability and equipment data for in the `Conquest Map'.
+
+			\paragraph{Search `Ability'}
+
+	Users are presented with an HTML \texttt{select} protocol on a two-tier basis. The first allows them to choose an \texttt{option} based on which set of ability factors they wish to inspect, such as hill and route elements, summit features, route types and stages, terrain types and difficulties, etc. This generates the second \texttt{select} protocol which displays the individual factors under each heading. When the user selects a factor, the element is matched by a loop through the relevant JSON file for the seven ability headings and a body of text is then generated summarizing the attributes. This includes all of the basics such as a brief description and images, etc. This feature is informative and serves no dynamic function until `Conquest Map'.
+	
+			\paragraph{Search `Equipment'}
+
+	Users are presented with an HTML \texttt{select} protocol, again on a two-tier basis. The first allows them to choose an \texttt{option} based on which set of equipment factors they wish to inspect, such as packs, technical equipment, footwear and clothing, etc. This generates the second \texttt{select} protocol which displays the individual factors under each heading. Upon selection of a factor, the element is matched by a loop through the relevant JSON file for the four equipment headings and a body of text is then generated. This includes details such as a brief description and images, etc. Again, this feature is informative and serves no dynamic function until `Conquest Map'.
+
+		\subsubsection{`Weather'}
+
+	Fetching and putting weather data to use only requires two parameters: latitude and longitude (\texttt{lat}, \texttt{lon}). This leaves huge opportunity to relate these parameters to many different variables and therefore, many different human-interpreted scenarios.
+
+	...
+
+		\subsubsection{`Conquest' Map}
+
+	...
+
+		%\subsubsection{`Ranger' Calculator}
+		%
+	%Ranger graphs: elevation profile, speed input, power input, heart rate input; Select: Constant Speed (Max); Output: Required Time and Power; Select: Constant Speed (Average); Output: Required Time and Power; Select: Constant Power Output; Output: Required Speed and Time; Input: Target Speed; Output: Required Time and Power; Input: Target Power Output; Output: Required Time and Power; Input: Target Energy Output; Output: Required Time and Power
 
 \newpage
 
@@ -544,7 +752,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{Front-End \& User Interface}
 
-		\subsubsection{Semi-Rear-End \& Supporting Data}
+		\subsubsection{Supporting Data (JSON)}
 
 	\subsection{Application Programming Interfaces (APIs) \& Libraries}
 
@@ -596,7 +804,11 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection{Constrictions}
 
+	REVISE DATA AND DESIGN SECTIONS
+
 	Restricted to Glen Coe and Glen Etive
+
+	Some GPX files do not function as intended
 
 \newpage
 
@@ -623,7 +835,124 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection*{Appendix 1: Foundational Material}
 
-		\subsubsection*{Figure A1: Data} 
+		\subsubsection*{Figure A1: Heuristic Evaluation -- Walkhighalnds}
+
+	\begin{center}
+                \scriptsize
+        	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
+                \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
+                \hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Basic Features}}\\
+		\hline
+			\textbf{Sparse Navigation}:\newline There is not much order to the site navigation and in places thee is a lack pf relevance and hierarchy to the options. For example, some sub-sets of pages/features are listed in navigation on the same `tier'; whether that being represented by the link having the same alignment as it's parent, or something of the sort & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$ & $\mathrm{S_{3}}$ & Correctly use HTML and CSS to display the hierarchy of pages and features in this system\\
+			\textbf{Difficult Navigation}:\newline Some essential literature relating to components such as ability and equipment, as featured in this system, is difficult to find and requires a long path of navigation through pages and their children. Often some literature is simply linked through an in-body hyperlink (i.e. in a paragraph) and not even allocated it's own title etc. & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$ & $\mathrm{S_{3}}$ & Correctly use HTML and CSS to display the hierarchy of pages and features in this system. Ensure no relevance is lost in masses of text\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Map Features}}\\
+		\hline
+			\textbf{Feature Separation}: The OS Maps displaying Munros and Corbetts etc. are displayed on different pages of the site, with navigation links between them. This means that interaction with features is limited to the point where all a user can do is view the information provided about it upon a click and follow further links from there. They cannot for example, toggle on/off different features while interacting with the map meaning isolating different features on a GPS route a user is viewing is impossible. & $\mathrm{H_{3}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{3}}$ & Implement a toggle feature for access to different map feature when the user desires, as listed in requirements\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Statistical Features}}\\
+		\hline
+		...\\
+		\hline
+		\hline
+                \multicolumn{4}{l}{\textsc{Total Violations}: 3}\\
+                \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
+                \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Browser (Mobile)}\\
+                \hline
+                \caption{Heuristic Analysis}
+        \end{longtable}
+        \end{center}
+
+\newpage
+
+		\subsubsection*{Figure A2: Heuristic Evaluation -- Strava}
+
+	\begin{center}
+                \scriptsize
+        	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
+                \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
+                \hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Basic Features}}\\
+		\hline
+			\textbf{Weather Misuse}:\newline Weather data is only available as part of complete routes. I.e. activities which are complete and have been saved. Strava use a weather API so it is hard to understand why they would bot integrate this as a basic summary feature on the home page or on a profile etc. Historic weather data, i.e. that printed on complete routes, is the most irrelevant use of such as, come on, the user already knows what the weather was like on their routes and if they want to show off a 20hr hike in a snow storm or something, upload a picture & $\mathrm{H_{3}}$ & $\mathrm{S_{3}}$ & Include a comprehensive weather system, as listed in requirements\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Map Features}}\\
+		\hline
+			\textbf{Map Layers}:\newline Although the Mapbox map seen throughout Strava is used very effectively in hosting many dynamic layers such as customizable GPX routes with terrain' and athlete-specific attributes, it is just a basic map with contours, not a full topographical map. This significantly limits interaction with map features and interpretation as it simply doesn't show many of the relevant aspects to hiking & $\mathrm{H_{2}}$, $\mathrm{H_{3}}$ & $\mathrm{S_{3}}$ & Utilize the OS Map API instead of a more basic one to ensure full access to topographical mapping, as listed in requirements\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Statistical Features}}\\
+		\hline
+		...\\
+		\hline
+		\hline
+                \multicolumn{4}{l}{\textsc{Total Violations}: 2}\\
+                \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
+                \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Brows
+er (Mobile)}\\
+                \hline
+                \caption{Heuristic Analysis}
+        \end{longtable}
+        \end{center}
+
+\newpage
+
+		\subsubsection*{Figure A3: User Stories, Prioritization \& Solutions}
+			
+		\begin{center}
+			\scriptsize
+		\begin{longtable}{p{4cm}lp{1.5cm}lp{4cm}}
+			\textsc{Scenario} & \textsc{Req.} & \textsc{Relevance} & \textsc{Priority*} & \textsc{Solution}\\
+			\hline
+			\hline
+			\multicolumn{5}{c}{\textsc{Functional -- Must-Have}}\\
+			\hline
+			``I wish to be able to [use the current location of my device] in anticipation of [seeing my location printed on a map] which would allow me to [navigate towards map features relative to my location]'' & 1 & UI\newline OS Maps & 1 & Utilize \textit{Geolocation} API to fetch location of user's device\\
+			``I wish to be able to [use the current location of my device] in anticipation of [weather forecast results for my location] which would allow me to [quick-access my weather forecast, likely while on-route]'' & 1, 5 & UI\newline Weather Service & 1 & Utilize \textit{Geolocation} API to fetch location of user's device and place in weather function\\
+			``I wish to be able to [quickly view a summary of suggested routes] which would allow me to [see all the relevant attributes of a route on one return] and therefore, [select routes with less thought, time and effort]'' & 2 & UI\newline Route Summary & 1 & Include a section on the home page with this/these information/statistics\\
+			``I wish to be able to [include attributes related to my ability] which contribute to my [suggested routes] therefore, making them [more relevant to my needs]'' & 3 & UI\newline Ability Service & 1 & Include a section which accepts relevant user inputs and returns route suggestions as required\\
+			``I wish to be able to [include attributes related to the equipment I own] which contribute to my [suggested routes] therefore, making them [more relevant to my needs]'' & 4 & UI\newline Equipment Service & 1 & Include a section which accepts relevant user inputs and returns route suggestions as required\\
+			``I wish to be able to [seek locations by their name] in anticipation of the return of [weather forecast results related to their coordinates] which would allow me to [plan my routes more effectively]'' & 5 & UI\newline Weather Service & 1 & Include a section which accepts location-based inputs, whether this be pre-defined coordinates of locations or the user's current location as discussed previously, to display weather forecast results for these locations\\
+			``I wish to be able to [view an Ordance Survey map with OS Road (1 : 250 000), OS Landranger (1 : 50 000), and OS Explorer (1 : 25 000) layers simultaneously, alternative upon zoom] in anticipation of [viewing initially basic features such as my location as a symbol on the map and center-pan coordinates adjacent to the map] therefore, [making location seeking more interactive and understanable]'' & 1, 6 & UI\newline OS Maps & 1 & Utilize \textit{Ordnance Survey} API to host the map\newline Utilize \textit{Leaflet} JavaScript library to initialize and interact with the map\\
+			``I wish to have the option to [interact with the OS map] which allows me to [toggle on/off display of features], allowing me to [view only specific features I wish to include on my routes]'' & 6 & UI\newline OS Map & 1 & Utilize \textit{Leaflet} JavaScript library to display and toggle on/off symbols representing the location of various geographical features such as Munros, Munro Tops, Corbetts, and Corbett Tops\\
+			``I wish to have the option to [interact with the OS map] which allows me to [toggle on/off GPS routes based on search criteria] therefore, [making route results relevant to my subjective choice], as opposed to other factors such as recommendations based on my ability and equipment, or raw search'' & 6 & UI\newline OS Map & 1 & Utilize \textit{Leaflet} JavaScript library to display and toggle on/off GPS route (GPX data) layers over the map, relative to various search criteria\newline Utilize \textit{Mapbox GL-JS} JavaScript library to convert GeoJSON files to GPX\\
+			``I wish to be able to [search for routes close to my current location] which returns the [closest relevant GPS overlay] to my location, making it easy for me to [make a fast decision if I just want a close project]'' & 6, 1 & UI\newline OS Map & 1 & Utilize \textit{Geolocation} API to fetch location of user's device and compare to the location of all listed projects\\
+			\hline
+			\multicolumn{5}{c}{\textsc{Functional -- Should-Have}}\\
+			\hline
+			``I wish to be able to [interact with the OS Map] in order to [change its layers] which will allow me to [interpret the features and contours of the land in different ways]'' & 1 & UI\newline OS Map & 2 & Include some form of input which \textit{Leaflet} JavaScript library to allow the user to change primary map layer\\
+			``I wish to [view grid markers at the center of the OS Map] which, when panning, will [pinpoint the center coordinates displayed on the map] therefore, [making it easy to view, locate and pan to and from features and locations etc.]'' & 2 & UI\newline Map OS & 2 & Include basic HTML and CSS which displays reticle\\
+			\hline
+			\multicolumn{5}{c}{\textsc{Functional -- Could-Have}}\\
+			\hline
+			``I wish to [have my data stored] in the system so I can [access it down the line] to [use it in various site features]'' & 1 & Back-End & 3 & Implement a back-end database system to store and interact with user data\\
+			``With regards to [data access], I wish to be [assured of appropriate security measures] implemented by the system controllers which will give me [peace of mind] regarding data protection & 2 & Back-End & 3 & Implement appropriate authentication and data protection measures in the system''\\
+			``I wish to be able to [use and reuse attributes related to my account] in order to [tailor results to my own abilities and equipment], for example; allowing me to [gain a more accurate understanding of what I'm able to do] with less effort'' & 3 & UI\newline Back-End & 3 & Allow already-implemented features such as user ability and equipment services to access and use stored user data, as opposed to using basic inputs\\
+			``I wish to be able to [choose `priority attributes'] relevant to data stored upon my previous routes which returns [more relevant route recommendations] to historic ones, relevant to what I have and haven't done based on my preference; allowing me to [more dynamically choose routes]'' & 4 & UI\newline Back-end & 3 & Implement appropriate measures\\
+			\hline
+			\multicolumn{5}{c}{\textsc{Functional -- Won't Have}}\\
+			\hline
+			``I wish to use a GPS device such as a watch or cellular device to [record GPX data] which can be used to [generate route information] and [display useful route records] which I can interpret and benefit/learn from'' & 1 & Back-End & 4 & (Will not) implement functionality to accept GPX uploads and transform relevant components into human readable information\\
+			\hline
+			\multicolumn{5}{c}{\textsc{Non-Functional}}\\
+			\hline
+			``I wish to be able to [use the site on any browser] therefore meaning I can [view all content] regardless of what browser platform I use, meaning I'll be able to [consistently interact with the functionality]'' & 1 & UI\newline Browser Support & 5 & Ensure all languages, packages, libraries, etc., are using the most versatile syntax and have aggregate browser support\\
+			``I wish to be able to [us ethe site on any device platform] therefore meaning I can [view all content] regardless of what device I use, meaning I'll be able to [consistently interact with the functionality]'' & 2 & UI & 5 & Implement the correct CSS protocol to allow the site do dynamically scale to various device sizes; using appropriate adjustment and hiding/showing of content\\
+			``I wish to [view additional] literature based upon [information regarding topics I wish to explore]; [enhancing my knowledge of the components of the sport and my decision making]'' & 3 & UI\newline Research & 5 & Implement appropriate bodies of text relevant to areas upon which they may be if use to the user\\
+			``I wish to [view elements of graphic design] which [show relevance to the areas in which they appear] therefore, stimulating, engaging and immersing me further in the sport]'' & 4 & UI & 5 & Use CSS to implement the correct elements and principals of graphic design, primarily color schemes and shape/geometry, which are relevant to the outdoor context\newline Use graphic design tools (such as Serif PagePlus and GIMP) to create and implement relevant features such as logos, images and renders, which are relevant to the outdoor context\\
+			``I wish to be able to optimally interact with the site when it comes to navigation and viewing experience, regardless of any impairity or things of the sort'' & 5 & UI\newline Research & 5 & Implement appropriate design protocol to make this experience as easy as possible\\
+			\hline
+			\hline
+			\multicolumn{5}{l}{*: `Must-Have' = 1; `Should-Have' = 2; `Could-Have' = 3; Won't Have = 4; Non-Functional = 5}\\
+			\hline
+		\end{longtable}
+		\end{center}
+
+		Various Sources (2022)
+
+		\subsubsection*{Figure A4: Data Sources} 
 
 	\begin{center}
 		\tiny
@@ -692,7 +1021,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 		\fbox{subregion}\newline $\in$ landmass\newline String & Provide name of the sub-region in which each landmass in Scotland is located, within the sample size & JSON [1]\\
 		\fbox{informalregion}\newline $\in$ landmass\newline String & Provide name of the informal region in which each landmass in Scotland is located, within the sample size & JSON [1]\\
 		\hline
-		\multicolumn{3}{c}{\textsc{Route}}\\
+		\multicolumn{3}{c}{\textsc{Route (Research)}}\\
 		\hline
 		\fbox{route}\newline $\in$ landmass\newline List (of Dict.) & Store data on each present on each landmass in Scotland, within the sample size and the particular routes selected & JSON [1]\\
 		\fbox{name}\newline $\in$ route $\subset$ landmass\newline String & Provide name of each route present on each landmass in Scotland, within the sample size and the particular routes selected & JSON [1]\\
@@ -710,7 +1039,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 		\fbox{corbetttop}\newline $\in$ route $\subset$ landmass\newline List (of Strings) & Provide array of the names of Corbett Tops on each route present on each landmass in Scotland, within the sample size and the particular routes selected & JSON [1]\\
 		\fbox{GPX}\newline $\in$ route $\subset$ landmass\newline String & Provide suffix of the GPX file path of each route present on each landmass in Scotland, within the sample size and the particular routes selected & JSON [1]\\
 		\hline
-		\multicolumn{3}{c}{\textsc{Ability}}\\
+		\multicolumn{3}{c}{\textsc{Ability (Research)}}\\
 		\hline
 		\fbox{elementshill}\newline List (of Dict.) & Store data on each attribute of a hill (see Home Page $\rightarrow$ Overview for possible values) & JSON [2]\\
 		\fbox{elementsroute}\newline List (of Dict.) & Store data on each attribute of a route (see Home Page $\rightarrow$ Overview for possible values) & JSON [2]\\
@@ -723,7 +1052,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 		\fbox{desc}$^5$\newline $\in$ \{elementshill $\lor$ elementsroute $\lor$ type $\lor$ stage $\lor$ terraintype\}\newline String & Provide description of each attribute of a hill, attribute of a route, type of traverse/sport you can do/practice, type of traverse stages, type of terrain & JSON [2]\\
 		\fbox{image}$^6$\newline $\in$ \{summitfeats $\lor$ type $\lor$ stage $\lor$ terraintype $\lor$ terraindiff\}\newline String & Provide suffix of the image file path of each type of summit feature, type of traverse/sport you can do/practice, type of traverse stages, type of terrain, relative terrain difficulty factor & JSON [2]\\
 		\hline
-		\multicolumn{3}{c}{\textsc{Equipment}}\\
+		\multicolumn{3}{c}{\textsc{Equipment (Research)}}\\
 		\hline
 		\fbox{packs}\newline List (of Dict.) & Store data on each type of pack, travel equipment and their accessories, relevant to outdoor activity (see Home Page $\rightarrow$ Overview for possible values) & JSON [2]\\
 		\fbox{technical}\newline List (of Dict.) & Store data on each type of technical equipment and their accessories, relevant to outdoor activity (see Home Page $\rightarrow$ Overview for possible values) & JSON [2]\\
@@ -781,123 +1110,6 @@ This piece would not have been as efficient without the aid of the only acceptab
 		\hline
 	\end{longtable}
 	\end{center}
-
-		\subsubsection*{Figure A2: Heuristic Evaluation -- Walkhighalnds}
-
-	\begin{center}
-                \scriptsize
-        	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
-                \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
-                \hline
-		\hline
-		\multicolumn{4}{c}{\textsc{Basic Features}}\\
-		\hline
-			\textbf{Sparse Navigation}:\newline There is not much order to the site navigation and in places thee is a lack pf relevance and hierarchy to the options. For example, some sub-sets of pages/features are listed in navigation on the same `tier'; whether that being represented by the link having the same alignment as it's parent, or something of the sort & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$ & $\mathrm{S_{3}}$ & Correctly use HTML and CSS to display the hierarchy of pages and features in this system\\
-			\textbf{Difficult Navigation}:\newline Some essential literature relating to components such as ability and equipment, as featured in this system, is difficult to find and requires a long path of navigation through pages and their children. Often some literature is simply linked through an in-body hyperlink (i.e. in a paragraph) and not even allocated it's own title etc. & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$ & $\mathrm{S_{3}}$ & Correctly use HTML and CSS to display the hierarchy of pages and features in this system. Ensure no relevance is lost in masses of text\\
-		\hline
-		\multicolumn{4}{c}{\textsc{Map Features}}\\
-		\hline
-			\textbf{Feature Separation}: The OS Maps displaying Munros and Corbetts etc. are displayed on different pages of the site, with navigation links between them. This means that interaction with features is limited to the point where all a user can do is view the information provided about it upon a click and follow further links from there. They cannot for example, toggle on/off different features while interacting with the map meaning isolating different features on a GPS route a user is viewing is impossible. & $\mathrm{H_{3}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{3}}$ & Implement a toggle feature for access to different map feature when the user desires, as listed in requirements\\
-		\hline
-		\multicolumn{4}{c}{\textsc{Statistical Features}}\\
-		\hline
-		...\\
-		\hline
-		\hline
-                \multicolumn{4}{l}{\textsc{Total Violations}: 3}\\
-                \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
-                \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Browser (Mobile)}\\
-                \hline
-                \caption{Heuristic Analysis}
-        \end{longtable}
-        \end{center}
-
-\newpage
-
-		\subsubsection*{Figure A3: Heuristic Evaluation -- Strava}
-
-	\begin{center}
-                \scriptsize
-        	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
-                \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
-                \hline
-		\hline
-		\multicolumn{4}{c}{\textsc{Basic Features}}\\
-		\hline
-			\textbf{Weather Misuse}:\newline Weather data is only available as part of complete routes. I.e. activities which are complete and have been saved. Strava use a weather API so it is hard to understand why they would bot integrate this as a basic summary feature on the home page or on a profile etc. Historic weather data, i.e. that printed on complete routes, is the most irrelevant use of such as, come on, the user already knows what the weather was like on their routes and if they want to show off a 20hr hike in a snow storm or something, upload a picture & $\mathrm{H_{3}}$ & $\mathrm{S_{3}}$ & Include a comprehensive weather system, as listed in requirements\\
-		\hline
-		\multicolumn{4}{c}{\textsc{Map Features}}\\
-		\hline
-			\textbf{Map Layers}:\newline Although the Mapbox map seen throughout Strava is used very effectively in hosting many dynamic layers such as customizable GPX routes with terrain' and athlete-specific attributes, it is just a basic map with contours, not a full topographical map. This significantly limits interaction with map features and interpretation as it simply doesn't show many of the relevant aspects to hiking & $\mathrm{H_{2}}$, $\mathrm{H_{3}}$ & $\mathrm{S_{3}}$ & Utilize the OS Map API instead of a more basic one to ensure full access to topographical mapping, as listed in requirements\\
-		\hline
-		\multicolumn{4}{c}{\textsc{Statistical Features}}\\
-		\hline
-		...\\
-		\hline
-		\hline
-                \multicolumn{4}{l}{\textsc{Total Violations}: 2}\\
-                \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
-                \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Brows
-er (Mobile)}\\
-                \hline
-                \caption{Heuristic Analysis}
-        \end{longtable}
-        \end{center}
-
-\newpage
-
-		\subsubsection*{Figure A4: User Stories, Prioritization \& Solutions}
-			
-		\begin{center}
-			\scriptsize
-		\begin{longtable}{p{4cm}lp{1.5cm}lp{4cm}}
-			\textsc{Scenario} & \textsc{Req.} & \textsc{Relevance} & \textsc{Priority*} & \textsc{Solution}\\
-			\hline
-			\hline
-			\multicolumn{5}{c}{\textsc{Functional -- Must-Have}}\\
-			\hline
-			``I wish to be able to [use the current location of my device] in anticipation of [seeing my location printed on a map] which would allow me to [navigate towards map features relative to my location]'' & 1 & UI\newline OS Maps & 1 & Utilize \textit{Geolocation} API to fetch location of user's device\\
-			``I wish to be able to [use the current location of my device] in anticipation of [weather forecast results for my location] which would allow me to [quick-access my weather forecast, likely while on-route]'' & 1, 5 & UI\newline Weather Service & 1 & Utilize \textit{Geolocation} API to fetch location of user's device and place in weather function\\
-			``I wish to be able to [quickly view a summary of suggested routes] which would allow me to [see all the relevant attributes of a route on one return] and therefore, [select routes with less thought, time and effort]'' & 2 & UI\newline Route Summary & 1 & Include a section on the home page with this/these information/statistics\\
-			``I wish to be able to [include attributes related to my ability] which contribute to my [suggested routes] therefore, making them [more relevant to my needs]'' & 3 & UI\newline Ability Service & 1 & Include a section which accepts relevant user inputs and returns route suggestions as required\\
-			``I wish to be able to [include attributes related to the equipment I own] which contribute to my [suggested routes] therefore, making them [more relevant to my needs]'' & 4 & UI\newline Equipment Service & 1 & Include a section which accepts relevant user inputs and returns route suggestions as required\\
-			``I wish to be able to [seek locations by their name] in anticipation of the return of [weather forecast results related to their coordinates] which would allow me to [plan my routes more effectively]'' & 5 & UI\newline Weather Service & 1 & Include a section which accepts location-based inputs, whether this be pre-defined coordinates of locations or the user's current location as discussed previously, to display weather forecast results for these locations\\
-			``I wish to be able to [view an Ordance Survey map with OS Road (1 : 250 000), OS Landranger (1 : 50 000), and OS Explorer (1 : 25 000) layers simultaneously, alternative upon zoom] in anticipation of [viewing initially basic features such as my location as a symbol on the map and center-pan coordinates adjacent to the map] therefore, [making location seeking more interactive and understanable]'' & 1, 6 & UI\newline OS Maps & 1 & Utilize \textit{Ordnance Survey} API to host the map\newline Utilize \textit{Leaflet} JavaScript library to initialize and interact with the map\\
-			``I wish to have the option to [interact with the OS map] which allows me to [toggle on/off display of features], allowing me to [view only specific features I wish to include on my routes]'' & 6 & UI\newline OS Map & 1 & Utilize \textit{Leaflet} JavaScript library to display and toggle on/off symbols representing the location of various geographical features such as Munros, Munro Tops, Corbetts, and Corbett Tops\\
-			``I wish to have the option to [interact with the OS map] which allows me to [toggle on/off GPS routes based on search criteria] therefore, [making route results relevant to my subjective choice], as opposed to other factors such as recommendations based on my ability and equipment, or raw search'' & 6 & UI\newline OS Map & 1 & Utilize \textit{Leaflet} JavaScript library to display and toggle on/off GPS route (GPX data) layers over the map, relative to various search criteria\newline Utilize \textit{Mapbox GL-JS} JavaScript library to convert GeoJSON files to GPX\\
-			``I wish to be able to [search for routes close to my current location] which returns the [closest relevant GPS overlay] to my location, making it easy for me to [make a fast decision if I just want a close project]'' & 6, 1 & UI\newline OS Map & 1 & Utilize \textit{Geolocation} API to fetch location of user's device and compare to the location of all listed projects\\
-			\hline
-			\multicolumn{5}{c}{\textsc{Functional -- Should-Have}}\\
-			\hline
-			``I wish to be able to [interact with the OS Map] in order to [change its layers] which will allow me to [interpret the features and contours of the land in different ways]'' & 1 & UI\newline OS Map & 2 & Include some form of input which \textit{Leaflet} JavaScript library to allow the user to change primary map layer\\
-			``I wish to [view grid markers at the center of the OS Map] which, when panning, will [pinpoint the center coordinates displayed on the map] therefore, [making it easy to view, locate and pan to and from features and locations etc.]'' & 2 & UI\newline Map OS & 2 & Include basic HTML and CSS which displays reticle\\
-			\hline
-			\multicolumn{5}{c}{\textsc{Functional -- Could-Have}}\\
-			\hline
-			``I wish to [have my data stored] in the system so I can [access it down the line] to [use it in various site features]'' & 1 & Back-End & 3 & Implement a back-end database system to store and interact with user data\\
-			``With regards to [data access], I wish to be [assured of appropriate security measures] implemented by the system controllers which will give me [peace of mind] regarding data protection & 2 & Back-End & 3 & Implement appropriate authentication and data protection measures in the system''\\
-			``I wish to be able to [use and reuse attributes related to my account] in order to [tailor results to my own abilities and equipment], for example; allowing me to [gain a more accurate understanding of what I'm able to do] with less effort'' & 3 & UI\newline Back-End & 3 & Allow already-implemented features such as user ability and equipment services to access and use stored user data, as opposed to using basic inputs\\
-			``I wish to be able to [choose `priority attributes'] relevant to data stored upon my previous routes which returns [more relevant route recommendations] to historic ones, relevant to what I have and haven't done based on my preference; allowing me to [more dynamically choose routes]'' & 4 & UI\newline Back-end & 3 & Implement appropriate measures\\
-			\hline
-			\multicolumn{5}{c}{\textsc{Functional -- Won't Have}}\\
-			\hline
-			``I wish to use a GPS device such as a watch or cellular device to [record GPX data] which can be used to [generate route information] and [display useful route records] which I can interpret and benefit/learn from'' & 1 & Back-End & 4 & (Will not) implement functionality to accept GPX uploads and transform relevant components into human readable information\\
-			\hline
-			\multicolumn{5}{c}{\textsc{Non-Functional}}\\
-			\hline
-			``I wish to be able to [use the site on any browser] therefore meaning I can [view all content] regardless of what browser platform I use, meaning I'll be able to [consistently interact with the functionality]'' & 1 & UI\newline Browser Support & 5 & Ensure all languages, packages, libraries, etc., are using the most versatile syntax and have aggregate browser support\\
-			``I wish to be able to [us ethe site on any device platform] therefore meaning I can [view all content] regardless of what device I use, meaning I'll be able to [consistently interact with the functionality]'' & 2 & UI & 5 & Implement the correct CSS protocol to allow the site do dynamically scale to various device sizes; using appropriate adjustment and hiding/showing of content\\
-			``I wish to [view additional] literature based upon [information regarding topics I wish to explore]; [enhancing my knowledge of the components of the sport and my decision making]'' & 3 & UI\newline Research & 5 & Implement appropriate bodies of text relevant to areas upon which they may be if use to the user\\
-			``I wish to [view elements of graphic design] which [show relevance to the areas in which they appear] therefore, stimulating, engaging and immersing me further in the sport]'' & 4 & UI & 5 & Use CSS to implement the correct elements and principals of graphic design, primarily color schemes and shape/geometry, which are relevant to the outdoor context\newline Use graphic design tools (such as Serif PagePlus and GIMP) to create and implement relevant features such as logos, images and renders, which are relevant to the outdoor context\\
-			``I wish to be able to optimally interact with the site when it comes to navigation and viewing experience, regardless of any impairity or things of the sort'' & 5 & UI\newline Research & 5 & Implement appropriate design protocol to make this experience as easy as possible\\
-			\hline
-			\hline
-			\multicolumn{5}{l}{*: `Must-Have' = 1; `Should-Have' = 2; `Could-Have' = 3; Won't Have = 4; Non-Functional = 5}\\
-			\hline
-		\end{longtable}
-		\end{center}
-
-		Various Sources (2022)
 
 	\subsection*{Appendix 2: Foundational Material}
 
@@ -974,6 +1186,13 @@ er (Mobile)}\\
 		\textsl{Mountain GPS Waypoints \& Hill Bagging Lists}
 		Available At:
 		\texttt{https://www.haroldstreet.org.uk/waypoints/}
+		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		OpenWeather. (2022).
+		\textsl{One Call API: weather data for any geographical coordinate - OpenWeatherMap}
+		Available At:
+		\texttt{https://openweathermap.org/api/one-call-api}
 		(Accessed: 03/04/2022).
 
 	\end{thebibliography}
