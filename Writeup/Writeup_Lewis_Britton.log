@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.2.1)  12 JUL 2022 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.2.1)  13 JUL 2022 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -522,7 +522,49 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language21). Reported on input line 108.
 ))
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count309
+\lst@gtempboxa=\box106
+\lst@token=\toks27
+\lst@length=\count310
+\lst@currlwidth=\dimen186
+\lst@column=\count311
+\lst@pos=\count312
+\lst@lostspace=\dimen187
+\lst@width=\dimen188
+\lst@newlines=\count313
+\lst@lineno=\count314
+\lst@maxwidth=\dimen189
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count315
+\lst@skipnumbers=\count316
+\lst@framebox=\box107
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
 (./Writeup_Lewis_Britton.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -541,31 +583,31 @@ LaTeX Warning: Label `' multiply defined.
 )
 \openout1 = `Writeup_Lewis_Britton.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 94.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 94
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 132.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 13
+2.
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    ... okay on input line 132.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -601,16 +643,7 @@ LaTeX Font Info:    ... okay on input line 94.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
-
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
-)
-Package hyperref Info: Link coloring ON on input line 94.
-
+Package hyperref Info: Link coloring ON on input line 132.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -620,11 +653,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count309
+\c@section@level=\count317
 )
-LaTeX Info: Redefining \ref on input line 94.
-LaTeX Info: Redefining \pageref on input line 94.
-LaTeX Info: Redefining \nameref on input line 94.
+LaTeX Info: Redefining \ref on input line 132.
+LaTeX Info: Redefining \pageref on input line 132.
+LaTeX Info: Redefining \nameref on input line 132.
 
 (./Writeup_Lewis_Britton.out) (./Writeup_Lewis_Britton.out)
 \@outlinefile=\write3
@@ -632,6 +665,7 @@ LaTeX Info: Redefining \nameref on input line 94.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -641,17 +675,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen186
-\scratchbox=\box106
-\nofMPsegments=\count311
-\nofMParguments=\count312
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen187
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count318
+\scratchdimen=\dimen190
+\scratchbox=\box108
+\nofMPsegments=\count319
+\nofMParguments=\count320
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count321
+\MPscratchDim=\dimen191
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -661,13 +695,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 113
+\c@lstlisting=\count324
+LaTeX Font Info:    Trying to load font information for U+msa on input line 151
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 113
+LaTeX Font Info:    Trying to load font information for U+msb on input line 151
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -686,25 +721,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <18> not available
-(Font)              size <17.28> substituted on input line 151.
+(Font)              size <17.28> substituted on input line 189.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
@@ -726,12 +761,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
@@ -774,22 +809,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout6 = `Writeup_Lewis_Britton.lof'.
 
  [9]
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
@@ -802,71 +837,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 256--257
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
@@ -881,27 +852,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--265
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
- []
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
-
- []
-
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
@@ -914,12 +949,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
@@ -941,7 +976,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
@@ -954,7 +989,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
@@ -976,7 +1011,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
@@ -989,12 +1024,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
 
  []
 
@@ -1025,7 +1060,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 446--447
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
 
  []
 
@@ -1056,12 +1091,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
+Underfull \hbox (badness 10000) in paragraph at lines 507--508
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
 
  []
 
@@ -1074,7 +1109,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 488--489
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
 
  []
 
@@ -1105,12 +1140,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
 
  []
 
@@ -1124,14 +1154,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [22]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-70.
+84.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 570.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 584.
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--577
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 
  []
 
@@ -1144,22 +1174,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 585--588
+Underfull \hbox (badness 10000) in paragraph at lines 599--602
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--597
+Underfull \hbox (badness 10000) in paragraph at lines 608--611
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--605
+Underfull \hbox (badness 10000) in paragraph at lines 616--619
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--613
+Underfull \hbox (badness 10000) in paragraph at lines 624--627
 
  []
 
@@ -1172,17 +1202,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+Underfull \hbox (badness 10000) in paragraph at lines 630--631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--628
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--636
+Underfull \hbox (badness 10000) in paragraph at lines 641--644
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--654
 
  []
 
@@ -1195,12 +1235,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--666
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 
  []
 
@@ -1213,17 +1253,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 672--674
+Underfull \hbox (badness 10000) in paragraph at lines 684--686
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 675--676
+Underfull \hbox (badness 10000) in paragraph at lines 692--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--685
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--705
 
  []
 
@@ -1236,12 +1281,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 693--695
+Underfull \hbox (badness 10000) in paragraph at lines 716--718
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--697
+Underfull \hbox (badness 10000) in paragraph at lines 719--720
 
  []
 
@@ -1263,6 +1308,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [29]
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1281,9 +1330,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
-
- []
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 764.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 765.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1303,10 +1353,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [33]
+Underfull \hbox (badness 10000) in paragraph at lines 845--846
 
-LaTeX Font Warning: Font shape `TS1/cmr/m/sc' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textcopyright' on input line 821.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--848
+
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1317,37 +1371,82 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [34]
-Overfull \hbox (2.3424pt too wide) in paragraph at lines 843--843
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[35]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[36]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[37]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[38]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[39]
+Overfull \hbox (2.3424pt too wide) in paragraph at lines 963--963
 []|\OT1/cmr/m/sc/8 Vio.| 
  []
 
 
-Overfull \hbox (2.58685pt too wide) in paragraph at lines 843--843
+Overfull \hbox (2.58685pt too wide) in paragraph at lines 963--963
 []|\OT1/cmr/m/sc/8 Sev.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 848--848
+Underfull \hbox (badness 10000) in paragraph at lines 968--968
 []|$[]$\OT1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 848--849
+Underfull \hbox (badness 2245) in paragraph at lines 968--969
 \OT1/cmr/m/n/8 to dis-play the hi-er-ar-chy of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--849
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
 []|$[]$\OT1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 849--850
+Underfull \hbox (badness 2245) in paragraph at lines 969--970
 \OT1/cmr/m/n/8 to dis-play the hi-er-ar-chy of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 853--853
+Underfull \hbox (badness 10000) in paragraph at lines 973--973
 []|$[]$\OT1/cmr/m/n/8 ,
  []
 
@@ -1360,22 +1459,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [1]
-Overfull \hbox (2.3424pt too wide) in paragraph at lines 875--875
+Overfull \hbox (2.3424pt too wide) in paragraph at lines 995--995
 []|\OT1/cmr/m/sc/8 Vio.| 
  []
 
 
-Overfull \hbox (2.58685pt too wide) in paragraph at lines 875--875
+Overfull \hbox (2.58685pt too wide) in paragraph at lines 995--995
 []|\OT1/cmr/m/sc/8 Sev.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--881
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1001
 []|\OT1/cmr/m/n/8 Include a com-pre-hen-sive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 884--884
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 []|$[]$\OT1/cmr/m/n/8 ,
  []
 
@@ -1388,242 +1487,232 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-Underfull \hbox (badness 3792) in paragraph at lines 912--913
+Underfull \hbox (badness 3792) in paragraph at lines 1032--1033
 []|\OT1/cmr/m/n/8 Utilize \OT1/cmr/m/it/8 Ge-olo-ca-tion \OT1/cmr/m/n/8 API to
  []
 
 
-Underfull \hbox (badness 5147) in paragraph at lines 913--913
+Underfull \hbox (badness 5147) in paragraph at lines 1033--1033
 \OT1/cmr/m/n/8 in an-tic-i-pa-tion of [weather
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 913--913
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
 \OT1/cmr/m/n/8 Weather
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 913--914
+Underfull \hbox (badness 3792) in paragraph at lines 1033--1034
 []|\OT1/cmr/m/n/8 Utilize \OT1/cmr/m/it/8 Ge-olo-ca-tion \OT1/cmr/m/n/8 API to
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 914--914
+Underfull \hbox (badness 1742) in paragraph at lines 1034--1034
 \OT1/cmr/m/n/8 to [see all the rel-e-vant at-
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 914--914
+Underfull \hbox (badness 1803) in paragraph at lines 1034--1034
 \OT1/cmr/m/n/8 tributes of a route on one
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 914--914
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
 \OT1/cmr/m/n/8 Route
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 915--915
+Underfull \hbox (badness 1655) in paragraph at lines 1035--1035
 []|\OT1/cmr/m/n/8 ``I wish to be able to [in-
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 915--915
+Underfull \hbox (badness 2401) in paragraph at lines 1035--1035
 \OT1/cmr/m/n/8 abil-ity] which con-tribute to
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 915--915
+Underfull \hbox (badness 1043) in paragraph at lines 1035--1035
 \OT1/cmr/m/n/8 my [sug-gested routes] there-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 916--916
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1036
 \OT1/cmr/m/n/8 Equipment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 917--917
+Underfull \hbox (badness 10000) in paragraph at lines 1037--1037
 \OT1/cmr/m/n/8 Weather
  []
 
 
-Underfull \hbox (badness 3460) in paragraph at lines 917--918
+Underfull \hbox (badness 3460) in paragraph at lines 1037--1038
 \OT1/cmr/m/n/8 vi-ously, to dis-play weather
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 918--918
+Underfull \hbox (badness 1533) in paragraph at lines 1038--1038
 \OT1/cmr/m/n/8 pan co-or-di-nates ad-ja-cent to
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 919--919
+Underfull \hbox (badness 1152) in paragraph at lines 1039--1039
 []|\OT1/cmr/m/n/8 ``I wish to have the op-tion
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 919--919
+Underfull \hbox (badness 2057) in paragraph at lines 1039--1039
 \OT1/cmr/m/n/8 which al-lows me to [tog-gle
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 919--920
+Underfull \hbox (badness 4713) in paragraph at lines 1039--1040
 \OT1/cmr/m/n/8 brary to dis-play and tog-
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 919--920
+Underfull \hbox (badness 2556) in paragraph at lines 1039--1040
 \OT1/cmr/m/n/8 ing the lo-ca-tion of var-i-ous
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 919--920
+Underfull \hbox (badness 1953) in paragraph at lines 1039--1040
 \OT1/cmr/m/n/8 Munros, Munro Tops, Cor-
  []
 
 
-Underfull \hbox (badness 6047) in paragraph at lines 920--920
+Underfull \hbox (badness 6047) in paragraph at lines 1040--1040
 []|\OT1/cmr/m/n/8 ``I wish to have the op-
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 920--920
+Underfull \hbox (badness 1067) in paragraph at lines 1040--1040
 \OT1/cmr/m/n/8 on search cri-te-ria] there-fore,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 920--921
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1041
 []|\OT1/cmr/m/n/8 Utilize \OT1/cmr/m/it/8 Leaflet \OT1/cmr/m/n/8 JavaScript
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 920--921
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1041
 \OT1/cmr/m/n/8 Utilize \OT1/cmr/m/it/8 Map-box GL-JS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 920--921
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1041
 \OT1/cmr/m/n/8 JavaScript li-brary to con-
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 921--922
+Underfull \hbox (badness 3792) in paragraph at lines 1041--1042
 []|\OT1/cmr/m/n/8 Utilize \OT1/cmr/m/it/8 Ge-olo-ca-tion \OT1/cmr/m/n/8 API to
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 925--926
+Underfull \hbox (badness 1189) in paragraph at lines 1045--1046
 []|\OT1/cmr/m/n/8 Include some form of in-put
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 925--926
+Underfull \hbox (badness 2237) in paragraph at lines 1045--1046
 \OT1/cmr/m/n/8 which \OT1/cmr/m/it/8 Leaflet \OT1/cmr/m/n/8 JavaScript li-
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 925--926
+Underfull \hbox (badness 1735) in paragraph at lines 1045--1046
 \OT1/cmr/m/n/8 brary to al-low the user to
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 926--926
+Underfull \hbox (badness 1072) in paragraph at lines 1046--1046
 \OT1/cmr/m/n/8 point the cen-ter co-or-di-nates
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 930--930
+Underfull \hbox (badness 2680) in paragraph at lines 1050--1050
 []|\OT1/cmr/m/n/8 ``I wish to [have my data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 930--931
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1051
 []|\OT1/cmr/m/n/8 Implement a back-end
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 930--931
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1051
 \OT1/cmr/m/n/8 database sys-tem to store
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 931--931
+Underfull \hbox (badness 1789) in paragraph at lines 1051--1051
 []|\OT1/cmr/m/n/8 ``With re-gards to [data ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 931--932
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1052
 []|\OT1/cmr/m/n/8 Implement ap-pro-pri-ate au-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 932--933
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1053
 []|\OT1/cmr/m/n/8 Allow already-implemented
  []
 
 
-Underfull \hbox (badness 6542) in paragraph at lines 932--933
+Underfull \hbox (badness 6542) in paragraph at lines 1052--1053
 \OT1/cmr/m/n/8 and equip-ment ser-vices to
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 932--933
+Underfull \hbox (badness 2582) in paragraph at lines 1052--1053
 \OT1/cmr/m/n/8 ac-cess and use stored user
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 932--933
+Underfull \hbox (badness 3128) in paragraph at lines 1052--1053
 \OT1/cmr/m/n/8 data, as op-posed to us-ing
  []
 
 
-Underfull \hbox (badness 1838) in paragraph at lines 933--933
+Underfull \hbox (badness 1838) in paragraph at lines 1053--1053
 \OT1/cmr/m/n/8 `pri-or-ity at-tributes'] rel-e-vant
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 933--933
+Underfull \hbox (badness 4254) in paragraph at lines 1053--1053
 \OT1/cmr/m/n/8 rel-e-vant route rec-om-men-da-
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 933--934
+Underfull \hbox (badness 1888) in paragraph at lines 1053--1054
 []|\OT1/cmr/m/n/8 Implement ap-pro-pri-ate mea-
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 941--941
+Underfull \hbox (badness 1253) in paragraph at lines 1061--1061
 []|\OT1/cmr/m/n/8 ``I wish to be able to [use
  []
 
 
-Underfull \hbox (badness 3439) in paragraph at lines 941--941
+Underfull \hbox (badness 3439) in paragraph at lines 1061--1061
 \OT1/cmr/m/n/8 con-tent] re-gard-less of what
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 941--941
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
 \OT1/cmr/m/n/8 Browser
  []
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 942--943
+Underfull \hbox (badness 2689) in paragraph at lines 1062--1063
 []|\OT1/cmr/m/n/8 Implement the cor-rect CSS
  []
 
 
-Underfull \hbox (badness 4886) in paragraph at lines 942--943
-\OT1/cmr/m/n/8 pro-to-col to al-low the site
- []
-
-
-Underfull \hbox (badness 1221) in paragraph at lines 942--943
-\OT1/cmr/m/n/8 i-ous de-vice sizes; us-ing ap-
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 944--944
+Underfull \hbox (badness 1418) in paragraph at lines 1064--1064
 \OT1/cmr/m/n/8 graphic de-sign] which [show
  []
 
@@ -1655,59 +1744,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 995.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1115.
 
-Underfull \hbox (badness 3354) in paragraph at lines 998--998
+
+Underfull \hbox (badness 3354) in paragraph at lines 1118--1118
 \OT1/cmr/m/n/6 Munro Top, Cor-bett and Cor-bett Top
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 1000--1000
+Underfull \hbox (badness 1430) in paragraph at lines 1120--1120
 []|\OT1/cmr/m/n/6 Provide promi-nence (ft) of each Munro,
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 1000--1000
+Underfull \hbox (badness 3354) in paragraph at lines 1120--1120
 \OT1/cmr/m/n/6 Munro Top, Cor-bett and Cor-bett Top
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 1030--1030
+Underfull \hbox (badness 1107) in paragraph at lines 1150--1150
 []|\OT1/cmr/m/n/6 Provide stan-dard time (hrs) taken by a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1031--1031
-[]|\OT1/cmr/m/n/6 Provide ar-ray of de-scrip-tions of the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1031--1031
-\OT1/cmr/m/n/6 types/purposes of each route present
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 1052--1052
-[]|\OT1/cmr/m/n/6 Provide de-scrip-tion of each at-tribute of
- []
-
-
-Underfull \hbox (badness 1038) in paragraph at lines 1053--1053
-[]|\OT1/cmr/m/n/6 Provide suf-fix of the im-age file path of
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 1081--1082
+Underfull \hbox (badness 1163) in paragraph at lines 1201--1202
 \OT1/cmr/m/n/6 Call API 1.0, based on an-gu-lar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1099
+Underfull \hbox (badness 10000) in paragraph at lines 1219--1219
 []|[] \OT1/cmr/m/n/6 (for De-scrip-tion) --
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 1099--1100
+Underfull \hbox (badness 1163) in paragraph at lines 1219--1220
 \OT1/cmr/m/n/6 Call API 1.0, based on an-gu-lar
  []
 
@@ -1783,26 +1853,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [13]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 1119.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 1119.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 1119.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 1119.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 1119.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (0.24916pt too wide) in alignment at lines 1238--1320
+ [] [] [] [] [] 
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1813,6 +1866,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 1329.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 1329.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 1329.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 1329.
+
+
+LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 1329.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1822,33 +1893,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15]
-Underfull \hbox (badness 3179) in paragraph at lines 1171--1176
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16]
+Underfull \hbox (badness 3179) in paragraph at lines 1387--1392
 []\OT1/cmr/m/n/10.95 MDN Web Docs. (2022). \OT1/cmr/m/sl/10.95 Ge-olo-ca-tion A
 PI - MDN Web Docs \OT1/cmr/m/n/10.95 Avail-able
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 1171--1176
+Underfull \hbox (badness 3547) in paragraph at lines 1387--1392
 \OT1/cmr/m/n/10.95 At: \OT1/cmtt/m/n/10.95 https://developer.mozilla.org/en-US/
 docs/Web/API/Geolocation[]API
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1178--1183
+Underfull \hbox (badness 10000) in paragraph at lines 1394--1399
 []\OT1/cmr/m/n/10.95 Peakbagger.com (2022). \OT1/cmr/m/sl/10.95 Search - Peak-b
 ag-ger.com \OT1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1192--1197
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1413
 []\OT1/cmr/m/n/10.95 OpenWeather. (2022). \OT1/cmr/m/sl/10.95 One Call API: wea
 ther data for any
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1192--1197
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1413
 \OT1/cmr/m/sl/10.95 ge-o-graph-i-cal co-or-di-nate - Open-Weath-erMap \OT1/cmr/
 m/n/10.95 Avail-able At:
+ []
+
+
+Overfull \hbox (263.48492pt too wide) in paragraph at lines 1429--1434
+[]\OT1/cmr/m/n/10.95 Ordnance Sur-vey. (2022).  Avail-able At: \OT1/cmtt/m/n/10
+.95 https://labs.os.uk/public/os-data-hub-examples/os-names-api/find-example-pl
+acename
  []
 
 
@@ -1859,55 +1946,73 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{cite.}) ha
+[17pdfTeX warning (ext4): destination with the same identifier (name{cite.}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1200 \end{document}
+l.1437 \end{document}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1200 \end{document}
+l.1437 \end{document}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1200 \end{document}
+l.1437 \end{document}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1200 \end{document}
+l.1437 \end{document}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1200 \end{document}
+l.1437 \end{document}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{cite.}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1437 \end{document}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{cite.}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1437 \end{document}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{cite.}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1437 \end{document}
                      ] (./Writeup_Lewis_Britton.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.72pt have occurred.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Writeup_Lewis_Britton.out' has not changed.
-(rerunfilecheck)             Checksum: 62E1C799BFECA4C1BD82E3B6483E36B0;12003.
+(rerunfilecheck)             Checksum: 64D4A7D5BEC7B5D07695A0809836B9AB;13365.
  ) 
 Here is how much of TeX's memory you used:
- 15047 strings out of 478353
- 239214 string characters out of 5854636
- 806232 words of memory out of 5000000
- 32763 multiletter control sequences out of 15000+600000
- 423683 words of font info for 105 fonts, out of 8000000 for 9000
+ 16781 strings out of 478353
+ 262242 string characters out of 5854636
+ 827884 words of memory out of 5000000
+ 34434 multiletter control sequences out of 15000+600000
+ 425012 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,77p,1750b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+ 68i,12n,77p,1752b,1401s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -1933,18 +2038,21 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/tipa/tipa10.pfb>
-Output written on Writeup_Lewis_Britton.pdf (60 pages, 519942 bytes).
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.
+pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share
+/texmf-dist/fonts/type1/public/tipa/tipa10.pfb>
+Output written on Writeup_Lewis_Britton.pdf (66 pages, 574407 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 769 compressed objects within 8 object streams
- 176 named destinations out of 1000 (max. 500000)
- 625 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1034 PDF objects out of 1200 (max. 8388607)
+ 889 compressed objects within 9 object streams
+ 223 named destinations out of 1000 (max. 500000)
+ 689 words of extra memory for PDF output out of 10000 (max. 10000000)
 

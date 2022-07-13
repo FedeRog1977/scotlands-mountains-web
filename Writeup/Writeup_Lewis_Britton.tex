@@ -91,6 +91,44 @@
 
 	\usepackage{babel}
 
+        \usepackage{color}
+                \definecolor{lightgrey}{rgb}{0.9,0.9,0.9}
+                \definecolor{darkgrey}{rgb}{0.4,0.4,0.4}
+                \definecolor{purple}{rgb}{0.65,0.12,0.82}
+
+        \usepackage{listings}
+
+		\lstdefinelanguage{JavaScript}{
+			keywords={typeof, new, true, false, catch, function, return, null, catch, switch, const, var, let, for, if, in, while, do, else, case, break},
+			keywordstyle=\color{blue}\bfseries,
+			ndkeywords={class, export, boolean, throw, implements, import, this},
+			ndkeywordstyle=\color{darkgrey}\bfseries,
+			identifierstyle=\color{black},
+			sensitive=false,
+			comment=[l]{//},
+			morecomment=[s]{/*}{*/},
+			commentstyle=\color{purple}\ttfamily,
+			stringstyle=\color{red}\ttfamily,
+			morestring=[b]',
+			morestring=[b]"
+		}
+
+		\lstset{
+			language=JavaScript,
+			backgroundcolor=\color{lightgrey},
+			extendedchars=true,
+			basicstyle=\scriptsize\ttfamily,
+			showstringspaces=false,
+			showspaces=false,
+			numbers=left,
+			numberstyle=\footnotesize,
+			numbersep=9pt,
+			tabsize=2,
+			breaklines=false,
+			showtabs=false,
+			captionpos=b
+		}
+
 \begin{document}
 
 % Title Page
@@ -255,19 +293,19 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	Explores the areas of research and data gathering including hiking routes, hiking equipment, personal fitness and ability, geography and geology. Furthermore, presenting and examining results and conclusions to evaluations of currently existing competitors' services. This section acts as a literature review would in a paper based on, say, an empirical piece investigation; providing the foundational material upon which development aims to further succeed and `develop'.\\
 
-	\textsc{3 Data Processing \& Methodology}\\
-	
-	Mapping and justifying the data selected for use in the system. This is broken into three segments, first being data acquisition which explains how and why data is sources from third parties and inputted from users. The second section explains how this data is manipulated and the third; statistical and informative output.\\
-
-	\textsc{4 System Requirements}\\
+	\textsc{3 System Requirements}\\
 	
 	Describing the scale and scope of the users and their requirements for this system, and mapping how these are prioritized at the beginning of and throughout the project. This is in the context of functional and non-functional requirements.\\
+
+	\textsc{4 Data Gathering}\\
+	
+	Mapping and justifying the data selected for use in the system. This is broken into three segments, first being data acquisition which explains how and why data is sources from third parties and inputted from users. The second section explains how this data is manipulated and the third; statistical and informative output.\\
 
 	\textsc{5 System Design}\\
 	
 	Displaying the structure of the system architecture and how the logic aligns with the requirements of the system. Also, describing the various aspects of the user interface's functional and graphical communication and design process. It's apparent at this point how the data structure is made relevant to the design of the system using the requirements.\\
 
-	\textsc{6 System Construction \& Implementation}\\
+	\textsc{6 System Construction}\\
 	
 	Providing a closer look at and justification of the development environment, languages and protocols selected for the creation of this system and exploring the various APIs and JavaScript libraries and other supporting tools used to enhance the system and allow it to function in harmony. Also, Providing an overview of how these elements were implemented from a project management point of view.\\
 
@@ -468,7 +506,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	Landmass data is of a similar format in that is stores records of GPS coordinate data upon the landmasses of Scotland. However, it extends to be far more complex. It includes data on landmasses themselves, which are anything resembling some significant land-form of Scotland. In this context, a landmass may either be a \textit{Mountain}, \textit{Mountain Range}, or \textit{Stand Alone}. A mountain is a single prominent feature which contains one or more hills without a contour drop of under 2000ft between summits; a mountain range is a group of prominent features which contain hills without a contour drop of under 1200ft between summits; and, a stand alone is a single prominent feature which contains one hill. `Hill' refers to \textit{Munros} and \textit{Corbetts}, not \textit{Munro/Corbett Tops}. Therefore, tops are not limited on stand alones but also do not determine a summit. For example, ``a stand alone landmass may have one Munro and two Munro Tops''. Note that \textit{Munro Tops} and \textit{Corbett Tops} sit at the height of Munros/Corbetts respectively however do not meet the elevation and distance criteria to be classed as their own hills. They must be present at maximum stationary points, not increasing points such as those at which cairns are often found. All attributes of landmasses and hills etc., and their hierarchy can be found in the breakdown of the JSON file in Figure A4.\\
 
-	Data was gathered, [wait for it...], primarily manually by myself by staring at OS Explorer 376\footnote{Oban \& North Lorn}, Explorer 377\footnote{Loch Etive \& Glen Orchy} and Explorer 384\footnote{Glen Coe \& Glen Etive}. This provided access to information not yet recorded, such as Corries, Lochains and boulder fields of a landmass, for example. To ensure inclusion of all Munros and Corbetts, reference to Walkhighlands was made (Walkhighlands, 2022); and, to ensure inclusion of all Munro and Corbett Tops, Harold Street (2022) and Peakbagger.com (2022) were also investigated as they include more comprehensive community-driven data. Once again, data is stored in a JSON file hosted on my GitHub. Landmasses and their components are ordered south-to-north in the file, which will become more relevant subsequently.\\
+	Data was gathered, [wait for it...], primarily manually by myself by staring at OS Explorer 376\footnote{Oban \& North Lorn (Figure B4)}, Explorer 377\footnote{Loch Etive \& Glen Orchy} and Explorer 384\footnote{Glen Coe \& Glen Etive}. This provided access to information not yet recorded, such as Corries, Lochains and boulder fields of a landmass, for example. To ensure inclusion of all Munros and Corbetts, reference to Walkhighlands was made (Walkhighlands, 2022); and, to ensure inclusion of all Munro and Corbett Tops, Harold Street (2022) and Peakbagger.com (2022) were also investigated as they include more comprehensive community-driven data. Once again, data is stored in a JSON file hosted on my GitHub. Landmasses and their components are ordered south-to-north in the file, which will become more relevant subsequently.\\
 
 	Under the time constraint of the project, some omissions, amendments and notes were made as follows:
 
@@ -525,41 +563,17 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection{Data Application \& Manipulation}
 
-	All data discussed in Section 4 of this report is included in a basic input-output system [(BIOS, wheyy)] which, through functions and others methods, produces the desired outcomes which satisfy user requirements. A summary of this process can be seen below in Table 5.2. Reference to data can be observed in Figure A4.
-
-	\begin{table}[h]
-		\scriptsize
-		\renewcommand{\arraystretch}{1.25}
-	\begin{center}
-	\begin{tabular}{p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}}
-		\hline
-		\hline
-		\textsc{Function} & \textsc{Inputs} & \textsc{Data} & \textsc{Return Type} & \textsc{Output}\\
-		\hline
-		\hline
-		\multicolumn{5}{c}{\textsc{`Overview'}}\\
-		\hline
-		\multicolumn{5}{c}{\textsc{`Conditioning'}}\\
-		\hline
-		\multicolumn{5}{c}{\textsc{`Weather'}}\\
-		\hline
-		\multicolumn{5}{c}{\textsc{`Conquest Map'}}\\
-		\hline
-		\hline
-	\end{tabular}
-		\caption{Data Input-Output Summary}
-	\end{center}
-	\end{table}
+	All data discussed in Section 4 of this report is included in a basic input-output system [(BIOS, wheyy)] which, through functions and others methods, produces the desired outcomes which satisfy user requirements. A summary of this process can be seen Figure A5. Reference to data can be observed in Figure A4.
 
 		\subsubsection{`Overview'}
 
-	The `Overview' portion of the home page of this site refers to a more basic iteration of the route search and landmass search functions, seen subsequently in the `Conquest Map'. For the sake of continuity, all basic features of these functions' use of data is discussed under this heading; additional data required for the `Conquest Map' version are discussed latterly.\\
+	The `Overview' portion of the home page of this site refers to a more basic iteration of the route search and landmass search functions, seen subsequently in the `Conquest Map'. For the sake of continuity, all basic features of these functions' use of data is discussed under this heading; additional data required for the `Conquest Map' version are discussed latterly.
 
 			\paragraph{Score Route}
 
 	This function exists purely to serve the Search Route function and has no purpose as a stand-alone. As it involves quite the lengthy arithmetic process however, it is granted its own sub-sub-sub-section. Although, to my judgement, this metric is fairly mathematically sound although will be constantly developed as I generate more ideas, it is still very subjective and based on my own experiences with and discussions about the Scottish hills and their conditions. Therefore, this `score' is not a definitive metric to describe the condition of a route to the masses. It should be judged and considered on an individual basis.\\
 
-	Henceforth, scoring a route takes into account [1] four groups of subjective scores based on weights and values of the four route element factors seen under routes in the JSON file (type, stages, terrain type(s), terrain difficulties), and [2] a more objective and logical multiplier based on total number of [Munro, `Top, Corbett, `Top] tops covered on-route, the total elevation gained, and the total distance covered. Actual values of the weights were gathered through personal consideration and conversation in the field and is therefore subject to constant adjustment. So forth, the multiplier was developed purely by myself. All parameters of this equation are as follows:
+	Henceforth, scoring a route takes into account [1] four groups of subjective scores based on weights and values of the four route element factors seen under routes in the JSON file (type, stages, terrain types, terrain difficulties), and [2] a more objective and logical multiplier based on total number of [Munro, `Top, Corbett, `Top] tops covered on-route, the total elevation gained, and the total distance covered. Actual values of the weights were gathered through personal consideration and conversation in the field and is therefore subject to constant adjustment. So forth, the multiplier was developed purely by myself. All parameters of this equation are as follows:
 
 	\begin{enumerate}
 	\setlength\itemsep{0cm}
@@ -569,7 +583,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 		\item Distance -- value
 		\item Route type (weight, \{weights, `values'\}, `score') -- matrix
 		\item Route stages (weight, \{weights, `values'\}, `score') -- matrix
-		\item Terrain type(s) (weight, \{weights, `values'\}, `score') -- matrix
+		\item Terrain types (weight, \{weights, `values'\}, `score') -- matrix
 		\item Terrain difficulties (weight, \{weights, `values'\}, `score') -- matrix
 	\end{enumerate}
 
@@ -577,7 +591,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 \newpage
 
-	[1.1] \textbf{Conversion Constants}:
+	\textbf{[1.1] Conversion Constants:}
 
 	$$c_{ft}=0.3048$$
 	$$c_{mi}=1.609$$
@@ -586,16 +600,16 @@ This piece would not have been as efficient without the aid of the only acceptab
 	$c_{ft}=$ Conversion constant for imperial feet to metric meters\\
 	$c_{mi}=$ Conversion constant for imperial miles to metric kilometers ($\times10^{3}$m)\\
 
-	[1.2] \textbf{Number of Tops}:
+	\textbf{[1.2] Number of Tops:}
 
 	$$N_{\mathrm{Tops}}=\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}$$
 	$$\lor\ N_{\mathrm{Tops}}=\vert i\vert + \vert j\vert + \vert k\vert + \vert l\vert$$
 
 	Where:\\
 	$N_{\mathrm{Tops}}=$ Total number of tops present on given route\\
-	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
 
-	[1.3] \textbf{Elevation}:
+	\textbf{[1.3] Elevation:}
 
 	$$\mathrm{Elev_{m}}=c_{ft}\mathrm{Elev_{ft}}$$
 
@@ -603,7 +617,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 	$\mathrm{Elev_{m}=}$ Total elevation gained on given route, in meters (m)\\
 	$\mathrm{Elev_{ft}=}$ Total elevation gained on given route, in feet (ft)\\
 
-	[1.4] \textbf{Distance}:
+	\textbf{[1.4] Distance:}
 
 	$$\mathrm{Dist_{km}}=c_{mi}\mathrm{Dist_{mi}}$$
 
@@ -613,9 +627,11 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 \newpage
 
-	[2.1] \textbf{Weights} for Route Type, Route Stages, Terrain Type(s), Terrain Difficulties Elements:\\
+	\textbf{[2.1] Weights:}\\
 
-	This method defines equally weighted elements by dividing 1 by the number of elements in the arrays.
+	For Route Type's, Route Stages', Terrain Types', Terrain Difficulties' Elements\\
+
+	This method defines equally weighted elements by dividing 1 by the number of elements in the arrays. Where $i,j,k,l$ refer to arrays and positions within their respective arrays:
 
 	$$w_{i}=\frac{1}{\sum^{I}_{i=1}N_{i}},\ w_{j}=\frac{1}{\sum^{J}_{j=1}N_{j}},\ w_{k}=\frac{1}{\sum^{K}_{k=1}N_{k}},\ w_{l}=\frac{1}{\sum^{L}_{l=1}N_{l}}$$
 	$$\lor\ w_{i}=\frac{1}{\vert i\vert},\ w_{j}=\frac{1}{\vert j\vert},\ w_{k}=\frac{1}{\vert k\vert},\ w_{l}=\frac{1}{\vert l\vert}$$
@@ -623,16 +639,18 @@ This piece would not have been as efficient without the aid of the only acceptab
 	$$\therefore w_{i}, w_{j}, w_{k}, w_{l}\ \textrm{always constant and equally weighted}$$
 
 	Where:\\
-	$w_{i,j,k,l}=$ Equally weighted value based on number of elements for element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
-	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$w_{i,j,k,l}=$ Equally weighted value based on number of elements for element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
 
-	[2.2] \textbf{Scores} for Route Type, Route Stages, Terrain Type(s), Terrain Difficulties:
+	\textbf{[2.2] Scores:}\\
+
+	For Route Type, Route Stages, Terrain Types, Terrain Difficulties
 
 	$$S_{i}=\sum^{I}_{i=1} w_{i}V_{i},\ S_{j}=\sum^{J}_{j=1} w_{j}V_{j},\ S_{k}=\sum^{K}_{k=1} w_{k}V_{k},\ S_{l}=\sum^{L}_{l=1} w_{l}V_{l},$$
 
 	Where:\\
-	$S_{i,j,k,l}=$ Relative score of element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
-	$V_{i,j,k,l}=$ Subjectively defined value assigned to element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$S_{i,j,k,l}=$ Relative score of element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$V_{i,j,k,l}=$ Subjectively defined value assigned to element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
 
 \newpage
 
@@ -655,45 +673,50 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	For each of the route element factor arrays, these are then aggregated to give a total value. However, they still do not have any context which is why a multiplier is used.\\
 
-	[2.3] \textbf{Weights} for Route Type, Route Stages, Terrain Type(s), Terrain Difficulties Elements:
+	\textbf{[2.3] Weights:}\\
+
+	For Route Type, Route Stages, Terrain Types, Terrain Difficulties
 
 	$$w_{S_{i}},\ w_{S_{j}},\ w_{S_{k}},\ w_{S_{l}}$$
 
 	Do not confuse these with the equal weightings for each individual element within the arrays, these four weightings exist on a subjective basis to weight the four scores for each array.
 
 	Where:\\
-	$w_{S_{i,j,k,l}}=$ Weight values determining the importance of arrays of $i$: route type, $j$: route stages, $k$: terrain type(s), $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$w_{S_{i,j,k,l}}=$ Weight values determining the importance of arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
 
-	[3.1] \textbf{Complete Multiplier}:
+	\textbf{[3.1] Complete Multiplier:}
 
 	$$m_{R}=\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}$$
-	$$\textrm{Expanded: }m_{R}=\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}$$
+	$$\textbf{Expanded: }m_{R}=\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}$$
 
 	Where:\\
 	$m_{R}=$ Multiplier for given route $R$\\
 
 	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route''.\\
 
-	[3.2] \textbf{Complete Aggregate Route Score}:
+	\textbf{[3.2] Complete Aggregate Route Score:}
 
 	$$S_{R}=w_{S_{i}}S_{i}+w_{S_{j}}S_{j}+w_{S_{k}}S_{k}+w_{S_{l}}S_{l}$$
-	$$\textrm{Expanded (1): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)$$
-	$$\textrm{Expanded (2): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)$$
+	$$\textbf{Expanded (1): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)$$
+	$$\textbf{Expanded (2): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)$$
 
 	Where:\\
 	$S_{R}=$ Aggregate route score for given route $R$\\
 
-	[4] \textbf{Complete Adjusted Route Score}:
+	\textbf{[4] Complete Adjusted Route Score:}
 
 	$$S_{R(A)}=m_{R}\left(w_{S_{i}}S_{i}+w_{S_{j}}S_{j}+w_{S_{k}}S_{k}+w_{S_{l}}S_{l}\right)$$
-	$$\textrm{Expanded (1): }S_{R(A)}=\left(\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}\right)\left(w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)\right)$$
-	$$\textrm{Expanded (2): }S_{R(A)}=\left(\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}\right)$$
-	$$+\left(w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)\right)$$
+
+	$$\textbf{Expanded (1):}$$
+	$$S_{R(A)}=\left(\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}\right)\left(w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)\right)$$
+	$$\textbf{Expanded (2):}$$
+	$$S_{R(A)}=\left(\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}\right)$$
+	$$\bullet\left(w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)\right)$$
 
 	Where:\\
 	$S_{R(A)}=$ Adjusted route score for given route $R$\\
 
-	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route; scaled by the route type, route stages, terrain type(s), and terrain difficulty elements found on-route''.\\
+	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route; scaled by the route type, route stages, terrain types, and terrain difficulty elements found on-route''.\\
 
 	Given the time constraint of the project, some restrictions have been applied and notes made, as follows:
 
@@ -720,23 +743,114 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	The `Conditioning' portion of the home page of this site presents the user with the ability to [1] view `Ability' attribute, and [2] view `Equipment' attributes. This, like the `Overview' section is a simplified and more informative version of what the user will see and use ability and equipment data for in the `Conquest Map'.
 
-			\paragraph{Search `Ability'}
+			\paragraph{Search `Ability' \& `Equipment'}
 
-	Users are presented with an HTML \texttt{select} protocol on a two-tier basis. The first allows them to choose an \texttt{option} based on which set of ability factors they wish to inspect, such as hill and route elements, summit features, route types and stages, terrain types and difficulties, etc. This generates the second \texttt{select} protocol which displays the individual factors under each heading. When the user selects a factor, the element is matched by a loop through the relevant JSON file for the seven ability headings and a body of text is then generated summarizing the attributes. This includes all of the basics such as a brief description and images, etc. This feature is informative and serves no dynamic function until `Conquest Map'.
+	Users are presented with two initial separate HTML \texttt{select} protocol on a two-tier basis (four total \texttt{select} protocol) for each of the `Ability' and `Equipment' sections. The first allows them to choose an \texttt{option} based on which set of ability/equipment factors they wish to inspect, such as hill and route elements, summit features, route types and stages, terrain types and difficulties, etc.; and packs, technical equipment, footwear and clothing, etc. This generates the second \texttt{select} protocol which displays the individual factors under each heading. When the user selects a factor, the element is matched by a loop through the relevant JSON file for the seven ability headings or four equipment headings and a body of text is then generated summarizing the attributes. This includes all of the basics such as brief descriptions and images, etc. This feature is informative and serves no dynamic function until `Conquest Map'.
 	
-			\paragraph{Search `Equipment'}
-
-	Users are presented with an HTML \texttt{select} protocol, again on a two-tier basis. The first allows them to choose an \texttt{option} based on which set of equipment factors they wish to inspect, such as packs, technical equipment, footwear and clothing, etc. This generates the second \texttt{select} protocol which displays the individual factors under each heading. Upon selection of a factor, the element is matched by a loop through the relevant JSON file for the four equipment headings and a body of text is then generated. This includes details such as a brief description and images, etc. Again, this feature is informative and serves no dynamic function until `Conquest Map'.
-
 		\subsubsection{`Weather'}
 
-	Fetching and putting weather data to use only requires two parameters: latitude and longitude (\texttt{lat}, \texttt{lon}). This leaves huge opportunity to relate these parameters to many different variables and therefore, many different human-interpreted scenarios.
+	Fetching and putting weather data to use only requires two parameters: latitude and longitude (\texttt{lat}, \texttt{lon}). This leaves huge opportunity to relate these parameters to many different variables and therefore, many different human-interpreted scenarios. Accepted in the weather system are four different methods of acquiring input of latitude and longitude values. The first is two \texttt{select} options which list Munros, Corbetts and regions and loop the relevant JSON file for a match then relay their \texttt{lat} and \texttt{lon} attributes to input. The second is a search feature much like that seen in the `Overview' section where the user can search loosely for the names of Munros and Corbetts and have their attributes captured from the JSON file. Thirdly, the user can use a Geolocation function to fetch their current coordinates and have them entered directly into the script. Finally, there is the option to manually input latitude and longitude directly into the \texttt{input} boxes. This is possible as the script takes its \texttt{lat} and \texttt{lon} inputs directly from the values of these input boxes which are displayed on the UI.\\
 
+	As seen in Figure A4, most data which is fetched using the OpenWeather API is displayed directly on the UI witch some form of string, symbol and CSS design aspects to contextualize them. However, there are some components such as [1] the day and time (daily and hourly), [2] sunrise time, [3] sunset time, [4] precipitation (daily and hourly) and [5] visibility which require some basic arithmetic and JavaScript conversions to be presentable. This extends no further than one line of code however. Further, there are several components which do not exist as part of the OpenWeather API and require more complex computations based on aspects of the API. These include [1] inspecting the complete range weather icon provided by OpenWeather and reassigning icon values to custom ones (daily and hourly); [2] assigning string descriptions of wind direction\footnote{The direction \textit{from} which the wind is travelling (originates)} at different angular intervals of wind direction provided by OpenWeather (daily and hourly)\footnote{Note there were no precise-enough sources supplying these intervals so much effort with a calculator was devoted}; and [3] assigning an arrow symbol and computing a CSS angular rotation value relative to the wind direction (daily and hourly). This symbol is proved by the Version 5 FontAwesome Free Library (FontAwesome, 2021). Demonstrations of how these are implemented are highlighted in Table 5.2 below. The four basic computations can be seen in Figure A4. These computations also include various alike calculations relevant to CSS, for example, to color the background of the temperature section at different increments and change the font color accordingly, etc.
+
+\newpage
+
+	\begin{center}
+		\scriptsize
+	\begin{longtable}{p{12cm}}
+		\hline
+		\multicolumn{1}{c}{\textsc{Weather Icons}}\\
+		\hline
+		\begin{lstlisting}
+let wicon = "";
+for (var i in day.weather) {
+	if (day.weather[i].icon === "01d") {
+		wicon = "<i class='fas fa-sun'></i>";
+	} else if (day.weather[i].icon === "01n") {
+		wicon = "<i class='fas fa-moon'></i>";
 	...
+	} else if (day.weather[i].icon === "50d") {
+		wicon = "<i class='fas fa-smog'></i>";
+	} else if (day.weather[i].icon === "50n") {
+		wicon = "<i class='fas fa-smog'></i>";
+	}
+}
+		\end{lstlisting}\\
+		\hline
+		\multicolumn{1}{c}{\textsc{Wind Direction Description}}\\
+		\hline
+		\begin{lstlisting}
+let day_wind_dir = "";
+if ((day.wind_deg) >= 348.76) {
+        day_wind_dir = "N";
+} else if ((day.wind_deg) >= 0 && (day.wind_deg) <= 11.25) {
+        day_wind_dir = "N";
+} else if ((day.wind_deg) >= 11.26 && (day.wind_deg) <= 33.75) {
+        day_wind_dir = "N/NE";
+} else if ((day.wind_deg) >= 33.76 && (day.wind_deg) <= 56.25) {
+        day_wind_dir = "NE";
+...
+} else if ((day.wind_deg) >= 303.76 && (day.wind_deg) <= 326.25) {
+        day_wind_dir = "NW";
+} else if ((day.wind_deg) >= 326.26 && (day.wind_deg) <= 348.75) {
+        day_wind_dir = "N/NW";
+}
+		\end{lstlisting}\\
+		\hline
+		\multicolumn{1}{c}{\textsc{Wind Direction Symbol}}\\
+		\hline
+		$$\angle=(-45)+180+W$$\\
+		Where:\\
+		$\angle=$ Angle Assigned to CSS Rotate of Object (\textdegree) (no variable name as used directly in-line)\\
+		$W=$ Wind Direction (\textdegree) $=$ \texttt{hour.wind\_deg} (as named in the OpenWeather API)\\
+		`$-45$' accounts for the 45\textdegree\ visual offset as standard design in the symbol (return to 0\textdegree)\\
+		`$+180$' accounts for the `direction from which the wind is travelling' and rotates the symbol by 180\textdegree\ to point the nose of the arrow in the opposite direction which symbolizes the `direction in which the wind is travelling'\\
+		\hline
+		Note that these examples are extracted from `daily' weather forecasting. Near-identical code is replicated for the the `hourly' equivalent.\\
+		\hline
+		\caption{Weather System Computations}
+	\end{longtable}
+	\end{center}
 
 		\subsubsection{`Conquest' Map}
 
-	...
+	The `Conquest Map' is the heart of this system. It uses the Ordnance Survey Leisure Map API (OS API) (Ordnance Survey, 2022) to display a base map, along with other JavaScript features such as use of the Leaflet (Leaflet, 2022) library and others noted in the \textit{System Construction} section, upon which many previously discussed, and further layers of, data is processed and displayed using various methods and forms of media.
+
+			\paragraph{Change Map Layer}
+
+	A basic three-option \texttt{radio} input feature is available to the user as soon as they enter the page, giving them the option to fetch three different sets of base map layer data from the OS API: `Leisure', `Road', `Outdoor'. These are the three most relevant topographical maps to the data displayed.
+
+			\paragraph{Show Current Location \& Find Nearest}
+
+	An array of two \texttt{button}s are presented which call functions that display the current location of the user's device and find the nearest route to the user, respectively. The first of these uses the Geolocation API to fetch the \texttt{lat} and \texttt{lon} attributes and inputs then into a function which outputs the user's location by [1] centering the map crosshair to the coordinates, [2] creating and displaying a marker upon this location, and [3] calculating and presenting an accuracy/tolerance radius around this. Finding the nearest project involves a similar process in that it fetches the user's coordinates using Geolocation and inputs them into a function which takes into account the coordinates of all routes in the relevant JSON file (Figure A4) and calculates their distance form the current coordinates. It then displays a route as standard; attributes of which, such as route markers, lines, hill markers and pop-ups etc., are discussed under the relevant sections 5.3.4.7 and 5.3.4.8.
+
+			\paragraph{Show \& Hide Features}
+
+	An array of four \texttt{button}s are presented which call functions that display markers for all Munros, Munro Tops, Corbetts, Corbett Tops, and hide all markers, respectively. These functions operate in a near-identical manner, in which they loop the relevant JSON file to fetch the \texttt{lat} and \texttt{lon} values of all the iterations of either \texttt{munro}, \texttt{munrotop}, \texttt{corbett}, or \texttt{corbetttop}. The output is the creation and display of a Leaflet marker for every hill relative to the button selected, with a bound Leaflet pop-up which accepts inputs such as the name and different statistics and images of the hill from the JSON file, and is displayed upon click [of the marker]. The `hide' function simply loops through the array used to store the markers upon creation and removes their relative layer from the map.
+
+			\paragraph{Filter Routes By `Ability' \& `Equipment'}
+
+	See section 5.3.2.1 for the breakdown of these components. After the user makes their relevant selections from the relevant HTML \texttt{select} protocol, instead of having all of the attributes of the associated matched items in the JSON file simply printed in a body of text, the selections are added to a pool. The values of this this pool (which are elements of ability and equipment) are then matched with routes under the landmasses of the appropriate JSON file. Once the user submits their request, all routes which either \textbf{do} or \textbf{do not} contain these attributes, based on the user preference through a \texttt{radio} input feature, are located in the appropriate JSON file. It then displays all of these routes as standard; attributes of which, such as route markers, lines, hill markers and pop-ups etc., are discussed under the relevant sections 5.3.4.7 and 5.3.4.8. Unlike when seeking an individual route, the map crosshair is not centered to any particular route as there may be more than one.
+
+			\paragraph{Score Route}
+
+	See section 5.3.1.1 for the breakdown of this component. No attributes differ.
+
+			\paragraph{Describe Route Score}
+
+	See section 5.3.1.2 for the breakdown of this component. No attributes differ.
+
+			\paragraph{Search Route}
+
+	See section 5.3.1.3 for the breakdown of this component. There are additional features implemented in this function, in the relevance of the `Conquest Map'. The user is presented now with four options instead of just the original `summary' option under `Overview'. They are: [1] present a summary of the route as detailed in section 5.3.1.3, [2] print the route, [3] hide all routes, and [4] begin a `\href{https://www.youtube.com/watch?v=IvaldKgWGHo}{Galactic Conquest}'.\\
+
+	The print route function essentially uses the same data from the JSON file as the summary function however, it uses the GPX suffix attribute of the selected route to match with an appropriate prefix. The file matching this path is then fetched and loaded by the function using the GPX to GeoJSON method, as this is a more appropriate use in JavaScript. This GPX data is then printed on the map. Secondly, the function calls another function discussed earlier which prints a route (Leaflet) marker. This marker contains a bound Leaflet pop-up which, upon click, displays variations of data displayed in the original route search output. Finally, the function also makes calls to other functions to which attributes names of hills appearing on the route are relayed and appropriate Leaflet markers are displayed. These functions behave similarly to those discussed in section 5.3.4.2, except this time they do not print all of the Munro, `Top, Corbett and `Top markers, they just print the relevant ones.\\
+
+	The hide all routes function acts much like the hide the function used to hide all hill markers. It simply loops through the array used to store the routes upon creation and removes their relative layer from the map. This includes all of the route markers, lines and hill markers. The fourth and final option, `Galactic Conquest' is a meme which simply loops through the entire JSON file, collects every GPX attribute suffix, matches with the appropriate prefix, and prints them on the map with the appropriate route markers, lines and hill markers.
+
+			\paragraph{Search Landmass}	
+
+	See section 5.3.1.4 for the breakdown of this component. There are additional features implemented in this function, in the relevance of the `Conquest Map'. As well as printing the body of text with the summary of all the attributes like before, this function also uses the \texttt{lat} and \texttt{lon} attributes of the hill firstly to input into another function which calculates the hill's distance from the user's current location and display this as part of the body-text output; and secondly, to center the map crosshair to the hill's location; and, calls a function which creates a single hill marker for the appropriate hill. This marker follows the same structure as those detailed in sections 5.3.4.4 and 5.3.4.7, except this time it prints only the single relevant Munro, `Top, Corbett or `Top.
 
 		%\subsubsection{`Ranger' Calculator}
 		%
@@ -744,7 +858,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 \newpage
 
-\section{System Construction \& Implementation}\label{ch6}
+\section{System Construction}\label{ch6}
 
 	\subsection{Development \& Languages}
 
@@ -754,13 +868,15 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{Supporting Data (JSON)}
 
-	\subsection{Application Programming Interfaces (APIs) \& Libraries}
+	\subsection{Application Programming Interfaces \& Libraries}
+
+	Application Programming Interfaces (APIs) and JavaScript libraries are included in the development process of this system in order to use and build upon unique layers of existing web material and interface with them using various, in some cases, [free and open-source] JavaScript libraries. Libraries of course being additional pre-defined functions and methods etc., which can be used with the addition of various scripts and stylesheets in order to enable and initialize use of APIs.
 
 		\subsubsection{Geolocation}
 
 		\subsubsection{Ordnance Survey}
 
-		OS Road (1 : 250 000), OS Landranger (1 : 50 000), OS Explorer (1 : 25 000)\\
+		OS Road (1 : 250 000), OS Landranger (1 : 50 000), OS Explorer (1 : 25 000)
 
 		\subsubsection{Open Weather}
 
@@ -788,13 +904,13 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\subsection{Requirements}
 
-	\subsection{Design, Construction \& Implementation}
+	\subsection{Design \& Construction}
 
 		\subsubsection{Heuristic Evaluation}
 
 		\subsubsection{User Acceptance (UAT), Accessibility \& Usability}
 
-		\subsubsection{`Prototyping' \& Constant Evaluation}
+		\subsubsection{`Prototyping' \& Continuous Evaluation}
 
 	\subsection{Additional Testing}
 
@@ -810,17 +926,21 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	Some GPX files do not function as intended
 
+	\subsection{Potential Enhancements}
+
 \newpage
 
 \section{Development Conclusions}\label{ch8}
+
+	Table re-visiting requirements to check them off and answer any questions, like in last year's diss.
 
 	\vspace{\fill}
 
 	\begin{center}
 		\textsc{A Michael Mann Production}\\
-		\textsc{\textcopyright 1984 Orion Pictures Corporation}\\
-		\textsc{\small{All Rights Reserved}}\\
-		\textsc{Dolby Stereo}\texttrademark \textsc{In Selected Theatres}
+		\textcopyright\ \textsc{1984 Orion Pictures Corporation}\\
+		\small{\textsc{All Rights Reserved}}\\
+		\small{\textsc{Dolby Stereo}\texttrademark \textsc{In Selected Theatres}}
 	\end{center}
 
 \newpage
@@ -861,7 +981,7 @@ This piece would not have been as efficient without the aid of the only acceptab
                 \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
                 \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Browser (Mobile)}\\
                 \hline
-                \caption{Heuristic Analysis}
+                \caption{Heuristic Evaluation -- Wallhighlands}
         \end{longtable}
         \end{center}
 
@@ -893,7 +1013,7 @@ This piece would not have been as efficient without the aid of the only acceptab
                 \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Brows
 er (Mobile)}\\
                 \hline
-                \caption{Heuristic Analysis}
+                \caption{Heuristic Evaluation -- Strava}
         \end{longtable}
         \end{center}
 
@@ -1077,9 +1197,9 @@ er (Mobile)}\\
 		\fbox{day} -- Day\newline $\in$ \{feels\_like $\subset$ daily\}\newline Number & Provide the value of the daytime `feels like' temperature for the day & OpenWeather One Call API 1.0\\
 		\fbox{night} -- Day\newline $\in$ \{feels\_like $\subset$ daily\}\newline Number & Provide the value of the nighttime `feels like' temperature for the day & OpenWeather One Call API 1.0\\
 		\fbox{pop} -- Day\newline $\in$ daily\newline Number & Provide a probability value between 0 and 1 which represents the chance of precipitation for the day & Computed from OpenWeather One Call API 1.0, as:\newline $100(\mathtt{day.pop})$\\
-		\fbox{wind\_deg} -- Day\newline $\in$ daily\newline Number & Provide a value representing the average angle from which the wind is `blowing' for the day & OpenWeather One Call API 1.0\\
-		\fbox{wind\_deg} (for Description) -- Day\newline $\in$ daily\newline Number & Provide a value representing the average angle from which the wind is `blowing' for the day, which can be compared to a defined group of angular ranges to determine a description & Computed from OpenWeather One Call API 1.0, based on angular ranges\\
-		\fbox{wind\_deg} (for Symbol) -- Day\newline $\in$ daily\newline Number & Provide a value representing the average angle from which the wind is `blowing' for the day, which can be compared to a defined group of angular ranges to determine a suitable symbol & Computed from OpenWeather One Call API 1.0, as:\newline $(-45)+180+\mathtt{day.wind\_deg}$\\
+		\fbox{wind\_deg} -- Day\newline $\in$ daily\newline Number & Provide a value representing the average angle from which the wind is travelling for the day & OpenWeather One Call API 1.0\\
+		\fbox{wind\_deg} (for Description) -- Day\newline $\in$ daily\newline Number & Provide a value representing the average angle from which the wind is travelling for the day, which can be compared to a defined group of angular ranges to determine a description & Computed from OpenWeather One Call API 1.0, based on angular ranges\\
+		\fbox{wind\_deg} (for Symbol) -- Day\newline $\in$ daily\newline Number & Provide a value representing the average angle from which the wind is travelling for the day, which can be compared to a defined group of angular ranges to determine a suitable symbol & Computed from OpenWeather One Call API 1.0, associating a symbol with a value representing the relative rotation of the symbol\\
 		\fbox{wind\_speed} -- Day\newline $\in$ daily\newline Number & Provide the value of the average wind speed for the day & OpenWeather One Call API 1.0\\
 		\fbox{pressure} -- Day\newline $\in$ daily\newline Number & Provide the value of the average air pressure for the day & OpenWeather One Call API 1.0\\
 		\fbox{humidity} -- Day\newline $\in$ daily\newline Number & Provide the value of the average humidity for the day & OpenWeather One Call API 1.0\\
@@ -1095,9 +1215,9 @@ er (Mobile)}\\
 		\fbox{temp} -- Hour\newline $\in$ hourly\newline Number & Provide the value of the average forecasted temperature for the hour & OpenWeather One Call API 1.0\\
 		\fbox{feels\_like} -- Hour\newline $\in$ hourly\newline Number & Provide the value of the average `feels like' temperature for the hour & OpenWeather One Call API 1.0\\
 		\fbox{pop} -- Hour\newline $\in$ hourly\newline Number & Provide a probability value between 0 and 1 which represents the chance of precipitation for the hour & Computed from OpenWeather One Call API 1.0, as:\newline $100(\mathtt{hour.pop})$\\
-		\fbox{wind\_deg} -- Hour\newline $\in$ hourly\newline Number & Provide a value representing the average angle from which the wind is `blowing' for the hour & OpenWeather One Call API 1.0\\
-		\fbox{wind\_deg} (for Description) -- Hour\newline $\in$ hourly\newline Number & Provide a value representing the average angle from which the wind is `blowing' for the hour, which can be compared to a defined group of angular ranges to determine a description & Computed from OpenWeather One Call API 1.0, based on angular ranges\\
-		\fbox{wind\_deg} (for Symbol) -- Hour\newline $\in$ hourly\newline Number & Provide a value representing the average angle from which the wind is `blowing' for the hour, which can be compared to a defined group of angular ranges to determine a suitable symbol & Computed from OpenWeather One Call API 1.0, as:\newline $(-45)+180+\mathtt{hour.wind\_deg}$\\
+		\fbox{wind\_deg} -- Hour\newline $\in$ hourly\newline Number & Provide a value representing the average angle from which the wind is travelling for the hour & OpenWeather One Call API 1.0\\
+		\fbox{wind\_deg} (for Description) -- Hour\newline $\in$ hourly\newline Number & Provide a value representing the average angle from which the wind is travelling for the hour, which can be compared to a defined group of angular ranges to determine a description & Computed from OpenWeather One Call API 1.0, based on angular ranges\\
+		\fbox{wind\_deg} (for Symbol) -- Hour\newline $\in$ hourly\newline Number & Provide a value representing the average angle from which the wind is travelling for the hour, which can be compared to a defined group of angular ranges to determine a suitable symbol & Computed from OpenWeather One Call API 1.0, associating a symbol with a value representing the relative rotation of the symbol\\
 		\fbox{wind\_speed} -- Hour\newline $\in$ hourly\newline Number & Provide the value of the average wind speed for the hour & OpenWeather One Call API 1.0\\
 		\fbox{wind\_gust} -- Hour\newline $\in$ hourly\newline Number & Provide the value of the average wind `gust' speed for the hour & OpenWeather One Call API 1.0\\
 		\fbox{pressure} -- Hour\newline $\in$ daily\newline Number & Provide the value of the average air pressure for the hour & OpenWeather One Call API 1.0\\
@@ -1111,11 +1231,101 @@ er (Mobile)}\\
 	\end{longtable}
 	\end{center}
 
+		\subsubsection*{Figure A5: Functions Summary}
+
+	\begin{center}
+		\scriptsize
+	\begin{longtable}{p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}}
+		\textsc{Function} & \textsc{Inputs} & \textsc{Data} & \textsc{Return Type} & \textsc{Output}\\
+		\hline
+		\hline
+		\multicolumn{5}{c}{\textsc{`Overview'}}\\
+		\hline
+		\hline
+		\multicolumn{5}{c}{\textsc{Score Route}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Describe Route Score}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Search Route}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Search Landmass}}\\
+		\hline
+		...\\
+		\hline
+		\hline
+		\multicolumn{5}{c}{\textsc{`Conditioning'}}\\
+		\hline
+		\hline
+		\hline
+		\multicolumn{5}{c}{\textsc{Search `Ability'}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Search `Equipment'}}\\
+		\hline
+		...\\
+		\hline
+		\hline
+		\multicolumn{5}{c}{\textsc{`Weather'}}\\
+		\hline
+		\hline
+		\hline
+		\hline
+		\multicolumn{5}{c}{\textsc{`Conquest Map'}}\\
+		\hline
+		\hline
+		\multicolumn{5}{c}{\textsc{Change Map Layer}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Show Current Location \& Find Nearest}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Show \& Hide Features}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Filter Routes by `Ability'}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Filter Routes by `Equipment'}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Score Route}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Describe Route Score}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Search Route}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{5}{c}{\textsc{Search Landmass}}\\
+		\hline
+		...\\
+		\hline
+		\caption{Functions Summary}
+	\end{longtable}
+	\end{center}
+
 	\subsection*{Appendix 2: Foundational Material}
 
 		\subsubsection*{Author's Note}
 
 			\textit{The following content is manufactured by myself in aid of basic understanding of the background to contexts, data and methods present within this study. It is presented as teaching material, in a format I would output if in such position.}
+
 		\subsubsection*{Figure B1: Linguistics of `{\LaTeX}'}
 
 		{\LaTeX} (or LaTeX, even latex (Donald E. Knuth's more recent installment of {\TeX})) is usually pronounced /la\textlengthmark t$\varepsilon$k/ (`lah') or /le\textsc{i}t$\varepsilon$k/ (`lei'/`lay') in English (that is, not with the /ks/ pronunciation English speakers normally associate with X, but with a /k/). The characters T, E, X in the name come from capital Greek letters tau, epsilon, and chi, as the name of {\TeX} derives from the Greek: $\tau\varepsilon\chi\nu\eta$ (skill, art, technique, precision); for this reason, Donald E. Knuth promotes a pronunciation of /t$\varepsilon$k/ (tekh) (that is, with a voiceless velar fricative as in Modern Greek, similar to the last sound of the German word ``Bach", the Spanish ``j" sound, or as ``ch'' in a Scottish `loch'). 
@@ -1146,6 +1356,12 @@ er (Mobile)}\\
 		\subsubsection*{Figure B3: Why My Pre-Title’s Right and You’re Wrong}
 
 		I have received numerous comments which anyone would regard na\"{i}ve and under-educated regarding my pre-title of this study: \textit{AG436 Dissertation Coursework Assignment}. The argument originates in the `Coursework Assignment’ portion. People argue that a dissertation `is not’/`does not have’ an assignment. Not only is this poor characteristic recognition, it is semantically wrong. \textit{AG436: Dissertation} is a class just like any other. However under this class, there are no lectures, no tutorials and therefore no exams as there is no [taught] content. Do not confuse this with the class `having no content’ though. AG436’s content is apparent through literature of the student’s choice. Therefore, it is possible for a `coursework assignment’ to be based on this. Hence, any further comments are null.
+
+		\subsubsection*{Figure B4: Lorn and Lorne}
+
+		Ranking of Lorne from House of Bruar to Malcolm Allan.
+
+		...
 
 \newpage
 
@@ -1193,6 +1409,27 @@ er (Mobile)}\\
 		\textsl{One Call API: weather data for any geographical coordinate - OpenWeatherMap}
 		Available At:
 		\texttt{https://openweathermap.org/api/one-call-api}
+		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		Leaflet. (2022).
+		\textsl{}
+		Available At:
+		\texttt{https://leafletjs.com/reference-1.7.1.html}
+		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		FontAwesome. (2021).
+		\textsl{}
+		Available At:
+		\texttt{https://fontawesome.com/v5/search}
+		(Accessed: 08/04/2022).
+
+	\bibitem{}
+		Ordnance Survey. (2022).
+		\textsl{}
+		Available At:
+		\texttt{https://labs.os.uk/public/os-data-hub-examples/os-names-api/find-example-placename}
 		(Accessed: 03/04/2022).
 
 	\end{thebibliography}
