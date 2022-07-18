@@ -685,43 +685,32 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 			\paragraph{Cascading Stylesheet (CSS)}
 
-	Being a website, CSS is the most important styling aspect. It serves two primary functions: [1] make a site relevant and contextualized, and [2] make a site accessible. These were achieved by implementing aspects of \textit{color} to make the surrounding foreground of the site pop in a manner such as that of a mid-2000's military briefing room. That background remains shades of whites and the foreground shades of grey, which also allows the natural colors of the OS map and other features alike to be further \textit{emphasized} and more easily viewed. Gradients were used in appropriate places to continue the theme of \textit{motion}. The element of \textit{motion} was used in the logo's entraince to the site where it's seen to enter in an animation from left to right, highlighting elements of movement discussed in section 5.2.3.4. Fonts used also play a similar role in relevance to themes. Font packages used include the Sans-Serif \textit{NFS} and \textit{Audi Type Variable}, Audi's famous typeface, were used in adding a modern `sporty' feel to a service which traditionally projects itself using Garamond EB and no styling. Both of these fonts are detailed in Figure 5.1.
+	Being a website, CSS is the most important styling aspect. It serves two primary functions: [1] make a site relevant and contextualized, and [2] make a site accessible. These were achieved by implementing aspects of \textit{color} to make the surrounding foreground of the site pop in a manner such as that of a mid-2000's military briefing room. That background remains shades of whites and the foreground shades of grey, which also allows the natural colors of the OS map and other features alike to be further \textit{emphasized} and more easily viewed. Gradients were used in appropriate places to continue the theme of \textit{motion}. The element of \textit{motion} was used in the logo's entrance to the site where it's seen to enter in an animation from left to right, highlighting elements of movement discussed in section 5.2.3.4. Fonts used also play a similar role in relevance to themes. Font packages used include the Sans-Serif \textit{NFS} and \textit{Audi Type Variable}, Audi's famous typeface, were used in adding a modern `sporty' feel to a service which traditionally projects itself using Garamond EB and no styling. Both of these fonts are detailed in Figure 5.1.
 
 	\begin{figure}[H]
 	\begin{center}
-		\begin{subfigure}[t]{5cm}
+		\begin{subfigure}[t]{8cm}
                 \begin{center}
-                        \includegraphics[width=4cm,height=1cm]{../System/Photos/Logo.png}
+                        \includegraphics[width=7.5cm,height=1cm]{../System/Photos/nfs.png}
                 \end{center}
                         \caption{NFS Typeface}
                 \end{subfigure}
                 \begin{subfigure}[t]{5cm}
                 \begin{center}
-                        \includegraphics[width=4cm,height=1cm]{../System/Photos/Logo.png}
+                        \includegraphics[width=4.5cm,height=3cm]{../System/Photos/audi.png}
                 \end{center}
                         \caption{Audi Type Variable Typeface}
                 \end{subfigure}
 	\end{center}
 	\end{figure}
 
-	Furthermore, FontAwesome (FontAwesome, 2021) was used in simplifying the user experience by implementing recognizable and relatable symbols in places where text would create too much [bloat] and unecessary reading. This also aids accessibility and imporves navigation. Common uses of these are detailed in Table 5.2 below.
+	Furthermore, FontAwesome (FontAwesome, 2021) was used in simplifying the user experience by implementing recognizable and relatable symbols in places where text would create too much [bloat] and unnecessary reading. This also aids accessibility and improves navigation. Common uses of these include: identification with location, maps, map features, weather features, personal features, and equipment.\\ 
 
-	\begin{table}[h]
-		\scriptsize
-		\renewcommand{\arraystretch}{1.25}
-	\begin{center}
-	\begin{tabular}{cccc}
-		...\\
-	\end{tabular}
-		\caption{FontAwesome Symbols}
-	\end{center}
-	\end{table}
-
-	Finally; hue, saturation and luminance are all appropriately assigned values to elemetns of the design to allow optimal readability and minimal strain. When viewing the main portion of the site, the OS map, there isn't much exposed blue light. It is of course, as always, recommended that a user adjusts the gamma output of their display accordingly. Improvement can always be made in areas of accessibility. Some may include JavaScript functionality which allows the user to control the font size, colors, element sizes, etc.; features alike. Given the constraints, brief and target users (myself and a marker), the time-reward trade-off was not valueable.
+	Finally; hue, saturation and luminance are all appropriately assigned values to elements of the design to allow optimal readability and minimal strain. When viewing the main portion of the site, the OS map, there isn't much exposed blue light. It is of course, as always, recommended that a user adjusts the gamma output of their display accordingly. Improvement can always be made in areas of accessibility. Some may include JavaScript functionality which allows the user to control the font size, colors, element sizes, etc.; features alike. Given the constraints, brief and target users (myself and a marker), the time-reward trade-off was not valuable.
 
 			\paragraph{Desktop Publishing (DTP)}
 
-	This is an unrequired portion of the project and exists to serve a purpose defined long before completion. The promotional piece is out of date however, is still beautiful and is displayed in Figure A5 for your leisure.
+	This is an non-required portion of the project and exists to serve a purpose defined long before completion. The promotional piece is out of date however, is still beautiful and is displayed in Figure A5 for your leisure.
 
 			\paragraph{Photo Manipulation}
 
@@ -756,11 +745,11 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 		\subsubsection{Use Cases}
 
-	...
+	A use case diagram is irrelevant given the context and structure of the following portions of this report. It's use would be [nugatory] and provide no beneficial context. Hence, referring to all headings under the following \textit{Data Application \& Manipulation} section, the data overview in Figure A4, and functions detailed in Figure A6; use cases involving each unction's relevance to site-present applications can be deduced from this content.
 
 	\subsection{Data Application \& Manipulation}
 
-	All data discussed in Section 4 of this report is included in a basic input-output system [(BIOS, wheyy)] which, through functions and others methods, produces the desired outcomes which satisfy user requirements. A summary of this process can be seen Figure A6. Reference to data can be observed in Figure A4.
+	All data discussed in Section 4 of this report is included in a basic input-output system [(BIOS, wheyy)] which, through functions and others methods, produces the desired outcomes to satisfy user requirements. A summary of this process can be seen Figure A6. Reference to data can be observed in Figure A4.
 
 		\subsubsection{`Overview'}
 
@@ -948,7 +937,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	Fetching and putting weather data to use only requires two parameters: latitude and longitude (\texttt{lat}, \texttt{lon}). This leaves huge opportunity to relate these parameters to many different variables and therefore, many different human-interpreted scenarios. Accepted in the weather system are four different methods of acquiring input of latitude and longitude values. The first is two \texttt{select} options which list Munros, Corbetts and regions and loop the relevant JSON file for a match then relay their \texttt{lat} and \texttt{lon} attributes to input. The second is a search feature much like that seen in the `Overview' section where the user can search loosely for the names of Munros and Corbetts and have their attributes captured from the JSON file. Thirdly, the user can use a Geolocation function to fetch their current coordinates and have them entered directly into the script. Finally, there is the option to manually input latitude and longitude directly into the \texttt{input} boxes. This is possible as the script takes its \texttt{lat} and \texttt{lon} inputs directly from the values of these input boxes which are displayed on the UI.\\
 
-	As seen in Figure A4, most data which is fetched using the OpenWeather API is displayed directly on the UI witch some form of string, symbol and CSS design aspects to contextualize them. However, there are some components such as [1] the day and time (daily and hourly), [2] sunrise time, [3] sunset time, [4] precipitation (daily and hourly) and [5] visibility which require some basic arithmetic and JavaScript conversions to be presentable. This extends no further than one line of code however. Further, there are several components which do not exist as part of the OpenWeather API and require more complex computations based on aspects of the API. These include [1] inspecting the complete range weather icon provided by OpenWeather and reassigning icon values to custom ones (daily and hourly); [2] assigning string descriptions of wind direction\footnote{The direction \textit{from} which the wind is travelling (originates)} at different angular intervals of wind direction provided by OpenWeather (daily and hourly)\footnote{Note there were no precise-enough sources supplying these intervals so much effort with a calculator was devoted}; and [3] assigning an arrow symbol and computing a CSS angular rotation value relative to the wind direction (daily and hourly). This symbol is provided by the Version 5 FontAwesome Free Library (FontAwesome, 2021). Demonstrations of how these are implemented are highlighted in Table 5.3 below. The four basic computations can be seen in Figure A4. These computations also include various alike calculations relevant to CSS, for example, to color the background of the temperature section at different increments and change the font color accordingly, etc.
+	As seen in Figure A4, most data which is fetched using the OpenWeather API is displayed directly on the UI witch some form of string, symbol and CSS design aspects to contextualize them. However, there are some components such as [1] the day and time (daily and hourly), [2] sunrise time, [3] sunset time, [4] precipitation (daily and hourly) and [5] visibility which require some basic arithmetic and JavaScript conversions to be presentable. This extends no further than one line of code however. Further, there are several components which do not exist as part of the OpenWeather API and require more complex computations based on aspects of the API. These include [1] inspecting the complete range weather icon provided by OpenWeather and reassigning icon values to custom ones (daily and hourly); [2] assigning string descriptions of wind direction\footnote{The direction \textit{from} which the wind is travelling (originates)} at different angular intervals of wind direction provided by OpenWeather (daily and hourly)\footnote{Note there were no precise-enough sources supplying these intervals so much effort with a calculator was devoted}; and [3] assigning an arrow symbol and computing a CSS angular rotation value relative to the wind direction (daily and hourly). This symbol is provided by the Version 5 FontAwesome Free Library (FontAwesome, 2021). Demonstrations of how these are implemented are highlighted in Table 5.2 below. The four basic computations can be seen in Figure A4. These computations also include various alike calculations relevant to CSS, for example, to color the background of the temperature section at different increments and change the font color accordingly, etc.
 
 \newpage
 
@@ -1428,98 +1417,216 @@ er (Mobile)}\\
 	\end{longtable}
 	\end{center}
 
+\newpage
+
 		\subsubsection*{Figure A5: Promotional Poster}
 
-	\includegraphics[width=4cm,height=1cm]{../System/Photos/Logo.png}
+	\begin{center}	
+		\includegraphics[width=14cm,height=20cm]{../System/Photos/poster.jpg}
+	\end{center}
+
+\newpage
 
 		\subsubsection*{Figure A6: Functions Summary}
 
 	\begin{center}
 		\scriptsize
-	\begin{longtable}{p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}}
-		\textsc{Function} & \textsc{Inputs} & \textsc{Data} & \textsc{Return Type} & \textsc{Output}\\
+	\begin{longtable}{p{2.25cm}p{3.5cm}p{5cm}p{2cm}}
+		\textsc{Function} & \textsc{Inputs} & \textsc{Data/Computation} & \textsc{Return/Out.}\\
 		\hline
 		\hline
-		\multicolumn{5}{c}{\textsc{`Overview'}}\\
+		\multicolumn{4}{c}{\textsc{`Overview'}}\\
 		\hline
 		\hline
-		\multicolumn{5}{c}{\textsc{Score Route}}\\
+		\multicolumn{4}{c}{\textsc{Score Route}}\\
+		\hline
+		\texttt{scoreRoute()} & Elevation (number), distance (number), number of tops (number), types (array), stages (array), terrain types (array), terrain difficulties (array) & Conversion constant (ft--m), conversion constant (mi--km), types weight, stages weight, terrain types weight, terrain difficulties weight, types element weights, stages element weights, terrain types element weights, terrain difficulties element weights, types values, stages values, terrain types values, terrain difficulties values & Number\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Describe Route Score}}\\
+		\hline
+		\texttt{describeScore()} & Route score (number) & Inequality interval calculation & String\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Search Route}}\\
+		\hline
+		\texttt{searchRoute()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPXfile & \texttt{innerHTML}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Search Landmass}}\\
+		\hline
+		\texttt{searchLocation()} & Landmass name (string) & Landmass name, landmass type, landmass sub-type, landmass sub-sub-type, landmass parent landmass, landmass parent peak, landmass region, landmass sub-region, landmass informal region, hill name, hill type, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill prominence, hill isolation, hill summit feature, hill image & \texttt{innerHTML}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conditioning'}}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Search `Ability'}}\\
+		\hline
+		\texttt{searchAbility()} & Ability component (string) & Ability component name, ability component description, ability component image & \texttt{innerHTML}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Search `Equipment'}}\\
+		\hline
+		\texttt{searchEquipment()} & Equipment component (string) & Equipment component name, equipment component description, equipment component image, equipment component compatibility, equipment component features, equipment component advantages, equipment component dangers & \texttt{innerHTML}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{`Weather'}}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Select Munro for Lat/Lon}}\\
+		\hline
+		\texttt{selectMunroOpt()} & N/A & Munro latitude, Munro longitude, Munro name & Number [2], \texttt{innerHTML} [2]\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Input Munro for Lat/Lon}}\\
+		\hline
+		\texttt{inpMunroOpt()} & N/A & Munro latitude, Munro longitude, Munro name & Number [2], \texttt{innerHTML} [2]\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Select Corbett}}\\
+		\hline
+		\texttt{selectCorbettOpt()} & N/A & Corbett latitude, Corbett longitude, Corbett name & Number [2], \texttt{innerHTML}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Input Corbett}}\\
+		\hline
+		\texttt{inpCorbettOpt()} & N/A & Corbett latitude, Corbett longitude, Corbett name & Number [2], \texttt{innerHTML}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Select County}}\\
+		\hline
+		\texttt{selectCounty()} & N/A & County latitude, County longitude, County name & Number [2], \texttt{innerHTML}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Get Weather}}\\
+		\hline
+		N/A & Latitude (number), longitude (number) & Day/time, day weather icon, day weather phrase, day weather description, day max temperature, day minimum temperature, day-day feels-like temperature, day-night feels-like temperature, day precipitation amount, day wind direction, day wind speed, day pressure, day humidity, day dew point, day UV, sunrise, sunset, hour, hour weather icon, hour temperature, hour feels-like temperature, hour precipitation amount, hour wind direction, hour wind speed, hour wind gust, hour pressure, hour humidity, hour dew point, hour visibility, hour UV & \texttt{innerHTML}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map'}}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Open Options Menu}}\\
+		\hline
+		\texttt{openOptions()} & N/A & N/A & Alter style (\texttt{style.width})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Close Options Menu}}\\
+		\hline
+		\texttt{closeOptions()} & N/A & N/A & Alter style (\texttt{style.width})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Center to Current Location}}\\
+		\hline
+		\texttt{findLocation()} & N/A & Accuracy radius (\texttt{accuracy}), Leaflet marker (current coordinates), Leaflet circle (current coordinates) & Leaflet marker\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Center to Current Location}}\\
+		\hline
+		\texttt{showLocation()} & N/A & N/A & (\texttt{map.locate}), Leaflet marker (\texttt{findLocation()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Find Nearest Project}}\\
 		\hline
 		...\\
 		\hline
-		\multicolumn{5}{c}{\textsc{Describe Route Score}}\\
+		\multicolumn{4}{c}{\textsc{Show Pan Coordinates}}\\
+		\hline
+		N/A & Move (event) & Center-map coordinates (\texttt{getLatLng()}) & \texttt{innerHTML}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Change Map Layer}}\\
+		\hline
+		\texttt{switchLayer()} & N/A & Map type & Leaflet layer \texttt{L.titleLayer}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Create Hill Marker}}\\
+		\hline
+		\texttt{createHillMarker()} & Hill name (string), hill type (string), hill elevation (number), hill latitude (number), hill longitude (number), hill latitude bearing (string), hill longitude bearing (string), hill region (string), hill sub-region (string), hill informal region (string), hill image (string), hill icon type (string) & Popup string, Leaflet marker & Array $+$\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Create Route Marker}}\\
+		\hline
+		\texttt{createRouteMarker()} & Route name (string), route distance (number), route time (number), route score (number), route difficulty (string), route Munros (array), route Munro Tops (array), route Corbetts (array), route Corbett Tops (array), route coordinates (array), route icon type (string) & Popup string, Leaflet marker & Array $+$\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Munros}}\\
+		\hline
+		\texttt{showMunros()} & N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Munro Tops}}\\
+		\hline
+		\texttt{showMunroTops()} & N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Corbetts}}\\
+		\hline
+		\texttt{showCorbetts()} & N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Corbett Tops}}\\
+		\hline
+		\texttt{showCorbettTops()} & N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Munro}}\\
+		\hline
+		\texttt{showMunro()} & Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Munro Top}}\\
+		\hline
+		\texttt{showMunroTop()} & Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Corbett}}\\
+		\hline
+		\texttt{showCorbett()} & Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Corbett Top}}\\
+		\hline
+		\texttt{showCorbettTop()} & Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Hide All Markers}}\\
+		\hline
+		\texttt{hideMarkers()} & N/A & Loop array & \texttt{map.removeLayer}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Filter Routes by `Ability'}}\\
 		\hline
 		...\\
 		\hline
-		\multicolumn{5}{c}{\textsc{Search Route}}\\
+		\multicolumn{4}{c}{\textsc{Filter Routes by `Equipment'}}\\
 		\hline
 		...\\
 		\hline
-		\multicolumn{5}{c}{\textsc{Search Landmass}}\\
+		\multicolumn{4}{c}{\textsc{Get Distance (Current Location)}}\\
 		\hline
-		...\\
+		\texttt{getLatLon()} & Leaflet position (array) & N/A & \texttt{innerHTML} [2]\\
 		\hline
+		\multicolumn{4}{c}{\textsc{Get Distance (Current Location)}}\\
 		\hline
-		\multicolumn{5}{c}{\textsc{`Conditioning'}}\\
+		\texttt{getDistanceCurr()} & Destination latitude (number), destination longitude (number) & Current latitude, Current longitude, Leaflet marker (current coordinates), Leaflet marker (destination coordinates), distance (\texttt{.distanceTo}), converted distance (km--mi) & Number\\
 		\hline
+		\multicolumn{4}{c}{\textsc{Get Distance (Custom)}}\\
 		\hline
+		\texttt{getDistance()} & Origin latitude (number), origin longitude (number), destination latitude (number), destination longitude (number) & Current latitude, Current longitude, Leaflet marker (origin coordinates), Leaflet marker (destination coordinates), distance (\texttt{.distanceTo}), converted distance (km--mi) & Number\\
 		\hline
-		\multicolumn{5}{c}{\textsc{Search `Ability'}}\\
+		\multicolumn{4}{c}{\textsc{Score Route}}\\
 		\hline
-		...\\
+		\texttt{scoreRoute()} & Elevation (number), distance (number), number of tops (number), types (array), stages (array), terrain types (array), terrain difficulties (array) & Conversion constant (ft--m), conversion constant (mi--km), types weight, stages weight, terrain types weight, terrain difficulties weight, types element weights, stages element weights, terrain types element weights, terrain difficulties element weights, types values, stages values, terrain types values, terrain difficulties values & Number\\
 		\hline
-		\multicolumn{5}{c}{\textsc{Search `Equipment'}}\\
+		\multicolumn{4}{c}{\textsc{Describe Route Score}}\\
 		\hline
-		...\\
+		\texttt{describeScore()} & Route score (number) & Inequality interval calculation & String\\
 		\hline
+		\multicolumn{4}{c}{\textsc{Search Route}}\\
 		\hline
-		\multicolumn{5}{c}{\textsc{`Weather'}}\\
+		\texttt{searchRoute()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
 		\hline
+		\multicolumn{4}{c}{\textsc{Show Route GPX}}\\
 		\hline
+		\texttt{showRoute()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & \texttt{map.setView}, Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMa- rker()}), Leaflet line\\
 		\hline
+		\multicolumn{4}{c}{\textsc{Search Landmass}}\\
 		\hline
-		\multicolumn{5}{c}{\textsc{`Conquest Map'}}\\
+		\texttt{searchLocation()} & Landmass name (string) & Landmass name, landmass type, landmass sub-type, landmass sub-sub-type, landmass parent landmass, landmass parent peak, landmass region, landmass sub-region, landmass informal region, hill name, hill type, \texttt{hideMarkers()}, \texttt{hideRoutes()}, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill prominence, hill isolation, hill summit feature, hill image, hillMarker (\texttt{createHillMarker()}), hillFromTo (\texttt{getDistanceCurr}) & \texttt{innerHTML}, \texttt{map.setView}\\
 		\hline
+		\multicolumn{4}{c}{\textsc{Show All Routes (Galactic Conquest)}}\\
 		\hline
-		\multicolumn{5}{c}{\textsc{Change Map Layer}}\\
+		\texttt{galacticConquest()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMa- rker()}), Leaflet line, \texttt{alert}\\
 		\hline
-		...\\
+		\multicolumn{4}{c}{\textsc{Show All Routes (Galactic Conquest)}}\\
 		\hline
-		\multicolumn{5}{c}{\textsc{Show Current Location \& Find Nearest}}\\
-		\hline
-		...\\
-		\hline
-		\multicolumn{5}{c}{\textsc{Show \& Hide Features}}\\
-		\hline
-		...\\
-		\hline
-		\multicolumn{5}{c}{\textsc{Filter Routes by `Ability'}}\\
-		\hline
-		...\\
-		\hline
-		\multicolumn{5}{c}{\textsc{Filter Routes by `Equipment'}}\\
-		\hline
-		...\\
-		\hline
-		\multicolumn{5}{c}{\textsc{Score Route}}\\
-		\hline
-		...\\
-		\hline
-		\multicolumn{5}{c}{\textsc{Describe Route Score}}\\
-		\hline
-		...\\
-		\hline
-		\multicolumn{5}{c}{\textsc{Search Route}}\\
-		\hline
-		...\\
-		\hline
-		\multicolumn{5}{c}{\textsc{Search Landmass}}\\
-		\hline
-		...\\
+		\texttt{hideRoutes()} & N/A & Loop array & \texttt{map.removeLayer}\\
 		\hline
 		\caption{Functions Summary}
 	\end{longtable}
 	\end{center}
+
+
+
+
+
+\newpage
 
 	\subsection*{Appendix 2: Foundational Material}
 

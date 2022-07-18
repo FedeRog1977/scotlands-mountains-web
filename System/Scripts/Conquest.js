@@ -1598,7 +1598,6 @@ function showRoute(landmass) {
 
 /*
  * Galactic Conquest (Show All Routes)
- * INCOMPLETE
  */
 var routesAll = [];
 
