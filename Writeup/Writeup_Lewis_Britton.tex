@@ -145,6 +145,8 @@
 			captionpos=b
 		}
 
+	\usepackage{dirtree}
+
 \begin{document}
 
 % Title Page
@@ -513,7 +515,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	This system is available as a website application, it could be accessed and used by anyone with access to the internet. Therefore, it is to some degree essential that users of all types are welcomed to the site, even if they have no prior knowledge of the industry or field. More importantly, the graphic design and methods of interfacing in the user interface should be accommodating of users with possible imparities, such as a [severe mental imparity], by taking a user-centered approach which considers visible accessibility controls which allow these users to interface with the system more easily. Accessibility does not however only refer to disability. Ensuring optimal accessibility also accounts for factors such as implementing clean and concise CSS and graphic design for simple and intuitive navigation, stimulation, relevance, etc. These approaches are widely considered and implemented.\\
 
-	In context, whether using the desktop or scaled mobile version of the site, the user interface implements many `friendly' universal standards. For example, it primarily uses the readable and elegant Sans-Serif font Audi AG and Serif font Garamond, with suitable font-sizing and color etc. Hue, saturation and luminance are appropriately considered/assigned to create [maximal optical pleasure] and proper readability with the correct contrast between elements. The well respected font-family Font Awesome, which is universally recognised, to display various standard symbols. In theory, these considerations lead to more efficient understanding and transitioning between elements of the site.
+	In context, whether using the desktop or scaled mobile version of the site, the user interface implements many `friendly' universal standards. For example, it primarily uses the readable and elegant Sans-Serif font Audi AG and Serif font Garamond, with suitable font-sizing and color etc. Hue, saturation and luminance are appropriately considered/assigned to create [maximal optical pleasure] and proper readability with the correct contrast between elements. The well respected font-family FontAwesome, which is universally recognised, to display various standard symbols. In theory, these considerations lead to more efficient understanding and transitioning between elements of the site.
 
 
 \newpage
@@ -992,7 +994,7 @@ if ((day.wind_deg) >= 348.76) {
 		`$-45$' accounts for the 45\textdegree\ visual offset as standard design in the symbol (return to 0\textdegree)\\
 		`$+180$' accounts for the `direction from which the wind is travelling' and rotates the symbol by 180\textdegree\ to point the nose of the arrow in the opposite direction which symbolizes the `direction in which the wind is travelling'\\
 		\hline
-		Note that these examples are extracted from `daily' weather forecasting. Near-identical code is replicated for the the `hourly' equivalent.\\
+		Note that these examples are extracted from `daily' weather forecasting. Near-identical code is replicated for the `hourly' equivalent.\\
 		\hline
 		\caption{Weather System Computations}
 	\end{longtable}
@@ -1110,9 +1112,45 @@ if ((day.wind_deg) >= 348.76) {
 	\end{center}
 	\end{table}
 
-		\subsubsection{System File Tree}
+\newpage
+
+		\subsubsection{System Directory Tree}
+
+	The following directory tree in Figure 6.4 maps the comprehensive structure of this system. Lower-tier files under `Audi' font, `aonach\_eagach' GPX, `udlaidh\_bhreac-liath' GPX and Leaflet images are omitted. However, directories are exhausted although they do include floating values (...) from $1$ to $N$ in their respective list. It of course does not include documentation such as this report.
 	
-	...
+	\begin{figure}[H]
+	%\renewcommand*\DTstyle{}
+	\DTsetlength{0.5em}{2em}{0.2em}{0.5pt}{1.5pt}
+	\dirtree{%
+		.1 ./.
+			.2 burning.css.
+			.2 Conquest.html.
+			.2 Fonts.
+				.3 Audi.
+				.3 NFS.ttf.
+			.2 GPX.
+				.3 aonach\_eagach.
+				.3 ....
+				.3 udlaidh\_bhreac-liath.
+			.2 index.html.
+			.2 JSON.
+				.3 abilityEquipment.json.
+				.3 Hills.json.
+			.2 Leaflet.
+				.3 images.
+				.3 ....
+				.3 leaflet.js.map.
+			.2 Photos.
+				.3 Conditioning.
+				.3 ....
+				.3 Weather.
+			.2 Scripts.
+				.3 abilitiesEquipment.js.
+				.3 ....
+				.3 Weather.js.
+	}
+	\caption{System Directory Tree}
+	\end{figure}
 
 		\subsubsection{Development Environment}
 
