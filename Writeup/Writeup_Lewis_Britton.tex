@@ -277,7 +277,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	The site upon which the system is spread is static, not dynamic, meaning any possible requests made buy the user are based on existing data. The site does not reference an external database for any purpose. Thus, no PHP or SQL-relevant content. The system is segmented into four, approximately equivalent, parts with the metric(s) determining their weight being algorithmic volume, number of services, etc.\\
 
-	The first, `home'/`drafting room', page allows the user to view a comprehensive overview of the site's offerings. It allows the user to quick-view activities in the `overview' section; analyse their projected personal ability and their projected gear performance (upon their input(s)) in the `conditioning' section under `ability' and `equipment cache'; and, view a coordinate-based weather briefing in the `weather' section. All of these sections include `key's and `suggested reading's. Yes, this site is that obnoxious.\\
+	The first, `home'/`drafting room', page allows the user to view a comprehensive overview of the site's offerings. It allows the user to quick-view activities in the `overview' section; analyse their projected personal ability and their projected gear performance (upon their input(s)) in the `conditioning' section under `ability' and `equipment'; and, view a coordinate-based weather briefing in the `weather' section. All of these sections include `key's and `suggested reading's. Yes, this site is that obnoxious.\\
 
 	The second, `conquest map', page allows the user to view and interact with various GPS and mapping features including their location and location seeking. It also includes functionality which allows pinpointing of particular features upon interaction, such as Munros, Munro Tops, Corbetts, Corbett Tops, etc. Further it includes aspects which allow the user to seek, be recommended, select and print GPX routes on the map.\\
 
@@ -460,11 +460,11 @@ This piece would not have been as efficient without the aid of the only acceptab
 	\begin{enumerate}
 	\setlength\itemsep{0cm}
 		\item Access the user's current location upon various types of request
-		\item View an `overview' of recommended routes
-		\item Accept inputs related to user `abilities' and compute and display results based on them
-		\item Accept inputs related to user `equipment' and compute and display results based on them
+		\item View a breakdown of route factors and elements
+		\item View and interact with ability factors and elements
+		\item View and interact with equipment factors and elements
 		\item View a weather forecast breakdown using real weather data
-		\item Display an Ordnance Survey map
+		\item Display an Ordnance Survey map with reference to the above
 	\end{enumerate}
 
 	Additionally, users and the system \textit{should have} the ability to:
@@ -481,7 +481,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 	\setlength\itemsep{0cm}
 		\item Create an account and have their data stored
 		\item Protect user data using an appropriate authentication and security system
-		\item Store and re-use user attributes such as the aforementioned `ability' and `equipment cache'
+		\item Store and re-use user attributes such as the aforementioned `ability' and `equipment'
 		\item Choose `priority attributes' relevant to their routes which are stored and used to generate more relevant route recommendations etc.
 	\end{enumerate}
 
@@ -739,7 +739,7 @@ This piece would not have been as efficient without the aid of the only acceptab
                 \end{center}
                         \caption{Post-Grunge}
                 \end{subfigure}
-		\caption{Distress Process}
+		\caption{Logo Text Distress Process}
 	\end{center}
 	\end{figure}
 
@@ -1038,21 +1038,93 @@ if ((day.wind_deg) >= 348.76) {
 
 	See section 5.3.1.4 for the breakdown of this component. There are additional features implemented in this function, in the relevance of the `Conquest Map'. As well as printing the body of text with the summary of all the attributes like before, this function also uses the \texttt{lat} and \texttt{lon} attributes of the hill firstly to input into another function which calculates the hill's distance from the user's current location and display this as part of the body-text output; and secondly, to center the map crosshair to the hill's location; and, calls a function which creates a single hill marker for the appropriate hill. This marker follows the same structure as those detailed in sections 5.3.4.4 and 5.3.4.7, except this time it prints only the single relevant Munro, `Top, Corbett or `Top.
 
-		%\subsubsection{`Ranger' Calculator}
-		%
-	%Ranger graphs: elevation profile, speed input, power input, heart rate input; Select: Constant Speed (Max); Output: Required Time and Power; Select: Constant Speed (Average); Output: Required Time and Power; Select: Constant Power Output; Output: Required Speed and Time; Input: Target Speed; Output: Required Time and Power; Input: Target Power Output; Output: Required Time and Power; Input: Target Energy Output; Output: Required Time and Power
-
 \newpage
 
 \section{System Construction}\label{ch6}
 
+	The goal in selecting methods through which to construct this system is aligned with [1] ensuring that all functional and non-functional requirements detailed in the \textit{System Requirements} section, determined by and for potential clients, are satisfied; and [2] all components of used to build the system work harmoniously to deliver the most efficient delivery, to the developer's (my) best knowledge and ability.
+
+	\subsection{Requirements Satisfaction}
+
+	Referring to sub-sub-sections 3.3.1 and 3.3.2 under the \textit{System Requirements} section, and user stories seen in Figure A3; and applying their relevance to data and functions detailed in Figures A4 and A6, respectively; requirements are satisfied as follow in Table 6.3.
+
+	\begin{center}
+		\scriptsize
+	\begin{longtable}{ccp{5.5cm}p{5.5cm}}
+		Req. & Status & Satisfaction(s) & Extension(s)\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Functional}}\\
+		\hline
+		1$^M$ & Y & Weather app$^{W,G}$, \texttt{getLatLon()}$^G$, \texttt{findLocation()}$^G$, \texttt{showLocation()}: use current location in weather app, find latitude and longitude of user's device, find current coordinates for map, print current coordinates as a marker on map & \texttt{findNearest()}, \texttt{getDistanceCurr()}: find nearest route to current coordinates, find distance form current coordinates marker to variable marker\\
+		2$^M$ & Y & \texttt{searchRoute()}: search for and display defined route data from the JSON file & \texttt{scoreRoute()}, \texttt{describeRoute()}, \texttt{searchLocation()}: compute a relative route score based on a mathematical algorithm, describe the route score based on the algorithmic results, search individual locations from the JSON file which appear isolated and as members of routes\\
+		3$^M$ & Y & \texttt{searchAbility()}: search for and display defined ability data from the JSON file & \texttt{refineRouteAbility()}: refine routes by declaring ability-based inputs\\
+		4$^M$ & Y & \texttt{searchEquipment()}: search for and display defined equipment data from the JSON file & \texttt{refineRouteEquipment()}: refine routes by declaring equipment-based inputs\\
+		5$^M$ & Y & Weather app$^{W,G}$: display `tiles' of daily and hourly weather data with current location as a location option & \texttt{selectMunroOpt()}, \texttt{inpMunroOpt()}, \texttt{selectCorbettOpt()}, \texttt{inpCorbettOpt()}, \texttt{selectCounty()}: select Munro to fetch and pass coordinates, input Munro to fetch and pass coordinates, select Corbett to fetch and pass coordinates, input Corbett to fetch and pass coordinates, select county to fetch and pass coordinates (... from JSON file ... to weather app)\\
+		6$^M$ & Y & `Conquest Map'$^O$, \texttt{findLocation()}$^G$, \texttt{showLocation()}, \texttt{createHillMarker()}, \texttt{createRouteMarker()}, \texttt{hideMarkers()}, \texttt{getLatLon()}$^G$, \texttt{getDistanceCurr()}, \texttt{getDistance()}, \texttt{searchRoute()}, \texttt{showRoute()}, \texttt{hideRoutes()}: find current coordinates for map, print current coordinates as a marker on map, print hill coordinates on map, hide hill markers, find latitude and longitude of user's device, find distance form current coordinates marker to variable marker, find distance from variable marker to variable marker, search for and display defined route data from the JSON file, display GPX data of route with other components, hide route GPX data and components & \texttt{findNearest()}, show pan coordinates, \texttt{showMunros()}, \texttt{showMunroTops()}, \texttt{showCorbetts()}, \texttt{showCorbettTops}, , \texttt{showMunro()}, \texttt{showMunroTop()}, \texttt{showCorbett()}, \texttt{showCorbettTop()}, \texttt{searchAbility()}, \texttt{searchEquipment()}, \texttt{refineRouteAbility()}, \texttt{refineRouteEquipment()}, \texttt{scoreRoute()}, \texttt{describeScore()}, \texttt{searchLocation()}, \texttt{galacticConquest()}: find nearest route to current coordinates, print all Munro coordinates on map, print all Munro Top coordinates on map, print all Corbett coordinates on map, print all Corbett Top coordinates on map, print defined Munro coordinates on map, print defined Munro Top coordinates on map, print defined Corbett coordinates on map, print defined Corbett Top coordinates on map, search for and display defined ability data from the JSON file, search for and display defined equipment data from the JSON file, refine routes by declaring ability-based inputs, refine routes by declaring equipment-based inputs, compute a relative route score based on a mathematical algorithm, describe the route score based on the algorithmic results, search individual locations from the JSON file which appear isolated and as members of routes, display GPX data of all routes with other components\\
+		1$^S$ & Y & \texttt{switchLayer()$^O$}: change OS map base layer choosing from `OS Leisure', `OS Road' and `OS Outdoor' & N/A\\
+		2$^S$ & Y & Center crosshair: display icon panning with the center of the map upon \texttt{move} & Pan coordinates: display panning latitude and longitude upon event \texttt{move}\\
+		1$^C$ & N & N/A: No database back-end & N/A\\
+		2$^C$ & N & N/A: No existing user data as no database back-end & N/A\\
+		3$^C$ & N & N/A: No existing user data as no database back-end & N/A\\
+		4$^C$ & N & N/A: No existing user data as no database back-end & N/A\\
+		1$^W$ & N & N/A: `Wont Have' requirement & N/A\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Non-Functional}}\\
+		\hline
+		1 & Y/P & Written using HTML5, CSS and JavaScript which are supported by all modern browsers. Therefore, all basic necessary content loads for the majority of users & Includes some external scripts references to libraries such as Leaflet, and FontAwesome. Leaflet rarely causes trouble however, some browsers do not support variations and iterations of FontAwesome symbols and generations\\
+		2 & Y & CSS included to ensure all elements which can be seen on the desktop site are visible clearly when scaled to mobile & Some elements are re-styled to add more `mobile friendly' and relevant interactivity\\
+		3 & Y & The `Overview', `Conditioning', `Weather' and `Conquest Map' all include elements such as search functions, `keys' and `suggested readings' which are purely informative in aiding knowledge and understanding of other functions of the site & N/A\\
+		4 & Y & As discussed, appropriate CSS is applied to make the site relevant to the theme and widely accessible & As discussed, graphic design, photo manipulation and non-essential CSS elements are included to further enhance the experience and enjoyment on the site\\
+		5 & Y & As discussed above, CSS standard adhere to required accessibility standards & N/A\\
+		\hline
+		\multicolumn{4}{p{12cm}}{Y: Yes, Satisfied; N: No, Not Satisfied; P: Partially Satisfied\newline <...>, <...>: ``...'', ``...'' under \textit{Satisfaction(s)} and \textit{Extension(s)} are syntactically respective\newline $^G$: Geolocation API; $^O$: OS API; $^W$: OpenWeather API (Prioritized script by relevance)}\\
+		\hline
+		\caption{Requirements Satisfaction}
+	\end{longtable}
+	\end{center}
+
+\newpage
+
 	\subsection{Development \& Languages}
+
+	Table 6.4 below details all of the languages, packages, libraries, APIs and development environments used throughout this development process; chosen by the developer (myself) to make the process as efficient and relevant to existing knowledge as possible. As a note, many would recommend the use of React.js JavaScript library in this development process due to its wide scope of JavaScript and JSON capabilities relevant to this site however, the goal was to stay minimal and efficient.
+
+	\begin{table}[h]
+		\scriptsize
+		\renewcommand{\arraystretch}{1.25}
+	\begin{center}
+	\begin{tabular}{l|p{1.75cm}p{2.25cm}p{2.5cm}p{3.25cm}}
+		\textsc{Application} & \textsc{Languages} & \textsc{APIs} & \textsc{Libraries/Scripts} & \textsc{Environment}\\
+		\hline
+		UI Functionality & HTML\newline JavaScript & Geolocation\newline Open Weather\newline Ordnance Survey & Leaflet\newline Mapbox\newline Chart.js$^1$ & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.html}, \texttt{.js}\\
+		UI Style/Design & CSS & N/A & FontAwesome & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.css}\\
+		Supporting Data & JSON & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.json}\\
+		Graphic Design & N/A & N/A & N/A & Windows 7 Program\newline \rotatebox[origin=c]{180}{$\Lsh$} Serif Page Plus X9\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.pdf}, \texttt{.jpg}\\
+		Photo Manipulation & N/A & N/A & N/A & Linux Program\newline \rotatebox[origin=c]{180}{$\Lsh$} GIMP\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.png}, \texttt{.jpg}\\
+		Transcription & N/A & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.tex}\newline \rotatebox[origin=c]{180}{$\Lsh$} PDFLaTeX/XeLaTeX\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.pdf}\\
+		\hline
+		\multicolumn{5}{l}{$^1$: Not used, discussed latterly}\\
+		\hline
+	\end{tabular}
+		\caption{Development Components}
+	\end{center}
+	\end{table}
+
+		\subsubsection{System File Tree}
+	
+	...
 
 		\subsubsection{Development Environment}
 
-		\subsubsection{Front-End \& User Interface}
+	Throughout this development process, there appears no use of any proprietary software as it remains an unreliable, unnecessary, expensive and bloated method of completing tasks. Especially those which may be executed using, for example, one command in the command line or in Vim; or, a set of processes which may be executed more efficiently using, for example, a widely applicable Vim command. Using [free and open source software] such as the operating system ([Artix Linux]), environment (command line / Vim), APIs and libraries significantly increases freedom and extensibility of the project. Hence, the use of dwm's window tiling manager to allow efficient, continuous and conjunctive writing of HTML, CSS, JavaScript and {\TeX}\ documents alongside browser testing (Brave Browser). Any supporting non-essential documentation such as notes are written in plain text (\texttt{.txt}) files using Vim and comma-separated (\texttt{.csv}) files using SC-IM. [All. Plain. Text.]
 
-		\subsubsection{Supporting Data (JSON)}
+		\subsubsection{User Interface}
+
+	HTML (HTML5) is used to create the base functionality of this system as it supports all necessary APIs and external scripts. HTML also allows integration of appropriate external stylesheets such as those used to support access to FontAwesome. A minor non-noted script is used to allow the use of {\TeX}\ syntax when writing supporting content such as formul\ae. Furthermore, the benefits of using CSS (CSS3) include: design, scalability and accessibility factors and have been previously discussed. A CSS-less site may be more functional and relatable however, good CSS takes a system from a plain website to a relevant web application. Furthermore, JavaScript ties-in the interactivity and manipulation of the APIs. A combination of external and local scripts are used to [1] make the APIs functional, and [2] make them relevant, respectively. Additionally, there are smaller JavaScript elements throughout the system which do not relate to pure functionality and serve purposes such as the manipulation of CSS and styling elements, etc.
+
+		\subsubsection{Supporting Data}
+
+	JavaScript Object Notation (JSON) files are included to store relevant data as previously discussed, and detailed in Figure A4. They interact with elements of JavaScript scripts to allow access to, fetching of, and use of relevant data for computations and output on the site. If the site were to be expanded in the future to contain user data and a log-in system for example, supporting data would extend to a collection of CSV (\texttt{.csv}) files, and various PHP (\texttt{.php}) and SQL (\texttt{.sql}) protocol. These would be used to write, store, organize/manage and access (read) larger-scale data and requests.
 
 	\subsection{Application Programming Interfaces \& Libraries}
 
@@ -1060,27 +1132,47 @@ if ((day.wind_deg) >= 348.76) {
 
 		\subsubsection{Geolocation}
 
-		\subsubsection{Ordnance Survey}
-
-		OS Road (1 : 250 000), OS Landranger (1 : 50 000), OS Explorer (1 : 25 000)
+	The Geolocation API (Geolocation, 2022) is used to access the current latitude and longitude of the user's device. This has many applications, as detailed in Table 6.3 and Figure A6, such as displaying the user's current coordinates as a string, calculating distances, fetching weather data for the user's current location, displaying the user's current coordinates on a map, etc.
 
 		\subsubsection{Open Weather}
 
+	The OpenWeather API (OpenWeather, 2022) is used to provide access to a comprehensive collection of weather statistics in a JSON format. It includes minutely, hourly and daily data; of which, hourly and daily are used in querying and presentation in the `Weather' section (weather app).
+
+		\subsubsection{Ordnance Survey (OS)}
+
+		The Ordnance Survey (Ordnance Survey, 2022) API is a topographical map API, used in conjunction with Leaflet (section 6.3.4), to display and produce base map layers in a website. Used in this context are \textit{Leisure} maps: OS Road (1 : 250 000), OS Landranger (1 : 50 000) and OS Explorer (1 : 25 000); \textit{Road} maps 1 : 50 000 and 1 : 25 000; and \textit{Outdoor} maps 1 : 50 000 and 1 : 25 000.
+		
 		\subsubsection{Leaflet}
 
-		Leaflet JavaScript library for maps
+		Leaflet (Leaflet, 2022) is a JavaScript library used to produce and manipulate map layers from a map API. It's used in this context for the majority of the functionality under the `Conquest Map', as discussed in various sections and appendices throughout this report.
 
-		\subsubsection{Mapbox}
+		\subsubsection{Mapbox GL-JS}
 
-		Mapbox script for GPX-GeoJSON conversion
+		A Mapbox GL-JS (Mapbox, 2022) script was used in this site for the conversion of GPX files to GeoJSON when being read in JavaScript scripts. This is an essential component at the stage where route GPX files are read and thus [1] printed as a Leaflet line on the map, and [2] used to determine the start coordinates of a route in order to produce a Leaflet marker for that location.
 
 		\subsubsection{Chart.js}
+	
+		Chart.js (Chart.js, 2022) is a JavaScript library for graphing statistics. It was originally intended for use in the `Ranger' section of the site, which would have acted as another page equivalent to the `Conquest Map' based on user-input-based data analysis. Some of it's features would also be available to view and used to manipulate route searching in `Conquest Map', much like `Ability' and `Equipment'.\\
 
-		Chart.js JavaScript library for ranger
+		The separate graphing page, or `calculator', would have included features based on elevation profile, speed input, power input, heart rate input, etc., which could be analysed through the graphing and charting of protocol such as the following:
+
+		\begin{itemize}
+		\setlength\itemsep{0cm}
+			\item Select: constant speed (max); Output: required time and power
+			\item Select: constant speed (average); Output: required time and power
+			\item Select: constant power Output; Output: required speed and time
+			\item Input: target speed; Output: Required time and power
+			\item Input: target power output; Output: required time and power
+			\item Input: target energy output; Output: required time and power
+		\end{itemize}
+
+		As previously noted, this portion was omitted due to time constraints and lack of relevance to the brief. Although it could make a future appearance beyond the constraints of this project.
 
 	\subsection{Project Management}
 
 		\subsubsection{Life-Cycle \& Timing}
+
+	GANTT chart
 
 		\subsubsection{Supporting Tools}
 
@@ -1113,6 +1205,8 @@ if ((day.wind_deg) >= 348.76) {
 	Some GPX files do not function as intended
 
 	\subsection{Potential Enhancements}
+
+	Some variable and function names which were created during different time periods in the project could use revision as they are slightly inconsistent in places. For example, input functions which serve the same purpose (searching the JSON file for a Munro name) in the weather app and `Overview'/`Conquest Map' sections have inconsistent syntax in their names: , respectively. Minor consistency/continuity issues like this should be fixed given greater time allocated to non-functional code readability issues.
 
 \newpage
 
@@ -1436,8 +1530,7 @@ er (Mobile)}\\
 		\hline
 		\hline
 		\multicolumn{4}{c}{\textsc{`Overview'}}\\
-		\hline
-		\hline
+		\hline \hline
 		\multicolumn{4}{c}{\textsc{Score Route}}\\
 		\hline
 		\texttt{scoreRoute()} & Elevation (number), distance (number), number of tops (number), types (array), stages (array), terrain types (array), terrain difficulties (array) & Conversion constant (ft--m), conversion constant (mi--km), types weight, stages weight, terrain types weight, terrain difficulties weight, types element weights, stages element weights, terrain types element weights, terrain difficulties element weights, types values, stages values, terrain types values, terrain difficulties values & Number\\
@@ -1516,7 +1609,7 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Find Nearest Project}}\\
 		\hline
-		...\\
+		\texttt{findNearest()} & ...\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Show Pan Coordinates}}\\
 		\hline
@@ -1572,11 +1665,11 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Filter Routes by `Ability'}}\\
 		\hline
-		...\\
+		\texttt{refineRouteAbility()} & ...\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Filter Routes by `Equipment'}}\\
 		\hline
-		...\\
+		\texttt{refineRouteEquipment()} & ...\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Get Distance (Current Location)}}\\
 		\hline
@@ -1686,65 +1779,72 @@ er (Mobile)}\\
 
 	\bibitem{}
 		Walkhighlands. (2022).
-		\textsl{Walkhighlands: Scotland walks and accommodation}
+		\textsl{Walkhighlands: Scotland walks and accommodation.}
 		Available At:
 		\texttt{https://www.walkhighlands.co.uk/}
 		(Accessed: 22/03/2022).
 
 	\bibitem{}
 		MDN Web Docs. (2022).
-		\textsl{Geolocation API - MDN Web Docs}
+		\textsl{Geolocation API - MDN Web Docs.}
 		Available At:
 		\texttt{https://developer.mozilla.org/en-US/docs/Web/API/Geolocation\_API}
 		(Accessed: 08/04/2022).
 
 	\bibitem{}
 		Peakbagger.com (2022).
-		\textsl{Search - Peakbagger.com}
+		\textsl{Search - Peakbagger.com.}
 		Available At:
 		\texttt{https://www.peakbagger.com/Search.aspx}
 		(Accessed: 03/04/2022).
 
 	\bibitem{}
 		Harold Street. (2022).
-		\textsl{Mountain GPS Waypoints \& Hill Bagging Lists}
+		\textsl{Mountain GPS Waypoints \& Hill Bagging Lists.}
 		Available At:
 		\texttt{https://www.haroldstreet.org.uk/waypoints/}
 		(Accessed: 03/04/2022).
 
 	\bibitem{}
 		OpenWeather. (2022).
-		\textsl{One Call API: weather data for any geographical coordinate - OpenWeatherMap}
+		\textsl{One Call API: weather data for any geographical coordinate - OpenWeatherMap.}
 		Available At:
 		\texttt{https://openweathermap.org/api/one-call-api}
 		(Accessed: 03/04/2022).
 
 	\bibitem{}
 		Leaflet. (2022).
-		\textsl{}
+		\textsl{Documentation - Leaflet - a JavaScript library for interactive maps.}
 		Available At:
 		\texttt{https://leafletjs.com/reference-1.7.1.html}
 		(Accessed: 03/04/2022).
 
 	\bibitem{}
 		FontAwesome. (2021).
-		\textsl{}
+		\textsl{Search v5 Icons | Font Awesome.}
 		Available At:
 		\texttt{https://fontawesome.com/v5/search}
 		(Accessed: 08/04/2022).
 
 	\bibitem{}
 		Ordnance Survey. (2022).
-		\textsl{}
+		\textsl{Examples | OS Data Hub.}
 		Available At:
-		\texttt{https://labs.os.uk/public/os-data-hub-examples/os-names-api/find-example-placename}
+		\texttt{https://labs.os.uk/public/os-data-hub-exam ples/os-names-api/find-example-placename}
 		(Accessed: 03/04/2022).
 
 	\bibitem{}
 		Chart.js. (2022).
-		\textsl{}
+		\textsl{Chart.js.}
 		Available At:
 		\texttt{https://www.chartjs.org/docs/latest/}
+		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		Mapbox. (2022).
+		\textsl{toGeoJSON.}
+		Available At:
+		\texttt{https://mapbox.github.io/togeojs on/}
 		(Accessed: 03/04/2022).
 
 	\end{thebibliography}
