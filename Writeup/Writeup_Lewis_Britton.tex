@@ -154,9 +154,11 @@
 \pagenumbering{gobble}
 
 	\title{
+		\HRule{0.5pt}\\ [-0.9cm]
                 \HRule{0.5pt}\\ [0.3cm]
                 \huge\textsc{CS958 Project}\\
                 \Large\textsc{Coursework Assignment}\\ [0.25cm]
+		\HRule{0.5pt}\\ [-0.7cm]
                 \HRule{0.5pt}
                 }
 	\author{
@@ -1095,15 +1097,26 @@ if ((day.wind_deg) >= 348.76) {
 		\scriptsize
 		\renewcommand{\arraystretch}{1.25}
 	\begin{center}
-	\begin{tabular}{l|p{1.75cm}p{2.25cm}p{2.5cm}p{3.25cm}}
-		\textsc{Application} & \textsc{Languages} & \textsc{APIs} & \textsc{Libraries/Scripts} & \textsc{Environment}\\
+	\begin{tabular}{l|p{1.75cm}p{2.25cm}p{2cm}p{3.5cm}}
+		\textsc{Application} & \textsc{Languages} & \textsc{APIs} & \textsc{Lib./Scripts} & \textsc{Environment}\\
+		\hline
 		\hline
 		UI Functionality & HTML\newline JavaScript & Geolocation\newline Open Weather\newline Ordnance Survey & Leaflet\newline Mapbox\newline Chart.js$^1$ & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.html}, \texttt{.js}\\
+		\hline
 		UI Style/Design & CSS & N/A & FontAwesome & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.css}\\
+		\hline
 		Supporting Data & JSON & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.json}\\
+		\hline
 		Graphic Design & N/A & N/A & N/A & Windows 7 Program\newline \rotatebox[origin=c]{180}{$\Lsh$} Serif Page Plus X9\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.pdf}, \texttt{.jpg}\\
+		\hline
 		Photo Manipulation & N/A & N/A & N/A & Linux Program\newline \rotatebox[origin=c]{180}{$\Lsh$} GIMP\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.png}, \texttt{.jpg}\\
-		Transcription & N/A & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.tex}\newline \rotatebox[origin=c]{180}{$\Lsh$} PDFLaTeX/XeLaTeX\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.pdf}\\
+		\hline
+		Transcription & N/A & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.tex}\newline \rotatebox[origin=c]{180}{$\Lsh$} (PDF){\LaTeX}/(Xe){\LaTeX}\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.pdf}\\
+		\hline
+		Document Distribution & N/A & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} neoMutt\\
+		\hline
+		Version Control & CLI Shell & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} GitHub CLI\\
+		\hline
 		\hline
 		\multicolumn{5}{l}{$^1$: Not used, discussed latterly}\\
 		\hline
@@ -1158,7 +1171,7 @@ if ((day.wind_deg) >= 348.76) {
 
 		\subsubsection{User Interface}
 
-	HTML (HTML5) is used to create the base functionality of this system as it supports all necessary APIs and external scripts. HTML also allows integration of appropriate external stylesheets such as those used to support access to FontAwesome. A minor non-noted script is used to allow the use of {\TeX}\ syntax when writing supporting content such as formul\ae. Furthermore, the benefits of using CSS (CSS3) include: design, scalability and accessibility factors and have been previously discussed. A CSS-less site may be more functional and relatable however, good CSS takes a system from a plain website to a relevant web application. Furthermore, JavaScript ties-in the interactivity and manipulation of the APIs. A combination of external and local scripts are used to [1] make the APIs functional, and [2] make them relevant, respectively. Additionally, there are smaller JavaScript elements throughout the system which do not relate to pure functionality and serve purposes such as the manipulation of CSS and styling elements, etc.
+	HTML (HTML5) is used to create the base functionality of this system as it supports all necessary APIs and external scripts. HTML also allows integration of appropriate external stylesheets such as those used to support access to FontAwesome. A minor non-noted script is used to allow the use of {\TeX}\ syntax when writing supporting content such as formul\ae. Furthermore, the benefits of using CSS (CSS3) include: design, scalability and accessibility factors and have been previously discussed. A CSS-less site may be more functional and relatable however, good CSS takes a system from a plain website to a relevant web application. Furthermore, JavaScript ties-in the interactivity and manipulation of the APIs. A combination of external and local scripts are used to [1] make the APIs functional, and [2] make them relevant, respectively. Additionally, there are smaller JavaScript elements throughout the system which do not relate to pure functionality and serve purposes such as the manipulation of CSS and styling elements, etc. Serif Page Plus X9 and GIMP are used in Windows 7 and Artix Linux respectively for graphic design and photo manipulation purposes as previously discussed.
 
 		\subsubsection{Supporting Data}
 
@@ -1206,13 +1219,78 @@ if ((day.wind_deg) >= 348.76) {
 
 		As previously noted, this portion was omitted due to time constraints and lack of relevance to the brief. Although it could make a future appearance beyond the constraints of this project.
 
+\newpage
+
 	\subsection{Project Management}
+
+	The primary goal in constructing this site remains to be the delivery of a functional web application, relative to the brief and requirements, by the project deadline in August. To ensure that the appropriate time and resources are allocated to each segment of the system's construction, continuous planning and documentation was applied. Not extensively or in any professional manner however, as this is still a [solo project]. This process does ensure a clear understanding of resource/environment management, system layers, and the scale and scope of elements.
 
 		\subsubsection{Life-Cycle \& Timing}
 
-	GANTT chart
+	No formal framework is used in this scenario. However, the project is divided into intuitive sections which segment: project planning; gathering of supporting data; user interface functionality and data use; and, continuous testing and documentation. With reference to the testing stages, each element developed is tested as soon as is necessary by the developer (myself), to instantly correct minor issues. In the latter stages, the system is tested as-a-whole by myself and externals, and analysed in more depth. This style of testing does indeed have some relevance to the `sprint' concept of `Agile' in that project stages are assigned periods which involve continuous reference to the user-centered approach of requirements and testing. Each stage of this also considers the discussed MoSCoW hierarchy.\\
+
+	Throughout this project I adhere to a very minimal and efficient schedule kept using my [Calcurse] calendar client. An overview of this schedule can be seen in the below GANTT Chart, in Table 6.5. It illustrates all of the major project aspects listed above. Note that a chart such as this is always subject to amendment. This illustrative method is useful for both milestones and available tolerances. The chart runs from the dedicated project timespan: the first full week in May (w/c 2$^\textrm{nd}$) until the final full week in July (w/e 31$^\textrm{st}$) (13 weeks). Secondly, I maintain a plain text notes file which allows me to clearly list `to-do' items, issues, constraints, test results, and things alike; for review, amendment and write-up at a later date.
+
+	\vspace{\fill}
+
+	\begin{center}
+		\textsc{Turn \& Rotate Page}
+	\end{center}
+
+\begin{landscape}
+
+        \begin{table}[h]
+                \tiny
+                \renewcommand{\arraystretch}{1.25}
+        \begin{center}
+        \begin{tabular}{rll|cccccccccccccc}
+                \textsc{\#} & \textsc{Task} & \textsc{Tools} & \textsc{W1} & \textsc{W2} & \textsc{W3} & \textsc{W4} & \textsc{W5} & \textsc{W6} & \textsc{W7} & \textsc{W8} & \textsc{W9} & \textsc{W10} & \textsc{W11} & \textsc{W12} & \textsc{W13}\\
+                \hline
+                \textbf{1} & \textbf{Project Planning} &\\
+		1.1 & Requirements Gathering & [Big-Brain] & \cellcolor{gray}\\
+		1.2 & Requirements Implementation Planning & [Big-Brain] & \cellcolor{gray}\\
+		1.3 & Continuous Documentation & [Big-Brain], Calcurse, Text Files & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		1.4 & Requirements Review & [Big-Brain] & & \cellcolor{gray}\\
+                \hline
+		\textbf{2} & \textbf{Gathering of Supporting Data} &\\
+		2.1 & Research & Web Browser & & \cellcolor{gray}\\
+		2.2 & Determining Use & [Big-Brain] & & \cellcolor{gray}\\
+		2.3 & Structuring Data & JSON & & \cellcolor{gray} & \cellcolor{gray}\\
+		2.4 & Hosting Data & GitHub & & \cellcolor{gray} & \cellcolor{gray}\\
+		\hline
+                \textbf{3} & \textbf{User Interface} &\\
+		3.1 & Structuring Pages & HTML & & \cellcolor{gray} & \cellcolor{gray}\\
+		3.2 & Functionality & HTML & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		3.3 & Design \& Accessibility & CSS, JavaScript & & & & & & \cellcolor{gray} & \cellcolor{gray}\\
+		3.4 & Additional Design & GIMP (Photo Manipulation) & & & & & & \cellcolor{gray} & \cellcolor{gray}\\
+		3.5 & Implementing Data & JavaScript, JSON & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		3.6 & Communications \& Transactions & HTML, JavaScript & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		3.7 & Requirements Review & [Big-Brain] & & & & & & & & & \cellcolor{gray}\\
+                \hline
+		\textbf{4} & \textbf{Review \& Additional Testing} &\\
+		4.1 & Continuous Element Testing & HTML, JavaScript, Cmd Line & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		4.2 & Isolated Element Testing & HTML, JavaScript, Cmd Line & & & & & & & & & \cellcolor{gray}\\
+		4.3 & Isolated Comprehensive Testing & HTML, JavaScript, Cmd Line & & & & & & & & & \cellcolor{gray}\\
+		4.4 & Distribute System for Testing & E-Mail Server/Client, People & & & & & & & & & \cellcolor{gray}\\
+		4.5 & Review Feedback \& Implement Changes & Various & & & & & & & & & \cellcolor{gray} & \cellcolor{gray}\\
+                \hline
+		\textbf{5} & \textbf{Write-Up} &\\
+		5.1 & Structure Report & Various & & & & & & & & & & \cellcolor{gray}\\
+		5.2 & Write Body of Report & Various & & & & & & & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		5.3 & Write \& Amend Appendices and Figures & Various & & & & & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+                \hline
+        \end{tabular}
+                \caption{GANTT Chart}
+        \end{center}
+        \end{table}
+
+\end{landscape}
 
 		\subsubsection{Supporting Tools}
+
+	Following from section 6.2 and it's Table 6.4, the `transcription' section remains not-discussed. For this purpose, a more [neomodernist] installment of [Donald E. Knuth's {\TeX}] ({\LaTeX}) is used to compose and transcribe formal final report material. Again, plain text (\texttt{.tex}) files are the option favoured as it's most efficient and easiest to work with. These are compiled using (PDF){\LaTeX}\ in this case, into versatile PDF (\texttt{.pdf}) documents. Although some mathematical and \texttt{tikz} elements could benefit from the use of (Xe){\LaTeX}. My [neoMutt] e-mail client is used in the distribution of surveys etc. to testers and people alike.\\
+
+	Finally, \href{https://github.com/FedeRog1977}{GitHub} is favoured as the version control manager for this site and it's documentation. This provides `assurance' of the safety of documents and insurance in the case of local issues. For example, in a scenario requiring Git Revert or simply restoring a backup. As this is a web application, the directory tree is equivalent to the system tree of the site. In the future, this site could also be deployed using GitHub pages, much like \href{http://lewisbritton.com/}{lewisbritton.com}. If code from this site, such as the region and landmass data JSON file, were to be published on a more professional basis, a Markdown (\texttt{.md}) README file would be composed and added to my GitHub.
 
 \newpage
 
@@ -1796,11 +1874,31 @@ er (Mobile)}\\
 
 		I have received numerous comments which anyone would regard na\"{i}ve and under-educated regarding my pre-title of this study: \textit{AG436 Dissertation Coursework Assignment}. The argument originates in the `Coursework Assignment’ portion. People argue that a dissertation `is not’/`does not have’ an assignment. Not only is this poor characteristic recognition, it is semantically wrong. \textit{AG436: Dissertation} is a class just like any other. However under this class, there are no lectures, no tutorials and therefore no exams as there is no [taught] content. Do not confuse this with the class `having no content’ though. AG436’s content is apparent through literature of the student’s choice. Therefore, it is possible for a `coursework assignment’ to be based on this. Hence, any further comments are null.
 
+\newpage
+
 		\subsubsection*{Figure B4: Lorn and Lorne}
 
-		Ranking of Lorne from House of Bruar to Malcolm Allan.
+		Many of the uneducated among us (hahaha) often confuse the term `Lorn' with `Lorne'. Although it's argued by many inbred highlanders that the two words may be used interchangeably, our slavemasters at Ordnance Survey have determined otherwise; that `Lorn' refers to the division found in the OS region \textit{Fort William, Lochaber and Lorn} (as printed in OS Explorer 384: Glen Coe \& Glen Etive); where, `Lorne' refers to the popular breakfast food choice of alcoholics, drug addicts, and fine gentlemen named Derek.\\
 
-		...
+		Henceforth, when in the region of Fort William, Lochaber and Lorn, myself and my gentlemen often like to retire after a long night at [BAR] to [Lee's kitchen] where we will cook up a storm of Lorne. Over many hours of experimentation and trials, we have produced the following rankings:
+
+		\begin{table}[h]
+			\scriptsize
+			\renewcommand{\arraystretch}{1.25}
+		\begin{center}
+		\begin{tabular}{rr|p{2.3cm}p{2.3cm}p{2.3cm}p{3cm}}
+			\textsc{\#} & \textsc{Brand} & \textsc{Beef \%} & \textsc{Description} & \textsc{Photograph}\\
+			\hline
+			1 & House of Bruar & 78\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/bruar_lorne.jpg}\\
+			2 & Simon Howie (Steak) & \textasciitilde40\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/sh_lorne.png}\\
+			3 & Marks \& Spencer & \textasciitilde40\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/ms_lorne.jpeg}\\
+			4 & Simon Howie (Beef) & \textasciitilde35\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/sh_lorne2.png}\\
+			5 & Malcolm Allan & \textasciitilde30\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/ma_lorne.jpg}\\
+			\hline
+		\end{tabular}
+			\caption{Lorne Rankings}
+		\end{center}
+		\end{table}
 
 \newpage
 
