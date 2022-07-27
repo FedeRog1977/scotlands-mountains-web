@@ -1,3 +1,0 @@
-Issues
-
-* origin of EPSG:27700 coordinate system required manual calibration in order to function with EPSG:4326

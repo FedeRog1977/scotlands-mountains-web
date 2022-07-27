@@ -155,10 +155,10 @@
 
 	\title{
 		\HRule{0.5pt}\\ [-0.9cm]
-                \HRule{0.5pt}\\ [0.3cm]
+                \HRule{0.5pt}\\ [0.4cm]
                 \huge\textsc{CS958 Project}\\
                 \Large\textsc{Coursework Assignment}\\ [0.25cm]
-		\HRule{0.5pt}\\ [-0.7cm]
+		\HRule{0.5pt}\\ [-0.725cm]
                 \HRule{0.5pt}
                 }
 	\author{
@@ -213,9 +213,10 @@
 \pagenumbering{roman}
 
 	\begin{abstract}
+		This piece extensively details and provides context to all components of the system I've developed for this project: \textit{Burning Roots}. The system explores the context of the system, being the Scottish highlands; it's landmasses and their routes, with additional components such as ability factors, equipment (`gear') factors and the contribution of weather. The system is written in HTML, CSS and JavaScript; uses JSON data store for high-level querying; implements GPX files using the GPX-to-GeoJSON method; uses user-specific location services through the Geolocation API; accesses weather data using the OpenWeather API; and present the user with an interactive map, based on these factors, using the Ordnance Survey API and Leaflet. Post-completion of the system, this piece details all elements of the software development process which have been practiced, including: requirement gathering; development environments; the user interface logic and design; data storage and use; continuous prototyping; continuous test-driven development; user testing; and accessibility and usability factors. It finds that opportunities taken, with reference to the selected languages, APIs and libraries, etc., efficient routes are selected and client criteria are successfully met, although there remains adequate room for expansion and improvement given the nature of the scripting; how functions are written and interlink, etc.
 	\end{abstract}
 
-	\textsc{Index terms:}
+	\textsc{Index terms}: web application, website, site, system, geography, hiking, landmasses, routes, ability, equipment, weather forecasting, location services, HTML, CSS, JavaScript, JSON, GPX, Geolocation API, Ordnance Survey API, OpenWeather API, Leaflet, Mapbox GL-JS, graphic design, photo manipulation, software development, client requirements gathering, development environments, user interface, data, prototyping, test-driven development, user testing, accessibility, usability
 
 \newpage
 % Declaration
@@ -232,9 +233,11 @@
 	\end{tabular}
 	\end{center}
 
-	This document’s presentation reflects the use of {\LaTeX} typesetting (Figure B7), using Computer Modern Unicode (Figure B8) (I haven't reached my GNU Troff phase yet). This escapes the inane formatting requirements of my institution. References are presented using \textsc{Bib}{\TeX}, favouring \textsl{oblique} over \textit{italic}, in-line with Donald E. Knuth’s preference (Knuth, 2020). The process is executed in command line using Vim, which is a very powerful editor that has many commands, too many to explain in a tutor such as this. For maximum optical pleasure, the use of M$\mu$PDF is vigorously advised with [-I]. Navigate this document using h($\leftarrow$), j($\downarrow$), k($\uparrow$), l($\rightarrow$), ensuring that the Caps-Lock, Super-Key `mod', or any other command key is not depressed. Note that the Oxford Serial Comma is favoured throughout this text. This study's sentence structure focuses on pragmatics and syntax, disregarding bloated filler content. Arguments are coherent, logical, definitive and straight-to-the-point. Nugatory theory is ignored. If you are curious about any of the mathematical, operational, logical, etc., symbols or notation used in this report, a comprehensive {\LaTeX}-syntax-based symbolist will be available from my \href{http://lewisbritton.com/Library.html}{website library} from approximately summer 2021.\\
+	This document’s presentation reflects the use of {\LaTeX} typesetting (Figure B1), using Computer Modern Unicode (Figure B2). Unfortunately {\TeX}\ does not support the required selection of packages for this project, such as \texttt{tikz} and various code markup and math packages. Hence, PDFs are produced using the (PDF){\LaTeX}\ compiler, although (\textsc{Xe}){\LaTeX}\ could have been useful in places. Due to time constraints, I've not been able to master the fine art of GNU Troff, so transcriptions will not be blessed by the Groff-PostScript combo. Processes such as these help escape the inane formatting requirements of my institution. References are presented using \textsc{Bib}{\TeX}, favouring \textsl{oblique} over \textit{italic}, in-line with Donald E. Knuth’s preference (Knuth, 2020). The process is executed in command line using a newer version of Emperor Moolenaar's Vim (Moolenaar, 2020), neoVim, which is a very powerful editor that has many commands, too many to explain in a tutor such as this. It yields the `Full Vi Experience' (Vim Diesel, 2020). For maximum optical pleasure, such alike a photo of Lily Collins, the use of Zathura (not M$\mu$PDF!) is vigorously advised, with inversion (not sandwich). Ensure you have an appropriate \texttt{config}. Navigate this document using h($\leftarrow$), j($\downarrow$), k($\uparrow$), l($\rightarrow$), ensuring that the Caps-Lock, Super-Key `mod', or any other command key is not depressed.\\
+
+	The Oxford Serial Comma is favoured throughout this text. Sentence structure focuses on pragmatics and syntax, disregarding bloat. Arguments are coherent, logical, definitive and straight-to-the-point. Nugatory Soylicon Cuckley soydev `theory' is ignored. If you're curious about any of the mathematical, operational, logical, etc., symbols or notation used in this report, a comprehensive {\LaTeX}-syntax-based symbolist is available \href{http://lewisbritton.com/Library.html/Writings/Symbol-List.pdf}{here}.\\
  
-	The word count of this piece reflects relevant content from titles, heading classes 1, 2 and 3, paragraphs, footnotes, tables (excluding [results] tables 4.7, 5.10 $\rightarrow$ 5.20), table titles, figures, and figure titles in \textit{Chapters 1 $\rightarrow$ 6}. Word count excludes any pre/succeeding content from \textit{Abstract}, \textit{Declaration \& Information}, \textit{Acknowledgements}, \textit{Table of Contents}, \textit{Appendices}, and \textit{Bibliography}.\\
+	The word count of this piece reflects content from section heading classes 1, 2, 3 and 4, paragraphs, and footnotes in \textit{Sections 1 $\rightarrow$ 8}. Word count excludes any pre/succeeding content from \textit{Abstract}, \textit{Declaration \& Information}, \textit{Acknowledgements}, \textit{Table of Contents}, \textit{List of Tables}, \textit{List of Figures}, \textit{Appendices}, and \textit{Bibliography}. It also excludes content from tables, table titles, figures, and figure titles.\\
 
 	I declare that this document embodies the results of my own work and that it has been composed by myself. Following normal academic conventions, I have made due acknowledgement of the work of others.\\
 
@@ -247,11 +250,11 @@
 
 	\section*{Acknowledgements}
 
-I would like to thank my dissertation supervisor, Dr Devraj Basu, for his approach with regards belief that students must be self-disciplined, organised, structured and punctual to their own degree. This closely relates to my own personally practiced work ethic and philosophy of the ASAP standard.\\
+I would like to thank my dissertation supervisor, Alasdair Lambert, for his appropriate approach towards meetings and progress reporting. With support on a by-student basis, it is encouraging to be self-disciplined, organised, structured and punctual to one's own degree. This closely relates to my own practiced work ethic and idea of the ASAP standard. Again, no bloat such as formal planning practices or void meeting time.\\
 
-I would like to give credit for the computational aspect of this study to one of my biggest inspirations, John ``The Tzar'' Kelly. He inspired my love for everything barebones computational, from simple arrays (of hope), through Hyperthreading-enabled, all the way to x86 Assembly. I would also like to accredit Luke Smith for the foundation of my knowledge of Bram Moolenaar’s Vim and {\LaTeX}. This study’s presentation would not have optimal without Smith (2015).\\
+I would like to give credit for the computational aspect of this study to one of my biggest inspirations, \href{http://lewisbritton.com/Blog/Founding-Fathers.html}{John ``The ``J-Money'' Tzar'' Kelly}. He inspired my love for everything from arrays (of hope), Hyperthreading, to x86 Assembly. I would also like to accredit [Luke] Smith (2015) in this context for his contribution to the industry with LARBS, mutt-wizard and \href{https://m.youtube.com/watch?v=d8XtNXutVto}{\textit{Vim Diesel's OFFICIAL Vimtutor Let's Play/Commentary! (1 HOUR$+$ Special)}}.\\
 
-This piece would not have been as efficient without the aid of the only acceptable Linux distribution, `distro’ if you will, Arch Linux. I would like to thank Judd Vinet for his eye-opening and life-altering contribution to the development and computer-system enthusiast community. ‘The Arch Principal’ is certainly out in high force. Finally, for making use of this software mechanically efficient, I would like to thank IBM for the creation of the ThinkPad T23, X30, T42, R50e, T60, X60, X200, X220 and T420 neoVimPads, the UltraDock, and the 1987 Model M \textit{Catastrophically Buckling Compression Column Switch and Actuator} typehorse (US369 9296A, 1972). For your convenience, one of my \href{http://lewisbritton.com/Blog/ThinkFlow.html}{blog posts} can satisfy your interest in this. 
+This piece would not have been as efficiently executed without the master `distro’, if you will, Artix Linux. I would like to thank Judd Vinet specifically for this. For making this process mechanically efficient, I would like to thank IBM for my 2002 T23, 2005 X30, 2004 T42, 2005 R50e, 2011 X220, and 2011 T420 ThinkPads; and, my 1987 (sadly not 1984 because $\textrm{\pounds}$1,080 was less appealing than $\textrm{\pounds}$550) Model M \textit{Catastrophically Buckling Compression Column Switch and Actuator} typehorse (US369 9296A, 1972). See \href{http://lewisbritton.com/Blog/ThinkFlow.html}{more}. 
 
 \newpage
 
@@ -319,9 +322,11 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	For the natural ease in workflow, for the developer's mental state, and for the minimization of [nugatory] methodologies and [bloated] task flow [cargo donkeys] such as IDEs and [froymeworks], all files (including `code', data files, notes and write-up) are [composed and performed by Lewis Britton] in [Bram Moolenaar's Neo Vi Improved], in the command line of a pragmatic dwm setup on Artix. HTML, CSS and JavaScript is written from scratch in plain text format, therefore using no environment prompts or assistance, in order to keep the process practical. All write-up documentation is transcribed using [Donald `Don' E. Knuth's \TeX]. Or as some [neomoderinists] like to use, \LaTeX. Due to time constraint, there is unfortunately no mastering the fine art of [GNU Troff], so transcriptions may not appear [optically optimal] without the famous Groff-PostScript [multi-kill].
 
+\newpage
+
 	\subsection{Disposition}
 
-	So forth, the following elements of this project are responsible for...
+	So forth, the following elements of this project are responsible for...\\
 
 	\textsc{2 Research \& Evidential Background}\\
 
@@ -341,7 +346,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	\textsc{6 System Construction}\\
 	
-	Providing a closer look at and justification of the development environment, languages and protocols selected for the creation of this system and exploring the various APIs and JavaScript libraries and other supporting tools used to enhance the system and allow it to function in harmony. Also, Providing an overview of how these elements were implemented from a project management point of view.\\
+	Providing a closer look at and justification of the development environment, languages and protocol selected for the creation of this system and exploring the various APIs and JavaScript libraries and other supporting tools used to enhance the system and allow it to function in harmony. Also, Providing an overview of how these elements were implemented from a project management point of view.\\
 
 	\textsc{7 Evaluation}\\
 	
@@ -540,7 +545,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	Landmass data is of a similar format in that is stores records of GPS coordinate data upon the landmasses of Scotland. However, it extends to be far more complex. It includes data on landmasses themselves, which are anything resembling some significant land-form of Scotland. In this context, a landmass may either be a \textit{Mountain}, \textit{Mountain Range}, or \textit{Stand Alone}. A mountain is a single prominent feature which contains one or more hills without a contour drop of under 2000ft between summits; a mountain range is a group of prominent features which contain hills without a contour drop of under 1200ft between summits; and, a stand alone is a single prominent feature which contains one hill. `Hill' refers to \textit{Munros} and \textit{Corbetts}, not \textit{Munro/Corbett Tops}. Therefore, tops are not limited on stand alones but also do not determine a summit. For example, ``a stand alone landmass may have one Munro and two Munro Tops''. Note that \textit{Munro Tops} and \textit{Corbett Tops} sit at the height of Munros/Corbetts respectively however do not meet the elevation and distance criteria to be classed as their own hills. They must be present at maximum stationary points, not increasing points such as those at which cairns are often found. All attributes of landmasses and hills etc., and their hierarchy can be found in the breakdown of the JSON file in Figure A4.\\
 
-	Data was gathered, [wait for it...], primarily manually by myself by staring at OS Explorer 376\footnote{Oban \& North Lorn (Figure B4)}, Explorer 377\footnote{Loch Etive \& Glen Orchy} and Explorer 384\footnote{Glen Coe \& Glen Etive}. This provided access to information not yet recorded, such as Corries, Lochains and boulder fields of a landmass, for example. To ensure inclusion of all Munros and Corbetts, reference to Walkhighlands was made (Walkhighlands, 2022); and, to ensure inclusion of all Munro and Corbett Tops, Harold Street (2022) and Peakbagger.com (2022) were also investigated as they include more comprehensive community-driven data. Once again, data is stored in a JSON file hosted on my GitHub. Landmasses and their components are ordered south-to-north in the file, which will become more relevant subsequently.\\
+	Data was gathered, [wait for it...], primarily manually by myself by staring at OS Explorer 376\footnote{Oban \& North Lorn (Figure B3)}, Explorer 377\footnote{Loch Etive \& Glen Orchy} and Explorer 384\footnote{Glen Coe \& Glen Etive}. This provided access to information not yet recorded, such as Corries, Lochains and boulder fields of a landmass, for example. To ensure inclusion of all Munros and Corbetts, reference to Walkhighlands was made (Walkhighlands, 2022); and, to ensure inclusion of all Munro and Corbett Tops, Harold Street (2022) and Peakbagger.com (2022) were also investigated as they include more comprehensive community-driven data. Once again, data is stored in a JSON file hosted on my GitHub. Landmasses and their components are ordered south-to-north in the file, which will become more relevant subsequently.\\
 
 	Under the time constraint of the project, some omissions, amendments and notes were made as follows:
 
@@ -714,7 +719,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 			\paragraph{Desktop Publishing (DTP)}
 
-	This is an non-required portion of the project and exists to serve a purpose defined long before completion. The promotional piece is out of date however, is still beautiful and is displayed in Figure A5 for your leisure.
+	This is an non-required portion of the project and exists to serve a purpose defined long before completion. The promotional piece is out of date however, is still beautiful and is displayed in Figure A5 for your leisure. Note that some additional graphic design features were due to be implemented however, were omitted due to time constraints/relevance. For example, map symbols were all intended to be custom designs however FontAwesome was favoured instead.
 
 			\paragraph{Photo Manipulation}
 
@@ -726,6 +731,8 @@ This piece would not have been as efficient without the aid of the only acceptab
 		\caption{Logo (Made in GIMP)}
 	\end{center}
 	\end{figure}
+
+\newpage
 
 	The logo considers four relevant layers: text, shape, color, effects. The font (\textit{text}) represents an association with the `outdoor/natural' life theme of the system in it's rustic semi-Sans-Serif nature. \textit{Shape} is used in the 30\textdegree\ slant of the text, representing perceived distortion of space around the user and `natural ([420 B L A Z E $\ast$ I T]) high' experienced while moving at a fast-pace in the field. A red \textit{color} is used in the `burning' word to \textit{harmonize} with the word's semantic definition and \textit{emphasise} the `burning desire' for aspects discussed in the \textit{Introduction} section. A reverse-distress overlay (grunge effect) is used on the `roots' word to \textit{emphasise} the diverse combination of `worn', `distressed', `fatigued', `excited' and `accomplished' emotions experienced by the user in the field. This process is shown below in Figure 5.3.
 
@@ -763,7 +770,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 
 	This function exists purely to serve the Search Route function and has no purpose as a stand-alone. As it involves quite the lengthy arithmetic process however, it is granted its own sub-sub-sub-section. Although, to my judgement, this metric is fairly mathematically sound although will be constantly developed as I generate more ideas, it is still very subjective and based on my own experiences with and discussions about the Scottish hills and their conditions. Therefore, this `score' is not a definitive metric to describe the condition of a route to the masses. It should be judged and considered on an individual basis.\\
 
-	Henceforth, scoring a route takes into account [1] four groups of subjective scores based on weights and values of the four route element factors seen under routes in the JSON file (type, stages, terrain types, terrain difficulties), and [2] a more objective and logical multiplier based on total number of [Munro, `Top, Corbett, `Top] tops covered on-route, the total elevation gained, and the total distance covered. Actual values of the weights were gathered through personal consideration and conversation in the field and is therefore subject to constant adjustment. So forth, the multiplier was developed purely by myself. All parameters of this equation are as follows:
+	Scoring a route takes into account [1] four groups of subjective scores based on weights and values of the four route element factors under routes in the JSON file (type, stages, terrain types, terrain difficulties), and [2] a more objective and logical multiplier based on total number of [Munro, `Top, Corbett, `Top] tops covered on-route, the total elevation gained, and the total distance covered. Actual values of the weights were gathered through personal field consideration/conversation and are therefore subject to bias and constant adjustment. The multiplier was developed purely by myself. Parameters follow:
 
 	\begin{enumerate}
 	\setlength\itemsep{0cm}
@@ -777,7 +784,7 @@ This piece would not have been as efficient without the aid of the only acceptab
 		\item Terrain difficulties (weight, \{weights, `values'\}, `score') -- matrix
 	\end{enumerate}
 
-	This site using the traditionally functional imperial system therefore, as this computation actually calls for the one and only reasonable use of the metric system (mathematical scalability), conversion constants are required for elevation and distance. These are both justified to four significant figures. Mathematical notation for each of these processes follow (excuse the notational accuracy, it's been a while).\\
+	This site uses the functional imperial system therefore, as this computation calls for the one and only reasonable use of the metric system (mathematical scalability), conversion constants are required for elevation and distance. These are justified to four significant figures. Mathematical notation for each of these processes follow:
 
 \newpage
 
@@ -1055,7 +1062,7 @@ if ((day.wind_deg) >= 348.76) {
 	\begin{center}
 		\scriptsize
 	\begin{longtable}{ccp{5.5cm}p{5.5cm}}
-		Req. & Status & Satisfaction(s) & Extension(s)\\
+		Req. \# & Status & Satisfaction(s) & Extension(s)\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Functional}}\\
 		\hline
@@ -1111,7 +1118,7 @@ if ((day.wind_deg) >= 348.76) {
 		\hline
 		Photo Manipulation & N/A & N/A & N/A & Linux Program\newline \rotatebox[origin=c]{180}{$\Lsh$} GIMP\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.png}, \texttt{.jpg}\\
 		\hline
-		Transcription & N/A & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.tex}\newline \rotatebox[origin=c]{180}{$\Lsh$} (PDF){\LaTeX}/(Xe){\LaTeX}\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.pdf}\\
+		Transcription & N/A & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} Vim\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.tex}\newline \rotatebox[origin=c]{180}{$\Lsh$} (PDF){\LaTeX}/(\textsc{Xe}){\LaTeX}\newline \rotatebox[origin=c]{180}{$\Lsh$} \texttt{.pdf}\\
 		\hline
 		Document Distribution & N/A & N/A & N/A & Command Line\newline \rotatebox[origin=c]{180}{$\Lsh$} neoMutt\\
 		\hline
@@ -1129,7 +1136,7 @@ if ((day.wind_deg) >= 348.76) {
 
 		\subsubsection{System Directory Tree}
 
-	The following directory tree in Figure 6.4 maps the comprehensive structure of this system. Lower-tier files under `Audi' font, `aonach\_eagach' GPX, `udlaidh\_bhreac-liath' GPX and Leaflet images are omitted. However, directories are exhausted although they do include floating values (...) from $1$ to $N$ in their respective list. It of course does not include documentation such as this report.
+	The following directory tree in Figure 6.4 maps the comprehensive structure of this system. Lower-tier files under `Audi' font, `aonach\_eagach' GPX, `udlaidh\_bhreac-liath' GPX and Leaflet images are omitted. However, directories are exhausted although they do include floating values denoted by ellipses (...) from $1$ to $N$ in their respective list. It of course does not include documentation such as this report.
 	
 	\begin{figure}[H]
 	%\renewcommand*\DTstyle{}
@@ -1149,6 +1156,7 @@ if ((day.wind_deg) >= 348.76) {
 			.2 JSON.
 				.3 abilityEquipment.json.
 				.3 Hills.json.
+				.3 schema.json.
 			.2 Leaflet.
 				.3 images.
 				.3 ....
@@ -1191,7 +1199,7 @@ if ((day.wind_deg) >= 348.76) {
 
 		\subsubsection{Ordnance Survey (OS)}
 
-		The Ordnance Survey (Ordnance Survey, 2022) API is a topographical map API, used in conjunction with Leaflet (section 6.3.4), to display and produce base map layers in a website. Used in this context are \textit{Leisure} maps: OS Road (1 : 250 000), OS Landranger (1 : 50 000) and OS Explorer (1 : 25 000); \textit{Road} maps 1 : 50 000 and 1 : 25 000; and \textit{Outdoor} maps 1 : 50 000 and 1 : 25 000.
+		The Ordnance Survey (Ordnance Survey, 2022) API is a topographical map API, used in conjunction with Leaflet (section 6.3.4), to display and produce base map layers in a website. Used in this context are \textit{Leisure} maps: OS Road (1 : 250 000), OS Landranger (1 : 50 000) and OS Explorer (1 : 25 000); \textit{Road} maps 1 : 50 000 and 1 : 25 000; and \textit{Outdoor} maps 1 : 50 000 and 1 : 25 000. Note that this API did require some adjustment upon initiation. As this system is primarily based on the Leisure map, it uses the EPSG:27700 coordinate system. Therefore, the origin point of the map layer required manual calibration in order to function with the iconic 1984 EPSG:4326 system; to which all associated GPX, GeoJSON and JSON relate.
 		
 		\subsubsection{Leaflet}
 
@@ -1225,7 +1233,7 @@ if ((day.wind_deg) >= 348.76) {
 
 	The primary goal in constructing this site remains to be the delivery of a functional web application, relative to the brief and requirements, by the project deadline in August. To ensure that the appropriate time and resources are allocated to each segment of the system's construction, continuous planning and documentation was applied. Not extensively or in any professional manner however, as this is still a [solo project]. This process does ensure a clear understanding of resource/environment management, system layers, and the scale and scope of elements.
 
-		\subsubsection{Life-Cycle \& Timing}
+		\subsubsection{Life-Cycle}
 
 	No formal framework is used in this scenario. However, the project is divided into intuitive sections which segment: project planning; gathering of supporting data; user interface functionality and data use; and, continuous testing and documentation. With reference to the testing stages, each element developed is tested as soon as is necessary by the developer (myself), to instantly correct minor issues. In the latter stages, the system is tested as-a-whole by myself and externals, and analysed in more depth. This style of testing does indeed have some relevance to the `sprint' concept of `Agile' in that project stages are assigned periods which involve continuous reference to the user-centered approach of requirements and testing. Each stage of this also considers the discussed MoSCoW hierarchy.\\
 
@@ -1268,16 +1276,19 @@ if ((day.wind_deg) >= 348.76) {
 		3.7 & Requirements Review & [Big-Brain] & & & & & & & & & \cellcolor{gray}\\
                 \hline
 		\textbf{4} & \textbf{Review \& Additional Testing} &\\
-		4.1 & Continuous Element Testing & HTML, JavaScript, Cmd Line & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
-		4.2 & Isolated Element Testing & HTML, JavaScript, Cmd Line & & & & & & & & & \cellcolor{gray}\\
-		4.3 & Isolated Comprehensive Testing & HTML, JavaScript, Cmd Line & & & & & & & & & \cellcolor{gray}\\
-		4.4 & Distribute System for Testing & E-Mail Server/Client, People & & & & & & & & & \cellcolor{gray}\\
-		4.5 & Review Feedback \& Implement Changes & Various & & & & & & & & & \cellcolor{gray} & \cellcolor{gray}\\
+		4.1 & Continuous Prototyping & HTML, JavaScript & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		4.2 & Continuous Isolated Element Testing & HTML, JavaScript, Cmd Line & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		4.3 & Isolated Element Testing & HTML, JavaScript, Cmd Line & & & & & & & & & \cellcolor{gray}\\
+		4.4 & Comprehensive Element Testing & HTML, JavaScript, Cmd Line & & & & & & & & & \cellcolor{gray}\\
+		4.5 & Distribute System for Testing & E-Mail Server/Client, People & & & & & & & & & \cellcolor{gray}\\
+		4.6 & JSON Benchmarking \& Elastic Search & Various** & & & & & & & & & \cellcolor{gray}\\
+		4.7 & Review Feedback \& Implement Changes & [Big-Brain] & & & & & & & & & \cellcolor{gray} & \cellcolor{gray}\\
+		4.8 & Requirements Review & [Big-Brain] & & & & & & & & & & \cellcolor{gray}\\
                 \hline
 		\textbf{5} & \textbf{Write-Up} &\\
-		5.1 & Structure Report & Various & & & & & & & & & & \cellcolor{gray}\\
-		5.2 & Write Body of Report & Various & & & & & & & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
-		5.3 & Write \& Amend Appendices and Figures & Various & & & & & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		5.1 & Structure Report & [Big-Brain] & & & & & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		5.2 & Write Body of Report & [Big-Brain] & & & & & & & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
+		5.3 & Write \& Amend Appendices and Figures & [Big-Brain] & & & & & & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
                 \hline
         \end{tabular}
                 \caption{GANTT Chart}
@@ -1288,7 +1299,7 @@ if ((day.wind_deg) >= 348.76) {
 
 		\subsubsection{Supporting Tools}
 
-	Following from section 6.2 and it's Table 6.4, the `transcription' section remains not-discussed. For this purpose, a more [neomodernist] installment of [Donald E. Knuth's {\TeX}] ({\LaTeX}) is used to compose and transcribe formal final report material. Again, plain text (\texttt{.tex}) files are the option favoured as it's most efficient and easiest to work with. These are compiled using (PDF){\LaTeX}\ in this case, into versatile PDF (\texttt{.pdf}) documents. Although some mathematical and \texttt{tikz} elements could benefit from the use of (Xe){\LaTeX}. My [neoMutt] e-mail client is used in the distribution of surveys etc. to testers and people alike.\\
+	Following from section 6.2 and it's Table 6.4, the `transcription' section remains not-discussed. For this purpose, a more [neomodernist] installment of [Donald E. Knuth's {\TeX}] ({\LaTeX}) is used to compose and transcribe formal final report material. Again, plain text (\texttt{.tex}) files are the option favoured as it's most efficient and easiest to work with. These are compiled using (PDF){\LaTeX}\ in this case, into versatile PDF (\texttt{.pdf}) documents. Although some mathematical and \texttt{tikz} elements could benefit from the use of (\textsc{Xe}){\LaTeX}. My [neoMutt] e-mail client is used in the distribution of surveys etc. to testers and people alike.\\
 
 	Finally, \href{https://github.com/FedeRog1977}{GitHub} is favoured as the version control manager for this site and it's documentation. This provides `assurance' of the safety of documents and insurance in the case of local issues. For example, in a scenario requiring Git Revert or simply restoring a backup. As this is a web application, the directory tree is equivalent to the system tree of the site. In the future, this site could also be deployed using GitHub pages, much like \href{http://lewisbritton.com/}{lewisbritton.com}. If code from this site, such as the region and landmass data JSON file, were to be published on a more professional basis, a Markdown (\texttt{.md}) README file would be composed and added to my GitHub.
 
@@ -1296,39 +1307,134 @@ if ((day.wind_deg) >= 348.76) {
 
 \section{Evaluation}\label{ch7}
 
-	\subsection{Requirements}
+	\subsection{Requirements Satisfaction II}
 
-	\subsection{Design \& Construction}
+	Recall the satisfaction of requirements (Table 6.3). A summary revising which of those have been satisfied follows in Table 7.6. Justification is detailed formerly.
+
+	\begin{center}
+		\scriptsize
+	\begin{longtable}{cp{10cm}c}
+		Requirement \# & Requirement & Status\\
+		\hline
+		\multicolumn{3}{c}{\textsc{Functional}}\\
+		\hline
+		1$^M$ & Access the user's current location upon various types of request & Y\\
+		2$^M$ & View a breakdown of route factors and elements & Y\\
+		3$^M$ & View and interact with ability factors and elements & Y\\
+		4$^M$ & View and interact with equipment factors and elements & Y\\
+		5$^M$ & View a weather forecast breakdown using real weather data & Y\\
+		6$^M$ & Display an Ordnance Survey map with reference to the above & Y\\
+		1$^S$ & On OS Map, alternate between `OS Leisure' (primary/default), `OS Road', and `OS Outdoor' topographical structures & Y\\
+		2$^S$ & On OS Map, display grid markers at center-pan & Y\\
+		1$^C$ & Create an account and have their data stored & N\\
+		2$^C$ & Protect user data using an appropriate authentication and security system & N\\
+		3$^C$ & Store and re-use user attributes such as the aforementioned `ability' and `equipment' & N\\
+		4$^C$ & Choose `priority attributes' relevant to their routes which are stored and used to generate more relevant route recommendations etc. & N\\
+		1$^W$ & Store route-relevant data and display them as `historically completed routes', or something of the sort, under the aforementioned `overview' & N\\
+		\hline
+		\multicolumn{3}{c}{\textsc{Non-Functional}}\\
+		\hline
+		1 & Be written in such a manner which allows full compatibility with the majority of web browsers (this could effect markup languages, font packages, JavaScript libraries, etc.) & Y/P\\
+		2 & Be written in such a manner which allows full scalability between desktop and mobile use & Y\\
+		3 & Offer the user various descriptive background [pieces], otherwise referred to as `key's and `suggested reading's which provide aid to users' background knowledge, understanding and decision making & Y\\
+		4 & Offer the appropriate combination of relevant graphic design and actual functionality & Y\\
+		5 & Adhere to the appropriate accessibility standards, with reference primarily to graphic design and system structure & Y\\
+		\hline
+		\multicolumn{3}{p{12cm}}{Y: Yes, Satisfied; N: No, Not Satisfied; P: Partially Satisfied}\\
+		\hline
+		\caption{Requirements Satisfaction II}
+	\end{longtable}
+	\end{center}
+
+	\subsection{Design \& Construction Review}
 
 		\subsubsection{Heuristic Evaluation}
 
-		\subsubsection{User Acceptance (UAT), Accessibility \& Usability}
+	...
 
-		\subsubsection{`Prototyping' \& Continuous Evaluation}
+		\subsubsection{Prototyping}
 
-	\subsection{Additional Testing}
+	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous prototyping and review completed by the developer (myself), throughout development.
+
+			\paragraph{Pages Demonstration}
+
+	...
+
+			\paragraph{Scalability Demonstration}
+
+	...
+
+	\subsection{Testing}
+
+	Being the command line interfacer I am, if you write a shell script which doesn't work, you know about it; it doesn't \textit{function}. You keep perfecting it until it does what you want it to do. Similarly with HTML, CSS and JavaScript, you must use the output of the site to determine what works and what doesn't.
 
 		\subsubsection{`Test-Driven' Development}
 
-		\subsubsection{Unit Testing}
+	Driving the `continuous testing' element of this system is the above concept; where components are constantly tested every few lines of code (or relevant interval) for their function in-browser and in command line (`console'). It's this process which makes plain-text developed sites the perfect environment to learn in, develop, and produce exactly what you want. In-browser HTML testing adheres to a similar protocol to that of compiling a {\TeX}\ document; you constantly add small elements, save and refresh to check the code's integrity. This method allows you to test extremely small increments, isolated from code in other locations, given the appropriate directory tree and file formatting.\\
 
-	\subsection{Constrictions}
+	This concept applies to all HTML, CSS and JavaScript. For example, you may call JavaScript functions in specific locations, using very basic HTML, to test them isolated from any additional functionality. This has a minimal effect on the aggregate system. This process also ensures that there's little-to-no `technical debt' accumulation, resulting in a backlog of errors and delay of the development cycle.\\
 
-	REVISE DATA AND DESIGN SECTIONS
+	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous isolated element testing completed by [1] the developer (myself) and [2] externals, throughout development. The developer testing has been described. In the case of externals, the discussed small group of development students and professionals (simulated clients) were simply asked to repeat small inputs and processes alike at intervals, just as practiced by myself. The `externals' portion of this was documented in a Q\&A format, as seen in Figure A7.
 
-	Restricted to Glen Coe and Glen Etive
+		\subsubsection{User Acceptance (UAT), Accessibility \& Usability}
 
-	Some GPX files do not function as intended
+	User Acceptance Testing essentially describes the satisfaction of conditions which must be met in order to accept or reject fulfillment of [1] the requirements, and [2] additional accessibility and other aesthetic features. Surveying, of student and professional developers and myself, is the selected method of data collection. Reviewing critique upon intervals and comprehensively, with the appropriate sample size, provides accurate and relevant quantitative and qualitative results and highlights consistency of the usability and `flow' of the final aggregate system. Reference to the recursion tree (section 5.2.2) also aids testers here. In larger-scale developments, this would likely be outsourced.\\
+
+	With reference to the GANTT chart in Table 6.5, this portion refers to the isolated and comprehensive element testing completed by [1] externals and [2] the developer (myself), post-completion. Alike the former, developer testing has been described, eternal testing is issued in the same manner. Decisions were made on a tangibility-basis. This process was documented as described under the following headings.
+
+			\paragraph{Isolated Testing}
+
+	The document issued and completed to and by externals and myself relating to isolated element testing, with aggregated results, appears under Figure A8. Externals were asked to test features solely. Feedback is delivered and acted upon at the relevant intervals throughout development; averaging every two-to-three weeks.
+
+			\paragraph{Comprehensive Testing}
+
+	The document issued and completed to and by externals and myself relating to comprehensive element testing, with aggregated results, appears under Figure A8. Externals were asked to test features on a full-system run-through. Feedback is delivered and acted upon near the end of the development process. This component is often referred to as `system testing' and involves a large team of testers from the development team and dedicated externals. It's usually purely requirements-based.
+
+		\subsubsection{Unit Testing \& Suites}
+
+	Unit testing and testing `suites' refer to various tools which exist which claim to `text the integrity' of JavaScript and JavaScript-based elements using their relevant HTML counterparts and interfaces or solely the document.
+
+			\paragraph{JavaScript Benchmarking}
+
+ 	Popular tools such as Unit.js and Mocha appear within frameworks such as Node.js and in browsers such as Chromium. This system is of course anti-bloatware and anti-spyware and thus, avoids `big-tech' proprietary software. These tools are designed to allow developers to write `test cases' which simulate an interface instance with the HTML and JavaScript elements. In this case, a three-thousand-line table of results with stats to five significant figures is of no benefit. On a larger-scale project with scalability, this would be relevant. Human interaction with elements on this scale leads to faster problem solving. On a separate note, all JavaScript functions are tested, given test inputs where appropriate, not only as part of their HTML elements but also in the `console' in-browser to ensure they function solely. This is not documented as results are subjective and no issues occurred.
+
+			\paragraph{JSON Benchmarking}
+
+	As the majority of the functionality of the JavaScript in this sits is based on the integrity and content of the associated JSON-data-store files, it's essential that these documents are completely integral to see that functions deliver content as intended.\\
+
+			The most crucial component is validity testing as the file is simply not accessible is errors are present. For this purpose, the Python library \texttt{JSON-Spec}, implemented by the command line tool \texttt{json}, is used. It validates JSON files in a manner much like that in the definition of logic and relationships in databases; the format of the input JSON file is compared to a `JSON schema' which defines the desired structure and syntax. For example in this project, \texttt{Hills.json} is compared to \texttt{schema.json}. As the JSON files used for this system range between the mid-thousands (of lines), this method is [infitinely more valuable] than manual iteration. Additionally, to ensure the schema document itself is valid, the java-command-line tool \texttt{json-schema-validator} is used.\\
+
+	ElasticSearch and Kibana\\
+
+	...
+
+	\subsection{Restrictions}
+
+	Some alterations and omissions were made based upon the given constraints of the project. For detailed descriptions and justifications of these, revise the list under section 4.1.3, in \textit{Data Gathering} and various locations throughout the \textit{System Design} and \texttt{System Construction} sections. None of these directly impact the requirements of the system; all requirements are still delivered. This note excludes the `Rager' portion of the site as the decision was made early to omit all of its features as they were non-essential.
 
 	\subsection{Potential Enhancements}
 
-	Some variable and function names which were created during different time periods in the project could use revision as they are slightly inconsistent in places. For example, input functions which serve the same purpose (searching the JSON file for a Munro name) in the weather app and `Overview'/`Conquest Map' sections have inconsistent syntax in their names: , respectively. Minor consistency/continuity issues like this should be fixed given greater time allocated to non-functional code readability issues.
+		\subsubsection{Design}
+
+	Most importantly, given more time, the `Ranger' graphing system would have been a major part of this site; allowing users the freedom to analyse statistics in far more detail. However due to the constraints; the fact these features aren't relevant to the brief; and more-detailed focus on the integrity of individual elements of the existing system, it's structure and write-up; the system remains without.\\
+
+	As discussed under section 5.2.3.2, additional graphic design would have been favoured in places such as the `Conquest Map' and on the home page, simply as aesthetic pieces, if it weren't for the time constraint and lack of relevance.
+
+	...
+
+		\subsubsection{Construction}
+
+	Some variable and function names which were created during different time periods in the project could use revision as they are slightly inconsistent in places. For example, input functions which serve the same purpose (searching the JSON file for a Munro name) in the weather app and `Overview'/`Conquest Map' sections have inconsistent syntax in their names: \texttt{inpMunroOpt()} and \texttt{searchLocation()}, respectively. Although one of these does just search Munros and the other, all hills; naming convention should still be consistent, for example: \texttt{searchMunro()} and \texttt{searchLocation()}, respectively. Minor consistency/continuity issues like this should be fixed given greater time allocated to non-functional code readability issues.\\
+
+	I don't even know what happened but the majority of the tables' double \verb|\hline|'s got messed up in compilation, in this document. They just appear as a thick line. Probably something to do with all the bloated packages I've used. This seems minor but it bothers me more then any of the other issues.
+
+	...
 
 \newpage
 
 \section{Development Conclusions}\label{ch8}
 
-	Table re-visiting requirements to check them off and answer any questions, like in last year's diss.
+	...
 
 	\vspace{\fill}
 
@@ -1831,9 +1937,146 @@ er (Mobile)}\\
 	\end{longtable}
 	\end{center}
 
+\newpage
 
+		\subsubsection*{Figure A7: Functionality -- Continuous Testing}
 
+	\begin{center}
+		\scriptsize
+	\begin{longtable}{p{3cm}p{3cm}p{3cm}p{3cm}}
+		\textsc{Element} & \textsc{Function} & \textsc{Expected} & \textsc{Actual}\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Functionality}}\\
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Accessibility}}\\
+		...\\
+		\hline
+		\multicolumn{4}{p{13cm}}{Evaluators:}\\
+		\hline
+		\caption{Functionality -- Continuous Testing}
+	\end{longtable}
+	\end{center}
 
+\newpage
+
+		\subsubsection*{Figure A8: Functionality -- Isolated/Comprehensive Testing}
+
+	\begin{center}
+		\scriptsize
+	\begin{longtable}{p{2.5cm}p{3.5cm}p{5cm}p{1.75cm}}
+		\textsc{Element} & \textsc{Function} & \textsc{Expected} & \textsc{Actual}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Functionality}}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Page Select (On `Drafting Room' and `Conquest Map')}}\\
+		\hline
+		\texttt{href} (link) & N/A & Navigate to `Drafting Room' page & As expected\\
+		\texttt{href} (link) & N/A & Navigate to `Conquest Map' page & As expected\\
+		\texttt{href} (button) & N/A & Navigate to `Conquest Map' page & As expected\\
+		\texttt{EventListener} (click) (mobile) & N/A & Display page-select drop-down division & As expected\\
+		\texttt{href}\newline (link) (mobile) & N/A & Navigate to `Drafting Room' page & As expected\\
+		\texttt{href}\newline (link) (mobile) & N/A & Navigate to `Conquest Map' page & As expected\\
+		\texttt{href}\newline (button) (mobile) & N/A & Navigate to `Conquest Map' page & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Drafting Room' -- Intro}}\\
+		\hline
+		\texttt{function} (button),\newline \texttt{alert} & \texttt{getLocation()} & Display browser-specific request to use device's location, and display device coordinates & As expected\\
+		\texttt{function} (button) & \texttt{getNearest()} & Display coordinates of nearest route to device & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Drafting Room' -- `Briefing'}}\\
+		\hline
+		\texttt{EventListener} (link) & N/A & Display `Overview' division & As expected\\
+		\texttt{EventListener} (link) & N/A & Display `Conditioning' division & As expected\\
+		\texttt{EventListener} (link) & N/A & Display `Weather' division & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Overview'}}\\
+		\hline
+		\texttt{function} (select) & \texttt{showRouteListCont()} & Display division of relevant landmass selection\newline (18 variations) & As expected\\
+		\texttt{option} (select) & N/A & Select route on landmass selection\newline (Varying between 1 and 7 variations, for 18 parent variations) & As expected\\
+		\texttt{function} (button) & \texttt{searchRoute(`<route>')} & Display division of relevant selection$^{1}$ & As expected\\
+		\texttt{text} (input) & N/A & Accept input relevant to any hill name & As expected\\
+		\texttt{function} (button) & \texttt{searchLocation()} & Display division of relevant input match$^{2}$ & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Conditioning'}}\\
+		\hline
+		\texttt{function} (select) & \texttt{showAbilityListCont()} & Display division of relevant ability selection\newline (7 variations) & As expected\\
+		\texttt{function} (select) & \texttt{selectAbility(`<ability>')} & Select ability factor on ability selection, and display division of relevant selection\newline (Varying between 4 and 22 \texttt{<ability>} variations, for 7 parent variations$^{3}$) & As expected\\
+		\texttt{function} (select) & \texttt{showEquipmentListCont()} & Display division of relevant equipment selection\newline (4 variations) & As expected\\
+		\texttt{function} (select) & \texttt{selectEquipment(`<equip>')} & Select equipment factor on equipment selection, and display division of relevant selection\newline (Varying between 11 and 24 \texttt{<equip>} variations, for 4 parent variations$^{4}$) & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Weather'}}\\
+		\hline
+		\texttt{function} (select) & \texttt{selectMunroOpt()} & Select Munro, and populate latitude and longitude fields\newline (25 variations) & As expected\\
+		\texttt{function} (input) & \texttt{inpMunroOpt()} & Accept input relevant to any Munro name, and populate latitude and longitude fields & As expected\\
+		\texttt{function} (select) & \texttt{selectCorbettOpt()} & Select Corbett, and populate latitude and longitude fields\newline (11 variations) & As expected\\
+		\texttt{function} (input) & \texttt{inpCorbettOpt()} & Accept input relevant to any Corbett name, and populate latitude and longitude fields & As expected\\
+		\texttt{function} (select) & \texttt{selectCounty()} & Select region, and populate latitude and longitude fields\newline (33 variations) & As expected\\
+		\texttt{text} (input) & N/A & Accept latitude input & As expected\\
+		\texttt{text} (input) & N/A & Accept longitude input & As expected\\
+		\texttt{EventListener} (click),\newline \texttt{alert} & \texttt{getLocation} & Display browser-specific request to use device's location, and populate latitude and longitude fields with device coordinates$^{1}$ & As expected\\
+		\texttt{EventListener} (click) & \texttt{fetchWeather} & Display daily and hourly weather data for coordinates$^{5}$ & As expected\\
+		\texttt{EventListener} (link) & N/A & Display `Key' division & As expected\\
+		\texttt{EventListener} (link) & N/A & Display `Suggested Reading on Cloud Types' division & As expected\\
+		\texttt{EventListener} (link) & N/A & Display `Suggested Reading on Bearings' division & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Accept Device Location}}\\
+		\hline
+		\texttt{alert} & N/A & Display browser-specific request to use device's location & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Display Pan Coordinates}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Cycle Map Layers}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Display Pan Coordinates}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Toggle Options Menu}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Location Options}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Feature Options}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- `Ability' Options}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- `Equipment' Options}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Search Route}}\\
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Search Landmass}}\\
+		\hline
+		...\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Accessibility}}\\
+		\hline
+		\hline
+		...\\
+		\hline
+		\multicolumn{4}{p{13cm}}{$N$ Evaluator(s): 5\newline Iterations (Isolated): 2 /element/evaluator\newline Iterations (Comprehensive): 3 /evaluator\newline $^{1,2,3,4,5}$: Clients informed of expected HTML output}\\
+		\hline
+		\caption{Functionality -- Isolated/Comprehensive Testing}
+	\end{longtable}
+	\end{center}
 
 \newpage
 
@@ -1870,13 +2113,9 @@ er (Mobile)}\\
 		\end{center}
 		\end{table}
 
-		\subsubsection*{Figure B3: Why My Pre-Title’s Right and You’re Wrong}
-
-		I have received numerous comments which anyone would regard na\"{i}ve and under-educated regarding my pre-title of this study: \textit{AG436 Dissertation Coursework Assignment}. The argument originates in the `Coursework Assignment’ portion. People argue that a dissertation `is not’/`does not have’ an assignment. Not only is this poor characteristic recognition, it is semantically wrong. \textit{AG436: Dissertation} is a class just like any other. However under this class, there are no lectures, no tutorials and therefore no exams as there is no [taught] content. Do not confuse this with the class `having no content’ though. AG436’s content is apparent through literature of the student’s choice. Therefore, it is possible for a `coursework assignment’ to be based on this. Hence, any further comments are null.
-
 \newpage
 
-		\subsubsection*{Figure B4: Lorn and Lorne}
+		\subsubsection*{Figure B3: Lorn and Lorne}
 
 		Many of the uneducated among us (hahaha) often confuse the term `Lorn' with `Lorne'. Although it's argued by many inbred highlanders that the two words may be used interchangeably, our slavemasters at Ordnance Survey have determined otherwise; that `Lorn' refers to the division found in the OS region \textit{Fort William, Lochaber and Lorn} (as printed in OS Explorer 384: Glen Coe \& Glen Etive); where, `Lorne' refers to the popular breakfast food choice of alcoholics, drug addicts, and fine gentlemen named Derek.\\
 
@@ -1886,14 +2125,14 @@ er (Mobile)}\\
 			\scriptsize
 			\renewcommand{\arraystretch}{1.25}
 		\begin{center}
-		\begin{tabular}{rr|p{2.3cm}p{2.3cm}p{2.3cm}p{3cm}}
+		\begin{tabular}{rr|p{1.25cm}p{3.5cm}p{2.5cm}}
 			\textsc{\#} & \textsc{Brand} & \textsc{Beef \%} & \textsc{Description} & \textsc{Photograph}\\
 			\hline
-			1 & House of Bruar & 78\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/bruar_lorne.jpg}\\
-			2 & Simon Howie (Steak) & \textasciitilde40\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/sh_lorne.png}\\
-			3 & Marks \& Spencer & \textasciitilde40\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/ms_lorne.jpeg}\\
-			4 & Simon Howie (Beef) & \textasciitilde35\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/sh_lorne2.png}\\
-			5 & Malcolm Allan & \textasciitilde30\% & ... & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/ma_lorne.jpg}\\
+			1 & House of Bruar & 78\% & A rich, almost gamey, flavour with a tender flesh and effective distribution of seasoning. Not quite the H.o.B. discontinued (R.I.P.) venison Lorne though. & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/bruar_lorne.jpg}\\
+			2 & Simon Howie (Steak) & \textasciitilde40\% & A rough but tender texture and very traditionally `meaty' flavour. Proper steak that. & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/sh_lorne.png}\\
+			3 & Marks \& Spencer & \textasciitilde40\% & Very similar to Mr. Howie's however a little more fatty on occasion and sometimes under-seasoned. For some reason better when part of the M\&S breakfast pack. & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/ms_lorne.jpeg}\\
+			4 & Simon Howie (Beef) & \textasciitilde35\% & Slightly underwhelming and rubbery version of the steak pieces, with a less meaty flavour, bordering on the fatty side. & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/sh_lorne2.png}\\
+			5 & Malcolm Allan & \textasciitilde30\% & Hockey puck of grease. Not much more to be said. Alright in Aviemore as long as Ross isn't in charge with the deep fried in butter beta. & \vspace{-0.25cm}\includegraphics[width=2.5cm]{../System/Photos/ma_lorne.jpg}\\
 			\hline
 		\end{tabular}
 			\caption{Lorne Rankings}
@@ -1909,50 +2148,10 @@ er (Mobile)}\\
 	\begin{thebibliography}{9}
 
 	\bibitem{}
-		Nielsen, J. (1994).
-		\textsl{Heuristic Evaluation.}
-		Usability Inspection Methods, John Wiley \& Sons
-
-	\bibitem{}
-		Walkhighlands. (2022).
-		\textsl{Walkhighlands: Scotland walks and accommodation.}
+		Chart.js. (2022).
+		\textsl{Chart.js.}
 		Available At:
-		\texttt{https://www.walkhighlands.co.uk/}
-		(Accessed: 22/03/2022).
-
-	\bibitem{}
-		MDN Web Docs. (2022).
-		\textsl{Geolocation API - MDN Web Docs.}
-		Available At:
-		\texttt{https://developer.mozilla.org/en-US/docs/Web/API/Geolocation\_API}
-		(Accessed: 08/04/2022).
-
-	\bibitem{}
-		Peakbagger.com (2022).
-		\textsl{Search - Peakbagger.com.}
-		Available At:
-		\texttt{https://www.peakbagger.com/Search.aspx}
-		(Accessed: 03/04/2022).
-
-	\bibitem{}
-		Harold Street. (2022).
-		\textsl{Mountain GPS Waypoints \& Hill Bagging Lists.}
-		Available At:
-		\texttt{https://www.haroldstreet.org.uk/waypoints/}
-		(Accessed: 03/04/2022).
-
-	\bibitem{}
-		OpenWeather. (2022).
-		\textsl{One Call API: weather data for any geographical coordinate - OpenWeatherMap.}
-		Available At:
-		\texttt{https://openweathermap.org/api/one-call-api}
-		(Accessed: 03/04/2022).
-
-	\bibitem{}
-		Leaflet. (2022).
-		\textsl{Documentation - Leaflet - a JavaScript library for interactive maps.}
-		Available At:
-		\texttt{https://leafletjs.com/reference-1.7.1.html}
+		\texttt{https://www.chartjs.org/docs/latest/}
 		(Accessed: 03/04/2022).
 
 	\bibitem{}
@@ -1963,17 +2162,24 @@ er (Mobile)}\\
 		(Accessed: 08/04/2022).
 
 	\bibitem{}
-		Ordnance Survey. (2022).
-		\textsl{Examples | OS Data Hub.}
+		Harold Street. (2022).
+		\textsl{Mountain GPS Waypoints \& Hill Bagging Lists.}
 		Available At:
-		\texttt{https://labs.os.uk/public/os-data-hub-exam ples/os-names-api/find-example-placename}
+		\texttt{https://www.haroldstreet.org.uk/waypoints/}
 		(Accessed: 03/04/2022).
 
 	\bibitem{}
-		Chart.js. (2022).
-		\textsl{Chart.js.}
+		Knuth, D. E. (2020).
+		\textsl{Computer Musings.}
 		Available At:
-		\texttt{https://www.chartjs.org/docs/latest/}
+		\texttt{https://www-cs-faculty.stanford.edu/knuth/musings.html.}
+		(Accessed 21/07/2022).
+
+	\bibitem{}
+		Leaflet. (2022).
+		\textsl{Documentation - Leaflet - a JavaScript library for interactive maps.}
+		Available At:
+		\texttt{https://leafletjs.com/reference-1.7.1.html}
 		(Accessed: 03/04/2022).
 
 	\bibitem{}
@@ -1982,6 +2188,70 @@ er (Mobile)}\\
 		Available At:
 		\texttt{https://mapbox.github.io/togeojs on/}
 		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		MDN Web Docs. (2022).
+		\textsl{Geolocation API - MDN Web Docs.}
+		Available At:
+		\texttt{https://developer.mozilla.org/en-US/docs/Web/API/Geolocation\_API}
+		(Accessed: 08/04/2022).
+
+	\bibitem{}
+		Moolenaar, B. (2020).
+		\textsl{Bram Moolenaar's Website - home.}
+		Available At:
+		\texttt{https://moolenaar.net.}
+		(Accessed 21/07/2022).
+
+	\bibitem{}
+		Nielsen, J. (1994).
+		\textsl{Heuristic Evaluation.}
+		Usability Inspection Methods, John Wiley \& Sons
+
+	\bibitem{}
+		OpenWeather. (2022).
+		\textsl{One Call API: weather data for any geographical coordinate - OpenWeatherMap.}
+		Available At:
+		\texttt{https://openweathermap.org/api/one-call-api}
+		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		Ordnance Survey. (2022).
+		\textsl{Examples | OS Data Hub.}
+		Available At:
+		\texttt{https://labs.os.uk/public/os-data-hub-exam ples/os-names-api/find-example-placename}
+		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		Peakbagger.com (2022).
+		\textsl{Search - Peakbagger.com.}
+		Available At:
+		\texttt{https://www.peakbagger.com/Search.aspx}
+		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		Smith, L. (2015).
+		\textsl{External Possession and the Undisentanglability of Syntax and Semantics.}
+		University of Georgia.
+
+	\bibitem{}
+		US3699296A. (1972).
+		\textsl{Catastrophically Buckling Compression Column Switch and Actuator.}
+		International Business Machines Corporation.
+
+	\bibitem{}
+		Vim Diesel. (2020).
+		\textsl{Luke Smith's Website.}
+		Available At:
+		\texttt{https://lukesmith.xyz.}
+		(Accessed 21/07/2022).
+
+	\bibitem{}
+		Walkhighlands. (2022).
+		\textsl{Walkhighlands: Scotland walks and accommodation.}
+		Available At:
+		\texttt{https://www.walkhighlands.co.uk/}
+		(Accessed: 22/03/2022).
 
 	\end{thebibliography}
 
