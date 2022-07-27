@@ -1066,12 +1066,12 @@ if ((day.wind_deg) >= 348.76) {
 		\hline
 		\multicolumn{4}{c}{\textsc{Functional}}\\
 		\hline
-		1$^M$ & Y & Weather app$^{W,G}$, \texttt{getLatLon()}$^G$, \texttt{findLocation()}$^G$, \texttt{showLocation()}: use current location in weather app, find latitude and longitude of user's device, find current coordinates for map, print current coordinates as a marker on map & \texttt{findNearest()}, \texttt{getDistanceCurr()}: find nearest route to current coordinates, find distance form current coordinates marker to variable marker\\
+		1$^M$ & Y & Weather app$^{W,G}$, \texttt{getLatLon()}$^G$, \texttt{findLocation()}$^G$, \texttt{showLocation()}: use current location in weather app, find latitude and longitude of user's device, find current coordinates for map, print current coordinates as a marker on map & \texttt{showNearest()}, \texttt{getDistanceCurr()}: find nearest route to current coordinates, find distance form current coordinates marker to variable marker\\
 		2$^M$ & Y & \texttt{searchRoute()}: search for and display defined route data from the JSON file & \texttt{scoreRoute()}, \texttt{describeRoute()}, \texttt{searchLocation()}: compute a relative route score based on a mathematical algorithm, describe the route score based on the algorithmic results, search individual locations from the JSON file which appear isolated and as members of routes\\
 		3$^M$ & Y & \texttt{searchAbility()}: search for and display defined ability data from the JSON file & \texttt{refineRouteAbility()}: refine routes by declaring ability-based inputs\\
 		4$^M$ & Y & \texttt{searchEquipment()}: search for and display defined equipment data from the JSON file & \texttt{refineRouteEquipment()}: refine routes by declaring equipment-based inputs\\
 		5$^M$ & Y & Weather app$^{W,G}$: display `tiles' of daily and hourly weather data with current location as a location option & \texttt{selectMunroOpt()}, \texttt{inpMunroOpt()}, \texttt{selectCorbettOpt()}, \texttt{inpCorbettOpt()}, \texttt{selectCounty()}: select Munro to fetch and pass coordinates, input Munro to fetch and pass coordinates, select Corbett to fetch and pass coordinates, input Corbett to fetch and pass coordinates, select county to fetch and pass coordinates (... from JSON file ... to weather app)\\
-		6$^M$ & Y & `Conquest Map'$^O$, \texttt{findLocation()}$^G$, \texttt{showLocation()}, \texttt{createHillMarker()}, \texttt{createRouteMarker()}, \texttt{hideMarkers()}, \texttt{getLatLon()}$^G$, \texttt{getDistanceCurr()}, \texttt{getDistance()}, \texttt{searchRoute()}, \texttt{showRoute()}, \texttt{hideRoutes()}: find current coordinates for map, print current coordinates as a marker on map, print hill coordinates on map, hide hill markers, find latitude and longitude of user's device, find distance form current coordinates marker to variable marker, find distance from variable marker to variable marker, search for and display defined route data from the JSON file, display GPX data of route with other components, hide route GPX data and components & \texttt{findNearest()}, show pan coordinates, \texttt{showMunros()}, \texttt{showMunroTops()}, \texttt{showCorbetts()}, \texttt{showCorbettTops}, , \texttt{showMunro()}, \texttt{showMunroTop()}, \texttt{showCorbett()}, \texttt{showCorbettTop()}, \texttt{searchAbility()}, \texttt{searchEquipment()}, \texttt{refineRouteAbility()}, \texttt{refineRouteEquipment()}, \texttt{scoreRoute()}, \texttt{describeScore()}, \texttt{searchLocation()}, \texttt{galacticConquest()}: find nearest route to current coordinates, print all Munro coordinates on map, print all Munro Top coordinates on map, print all Corbett coordinates on map, print all Corbett Top coordinates on map, print defined Munro coordinates on map, print defined Munro Top coordinates on map, print defined Corbett coordinates on map, print defined Corbett Top coordinates on map, search for and display defined ability data from the JSON file, search for and display defined equipment data from the JSON file, refine routes by declaring ability-based inputs, refine routes by declaring equipment-based inputs, compute a relative route score based on a mathematical algorithm, describe the route score based on the algorithmic results, search individual locations from the JSON file which appear isolated and as members of routes, display GPX data of all routes with other components\\
+		6$^M$ & Y & `Conquest Map'$^O$, \texttt{findLocation()}$^G$, \texttt{showLocation()}, \texttt{createHillMarker()}, \texttt{createRouteMarker()}, \texttt{hideMarkers()}, \texttt{getLatLon()}$^G$, \texttt{getDistanceCurr()}, \texttt{getDistance()}, \texttt{searchRoute()}, \texttt{showRoute()}, \texttt{hideRoutes()}: find current coordinates for map, print current coordinates as a marker on map, print hill coordinates on map, hide hill markers, find latitude and longitude of user's device, find distance form current coordinates marker to variable marker, find distance from variable marker to variable marker, search for and display defined route data from the JSON file, display GPX data of route with other components, hide route GPX data and components & \texttt{showNearest()}, show pan coordinates, \texttt{showMunros()}, \texttt{showMunroTops()}, \texttt{showCorbetts()}, \texttt{showCorbettTops}, , \texttt{showMunro()}, \texttt{showMunroTop()}, \texttt{showCorbett()}, \texttt{showCorbettTop()}, \texttt{searchAbility()}, \texttt{searchEquipment()}, \texttt{refineRouteAbility()}, \texttt{refineRouteEquipment()}, \texttt{scoreRoute()}, \texttt{describeScore()}, \texttt{searchLocation()}, \texttt{galacticConquest()}: find nearest route to current coordinates, print all Munro coordinates on map, print all Munro Top coordinates on map, print all Corbett coordinates on map, print all Corbett Top coordinates on map, print defined Munro coordinates on map, print defined Munro Top coordinates on map, print defined Corbett coordinates on map, print defined Corbett Top coordinates on map, search for and display defined ability data from the JSON file, search for and display defined equipment data from the JSON file, refine routes by declaring ability-based inputs, refine routes by declaring equipment-based inputs, compute a relative route score based on a mathematical algorithm, describe the route score based on the algorithmic results, search individual locations from the JSON file which appear isolated and as members of routes, display GPX data of all routes with other components\\
 		1$^S$ & Y & \texttt{switchLayer()$^O$}: change OS map base layer choosing from `OS Leisure', `OS Road' and `OS Outdoor' & N/A\\
 		2$^S$ & Y & Center crosshair: display icon panning with the center of the map upon \texttt{move} & Pan coordinates: display panning latitude and longitude upon event \texttt{move}\\
 		1$^C$ & N & N/A: No database back-end & N/A\\
@@ -1374,7 +1374,7 @@ if ((day.wind_deg) >= 348.76) {
 
 	This concept applies to all HTML, CSS and JavaScript. For example, you may call JavaScript functions in specific locations, using very basic HTML, to test them isolated from any additional functionality. This has a minimal effect on the aggregate system. This process also ensures that there's little-to-no `technical debt' accumulation, resulting in a backlog of errors and delay of the development cycle.\\
 
-	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous isolated element testing completed by [1] the developer (myself) and [2] externals, throughout development. The developer testing has been described. In the case of externals, the discussed small group of development students and professionals (simulated clients) were simply asked to repeat small inputs and processes alike at intervals, just as practiced by myself. The `externals' portion of this was documented in a Q\&A format, as seen in Figure A7.
+	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous isolated element testing completed by [1] the developer (myself) and [2] externals, throughout development. The developer testing has been described. In the case of externals, the discussed small group of development students and professionals (simulated clients) were simply asked to repeat small inputs and processes alike at intervals, just as practiced by myself. The `externals' portion of this follows an informal version of the, latterly discussed, isolated and comprehensive testing methods seen in Figure A7. Often, this approach generates new requirements as development goes on and potential users realise they want more. This was not the case here.
 
 		\subsubsection{User Acceptance (UAT), Accessibility \& Usability}
 
@@ -1384,11 +1384,11 @@ if ((day.wind_deg) >= 348.76) {
 
 			\paragraph{Isolated Testing}
 
-	The document issued and completed to and by externals and myself relating to isolated element testing, with aggregated results, appears under Figure A8. Externals were asked to test features solely. Feedback is delivered and acted upon at the relevant intervals throughout development; averaging every two-to-three weeks.
+	The document issued and completed to and by externals and myself relating to isolated element testing, with aggregated results, appears under Figure A7. Externals were asked to test features solely. Feedback is delivered and acted upon at the relevant intervals throughout development; averaging every two-to-three weeks.
 
 			\paragraph{Comprehensive Testing}
 
-	The document issued and completed to and by externals and myself relating to comprehensive element testing, with aggregated results, appears under Figure A8. Externals were asked to test features on a full-system run-through. Feedback is delivered and acted upon near the end of the development process. This component is often referred to as `system testing' and involves a large team of testers from the development team and dedicated externals. It's usually purely requirements-based.
+	The document issued and completed to and by externals and myself relating to comprehensive element testing, with aggregated results, appears under Figure A7. Externals were asked to test features on a full-system run-through to account for fatigue (therefore, ease of use). Feedback is delivered and acted upon near the end of the development process. This component is often referred to as `system testing' and involves a large team of testers from the development team and dedicated externals. It's usually purely requirements-based.
 
 		\subsubsection{Unit Testing \& Suites}
 
@@ -1397,6 +1397,8 @@ if ((day.wind_deg) >= 348.76) {
 			\paragraph{JavaScript Benchmarking}
 
  	Popular tools such as Unit.js and Mocha appear within frameworks such as Node.js and in browsers such as Chromium. This system is of course anti-bloatware and anti-spyware and thus, avoids `big-tech' proprietary software. These tools are designed to allow developers to write `test cases' which simulate an interface instance with the HTML and JavaScript elements. In this case, a three-thousand-line table of results with stats to five significant figures is of no benefit. On a larger-scale project with scalability, this would be relevant. Human interaction with elements on this scale leads to faster problem solving. On a separate note, all JavaScript functions are tested, given test inputs where appropriate, not only as part of their HTML elements but also in the `console' in-browser to ensure they function solely. This is not documented as results are subjective and no issues occurred.
+
+	...
 
 			\paragraph{JSON Benchmarking}
 
@@ -1464,7 +1466,6 @@ if ((day.wind_deg) >= 348.76) {
         	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
                 \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
                 \hline
-		\hline
 		\multicolumn{4}{c}{\textsc{Basic Features}}\\
 		\hline
 			\textbf{Sparse Navigation}:\newline There is not much order to the site navigation and in places thee is a lack pf relevance and hierarchy to the options. For example, some sub-sets of pages/features are listed in navigation on the same `tier'; whether that being represented by the link having the same alignment as it's parent, or something of the sort & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$ & $\mathrm{S_{3}}$ & Correctly use HTML and CSS to display the hierarchy of pages and features in this system\\
@@ -1473,11 +1474,6 @@ if ((day.wind_deg) >= 348.76) {
 		\multicolumn{4}{c}{\textsc{Map Features}}\\
 		\hline
 			\textbf{Feature Separation}: The OS Maps displaying Munros and Corbetts etc. are displayed on different pages of the site, with navigation links between them. This means that interaction with features is limited to the point where all a user can do is view the information provided about it upon a click and follow further links from there. They cannot for example, toggle on/off different features while interacting with the map meaning isolating different features on a GPS route a user is viewing is impossible. & $\mathrm{H_{3}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{3}}$ & Implement a toggle feature for access to different map feature when the user desires, as listed in requirements\\
-		\hline
-		\multicolumn{4}{c}{\textsc{Statistical Features}}\\
-		\hline
-		...\\
-		\hline
 		\hline
                 \multicolumn{4}{l}{\textsc{Total Violations}: 3}\\
                 \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
@@ -1495,7 +1491,6 @@ if ((day.wind_deg) >= 348.76) {
                 \scriptsize
         	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
                 \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
-                \hline
 		\hline
 		\multicolumn{4}{c}{\textsc{Basic Features}}\\
 		\hline
@@ -1504,11 +1499,6 @@ if ((day.wind_deg) >= 348.76) {
 		\multicolumn{4}{c}{\textsc{Map Features}}\\
 		\hline
 			\textbf{Map Layers}:\newline Although the Mapbox map seen throughout Strava is used very effectively in hosting many dynamic layers such as customizable GPX routes with terrain' and athlete-specific attributes, it is just a basic map with contours, not a full topographical map. This significantly limits interaction with map features and interpretation as it simply doesn't show many of the relevant aspects to hiking & $\mathrm{H_{2}}$, $\mathrm{H_{3}}$ & $\mathrm{S_{3}}$ & Utilize the OS Map API instead of a more basic one to ensure full access to topographical mapping, as listed in requirements\\
-		\hline
-		\multicolumn{4}{c}{\textsc{Statistical Features}}\\
-		\hline
-		...\\
-		\hline
 		\hline
                 \multicolumn{4}{l}{\textsc{Total Violations}: 2}\\
                 \multicolumn{4}{l}{\textsc{Evaluator}: Lewis Britton}\\
@@ -1775,11 +1765,11 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Search `Ability'}}\\
 		\hline
-		\texttt{searchAbility()} & Ability component (string) & Ability component name, ability component description, ability component image & \texttt{innerHTML}\\
+		\texttt{selectAbility()} & Ability component (string) & Ability component name, ability component description, ability component image & \texttt{innerHTML}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Search `Equipment'}}\\
 		\hline
-		\texttt{searchEquipment()} & Equipment component (string) & Equipment component name, equipment component description, equipment component image, equipment component compatibility, equipment component features, equipment component advantages, equipment component dangers & \texttt{innerHTML}\\
+		\texttt{selectEquipment()} & Equipment component (string) & Equipment component name, equipment component description, equipment component image, equipment component compatibility, equipment component features, equipment component advantages, equipment component dangers & \texttt{innerHTML}\\
 		\hline
 		\hline
 		\multicolumn{4}{c}{\textsc{`Weather'}}\\
@@ -1831,7 +1821,7 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Find Nearest Project}}\\
 		\hline
-		\texttt{findNearest()} & ...\\
+		\texttt{showNearest()} & N/A & ... \\
 		\hline
 		\multicolumn{4}{c}{\textsc{Show Pan Coordinates}}\\
 		\hline
@@ -1887,11 +1877,15 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Filter Routes by `Ability'}}\\
 		\hline
-		\texttt{refineRouteAbility()} & ...\\
+		\texttt{selectAbilityRefine()} & Ability component (string) & Loop array & Array $+$\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Filter Routes by `Equipment'}}\\
 		\hline
-		\texttt{refineRouteEquipment()} & ...\\
+		\texttt{selectEquipmentRefine()} & Ability component (string) & Loop array & Array $+$\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Search Filtered Route}}\\
+		\hline
+		\texttt{searchRouteRefined()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Get Distance (Current Location)}}\\
 		\hline
@@ -1917,9 +1911,17 @@ er (Mobile)}\\
 		\hline
 		\texttt{searchRoute()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
 		\hline
+		\multicolumn{4}{c}{\textsc{Search Refined Route}}\\
+		\hline
+		\texttt{searchRouteRefined()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
+		\hline
 		\multicolumn{4}{c}{\textsc{Show Route GPX}}\\
 		\hline
 		\texttt{showRoute()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & \texttt{map.setView}, Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMa- rker()}), Leaflet line\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Show Refined Route GPX}}\\
+		\hline
+		\texttt{showRouteRefined()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & \texttt{map.setView}, Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMa- rker()}), Leaflet line\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Search Landmass}}\\
 		\hline
@@ -1929,9 +1931,11 @@ er (Mobile)}\\
 		\hline
 		\texttt{galacticConquest()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMa- rker()}), Leaflet line, \texttt{alert}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show All Routes (Galactic Conquest)}}\\
+		\multicolumn{4}{c}{\textsc{Hide All Routes}}\\
 		\hline
 		\texttt{hideRoutes()} & N/A & Loop array & \texttt{map.removeLayer}\\
+		\hline
+		\multicolumn{4}{p{14cm}}{Note that some functions, such as ones which simply show elements etc., are omitted here. Repeating functions also only appear once.}\\
 		\hline
 		\caption{Functions Summary}
 	\end{longtable}
@@ -1939,28 +1943,7 @@ er (Mobile)}\\
 
 \newpage
 
-		\subsubsection*{Figure A7: Functionality -- Continuous Testing}
-
-	\begin{center}
-		\scriptsize
-	\begin{longtable}{p{3cm}p{3cm}p{3cm}p{3cm}}
-		\textsc{Element} & \textsc{Function} & \textsc{Expected} & \textsc{Actual}\\
-		\hline
-		\multicolumn{4}{c}{\textsc{Functionality}}\\
-		...\\
-		\hline
-		\multicolumn{4}{c}{\textsc{Accessibility}}\\
-		...\\
-		\hline
-		\multicolumn{4}{p{13cm}}{Evaluators:}\\
-		\hline
-		\caption{Functionality -- Continuous Testing}
-	\end{longtable}
-	\end{center}
-
-\newpage
-
-		\subsubsection*{Figure A8: Functionality -- Isolated/Comprehensive Testing}
+		\subsubsection*{Figure A7: Functionality -- Continuous \& Isolated/Comprehensive Testing}
 
 	\begin{center}
 		\scriptsize
@@ -1976,10 +1959,13 @@ er (Mobile)}\\
 		\texttt{href} (link) & N/A & Navigate to `Drafting Room' page & As expected\\
 		\texttt{href} (link) & N/A & Navigate to `Conquest Map' page & As expected\\
 		\texttt{href} (button) & N/A & Navigate to `Conquest Map' page & As expected\\
-		\texttt{EventListener} (click) (mobile) & N/A & Display page-select drop-down division & As expected\\
-		\texttt{href}\newline (link) (mobile) & N/A & Navigate to `Drafting Room' page & As expected\\
-		\texttt{href}\newline (link) (mobile) & N/A & Navigate to `Conquest Map' page & As expected\\
-		\texttt{href}\newline (button) (mobile) & N/A & Navigate to `Conquest Map' page & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Page Select (On `Drafting Room' and `Conquest Map') (Mobile)}}\\
+		\hline
+		\texttt{EventListener} (click) & N/A & Display page-select drop-down division & As expected\\
+		\texttt{href} (link) & N/A & Navigate to `Drafting Room' page & As expected\\
+		\texttt{href} (link) & N/A & Navigate to `Conquest Map' page & As expected\\
+		\texttt{href} (button) & N/A & Navigate to `Conquest Map' page & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Drafting Room' -- Intro}}\\
 		\hline
@@ -2024,55 +2010,85 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Accept Device Location}}\\
 		\hline
-		\texttt{alert} & N/A & Display browser-specific request to use device's location & As expected\\
+		\texttt{alert} & \texttt{getCurrentPosition( getLatLon, getLatLonFail, getLatLonOpts)} & Display browser-specific request to use device's location & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Display Pan Coordinates}}\\
 		\hline
-		...\\
+		\texttt{EventListener} (move) & N/A & Display center pan coordinates of map in HTML element & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Cycle Map Layers}}\\
 		\hline
-		...\\
-		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Display Pan Coordinates}}\\
-		\hline
-		...\\
+		\texttt{radio} (input) & \texttt{switchLayer()} & Change OS map layer\newline (3 variations) & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Toggle Options Menu}}\\
 		\hline
-		...\\
+		\texttt{function} (link) & \texttt{openOptions()} & Display HTML element containing more options & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Location Options}}\\
 		\hline
-		...\\
+		\texttt{function} (button),\newline \texttt{alert} & \texttt{showLocation()} & Display browser-specific request to use device's location, pan to device coordinates on map, display marker and associated pop-up, and display accuracy radius & As expected\\
+		\texttt{function} (button),\newline \texttt{alert} & \texttt{showNearest()} & Display browser-specific request to use device's location, pan to nearest route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Feature Options}}\\
 		\hline
-		...\\
+		\texttt{function} (button) & \texttt{showMunros()} & Display all markers and associated pop-ups of Munros & As expected\\
+		\texttt{function} (button) & \texttt{showMunroTops()} & Display all markers and associated pop-ups of Munro Tops & As expected\\
+		\texttt{function} (button) & \texttt{showCorbetts()} & Display all markers and associated pop-ups of Corbetts & As expected\\
+		\texttt{function} (button) & \texttt{showCorbettTops()} & Display all markers and associated pop-ups of Corbett Tops & As expected\\
+		\texttt{function} (button) & \texttt{hideMarkers()} & Hide all markers associated with any hill$^{A}$ & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- `Ability' Options}}\\
 		\hline
-		...\\
+		\texttt{function} (select) & \texttt{showAbilityListCont()} & Display division of relevant ability selection\newline (7 variations) & As expected\\
+		\texttt{function} (select) & \texttt{selectAbilityRefine( `<ability>')} & Select ability factor on ability selection, add ability factor to list, and display in HTML element & As expected\\
+		\texttt{function} (select)\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- `Equipment' Options}}\\
 		\hline
-		...\\
+		\texttt{function} (select) & \texttt{showAbilityListCont()} & Display division of relevant equipment selection\newline (7 variations) & As expected\\
+		\texttt{function} (select) & \texttt{selectEquipmentRefine( `<equip>')} & Select equipment factor on equipment selection, add equipment factor to list, and display in HTML element & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Search Route}}\\
 		\hline
-		...\\
+		\texttt{function} (select) & \texttt{showRouteListCont()} & Display division of relevant landmass selection\newline (18 variations) & As expected\\
+		\texttt{option} (select) & N/A & Select route on landmass selection\newline (Varying between 1 and 7 variations, for 18 parent variations) & As expected\\
+		\texttt{function} (button) & \texttt{searchRoute(`<route>')} & Display division of relevant selection$^{6}$ & As expected\\
+		\texttt{function} (button) & \texttt{showRoute(`<route>')} & Pan to route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups & As expected\\
+		\texttt{function} (button) & \texttt{searchRouteRefined( `<route>')} & Display division of relevant selection$^{7}$\newline (Subject to `Ability' and `Equipment' constraints) & As expected\\
+		\texttt{function} (button) & \texttt{showRouteRefined( `<route>')} & Pan to route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups\newline (Subject to `Ability' and `Equipment' constraints) & As expected\\
+		\texttt{function} (button) & \texttt{hideRoutes()} & Hide all route components associated with any route & As expected\\
+		\texttt{function} (button) & \texttt{galacticConquest()} & Display all markers and associated pop-ups, display all lines, and display all hill markers and associated pop-ups$^{B}$ & As expected\\
 		\hline
 		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Search Landmass}}\\
 		\hline
-		...\\
+		\texttt{text} (input) & N/A & Accept input relevant to any hill name & As expected\\
+		\texttt{function} (button) & \texttt{searchLocation()} & Display division of relevant input match$^{2}$ & As expected\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{Accessibility}}\\
+		\multicolumn{4}{c}{\textsc{Design \& Accessibility}}\\
 		\hline
 		\hline
-		...\\
+		\multicolumn{4}{c}{\textsc{Header (On `Drafting Room' and `Conquest Map')}}\\
 		\hline
-		\multicolumn{4}{p{13cm}}{$N$ Evaluator(s): 5\newline Iterations (Isolated): 2 /element/evaluator\newline Iterations (Comprehensive): 3 /evaluator\newline $^{1,2,3,4,5}$: Clients informed of expected HTML output}\\
+		N/A & N/A & Logo font color is easily readable & As expected\\
+		N/A & N/A & Logo font is easily readable & As expected\\
+		N/A & N/A & Logo transitions entry from left to right, then parks & As expected\\
+		N/A & N/A & Navigation font color is easily readable & As expected\\
+		N/A & N/A & Navigation font is easily readable & As expected\\
+		N/A & N/A & Navigation font color changes with transition upon hover & As expected\\
+		N/A & N/A & Linear gradient creates a sufficient contrast for dark logo font and lighter navigation font & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Body (On `Drafting Room' and `Conquest Map')}}\\
+		\hline
+		N/A & N/A & \textbf{h1} (and variants), \textbf{h2}, (and variants), \textbf{h3}, \textbf{p}, \textbf{b}, and \textbf{i} fonts are easily readable & As expected\\
+		N/A & N/A & \textbf{h1} (and variants), \textbf{h2}, (and variants), \textbf{h3}, \textbf{p}, \textbf{b}, \textbf{i}, and \textbf{small} font sizes are easily readable & As expected\\
+		N/A & N/A & There is sufficient contrast between the black body text and white (and variants) background and foregrounds & As expected\\
+		\hline
+		\multicolumn{4}{c}{\textsc{Mobile Scalability (On `Drafting Room' and `Conquest Map')}}\\
+		\hline
+		N/A & N/A & `Drafting' and `Conquest' on navigation are replaced by the click-promping `hamburger bars'\\
+		\hline
+		\multicolumn{4}{p{13cm}}{$N$ Evaluator(s): 5\newline Iterations (Isolated): 2 /element/evaluator\newline Iterations (Comprehensive): 3 /evaluator\newline $^{1,2,3,4,5,6,7}$: Clients informed of expected HTML output\newline $^{A,B}$: ``all'' refers to ``for all hills'' and ``for all routes'', respectively}\\
 		\hline
 		\caption{Functionality -- Isolated/Comprehensive Testing}
 	\end{longtable}
