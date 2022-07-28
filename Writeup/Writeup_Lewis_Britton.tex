@@ -1348,19 +1348,16 @@ if ((day.wind_deg) >= 348.76) {
 
 	\subsection{Design \& Construction Review}
 
-		\subsubsection{Heuristic Evaluation}
+	In summary, the use of HTML, CSS and JavaScript worked as efficiently as expected. The system was created on-schedule, implemented all of the necessary requirements and effectively made use of the required APIs and Libraries. No major construction issues were encountered; only minor design ones, as discussed, which are near-irrelevant and manageable. The command line always makes for an effective environment to [compose and perform], and test, all relevant material. There are no alternatives or other methodologies, environments or frameworks worth considering from my perspective here.
 
-	...
-
-		\subsubsection{Prototyping}
+		\subsubsection{Prototyping -- Pages Demonstration}
 
 	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous prototyping and review completed by the developer (myself), throughout development.
 
-			\paragraph{Pages Demonstration}
-
 	...
 
-			\paragraph{Scalability Demonstration}
+		\subsubsection{Prototyping -- Scalability Demonstration}
+
 
 	...
 
@@ -1374,21 +1371,23 @@ if ((day.wind_deg) >= 348.76) {
 
 	This concept applies to all HTML, CSS and JavaScript. For example, you may call JavaScript functions in specific locations, using very basic HTML, to test them isolated from any additional functionality. This has a minimal effect on the aggregate system. This process also ensures that there's little-to-no `technical debt' accumulation, resulting in a backlog of errors and delay of the development cycle.\\
 
-	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous isolated element testing completed by [1] the developer (myself) and [2] externals, throughout development. The developer testing has been described. In the case of externals, the discussed small group of development students and professionals (simulated clients) were simply asked to repeat small inputs and processes alike at intervals, just as practiced by myself. The `externals' portion of this follows an informal version of the, latterly discussed, isolated and comprehensive testing methods seen in Figure A7. Often, this approach generates new requirements as development goes on and potential users realise they want more. This was not the case here.
+			\paragraph{Heuristic Evaluations}
+
+	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous isolated element testing completed by [1] the developer (myself) and [2] externals, throughout development. The developer testing has been described. In the case of externals, the discussed small group of development students and professionals (simulated clients) were simply asked to repeat small inputs and processes alike at intervals, just as practiced by myself. The `externals' portion of this is presented in the `heuristic evaluations' seen in Figure A7, and generated many ideas for the, latterly discussed, isolated and comprehensive testing methods seen in Figure A8. Often, this approach generates new requirements as development goes on and potential users realise they want more. This was not the case here.
 
 		\subsubsection{User Acceptance (UAT), Accessibility \& Usability}
 
 	User Acceptance Testing essentially describes the satisfaction of conditions which must be met in order to accept or reject fulfillment of [1] the requirements, and [2] additional accessibility and other aesthetic features. Surveying, of student and professional developers and myself, is the selected method of data collection. Reviewing critique upon intervals and comprehensively, with the appropriate sample size, provides accurate and relevant quantitative and qualitative results and highlights consistency of the usability and `flow' of the final aggregate system. Reference to the recursion tree (section 5.2.2) also aids testers here. In larger-scale developments, this would likely be outsourced.\\
 
-	With reference to the GANTT chart in Table 6.5, this portion refers to the isolated and comprehensive element testing completed by [1] externals and [2] the developer (myself), post-completion. Alike the former, developer testing has been described, eternal testing is issued in the same manner. Decisions were made on a tangibility-basis. This process was documented as described under the following headings.
+	With reference to the GANTT chart in Table 6.5, this portion refers to the isolated and comprehensive element testing completed by [1] externals and [2] the developer (myself), post-completion. Alike the former, developer testing has been described, external testing is issued in the same manner. Decisions were made on a tangibility-basis. This process was documented as described under the following headings. Note that, with reference to the discussed Figure A8, some \texttt{function}s do not appear as they do in Figure A6 and vice-versa. This is because Figure A6 details all `functional' functions which are used by the system, where Figure A8 details all functions which a user interacts with.
 
 			\paragraph{Isolated Testing}
 
-	The document issued and completed to and by externals and myself relating to isolated element testing, with aggregated results, appears under Figure A7. Externals were asked to test features solely. Feedback is delivered and acted upon at the relevant intervals throughout development; averaging every two-to-three weeks.
+	The document issued and completed to and by externals and myself relating to isolated element testing, with aggregated results, appears under Figure A8. Externals were asked to test features solely. Feedback is delivered and acted upon at the relevant intervals throughout development; averaging every two-to-three weeks.
 
 			\paragraph{Comprehensive Testing}
 
-	The document issued and completed to and by externals and myself relating to comprehensive element testing, with aggregated results, appears under Figure A7. Externals were asked to test features on a full-system run-through to account for fatigue (therefore, ease of use). Feedback is delivered and acted upon near the end of the development process. This component is often referred to as `system testing' and involves a large team of testers from the development team and dedicated externals. It's usually purely requirements-based.
+	The document issued and completed to and by externals and myself relating to comprehensive element testing, with aggregated results, appears under Figure A8. Externals were asked to test features on a full-system run-through to account for fatigue (therefore, ease of use). Feedback is delivered and acted upon near the end of the development process. This component is often referred to as `system testing' and involves a large team of testers from the development team and dedicated externals. It's usually purely requirements-based.
 
 		\subsubsection{Unit Testing \& Suites}
 
@@ -1417,18 +1416,23 @@ if ((day.wind_deg) >= 348.76) {
 	\subsection{Potential Enhancements}
 
 		\subsubsection{Design}
-
-	Most importantly, given more time, the `Ranger' graphing system would have been a major part of this site; allowing users the freedom to analyse statistics in far more detail. However due to the constraints; the fact these features aren't relevant to the brief; and more-detailed focus on the integrity of individual elements of the existing system, it's structure and write-up; the system remains without.\\
-
-	As discussed under section 5.2.3.2, additional graphic design would have been favoured in places such as the `Conquest Map' and on the home page, simply as aesthetic pieces, if it weren't for the time constraint and lack of relevance.
-
+	
+	\begin{itemize}
+	\setlength\itemsep{0cm}
+		\item Most importantly, given more time, the `Ranger' graphing system would have been a major part of this site; allowing users the freedom to analyse statistics in far more detail. However due to the constraints; the fact these features aren't relevant to the brief; and more-detailed focus on the integrity of individual elements of the existing system, it's structure and write-up; the system remains without.\\
+		\item When showing a route on `Conquest Map', currently all hills covered on that route are shown. Functionality which allows the user to specify/refine which kind of hills (Munros, Munro Tops, etc.) they would like to see on that route would be useful.
+		\item As discussed under section 5.2.3.2, additional graphic design would have been favoured in places such as the `Conquest Map' and on the home page, simply as aesthetic pieces, if it weren't for the time constraint and lack of relevance.
+	\end{itemize}
+	
 	...
 
 		\subsubsection{Construction}
 
-	Some variable and function names which were created during different time periods in the project could use revision as they are slightly inconsistent in places. For example, input functions which serve the same purpose (searching the JSON file for a Munro name) in the weather app and `Overview'/`Conquest Map' sections have inconsistent syntax in their names: \texttt{inpMunroOpt()} and \texttt{searchLocation()}, respectively. Although one of these does just search Munros and the other, all hills; naming convention should still be consistent, for example: \texttt{searchMunro()} and \texttt{searchLocation()}, respectively. Minor consistency/continuity issues like this should be fixed given greater time allocated to non-functional code readability issues.\\
-
-	I don't even know what happened but the majority of the tables' double \verb|\hline|'s got messed up in compilation, in this document. They just appear as a thick line. Probably something to do with all the bloated packages I've used. This seems minor but it bothers me more then any of the other issues.
+	\begin{itemize}
+	\setlength\itemsep{0cm}
+		\item Some variable and function names which were created during different time periods in the project could use revision as they are slightly inconsistent in places. For example, input functions which serve the same purpose (searching the JSON file for a Munro name) in the weather app and `Overview'/`Conquest Map' sections have inconsistent syntax in their names: \texttt{inpMunroOpt()} and \texttt{searchLocation()}, respectively. Although one of these does just search Munros and the other, all hills; naming convention should still be consistent, for example: \texttt{searchMunro()} and \texttt{searchLocation()}, respectively. Minor consistency/continuity issues like this should be fixed given greater time allocated to non-functional code readability issues.\\
+		\item I don't even know what happened but the majority of the tables' double \verb|\hline|'s got messed up in compilation, in this document. They just appear as a thick line. Probably something to do with all the bloated packages I've used. This seems minor but it bothers me more then any of the other issues.
+	\end{itemize}
 
 	...
 
@@ -1737,205 +1741,248 @@ er (Mobile)}\\
 
 	\begin{center}
 		\scriptsize
-	\begin{longtable}{p{2.25cm}p{3.5cm}p{5cm}p{2cm}}
-		\textsc{Function} & \textsc{Inputs} & \textsc{Data/Computation} & \textsc{Return/Out.}\\
+	\begin{longtable}{p{4cm}p{6cm}p{2cm}}
+		\textsc{Inputs} & \textsc{Data/Computation} & \textsc{Return/Out.}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{`Overview'}}\\
+		\multicolumn{3}{c}{\textsc{`Overview'}}\\
 		\hline \hline
-		\multicolumn{4}{c}{\textsc{Score Route}}\\
+		\multicolumn{3}{c}{\textsc{Score Route}}\\
 		\hline
-		\texttt{scoreRoute()} & Elevation (number), distance (number), number of tops (number), types (array), stages (array), terrain types (array), terrain difficulties (array) & Conversion constant (ft--m), conversion constant (mi--km), types weight, stages weight, terrain types weight, terrain difficulties weight, types element weights, stages element weights, terrain types element weights, terrain difficulties element weights, types values, stages values, terrain types values, terrain difficulties values & Number\\
+		\multicolumn{3}{c}{\underline{\texttt{scoreRoute()}}}\\
+		Elevation (number), distance (number), number of tops (number), types (array), stages (array), terrain types (array), terrain difficulties (array) & Conversion constant (ft--m), conversion constant (mi--km), types weight, stages weight, terrain types weight, terrain difficulties weight, types element weights, stages element weights, terrain types element weights, terrain difficulties element weights, types values, stages values, terrain types values, terrain difficulties values & Number\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Describe Route Score}}\\
+		\multicolumn{3}{c}{\textsc{Describe Route Score}}\\
 		\hline
-		\texttt{describeScore()} & Route score (number) & Inequality interval calculation & String\\
+		\multicolumn{3}{c}{\underline{\texttt{describeScore()}}}\\
+		Route score (number) & Inequality interval calculation & String\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Search Route}}\\
+		\multicolumn{3}{c}{\textsc{Search Route}}\\
 		\hline
-		\texttt{searchRoute()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPXfile & \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{searchRoute()}}}\\
+		Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPXfile & \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Search Landmass}}\\
+		\multicolumn{3}{c}{\textsc{Search Landmass}}\\
 		\hline
-		\texttt{searchLocation()} & Landmass name (string) & Landmass name, landmass type, landmass sub-type, landmass sub-sub-type, landmass parent landmass, landmass parent peak, landmass region, landmass sub-region, landmass informal region, hill name, hill type, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill prominence, hill isolation, hill summit feature, hill image & \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{searchLocation()}}}\\
+		Landmass name (string) & Landmass name, landmass type, landmass sub-type, landmass sub-sub-type, landmass parent landmass, landmass parent peak, landmass region, landmass sub-region, landmass informal region, hill name, hill type, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill prominence, hill isolation, hill summit feature, hill image & \texttt{innerHTML}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conditioning'}}\\
+		\multicolumn{3}{c}{\textsc{`Conditioning'}}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{Search `Ability'}}\\
+		\multicolumn{3}{c}{\textsc{Search `Ability'}}\\
 		\hline
-		\texttt{selectAbility()} & Ability component (string) & Ability component name, ability component description, ability component image & \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{selectAbility()}}}\\
+		Ability component (string) & Ability component name, ability component description, ability component image & \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Search `Equipment'}}\\
+		\multicolumn{3}{c}{\textsc{Search `Equipment'}}\\
 		\hline
-		\texttt{selectEquipment()} & Equipment component (string) & Equipment component name, equipment component description, equipment component image, equipment component compatibility, equipment component features, equipment component advantages, equipment component dangers & \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{selectEquipment()}}}\\
+		Equipment component (string) & Equipment component name, equipment component description, equipment component image, equipment component compatibility, equipment component features, equipment component advantages, equipment component dangers & \texttt{innerHTML}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{`Weather'}}\\
+		\multicolumn{3}{c}{\textsc{`Weather'}}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{Select Munro for Lat/Lon}}\\
+		\multicolumn{3}{c}{\textsc{Select Munro for Lat/Lon}}\\
 		\hline
-		\texttt{selectMunroOpt()} & N/A & Munro latitude, Munro longitude, Munro name & Number [2], \texttt{innerHTML} [2]\\
+		\multicolumn{3}{c}{\underline{\texttt{selectMunroOpt()}}}\\
+		N/A & Munro latitude, Munro longitude, Munro name & Number [2], \texttt{innerHTML} [2]\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Input Munro for Lat/Lon}}\\
+		\multicolumn{3}{c}{\textsc{Input Munro for Lat/Lon}}\\
 		\hline
-		\texttt{inpMunroOpt()} & N/A & Munro latitude, Munro longitude, Munro name & Number [2], \texttt{innerHTML} [2]\\
+		\multicolumn{3}{c}{\underline{\texttt{inpMunroOpt()}}}\\
+		N/A & Munro latitude, Munro longitude, Munro name & Number [2], \texttt{innerHTML} [2]\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Select Corbett}}\\
+		\multicolumn{3}{c}{\textsc{Select Corbett}}\\
 		\hline
-		\texttt{selectCorbettOpt()} & N/A & Corbett latitude, Corbett longitude, Corbett name & Number [2], \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{selectCorbettOpt()}}}\\
+		N/A & Corbett latitude, Corbett longitude, Corbett name & Number [2], \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Input Corbett}}\\
+		\multicolumn{3}{c}{\textsc{Input Corbett}}\\
 		\hline
-		\texttt{inpCorbettOpt()} & N/A & Corbett latitude, Corbett longitude, Corbett name & Number [2], \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{inpCorbettOpt()}}}\\
+		N/A & Corbett latitude, Corbett longitude, Corbett name & Number [2], \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Select County}}\\
+		\multicolumn{3}{c}{\textsc{Select County}}\\
 		\hline
-		\texttt{selectCounty()} & N/A & County latitude, County longitude, County name & Number [2], \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{selectCounty()}}}\\
+		N/A & County latitude, County longitude, County name & Number [2], \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Get Weather}}\\
+		\multicolumn{3}{c}{\textsc{Get Weather}}\\
 		\hline
-		N/A & Latitude (number), longitude (number) & Day/time, day weather icon, day weather phrase, day weather description, day max temperature, day minimum temperature, day-day feels-like temperature, day-night feels-like temperature, day precipitation amount, day wind direction, day wind speed, day pressure, day humidity, day dew point, day UV, sunrise, sunset, hour, hour weather icon, hour temperature, hour feels-like temperature, hour precipitation amount, hour wind direction, hour wind speed, hour wind gust, hour pressure, hour humidity, hour dew point, hour visibility, hour UV & \texttt{innerHTML}\\
+		Latitude (number), longitude (number) & Day/time, day weather icon, day weather phrase, day weather description, day max temperature, day minimum temperature, day-day feels-like temperature, day-night feels-like temperature, day precipitation amount, day wind direction, day wind speed, day pressure, day humidity, day dew point, day UV, sunrise, sunset, hour, hour weather icon, hour temperature, hour feels-like temperature, hour precipitation amount, hour wind direction, hour wind speed, hour wind gust, hour pressure, hour humidity, hour dew point, hour visibility, hour UV & \texttt{innerHTML}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map'}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map'}}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{Open Options Menu}}\\
+		\multicolumn{3}{c}{\textsc{Open Options Menu}}\\
 		\hline
-		\texttt{openOptions()} & N/A & N/A & Alter style (\texttt{style.width})\\
+		\multicolumn{3}{c}{\underline{\texttt{openOptions()}}}\\
+		N/A & N/A & Alter style (\texttt{style.width})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Close Options Menu}}\\
+		\multicolumn{3}{c}{\textsc{Close Options Menu}}\\
 		\hline
-		\texttt{closeOptions()} & N/A & N/A & Alter style (\texttt{style.width})\\
+		\multicolumn{3}{c}{\underline{\texttt{closeOptions()}}}\\
+		N/A & N/A & Alter style (\texttt{style.width})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Center to Current Location}}\\
+		\multicolumn{3}{c}{\textsc{Center to Current Location}}\\
 		\hline
-		\texttt{findLocation()} & N/A & Accuracy radius (\texttt{accuracy}), Leaflet marker (current coordinates), Leaflet circle (current coordinates) & Leaflet marker\\
+		\multicolumn{3}{c}{\underline{\texttt{findLocation()}}}\\
+		N/A & Accuracy radius (\texttt{accuracy}), Leaflet marker (current coordinates), Leaflet circle (current coordinates) & Leaflet marker\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Center to Current Location}}\\
+		\multicolumn{3}{c}{\textsc{Center to Current Location}}\\
 		\hline
-		\texttt{showLocation()} & N/A & N/A & (\texttt{map.locate}), Leaflet marker (\texttt{findLocation()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showLocation()}}}\\
+		N/A & N/A & (\texttt{map.locate}), Leaflet marker (\texttt{findLocation()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Find Nearest Project}}\\
+		\multicolumn{3}{c}{\textsc{Find Nearest Project}}\\
 		\hline
-		\texttt{showNearest()} & N/A & ... \\
+		\multicolumn{3}{c}{\underline{\texttt{showNearest()}}}\\
+		N/A & ... \\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Pan Coordinates}}\\
+		\multicolumn{3}{c}{\textsc{Show Pan Coordinates}}\\
 		\hline
-		N/A & Move (event) & Center-map coordinates (\texttt{getLatLng()}) & \texttt{innerHTML}\\
+		Move (event) & Center-map coordinates (\texttt{getLatLng()}) & \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Change Map Layer}}\\
+		\multicolumn{3}{c}{\textsc{Change Map Layer}}\\
 		\hline
-		\texttt{switchLayer()} & N/A & Map type & Leaflet layer \texttt{L.titleLayer}\\
+		\multicolumn{3}{c}{\underline{\texttt{switchLayer()}}}\\
+		N/A & Map type & Leaflet layer \texttt{L.titleLayer}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Create Hill Marker}}\\
+		\multicolumn{3}{c}{\textsc{Create Hill Marker}}\\
 		\hline
-		\texttt{createHillMarker()} & Hill name (string), hill type (string), hill elevation (number), hill latitude (number), hill longitude (number), hill latitude bearing (string), hill longitude bearing (string), hill region (string), hill sub-region (string), hill informal region (string), hill image (string), hill icon type (string) & Popup string, Leaflet marker & Array $+$\\
+		\multicolumn{3}{c}{\underline{\texttt{createHillMarker()}}}\\
+		Hill name (string), hill type (string), hill elevation (number), hill latitude (number), hill longitude (number), hill latitude bearing (string), hill longitude bearing (string), hill region (string), hill sub-region (string), hill informal region (string), hill image (string), hill icon type (string) & Popup string, Leaflet marker & Array $+$\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Create Route Marker}}\\
+		\multicolumn{3}{c}{\textsc{Create Route Marker}}\\
 		\hline
-		\texttt{createRouteMarker()} & Route name (string), route distance (number), route time (number), route score (number), route difficulty (string), route Munros (array), route Munro Tops (array), route Corbetts (array), route Corbett Tops (array), route coordinates (array), route icon type (string) & Popup string, Leaflet marker & Array $+$\\
+		\multicolumn{3}{c}{\underline{\texttt{createRouteMarker()}}}\\
+		Route name (string), route distance (number), route time (number), route score (number), route difficulty (string), route Munros (array), route Munro Tops (array), route Corbetts (array), route Corbett Tops (array), route coordinates (array), route icon type (string) & Popup string, Leaflet marker & Array $+$\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Munros}}\\
+		\multicolumn{3}{c}{\textsc{Show Munros}}\\
 		\hline
-		\texttt{showMunros()} & N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showMunros()}}}\\
+		N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMarker()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Munro Tops}}\\
+		\multicolumn{3}{c}{\textsc{Show Munro Tops}}\\
 		\hline
-		\texttt{showMunroTops()} & N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showMunroTops()}}}\\
+		N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMarker()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Corbetts}}\\
+		\multicolumn{3}{c}{\textsc{Show Corbetts}}\\
 		\hline
-		\texttt{showCorbetts()} & N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showCorbetts()}}}\\
+		N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMarker()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Corbett Tops}}\\
+		\multicolumn{3}{c}{\textsc{Show Corbett Tops}}\\
 		\hline
-		\texttt{showCorbettTops()} & N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showCorbettTops()}}}\\
+		N/A & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMarker()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Munro}}\\
+		\multicolumn{3}{c}{\textsc{Show Munro}}\\
 		\hline
-		\texttt{showMunro()} & Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showMunro()}}}\\
+		Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMarker()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Munro Top}}\\
+		\multicolumn{3}{c}{\textsc{Show Munro Top}}\\
 		\hline
-		\texttt{showMunroTop()} & Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showMunroTop()}}}\\
+		Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMarker()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Corbett}}\\
+		\multicolumn{3}{c}{\textsc{Show Corbett}}\\
 		\hline
-		\texttt{showCorbett()} & Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showCorbett()}}}\\
+		Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMarker()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Corbett Top}}\\
+		\multicolumn{3}{c}{\textsc{Show Corbett Top}}\\
 		\hline
-		\texttt{showCorbettTop()} & Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMa- rker()})\\
+		\multicolumn{3}{c}{\underline{\texttt{showCorbettTop()}}}\\
+		Hill name (string) & Hill name, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill region, hill sub-region, hill informal region, hill image & Leaflet marker (\texttt{createHillMarker()})\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Hide All Markers}}\\
+		\multicolumn{3}{c}{\textsc{Hide All Markers}}\\
 		\hline
-		\texttt{hideMarkers()} & N/A & Loop array & \texttt{map.removeLayer}\\
+		\multicolumn{3}{c}{\underline{\texttt{hideMarkers()}}}\\
+		N/A & Loop array & \texttt{map.removeLayer}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Filter Routes by `Ability'}}\\
+		\multicolumn{3}{c}{\textsc{Filter Routes by `Ability'}}\\
 		\hline
-		\texttt{selectAbilityRefine()} & Ability component (string) & Loop array & Array $+$\\
+		\multicolumn{3}{c}{\underline{\texttt{selectAbilityRefine()}}}\\
+		Ability component (string) & Loop array & Array $+$\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Filter Routes by `Equipment'}}\\
+		\multicolumn{3}{c}{\textsc{Filter Routes by `Equipment'}}\\
 		\hline
-		\texttt{selectEquipmentRefine()} & Ability component (string) & Loop array & Array $+$\\
+		\multicolumn{3}{c}{\underline{\texttt{selectEquipmentRefine()}}}\\
+		Ability component (string) & Loop array & Array $+$\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Search Filtered Route}}\\
+		\multicolumn{3}{c}{\textsc{Search Filtered Route}}\\
 		\hline
-		\texttt{searchRouteRefined()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{searchRouteRefined()}}}\\
+		Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Get Distance (Current Location)}}\\
+		\multicolumn{3}{c}{\textsc{Get Distance (Current Location)}}\\
 		\hline
-		\texttt{getLatLon()} & Leaflet position (array) & N/A & \texttt{innerHTML} [2]\\
+		\multicolumn{3}{c}{\underline{\texttt{getLatLon()}}}\\
+		Leaflet position (array) & N/A & \texttt{innerHTML} [2]\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Get Distance (Current Location)}}\\
+		\multicolumn{3}{c}{\textsc{Get Distance (Current Location)}}\\
 		\hline
-		\texttt{getDistanceCurr()} & Destination latitude (number), destination longitude (number) & Current latitude, Current longitude, Leaflet marker (current coordinates), Leaflet marker (destination coordinates), distance (\texttt{.distanceTo}), converted distance (km--mi) & Number\\
+		\multicolumn{3}{c}{\underline{\texttt{getDistanceCurr()}}}\\
+		Destination latitude (number), destination longitude (number) & Current latitude, Current longitude, Leaflet marker (current coordinates), Leaflet marker (destination coordinates), distance (\texttt{.distanceTo}), converted distance (km--mi) & Number\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Get Distance (Custom)}}\\
+		\multicolumn{3}{c}{\textsc{Get Distance (Custom)}}\\
 		\hline
-		\texttt{getDistance()} & Origin latitude (number), origin longitude (number), destination latitude (number), destination longitude (number) & Current latitude, Current longitude, Leaflet marker (origin coordinates), Leaflet marker (destination coordinates), distance (\texttt{.distanceTo}), converted distance (km--mi) & Number\\
+		\multicolumn{3}{c}{\underline{\texttt{getDistance()}}}\\
+		Origin latitude (number), origin longitude (number), destination latitude (number), destination longitude (number) & Current latitude, Current longitude, Leaflet marker (origin coordinates), Leaflet marker (destination coordinates), distance (\texttt{.distanceTo}), converted distance (km--mi) & Number\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Score Route}}\\
+		\multicolumn{3}{c}{\textsc{Score Route}}\\
 		\hline
-		\texttt{scoreRoute()} & Elevation (number), distance (number), number of tops (number), types (array), stages (array), terrain types (array), terrain difficulties (array) & Conversion constant (ft--m), conversion constant (mi--km), types weight, stages weight, terrain types weight, terrain difficulties weight, types element weights, stages element weights, terrain types element weights, terrain difficulties element weights, types values, stages values, terrain types values, terrain difficulties values & Number\\
+		\multicolumn{3}{c}{\underline{\texttt{scoreRoute()}}}\\
+		Elevation (number), distance (number), number of tops (number), types (array), stages (array), terrain types (array), terrain difficulties (array) & Conversion constant (ft--m), conversion constant (mi--km), types weight, stages weight, terrain types weight, terrain difficulties weight, types element weights, stages element weights, terrain types element weights, terrain difficulties element weights, types values, stages values, terrain types values, terrain difficulties values & Number\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Describe Route Score}}\\
+		\multicolumn{3}{c}{\textsc{Describe Route Score}}\\
 		\hline
-		\texttt{describeScore()} & Route score (number) & Inequality interval calculation & String\\
+		\multicolumn{3}{c}{\underline{\texttt{describeScore()}}}\\
+		Route score (number) & Inequality interval calculation & String\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Search Route}}\\
+		\multicolumn{3}{c}{\textsc{Search Route}}\\
 		\hline
-		\texttt{searchRoute()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{searchRoute()}}}\\
+		Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Search Refined Route}}\\
+		\multicolumn{3}{c}{\textsc{Search Refined Route}}\\
 		\hline
-		\texttt{searchRouteRefined()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
+		\multicolumn{3}{c}{\underline{\texttt{searchRouteRefined()}}}\\
+		Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route difficulty (\texttt{describeRoute()}), route types, route stages, route terrain types, route terrain difficulties, route gear, route Munros, route Munro Tops, route Corbetts, route Corbett Tops, route GPX file & \texttt{innerHTML}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Route GPX}}\\
+		\multicolumn{3}{c}{\textsc{Show Route GPX}}\\
 		\hline
-		\texttt{showRoute()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & \texttt{map.setView}, Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMa- rker()}), Leaflet line\\
+		\multicolumn{3}{c}{\underline{\texttt{showRoute()}}}\\
+		Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & \texttt{map.setView}, Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMarker()}), Leaflet line\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show Refined Route GPX}}\\
+		\multicolumn{3}{c}{\textsc{Show Refined Route GPX}}\\
 		\hline
-		\texttt{showRouteRefined()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & \texttt{map.setView}, Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMa- rker()}), Leaflet line\\
+		\multicolumn{3}{c}{\underline{\texttt{showRouteRefined()}}}\\
+		Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & \texttt{map.setView}, Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMarker()}), Leaflet line\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Search Landmass}}\\
+		\multicolumn{3}{c}{\textsc{Search Landmass}}\\
 		\hline
-		\texttt{searchLocation()} & Landmass name (string) & Landmass name, landmass type, landmass sub-type, landmass sub-sub-type, landmass parent landmass, landmass parent peak, landmass region, landmass sub-region, landmass informal region, hill name, hill type, \texttt{hideMarkers()}, \texttt{hideRoutes()}, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill prominence, hill isolation, hill summit feature, hill image, hillMarker (\texttt{createHillMarker()}), hillFromTo (\texttt{getDistanceCurr}) & \texttt{innerHTML}, \texttt{map.setView}\\
+		\multicolumn{3}{c}{\underline{\texttt{searchLocation()}}}\\
+		Landmass name (string) & Landmass name, landmass type, landmass sub-type, landmass sub-sub-type, landmass parent landmass, landmass parent peak, landmass region, landmass sub-region, landmass informal region, hill name, hill type, \texttt{hideMarkers()}, \texttt{hideRoutes()}, hill elevation, hill latitude, hill longitude, hill latitude bearing, hill longitude bearing, hill prominence, hill isolation, hill summit feature, hill image, hillMarker (\texttt{createHillMarker()}), hillFromTo (\texttt{getDistanceCurr}) & \texttt{innerHTML}, \texttt{map.setView}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Show All Routes (Galactic Conquest)}}\\
+		\multicolumn{3}{c}{\textsc{Show All Routes (Galactic Conquest)}}\\
 		\hline
-		\texttt{galacticConquest()} & Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMa- rker()}), Leaflet line, \texttt{alert}\\
+		\multicolumn{3}{c}{\underline{\texttt{galacticConquest()}}}\\
+		Landmass name (string) & Route name, route distance, route elevation, route time, route score (\texttt{scoreRoute()}), route Munros, route Munro Tops, route Corbetts, route Corbett Tops, GPX file start coordinates & Leaflet marker(s) (\texttt{showMunro}, \texttt{showMunroTop}, \texttt{showCorbett}, \texttt{showCorbettTop}), Leaflet marker (\texttt{createRouteMarker()}), Leaflet line, \texttt{alert}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Hide All Routes}}\\
+		\multicolumn{3}{c}{\textsc{Hide All Routes}}\\
 		\hline
-		\texttt{hideRoutes()} & N/A & Loop array & \texttt{map.removeLayer}\\
+		\multicolumn{3}{c}{\underline{\texttt{hideRoutes()}}}\\
+		N/A & Loop array & \texttt{map.removeLayer}\\
 		\hline
-		\multicolumn{4}{p{14cm}}{Note that some functions, such as ones which simply show elements etc., are omitted here. Repeating functions also only appear once.}\\
+		\multicolumn{3}{p{14cm}}{Note that some functions, such as ones which simply show elements etc., are omitted here. Repeating functions also only appear once.}\\
 		\hline
 		\caption{Functions Summary}
 	\end{longtable}
@@ -1943,182 +1990,292 @@ er (Mobile)}\\
 
 \newpage
 
-		\subsubsection*{Figure A7: Functionality -- Continuous \& Isolated/Comprehensive Testing}
+		\subsubsection*{Figure A7: Functionality -- Continuous Testing (Heuristic Evaluation)}
+
+\newpage
+
+		\subsubsection*{Figure A8: Functionality -- Isolated/Comprehensive Testing}
 
 	\begin{center}
 		\scriptsize
-	\begin{longtable}{p{2.5cm}p{3.5cm}p{5cm}p{1.75cm}}
-		\textsc{Element} & \textsc{Function} & \textsc{Expected} & \textsc{Actual}\\
+	\begin{longtable}{p{3cm}p{8cm}p{2cm}}
+		\textsc{Element} & \textsc{Expected} & \textsc{Actual}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{Functionality}}\\
+		\multicolumn{3}{c}{\textsc{Functionality}}\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{Page Select (On `Drafting Room' and `Conquest Map')}}\\
+		\multicolumn{3}{c}{\textsc{Page Select (On `Drafting Room' and `Conquest Map')}}\\
 		\hline
-		\texttt{href} (link) & N/A & Navigate to `Drafting Room' page & As expected\\
-		\texttt{href} (link) & N/A & Navigate to `Conquest Map' page & As expected\\
-		\texttt{href} (button) & N/A & Navigate to `Conquest Map' page & As expected\\
+		\texttt{href} (link) & Navigate to `Drafting Room' page & As expected\\
+		\texttt{href} (link) & Navigate to `Conquest Map' page & As expected\\
+		\texttt{href} (button) & Navigate to `Conquest Map' page & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Page Select (On `Drafting Room' and `Conquest Map') (Mobile)}}\\
+		\multicolumn{3}{c}{\textsc{Page Select (On `Drafting Room' and `Conquest Map') (Mobile)}}\\
 		\hline
-		\texttt{EventListener} (click) & N/A & Display page-select drop-down division & As expected\\
-		\texttt{href} (link) & N/A & Navigate to `Drafting Room' page & As expected\\
-		\texttt{href} (link) & N/A & Navigate to `Conquest Map' page & As expected\\
-		\texttt{href} (button) & N/A & Navigate to `Conquest Map' page & As expected\\
+		\texttt{EventListener} (click) & Display page-select drop-down division & As expected\\
+		\texttt{href} (link) & Navigate to `Drafting Room' page & As expected\\
+		\texttt{href} (link) & Navigate to `Conquest Map' page & As expected\\
+		\texttt{href} (button) & Navigate to `Conquest Map' page & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Drafting Room' -- Intro}}\\
+		\multicolumn{3}{c}{\textsc{`Drafting Room' -- Intro}}\\
 		\hline
-		\texttt{function} (button),\newline \texttt{alert} & \texttt{getLocation()} & Display browser-specific request to use device's location, and display device coordinates & As expected\\
-		\texttt{function} (button) & \texttt{getNearest()} & Display coordinates of nearest route to device & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{getLocation()}}}\\
+		\texttt{function} (button),\newline \texttt{alert} & Display browser-specific request to use device's location, and display device coordinates & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{getNearest()}}}\\
+		\texttt{function} (button) & Display coordinates of nearest route to device & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Drafting Room' -- `Briefing'}}\\
+		\multicolumn{3}{c}{\textsc{`Drafting Room' -- `Briefing'}}\\
 		\hline
-		\texttt{EventListener} (link) & N/A & Display `Overview' division & As expected\\
-		\texttt{EventListener} (link) & N/A & Display `Conditioning' division & As expected\\
-		\texttt{EventListener} (link) & N/A & Display `Weather' division & As expected\\
+		\texttt{EventListener} (link) & Display `Overview' division & As expected\\
+		\texttt{EventListener} (link) & Display `Conditioning' division & As expected\\
+		\texttt{EventListener} (link) & Display `Weather' division & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Overview'}}\\
+		\multicolumn{3}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Overview'}}\\
 		\hline
-		\texttt{function} (select) & \texttt{showRouteListCont()} & Display division of relevant landmass selection\newline (18 variations) & As expected\\
-		\texttt{option} (select) & N/A & Select route on landmass selection\newline (Varying between 1 and 7 variations, for 18 parent variations) & As expected\\
-		\texttt{function} (button) & \texttt{searchRoute(`<route>')} & Display division of relevant selection$^{1}$ & As expected\\
-		\texttt{text} (input) & N/A & Accept input relevant to any hill name & As expected\\
-		\texttt{function} (button) & \texttt{searchLocation()} & Display division of relevant input match$^{2}$ & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showRouteListCont()}}}\\
+		\texttt{function} (select) & Display division of relevant landmass selection\newline (18 variations) & As expected\\
+		\texttt{option} (select) & Select route on landmass selection\newline (Varying between 1 and 7 variations, for 18 parent variations) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{searchRoute(`<route>')}}}\\
+		\texttt{function} (button) & Display division of relevant selection$^{1}$ & As expected\\
+		\texttt{text} (input) & Accept input relevant to any hill name & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{searchLocation()}}}\\
+		\texttt{function} (button) & Display division of relevant input match$^{2}$ & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Conditioning'}}\\
+		\multicolumn{3}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Conditioning'}}\\
 		\hline
-		\texttt{function} (select) & \texttt{showAbilityListCont()} & Display division of relevant ability selection\newline (7 variations) & As expected\\
-		\texttt{function} (select) & \texttt{selectAbility(`<ability>')} & Select ability factor on ability selection, and display division of relevant selection\newline (Varying between 4 and 22 \texttt{<ability>} variations, for 7 parent variations$^{3}$) & As expected\\
-		\texttt{function} (select) & \texttt{showEquipmentListCont()} & Display division of relevant equipment selection\newline (4 variations) & As expected\\
-		\texttt{function} (select) & \texttt{selectEquipment(`<equip>')} & Select equipment factor on equipment selection, and display division of relevant selection\newline (Varying between 11 and 24 \texttt{<equip>} variations, for 4 parent variations$^{4}$) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showAbilityListCont()}}}\\
+		\texttt{function} (select) & Display division of relevant ability selection\newline (7 variations) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{selectAbility(`<ability>')}}}\\
+		\texttt{function} (select) & Select ability factor on ability selection, and display division of relevant selection\newline (Varying between 4 and 22 \texttt{<ability>} variations, for 7 parent variations$^{3}$) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showEquipmentListCont()}}}\\
+		\texttt{function} (select) & Display division of relevant equipment selection\newline (4 variations) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{selectEquipment(`<equip>')}}}\\
+		\texttt{function} (select) & Select equipment factor on equipment selection, and display division of relevant selection\newline (Varying between 11 and 24 \texttt{<equip>} variations, for 4 parent variations$^{4}$) & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Weather'}}\\
+		\multicolumn{3}{c}{\textsc{`Drafting Room' -- `Briefing' -- `Weather'}}\\
 		\hline
-		\texttt{function} (select) & \texttt{selectMunroOpt()} & Select Munro, and populate latitude and longitude fields\newline (25 variations) & As expected\\
-		\texttt{function} (input) & \texttt{inpMunroOpt()} & Accept input relevant to any Munro name, and populate latitude and longitude fields & As expected\\
-		\texttt{function} (select) & \texttt{selectCorbettOpt()} & Select Corbett, and populate latitude and longitude fields\newline (11 variations) & As expected\\
-		\texttt{function} (input) & \texttt{inpCorbettOpt()} & Accept input relevant to any Corbett name, and populate latitude and longitude fields & As expected\\
-		\texttt{function} (select) & \texttt{selectCounty()} & Select region, and populate latitude and longitude fields\newline (33 variations) & As expected\\
-		\texttt{text} (input) & N/A & Accept latitude input & As expected\\
-		\texttt{text} (input) & N/A & Accept longitude input & As expected\\
-		\texttt{EventListener} (click),\newline \texttt{alert} & \texttt{getLocation} & Display browser-specific request to use device's location, and populate latitude and longitude fields with device coordinates$^{1}$ & As expected\\
-		\texttt{EventListener} (click) & \texttt{fetchWeather} & Display daily and hourly weather data for coordinates$^{5}$ & As expected\\
-		\texttt{EventListener} (link) & N/A & Display `Key' division & As expected\\
-		\texttt{EventListener} (link) & N/A & Display `Suggested Reading on Cloud Types' division & As expected\\
-		\texttt{EventListener} (link) & N/A & Display `Suggested Reading on Bearings' division & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{selectMunroOpt()}}}\\
+		\texttt{function} (select) & Select Munro, and populate latitude and longitude fields\newline (25 variations) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{inpMunroOpt()}}}\\
+		\texttt{function} (input) & Accept input relevant to any Munro name, and populate latitude and longitude fields & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{selectCorbettOpt()}}}\\
+		\texttt{function} (select) & Select Corbett, and populate latitude and longitude fields\newline (11 variations) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{inpCorbettOpt()}}}\\
+		\texttt{function} (input) & Accept input relevant to any Corbett name, and populate latitude and longitude fields & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{selectCounty()}}}\\
+		\texttt{function} (select) & Select region, and populate latitude and longitude fields\newline (33 variations) & As expected\\
+		\texttt{text} (input) & Accept latitude input & As expected\\
+		\texttt{text} (input) & Accept longitude input & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{getLocation}}}\\
+		\texttt{EventListener} (click),\newline \texttt{alert} & Display browser-specific request to use device's location, and populate latitude and longitude fields with device coordinates$^{1}$ & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{fetchWeather}}}\\
+		\texttt{EventListener} (click) & Display daily and hourly weather data for coordinates$^{5}$ & As expected\\
+		\texttt{EventListener} (link) & Display `Key' division & As expected\\
+		\texttt{EventListener} (link) & Display `Suggested Reading on Cloud Types' division & As expected\\
+		\texttt{EventListener} (link) & Display `Suggested Reading on Bearings' division & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Accept Device Location}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Accept Device Location}}\\
 		\hline
-		\texttt{alert} & \texttt{getCurrentPosition( getLatLon, getLatLonFail, getLatLonOpts)} & Display browser-specific request to use device's location & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{getCurrentPosition( getLatLon, getLatLonFail, getLatLonOpts)}}}\\
+		\texttt{alert} & Display browser-specific request to use device's location & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Display Pan Coordinates}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Display Pan Coordinates}}\\
 		\hline
-		\texttt{EventListener} (move) & N/A & Display center pan coordinates of map in HTML element & As expected\\
+		\texttt{EventListener} (move) & Display crosshair at center of map & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Cycle Map Layers}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Display Pan Coordinates}}\\
 		\hline
-		\texttt{radio} (input) & \texttt{switchLayer()} & Change OS map layer\newline (3 variations) & As expected\\
+		\texttt{EventListener} (move) & Display center pan coordinates of map in HTML element & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Toggle Options Menu}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Cycle Map Layers}}\\
 		\hline
-		\texttt{function} (link) & \texttt{openOptions()} & Display HTML element containing more options & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{switchLayer()}}}\\
+		\texttt{radio} (input) & Change OS map layer\newline (3 variations) & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Location Options}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Toggle Options Menu}}\\
 		\hline
-		\texttt{function} (button),\newline \texttt{alert} & \texttt{showLocation()} & Display browser-specific request to use device's location, pan to device coordinates on map, display marker and associated pop-up, and display accuracy radius & As expected\\
-		\texttt{function} (button),\newline \texttt{alert} & \texttt{showNearest()} & Display browser-specific request to use device's location, pan to nearest route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{openOptions()}}}\\
+		\texttt{function} (link) & Display HTML element containing more options, with transition & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{closeOptions()}}}\\
+		\texttt{function} (link) & Hide HTML element containing more options, with transition & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Feature Options}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Location Options}}\\
 		\hline
-		\texttt{function} (button) & \texttt{showMunros()} & Display all markers and associated pop-ups of Munros & As expected\\
-		\texttt{function} (button) & \texttt{showMunroTops()} & Display all markers and associated pop-ups of Munro Tops & As expected\\
-		\texttt{function} (button) & \texttt{showCorbetts()} & Display all markers and associated pop-ups of Corbetts & As expected\\
-		\texttt{function} (button) & \texttt{showCorbettTops()} & Display all markers and associated pop-ups of Corbett Tops & As expected\\
-		\texttt{function} (button) & \texttt{hideMarkers()} & Hide all markers associated with any hill$^{A}$ & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showLocation()}}}\\
+		\texttt{function} (button),\newline \texttt{alert} & Display browser-specific request to use device's location, pan to device coordinates on map, display marker and associated pop-up, and display accuracy radius & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showNearest()}}}\\
+		\texttt{function} (button),\newline \texttt{alert} & Display browser-specific request to use device's location, pan to nearest route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- `Ability' Options}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Feature Options}}\\
 		\hline
-		\texttt{function} (select) & \texttt{showAbilityListCont()} & Display division of relevant ability selection\newline (7 variations) & As expected\\
-		\texttt{function} (select) & \texttt{selectAbilityRefine( `<ability>')} & Select ability factor on ability selection, add ability factor to list, and display in HTML element & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showMunros()}}}\\
+		\texttt{function} (button) & Display all markers and associated pop-ups of Munros & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showMunroTops()}}}\\
+		\texttt{function} (button) & Display all markers and associated pop-ups of Munro Tops & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showCorbetts()}}}\\
+		\texttt{function} (button) & Display all markers and associated pop-ups of Corbetts & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showCorbettTops()}}}\\
+		\texttt{function} (button) & Display all markers and associated pop-ups of Corbett Tops & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{hideMarkers()}}}\\
+		\texttt{function} (button) & Hide all markers associated with any hill$^{A}$ & As expected\\
+		\hline
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- `Ability' Options}}\\
+		\hline
+		\multicolumn{3}{c}{\underline{\texttt{showAbilityListCont()}}}\\
+		\texttt{function} (select) & Display division of relevant ability selection\newline (7 variations) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{selectAbilityRefine(`<ability>')}}}\\
+		\texttt{function} (select) & Select ability factor on ability selection, add ability factor to list, and display in HTML element & As expected\\
 		\texttt{function} (select)\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- `Equipment' Options}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- `Equipment' Options}}\\
 		\hline
-		\texttt{function} (select) & \texttt{showAbilityListCont()} & Display division of relevant equipment selection\newline (7 variations) & As expected\\
-		\texttt{function} (select) & \texttt{selectEquipmentRefine( `<equip>')} & Select equipment factor on equipment selection, add equipment factor to list, and display in HTML element & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showAbilityListCont()}}}\\
+		\texttt{function} (select) & Display division of relevant equipment selection\newline (7 variations) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{selectEquipmentRefine(`<equip>')}}}\\
+		\texttt{function} (select) & Select equipment factor on equipment selection, add equipment factor to list, and display in HTML element & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Search Route}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Search Route}}\\
 		\hline
-		\texttt{function} (select) & \texttt{showRouteListCont()} & Display division of relevant landmass selection\newline (18 variations) & As expected\\
-		\texttt{option} (select) & N/A & Select route on landmass selection\newline (Varying between 1 and 7 variations, for 18 parent variations) & As expected\\
-		\texttt{function} (button) & \texttt{searchRoute(`<route>')} & Display division of relevant selection$^{6}$ & As expected\\
-		\texttt{function} (button) & \texttt{showRoute(`<route>')} & Pan to route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups & As expected\\
-		\texttt{function} (button) & \texttt{searchRouteRefined( `<route>')} & Display division of relevant selection$^{7}$\newline (Subject to `Ability' and `Equipment' constraints) & As expected\\
-		\texttt{function} (button) & \texttt{showRouteRefined( `<route>')} & Pan to route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups\newline (Subject to `Ability' and `Equipment' constraints) & As expected\\
-		\texttt{function} (button) & \texttt{hideRoutes()} & Hide all route components associated with any route & As expected\\
-		\texttt{function} (button) & \texttt{galacticConquest()} & Display all markers and associated pop-ups, display all lines, and display all hill markers and associated pop-ups$^{B}$ & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showRouteListCont()}}}\\
+		\texttt{function} (select) & Display division of relevant landmass selection\newline (18 variations) & As expected\\
+		\texttt{option} (select) & Select route on landmass selection\newline (Varying between 1 and 7 variations, for 18 parent variations) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{searchRoute(`<route>')}}}\\
+		\texttt{function} (button) & Display division of relevant selection$^{6}$ & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showRoute(`<route>')}}}\\
+		\texttt{function} (button) & Pan to route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{searchRouteRefined(`<route>')}}}\\
+		\texttt{function} (button) & Display division of relevant selection$^{7}$\newline (Subject to `Ability' and `Equipment' constraints) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showRouteRefined(`<route>')}}}\\
+		\texttt{function} (button) & Pan to route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups\newline (Subject to `Ability' and `Equipment' constraints) & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{hideRoutes()}}}\\
+		\texttt{function} (button) & Hide all route components associated with any route & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{galacticConquest()}}}\\
+		\texttt{function} (button) & Display all markers and associated pop-ups, display all lines, and display all hill markers and associated pop-ups$^{B}$ & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Conquest Map' -- Search Landmass}}\\
+		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Search Landmass}}\\
 		\hline
-		\texttt{text} (input) & N/A & Accept input relevant to any hill name & As expected\\
-		\texttt{function} (button) & \texttt{searchLocation()} & Display division of relevant input match$^{2}$ & As expected\\
-		\hline
-		\hline
-		\multicolumn{4}{c}{\textsc{Design \& Accessibility}}\\
+		\texttt{text} (input) & Accept input relevant to any hill name & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{searchLocation()}}}\\
+		\texttt{function} (button) & Display division of relevant input match$^{2}$ & As expected\\
 		\hline
 		\hline
-		\multicolumn{4}{c}{\textsc{Header \& Footer (On `Drafting Room' and `Conquest Map')}}\\
+		\multicolumn{3}{c}{\textsc{Design \& Accessibility}}\\
 		\hline
-		N/A & N/A & Logo font is easily readable & As expected\\
-		N/A & N/A & Logo font color is easily readable & As expected\\
-		N/A & N/A & Logo transitions entry from left to right, then parks & As expected\\
-		N/A & N/A & Navigation font is easily readable & As expected\\
-		N/A & N/A & Navigation font color is easily readable & As expected\\
-		N/A & N/A & Navigation (\texttt{a}) font color changes to a blue with transition upon hover & As expected\\
-		N/A & N/A & Navigation (\texttt{a}) hover font color is easily readable & As expected\\
-		N/A & N/A & Linear gradient creates a sufficient contrast for dark logo font and lighter navigation font & As expected\\
-		N/A & N/A & Credits font is easily readable & As expected\\
-		N/A & N/A & Credits font color is easily readable & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{General Body Elements (On `Drafting Room' and `Conquest Map')}}\\
+		\multicolumn{3}{c}{\textsc{Header \& Footer -- `Drafting Room' and `Conquest Map'}}\\
 		\hline
-		N/A & N/A & \texttt{h1} (and variants), \texttt{h2}, (and variants), \texttt{h3}, \texttt{p}, \texttt{b}, and \texttt{i} fonts are easily readable & As expected\\
-		N/A & N/A & \texttt{h1} (and variants), \texttt{h2}, (and variants), \texttt{h3}, \texttt{p}, \texttt{b}, \texttt{i}, and \texttt{small} font sizes are easily readable & As expected\\
-		N/A & N/A & There is sufficient contrast between the black body text and white (and variants) background and foregrounds & As expected\\
-		N/A & N/A & Link (\texttt{a}) font color changes to a blue upon hover, unless otherwise specified & As expected\\
-		N/A & N/A & Link (\texttt{a}) hover font color is easily readable & As expected\\
-		N/A & N/A & Button font reverse (white on graded grey) provides sufficient contrast & As expected\\
-		N/A & N/A & Buttons remain readable with the size reduction upon click & As expected\\
-		N/A & N/A & Margins and padding between parent and child division elements is sufficient enough to create an effective and readable partition & As expected\\
-		N/A & N/A & ... & As expected\\
+		\texttt{header}, \texttt{body} & Logo font is easily readable & As expected\\
+		\texttt{header}, \texttt{body} & Logo font color is easily readable & As expected\\
+		\texttt{header} & Logo transitions entry from left to right, then parks & As expected\\
+		\texttt{header} & Navigation font is easily readable & As expected\\
+		\texttt{header} & Navigation font color is easily readable & As expected\\
+		\texttt{header} & Navigation (\texttt{a}) font color changes to a blue with transition upon hover & As expected\\
+		\texttt{header} & Navigation (\texttt{a}) hover font color is easily readable & As expected\\
+		\texttt{header}, \texttt{body} & Linear gradient creates a sufficient contrast for dark logo font and lighter navigation font & As expected\\
+		\texttt{body} & Credits font is easily readable & As expected\\
+		\texttt{body} & Credits font color is easily readable & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Introduction (On `Drafting Room')}}\\
+		\multicolumn{3}{c}{\textsc{Body Elements -- `Drafting Room' and `Conquest Map'}}\\
 		\hline
-		N/A & N/A & There is sufficient contrast between the varying logo and body text, and background picture & As expected\\
-		N/A & N/A & Main logo can be seen with drop-shadow over background & As expected\\
-		N/A & N/A & Button background color changes to a blue upon hover & As expected\\
-		N/A & N/A & Button reduces in opacity upon hover & As expected\\
-		N/A & N/A & Button is easily readbale with reduced opacity upon hover & As expected\\
-		N/A & N/A & Marquee scrolls right-to-left & As expected\\
-		N/A & N/A & Body text is easily readbale with reduced opacity & As expected\\
+		\texttt{h1}, \texttt{h2}, \texttt{h3}, \texttt{p}, \texttt{b}, \texttt{i} & Heading (and variant), paragraph, bold-face, and italic fonts are easily readable & As expected\\
+		\texttt{h1}, \texttt{h2}, \texttt{h3}, \texttt{p}, \texttt{b}, \texttt{i}, \texttt{small} & Heading (and variant), paragraph, bold-face, italic and `small' font sizes are easily readable & As expected\\
+		\texttt{body} & There is sufficient contrast between the black body text and white (and variants) background and foregrounds & As expected\\
+		\texttt{body} & Margins and padding between parent and child division elements is sufficient enough to create an effective and readable partition & As expected\\
+		\texttt{a} & Link font color changes to a blue upon hover, unless otherwise specified & As expected\\
+		\texttt{a} & Link hover font color is easily readable & As expected\\
+		\texttt{button} & Button font reverse (white on graded grey) provides sufficient contrast & As expected\\
+		\texttt{button} & Buttons remain readable with the size reduction upon click & As expected\\
+		\texttt{select} & Select font reverse (white on graded grey) provides sufficient contrast & As expected\\
+		\texttt{input} & Input font reverse (white on graded grey) provides sufficient contrast & As expected\\
+		\texttt{a}, \texttt{button}, \texttt{select}, \texttt{input} & Links, buttons, selects and input all provide a `pointer' cursor upon hover & As expected\\
+		\texttt{head} & All FontAwesome symbols load where expected, to the best of knowledge & As expected\\
+		\texttt{head} & All FontAwesome symbols are appropriate and would make relevant indications if used in isolation & As expected\\
 		\hline
-		\multicolumn{4}{c}{\textsc{`Briefing' (On `Drafting Room')}}\\
+		\multicolumn{3}{c}{\textsc{Introduction -- `Drafting Room'}}\\
 		\hline
-		N/A & N/A & There is sufficient contrast between the black symbols and the light-blue gradient of the navigation elements & As expected\\
-		N/A & N/A & ... & As expected\\
+		\texttt{body} & There is sufficient contrast between the varying logo and body text, and background picture & As expected\\
+		\texttt{img} & Background image remains fixed upon scroll & As expected\\
+		\texttt{img} & Main logo can be seen with drop-shadow over background image & As expected\\
+		\texttt{button} & Button background color changes to a blue upon hover & As expected\\
+		\texttt{button} & Button reduces in opacity upon hover & As expected\\
+		\texttt{button} & Button is easily readable with reduced opacity upon hover & As expected\\
+		\texttt{marquee} & Marquee scrolls right-to-left & As expected\\
+		\texttt{p} & Body text is easily readable with reduced opacity & As expected\\
 		\hline
-		...\\
+		\multicolumn{3}{c}{\textsc{`Briefing' (`Overview', `Conditioning' and `Weather') -- `Drafting Room'}}\\
 		\hline
-		\multicolumn{4}{c}{\textsc{Mobile Scalability (On `Drafting Room' and `Conquest Map')}}\\
+		\texttt{body}, \texttt{p} & There is sufficient contrast between the black symbols and the light-blue gradient of the `Briefing' navigation elements & As expected\\
+		\texttt{body}, \texttt{p} & There is sufficient contrast between the body text and the light-blue gradient of the `Search Route' and `Search Landmass' results & As expected\\
+		\texttt{img} & Result images are an appropriate size to be easily viewable on `Search Landmass', `Ability' and `Equipment' & As expected\\
+		\texttt{body} & Margins and padding between parent and child division elements in `Weather' result tiles is sufficient enough to create an effective and readable partition & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{selectMunroOpt()}, \texttt{selectCorbettOpt()}, \texttt{selectCounty()}}}\\
+		\texttt{span}$^{X}$, \texttt{function} (select) & Ellipses appear succeeding ``Five day forecast for'' and ``Seven hour forecast for'' to indicate a `Weather' location's coordinates have been primed but not yet used to return results & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showWeather}}}\\
+		\texttt{function} (click) & Ellipses succeeding ``Five day forecast for'' and ``Seven hour forecast for'' disappear when `Get Weather' is selected, executing the primary function, to indicate a `Weather' location's coordinates have now been used to return results & As expected\\
+		API \texttt{function} & `Weather' daily and hourly respective dates and hours are correct, to the best of knowledge & As expected\\
+		\multicolumn{3}{c}{\underline{showWeather}}\\
+		\texttt{function} (click) & `Weather' summary symbols match descriptions and other stats such as precipitation & As expected\\
+		\multicolumn{3}{c}{\underline{showWeather}}\\
+		\texttt{function} (click) & `Weather' temperature background colors change relative to temperature intervals & As expected\\
+		\multicolumn{3}{c}{\underline{showWeather}}\\
+		\texttt{function} (click) & `Weather' temperature FontAwesome symbol colors change relative to temperature intervals (temperature background colors) & As expected\\
+		\multicolumn{3}{c}{\underline{showWeather}}\\
+		\texttt{function} (click) & `Weather' wind direction statistics are aligned. For example, a `SW' wind will have an arrow pointing approximately 45\textdegree\ and read something like ``$x$m/s \@ 225\textdegree'' & As expected\\
+		\texttt{table} & Table font is easily readable in `Exclusive DLC' & As expected\\
+		\texttt{table} & Table images are an appropriate size to be easily viewable `exclusive DLC' & As expected\\
 		\hline
-		N/A & N/A & `Drafting' and `Conquest' on navigation are replaced by the click-promping `hamburger bars' & As expected\\
-		N/A & N/A & The footer becomes hidden & As expected\\
-		N/A & N/A & Home introduction section is replaced with a similar one, contained within a foreground container, with black replacing white as the color of the \texttt{button} and \texttt{marquee} & As expected\\
-		N/A & N/A & `Briefing' navigation elements stack in three rows, rather than one & As expected\\
-		N/A & N/A & ... & As expected\\
+		\multicolumn{3}{c}{\textsc{Toggles -- `Conquest Map'}}\\
 		\hline
-		\multicolumn{4}{p{13cm}}{$N$ Evaluator(s): 5\newline Iterations (Isolated): 2 /element/evaluator\newline Iterations (Comprehensive): 3 /evaluator\newline $^{1,2,3,4,5,6,7}$: Clients informed of expected HTML output\newline $^{A,B}$: ``all'' refers to ``for all hills'' and ``for all routes'', respectively}\\
+		\texttt{header}, \texttt{body} & Proportion of header, `seeking bar', options toggle, and map layer select are relatively appropriate to the map to still create a viewable map division & As expected\\
+		\texttt{body} & Double right angle delimiters ($\rangle\rangle$) are an appropriate method of suggesting clicking `this' generates some form of left-to-right movement (the extension of the options menu) & As expected\\
+		\texttt{input} & Only one `Leisure', `Road', `Outdoor' is selected at one time & As expected\\
+		\texttt{input} & `Leisure', `Road', and `Outdoor' are not only selectable by clicking in the \texttt{input} \texttt{radio}s, but also by clicking on the words themselves & As expected\\
+		\hline
+		\multicolumn{3}{c}{\textsc{Options Menu -- `Conquest Map'}}\\
+		\hline
+		\multicolumn{3}{c}{\underline{\texttt{openOptions()}}}\\
+		\texttt{function} & Element transitions from left-to-right when toggled active & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{closeOptions()}}}\\
+		\texttt{function} & Element transitions from right-to-left when toggled inactive & As expected\\
+		\texttt{body} & When active, proportion of the options menu is relatively appropriate to the map to create a viewable map division on which toggling options can be viewed to a reasonable degree & As expected\\
+		\texttt{body} & Reduced opacity background is sufficient enough to make it's text easily readable but add depth to the element & As expected\\
+		\texttt{body} & Margins and padding between parent and child division elements is sufficient enough to create an effective and readable partition & As expected\\
+		\texttt{img} & Result images are an appropriate size to be easily viewable on `Search Landmass' & As expected\\
+		\texttt{button} & Different-styled buttons are still recognisable as buttons & As expected\\
+		\texttt{button} & Button font and border color changes to a blue upon hover, unless otherwise specified & As expected\\
+		\texttt{button} & Button hover font and border color is easily readable & As expected\\
+		\hline
+		\multicolumn{3}{c}{\textsc{Map Layers -- `Conquest Map'}}\\
+		\hline
+		\texttt{body} & `Seeking bar' does not display upon map load & As expected\\
+		\texttt{body} & `Seeking bar' reduced opacity background is sufficient enough to make it's text easily readable but add depth to the element & As expected\\
+		API \texttt{function} & Map pans effectively using cursor control & As expected\\
+		API \texttt{function} & Map layers alternate between OS Road (1 : 250 000), OS Landranger (1 : 50 000), and OS Explorer (1 : 25 000) accordingly upon zoom, in-line with the OS API & As expected\\
+		\texttt{body} & Markers (FontAwesome hill for hills, FontAwesome map pin for start of route, FontAwesome arrow for current location) are all relevant and easily viewable on the map base layer & As expected\\
+		\texttt{body} & Red route lines are easily viewable on the map base layer & As expected\\
+		API \texttt{function} & Clicking on an appropriate marker toggles it's pop-up active & As expected\\
+		Leaflet \texttt{bindPopup} & Clicking on the `$\times$' on a marker's pop-up toggles the pop-up inactive & As expected\\
+		\texttt{body} & White pop-ups on markers provide enough contrast to the map base layer to be easily readable & As expected\\
+		\texttt{p} & Font of pop-ups on markers is easily readable & As expected\\
+		\texttt{img} & Images on pop-ups on markers are an appropriate size to be easily viewable & As expected\\
+		\hline
+		\multicolumn{3}{c}{\textsc{Mobile Scalability -- `Drafting Room' and `Conquest Map')}}\\
+		\hline
+		\texttt{header} & `Drafting' and `Conquest' on navigation are replaced by the click-prompting `hamburger bars' & As expected\\
+		\texttt{body} & The footer becomes hidden & As expected\\
+		\texttt{body} & Margins and padding between parent and child division elements is sufficient enough upon change to still create an effective and readable partition & As expected\\
+		\texttt{header}, \texttt{body} & Proportion of header, `seeking' bar, options toggle, and map layer select are still relatively appropriate to the map to still create a viewable map division & As expected\\
+		\texttt{body} & Home introduction section is replaced with a similar one, contained within a foreground container, with black replacing white as the color of the \texttt{button} and \texttt{marquee} & As expected\\
+		\texttt{div} & `Briefing' navigation elements stack in three rows, rather than one & As expected\\
+		\texttt{body} & Margins and padding between parent and child division elements in `Weather' result tiles is still sufficient enough to create an effective and readable partition upon scale & As expected\\
+		\texttt{div} & `Weather' daily and hourly tile elements stack in five and seven rows, respectively; rather than one and one by five and seven, respectively & As expected\\
+		\texttt{table} & Table font is still easily readable in `exclusive DLC' upon scale & As expected\\
+		\texttt{table} & Table images are still an appropriate size to be easily viewable `exclusive DLC' upon scale & As expected\\
+		API \texttt{function} & `Conquest Map' map pans effectively using finger control & As expected\\
+		\texttt{body} & When active, proportion of the `Conquest Map' options menu populates the majority of the map division, not a percentage-proportionate (to desktop site) portion & As expected\\
+		\hline
+		\multicolumn{3}{p{12.5cm}}{$N$ Evaluator(s): 5\newline Iterations (Isolated): 2 /element/evaluator\newline Iterations (Comprehensive): 3 /evaluator\newline $^{1,2,3,4,5,6,7}$: Clients informed of expected HTML output\newline $^{A,B}$: ``all'' refers to ``for all hills'' and ``for all routes'', respectively\newline $^{X}$: Ellipses appear in span text, in HTML however are also added back using a function after a different function removes them}\\
 		\hline
 		\caption{Functionality -- Isolated/Comprehensive Testing}
 	\end{longtable}
