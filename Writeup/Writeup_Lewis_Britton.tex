@@ -1346,6 +1346,8 @@ if ((day.wind_deg) >= 348.76) {
 	\end{longtable}
 	\end{center}
 
+\newpage
+
 	\subsection{Design \& Construction Review}
 
 	In summary, the use of HTML, CSS and JavaScript worked as efficiently as expected. The system was created on-schedule, implemented all of the necessary requirements and effectively made use of the required APIs and Libraries. No major construction issues were encountered; only minor design ones, as discussed, which are near-irrelevant and manageable. The command line always makes for an effective environment to [compose and perform], and test, all relevant material. There are no alternatives or other methodologies, environments or frameworks worth considering from my perspective here.
@@ -1393,11 +1395,11 @@ if ((day.wind_deg) >= 348.76) {
 
 	Unit testing and testing `suites' refer to various tools which exist which claim to `text the integrity' of JavaScript and JavaScript-based elements using their relevant HTML counterparts and interfaces or solely the document.
 
-			\paragraph{JavaScript Benchmarking}
+			\paragraph{HTML, CSS \& JavaScript Benchmarking}
 
  	Popular tools such as Unit.js and Mocha appear within frameworks such as Node.js and in browsers such as Chromium. This system is of course anti-bloatware and anti-spyware and thus, avoids `big-tech' proprietary software. These tools are designed to allow developers to write `test cases' which simulate an interface instance with the HTML and JavaScript elements. In this case, a three-thousand-line table of results with stats to five significant figures is of no benefit. On a larger-scale project with scalability, this would be relevant. Human interaction with elements on this scale leads to faster problem solving. On a separate note, all JavaScript functions are tested, given test inputs where appropriate, not only as part of their HTML elements but also in the `console' in-browser to ensure they function solely. This is not documented as results are subjective and no issues occurred.
 
-	...
+	I gave in and installed the command line tool \texttt{npm node} which allows you to interface with features of the Node.js API such as script validators. \texttt{amphtml-validator} was used to validate the integrity of HTML, CSS and JavaScript files. No major issues occured when running this protocol. Any issues indicated were either related to justified syntax `disagreements' and various unrecognised Leaflet syntax. There is likely a way of amending the package to account for Leaflet however, it was irrelevant as all issues were readable and the tool will not be used in the future.
 
 			\paragraph{JSON Benchmarking}
 
