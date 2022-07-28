@@ -1373,7 +1373,7 @@ if ((day.wind_deg) >= 348.76) {
 
 			\paragraph{Heuristic Evaluations}
 
-	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous isolated element testing completed by [1] the developer (myself) and [2] externals, throughout development. The developer testing has been described. In the case of externals, the discussed small group of development students and professionals (simulated clients) were simply asked to repeat small inputs and processes alike at intervals, just as practiced by myself. The `externals' portion of this is presented in the `heuristic evaluations' seen in Figure A7, and generated many ideas for the, latterly discussed, isolated and comprehensive testing methods seen in Figure A8. Often, this approach generates new requirements as development goes on and potential users realise they want more. This was not the case here.
+	With reference to the GANTT chart in Table 6.5, this portion refers to the continuous isolated element testing completed by [1] the developer (myself) and [2] externals, throughout development. The developer testing has been described. In the case of externals, the discussed small group of development students and professionals (simulated clients) were simply asked to repeat small inputs and processes alike at intervals, just as practiced by myself. The `externals' portion of this is presented in the `heuristic evaluations' seen in Figure A7, and generated many ideas for the, latterly discussed, isolated and comprehensive testing methods seen in Figure A8. Often, this approach generates new requirements as development goes on and potential users realise they want more. This was not the case here. See Table 2.1 for a reminded of heuristic factors and severity ratings.
 
 		\subsubsection{User Acceptance (UAT), Accessibility \& Usability}
 
@@ -1467,7 +1467,7 @@ if ((day.wind_deg) >= 348.76) {
 
 	\begin{center}
                 \scriptsize
-        	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
+        \begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
                 \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
                 \hline
 		\multicolumn{4}{c}{\textsc{Basic Features}}\\
@@ -1493,7 +1493,7 @@ if ((day.wind_deg) >= 348.76) {
 
 	\begin{center}
                 \scriptsize
-        	\begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
+        \begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
                 \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
 		\hline
 		\multicolumn{4}{c}{\textsc{Basic Features}}\\
@@ -1566,8 +1566,8 @@ er (Mobile)}\\
 		\end{longtable}
 		\end{center}
 
-		Various Sources (2022)
-
+\newpage
+	
 		\subsubsection*{Figure A4: Data Sources} 
 
 	\begin{center}
@@ -1992,6 +1992,38 @@ er (Mobile)}\\
 
 		\subsubsection*{Figure A7: Functionality -- Continuous Testing (Heuristic Evaluation)}
 
+	\begin{center}
+                \scriptsize
+        \begin{longtable}{p{7.5cm}p{0.5cm}p{0.5cm}p{4cm}}
+                \textsc{Description} & \textsc{Vio.} & \textsc{Sev.} & \textsc{Proposed Solution}\\
+                \hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Functionality}}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Page Select -- `Drafting Room' and `Conquest Map'}}\\
+		\hline
+		\textbf{}:\newline  & $\mathrm{H_{}}$, $\mathrm{H_{}}$ & $\mathrm{S_{}}$ & \\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Design \& Accessibility}}\\
+		\hline
+		\hline
+		\multicolumn{4}{c}{\textsc{Header \& Footer -- `Drafting Room' and `Conquest Map'}}\\
+		\hline
+		\textbf{Pages Drop}:\newline Seems unnecessary to use a drop-down element to display only one working page (`Conquest Map') under `Field' when the other (`Ranger') is simply a string of text with no link. & $\mathrm{H_{8}}$ & $\mathrm{S_{2}}$ & Remove drop-down element and replace drop-down link `Field' with a simple page link to the `Conquest Map', named `Conquest'; like `Drafting'\\
+		\textbf{Header Contrast}:\newline There isn't enough contrast between the black logo and the header background color however, there is almost too much contrast between the navigation font color and the header background color & $\mathrm{H_{8}}$ & $\mathrm{S_{2}}$ & Experiment with gradients to balance the contrast. This will also add a themes of speed and urgency, and harmonise with the directional transition of the logo upon page load\\
+		\hline
+                \multicolumn{4}{l}{\textsc{Total Violations}: ...}\\
+                \multicolumn{4}{l}{\textsc{Total Iterations}: 11 (This is fully-inclusive of violations identified on all 11)}\\
+		\multicolumn{4}{l}{\textsc{Iteration Frequency}: Appropriate Checkpoints}\\
+		\multicolumn{4}{l}{\textsc{Evaluator(s)}: Lewis Britton, Anonymous [5]}\\
+                \multicolumn{4}{l}{\textsc{Platform(s)}: Brave Browser (Desktop), Brave Browser (Mobile)}\\
+                \hline
+                \caption{Functionality -- Continuous Testing (Heuristic Evaluation)}
+        \end{longtable}
+        \end{center}
+
 \newpage
 
 		\subsubsection*{Figure A8: Functionality -- Isolated/Comprehensive Testing}
@@ -2005,13 +2037,13 @@ er (Mobile)}\\
 		\multicolumn{3}{c}{\textsc{Functionality}}\\
 		\hline
 		\hline
-		\multicolumn{3}{c}{\textsc{Page Select (On `Drafting Room' and `Conquest Map')}}\\
+		\multicolumn{3}{c}{\textsc{Page Select -- `Drafting Room' and `Conquest Map')}}\\
 		\hline
 		\texttt{href} (link) & Navigate to `Drafting Room' page & As expected\\
 		\texttt{href} (link) & Navigate to `Conquest Map' page & As expected\\
 		\texttt{href} (button) & Navigate to `Conquest Map' page & As expected\\
 		\hline
-		\multicolumn{3}{c}{\textsc{Page Select (On `Drafting Room' and `Conquest Map') (Mobile)}}\\
+		\multicolumn{3}{c}{\textsc{Page Select -- `Drafting Room' and `Conquest Map') (Mobile)}}\\
 		\hline
 		\texttt{EventListener} (click) & Display page-select drop-down division & As expected\\
 		\texttt{href} (link) & Navigate to `Drafting Room' page & As expected\\
