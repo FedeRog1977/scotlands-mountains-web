@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.28)  28 JUL 2022 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.28)  29 JUL 2022 08:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2701,7 +2701,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-<../System/Photos/poster.jpg, id=1014, 845.0772pt x 1195.1049pt>
+<../System/Photos/poster.jpg, id=1015, 845.0772pt x 1195.1049pt>
 File: ../System/Photos/poster.jpg Graphic file (type jpg)
 <use ../System/Photos/poster.jpg>
 Package pdftex.def Info: ../System/Photos/poster.jpg  used on input line 1737.
@@ -3259,7 +3259,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2368--2368
 \T1/cmr/m/n/8 (R.I.P.) veni-son Lorne
  []
 
-<../System/Photos/bruar_lorne.jpg, id=1096, 410.53375pt x 410.53375pt>
+<../System/Photos/bruar_lorne.jpg, id=1097, 410.53375pt x 410.53375pt>
 File: ../System/Photos/bruar_lorne.jpg Graphic file (type jpg)
 <use ../System/Photos/bruar_lorne.jpg>
 Package pdftex.def Info: ../System/Photos/bruar_lorne.jpg  used on input line 2
@@ -3270,7 +3270,7 @@ Underfull \hbox (badness 1092) in paragraph at lines 2369--2369
 \T1/cmr/m/n/8 `meaty' flavour. Proper
  []
 
-<../System/Photos/sh_lorne.png, id=1097, 803.0pt x 607.26875pt>
+<../System/Photos/sh_lorne.png, id=1098, 803.0pt x 607.26875pt>
 File: ../System/Photos/sh_lorne.png Graphic file (type png)
 <use ../System/Photos/sh_lorne.png>
 Package pdftex.def Info: ../System/Photos/sh_lorne.png  used on input line 2369
@@ -3296,7 +3296,7 @@ Underfull \hbox (badness 2065) in paragraph at lines 2370--2370
 \T1/cmr/m/n/8 when part of the M&S
  []
 
-<../System/Photos/ms_lorne.jpeg, id=1098, 376.40625pt x 376.40625pt>
+<../System/Photos/ms_lorne.jpeg, id=1099, 376.40625pt x 376.40625pt>
 File: ../System/Photos/ms_lorne.jpeg Graphic file (type jpg)
 <use ../System/Photos/ms_lorne.jpeg>
 Package pdftex.def Info: ../System/Photos/ms_lorne.jpeg  used on input line 237
@@ -3312,7 +3312,7 @@ Underfull \hbox (badness 1565) in paragraph at lines 2371--2371
 \T1/cmr/m/n/8 meaty flavour, bor-der-ing
  []
 
-<../System/Photos/sh_lorne2.png, id=1099, 803.0pt x 607.26875pt>
+<../System/Photos/sh_lorne2.png, id=1100, 803.0pt x 607.26875pt>
 File: ../System/Photos/sh_lorne2.png Graphic file (type png)
 <use ../System/Photos/sh_lorne2.png>
 Package pdftex.def Info: ../System/Photos/sh_lorne2.png  used on input line 237
@@ -3323,7 +3323,7 @@ Underfull \hbox (badness 1062) in paragraph at lines 2372--2372
 \T1/cmr/m/n/8 the deep fried in but-ter
  []
 
-<../System/Photos/ma_lorne.jpg, id=1100, 642.4pt x 642.4pt>
+<../System/Photos/ma_lorne.jpg, id=1101, 642.4pt x 642.4pt>
 File: ../System/Photos/ma_lorne.jpg Graphic file (type jpg)
 <use ../System/Photos/ma_lorne.jpg>
 Package pdftex.def Info: ../System/Photos/ma_lorne.jpg  used on input line 2372
@@ -3588,10 +3588,10 @@ share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dis
 t/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/public/tipa/tipa
 10.pfb>
-Output written on Writeup_Lewis_Britton.pdf (104 pages, 5612808 bytes).
+Output written on Writeup_Lewis_Britton.pdf (104 pages, 5616449 bytes).
 PDF statistics:
- 1375 PDF objects out of 1440 (max. 8388607)
- 1148 compressed objects within 12 object streams
+ 1376 PDF objects out of 1440 (max. 8388607)
+ 1149 compressed objects within 12 object streams
  283 named destinations out of 1000 (max. 500000)
  844 words of extra memory for PDF output out of 10000 (max. 10000000)
 
