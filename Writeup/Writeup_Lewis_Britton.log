@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.28)  29 JUL 2022 08:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.28)  5 AUG 2022 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2176,6 +2176,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [55]
+Underfull \hbox (badness 10000) in paragraph at lines 1400--1401
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3122,13 +3126,138 @@ Underfull \hbox (badness 10000) in paragraph at lines 2008--2008
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 2016--2017
+Underfull \hbox (badness 10000) in paragraph at lines 2008--2008
+[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 2008--2009
 []|\T1/cmr/m/n/8 Remove drop-down el-e-ment
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 2016--2017
+Underfull \hbox (badness 2418) in paragraph at lines 2008--2009
 \T1/cmr/m/n/8 and re-place drop-down link
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2009--2009
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2009--2009
+[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 2009--2010
+\T1/cmr/m/n/8 tions ap-pear later in more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2010--2010
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 2010--2011
+[]|\T1/cmr/m/n/8 Give the map layer op-tions
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 2010--2011
+\T1/cmr/m/n/8 lay-ers upon the map; ev-
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 2010--2011
+\T1/cmr/m/n/8 space view-able for sam-pling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2011--2011
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2012--2012
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2013--2013
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2014--2014
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2015--2015
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2016--2016
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2017
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2018--2018
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2019--2019
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2028--2028
+[]|$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2028--2028
+[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 5203) in paragraph at lines 2028--2029
+\T1/cmr/m/n/8 in-te-grates more ap-pro-pri-ate
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 2030--2031
+\T1/cmr/m/n/8 which doesn't lose as much
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2032--2032
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2032--2032
+[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2033--2033
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 2033--2034
+[]|\T1/cmr/m/n/8 Add slight trans-parency to
  []
 
 
@@ -3140,11 +3269,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 2225--2225
-[]|\T1/cmtt/m/n/8 a\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 button\T1/cmr/m/n/8 , \T1/cmt
-t/m/n/8 select\T1/cmr/m/n/8 ,
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3163,6 +3287,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [25]
+Underfull \hbox (badness 10000) in paragraph at lines 2241--2241
+[]|\T1/cmtt/m/n/8 a\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 button\T1/cmr/m/n/8 , \T1/cmt
+t/m/n/8 select\T1/cmr/m/n/8 ,
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3208,24 +3337,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [30]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 2326.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2326.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 2326.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2326.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2326.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3235,98 +3346,134 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 2357--2358
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[32]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 2342.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 2342.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 2342.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 2342.
+
+
+LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 2342.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 2373--2374
 
  []
 
 
-Underfull \hbox (badness 6316) in paragraph at lines 2368--2368
+Underfull \hbox (badness 6316) in paragraph at lines 2384--2384
 []|\T1/cmr/m/n/8 A rich, al-most gamey,
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 2368--2368
+Underfull \hbox (badness 1354) in paragraph at lines 2384--2384
 \T1/cmr/m/n/8 and ef-fec-tive dis-tri-bu-tion
  []
 
 
-Underfull \hbox (badness 7759) in paragraph at lines 2368--2368
+Underfull \hbox (badness 7759) in paragraph at lines 2384--2384
 \T1/cmr/m/n/8 the H.o.B. dis-con-tin-ued
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2368--2368
+Underfull \hbox (badness 10000) in paragraph at lines 2384--2384
 \T1/cmr/m/n/8 (R.I.P.) veni-son Lorne
  []
 
-<../System/Photos/bruar_lorne.jpg, id=1097, 410.53375pt x 410.53375pt>
+<../System/Photos/bruar_lorne.jpg, id=1106, 410.53375pt x 410.53375pt>
 File: ../System/Photos/bruar_lorne.jpg Graphic file (type jpg)
 <use ../System/Photos/bruar_lorne.jpg>
 Package pdftex.def Info: ../System/Photos/bruar_lorne.jpg  used on input line 2
-368.
+384.
 (pdftex.def)             Requested size: 71.13188pt x 71.13036pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 2369--2369
+Underfull \hbox (badness 1092) in paragraph at lines 2385--2385
 \T1/cmr/m/n/8 `meaty' flavour. Proper
  []
 
-<../System/Photos/sh_lorne.png, id=1098, 803.0pt x 607.26875pt>
+<../System/Photos/sh_lorne.png, id=1107, 803.0pt x 607.26875pt>
 File: ../System/Photos/sh_lorne.png Graphic file (type png)
 <use ../System/Photos/sh_lorne.png>
-Package pdftex.def Info: ../System/Photos/sh_lorne.png  used on input line 2369
+Package pdftex.def Info: ../System/Photos/sh_lorne.png  used on input line 2385
 .
 (pdftex.def)             Requested size: 71.13188pt x 53.79007pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2370--2370
+Underfull \hbox (badness 10000) in paragraph at lines 2386--2386
 []|\T1/cmr/m/n/8 Very sim-i-lar to Mr.
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 2370--2370
+Underfull \hbox (badness 1852) in paragraph at lines 2386--2386
 \T1/cmr/m/n/8 Howie's how-ever a lit-tle
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 2370--2370
+Underfull \hbox (badness 3679) in paragraph at lines 2386--2386
 \T1/cmr/m/n/8 For some rea-son bet-ter
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 2370--2370
+Underfull \hbox (badness 2065) in paragraph at lines 2386--2386
 \T1/cmr/m/n/8 when part of the M&S
  []
 
-<../System/Photos/ms_lorne.jpeg, id=1099, 376.40625pt x 376.40625pt>
+<../System/Photos/ms_lorne.jpeg, id=1108, 376.40625pt x 376.40625pt>
 File: ../System/Photos/ms_lorne.jpeg Graphic file (type jpg)
 <use ../System/Photos/ms_lorne.jpeg>
-Package pdftex.def Info: ../System/Photos/ms_lorne.jpeg  used on input line 237
-0.
+Package pdftex.def Info: ../System/Photos/ms_lorne.jpeg  used on input line 238
+6.
 (pdftex.def)             Requested size: 71.13188pt x 71.1331pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2371--2371
+Underfull \hbox (badness 10000) in paragraph at lines 2387--2387
 []|\T1/cmr/m/n/8 Slightly un-der-whelm-ing
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 2371--2371
+Underfull \hbox (badness 1565) in paragraph at lines 2387--2387
 \T1/cmr/m/n/8 meaty flavour, bor-der-ing
  []
 
-<../System/Photos/sh_lorne2.png, id=1100, 803.0pt x 607.26875pt>
+<../System/Photos/sh_lorne2.png, id=1109, 803.0pt x 607.26875pt>
 File: ../System/Photos/sh_lorne2.png Graphic file (type png)
 <use ../System/Photos/sh_lorne2.png>
-Package pdftex.def Info: ../System/Photos/sh_lorne2.png  used on input line 237
-1.
+Package pdftex.def Info: ../System/Photos/sh_lorne2.png  used on input line 238
+7.
 (pdftex.def)             Requested size: 71.13188pt x 53.79007pt.
 
-Underfull \hbox (badness 1062) in paragraph at lines 2372--2372
+Underfull \hbox (badness 1062) in paragraph at lines 2388--2388
 \T1/cmr/m/n/8 the deep fried in but-ter
  []
 
-<../System/Photos/ma_lorne.jpg, id=1101, 642.4pt x 642.4pt>
+<../System/Photos/ma_lorne.jpg, id=1110, 642.4pt x 642.4pt>
 File: ../System/Photos/ma_lorne.jpg Graphic file (type jpg)
 <use ../System/Photos/ma_lorne.jpg>
-Package pdftex.def Info: ../System/Photos/ma_lorne.jpg  used on input line 2372
+Package pdftex.def Info: ../System/Photos/ma_lorne.jpg  used on input line 2388
 .
 (pdftex.def)             Requested size: 71.13188pt x 71.12492pt.
 
@@ -3337,64 +3484,64 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[32 <../System/Photos/bruar_lorne.jpg> <../System/Photos/sh_lorne.png> <../Syst
+[34 <../System/Photos/bruar_lorne.jpg> <../System/Photos/sh_lorne.png> <../Syst
 em/Photos/ms_lorne.jpeg> <../System/Photos/sh_lorne2.png> <../System/Photos/ma_
 lorne.jpg>]
-Underfull \hbox (badness 7415) in paragraph at lines 2395--2400
+Underfull \hbox (badness 7415) in paragraph at lines 2411--2416
 []\T1/cmr/m/n/10.95 FontAwesome. (2021). \T1/cmr/m/sl/10.95 Search v5 Icons | F
 ont Awe-some. \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2409--2414
+Underfull \hbox (badness 10000) in paragraph at lines 2425--2430
 []\T1/cmr/m/n/10.95 Knuth, D. E. (2020). \T1/cmr/m/sl/10.95 Com-puter Mus-ings.
  \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2409--2414
+Underfull \hbox (badness 10000) in paragraph at lines 2425--2430
 \T1/cmtt/m/n/10.95 https://www-cs-faculty.stanford.edu/knuth/musings.html. \T1/
 cmr/m/n/10.95 (Ac-cessed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2430--2435
+Underfull \hbox (badness 10000) in paragraph at lines 2446--2451
 \T1/cmtt/m/n/10.95 https://developer.mozilla.org/en-US/docs/Web/API/Geolocation
 _API \T1/cmr/m/n/10.95 (Ac-
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 2437--2442
+Underfull \hbox (badness 3884) in paragraph at lines 2453--2458
 []\T1/cmr/m/n/10.95 Moolenaar, B. (2020). \T1/cmr/m/sl/10.95 Bram Moole-naar's 
 Web-site - home. \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2449--2454
+Underfull \hbox (badness 10000) in paragraph at lines 2465--2470
 []\T1/cmr/m/n/10.95 OpenWeather. (2022). \T1/cmr/m/sl/10.95 One Call API: weath
 er data for any
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2449--2454
+Underfull \hbox (badness 10000) in paragraph at lines 2465--2470
 \T1/cmr/m/sl/10.95 ge-o-graph-i-cal co-or-di-nate - Open-Weath-erMap. \T1/cmr/m
 /n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2456--2461
+Underfull \hbox (badness 10000) in paragraph at lines 2472--2477
 []\T1/cmr/m/n/10.95 Ordnance Sur-vey. (2022). \T1/cmr/m/sl/10.95 Ex-am-ples | O
 S Data Hub. \T1/cmr/m/n/10.95 Avail-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2456--2461
+Underfull \hbox (badness 10000) in paragraph at lines 2472--2477
 \T1/cmr/m/n/10.95 able At: \T1/cmtt/m/n/10.95 https://labs.os.uk/public/os-data
 -hub-exam
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2463--2468
+Underfull \hbox (badness 10000) in paragraph at lines 2479--2484
 []\T1/cmr/m/n/10.95 Peakbagger.com (2022). \T1/cmr/m/sl/10.95 Search - Peak-bag
 -ger.com. \T1/cmr/m/n/10.95 Avail-able At:
  []
@@ -3407,90 +3554,90 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[33
+[35
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2473 
+l.2489 
        ]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2474 	\bibitem{}
+l.2490 	\bibitem{}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2479 	\bibitem{}
+l.2495 	\bibitem{}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2486 	\bibitem{}
+l.2502 	\bibitem{}
                   
 
 Package caption Warning: Unused \captionsetup[subtable] on input line 65.
@@ -3504,12 +3651,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[34
+[36
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2495 \end{document}
+l.2511 \end{document}
                      ] (./Writeup_Lewis_Britton.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3522,8 +3669,8 @@ Package rerunfilecheck Info: File `Writeup_Lewis_Britton.out' has not changed.
 (rerunfilecheck)             Checksum: 58F8CE62DE3453A5957BC3B344EFBC59;15366.
  ) 
 Here is how much of TeX's memory you used:
- 28569 strings out of 478238
- 518701 string characters out of 5850456
+ 28571 strings out of 478238
+ 518720 string characters out of 5850456
  1049336 words of memory out of 5000000
  45999 multiletter control sequences out of 15000+600000
  507167 words of font info for 119 fonts, out of 8000000 for 9000
@@ -3588,10 +3735,10 @@ share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dis
 t/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/public/tipa/tipa
 10.pfb>
-Output written on Writeup_Lewis_Britton.pdf (104 pages, 5616449 bytes).
+Output written on Writeup_Lewis_Britton.pdf (106 pages, 5624039 bytes).
 PDF statistics:
- 1376 PDF objects out of 1440 (max. 8388607)
- 1149 compressed objects within 12 object streams
- 283 named destinations out of 1000 (max. 500000)
+ 1384 PDF objects out of 1440 (max. 8388607)
+ 1155 compressed objects within 12 object streams
+ 285 named destinations out of 1000 (max. 500000)
  844 words of extra memory for PDF output out of 10000 (max. 10000000)
 
