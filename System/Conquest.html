@@ -117,15 +117,49 @@
 					<label for="hideMarkers" class="optionsLabel">Hide<br>All</label>
 				</div>
 			</div>
-			<h2>Ability</h2>
+			<h2>Ability &amp; Equipment Restrictions</h2>
 			<div class="optionsRow">
-				<h3>Constrict Routes</h3>
-				<!--Distance, elevation gain, number of munros, ...-->
+				<p><select id="selectAbility" onchange="showAbilityListCont()"></select></p>
+				<div id="selectAbilityHillsCont" class="hidden">
+                                        <p><select id="selectAbilityHills" onchange="selectAbilityRefine('Hills')"></select></p>
+                                </div>
+                                <div id="selectAbilityRoutesCont" class="hidden">
+                                        <p><select id="selectAbilityRoutes" onchange="selectAbilityRefine('Routes')"></select></p>
+                                </div>
+                                <div id="selectAbilitySummitCont" class="hidden">
+                                        <p><select id="selectAbilitySummit" onchange="selectAbilityRefine('Summit')"></select></p>
+                                </div>
+                                <div id="selectAbilityRoutesTypeCont" class="hidden">
+                                        <p><select id="selectAbilityRoutesType" onchange="selectAbilityRefine('RoutesType')"></select></p>
+                                </div>
+                                <div id="selectAbilityRoutesStageCont" class="hidden">
+                                        <p><select id="selectAbilityRoutesStage" onchange="selectAbilityRefine('RoutesStage')"></select></p>
+                                </div>
+                                <div id="selectAbilityTerraintypeCont" class="hidden">
+                                        <p><select id="selectAbilityTerraintype" onchange="selectAbilityRefine('Terraintype')"></select></p>
+                                </div>
+                                <div id="selectAbilityTerraindiffCont" class="hidden">
+                                        <p><select id="selectAbilityTerraindiff" onchange="selectAbilityRefine('Terraindiff')"></select></p>
+                                </div>
 			</div>
-			<h2>Equipment</h2>
 			<div class="optionsRow">
-				<h3>Constrict Routes</h3>
-				<!--... With equipment ...-->
+				<p><select id="selectEquipment" onchange="showEquipmentListCont()"></select></p>
+                                <div id="selectEquipmentPacksCont" class="hidden">
+                                        <p><select id="selectEquipmentPacks" onchange="selectEquipmentRefine('Packs')"></select></p>
+                                </div>
+                                <div id="selectEquipmentTechnicalCont" class="hidden">
+                                        <p><select id="selectEquipmentTechnical" onchange="selectEquipmentRefine('Technical')"></select></p>
+                                </div>
+                                <div id="selectEquipmentFootwearCont" class="hidden">
+                                        <p><select id="selectEquipmentFootwear" onchange="selectEquipmentRefine('Footwear')"></select></p>
+                                </div>
+                                <div id="selectEquipmentClothingCont" class="hidden">
+                                        <p><select id="selectEquipmentClothing" onchange="selectEquipmentRefine('Clothing')"></select></p>
+                                </div>
+			</div>
+			<div id="refinementsOut" class="optionsRow hidden">
+				<h3>Restrict Routes<br>(Omissions)</h3>
+				<p id="refinementsOutTxt"></p>
 			</div>
 			<h2>Search Route</h2>
 			<div class="optionsRow">
@@ -242,9 +276,9 @@
                         	<div class="element" style="background-color:var(--fg);">
                         	        <p id="statsPre">Find Routes</p>
                         	        <p id="statsOut"></p>
-					<button onclick="hideRoutes()" class="wider">Hide Routes</button><br>
-					<button onclick="galacticConquest()" class="wider" style="width:150px;">Galactic Conquest</button>
                         	</div>
+					<button onclick="hideRoutes()" class="wider">Hide Routes</button>
+					<button onclick="galacticConquest()" class="wider" style="width:150px;">Galactic Conquest</button>
 			</div>
 			<h2>Search Location</h2>
 			<div class="optionsRow">
@@ -264,6 +298,7 @@
 	<script src="./Scripts/Attributes.js"></script>
 	<script src="./Scripts/Locations.js"></script>
 	<script src="./Scripts/Hills-Routes.js"></script>
+	<script src="./Scripts/Abilities-Equipment-Conquest.js"></script>
 	<script src="./Scripts/Conquest.js"></script>
 
 </html>

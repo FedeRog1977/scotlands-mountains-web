@@ -240,7 +240,7 @@ function showMunros() {
                     createHillMarker(
 		        hills.landmass[i].munro[k].name,
 			"Munro",
-		        hills.landmass[i].munro[k].elevation,
+		        hills.landmass[i].munro[k].elevation.toLocaleString("en-US"),
 		        hills.landmass[i].munro[k].lat,
 			latDir,
 		        hills.landmass[i].munro[k].lon,
@@ -288,7 +288,7 @@ function showMunro(hill) {
                     	createHillMarker(
 		            hills.landmass[i].munro[k].name,
 			    "Munro",
-		            hills.landmass[i].munro[k].elevation,
+		            hills.landmass[i].munro[k].elevation.toLocaleString("en-US"),
 		            hills.landmass[i].munro[k].lat,
 			    latDir,
 		            hills.landmass[i].munro[k].lon,
@@ -336,7 +336,7 @@ function showMunroTops() {
                     createHillMarker(
 		        hills.landmass[i].munrotop[k].name,
 			"Munro Top",
-		        hills.landmass[i].munrotop[k].elevation,
+		        hills.landmass[i].munrotop[k].elevation.toLocaleString("en-US"),
 		        hills.landmass[i].munrotop[k].lat,
 			latDir,
 		        hills.landmass[i].munrotop[k].lon,
@@ -384,7 +384,7 @@ function showMunroTop(hill) {
                     	createHillMarker(
 		            hills.landmass[i].munrotop[k].name,
 			    "Munro Top",
-		            hills.landmass[i].munrotop[k].elevation,
+		            hills.landmass[i].munrotop[k].elevation.toLocaleString("en-US"),
 		            hills.landmass[i].munrotop[k].lat,
 			    latDir,
 		            hills.landmass[i].munrotop[k].lon,
@@ -432,7 +432,7 @@ function showCorbetts() {
                     createHillMarker(
 		        hills.landmass[i].corbett[k].name,
 			"Corbett",
-		        hills.landmass[i].corbett[k].elevation,
+		        hills.landmass[i].corbett[k].elevation.toLocaleString("en-US"),
 		        hills.landmass[i].corbett[k].lat,
 			latDir,
 		        hills.landmass[i].corbett[k].lon,
@@ -480,7 +480,7 @@ function showCorbett(hill) {
                     	createHillMarker(
 		            hills.landmass[i].corbett[k].name,
 			    "Corbett",
-		            hills.landmass[i].corbett[k].elevation,
+		            hills.landmass[i].corbett[k].elevation.toLocaleString("en-US"),
 		            hills.landmass[i].corbett[k].lat,
 			    latDir,
 		            hills.landmass[i].corbett[k].lon,
@@ -528,7 +528,7 @@ function showCorbettTops() {
                     createHillMarker(
 		        hills.landmass[i].corbetttop[k].name,
 			"Corbett Top",
-		        hills.landmass[i].corbetttop[k].elevation,
+		        hills.landmass[i].corbetttop[k].elevation.toLocaleString("en-US"),
 		        hills.landmass[i].corbetttop[k].lat,
 			latDir,
 		        hills.landmass[i].corbetttop[k].lon,
@@ -576,7 +576,7 @@ function showCorbettTop(hill) {
                     	createHillMarker(
 		            hills.landmass[i].corbetttop[k].name,
 			    "Corbett Top",
-		            hills.landmass[i].corbetttop[k].elevation,
+		            hills.landmass[i].corbetttop[k].elevation.toLocaleString("en-US"),
 		            hills.landmass[i].corbetttop[k].lat,
 			    latDir,
 		            hills.landmass[i].corbetttop[k].lon,
@@ -837,7 +837,7 @@ function searchLocation() {
                         var hillMarker = createHillMarker(
 		            hillBuff.name,
 			    hillTypeStr + " at ",
-		            hillBuff.elevation,
+		            hillElev,
 		            hillBuff.lat,
 			    hillLatDir,
 		            hillBuff.lon,
@@ -879,6 +879,100 @@ function searchLocation() {
                     }
                 }
             }
+        })
+}
+
+
+/*
+ * Refine a Route by Ability & Equipment Factors
+ */
+var refinements = [];
+
+function selectAbilityRefine(component) {
+    fetch(attributes)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const attributes = data;
+            const selectAbility = document.getElementById("selectAbility" + component).value.toLowerCase();
+            const refinementsOut = document.getElementById("refinementsOut");
+            const refinementsOutTxt = document.getElementById("refinementsOutTxt");
+            refinementsOutTxt.innerHTML = "";
+            let abilityName = "";
+            for (var i in attributes.elementshill) {
+                if (attributes.elementshill[i].name.toLowerCase() === selectAbility) {
+                    abilityName = attributes.elementshill[i].name;
+                }
+            }
+            for (var i in attributes.elementsroute) {
+                if (attributes.elementsroute[i].name.toLowerCase() === selectAbility) {
+                    abilityName = attributes.elementsroute[i].name;
+                }
+            }
+            for (var i in attributes.type) {
+                if (attributes.type[i].name.toLowerCase() === selectAbility) {
+                    abilityName = attributes.type[i].name;
+                }
+            }
+            for (var i in attributes.stage) {
+                if (attributes.stage[i].name.toLowerCase() === selectAbility) {
+                    abilityName = attributes.stage[i].name;
+                }
+            }
+            for (var i in attributes.terraintype) {
+                if (attributes.terraintype[i].name.toLowerCase() === selectAbility) {
+                    abilityName = attributes.terraintype[i].name;
+                }
+            }
+            for (var i in attributes.terraindiff) {
+                if (attributes.terraindiff[i].name.toLowerCase() === selectAbility) {
+                    abilityName = attributes.terraindiff[i].name;
+                }
+            }
+
+	    refinements.push(abilityName);
+            refinementsOut.classList.remove("hidden");
+	    refinementsOutTxt.innerHTML = refinements.join("; ");
+        })
+}
+
+function selectEquipmentRefine(component) {
+    fetch(attributes)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            const attributes = data;
+            const selectEquipment = document.getElementById("selectEquipment" + component).value.toLowerCase();
+            const refinementsOut = document.getElementById("refinementsOut");
+            const refinementsOutTxt = document.getElementById("refinementsOutTxt");
+            refinementsOutTxt.innerHTML = "";
+            let equipmentName = "";
+            for (var i in attributes.packs) {
+                if (attributes.packs[i].name.toLowerCase() === selectEquipment) {
+                    equipmentName = attributes.packs[i].name;
+                }
+            }
+            for (var i in attributes.technical) {
+                if (attributes.technical[i].name.toLowerCase() === selectEquipment) {
+                    equipmentName = attributes.technical[i].name;
+                }
+            }
+	    for (var i in attributes.shoes) {
+                if (attributes.shoes[i].name.toLowerCase() === selectEquipment) {
+                    equipmentName = attributes.shoes[i].name;
+                }
+            }
+            for (var i in attributes.clothing) {
+                if (attributes.clothing[i].name.toLowerCase() === selectEquipment) {
+                    equipmentName = attributes.clothing[i].name;
+                }
+            }
+
+	    refinements.push(equipmentName);
+            refinementsOut.classList.remove("hidden");
+	    refinementsOutTxt.innerHTML = refinements.join("; ");
         })
 }
 

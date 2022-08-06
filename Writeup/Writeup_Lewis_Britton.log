@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.28)  5 AUG 2022 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.28)  6 AUG 2022 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3282,7 +3282,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 2237--2237
+Underfull \hbox (badness 10000) in paragraph at lines 2236--2236
 []|\T1/cmtt/m/n/8 a\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 button\T1/cmr/m/n/8 , \T1/cmt
 t/m/n/8 select\T1/cmr/m/n/8 ,
  []
@@ -3350,23 +3350,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [32]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 2338.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 2337.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2338.
+(Font)              size <5> substituted on input line 2337.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 2338.
+(Font)              size <5> substituted on input line 2337.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2338.
+(Font)              size <5> substituted on input line 2337.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2338.
+(Font)              size <5> substituted on input line 2337.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3377,27 +3377,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 2369--2370
+Underfull \hbox (badness 10000) in paragraph at lines 2368--2369
 
  []
 
 
-Underfull \hbox (badness 6316) in paragraph at lines 2380--2380
+Underfull \hbox (badness 6316) in paragraph at lines 2379--2379
 []|\T1/cmr/m/n/8 A rich, al-most gamey,
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 2380--2380
+Underfull \hbox (badness 1354) in paragraph at lines 2379--2379
 \T1/cmr/m/n/8 and ef-fec-tive dis-tri-bu-tion
  []
 
 
-Underfull \hbox (badness 7759) in paragraph at lines 2380--2380
+Underfull \hbox (badness 7759) in paragraph at lines 2379--2379
 \T1/cmr/m/n/8 the H.o.B. dis-con-tin-ued
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2380--2380
+Underfull \hbox (badness 10000) in paragraph at lines 2379--2379
 \T1/cmr/m/n/8 (R.I.P.) veni-son Lorne
  []
 
@@ -3405,36 +3405,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 2380--2380
 File: ../System/Photos/bruar_lorne.jpg Graphic file (type jpg)
 <use ../System/Photos/bruar_lorne.jpg>
 Package pdftex.def Info: ../System/Photos/bruar_lorne.jpg  used on input line 2
-380.
+379.
 (pdftex.def)             Requested size: 71.13188pt x 71.13036pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 2381--2381
+Underfull \hbox (badness 1092) in paragraph at lines 2380--2380
 \T1/cmr/m/n/8 `meaty' flavour. Proper
  []
 
 <../System/Photos/sh_lorne.png, id=1107, 803.0pt x 607.26875pt>
 File: ../System/Photos/sh_lorne.png Graphic file (type png)
 <use ../System/Photos/sh_lorne.png>
-Package pdftex.def Info: ../System/Photos/sh_lorne.png  used on input line 2381
+Package pdftex.def Info: ../System/Photos/sh_lorne.png  used on input line 2380
 .
 (pdftex.def)             Requested size: 71.13188pt x 53.79007pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2382--2382
+Underfull \hbox (badness 10000) in paragraph at lines 2381--2381
 []|\T1/cmr/m/n/8 Very sim-i-lar to Mr.
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 2382--2382
+Underfull \hbox (badness 1852) in paragraph at lines 2381--2381
 \T1/cmr/m/n/8 Howie's how-ever a lit-tle
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 2382--2382
+Underfull \hbox (badness 3679) in paragraph at lines 2381--2381
 \T1/cmr/m/n/8 For some rea-son bet-ter
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 2382--2382
+Underfull \hbox (badness 2065) in paragraph at lines 2381--2381
 \T1/cmr/m/n/8 when part of the M&S
  []
 
@@ -3442,15 +3442,15 @@ Underfull \hbox (badness 2065) in paragraph at lines 2382--2382
 File: ../System/Photos/ms_lorne.jpeg Graphic file (type jpg)
 <use ../System/Photos/ms_lorne.jpeg>
 Package pdftex.def Info: ../System/Photos/ms_lorne.jpeg  used on input line 238
-2.
+1.
 (pdftex.def)             Requested size: 71.13188pt x 71.1331pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2383--2383
+Underfull \hbox (badness 10000) in paragraph at lines 2382--2382
 []|\T1/cmr/m/n/8 Slightly un-der-whelm-ing
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 2383--2383
+Underfull \hbox (badness 1565) in paragraph at lines 2382--2382
 \T1/cmr/m/n/8 meaty flavour, bor-der-ing
  []
 
@@ -3458,17 +3458,17 @@ Underfull \hbox (badness 1565) in paragraph at lines 2383--2383
 File: ../System/Photos/sh_lorne2.png Graphic file (type png)
 <use ../System/Photos/sh_lorne2.png>
 Package pdftex.def Info: ../System/Photos/sh_lorne2.png  used on input line 238
-3.
+2.
 (pdftex.def)             Requested size: 71.13188pt x 53.79007pt.
 
-Underfull \hbox (badness 1062) in paragraph at lines 2384--2384
+Underfull \hbox (badness 1062) in paragraph at lines 2383--2383
 \T1/cmr/m/n/8 the deep fried in but-ter
  []
 
 <../System/Photos/ma_lorne.jpg, id=1110, 642.4pt x 642.4pt>
 File: ../System/Photos/ma_lorne.jpg Graphic file (type jpg)
 <use ../System/Photos/ma_lorne.jpg>
-Package pdftex.def Info: ../System/Photos/ma_lorne.jpg  used on input line 2384
+Package pdftex.def Info: ../System/Photos/ma_lorne.jpg  used on input line 2383
 .
 (pdftex.def)             Requested size: 71.13188pt x 71.12492pt.
 
@@ -3482,61 +3482,61 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [34 <../System/Photos/bruar_lorne.jpg> <../System/Photos/sh_lorne.png> <../Syst
 em/Photos/ms_lorne.jpeg> <../System/Photos/sh_lorne2.png> <../System/Photos/ma_
 lorne.jpg>]
-Underfull \hbox (badness 7415) in paragraph at lines 2407--2412
+Underfull \hbox (badness 7415) in paragraph at lines 2406--2411
 []\T1/cmr/m/n/10.95 FontAwesome. (2021). \T1/cmr/m/sl/10.95 Search v5 Icons | F
 ont Awe-some. \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2421--2426
+Underfull \hbox (badness 10000) in paragraph at lines 2420--2425
 []\T1/cmr/m/n/10.95 Knuth, D. E. (2020). \T1/cmr/m/sl/10.95 Com-puter Mus-ings.
  \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2421--2426
+Underfull \hbox (badness 10000) in paragraph at lines 2420--2425
 \T1/cmtt/m/n/10.95 https://www-cs-faculty.stanford.edu/knuth/musings.html. \T1/
 cmr/m/n/10.95 (Ac-cessed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2442--2447
+Underfull \hbox (badness 10000) in paragraph at lines 2441--2446
 \T1/cmtt/m/n/10.95 https://developer.mozilla.org/en-US/docs/Web/API/Geolocation
 _API \T1/cmr/m/n/10.95 (Ac-
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 2449--2454
+Underfull \hbox (badness 3884) in paragraph at lines 2448--2453
 []\T1/cmr/m/n/10.95 Moolenaar, B. (2020). \T1/cmr/m/sl/10.95 Bram Moole-naar's 
 Web-site - home. \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2461--2466
+Underfull \hbox (badness 10000) in paragraph at lines 2460--2465
 []\T1/cmr/m/n/10.95 OpenWeather. (2022). \T1/cmr/m/sl/10.95 One Call API: weath
 er data for any
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2461--2466
+Underfull \hbox (badness 10000) in paragraph at lines 2460--2465
 \T1/cmr/m/sl/10.95 ge-o-graph-i-cal co-or-di-nate - Open-Weath-erMap. \T1/cmr/m
 /n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2468--2473
+Underfull \hbox (badness 10000) in paragraph at lines 2467--2472
 []\T1/cmr/m/n/10.95 Ordnance Sur-vey. (2022). \T1/cmr/m/sl/10.95 Ex-am-ples | O
 S Data Hub. \T1/cmr/m/n/10.95 Avail-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2468--2473
+Underfull \hbox (badness 10000) in paragraph at lines 2467--2472
 \T1/cmr/m/n/10.95 able At: \T1/cmtt/m/n/10.95 https://labs.os.uk/public/os-data
 -hub-exam
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2475--2480
+Underfull \hbox (badness 10000) in paragraph at lines 2474--2479
 []\T1/cmr/m/n/10.95 Peakbagger.com (2022). \T1/cmr/m/sl/10.95 Search - Peak-bag
 -ger.com. \T1/cmr/m/n/10.95 Avail-able At:
  []
@@ -3554,85 +3554,85 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2485 
+l.2484 
        ]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2486 	\bibitem{}
+l.2485 	\bibitem{}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2491 	\bibitem{}
+l.2490 	\bibitem{}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2498 	\bibitem{}
+l.2497 	\bibitem{}
                   
 
 Package caption Warning: Unused \captionsetup[subtable] on input line 65.
@@ -3651,7 +3651,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2507 \end{document}
+l.2506 \end{document}
                      ] (./Writeup_Lewis_Britton.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3730,7 +3730,7 @@ share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dis
 t/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/public/tipa/tipa
 10.pfb>
-Output written on Writeup_Lewis_Britton.pdf (106 pages, 5626466 bytes).
+Output written on Writeup_Lewis_Britton.pdf (106 pages, 5626460 bytes).
 PDF statistics:
  1384 PDF objects out of 1440 (max. 8388607)
  1155 compressed objects within 12 object streams
