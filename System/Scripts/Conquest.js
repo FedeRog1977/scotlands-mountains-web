@@ -641,13 +641,16 @@ navigator.geolocation.getCurrentPosition(getLatLon, getLatLonFail, getLatLonOpts
  */
 var distances = [];
 
-function showNearestMunro() {
+function showNearest(hill) {
     fetch(locations)
         .then((resp) => {
             return resp.json();
         })
         .then((data) => {
 	    const hills = data;
+	    const nearestOutShell = document.getElementById("nearestOutShell");
+	    const nearestOut = document.getElementById("nearestOut");
+	    nearestOut.innerHTML = "";
 	    let currLat = document.getElementById("currLatBuff").innerHTML;
 	    let currLon = document.getElementById("currLonBuff").innerHTML;
             let markerFrom = new L.marker([currLat,currLon]);
@@ -663,15 +666,64 @@ function showNearestMunro() {
 
     		    let distM = from.distanceTo(to);
     		    let distKm = distM/1000;
-    		    let distMi = (distKm*0.621371).toFixed(2);
+    		    let distMi = (distKm*0.621371);
 
 		    distances.push(distMi);
-	            //map.setView([hills.landmass[i].munro[k].lat,hills.landmass[i].munro[k].lon]);
 		}
 	    }
 
-	    document.getElementById("shoeTest").innerHTML = distances;
-	    //return Math.min(distances);
+	    var minDist = Math.min.apply(Math, distances);
+	    
+            for (var i in hills.landmass) {
+		let region = hills.landmass[i].region;
+		let subregion = hills.landmass[i].subregion;
+		let informalregion = hills.landmass[i].informalregion;
+                for (var k in hills.landmass[i].munro) {
+		    let markerTo = new L.marker([hills.landmass[i].munro[k].lat,hills.landmass[i].munro[k].lon]);
+     		    var from = markerFrom.getLatLng();
+    		    var to = markerTo.getLatLng();
+
+    		    let distM = from.distanceTo(to);
+    		    let distKm = distM/1000;
+    		    let distMi = (distKm*0.621371);
+    		    if (distMi === minDist) {
+			map.setView([hills.landmass[i].munro[k].lat,hills.landmass[i].munro[k].lon]);
+			nearestOutShell.classList.remove("hidden");
+
+		        let latDir = "";
+		        if (hills.landmass[i].munro[k].lat < 0) {
+			    latDir = "S";
+		        } else if (hills.landmass[i].munro[k].lat > 0) {
+			    latDir = "N";
+		        }
+		        let lonDir = "";
+		        if (hills.landmass[i].munro[k].lon < 0) {
+			    lonDir = "W";
+		        } else if (hills.landmass[i].munro[k].lon > 0) {
+			    lonDir = "E";
+		        }
+
+                	createHillMarker(
+		            hills.landmass[i].munro[k].name,
+			    "Your Nearest Munro",
+		            hills.landmass[i].munro[k].elevation.toLocaleString("en-US"),
+		            hills.landmass[i].munro[k].lat,
+			    latDir,
+		            hills.landmass[i].munro[k].lon,
+			    lonDir,
+			    region,
+			    subregion,
+			    informalregion,
+			    hills.landmass[i].munro[k].image,
+		            mountainIcon
+		    	);
+
+			nearestOut.innerHTML = 
+			    "Nearest <b>Munro</b>: " + hills.landmass[i].munro[k].name + "<br>"
+			    + "<b>" + minDist.toFixed(2) + "mi</b> away";
+		    }
+		}
+	    }
 	})
 }
 
@@ -724,7 +776,7 @@ function searchLocation() {
         .then((data) => {
             const hills = data;
             const inpLocation = document.getElementById("inpLocation").value.toLowerCase();
-            const locationPre = document.getElementById("locationPre");
+            const locationOutShell = document.getElementById("locationOutShell");
             const locationOut = document.getElementById("locationOut");
 	    let landmassName = "";
 	    let landmassType = "";
@@ -926,7 +978,7 @@ function searchLocation() {
 
 			map.setView([hillBuff.lat, hillBuff.lon]);
 
-                        locationPre.classList.add("hidden");
+                        locationOutShell.classList.remove("hidden");
                     }
                 }
             }
@@ -1489,7 +1541,7 @@ function searchRoute(landmass) {
         .then((data) => {
             const hills = data;
             const selectRoute = document.getElementById("selectRoute" + landmass).value.toLowerCase();
-            const statsPre = document.getElementById("statsPre");
+            const statsOutShell = document.getElementById("statsOutShell");
             const statsOut = document.getElementById("statsOut");
             statsOut.innerHTML = "";
             for (var i in hills.landmass) {
@@ -1584,7 +1636,7 @@ function searchRoute(landmass) {
                             + routeCorbettTops + "<hr>"
                             + "<a href='./GPX/" + routeGPX + "'>Download GPX</a>";
 
-                        statsPre.classList.add("hidden");
+                        statsOutShell.classList.remove("hidden");
                     }
                 }
             }

@@ -85,7 +85,6 @@
 			<h1>Options</h1>
 			<h2>Location</h2>
 			<div class="optionsRow flexRow">
-				<p id="showTest"></p>
 				<div class="optionsCol">
 					<button id="showLocation" onclick="showLocation()"><i class="fas fa-location-arrow"></i></button>
 					<label for="showLocation" class="optionsLabel">Show<br>Location</label>
@@ -95,12 +94,15 @@
 					<label for="nearest" class="optionsLabel">Track<br>Location</label>
 				</div>
 				<div class="optionsCol">
-					<button id="nearest" onclick="showNearestMunro()"><i class="fas fa-mountain" style="transform:translate(-2.5%,0%);"></i><i class="fas fa-globe" style="transform:translate(2.5%,0%);"></i></button>
+					<button id="nearest" onclick="showNearest('munro')"><i class="fas fa-mountain" style="transform:translate(-2.5%,0%);"></i><i class="fas fa-globe" style="transform:translate(2.5%,0%);"></i></button>
 					<label for="nearest" class="optionsLabel">Nearest<br>Munro</label>
 				</div>
 				<div class="optionsCol">
-					<button id="nearest" onclick="showNearestCorbett()"><i class="fas fa-mountain" style="transform:translate(-2.5%,0%);"></i><i class="fas fa-globe" style="transform:translate(2.5%,0%);"></i></button>
+					<button id="nearest" onclick="showNearest('corbett')"><i class="fas fa-mountain" style="transform:translate(-2.5%,0%);"></i><i class="fas fa-globe" style="transform:translate(2.5%,0%);"></i></button>
 					<label for="nearest" class="optionsLabel">Nearest<br>Corbett</label>
+				</div>
+				<div id="nearestOutShell" class="hidden">
+					<p id="nearestOut"></p>
 				</div>
 			</div>
 			<h2>Landmass</h2>
@@ -172,7 +174,7 @@
 			</div>
 			<h2>Search Route</h2>
 			<div class="optionsRow">
-				<select id="selectLandmass" onchange="showRouteListCont()"></select>
+				<p><select id="selectLandmass" onchange="showRouteListCont()"></select></p>
 				<div id="selectRouteCruachanCont" class="hidden">
                                 	<h3>Cruachan Range Routes</h3>
 					<select id="selectRouteCruachan"></select>
@@ -281,19 +283,21 @@
                                 	<button onclick="searchRoute('Eagach')" class="wide">Summary</button>
                                 	<button onclick="showRoute('Eagach')" class="wide">Route</button>
                         	</div>
-                        	<div class="element" style="background-color:var(--fg);">
-                        	        <p id="statsPre">Find Routes</p>
+                        	<div id="statsOutShell" class="element hidden" style="background-color:var(--fg);">
                         	        <p id="statsOut"></p>
                         	</div>
+				<p>
 					<button onclick="hideRoutes()" class="wider">Hide Routes</button>
 					<button onclick="galacticConquest()" class="wider" style="width:150px;">Galactic Conquest</button>
+				</p>
 			</div>
 			<h2>Search Location</h2>
 			<div class="optionsRow">
-                        	<input type="text" id="inpLocation"></input>
-                        	<button onclick="searchLocation()" id="searchLocation" class="wide">Summary</button>
-                        	<div class="element" style="background-color:var(--fg);">
-                        	        <p id="locationPre">Find a Munro, Munro Top, Corbett or Corbett Top</p>
+				<p>
+					<input type="text" id="inpLocation"></input>
+                        		<button onclick="searchLocation()" id="searchLocation" class="wide">Summary</button>
+				</p>
+                        	<div id="locationOutShell" class="element hidden" style="background-color:var(--fg);">
                         	        <p id="locationOut"></p>
                         	</div>
 			</div>
