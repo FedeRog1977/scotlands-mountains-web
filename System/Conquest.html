@@ -85,13 +85,22 @@
 			<h1>Options</h1>
 			<h2>Location</h2>
 			<div class="optionsRow flexRow">
+				<p id="showTest"></p>
 				<div class="optionsCol">
 					<button id="showLocation" onclick="showLocation()"><i class="fas fa-location-arrow"></i></button>
 					<label for="showLocation" class="optionsLabel">Show<br>Location</label>
 				</div>
 				<div class="optionsCol">
-					<button id="nearest" onclick="showNearest()"><i class="fas fa-globe"></i></button>
-					<label for="nearest" class="optionsLabel">Show<br>Nearest</label>
+					<button id="nearest" onclick="showTrackLocation()"><i class="fas fa-location-arrow" style="transform:translate(-2.5%,0%);"></i><i class="fas fa-globe" style="transform:translate(2.5%,0%);"></i></button>
+					<label for="nearest" class="optionsLabel">Track<br>Location</label>
+				</div>
+				<div class="optionsCol">
+					<button id="nearest" onclick="showNearestMunro()"><i class="fas fa-mountain" style="transform:translate(-2.5%,0%);"></i><i class="fas fa-globe" style="transform:translate(2.5%,0%);"></i></button>
+					<label for="nearest" class="optionsLabel">Nearest<br>Munro</label>
+				</div>
+				<div class="optionsCol">
+					<button id="nearest" onclick="showNearestCorbett()"><i class="fas fa-mountain" style="transform:translate(-2.5%,0%);"></i><i class="fas fa-globe" style="transform:translate(2.5%,0%);"></i></button>
+					<label for="nearest" class="optionsLabel">Nearest<br>Corbett</label>
 				</div>
 			</div>
 			<h2>Landmass</h2>
@@ -163,7 +172,6 @@
 			</div>
 			<h2>Search Route</h2>
 			<div class="optionsRow">
-				<h3>Select Landmass</h3>
 				<select id="selectLandmass" onchange="showRouteListCont()"></select>
 				<div id="selectRouteCruachanCont" class="hidden">
                                 	<h3>Cruachan Range Routes</h3>

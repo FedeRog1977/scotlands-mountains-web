@@ -65,30 +65,6 @@ function closeOptions() {
 
 
 /*
- * Location Information
- */
-function findLocation(e) {
-    var radius = e.accuracy;
-
-    var currLocMarker = new L.marker(e.latlng, {icon: locationIcon}).addTo(map)
-	.bindPopup("You&rsquo;re within an accuracy of " + radius + "m from here").openPopup();
-
-    L.circle(e.latlng, (radius*500)).addTo(map);
-
-    return currLocMarker;
-}
-
-
-/*
- * Center to location
- */
-function showLocation() {
-    map.locate({setView: true, maxZoom: 16});
-    map.on("locationfound", findLocation);
-}
-
-
-/*
  * Marker Icons
  */
 var crosshairIcon = L.icon({
@@ -605,6 +581,41 @@ function hideMarkers() {
 
 
 /*
+ * Location Information
+ */
+function findLocation(e) {
+    var radius = e.accuracy;
+
+    var currLocMarker = new L.marker(e.latlng, {icon: locationIcon}).addTo(map)
+	.bindPopup("You&rsquo;re within an accuracy of " + radius + "m from here").openPopup();
+
+    L.circle(e.latlng, (radius*500)).addTo(map);
+
+    return currLocMarker;
+}
+
+function findTrackLocation(e) {
+    navigator.geolocation.watchPosition(getLatLon, getLatLonFail, getLatLonOpts);
+    var currLocMarker = new L.marker(e.latlng, {icon: locationIcon}).addTo(map)
+    return currLocMarker;
+}
+
+
+/*
+ * Center to location
+ */
+function showLocation() {
+    map.locate({setView: true, maxZoom: 16});
+    map.on("locationfound", findLocation);
+}
+
+function showTrackLocation() {
+    map.locate({setView: true, maxZoom: 16});
+    map.on("locationfound", findTrackLocation);
+}
+
+
+/*
  * Get Current Latitude and Longitude
  */
 const getLatLonOpts = {
@@ -623,6 +634,46 @@ function getLatLonFail(err) {
 }
 
 navigator.geolocation.getCurrentPosition(getLatLon, getLatLonFail, getLatLonOpts);
+
+
+/*
+ * Find Nearest Project
+ */
+var distances = [];
+
+function showNearestMunro() {
+    fetch(locations)
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+	    const hills = data;
+	    let currLat = document.getElementById("currLatBuff").innerHTML;
+	    let currLon = document.getElementById("currLonBuff").innerHTML;
+            let markerFrom = new L.marker([currLat,currLon]);
+
+	    hideMarkers();
+	    hideRoutes();
+
+            for (var i in hills.landmass) {
+                for (var k in hills.landmass[i].munro) {
+		    let markerTo = new L.marker([hills.landmass[i].munro[k].lat,hills.landmass[i].munro[k].lon]);
+     		    var from = markerFrom.getLatLng();
+    		    var to = markerTo.getLatLng();
+
+    		    let distM = from.distanceTo(to);
+    		    let distKm = distM/1000;
+    		    let distMi = (distKm*0.621371).toFixed(2);
+
+		    distances.push(distMi);
+	            //map.setView([hills.landmass[i].munro[k].lat,hills.landmass[i].munro[k].lon]);
+		}
+	    }
+
+	    document.getElementById("shoeTest").innerHTML = distances;
+	    //return Math.min(distances);
+	})
+}
 
 
 /*
