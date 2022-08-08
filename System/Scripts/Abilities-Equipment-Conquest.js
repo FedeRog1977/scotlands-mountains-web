@@ -38,8 +38,6 @@ const selectAbilityRoutesListCont = `
     <option>Total Distance</option>
     <option>Total Elevation Gain</option>
     <option>Time/Duration</option>
-    <option>Standard Time/Duration</option>
-    <option>Moving Time/Duration</option>
 `;
 
 const selectAbilityRoutesTypeListCont = `

@@ -1019,7 +1019,7 @@ if ((day.wind_deg) >= 348.76) {
 
 			\paragraph{Show Current Location \& Find Nearest}
 
-	An array of two \texttt{button}s are presented which call functions that display the current location of the user's device and find the nearest route to the user, respectively. The first of these uses the Geolocation API to fetch the \texttt{lat} and \texttt{lon} attributes and inputs then into a function which outputs the user's location by [1] centering the map crosshair to the coordinates, [2] creating and displaying a marker upon this location, and [3] calculating and presenting an accuracy/tolerance radius around this. Finding the nearest project involves a similar process in that it fetches the user's coordinates using Geolocation and inputs them into a function which takes into account the coordinates of all routes in the relevant JSON file (Figure A4) and calculates their distance form the current coordinates. It then displays a route as standard; attributes of which, such as route markers, lines, hill markers and pop-ups etc., are discussed under the relevant sections 5.3.4.7 and 5.3.4.8.
+	An array of two \texttt{button}s are presented which call functions that display the current location of the user's device and find the nearest hill to the user, respectively. The first of these uses the Geolocation API to fetch the \texttt{lat} and \texttt{lon} attributes and inputs then into a function which outputs the user's location by [1] centering the map crosshair to the coordinates, [2] creating and displaying a marker upon this location, and [3] calculating and presenting an accuracy/tolerance radius around this. Finding the nearest hill involves a similar process in that it fetches the user's coordinates using Geolocation and inputs them into a function which takes into account the coordinates of all routes in the relevant JSON file (Figure A4) and calculates their distance form the current coordinates. It then displays a hill as standard; it's markers, and pop-ups etc., are discussed under section 5.3.4.8
 
 			\paragraph{Show \& Hide Features}
 
@@ -1027,7 +1027,7 @@ if ((day.wind_deg) >= 348.76) {
 
 			\paragraph{Filter Routes By `Ability' \& `Equipment'}
 
-	See section 5.3.2.1 for the breakdown of these components. After the user makes their relevant selections from the relevant HTML \texttt{select} protocol, instead of having all of the attributes of the associated matched items in the JSON file simply printed in a body of text, the selections are added to a pool. The values of this this pool (which are elements of ability and equipment) are then matched with routes under the landmasses of the appropriate JSON file. Once the user submits their request, all routes which either \textbf{do} or \textbf{do not} contain these attributes, based on the user preference through a \texttt{radio} input feature, are located in the appropriate JSON file. It then displays all of these routes as standard; attributes of which, such as route markers, lines, hill markers and pop-ups etc., are discussed under the relevant sections 5.3.4.7 and 5.3.4.8. Unlike when seeking an individual route, the map crosshair is not centered to any particular route as there may be more than one.
+	See section 5.3.2.1 for the breakdown of these components. After the user makes their relevant selections from the relevant HTML \texttt{select} protocol, instead of having all of the attributes of the associated matched items in the JSON file simply printed in a body of text, the selections are added to a pool. The values of this this pool (which are elements of ability and equipment) are then matched with routes under the landmasses of the appropriate JSON file. Once the user submits their request, all routes which either \textbf{do} or \textbf{do not} contain these attributes, based on the user preference through a \texttt{radio} input feature, are located in the appropriate JSON file. It then displays all of these routes as standard; route markers, lines, hill markers and pop-ups etc., are discussed under sections 5.3.4.7 and 5.3.4.8. Unlike when seeking an individual route, the map crosshair is not centered to any particular route as there may be more than one.
 
 			\paragraph{Score Route}
 
@@ -1066,12 +1066,12 @@ if ((day.wind_deg) >= 348.76) {
 		\hline
 		\multicolumn{4}{c}{\textsc{Functional}}\\
 		\hline
-		1$^M$ & Y & Weather app$^{W,G}$, \texttt{getLatLon()}$^G$, \texttt{findLocation()}$^G$, \texttt{showLocation()}: use current location in weather app, find latitude and longitude of user's device, find current coordinates for map, print current coordinates as a marker on map & \texttt{showNearest()}, \texttt{getDistanceCurr()}: find nearest route to current coordinates, find distance form current coordinates marker to variable marker\\
+		1$^M$ & Y & Weather app$^{W,G}$, \texttt{getLatLon()}$^G$, \texttt{findLocation()}$^G$, \texttt{showLocation()}: use current location in weather app, find latitude and longitude of user's device, find current coordinates for map, print current coordinates as a marker on map & \texttt{showNearest()}, \texttt{getDistanceCurr()}: find nearest hill to current coordinates, find distance form current coordinates marker to variable marker\\
 		2$^M$ & Y & \texttt{searchRoute()}: search for and display defined route data from the JSON file & \texttt{scoreRoute()}, \texttt{describeRoute()}, \texttt{searchLocation()}: compute a relative route score based on a mathematical algorithm, describe the route score based on the algorithmic results, search individual locations from the JSON file which appear isolated and as members of routes\\
 		3$^M$ & Y & \texttt{searchAbility()}: search for and display defined ability data from the JSON file & \texttt{refineRouteAbility()}: refine routes by declaring ability-based inputs\\
 		4$^M$ & Y & \texttt{searchEquipment()}: search for and display defined equipment data from the JSON file & \texttt{refineRouteEquipment()}: refine routes by declaring equipment-based inputs\\
 		5$^M$ & Y & Weather app$^{W,G}$: display `tiles' of daily and hourly weather data with current location as a location option & \texttt{selectMunroOpt()}, \texttt{inpMunroOpt()}, \texttt{selectCorbettOpt()}, \texttt{inpCorbettOpt()}, \texttt{selectCounty()}: select Munro to fetch and pass coordinates, input Munro to fetch and pass coordinates, select Corbett to fetch and pass coordinates, input Corbett to fetch and pass coordinates, select county to fetch and pass coordinates (... from JSON file ... to weather app)\\
-		6$^M$ & Y & `Conquest Map'$^O$, \texttt{findLocation()}$^G$, \texttt{showLocation()}, \texttt{createHillMarker()}, \texttt{createRouteMarker()}, \texttt{hideMarkers()}, \texttt{getLatLon()}$^G$, \texttt{getDistanceCurr()}, \texttt{getDistance()}, \texttt{searchRoute()}, \texttt{showRoute()}, \texttt{hideRoutes()}: find current coordinates for map, print current coordinates as a marker on map, print hill coordinates on map, hide hill markers, find latitude and longitude of user's device, find distance form current coordinates marker to variable marker, find distance from variable marker to variable marker, search for and display defined route data from the JSON file, display GPX data of route with other components, hide route GPX data and components & \texttt{showNearest()}, show pan coordinates, \texttt{showMunros()}, \texttt{showMunroTops()}, \texttt{showCorbetts()}, \texttt{showCorbettTops}, , \texttt{showMunro()}, \texttt{showMunroTop()}, \texttt{showCorbett()}, \texttt{showCorbettTop()}, \texttt{searchAbility()}, \texttt{searchEquipment()}, \texttt{refineRouteAbility()}, \texttt{refineRouteEquipment()}, \texttt{scoreRoute()}, \texttt{describeScore()}, \texttt{searchLocation()}, \texttt{galacticConquest()}: find nearest route to current coordinates, print all Munro coordinates on map, print all Munro Top coordinates on map, print all Corbett coordinates on map, print all Corbett Top coordinates on map, print defined Munro coordinates on map, print defined Munro Top coordinates on map, print defined Corbett coordinates on map, print defined Corbett Top coordinates on map, search for and display defined ability data from the JSON file, search for and display defined equipment data from the JSON file, refine routes by declaring ability-based inputs, refine routes by declaring equipment-based inputs, compute a relative route score based on a mathematical algorithm, describe the route score based on the algorithmic results, search individual locations from the JSON file which appear isolated and as members of routes, display GPX data of all routes with other components\\
+		6$^M$ & Y & `Conquest Map'$^O$, \texttt{findLocation()}$^G$, \texttt{showLocation()}, \texttt{createHillMarker()}, \texttt{createRouteMarker()}, \texttt{hideMarkers()}, \texttt{getLatLon()}$^G$, \texttt{getDistanceCurr()}, \texttt{getDistance()}, \texttt{searchRoute()}, \texttt{showRoute()}, \texttt{hideRoutes()}: find current coordinates for map, print current coordinates as a marker on map, print hill coordinates on map, hide hill markers, find latitude and longitude of user's device, find distance form current coordinates marker to variable marker, find distance from variable marker to variable marker, search for and display defined route data from the JSON file, display GPX data of route with other components, hide route GPX data and components & \texttt{showNearest()}, show pan coordinates, \texttt{showMunros()}, \texttt{showMunroTops()}, \texttt{showCorbetts()}, \texttt{showCorbettTops}, , \texttt{showMunro()}, \texttt{showMunroTop()}, \texttt{showCorbett()}, \texttt{showCorbettTop()}, \texttt{searchAbility()}, \texttt{searchEquipment()}, \texttt{refineRouteAbility()}, \texttt{refineRouteEquipment()}, \texttt{scoreRoute()}, \texttt{describeScore()}, \texttt{searchLocation()}, \texttt{galacticConquest()}: find nearest hill to current coordinates, print all Munro coordinates on map, print all Munro Top coordinates on map, print all Corbett coordinates on map, print all Corbett Top coordinates on map, print defined Munro coordinates on map, print defined Munro Top coordinates on map, print defined Corbett coordinates on map, print defined Corbett Top coordinates on map, search for and display defined ability data from the JSON file, search for and display defined equipment data from the JSON file, refine routes by declaring ability-based inputs, refine routes by declaring equipment-based inputs, compute a relative route score based on a mathematical algorithm, describe the route score based on the algorithmic results, search individual locations from the JSON file which appear isolated and as members of routes, display GPX data of all routes with other components\\
 		1$^S$ & Y & \texttt{switchLayer()$^O$}: change OS map base layer choosing from `OS Leisure', `OS Road' and `OS Outdoor' & N/A\\
 		2$^S$ & Y & Center crosshair: display icon panning with the center of the map upon \texttt{move} & Pan coordinates: display panning latitude and longitude upon event \texttt{move}\\
 		1$^C$ & N & N/A: No database back-end & N/A\\
@@ -1840,10 +1840,10 @@ er (Mobile)}\\
 		\multicolumn{3}{c}{\underline{\texttt{showLocation()}}}\\
 		N/A & N/A & (\texttt{map.locate}), Leaflet marker (\texttt{findLocation()})\\
 		\hline
-		\multicolumn{3}{c}{\textsc{Find Nearest Project}}\\
+		\multicolumn{3}{c}{\textsc{Show Nearest Hill}}\\
 		\hline
 		\multicolumn{3}{c}{\underline{\texttt{showNearest()}}}\\
-		N/A & ... \\
+		Hill type (string) & Current latitude, Current longitude, Leaflet marker (origin coordinates), Leaflet marker (destination coordinates), distance (\texttt{.distanceTo}), converted distance (km-mi) & \texttt{map.setView}, Leaflet marker (\texttt{createHillMarker()}), \texttt{innerHTML}\\
 		\hline
 		\multicolumn{3}{c}{\textsc{Show Pan Coordinates}}\\
 		\hline
@@ -2009,6 +2009,7 @@ er (Mobile)}\\
 		\textbf{Summary Section}:\newline The `Quick Burn' summary section on the home page has very little purpose and serves minimal beneficial function to users as it only returns two sets of semi-contextualized text. It seems out of place and unfitting with the subsequent quality of elements & $\mathrm{H_{2}}$, $\mathrm{H_{4}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Remove HTML elements and all associated functions. Functions appear later in more `functional' contexts later anyway\\
 		\textbf{Weather Result Title}:\newline Two functions exist when requesting weather results from the `Weather' section: one which feeds the relevant coordinates values into the `Latitude' and `Longitude' input boxes, and one which requests weather results form the API using those values. It can be confusing when the user either selects a location for the first time or selects another location while results for one are already displayed, and the results don't appear/change due to the requirement to trigger the second function with a button & $\mathrm{H_{4}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Add ellipsis (...) suffix to the title displayed upon function executed by the selection of a location and remove the suffix upon function executed when the button is selected to fetch results. Therefore, implying ``waiting for interaction'', ``not waiting for interaction''\\
 		\textbf{Map Layer Select}:\newline Map layer select options were originally contained within the pop-out options menu. This was not optimally intuitive as users would often overlook it when browsing more advanced functions. For those who did use it, the portion of the viewable map remaining with the menu expanded was not ideal for sampling and choosing different map layers when cycling through them & $\mathrm{H_{3}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Give the map layer options their own element on the equivalent level of the options menu toggle. Thus seeing that everything in the options menu layers upon the map, and everything outwith the options menu changes the map itself. It also opens the entire map space for sampling layers\\
+		\textbf{Show Nearest Munro/Corbett}:\newline Both of these buttons (using the same function) work fine when used in isolation however, when using the function to show the nearest Munro after using it to show the nearest Corbett, no values are returned. Contrastingly, when using the function to show the nearest Corbett after using it to show the nearest Munro, there are no issues. & $\mathrm{H_{4}}$, $\mathrm{H_{5}}$ & $\mathrm{S_{2}}$ & Many-an-hour have been exerted on this issue but I'm afraid I give up. I'm not spending any more time on it. I am [Pink Wojak] (Figure B4).\\
 		\textbf{Search Route Buttons}:\newline Displaying a summary and the route (on map) of a route all at once feels slightly ``cluttered'' as an HTML element is being filled with a significant amount of text while the center of the map is finding the start of a route and printing multiple pieces on it. These two functions also produce their results at different speeds, adding a slightly ``cheap'' delayed feel to the process & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Separate the functions into two of their own features which are executed through two separate options. That is, a user can view a summary of a route before deciding if they wish to print it, with its attributes, on the map\\
 		\textbf{Route Display Error}:\newline When displaying some routes on the `Conquest Map', the part of the function used to return the start coordinates, and thus place a Leaflet marker and center the map to there, returns a value which cannot be translated using the coordinate conversion algorithm. Therefore, when these routes are selected the map is centered somewhere completely irrelevant; in the middle of the ocean & $\mathrm{H_{5}}$ & $\mathrm{S_{3}}$ & Unfortunately, no immediate solution as this is an issue based on the structure of particular GPX files. This occurs purely with GPX files downloaded from Walkhighlands' official source; not with walk report (user donated) GPX files or with my own. Given more time, non-official-Walkhighlands replacements for these files would be found, however, the functionality is still clearly there and can be executed upon all other GPX files\\
 		%\textbf{}:\newline  & $\mathrm{H_{}}$, $\mathrm{H_{}}$ & $\mathrm{S_{}}$ & \\
@@ -2028,7 +2029,7 @@ er (Mobile)}\\
 		\textbf{Options Menu}:\newline The options menu for the `Conquest Map' requires a significant amount of space due to its capabilities therefore, making a large portion of the map not-viewable when it's expanded. This cannot be directly altered however may require some additional design feature to make the menu blend-in a bit more naturally & $\mathrm{H_{4}}$, $\mathrm{H_{8}}$ & $\mathrm{S_{2}}$ & Add slight transparency to the background of the options menu to make other portions of the page and map viewable while it's expanded, and add a layer of depth as opposed to being faced with a box of white space over a pretty map\\
 		\textbf{`Seeking' Bar}:\newline The seeking bar displaying two empty value fields adds a ``cheap'' feel to the map before the user pans to display the panning coordinates & $\mathrm{H_{4}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Hide the `Seeking' bar until the user has begun panning the map\\
 		\hline
-                \multicolumn{4}{l}{\textsc{Total Violations}: ...}\\
+                \multicolumn{4}{l}{\textsc{Total Violations}: 15}\\
                 \multicolumn{4}{l}{\textsc{Total Iterations}: 11 (This is fully-inclusive of violations identified on all 11)}\\
 		\multicolumn{4}{l}{\textsc{Iteration Frequency}: Appropriate Checkpoints}\\
 		\multicolumn{4}{l}{\textsc{Evaluator(s)}: Lewis Britton, Anonymous [5]}\\
@@ -2068,8 +2069,8 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{3}{c}{\underline{\texttt{getLocation()}}}\\
 		\texttt{function} (button),\newline \texttt{alert} & Display browser-specific request to use device's location, and display device coordinates & As expected\\
-		\multicolumn{3}{c}{\underline{\texttt{getNearest()}}}\\
-		\texttt{function} (button) & Display coordinates of nearest route to device & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showNearest()}}}\\
+		\texttt{function} (button) & Display nearest hill to device & As expected, minor issue noted in Figure A7\\
 		\hline
 		\multicolumn{3}{c}{\textsc{`Drafting Room' -- `Briefing'}}\\
 		\hline
@@ -2150,8 +2151,8 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{3}{c}{\underline{\texttt{showLocation()}}}\\
 		\texttt{function} (button),\newline \texttt{alert} & Display browser-specific request to use device's location, pan to device coordinates on map, display marker and associated pop-up, and display accuracy radius & As expected\\
-		\multicolumn{3}{c}{\underline{\texttt{showNearest()}}}\\
-		\texttt{function} (button),\newline \texttt{alert} & Display browser-specific request to use device's location, pan to nearest route coordinates on map, display marker and associated pop-up, display line, and display hill markers and associated pop-ups & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{showNearest(`<hill>')}}}\\
+		\texttt{function} (button),\newline \texttt{alert} & Display browser-specific request to use device's location, use hill type parameter to determine whether the hill is a Munro or Corbett, pan to nearest hill coordinates on map, display marker and associated pop-up, and display relevant HTML element & As expected\\
 		\hline
 		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Feature Options}}\\
 		\hline
@@ -2386,6 +2387,15 @@ er (Mobile)}\\
 			\caption{Lorne Rankings}
 		\end{center}
 		\end{table}
+
+\newpage
+
+		\subsubsection*{Figure B4: Pink Wojak}
+	
+	\begin{center}	
+		\verb|find ~/memes| $\mathtt{\vert}$ \verb|grep -i pink| $\mathtt{\vert}$ \verb|shuf| $\mathtt{\vert}$ \verb|sxiv -ia|\\[2cm]
+		\includegraphics[width=14cm,height=14cm]{../System/Photos/pink.png}
+	\end{center}
 
 \newpage
 

@@ -131,14 +131,20 @@
 			<h2>Ability &amp; Equipment Restrictions</h2>
 			<div class="optionsRow">
 				<p><select id="selectAbility" onchange="showAbilityListCont()"></select></p>
-				<div id="selectAbilityHillsCont" class="hidden">
-                                        <p><select id="selectAbilityHills" onchange="selectAbilityRefine('Hills')"></select></p>
-                                </div>
                                 <div id="selectAbilityRoutesCont" class="hidden">
                                         <p><select id="selectAbilityRoutes" onchange="selectAbilityRefine('Routes')"></select></p>
-                                </div>
-                                <div id="selectAbilitySummitCont" class="hidden">
-                                        <p><select id="selectAbilitySummit" onchange="selectAbilityRefine('Summit')"></select></p>
+					<div id="selectAbilityRoutesTotalDistanceCont" class="hidden">
+						<input type="range" id="selectAbilityRoutesTotalDistanceMin" min="1" max="100" value="1" step="0.5" class="slider">
+						<input type="range" id="selectAbilityRoutesTotalDistanceMax" min="1" max="100" value="1" step="0.5" class="slider">
+						<p>
+							<span id="selectAbilityRoutesTotalDistanceMinOut"></span>mi to 
+							<span id="selectAbilityRoutesTotalDistanceMaxOut"></span>mi
+						</p>
+					</div>
+					<div id="selectAbilityRoutesTotalElevationCont" class="hidden">
+					</div>
+					<div id="selectAbilityRoutesTotalTimeCont" class="hidden">
+					</div>
                                 </div>
                                 <div id="selectAbilityRoutesTypeCont" class="hidden">
                                         <p><select id="selectAbilityRoutesType" onchange="selectAbilityRefine('RoutesType')"></select></p>
@@ -146,26 +152,14 @@
                                 <div id="selectAbilityRoutesStageCont" class="hidden">
                                         <p><select id="selectAbilityRoutesStage" onchange="selectAbilityRefine('RoutesStage')"></select></p>
                                 </div>
-                                <div id="selectAbilityTerraintypeCont" class="hidden">
-                                        <p><select id="selectAbilityTerraintype" onchange="selectAbilityRefine('Terraintype')"></select></p>
-                                </div>
-                                <div id="selectAbilityTerraindiffCont" class="hidden">
-                                        <p><select id="selectAbilityTerraindiff" onchange="selectAbilityRefine('Terraindiff')"></select></p>
-                                </div>
 			</div>
 			<div class="optionsRow">
 				<p><select id="selectEquipment" onchange="showEquipmentListCont()"></select></p>
-                                <div id="selectEquipmentPacksCont" class="hidden">
-                                        <p><select id="selectEquipmentPacks" onchange="selectEquipmentRefine('Packs')"></select></p>
-                                </div>
                                 <div id="selectEquipmentTechnicalCont" class="hidden">
                                         <p><select id="selectEquipmentTechnical" onchange="selectEquipmentRefine('Technical')"></select></p>
                                 </div>
                                 <div id="selectEquipmentFootwearCont" class="hidden">
                                         <p><select id="selectEquipmentFootwear" onchange="selectEquipmentRefine('Footwear')"></select></p>
-                                </div>
-                                <div id="selectEquipmentClothingCont" class="hidden">
-                                        <p><select id="selectEquipmentClothing" onchange="selectEquipmentRefine('Clothing')"></select></p>
                                 </div>
 			</div>
 			<div id="refinementsOut" class="optionsRow hidden">

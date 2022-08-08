@@ -637,7 +637,7 @@ navigator.geolocation.getCurrentPosition(getLatLon, getLatLonFail, getLatLonOpts
 
 
 /*
- * Find Nearest Project
+ * Find Nearest Munro 
  */
 var distances = [];
 
@@ -651,6 +651,12 @@ function showNearest(hill) {
 	    const nearestOutShell = document.getElementById("nearestOutShell");
 	    const nearestOut = document.getElementById("nearestOut");
 	    nearestOut.innerHTML = "";
+            var hillTypeStr = "";
+	    var hillType = "";
+	    var hillBuff = "";
+            var hillName = "";
+            var hillRouteType = "";
+	    var hillRouteBuff = "";
 	    let currLat = document.getElementById("currLatBuff").innerHTML;
 	    let currLon = document.getElementById("currLonBuff").innerHTML;
             let markerFrom = new L.marker([currLat,currLon]);
@@ -659,8 +665,36 @@ function showNearest(hill) {
 	    hideRoutes();
 
             for (var i in hills.landmass) {
-                for (var k in hills.landmass[i].munro) {
-		    let markerTo = new L.marker([hills.landmass[i].munro[k].lat,hills.landmass[i].munro[k].lon]);
+	        if (hill === "munro") {
+                    hillTypeStr = "Munro";
+		    hillType = hills.landmass[i].munro;
+		    for (var k in hills.landmass[i].munro) {
+		        hillBuff = hills.landmass[i].munro[k];
+                        hillName = hills.landmass[i].munro[k].name;
+	            }
+		    /*for (var j in hills.landmass[i].route) {
+                        hillRouteType = hills.landmass[i].route[j].munro;
+			for (var l in hills.landmass[i].route[j].munro) {
+			    hillRouteBuff = hills.landmass[i].route[j].munro[l];
+			}
+		    }*/
+		} else if (hill === "corbett") {
+                    hillTypeStr = "Corbett";
+	            hillType = hills.landmass[i].corbett;
+		    for (var k in hills.landmass[i].corbett) {
+		        hillBuff = hills.landmass[i].corbett[k];
+                        hillName = hills.landmass[i].corbett[k].name;
+		    }
+		    /*for (var j in hills.landmass[i].route) {
+                        hillRouteType = hills.landmass[i].route[j].corbett;
+			for (var l in hills.landmass[i].route[j].corbett) {
+			    hillRouteBuff = hills.landmass[i].route[j].corbett[l];
+			}
+		    }*/
+	        }
+
+                for (var k in hillType) {
+		    let markerTo = new L.marker([hillBuff.lat,hillBuff.lon]);
      		    var from = markerFrom.getLatLng();
     		    var to = markerTo.getLatLng();
 
@@ -670,16 +704,14 @@ function showNearest(hill) {
 
 		    distances.push(distMi);
 		}
-	    }
 
-	    var minDist = Math.min.apply(Math, distances);
+	        var minDist = Math.min.apply(Math, distances);
 	    
-            for (var i in hills.landmass) {
 		let region = hills.landmass[i].region;
 		let subregion = hills.landmass[i].subregion;
 		let informalregion = hills.landmass[i].informalregion;
-                for (var k in hills.landmass[i].munro) {
-		    let markerTo = new L.marker([hills.landmass[i].munro[k].lat,hills.landmass[i].munro[k].lon]);
+                for (var k in hillType) {
+		    let markerTo = new L.marker([hillBuff.lat,hillBuff.lon]);
      		    var from = markerFrom.getLatLng();
     		    var to = markerTo.getLatLng();
 
@@ -687,40 +719,64 @@ function showNearest(hill) {
     		    let distKm = distM/1000;
     		    let distMi = (distKm*0.621371);
     		    if (distMi === minDist) {
-			map.setView([hills.landmass[i].munro[k].lat,hills.landmass[i].munro[k].lon]);
+			map.setView([hillBuff.lat,hillBuff.lon]);
 			nearestOutShell.classList.remove("hidden");
 
 		        let latDir = "";
-		        if (hills.landmass[i].munro[k].lat < 0) {
+		        if (hillBuff.lat < 0) {
 			    latDir = "S";
-		        } else if (hills.landmass[i].munro[k].lat > 0) {
+		        } else if (hillBuff.lat > 0) {
 			    latDir = "N";
 		        }
 		        let lonDir = "";
-		        if (hills.landmass[i].munro[k].lon < 0) {
+		        if (hillBuff.lon < 0) {
 			    lonDir = "W";
-		        } else if (hills.landmass[i].munro[k].lon > 0) {
+		        } else if (hillBuff.lon > 0) {
 			    lonDir = "E";
 		        }
 
                 	createHillMarker(
-		            hills.landmass[i].munro[k].name,
-			    "Your Nearest Munro",
-		            hills.landmass[i].munro[k].elevation.toLocaleString("en-US"),
-		            hills.landmass[i].munro[k].lat,
+			    hillName,
+			    "Your Nearest " + hillTypeStr,
+		            hillBuff.elevation.toLocaleString("en-US"),
+		            hillBuff.lat,
 			    latDir,
-		            hills.landmass[i].munro[k].lon,
+		            hillBuff.lon,
 			    lonDir,
 			    region,
 			    subregion,
 			    informalregion,
-			    hills.landmass[i].munro[k].image,
+			    hillBuff.image,
 		            mountainIcon
 		    	);
 
+			let hillRoutes = [];
+
+			if (hillTypeStr === "Munro") {
+			    for (var j in hills.landmass[i].route) {
+			        for (var l in hills.landmass[i].route[j].munro) {
+			            if (hills.landmass[i].route[j].munro[l] === hillName) {
+				        //hillRoutes.push("<button onclick='showRoute('...')' style='width:100%;'>" + hills.landmass[i].route[j].name + "</button>");
+				        hillRoutes.push(hills.landmass[i].route[j].name);
+				    }
+			        }
+			    }
+			} else if (hillTypeStr === "Corbett") {
+			    for (var j in hills.landmass[i].route) {
+			        for (var l in hills.landmass[i].route[j].corbett) {
+			            if (hills.landmass[i].route[j].corbett[l] === hillName) {
+				        hillRoutes.push(hills.landmass[i].route[j].name);
+				    }
+			        }
+			    }
+			}
+
 			nearestOut.innerHTML = 
-			    "Nearest <b>Munro</b>: " + hills.landmass[i].munro[k].name + "<br>"
-			    + "<b>" + minDist.toFixed(2) + "mi</b> away";
+			    "<p>Nearest <b>" + hillTypeStr + "</b>: " + hillName + "<br>"
+			    + "<b>" + minDist.toFixed(2) + "mi</b> away</p><hr>"
+			    + "<p><b>Routes</b>:<br>"
+			    + hillRoutes.join("<br>") + "</p><hr>"
+			    + "<p><a href='https://www.google.com/maps/search/current+location+to+" + hillName + "/'>Directions (Soyggle Maps)</a></p>";
 		    }
 		}
 	    }
@@ -1001,8 +1057,47 @@ function selectAbilityRefine(component) {
             const selectAbility = document.getElementById("selectAbility" + component).value.toLowerCase();
             const refinementsOut = document.getElementById("refinementsOut");
             const refinementsOutTxt = document.getElementById("refinementsOutTxt");
+	    const selectAbilityRoutes = document.getElementById("selectAbilityRoutes");
+	    const selectAbilityRoutesTotalDistanceCont = document.getElementById("selectAbilityRoutesTotalDistanceCont");
+	    const selectAbilityRoutesTotalElevationCont = document.getElementById("selectAbilityRoutesTotalElevationCont");
+	    const selectAbilityRoutesTotalTimeCont = document.getElementById("selectAbilityRoutesTotalTimeCont");
+	    var selectAbilityRoutesTotalDistanceMin = document.getElementById("selectAbilityRoutesTotalDistanceMin");
+	    var selectAbilityRoutesTotalDistanceMax = document.getElementById("selectAbilityRoutesTotalDistanceMax");
+	    var selectAbilityRoutesTotalDistanceMinOut = document.getElementById("selectAbilityRoutesTotalDistanceMinOut");
+	    var selectAbilityRoutesTotalDistanceMaxOut = document.getElementById("selectAbilityRoutesTotalDistanceMaxOut");
             refinementsOutTxt.innerHTML = "";
             let abilityName = "";
+
+	    if (selectAbilityRoutes.value === "Total Distance") {
+		selectAbilityRoutesTotalDistanceCont.classList.remove("hidden");
+		selectAbilityRoutesTotalElevationCont.classList.add("hidden");
+		selectAbilityRoutesTotalTimeCont.classList.remove("hidden");
+		selectAbilityRoutesTotalDistanceMinOut.innerHTML = selectAbilityRoutesTotalDistanceMin.value;
+		selectAbilityRoutesTotalDistanceMaxOut.innerHTML = selectAbilityRoutesTotalDistanceMax.value;
+		selectAbilityRoutesTotalDistanceMin.oninput = function() {
+		    selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
+		    if (selectAbilityRoutesTotalDistanceMin.value > selectAbilityRoutesTotalDistanceMax.value) {
+		        selectAbilityRoutesTotalDistanceMin.value = 0;
+		        selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
+		    }
+		};
+		selectAbilityRoutesTotalDistanceMax.oninput = function() {
+		    selectAbilityRoutesTotalDistanceMaxOut.innerHTML = this.value;
+		    if (selectAbilityRoutesTotalDistanceMin.value > selectAbilityRoutesTotalDistanceMax.value) {
+		        selectAbilityRoutesTotalDistanceMin.value = 0;
+		        selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
+		    }
+		};
+	    } else if (selectAbilityRoutes.value === "Total Elevation Gain") {
+		selectAbilityRoutesTotalDistanceCont.classList.add("hidden");
+		selectAbilityRoutesTotalElevationCont.classList.remove("hidden");
+		selectAbilityRoutesTotalTimeCont.classList.add("hidden");
+	    } else if (selectAbilityRoutes.value === "Time/Duration") {
+		selectAbilityRoutesTotalDistanceCont.classList.add("hidden");
+		selectAbilityRoutesTotalElevationCont.classList.add("hidden");
+		selectAbilityRoutesTotalTimeCont.classList.remove("hidden");
+	    }
+
             for (var i in attributes.elementshill) {
                 if (attributes.elementshill[i].name.toLowerCase() === selectAbility) {
                     abilityName = attributes.elementshill[i].name;
