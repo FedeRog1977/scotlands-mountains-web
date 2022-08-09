@@ -1110,7 +1110,7 @@ function selectAbilityRefine(component) {
 	selectAbilityRoutesTotalDistanceCont.classList.add("hidden");
 	selectAbilityRoutesTotalElevationCont.classList.add("hidden");
 	selectAbilityRoutesTotalTimeCont.classList.remove("hidden");
-	selectAbilityRoutesTotalTimeMinOut.innerHTML = selectAbilityRoutesTotalTimMin.value;
+	selectAbilityRoutesTotalTimeMinOut.innerHTML = selectAbilityRoutesTotalTimeMin.value;
 	selectAbilityRoutesTotalTimeMaxOut.innerHTML = selectAbilityRoutesTotalTimeMax.value;
 	selectAbilityRoutesTotalTimeMin.oninput = function() {
 	    selectAbilityRoutesTotalTimeMinOut.innerHTML = this.value;
@@ -1155,6 +1155,16 @@ function addAbilityRefine(component) {
 			    abilityName + " ("
 			    + document.getElementById("selectAbilityRoutesTotalDistanceMin").value + "mi to "
 			    + document.getElementById("selectAbilityRoutesTotalDistanceMax").value + "mi)";
+		    } else if (abilityName === "Total Elevation Gain") {
+			abilityName =
+			    abilityName + " ("
+			    + document.getElementById("selectAbilityRoutesTotalElevationMin").value + "ft to "
+			    + document.getElementById("selectAbilityRoutesTotalElevationMax").value + "ft)";
+		    } else if (abilityName === "Standard Time/Duration") {
+			abilityName =
+			    abilityName + " ("
+			    + document.getElementById("selectAbilityRoutesTotalTimeMin").value + "hrs to "
+			    + document.getElementById("selectAbilityRoutesTotalTimeMax").value + "hrs)";
 		    }
                 }
             }
@@ -1181,15 +1191,20 @@ function addAbilityRefine(component) {
 
 	    if (refinements.includes(abilityName)) {
 		refinements = refinements;
+	        refinementsOut.innerHTML = refinements.join("<br>");
 	    } else {
 	        refinements.push(abilityName);
                 refinementsOutShell.classList.remove("hidden");
-	        refinementsOut.innerHTML = refinements.join("; ");
+	        refinementsOut.innerHTML = refinements.join("<br>");
 	    }
         })
 }
 
 function selectEquipmentRefine(component) {
+    //NReq. as no child tier low enough
+}
+
+function addEquipmentRefine(component) {
     fetch(attributes)
         .then((resp) => {
             return resp.json();
@@ -1222,9 +1237,14 @@ function selectEquipmentRefine(component) {
                 }
             }
 
-	    refinements.push(equipmentName);
-            refinementsOutShell.classList.remove("hidden");
-	    refinementsOut.innerHTML = refinements.join("; ");
+	    if (refinements.includes(equipmentName)) {
+		refinements = refinements;
+	        refinementsOut.innerHTML = refinements.join("<br>");
+	    } else {
+	        refinements.push(equipmentName);
+                refinementsOutShell.classList.remove("hidden");
+	        refinementsOut.innerHTML = refinements.join("<br>");
+	    }
         })
 }
 
