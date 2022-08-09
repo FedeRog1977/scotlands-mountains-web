@@ -1048,6 +1048,88 @@ function searchLocation() {
 var refinements = [];
 
 function selectAbilityRefine(component) {
+    const selectAbility = document.getElementById("selectAbility" + component).value.toLowerCase();
+    const selectAbilityRoutes = document.getElementById("selectAbilityRoutes");
+    const selectAbilityRoutesTotalDistanceCont = document.getElementById("selectAbilityRoutesTotalDistanceCont");
+    const selectAbilityRoutesTotalElevationCont = document.getElementById("selectAbilityRoutesTotalElevationCont");
+    const selectAbilityRoutesTotalTimeCont = document.getElementById("selectAbilityRoutesTotalTimeCont");
+    var selectAbilityRoutesTotalDistanceMin = document.getElementById("selectAbilityRoutesTotalDistanceMin");
+    var selectAbilityRoutesTotalDistanceMax = document.getElementById("selectAbilityRoutesTotalDistanceMax");
+    var selectAbilityRoutesTotalDistanceMinOut = document.getElementById("selectAbilityRoutesTotalDistanceMinOut");
+    var selectAbilityRoutesTotalDistanceMaxOut = document.getElementById("selectAbilityRoutesTotalDistanceMaxOut");
+    var selectAbilityRoutesTotalElevationMin = document.getElementById("selectAbilityRoutesTotalElevationMin");
+    var selectAbilityRoutesTotalElevationMax = document.getElementById("selectAbilityRoutesTotalElevationMax");
+    var selectAbilityRoutesTotalElevationMinOut = document.getElementById("selectAbilityRoutesTotalElevationMinOut");
+    var selectAbilityRoutesTotalElevationMaxOut = document.getElementById("selectAbilityRoutesTotalElevationMaxOut");
+    var selectAbilityRoutesTotalTimeMin = document.getElementById("selectAbilityRoutesTotalTimeMin");
+    var selectAbilityRoutesTotalTimeMax = document.getElementById("selectAbilityRoutesTotalTimeMax");
+    var selectAbilityRoutesTotalTimeMinOut = document.getElementById("selectAbilityRoutesTotalTimeMinOut");
+    var selectAbilityRoutesTotalTimeMaxOut = document.getElementById("selectAbilityRoutesTotalTimeMaxOut");
+
+    if (selectAbilityRoutes.value === "Total Distance") {
+	selectAbilityRoutesTotalDistanceCont.classList.remove("hidden");
+	selectAbilityRoutesTotalElevationCont.classList.add("hidden");
+	selectAbilityRoutesTotalTimeCont.classList.add("hidden");
+	selectAbilityRoutesTotalDistanceMinOut.innerHTML = selectAbilityRoutesTotalDistanceMin.value;
+	selectAbilityRoutesTotalDistanceMaxOut.innerHTML = selectAbilityRoutesTotalDistanceMax.value;
+	selectAbilityRoutesTotalDistanceMin.oninput = function() {
+	    selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
+	    if (selectAbilityRoutesTotalDistanceMin.value > selectAbilityRoutesTotalDistanceMax.value) {
+		selectAbilityRoutesTotalDistanceMin.value = 0;
+		selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
+	    }
+	};
+	selectAbilityRoutesTotalDistanceMax.oninput = function() {
+	    selectAbilityRoutesTotalDistanceMaxOut.innerHTML = this.value;
+	    if (selectAbilityRoutesTotalDistanceMin.value > selectAbilityRoutesTotalDistanceMax.value) {
+		selectAbilityRoutesTotalDistanceMin.value = 0;
+		selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
+	    }
+	};
+    } else if (selectAbilityRoutes.value === "Total Elevation Gain") {
+	selectAbilityRoutesTotalDistanceCont.classList.add("hidden");
+	selectAbilityRoutesTotalElevationCont.classList.remove("hidden");
+	selectAbilityRoutesTotalTimeCont.classList.add("hidden");
+	selectAbilityRoutesTotalElevationMinOut.innerHTML = selectAbilityRoutesTotalElevationMin.value;
+	selectAbilityRoutesTotalElevationMaxOut.innerHTML = selectAbilityRoutesTotalElevationMax.value;
+	selectAbilityRoutesTotalElevationMin.oninput = function() {
+	    selectAbilityRoutesTotalElevationMinOut.innerHTML = this.value;
+	    if (selectAbilityRoutesTotalElevationMin.value > selectAbilityRoutesTotalElevationMax.value) {
+		selectAbilityRoutesTotalElevationMin.value = 0;
+		selectAbilityRoutesTotalElevationMinOut.innerHTML = this.value;
+	    }
+	};
+	selectAbilityRoutesTotalElevationMax.oninput = function() {
+	    selectAbilityRoutesTotalElevationMaxOut.innerHTML = this.value;
+	    if (selectAbilityRoutesTotalElevationMin.value > selectAbilityRoutesTotalElevationMax.value) {
+		selectAbilityRoutesTotalElevationMin.value = 0;
+		selectAbilityRoutesTotalElevationMinOut.innerHTML = this.value;
+	    }
+	};
+    } else if (selectAbilityRoutes.value === "Standard Time/Duration") {
+	selectAbilityRoutesTotalDistanceCont.classList.add("hidden");
+	selectAbilityRoutesTotalElevationCont.classList.add("hidden");
+	selectAbilityRoutesTotalTimeCont.classList.remove("hidden");
+	selectAbilityRoutesTotalTimeMinOut.innerHTML = selectAbilityRoutesTotalTimMin.value;
+	selectAbilityRoutesTotalTimeMaxOut.innerHTML = selectAbilityRoutesTotalTimeMax.value;
+	selectAbilityRoutesTotalTimeMin.oninput = function() {
+	    selectAbilityRoutesTotalTimeMinOut.innerHTML = this.value;
+	    if (selectAbilityRoutesTotalTimeMin.value > selectAbilityRoutesTotalTimeMax.value) {
+		selectAbilityRoutesTotalTimeMin.value = 0;
+		selectAbilityRoutesTotalTimeMinOut.innerHTML = this.value;
+	    }
+	};
+	selectAbilityRoutesTotalTimeMax.oninput = function() {
+	    selectAbilityRoutesTotalTimeMaxOut.innerHTML = this.value;
+	    if (selectAbilityRoutesTotalTimeMin.value > selectAbilityRoutesTotalTimeMax.value) {
+		selectAbilityRoutesTotalTimeMin.value = 0;
+		selectAbilityRoutesTotalTimeMinOut.innerHTML = this.value;
+	    }
+	};
+    }
+}
+
+function addAbilityRefine(component) {
     fetch(attributes)
         .then((resp) => {
             return resp.json();
@@ -1055,48 +1137,10 @@ function selectAbilityRefine(component) {
         .then((data) => {
             const attributes = data;
             const selectAbility = document.getElementById("selectAbility" + component).value.toLowerCase();
+            const refinementsOutShell = document.getElementById("refinementsOutShell");
             const refinementsOut = document.getElementById("refinementsOut");
-            const refinementsOutTxt = document.getElementById("refinementsOutTxt");
-	    const selectAbilityRoutes = document.getElementById("selectAbilityRoutes");
-	    const selectAbilityRoutesTotalDistanceCont = document.getElementById("selectAbilityRoutesTotalDistanceCont");
-	    const selectAbilityRoutesTotalElevationCont = document.getElementById("selectAbilityRoutesTotalElevationCont");
-	    const selectAbilityRoutesTotalTimeCont = document.getElementById("selectAbilityRoutesTotalTimeCont");
-	    var selectAbilityRoutesTotalDistanceMin = document.getElementById("selectAbilityRoutesTotalDistanceMin");
-	    var selectAbilityRoutesTotalDistanceMax = document.getElementById("selectAbilityRoutesTotalDistanceMax");
-	    var selectAbilityRoutesTotalDistanceMinOut = document.getElementById("selectAbilityRoutesTotalDistanceMinOut");
-	    var selectAbilityRoutesTotalDistanceMaxOut = document.getElementById("selectAbilityRoutesTotalDistanceMaxOut");
-            refinementsOutTxt.innerHTML = "";
+            refinementsOut.innerHTML = "";
             let abilityName = "";
-
-	    if (selectAbilityRoutes.value === "Total Distance") {
-		selectAbilityRoutesTotalDistanceCont.classList.remove("hidden");
-		selectAbilityRoutesTotalElevationCont.classList.add("hidden");
-		selectAbilityRoutesTotalTimeCont.classList.remove("hidden");
-		selectAbilityRoutesTotalDistanceMinOut.innerHTML = selectAbilityRoutesTotalDistanceMin.value;
-		selectAbilityRoutesTotalDistanceMaxOut.innerHTML = selectAbilityRoutesTotalDistanceMax.value;
-		selectAbilityRoutesTotalDistanceMin.oninput = function() {
-		    selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
-		    if (selectAbilityRoutesTotalDistanceMin.value > selectAbilityRoutesTotalDistanceMax.value) {
-		        selectAbilityRoutesTotalDistanceMin.value = 0;
-		        selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
-		    }
-		};
-		selectAbilityRoutesTotalDistanceMax.oninput = function() {
-		    selectAbilityRoutesTotalDistanceMaxOut.innerHTML = this.value;
-		    if (selectAbilityRoutesTotalDistanceMin.value > selectAbilityRoutesTotalDistanceMax.value) {
-		        selectAbilityRoutesTotalDistanceMin.value = 0;
-		        selectAbilityRoutesTotalDistanceMinOut.innerHTML = this.value;
-		    }
-		};
-	    } else if (selectAbilityRoutes.value === "Total Elevation Gain") {
-		selectAbilityRoutesTotalDistanceCont.classList.add("hidden");
-		selectAbilityRoutesTotalElevationCont.classList.remove("hidden");
-		selectAbilityRoutesTotalTimeCont.classList.add("hidden");
-	    } else if (selectAbilityRoutes.value === "Time/Duration") {
-		selectAbilityRoutesTotalDistanceCont.classList.add("hidden");
-		selectAbilityRoutesTotalElevationCont.classList.add("hidden");
-		selectAbilityRoutesTotalTimeCont.classList.remove("hidden");
-	    }
 
             for (var i in attributes.elementshill) {
                 if (attributes.elementshill[i].name.toLowerCase() === selectAbility) {
@@ -1106,6 +1150,12 @@ function selectAbilityRefine(component) {
             for (var i in attributes.elementsroute) {
                 if (attributes.elementsroute[i].name.toLowerCase() === selectAbility) {
                     abilityName = attributes.elementsroute[i].name;
+		    if (abilityName === "Total Distance") {
+			abilityName =
+			    abilityName + " ("
+			    + document.getElementById("selectAbilityRoutesTotalDistanceMin").value + "mi to "
+			    + document.getElementById("selectAbilityRoutesTotalDistanceMax").value + "mi)";
+		    }
                 }
             }
             for (var i in attributes.type) {
@@ -1129,9 +1179,13 @@ function selectAbilityRefine(component) {
                 }
             }
 
-	    refinements.push(abilityName);
-            refinementsOut.classList.remove("hidden");
-	    refinementsOutTxt.innerHTML = refinements.join("; ");
+	    if (refinements.includes(abilityName)) {
+		refinements = refinements;
+	    } else {
+	        refinements.push(abilityName);
+                refinementsOutShell.classList.remove("hidden");
+	        refinementsOut.innerHTML = refinements.join("; ");
+	    }
         })
 }
 
@@ -1143,9 +1197,9 @@ function selectEquipmentRefine(component) {
         .then((data) => {
             const attributes = data;
             const selectEquipment = document.getElementById("selectEquipment" + component).value.toLowerCase();
+            const refinementsOutShell = document.getElementById("refinementsOutShell");
             const refinementsOut = document.getElementById("refinementsOut");
-            const refinementsOutTxt = document.getElementById("refinementsOutTxt");
-            refinementsOutTxt.innerHTML = "";
+            refinementsOut.innerHTML = "";
             let equipmentName = "";
             for (var i in attributes.packs) {
                 if (attributes.packs[i].name.toLowerCase() === selectEquipment) {
@@ -1169,8 +1223,8 @@ function selectEquipmentRefine(component) {
             }
 
 	    refinements.push(equipmentName);
-            refinementsOut.classList.remove("hidden");
-	    refinementsOutTxt.innerHTML = refinements.join("; ");
+            refinementsOutShell.classList.remove("hidden");
+	    refinementsOut.innerHTML = refinements.join("; ");
         })
 }
 

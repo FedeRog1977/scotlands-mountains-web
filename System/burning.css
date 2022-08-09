@@ -603,6 +603,10 @@ select, input[type="text"], button {
 	border-radius: 0.125em;
 	padding: 0.5em;
 }
+		
+	.optionsRow select {
+		width: 100%;
+	}
 
 button:hover {
 	cursor: pointer;
@@ -653,11 +657,7 @@ button:active {
 .elements-profile {
 	font-family: Audi-Extended;
         font-size: 16px;
-	word-spacing: 10px;
 	color: var(--font);
-	/*border-top: 1.5px solid var(--font);
-	border-bottom: 1.5px solid var(--font);*/
-	padding: 0 0.5em 0em 0.5em;
 	transition: color var(--dark-trans);
 }
 			
@@ -957,7 +957,6 @@ button:active {
 		} 
         
 		.flexRow > * {
-                	flex-shrink: 0;
                 	width: 100%;
                 	max-width: 100%;
         	}
@@ -965,18 +964,22 @@ button:active {
 		.optionsCol {
 			text-align: center;
 			display: inline-block;
-			margin: 0.25em;
 		}
+
+			.optionsColItemTwo {
+				display: inline-block;
+				margin: 1.75em;
+			}
 
 			.overview-style {
 				background-color : var(--overview-button);
-				/*background-image: var(--overview-button);*/
+				margin: 0.25em 0 0.25em 0;
 				padding: 0.5em;
 			}
 
                 @media (min-width: 768px) {
                         .optionsCol {
-                                flex: 1 0;
+				flex: 1 0;
                         }
                 }
 
@@ -1019,7 +1022,7 @@ button:active {
 		padding: 0.125em;
 	}
 
-#nearestOut {
+#nearestOut, #refinementsOut {
 	background-color: var(--fg);
 	margin: 0.5em 0 0.5em 0;
 	padding: 1.25em 2.5em 1.25em 2.5em;
@@ -1041,9 +1044,9 @@ button:active {
         -webkit-appearance: none;
         appearance: none;
         width: 100%;
-        height: 17.5px;
+        height: 15px;
         background: var(--fg);
-        border-radius: 1em;
+        border-radius: 0.75em;
         outline: none;
         opacity: 70%;
         -webkit-transition: 0.2s;
@@ -1058,9 +1061,9 @@ button:active {
                 -webkit-appearance: none;
                 appearance: none;
                 width: 25px;
-                height: 25px;
+                height: 15px;
                 background: var(--font);
-                border-radius: 1em;
+                border-radius: 0.75em;
                 cursor: pointer;
         }
 
