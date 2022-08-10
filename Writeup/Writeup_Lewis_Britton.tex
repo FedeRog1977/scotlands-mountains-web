@@ -1405,11 +1405,9 @@ if ((day.wind_deg) >= 348.76) {
 
 	As the majority of the functionality of the JavaScript in this sits is based on the integrity and content of the associated JSON-data-store files, it's essential that these documents are completely integral to see that functions deliver content as intended.\\
 
-			The most crucial component is validity testing as the file is simply not accessible is errors are present. For this purpose, the Python library \texttt{JSON-Spec}, implemented by the command line tool \texttt{json}, is used. It validates JSON files in a manner much like that in the definition of logic and relationships in databases; the format of the input JSON file is compared to a `JSON schema' which defines the desired structure and syntax. For example in this project, \texttt{Hills.json} is compared to \texttt{schema.json}. As the JSON files used for this system range between the mid-thousands (of lines), this method is [infitinely more valuable] than manual iteration. Additionally, to ensure the schema document itself is valid, the java-command-line tool \texttt{json-schema-validator} is used.\\
+	The most [crucial component] is validity testing as the file is simply not accessible is errors are present. For this purpose, the Python library \texttt{JSON-Spec}, implemented by the command line tool \texttt{json}, is used. It validates JSON files in a manner much like that in the definition of logic and relationships in databases; the format of the input JSON file is compared to a `JSON schema' which defines the desired structure and syntax. For example in this project, \texttt{Hills.json} is compared to \texttt{schema.json}. As the JSON files used for this system range between the mid-thousands (of lines), this method is [infitinely more valuable] than manual iteration. Additionally, to ensure the schema document itself is valid, the java-command-line tool \texttt{json-schema-validator} is used.\\
 
-	ElasticSearch and Kibana\\
-
-	...
+	The \textit{Elastic Stack} (Elastic, 2022) was also used in testing the capabilities of \texttt{Hills.json}. The \texttt{elastic search} and \texttt{kibana} command line tools were used in a developer-testing session to query various aspects of the file and make simulations based on data attributes. All parent and major child attributes were exhausted in testing, subject to what was appropriate.\\
 
 	\subsection{Restrictions}
 
@@ -2411,6 +2409,13 @@ er (Mobile)}\\
 		Available At:
 		\texttt{https://www.chartjs.org/docs/latest/}
 		(Accessed: 03/04/2022).
+
+	\bibitem{}
+		Elastic. (2022).
+		\textsl{Elastic Stack: Elasticsearch, Kibana, Beats.}
+		Available At:
+		\texttt{https://www.elastic.co/elastic-stack/}
+		(Accessed: 22/07/2022).
 
 	\bibitem{}
 		FontAwesome. (2021).
