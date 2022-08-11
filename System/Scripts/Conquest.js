@@ -2118,6 +2118,7 @@ function searchRouteRefined(landmass) {
         .then((data) => {
             const hills = data;
 	    const refinementsRoutesOut = document.getElementById("refinementsRoutesOut");
+	    refinementsRoutesOut.innerHTML = "";
             let loadRoutePrefix = "https://raw.githubusercontent.com/FedeRog1977/Burning/master/System/GPX/";
             let loadRouteSuffix = "";
 	    let loadRoute = "";
@@ -2143,12 +2144,49 @@ function searchRouteRefined(landmass) {
 		    loadRoutes.push(loadRoute);
 
 		    if (hills.landmass[i].route[k].distance >= refinementsVals.distanceMin
+		        && hills.landmass[i].route[k].distance <= refinementsVals.distanceMax) {
+			routesRestricted.push(hills.landmass[i].route[k].name);
+			refinementsRoutesOut.innerHTML = routesRestricted.join("<br>");
+		    } else if (hills.landmass[i].route[k].elevationgain >= refinementsVals.elevationMin
+		        && hills.landmass[i].route[k].elevationgain <= refinementsVals.elevationMax) {
+			routesRestricted.push(hills.landmass[i].route[k].name);
+			refinementsRoutesOut.innerHTML = routesRestricted.join("<br>");
+		    } else if (hills.landmass[i].route[k].stdtime >= refinementsVals.timeMin
+		        && hills.landmass[i].route[k].stdtime <= refinementsVals.timeMax) {
+			routesRestricted.push(hills.landmass[i].route[k].name);
+			refinementsRoutesOut.innerHTML = routesRestricted.join("<br>");
+		    } else if (hills.landmass[i].route[k].distance >= refinementsVals.distanceMin
+		        && hills.landmass[i].route[k].distance <= refinementsVals.distanceMax
+		    	&& hills.landmass[i].route[k].elevationgain >= refinementsVals.elevationMin
+		        && hills.landmass[i].route[k].elevationgain <= refinementsVals.elevationMax) {
+			routesRestricted.push(hills.landmass[i].route[k].name);
+			refinementsRoutesOut.innerHTML = routesRestricted.join("<br>");
+		    } else if (hills.landmass[i].route[k].distance >= refinementsVals.distanceMin
+		        && hills.landmass[i].route[k].distance <= refinementsVals.distanceMax
+		        && hills.landmass[i].route[k].stdtime >= refinementsVals.timeMin
+		        && hills.landmass[i].route[k].stdtime <= refinementsVals.timeMax) {
+			routesRestricted.push(hills.landmass[i].route[k].name);
+			refinementsRoutesOut.innerHTML = routesRestricted.join("<br>");
+		    } else if (hills.landmass[i].route[k].elevationgain >= refinementsVals.elevationMin
+		        && hills.landmass[i].route[k].elevationgain <= refinementsVals.elevationMax
+		        && hills.landmass[i].route[k].stdtime >= refinementsVals.timeMin
+		        && hills.landmass[i].route[k].stdtime <= refinementsVals.timeMax) {
+			routesRestricted.push(hills.landmass[i].route[k].name);
+			refinementsRoutesOut.innerHTML = routesRestricted.join("<br>");
+		    } else if (hills.landmass[i].route[k].distance >= refinementsVals.distanceMin
 			&& hills.landmass[i].route[k].distance <= refinementsVals.distanceMax
 		    	&& hills.landmass[i].route[k].elevationgain >= refinementsVals.elevationMin
 		        && hills.landmass[i].route[k].elevationgain <= refinementsVals.elevationMax
 		        && hills.landmass[i].route[k].stdtime >= refinementsVals.timeMin
 		        && hills.landmass[i].route[k].stdtime <= refinementsVals.timeMax) {
 			routesRestricted.push(hills.landmass[i].route[k].name);
+			/*
+			for (var l in refinements) {
+			    if (hills.landmass[i].route[k].type.includes(refinements[l])) {
+				routesRestricted.push(hills.landmass[i].route[k].name);
+			    }
+			}
+			*/
 			refinementsRoutesOut.innerHTML = routesRestricted.join("<br>");
 		    } else {
 			refinementsRoutesOut.innerHTML = "No Results";
