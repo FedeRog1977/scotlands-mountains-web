@@ -141,63 +141,6 @@
 					<label for="hideMarkers" class="optionsLabel">Hide<br>All</label>
 				</div>
 			</div>
-			<h2>Ability &amp; Equipment Restrictions</h2>
-			<div class="optionsRow">
-				<p><select id="selectAbility" onchange="showAbilityListCont()"></select></p>
-                                <div id="selectAbilityRoutesCont" class="hidden">
-                                        <p><select id="selectAbilityRoutes" onchange="selectAbilityRefine('Routes')"></select></p>
-					<div id="selectAbilityRoutesTotalDistanceCont" class="hidden">
-						<input type="range" id="selectAbilityRoutesTotalDistanceMin" min="1" max="99" value="1" step="0.5" class="slider">
-						<input type="range" id="selectAbilityRoutesTotalDistanceMax" min="2" max="100" value="2" step="0.5" class="slider">
-						<p>
-							<span id="selectAbilityRoutesTotalDistanceMinOut"></span>mi to 
-							<span id="selectAbilityRoutesTotalDistanceMaxOut"></span>mi
-						</p>
-						<button onclick="addAbilityRefine('Routes')" class="wide">Add</button>
-					</div>
-					<div id="selectAbilityRoutesTotalElevationCont" class="hidden">
-						<input type="range" id="selectAbilityRoutesTotalElevationMin" min="200" max="14999" value="200" step="1" class="slider">
-						<input type="range" id="selectAbilityRoutesTotalElevationMax" min="201" max="15000" value="201" step="1" class="slider">
-						<p>
-							<span id="selectAbilityRoutesTotalElevationMinOut"></span>ft to 
-							<span id="selectAbilityRoutesTotalElevationMaxOut"></span>ft
-						</p>
-						<button onclick="addAbilityRefine('Routes')" class="wide">Add</button>
-					</div>
-					<div id="selectAbilityRoutesTotalTimeCont" class="hidden">
-						<input type="range" id="selectAbilityRoutesTotalTimeMin" min="1" max="19" value="1" step="0.5" class="slider">
-						<input type="range" id="selectAbilityRoutesTotalTimeMax" min="2" max="20" value="2" step="0.5" class="slider">
-						<p>
-							<span id="selectAbilityRoutesTotalTimeMinOut"></span>hrs to 
-							<span id="selectAbilityRoutesTotalTimeMaxOut"></span>hrs
-						</p>
-						<button onclick="addAbilityRefine('Routes')" class="wide">Add</button>
-					</div>
-                                </div>
-                                <div id="selectAbilityRoutesTypeCont" class="hidden">
-                                        <p><select id="selectAbilityRoutesType"></select></p>
-					<button onclick="addAbilityRefine('RoutesType')" class="wide">Add</button>
-                                </div>
-                                <div id="selectAbilityRoutesStageCont" class="hidden">
-                                        <p><select id="selectAbilityRoutesStage"></select></p>
-					<button onclick="addAbilityRefine('RoutesStage')" class="wide">Add</button>
-                                </div>
-			</div>
-			<div class="optionsRow">
-				<p><select id="selectEquipment" onchange="showEquipmentListCont()"></select></p>
-                                <div id="selectEquipmentTechnicalCont" class="hidden">
-                                        <p><select id="selectEquipmentTechnical"></select></p>
-					<button onclick="addEquipmentRefine('Technical')" class="wide">Add</button>
-                                </div>
-                                <div id="selectEquipmentFootwearCont" class="hidden">
-                                        <p><select id="selectEquipmentFootwear"></select></p>
-					<button onclick="addEquipmentRefine('Footwear')" class="wide">Add</button>
-                                </div>
-			</div>
-			<div id="refinementsOutShell" class="optionsRow hidden">
-				<h3>Restrict Routes<br>(Omissions)</h3>
-				<p id="refinementsOut"></p>
-			</div>
 			<h2>Search Route</h2>
 			<div class="optionsRow">
 				<p><select id="selectLandmass" onchange="showRouteListCont()"></select></p>
@@ -212,7 +155,7 @@
                         	        <button onclick="showRoute('Udlaidh')" class="wide">Route</button>
                         	</div>
 				<div id="selectRouteMhicCont" class="hidden">
-                        	        <1elect id="selectRouteMhic"></select>
+                        	        <select id="selectRouteMhic"></select>
                         	        <button onclick="searchRoute('Mhic')" class="wide">Summary</button>
                         	        <button onclick="showRoute('Mhic')" class="wide">Route</button>
                         	</div>
@@ -308,6 +251,67 @@
                         	<div id="locationOutShell" class="element hidden" style="background-color:var(--fg);">
                         	        <p id="locationOut"></p>
                         	</div>
+			</div>
+			<h2>Ability &amp; Equipment Restrictions</h2>
+			<div class="optionsRow">
+				<p><select id="selectAbility" onchange="showAbilityListCont()"></select></p>
+                                <div id="selectAbilityRoutesCont" class="hidden">
+                                        <p><select id="selectAbilityRoutes" onchange="selectAbilityRefine('Routes')"></select></p>
+					<div id="selectAbilityRoutesTotalDistanceCont" class="hidden">
+						<input type="range" id="selectAbilityRoutesTotalDistanceMin" min="1" max="99" value="1" step="0.5" class="slider">
+						<input type="range" id="selectAbilityRoutesTotalDistanceMax" min="2" max="100" value="2" step="0.5" class="slider">
+						<p>
+							<span id="selectAbilityRoutesTotalDistanceMinOut"></span>mi to 
+							<span id="selectAbilityRoutesTotalDistanceMaxOut"></span>mi
+						</p>
+						<button onclick="addAbilityRefine('Routes')" class="wide">Add</button>
+					</div>
+					<div id="selectAbilityRoutesTotalElevationCont" class="hidden">
+						<input type="range" id="selectAbilityRoutesTotalElevationMin" min="200" max="14999" value="200" step="1" class="slider">
+						<input type="range" id="selectAbilityRoutesTotalElevationMax" min="201" max="15000" value="201" step="1" class="slider">
+						<p>
+							<span id="selectAbilityRoutesTotalElevationMinOut"></span>ft to 
+							<span id="selectAbilityRoutesTotalElevationMaxOut"></span>ft
+						</p>
+						<button onclick="addAbilityRefine('Routes')" class="wide">Add</button>
+					</div>
+					<div id="selectAbilityRoutesTotalTimeCont" class="hidden">
+						<input type="range" id="selectAbilityRoutesTotalTimeMin" min="1" max="19" value="1" step="0.5" class="slider">
+						<input type="range" id="selectAbilityRoutesTotalTimeMax" min="2" max="20" value="2" step="0.5" class="slider">
+						<p>
+							<span id="selectAbilityRoutesTotalTimeMinOut"></span>hrs to 
+							<span id="selectAbilityRoutesTotalTimeMaxOut"></span>hrs
+						</p>
+						<button onclick="addAbilityRefine('Routes')" class="wide">Add</button>
+					</div>
+                                </div>
+                                <div id="selectAbilityRoutesTypeCont" class="hidden">
+                                        <p><select id="selectAbilityRoutesType"></select></p>
+					<button onclick="addAbilityRefine('RoutesType')" class="wide">Add</button>
+                                </div>
+                                <div id="selectAbilityRoutesStageCont" class="hidden">
+                                        <p><select id="selectAbilityRoutesStage"></select></p>
+					<button onclick="addAbilityRefine('RoutesStage')" class="wide">Add</button>
+                                </div>
+			</div>
+			<div class="optionsRow">
+				<p><select id="selectEquipment" onchange="showEquipmentListCont()"></select></p>
+                                <div id="selectEquipmentTechnicalCont" class="hidden">
+                                        <p><select id="selectEquipmentTechnical"></select></p>
+					<button onclick="addEquipmentRefine('Technical')" class="wide">Add</button>
+                                </div>
+                                <div id="selectEquipmentFootwearCont" class="hidden">
+                                        <p><select id="selectEquipmentFootwear"></select></p>
+					<button onclick="addEquipmentRefine('Footwear')" class="wide">Add</button>
+                                </div>
+			</div>
+			<div id="refinementsOutShell" class="optionsRow hidden">
+				<h3>Restrict Routes<br><i>What You&rsquo;d Like a Route to Include</i></h3>
+				<p id="refinementsOut"></p>
+				<p>
+					<button onclick="searchRouteRefined()" class="wider" style="width:150px;">Available Routes</button>
+				</p>
+				<p id="refinementsRoutesOut"></p>
 			</div>
 		</div>
 	</div>
