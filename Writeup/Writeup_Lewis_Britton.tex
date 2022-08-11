@@ -1422,6 +1422,7 @@ if ((day.wind_deg) >= 348.76) {
 		\item When showing a route on `Conquest Map', currently all hills covered on that route are shown. Functionality which allows the user to specify/refine which kind of hills (Munros, Munro Tops, etc.) they would like to see on that route would be useful.
 		\item As discussed under section 5.2.3.2, additional graphic design would have been favoured in places such as the `Conquest Map' and on the home page, simply as aesthetic pieces, if it weren't for the time constraint and lack of relevance.
 		\item For symmetry and continuity leading form the `Drafting' portion to the `Conquest Map', weather elements would be implemented with different effect on route outputs, just like those relating to ability and equipments
+		\item Improve the overall functionality relating to re-starting the process of refining routes; involving a better hierarchy of clearing and re-ordering restrictions
 	\end{itemize}
 	
 		\subsubsection{Construction}
@@ -1914,8 +1915,6 @@ er (Mobile)}\\
 		\hline
 		\multicolumn{3}{c}{\textsc{Filter Routes by `Equipment'}}\\
 		\hline
-		\multicolumn{3}{c}{\underline{\texttt{selectEquipmentRefine()}}}\\
-		Ability component (string) & Show and hide elements & \texttt{innerHTML}\\
 		\multicolumn{3}{c}{\underline{\texttt{addEquipmentRefine()}}}\\
 		Ability component (string) & Loop array & Array $+$\\
 		\hline
@@ -2172,14 +2171,16 @@ er (Mobile)}\\
 		\multicolumn{3}{c}{\underline{\texttt{showAbilityListCont()}}}\\
 		\texttt{function} (select) & Display division of relevant ability selection\newline (7 variations) & As expected\\
 		\multicolumn{3}{c}{\underline{\texttt{selectAbilityRefine(`<ability>')}}}\\
-		\texttt{function} (select) & Select ability factor on ability selection, add ability factor to list, and display in HTML element & As expected\\
+		\texttt{function} (select) & Display child divisions of relevant ability selection\newline (3 variations)\\
+		\multicolumn{3}{c}{\underline{\texttt{addAbilityRefine(`<ability>')}}}\\
+		\texttt{function} (button) & Select ability factor on ability selection, add ability factor to list, and display in HTML element & As expected\\
 		\hline
 		\multicolumn{3}{c}{\textsc{`Conquest Map' -- `Equipment' Options}}\\
 		\hline
-		\multicolumn{3}{c}{\underline{\texttt{showAbilityListCont()}}}\\
+		\multicolumn{3}{c}{\underline{\texttt{showEquipmentListCont()}}}\\
 		\texttt{function} (select) & Display division of relevant equipment selection\newline (7 variations) & As expected\\
-		\multicolumn{3}{c}{\underline{\texttt{selectEquipmentRefine(`<equip>')}}}\\
-		\texttt{function} (select) & Select equipment factor on equipment selection, add equipment factor to list, and display in HTML element & As expected\\
+		\multicolumn{3}{c}{\underline{\texttt{addEquipmentRefine(`<equip>')}}}\\
+		\texttt{function} (button) & Select equipment factor on equipment selection, add equipment factor to list, and display in HTML element & As expected\\
 		\hline
 		\multicolumn{3}{c}{\textsc{`Conquest Map' -- Search Route}}\\
 		\hline
