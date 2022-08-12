@@ -971,11 +971,40 @@ button:active {
 				margin: 1.75em;
 			}
 
-			.overview-style {
+			.overview-left, .overview-center, .overview-right {
 				background-color : var(--overview-button);
-				margin: 0.25em 0 0.25em 0;
 				padding: 0.5em;
 			}
+
+			.overview-left {
+				margin: 0 0.125em 0 0;
+			}
+
+                		@media (max-width: 768px) {
+                        		.overview-left {
+						margin: 0.125em 0 0.125em 0;
+                        		}
+                		}
+
+			.overview-center {
+				margin: 0 0.125em 0 0.125em;
+			}
+
+                		@media (max-width: 768px) {
+                        		.overview-center {
+						margin: 0.125em 0 0.125em 0;
+                        		}
+                		}
+
+			.overview-right {
+				margin: 0 0 0 0.125em;
+			}
+
+                		@media (max-width: 768px) {
+                        		.overview-right {
+						margin: 0.125em 0 0.125em 0;
+                        		}
+                		}
 
                 @media (min-width: 768px) {
                         .optionsCol {

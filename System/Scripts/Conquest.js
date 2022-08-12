@@ -2146,51 +2146,39 @@ function searchRouteRefined(landmass) {
 
 		    if (hills.landmass[i].route[k].distance >= refinementsVals.distanceMin
 		        && hills.landmass[i].route[k].distance <= refinementsVals.distanceMax) {
+		        loadRouteSuffix = hills.landmass[i].route[k].GPX;
+		        loadRoute = loadRoutePrefix + loadRouteSuffix;
+		        loadRoutes.push(loadRoute);
 			routeRestricted =
-			    "<button class='wider' style='width:100%'>"
-			    + hills.landmass[i].route[k].name
-			    + "</button>";
+			    //"<button onclick='showRoute('')' class='wider' style='width:100%'>"
+			    /*+ */hills.landmass[i].route[k].name;
+			    //+ "</button>";
 			routesRestricted.push(routeRestricted);
 		    } else if (hills.landmass[i].route[k].elevationgain >= refinementsVals.elevationMin
 		        && hills.landmass[i].route[k].elevationgain <= refinementsVals.elevationMax) {
-			routeRestricted =
-			    "<button class='wider' style='width:100%'>"
-			    + hills.landmass[i].route[k].name
-			    + "</button>";
+			routeRestricted = hills.landmass[i].route[k].name;
 			routesRestricted.push(routeRestricted);
 		    } else if (hills.landmass[i].route[k].stdtime >= refinementsVals.timeMin
 		        && hills.landmass[i].route[k].stdtime <= refinementsVals.timeMax) {
-			routeRestricted =
-			    "<button class='wider' style='width:100%'>"
-			    + hills.landmass[i].route[k].name
-			    + "</button>";
+			routeRestricted = hills.landmass[i].route[k].name;
 			routesRestricted.push(routeRestricted);
 		    } else if (hills.landmass[i].route[k].distance >= refinementsVals.distanceMin
 		        && hills.landmass[i].route[k].distance <= refinementsVals.distanceMax
 		    	&& hills.landmass[i].route[k].elevationgain >= refinementsVals.elevationMin
 		        && hills.landmass[i].route[k].elevationgain <= refinementsVals.elevationMax) {
-			routeRestricted =
-			    "<button class='wider' style='width:100%'>"
-			    + hills.landmass[i].route[k].name
-			    + "</button>";
+			routeRestricted = hills.landmass[i].route[k].name;
 			routesRestricted.push(routeRestricted);
 		    } else if (hills.landmass[i].route[k].distance >= refinementsVals.distanceMin
 		        && hills.landmass[i].route[k].distance <= refinementsVals.distanceMax
 		        && hills.landmass[i].route[k].stdtime >= refinementsVals.timeMin
 		        && hills.landmass[i].route[k].stdtime <= refinementsVals.timeMax) {
-			routeRestricted =
-			    "<button class='wider' style='width:100%'>"
-			    + hills.landmass[i].route[k].name
-			    + "</button>";
+			routeRestricted = hills.landmass[i].route[k].name;
 			routesRestricted.push(routeRestricted);
 		    } else if (hills.landmass[i].route[k].elevationgain >= refinementsVals.elevationMin
 		        && hills.landmass[i].route[k].elevationgain <= refinementsVals.elevationMax
 		        && hills.landmass[i].route[k].stdtime >= refinementsVals.timeMin
 		        && hills.landmass[i].route[k].stdtime <= refinementsVals.timeMax) {
-			routeRestricted =
-			    "<button class='wider' style='width:100%'>"
-			    + hills.landmass[i].route[k].name
-			    + "</button>";
+			routeRestricted = hills.landmass[i].route[k].name;
 			routesRestricted.push(routeRestricted);
 		    } else if (hills.landmass[i].route[k].distance >= refinementsVals.distanceMin
 			&& hills.landmass[i].route[k].distance <= refinementsVals.distanceMax
@@ -2198,21 +2186,22 @@ function searchRouteRefined(landmass) {
 		        && hills.landmass[i].route[k].elevationgain <= refinementsVals.elevationMax
 		        && hills.landmass[i].route[k].stdtime >= refinementsVals.timeMin
 		        && hills.landmass[i].route[k].stdtime <= refinementsVals.timeMax) {
-			routeRestricted =
-			    "<button class='wider' style='width:100%'>"
-			    + hills.landmass[i].route[k].name
-			    + "</button>";
+			routeRestricted = hills.landmass[i].route[k].name;
 			routesRestricted.push(routeRestricted);
 		    }
 
-		    for (var l in refinements) {
+		    /*for (var l in refinements) {
 			if (hills.landmass[i].route[k].type.includes(refinements[l])) {
-			    routesRestricted.push(hills.landmass[i].route[k].name);
+			    routeRestricted =
+			        "<button class='wider' style='width:100%'>"
+			        + hills.landmass[i].route[k].name
+			        + "</button>";
+			    routesRestricted.push(routeRestricted);
 			}
-		    }
+		    }*/
 
 		    if (routesRestricted != null) {
-		        refinementsRoutesOut.innerHTML = routesRestricted.join("");
+		        refinementsRoutesOut.innerHTML = routesRestricted.join("<br>");
 		    } else {
 			refinementsRoutesOut.innerHTML = "No Results";
 		    }
@@ -2257,34 +2246,42 @@ function searchRouteRefined(landmass) {
 			}
 		    }
 		}
-	    }
-
-	    for (var i in loadRoutes) {
-                fetch(loadRoutes[i])
-                    .then(response => response.text())
-                    .then(str => new DOMParser().parseFromString(str, "text/xml"))
-                    .then(doc => {
-	            	let data = toGeoJSON.gpx(doc);
-	                const route = data;
-	                var routeTrack = new L.geoJSON(route,{color:'#A80606'}).addTo(map);
-		        routesRestricted.push(routeTrack);
-
-		    	createRouteMarker(
-			    routeName,
-			    routeDist,
-			    routeElev,
-			    routeTime,
-			    routeScore,
-			    routeDiff,
-			    routeMunros,
-			    routeMunroTops,
-			    routeCorbetts,
-			    routeCorbettTops,
-			    routeCoords,
-			    startIcon
-		    	);
-                    })
 	    }*/
+
+	    /*document.getElementById("loadRouteRefined").onclick = function() {
+	        for (var i in loadRoutes) {
+                    fetch(loadRoutes[i])
+                        .then(response => response.text())
+                        .then(str => new DOMParser().parseFromString(str, "text/xml"))
+                        .then(doc => {
+	            	    let data = toGeoJSON.gpx(doc);
+	                    const route = data;
+	                    var routeTrack = new L.geoJSON(route,{color:'#A80606'}).addTo(map);
+		            routesRestricted.push(routeTrack);
+
+			    for (var i in hills.landmass) {
+				for (var k in hills.landmass[i].route) {
+			            if (loadRoutes[i] === ("<button id='loadRouteRefined' class='wider' style='width:100%'>" + hills.landmass[i].route[k].name + "</button>")) {
+		    	    		createRouteMarker(
+			        	    routeName,
+			                    routeDist,
+			                    routeElev,
+			        	    routeTime,
+			        	    routeScore,
+			        	    routeDiff,
+			        	    routeMunros,
+			        	    routeMunroTops,
+			        	    routeCorbetts,
+			        	    routeCorbettTops,
+			        	    routeCoords,
+			        	    startIcon
+		    	    		);
+				    }
+				}
+			    }
+                        })
+	        }
+   	    };*/
 	})
 }
 
