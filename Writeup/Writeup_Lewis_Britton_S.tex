@@ -748,136 +748,7 @@
 		\item Terrain difficulties (weight, \{weights, `values'\}, `score') -- matrix
 	\end{enumerate}
 
-	This site uses the functional imperial system therefore, as this computation calls for the one and only reasonable use of the metric system (mathematical scalability), conversion constants are required for elevation and distance. These are justified to four significant figures. Mathematical notation for each of these processes follow:
-
-\newpage
-
-	\textbf{[1.1] Conversion Constants:}
-
-	$$c_{ft}=0.3048$$
-	$$c_{mi}=1.609$$
-
-	Where:\\
-	$c_{ft}=$ Conversion constant for imperial feet to metric meters\\
-	$c_{mi}=$ Conversion constant for imperial miles to metric kilometers ($\times10^{3}$m)\\
-
-	\textbf{[1.2] Number of Tops:}
-
-	$$N_{\mathrm{Tops}}=\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}$$
-	$$\lor\ N_{\mathrm{Tops}}=\vert i\vert + \vert j\vert + \vert k\vert + \vert l\vert$$
-
-	Where:\\
-	$N_{\mathrm{Tops}}=$ Total number of tops present on given route\\
-	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
-
-	\textbf{[1.3] Elevation:}
-
-	$$\mathrm{Elev}_{m}=c_{ft}\mathrm{Elev}_{ft}$$
-
-	Where:\\
-	$\mathrm{Elev}_{m}=$ Total elevation gained on given route, in meters (m)\\
-	$\mathrm{Elev}_{ft}=$ Total elevation gained on given route, in feet (ft)\\
-
-	\textbf{[1.4] Distance:}
-
-	$$\mathrm{Dist}_{km}=c_{mi}\mathrm{Dist}_{mi}$$
-
-	Where:\\
-	$\mathrm{Dist}_{km}=$ Total distance covered on given route, in kilometers (km)\\
-	$\mathrm{Dist}_{mi}=$ Total distance covered on given route, in miles (mi)\\
-
-\newpage
-
-	\textbf{[2.1] Weights:}\\
-
-	For Route Type's, Route Stages', Terrain Types', Terrain Difficulties' Elements\\
-
-	This method defines equally weighted elements by dividing 1 by the number of elements in the arrays. Where $i,j,k,l$ refer to arrays and positions within their respective arrays:
-
-	$$w_{i}=\frac{1}{\sum^{I}_{i=1}N_{i}},\ w_{j}=\frac{1}{\sum^{J}_{j=1}N_{j}},\ w_{k}=\frac{1}{\sum^{K}_{k=1}N_{k}},\ w_{l}=\frac{1}{\sum^{L}_{l=1}N_{l}}$$
-	$$\lor\ w_{i}=\frac{1}{\vert i\vert},\ w_{j}=\frac{1}{\vert j\vert},\ w_{k}=\frac{1}{\vert k\vert},\ w_{l}=\frac{1}{\vert l\vert}$$
-
-	$$\therefore w_{i}, w_{j}, w_{k}, w_{l}\ \textrm{always constant and equally weighted}$$
-
-	Where:\\
-	$w_{i,j,k,l}=$ Equally weighted value based on number of elements for element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
-	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
-
-	\textbf{[2.2] Scores:}\\
-
-	For Route Type, Route Stages, Terrain Types, Terrain Difficulties
-
-	$$S_{i}=\sum^{I}_{i=1} w_{i}V_{i},\ S_{j}=\sum^{J}_{j=1} w_{j}V_{j},\ S_{k}=\sum^{K}_{k=1} w_{k}V_{k},\ S_{l}=\sum^{L}_{l=1} w_{l}V_{l},$$
-
-	Where:\\
-	$S_{i,j,k,l}=$ Relative score of element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
-	$V_{i,j,k,l}=$ Subjectively defined value assigned to element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
-
-\newpage
-
-	An example for the route type array ($i$) which contains three equally weighted elements follows:
-
-	$$S_{i}=w_{1}V_{1}+w_{2}V_{2}+w_{3}V_{3}$$
-	$$S_{i}=\frac{1}{3}\left(\frac{1}{4}\right)+\frac{1}{3}\left(\frac{1}{4}\right)+\frac{1}{3}\left(\frac{1}{2}\right)$$
-	$$S_{i}=\frac{1}{3}=0.\textrm{\.{3}}$$
-	
-	As these values are generated from an array, they involve single-column (no inversion) matrix algebra in the context of JavaScript. An example of the appropriate notation relating to the previous example follows (decimal values favoured in matrices):
-
-	$$S_{i}=\left[0.\textrm{\.{3}}\ 0.\textrm{\.{3}}\ 0.\textrm{\.{3}}\right]\left[0.25\ 0.25\ 0.5\right]$$
-	$$S_{i}=0.\textrm{\.{3}}$$
-
-	Again, as this is single-column matrix algebra, standard notation is also viable:
-
-	$$S_{i}=\begin{bmatrix}w_{1}\\w_{2}\\w_{3}\end{bmatrix}\begin{bmatrix}V_{1}\\V_{2}\\V_{3}\end{bmatrix}$$
-	$$S_{i}=\begin{bmatrix}0.\textrm{\.{3}}\\0.\textrm{\.{3}}\\0.\textrm{\.{3}}\\\end{bmatrix}\begin{bmatrix}0.25\\0.25\\0.5\end{bmatrix}$$
-	$$S_{i}=0.\textrm{\.{3}}$$
-
-	For each of the route element factor arrays, these are then aggregated to give a total value. However, they still do not have any context which is why a multiplier is used.\\
-
-	\textbf{[2.3] Weights:}\\
-
-	For Route Type, Route Stages, Terrain Types, Terrain Difficulties
-
-	$$w_{S_{i}},\ w_{S_{j}},\ w_{S_{k}},\ w_{S_{l}}$$
-
-	Do not confuse these with the equal weightings for each individual element within the arrays, these four weightings exist on a subjective basis to weight the four scores for each array.
-
-	Where:\\
-	$w_{S_{i,j,k,l}}=$ Weight values determining the importance of arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
-
-	\textbf{[3.1] Complete Multiplier:}
-
-	$$m_{R}=\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}$$
-	$$\textbf{Expanded: }m_{R}=\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}$$
-
-	Where:\\
-	$m_{R}=$ Multiplier for given route $R$\\
-
-	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route''.\\
-
-	\textbf{[3.2] Complete Aggregate Route Score:}
-
-	$$S_{R}=w_{S_{i}}S_{i}+w_{S_{j}}S_{j}+w_{S_{k}}S_{k}+w_{S_{l}}S_{l}$$
-	$$\textbf{Expanded (1): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)$$
-	$$\textbf{Expanded (2): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)$$
-
-	Where:\\
-	$S_{R}=$ Aggregate route score for given route $R$\\
-
-	\textbf{[4] Complete Adjusted Route Score:}
-
-	$$S_{R(A)}=m_{R}\left(w_{S_{i}}S_{i}+w_{S_{j}}S_{j}+w_{S_{k}}S_{k}+w_{S_{l}}S_{l}\right)$$
-
-	$$\textbf{Expanded (1):}$$
-	$$S_{R(A)}=\left(\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}\right)\left(w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)\right)$$
-	$$\textbf{Expanded (2):}$$
-	$$S_{R(A)}=\left(\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}\right)$$
-	$$\bullet\left(w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)\right)$$
-
-	Where:\\
-	$S_{R(A)}=$ Adjusted route score for given route $R$\\
-
-	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route; scaled by the route type, route stages, terrain types, and terrain difficulty elements found on-route''.\\
+	This site uses the functional imperial system therefore, as this computation calls for the one and only reasonable use of the metric system (mathematical scalability), conversion constants are required for elevation and distance. These are justified to four significant figures. The relevant mathematical notation is detailed in Figure B5.
 
 	Given the time constraint of the project, some restrictions have been applied and notes made, as follows:
 
@@ -1974,8 +1845,8 @@ er (Mobile)}\\
 		\textbf{Summary Section}:\newline The `Quick Burn' summary section on the home page has very little purpose and serves minimal beneficial function to users as it only returns two sets of semi-contextualized text. It seems out of place and unfitting with the subsequent quality of elements & $\mathrm{H_{2}}$, $\mathrm{H_{4}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Remove HTML elements and all associated functions. Functions appear later in more `functional' contexts later anyway\\
 		\textbf{Weather Result Title}:\newline Two functions exist when requesting weather results from the `Weather' section: one which feeds the relevant coordinates values into the `Latitude' and `Longitude' input boxes, and one which requests weather results form the API using those values. It can be confusing when the user either selects a location for the first time or selects another location while results for one are already displayed, and the results don't appear/change due to the requirement to trigger the second function with a button & $\mathrm{H_{4}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Add ellipsis (...) suffix to the title displayed upon function executed by the selection of a location and remove the suffix upon function executed when the button is selected to fetch results. Therefore, implying ``waiting for interaction'', ``not waiting for interaction''\\
 		\textbf{Map Layer Select}:\newline Map layer select options were originally contained within the pop-out options menu. This was not optimally intuitive as users would often overlook it when browsing more advanced functions. For those who did use it, the portion of the viewable map remaining with the menu expanded was not ideal for sampling and choosing different map layers when cycling through them & $\mathrm{H_{3}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Give the map layer options their own element on the equivalent level of the options menu toggle. Thus seeing that everything in the options menu layers upon the map, and everything outwith the options menu changes the map itself. It also opens the entire map space for sampling layers\\
-		\textbf{Show Corbett Tops}:\newline Show Munros, Show Munro Tops, Show Corbetts and Show Corbett Tops all operate fine upon initial inspection however, if Show Corbett Tops is toggled then a route is shown, the Leaflet line displaying the GPX coordinates does not scale to map zoom. I.e. it remains the same relative size to the initial level of zoom. If just the latter three `show' options have been toggled, this issue does not occur. & $\mathrm{H_{4}}$, $\mathrm{H_{5}}$ & $\mathrm{S_{2}}$ & Many-an-hour have been exerted on this issue but I'm afraid I give up. I'm not spending any more time on it. I am [Pink Wojak] (Figure B5).\\
-		\textbf{Show Nearest Munro/Corbett}:\newline Both of these buttons (using the same function) work fine when used in isolation however, when using the function to show the nearest Munro after using it to show the nearest Corbett, no values are returned. Contrastingly, when using the function to show the nearest Corbett after using it to show the nearest Munro, there are no issues. & $\mathrm{H_{4}}$, $\mathrm{H_{5}}$ & $\mathrm{S_{2}}$ & Many-an-hour have been exerted on this issue but I'm afraid I give up. I'm not spending any more time on it. I am [Pink Wojak] (Figure B5).\\
+		\textbf{Show Corbett Tops}:\newline Show Munros, Show Munro Tops, Show Corbetts and Show Corbett Tops all operate fine upon initial inspection however, if Show Corbett Tops is toggled then a route is shown, the Leaflet line displaying the GPX coordinates does not scale to map zoom. I.e. it remains the same relative size to the initial level of zoom. If just the latter three `show' options have been toggled, this issue does not occur. & $\mathrm{H_{4}}$, $\mathrm{H_{5}}$ & $\mathrm{S_{2}}$ & Many-an-hour have been exerted on this issue but I'm afraid I give up. I'm not spending any more time on it. I am [Pink Wojak] (Figure B6).\\
+		\textbf{Show Nearest Munro/Corbett}:\newline Both of these buttons (using the same function) work fine when used in isolation however, when using the function to show the nearest Munro after using it to show the nearest Corbett, no values are returned. Contrastingly, when using the function to show the nearest Corbett after using it to show the nearest Munro, there are no issues. & $\mathrm{H_{4}}$, $\mathrm{H_{5}}$ & $\mathrm{S_{2}}$ & Many-an-hour have been exerted on this issue but I'm afraid I give up. I'm not spending any more time on it. I am [Pink Wojak] (Figure B6).\\
 		\textbf{Search Route}:\newline Displaying a summary and the route (on map) of a route all at once feels slightly ``cluttered'' as an HTML element is being filled with a significant amount of text while the center of the map is finding the start of a route and printing multiple pieces on it. These two functions also produce their results at different speeds, adding a slightly ``cheap'' delayed feel to the process & $\mathrm{H_{3}}$, $\mathrm{H_{4}}$, $\mathrm{H_{7}}$ & $\mathrm{S_{2}}$ & Separate the functions into two of their own features which are executed through two separate options. That is, a user can view a summary of a route before deciding if they wish to print it, with its attributes, on the map\\
 		\textbf{Route Display Error}:\newline When displaying some routes on the `Conquest Map', the part of the function used to return the start coordinates, and thus place a Leaflet marker and center the map to there, returns a value which cannot be translated using the coordinate conversion algorithm. Therefore, when these routes are selected the map is centered somewhere completely irrelevant; in the middle of the ocean & $\mathrm{H_{5}}$ & $\mathrm{S_{3}}$ & Unfortunately, no immediate solution as this is an issue based on the structure of particular GPX files. This occurs purely with GPX files downloaded from Walkhighlands' official source; not with walk report (user donated) GPX files or with my own. Given more time, non-official-Walkhighlands replacements for these files would be found, however, the functionality is still clearly there and can be executed upon all other GPX files\\
 		\hline
@@ -2359,7 +2230,136 @@ er (Mobile)}\\
 
 \newpage
 
-		\subsubsection*{Figure B5: Pink Wojak}
+		\subsubsection*{Figure B5: Score Route -- Mathematical Notation}
+
+	\textbf{[1.1] Conversion Constants:}
+
+	$$c_{ft}=0.3048$$
+	$$c_{mi}=1.609$$
+
+	Where:\\
+	$c_{ft}=$ Conversion constant for imperial feet to metric meters\\
+	$c_{mi}=$ Conversion constant for imperial miles to metric kilometers ($\times10^{3}$m)\\
+
+	\textbf{[1.2] Number of Tops:}
+
+	$$N_{\mathrm{Tops}}=\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}$$
+	$$\lor\ N_{\mathrm{Tops}}=\vert i\vert + \vert j\vert + \vert k\vert + \vert l\vert$$
+
+	Where:\\
+	$N_{\mathrm{Tops}}=$ Total number of tops present on given route\\
+	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+
+	\textbf{[1.3] Elevation:}
+
+	$$\mathrm{Elev}_{m}=c_{ft}\mathrm{Elev}_{ft}$$
+
+	Where:\\
+	$\mathrm{Elev}_{m}=$ Total elevation gained on given route, in meters (m)\\
+	$\mathrm{Elev}_{ft}=$ Total elevation gained on given route, in feet (ft)\\
+
+	\textbf{[1.4] Distance:}
+
+	$$\mathrm{Dist}_{km}=c_{mi}\mathrm{Dist}_{mi}$$
+
+	Where:\\
+	$\mathrm{Dist}_{km}=$ Total distance covered on given route, in kilometers (km)\\
+	$\mathrm{Dist}_{mi}=$ Total distance covered on given route, in miles (mi)\\
+
+	\textbf{[2.1] Weights:}\\
+
+	For Route Type's, Route Stages', Terrain Types', Terrain Difficulties' Elements\\
+
+	This method defines equally weighted elements by dividing 1 by the number of elements in the arrays. Where $i,j,k,l$ refer to arrays and positions within their respective arrays:
+
+	$$w_{i}=\frac{1}{\sum^{I}_{i=1}N_{i}},\ w_{j}=\frac{1}{\sum^{J}_{j=1}N_{j}},\ w_{k}=\frac{1}{\sum^{K}_{k=1}N_{k}},\ w_{l}=\frac{1}{\sum^{L}_{l=1}N_{l}}$$
+	$$\lor\ w_{i}=\frac{1}{\vert i\vert},\ w_{j}=\frac{1}{\vert j\vert},\ w_{k}=\frac{1}{\vert k\vert},\ w_{l}=\frac{1}{\vert l\vert}$$
+
+	$$\therefore w_{i}, w_{j}, w_{k}, w_{l}\ \textrm{always constant and equally weighted}$$
+
+	Where:\\
+	$w_{i,j,k,l}=$ Equally weighted value based on number of elements for element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$N_{i,j,k,l}=$ Numerical value representing the position of a string element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+
+	\textbf{[2.2] Scores:}\\
+
+	For Route Type, Route Stages, Terrain Types, Terrain Difficulties
+
+	$$S_{i}=\sum^{I}_{i=1} w_{i}V_{i},\ S_{j}=\sum^{J}_{j=1} w_{j}V_{j},\ S_{k}=\sum^{K}_{k=1} w_{k}V_{k},\ S_{l}=\sum^{L}_{l=1} w_{l}V_{l},$$
+
+	Where:\\
+	$S_{i,j,k,l}=$ Relative score of element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+	$V_{i,j,k,l}=$ Subjectively defined value assigned to element $i,j,k,l$ in arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+
+\newpage
+
+	An example for the route type array ($i$) which contains three equally weighted elements follows:
+
+	$$S_{i}=w_{1}V_{1}+w_{2}V_{2}+w_{3}V_{3}$$
+	$$S_{i}=\frac{1}{3}\left(\frac{1}{4}\right)+\frac{1}{3}\left(\frac{1}{4}\right)+\frac{1}{3}\left(\frac{1}{2}\right)$$
+	$$S_{i}=\frac{1}{3}=0.\textrm{\.{3}}$$
+	
+	As these values are generated from an array, they involve single-column (no inversion) matrix algebra in the context of JavaScript. An example of the appropriate notation relating to the previous example follows (decimal values favoured in matrices):
+
+	$$S_{i}=\left[0.\textrm{\.{3}}\ 0.\textrm{\.{3}}\ 0.\textrm{\.{3}}\right]\left[0.25\ 0.25\ 0.5\right]$$
+	$$S_{i}=0.\textrm{\.{3}}$$
+
+	Again, as this is single-column matrix algebra, standard notation is also viable:
+
+	$$S_{i}=\begin{bmatrix}w_{1}\\w_{2}\\w_{3}\end{bmatrix}\begin{bmatrix}V_{1}\\V_{2}\\V_{3}\end{bmatrix}$$
+	$$S_{i}=\begin{bmatrix}0.\textrm{\.{3}}\\0.\textrm{\.{3}}\\0.\textrm{\.{3}}\\\end{bmatrix}\begin{bmatrix}0.25\\0.25\\0.5\end{bmatrix}$$
+	$$S_{i}=0.\textrm{\.{3}}$$
+
+	For each of the route element factor arrays, these are then aggregated to give a total value. However, they still do not have any context which is why a multiplier is used.\\
+
+	\textbf{[2.3] Weights:}\\
+
+	For Route Type, Route Stages, Terrain Types, Terrain Difficulties
+
+	$$w_{S_{i}},\ w_{S_{j}},\ w_{S_{k}},\ w_{S_{l}}$$
+
+	Do not confuse these with the equal weightings for each individual element within the arrays, these four weightings exist on a subjective basis to weight the four scores for each array.\\
+
+	Where:\\
+	$w_{S_{i,j,k,l}}=$ Weight values determining the importance of arrays of $i$: route type, $j$: route stages, $k$: terrain types, $l$: terrain difficulties; $i\in\{1,...I\}$, $j\in\{1,...J\}$, $k\in\{1,...K\}$, $l\in\{1,...L\}$\\
+
+	\textbf{[3.1] Complete Multiplier:}
+
+	$$m_{R}=\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}$$
+	$$\textbf{Expanded: }m_{R}=\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}$$
+
+	Where:\\
+	$m_{R}=$ Multiplier for given route $R$\\
+
+	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route''.\\
+
+	\textbf{[3.2] Complete Aggregate Route Score:}
+
+	$$S_{R}=w_{S_{i}}S_{i}+w_{S_{j}}S_{j}+w_{S_{k}}S_{k}+w_{S_{l}}S_{l}$$
+	$$\textbf{Expanded (1): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)$$
+	$$\textbf{Expanded (2): }S_{R}=w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)$$
+
+	Where:\\
+	$S_{R}=$ Aggregate route score for given route $R$\\
+
+	\textbf{[4] Complete Adjusted Route Score:}
+
+	$$S_{R(A)}=m_{R}\left(w_{S_{i}}S_{i}+w_{S_{j}}S_{j}+w_{S_{k}}S_{k}+w_{S_{l}}S_{l}\right)$$
+
+	$$\textbf{Expanded (1):}$$
+	$$S_{R(A)}=\left(\frac{N_{\mathrm{Tops}}}{\left(\frac{\mathrm{Elev_{m}}}{1000\left(\mathrm{Dist_{km}}\right)}\right)}\right)\left(w_{S_{i}}\left(\sum^{I}_{i=1} w_{i}V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} w_{l}V_{l}\right)\right)$$
+	$$\textbf{Expanded (2):}$$
+	$$S_{R(A)}=\left(\frac{\sum^{I}_{i=1}N_{i}+\sum^{J}_{j=1}N_{j}+\sum^{K}_{k=1}N_{k}+\sum^{L}_{l=1}N_{l}}{\left(\frac{c_{ft}\mathrm{Elev_{ft}}}{1000\left(c_{mi}\mathrm{Dist_{mi}}\right)}\right)}\right)$$
+	$$\bullet\left(w_{S_{i}}\left(\sum^{I}_{i=1} \left(\frac{1}{\sum^{I}_{i=1}N_{i}}\right)V_{i}\right)+...+w_{S_{l}}\left(\sum^{L}_{l=1} \left(\frac{1}{\sum^{L}_{l=1}N_{l}}\right)V_{l}\right)\right)$$
+
+	Where:\\
+	$S_{R(A)}=$ Adjusted route score for given route $R$\\
+
+	In English, this equation reads: ``number of tops (Munro, Munro Top, Corbett, Corbett Top) achieved on the route per vertical meter gained on the route, per horizontal meter gained on the route; scaled by the route type, route stages, terrain types, and terrain difficulty elements found on-route''.\\
+
+\newpage
+
+		\subsubsection*{Figure B6: Pink Wojak}
 	
 	\begin{center}	
 		\verb|find ~/memes| $\mathtt{\vert}$ \verb|grep -i pink| $\mathtt{\vert}$ \verb|shuf| $\mathtt{\vert}$ \verb|sxiv -ia|\\[2cm]
