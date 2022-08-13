@@ -509,14 +509,18 @@
 		\scriptsize
 		\renewcommand{\arraystretch}{1.25}
 	\begin{center}
-	\begin{tabular}{l}
-		The sample size is limited to the South-West Highlands, which refers to the region spanning Glen Etive, Glen Orchy and Glen Coe, a.k.a. the land between the A85 to Oban and the A82 through Glen Orchy, through Glen Coe, to Ballachullish (side note: don't confuse `Glen Coe' with `Glencoe' in the context of this data! Critical Errors will occur. Glencoe is the village, Glen Coe is the glen. And we aren't Mr. Walkhighlands so it isn't [`Glinco']).
-		Sub2000s, Donalds, Grahams and Grahams tops do not appear in the data as this would have taken an inappropriate amount of time to collect and the six-thousand-line JSON was enough already.
-		Some details for Corbett Tops and Munro Tops, are not provided as even the most of the aforementioned `detailed' sites were lacking some data.
-		Munros, Munro Tops, Corbetts and Corbett Tops are ordered primarily by category and secondarily from max elevation highest-to-lowest within their category.
-		There is no pre-determined `order' to Corrie hierarchy on landmasses so they are simply ordered by myself from south-to-north.
-		Ideally, Corries, Gullies, Lochains and Waterfalls would be named and assigned GPS coordinates in the JSON file. However, OS maps were too inconsistent with naming the features so only the 100\% consistent Corrie category is given this luxury. Others are simply assigned boolean values.
-		HTML symbols such as \`{o} (\verb|&ograve;|) and \^{e} (\verb|&ecric;|), which appear frequently in Gaelic spellings, are unfortunately not favoured in the JSON or any other iteration of the relevant words, as much time is saved developing functions and methods to search; loop through and match the data.
+	\begin{tabular}{r|p{12cm}}
+		\hline
+		\hline
+		1 & The sample size is limited to the South-West Highlands, which refers to the region spanning Glen Etive, Glen Orchy and Glen Coe, a.k.a. the land between the A85 to Oban and the A82 through Glen Orchy, through Glen Coe, to Ballachullish (side note: don't confuse `Glen Coe' with `Glencoe' in the context of this data! Critical Errors will occur. Glencoe is the village, Glen Coe is the glen. And we aren't Mr. Walkhighlands so it isn't `Glinco')\\
+		2 & Sub2000s, Donalds, Grahams and Grahams tops do not appear in the data as this would have taken an inappropriate amount of time to collect and the six-thousand-line JSON was enough already\\
+		3 & Some details for Corbett Tops and Munro Tops, are not provided as even the most of the aforementioned `detailed' sites were lacking some data\\
+		4 & Munros, Munro Tops, Corbetts and Corbett Tops are ordered primarily by category and secondarily from max elevation highest-to-lowest within their category\\
+		5 & There is no pre-determined `order' to Corrie hierarchy on landmasses so they are simply ordered by myself from south-to-north\\
+		6 & Ideally, Corries, Gullies, Lochains and Waterfalls would be named and assigned GPS coordinates in the JSON file. However, OS maps were too inconsistent with naming the features so only the 100\% consistent Corrie category is given this luxury. Others are simply assigned boolean values\\
+		7 & HTML symbols such as \`{o} (\verb|&ograve;|) and \^{e} (\verb|&ecric;|), which appear frequently in Gaelic spellings, are unfortunately not favoured in the JSON or any other iteration of the relevant words, as much time is saved developing functions and methods to search; loop through and match the data\\
+		\hline
+		\hline
 	\end{tabular}
 		\caption{Omissions/Amendments \& Notes}
 	\end{center}
@@ -524,9 +528,7 @@
 
 		\subsubsection{Route}
 
-	Route data is delivered in two different forms. The first is much like the former, in fact as seen in Figure A4, the route attribute appears as a component of a landmass; ``a route on a landmass''. A route has the standard components such as a name, distance, total elevation gain, estimated duration, and of course the hills included on the route, etc. The route data was again gathered from Walkhighlands (2022), in a combination of official Walkhighlands routes, community-contributed Walkhighlands routes, and in some cases where there was no existing content, my personal \href{https://www.strava.com/athlete/training}{Strava} (often my historic record and knowledge also).\\
-
-	Another component of a route is its GPS data. Global Positioning System Exchange Format (GPS Exchange Format (GPX)) is the most commonly used file type to store GPS data uploaded to Walkhighlands and Strava. Therefore, these files were selected again from Walkhighlands' official routes, community-contributed routes and my personal Strava, and associated accordingly. Relevant paths to these files are included as attributes under the appropriate routes in the discussed JSON file. Note that JavaScript operates most efficiently using a GeoJSON GPS data file format therefore, upon use they're converted. Due to routes being components of landmasses and the south-to-north ordering of landmasses, routes also occur south-to-north in the file.
+	Route attributes appear as a component of a landmass; ``a route on a landmass''. Route data is gathered from Walkhighlands, in a combination of official Walkhighlands routes, community-contributed Walkhighlands routes, and my personal \href{https://www.strava.com/athlete/training}{Strava}. Another component of a route is it's GPS data. Global Positioning System Exchange Format (GPS Exchange Format (GPX)) is the most commonly used file type to store GPS data uploaded to Walkhighlands and Strava. These files are selected from the same three sources. Note that JavaScript operates efficiently using a GeoJSON GPS data-file format therefore, GPX is converted. Due to routes being components of landmasses, routes also occur south-to-north.
 
 		\subsubsection{Ability}
 
