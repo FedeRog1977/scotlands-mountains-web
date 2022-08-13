@@ -430,63 +430,48 @@
 	\end{center}
 	\end{table}
 
-	This list is not exhaustive; there's always room for perpetual development.
+\newpage
 
 	\subsection{Requirements}
 
-	As discussed, it's important at this stage to clearly differentiate between essential functionality for the foundations of the system, generally accounted for in \textit{functional requirements}; and functionality which more contemporary, generally accounted for in \textit{non-functional} requirements. This is often considered `making things \textit{work} and making things \textit{relevant}'. It is also a useful method from which to infer associations between elements of the design and construction stages of development. Retaining these requirements, their position, and hierarchy at the center of development throughout the process allows accurate amendment of software and/or requirements along the way as more functionalities and possibilities become apparent and tangible or alternatively, further from reach.
+	Differentiation between essential functionality for the system foundations (\textit{functional requirements}); and more-contemporary functionality (\textit{non-functional requirements}) is often considered ``making things \textit{work} and making things \textit{relevant}''. It also allows deduction of element associations of the design and construction.
 
-		\subsubsection{Functional}
+		\subsubsection{Requirements Satisfaction}
 
-	Requirements here are presented in a numeric format. This does not refer to any hierarchical order, it simply creates a reference point for user stories. Hierarchy remains determined by the MoSCoW methodology. So forth, as required by the three discussed groups, users and the system \textit{must have} the ability to:
+	Requirements are presented in a numeric format which doesn't refer to hierarchical order, it simply creates a reference point for user stories. Hierarchy remains determined by the MoSCoW methodology. It's not exhaustive; there's always room for perpetual development.
 
-	\begin{enumerate}
-	\setlength\itemsep{0cm}
-		\item Access the user's current location upon various types of request
-		\item View a breakdown of route factors and elements
-		\item View and interact with ability factors and elements
-		\item View and interact with equipment factors and elements
-		\item View a weather forecast breakdown using real weather data
-		\item Display an Ordnance Survey map with reference to the above
-	\end{enumerate}
-
-	Additionally, users and the system \textit{should have} the ability to:
-
-	\begin{enumerate}
-	\setlength\itemsep{0cm}
-		\item On OS Map, alternate between `OS Leisure' (primary/default), `OS Road', and `OS Outdoor' topographical structures
-		\item On OS Map, display grid markers at center-pan
-	\end{enumerate}
-
-	Additionally, given the various constraints, users and the system \textit{could have} the ability to:
-
-	\begin{enumerate}
-	\setlength\itemsep{0cm}
-		\item Create an account and have their data stored
-		\item Protect user data using an appropriate authentication and security system
-		\item Store and re-use user attributes such as the aforementioned `ability' and `equipment'
-		\item Choose `priority attributes' relevant to their routes which are stored and used to generate more relevant route recommendations etc.
-	\end{enumerate}
-
-	Additionally, users and the system \textit{won't have} the ability to:
-
-	\begin{enumerate}
-	\setlength\itemsep{0cm}
-		\item Store route-relevant data and display them as `historically completed routes', or something of the sort, under the aforementioned `overview'
-	\end{enumerate}
-
-		\subsubsection{Non-Functional}
-
-	To ensure a stable, trustworthy, useable and relevant system; users and the system will have the ability to / have the capacity to:
-
-	\begin{enumerate}
-	\setlength\itemsep{0cm}
-		\item Be written in such a manner which allows full compatibility with the majority of web browsers (this could effect markup languages, font packages, JavaScript libraries, etc.)
-		\item Be written in such a manner which allows full scalability between desktop and mobile use
-		\item Offer the user various descriptive background [pieces], otherwise referred to as `key's and `suggested reading's which provide aid to users' background knowledge, understanding and decision making
-		\item Offer the appropriate combination of relevant graphic design and actual functionality
-		\item Adhere to the appropriate accessibility standards, with reference primarily to graphic design and system structure
-	\end{enumerate}
+	\begin{center}
+		\scriptsize
+	\begin{longtable}{cp{10cm}}
+		Requirement \# & Requirement\\
+		\hline
+		\multicolumn{2}{c}{\textsc{Functional}}\\
+		\hline
+		1$^M$ & Access the user's current location upon various types of request\\
+		2$^M$ & View a breakdown of route factors and elements\\
+		3$^M$ & View and interact with ability factors and elements\\
+		4$^M$ & View and interact with equipment factors and elements\\
+		5$^M$ & View a weather forecast breakdown using real weather data\\
+		6$^M$ & Display an Ordnance Survey map with reference to the above\\
+		1$^S$ & On OS Map, alternate between `OS Leisure' (primary/default), `OS Road', and `OS Outdoor' topographical structures\\
+		2$^S$ & On OS Map, display grid markers at center-pan\\
+		1$^C$ & Create an account and have their data stored\\
+		2$^C$ & Protect user data using an appropriate authentication and security system\\
+		3$^C$ & Store and re-use user attributes such as the aforementioned `ability' and `equipment'\\
+		4$^C$ & Choose `priority attributes' relevant to their routes which are stored and used to generate more relevant route recommendations etc.\\
+		1$^W$ & Store route-relevant data and display them as `historically completed routes', or something of the sort, under the aforementioned `overview'\\
+		\hline
+		\multicolumn{2}{c}{\textsc{Non-Functional}}\\
+		\hline
+		1 & Be written in such a manner which allows full compatibility with the majority of web browsers (this could effect markup languages, font packages, JavaScript libraries, etc.)\\
+		2 & Be written in such a manner which allows full scalability between desktop and mobile use\\
+		3 & Offer the user various descriptive background [pieces], otherwise referred to as `key's and `suggested reading's which provide aid to users' background knowledge, understanding and decision making\\
+		4 & Offer the appropriate combination of relevant graphic design and actual functionality\\
+		5 & Adhere to the appropriate accessibility standards, with reference primarily to graphic design and system structure\\
+		\hline
+		\caption{Requirements Satisfaction}
+	\end{longtable}
+	\end{center}
 
 		\subsubsection{User Stories}
 
@@ -1029,7 +1014,7 @@ if ((day.wind_deg) >= 348.76) {
 
 	The goal in selecting methods through which to construct this system is aligned with [1] ensuring that all functional and non-functional requirements detailed in the \textit{System Requirements} section, determined by and for potential clients, are satisfied; and [2] all components of used to build the system work harmoniously to deliver the most efficient delivery, to the developer's (my) best knowledge and ability.
 
-	\subsection{Requirements Satisfaction}
+	\subsection{Requirements Satisfaction II}
 
 	Referring to sub-sub-sections 3.3.1 and 3.3.2 under the \textit{System Requirements} section, and user stories seen in Figure A3; and applying their relevance to data and functions detailed in Figures A4 and A6, respectively; requirements are satisfied as follow in Table 6.3.
 
@@ -1064,7 +1049,7 @@ if ((day.wind_deg) >= 348.76) {
 		\hline
 		\multicolumn{4}{p{12cm}}{Y: Yes, Satisfied; N: No, Not Satisfied; P: Partially Satisfied\newline <...>, <...>: ``...'', ``...'' under \textit{Satisfaction(s)} and \textit{Extension(s)} are syntactically respective\newline $^G$: Geolocation API; $^O$: OS API; $^W$: OpenWeather API (Prioritized script by relevance)}\\
 		\hline
-		\caption{Requirements Satisfaction}
+		\caption{Requirements Satisfaction II}
 	\end{longtable}
 	\end{center}
 
@@ -1281,7 +1266,7 @@ if ((day.wind_deg) >= 348.76) {
 
 \section{Evaluation}\label{ch7}
 
-	\subsection{Requirements Satisfaction II}
+	\subsection{Requirements Satisfaction III}
 
 	Recall the satisfaction of requirements (Table 6.3). A summary revising which of those have been satisfied follows in Table 7.6. Justification is detailed formerly.
 
@@ -1316,7 +1301,7 @@ if ((day.wind_deg) >= 348.76) {
 		\hline
 		\multicolumn{3}{p{12cm}}{Y: Yes, Satisfied; N: No, Not Satisfied; P: Partially Satisfied}\\
 		\hline
-		\caption{Requirements Satisfaction II}
+		\caption{Requirements Satisfaction III}
 	\end{longtable}
 	\end{center}
 
