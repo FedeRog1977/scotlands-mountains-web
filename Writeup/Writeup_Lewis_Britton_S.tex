@@ -355,6 +355,7 @@
 \newpage
 
 	\begin{table}[h]
+		\scriptsize
                 \renewcommand{\arraystretch}{1.25}
         \begin{center}
         \begin{tabular}{c}
@@ -409,18 +410,19 @@
 
 	\subsection{Gathering \& Prioritization Methodology}
 
-	There are three methods of requirements gathering here: [1] purely user-centered method, from my personal surroundings filled with people who share an interest in this context, including professional/student developers, they act as an accurate representation of market users; [2] (subject to contextual bias) creative direction explicitly from myself as I'm experienced in this context; [3] basic inference from investigation of Walkhighlands, Strava and Garmin Connect which generally doesn't require user-centered input and is interpreted functionally. Purely objective/functional requirements are represented by the latter of these methods. The former two account for desired improvements upon existing material. There's no formal client base for this system which means no official client-oriented interviews/surveys take place.\\
+	There are three methods of requirements gathering here: [1] purely user-centered method, from my personal surroundings filled with people who share an interest in this context, including professional/student developers, they act as an accurate representation of market users; [2] (subject to contextual bias) creative direction explicitly from myself as I'm experienced in this context; [3] basic inference from investigation of Walkhighlands, Strava and Garmin Connect which generally doesn't require user-centered input and is interpreted functionally. Purely objective/functional requirements are represented by the latter of these methods. The former two account for desired improvements upon existing material. There's no formal client base so no official client-oriented interviews.
 
 	To better-address importance/relevance, requirements are analysed using the hierarchical Must-Have/Should-Have/Could-Have/Won't-Have (MoSCoW) methodology. This differentiates between essential functionality for system practicality, and optimization-based functionality. This approach reflects functional requirements averaging top-priority, and non-functional requirements distributed lower. The table below maps this framework.
 
 	\begin{table}[h]
+		\scriptsize
 		\renewcommand{\arraystretch}{1.25}
 	\begin{center}
 	\begin{tabular}{r|p{11cm}}
 		\hline
 		\hline
 		\textsc{Must-Have} & Implementations refer to aspects of the system which must be present in order to make it basically functional and behave as it is intended and as the user desires.\\
-		\textsc{Should-Have} & Implementations refer to features of the system which should be implemented in order to make the essential features of the system more accessible and useable to the masses. They may also exist to improve efficiency, but [fly Under the Radar] and therefore go unnoticed by the user. They may offer additional functionality which makes the system more unique (or something of the sort) and therefore, more `creative' and attractive to users.\\
+		\textsc{Should-Have} & Implementations refer to features of the system which should be implemented in order to make the essential features of the system more accessible and useable to the masses. They may also exist to improve efficiency and therefore go unnoticed by the user. They may offer additional functionality which makes the system more unique (or something of the sort) and therefore, more `creative' and attractive to users.\\
 		\textsc{Could-Have} & Implementations refer to aspects which may become present or relevant during the development of the former two. They may add additional functionality or usability to existing aspects or simply add final touches to the system overall. They are sometimes more contemporary.\\
 		\textsc{Won't Have} & Non-implementations refer to aspects of the system which aren't necessarily impossible or are of a nature which the system `can't have' but, which will probably be omitted or postponed due to constraints such as time, man-power, technical ability, finance, etc.\\
 		\hline
@@ -487,34 +489,38 @@
 
 	\subsection{Data}
 
-	A program has no applicable context without the appropriate data. In this case, data is required to even present the base functionality and content related to many features. That speaks loudly for the fact that this system is primarily made of JavaScript and provides users with no utility as a pure site. At least it's static however, if that's any compensation. Seen in Figure A4 details a brief overview of all the data sources, purposes and uses throughout every component of this system, which are discussed under the seven subsequent sub-sections of this section.
+	A program has no context without the applicable data. Data is required to present the base functionality and content related to many features. Figure A4 details an overview of all data sources, purposes and uses throughout every component of this system, which are discussed here.
 
 		\subsubsection{Location}
 
-	A digital mapping system for mountain navigation will never function as required if no location services are in place. And, at the heart of location tracking with map APIs and other services alike, is Geolocation. Once a call to \verb|navigator.geolocation| has been made which interfaces with the browser being used, the user is prompted to grant access to device location services. Once this is confirmed, GPS data is easily accessible. The two important values captured using Geolocation are of course latitude and longitude (\texttt{lat}, \texttt{lon}), which are used in two important ways. The first being \verb|Geolocation.getCurrentPosition()| which is useful for using latitude and longitude in calculations such as measures of distance, historic placement tracking, etc. The second is \verb|Geolocation.watchPosition()| which is a method of tracking location constantly upon update, clearly more useful for icon display. This is the simplest form of data collection in the this system as it only requires an API call and perhaps a few more lines to manipulate a result.
+	Once a call to \verb|navigator.geolocation| has been made, which interfaces with the browser, the user is prompted to grant access to device location services. Once this is confirmed, GPS data is easily accessible. Two critical values captured using Geolocation are latitude and longitude, which are used to: [1] \verb|Geolocation.getCurrentPosition()| for various calculations such as distance measure; and [2], \verb|Geolocation.watchPosition()| for continuous location tracking.
 
 		\subsubsection{Regional}
 
-	The regional data refers to GPS coordinate records of [1] all counties of Scotland, [2] all regions of Scotland, [3] all sub-regions of Scotland, and [4] all sub-sub-regions of Scotland. For example, \textit{Moray} is a County; \textit{Glenfinnan} is a sub-sub-region, in the sub-region \textit{Fort William, Lochaber and Lorn}, in the region \textit{Highlands}. All of this regional data was acquired by inspecting the `Search all walks' section of Walkhighlands (Walkhighlands, 2022), although did require some hierarchical and grouping amendments, especially throughout the [Western Ocean] and Western Isles. It is stored in a JSON file created locally by myself and hosted on my GitHub. Regions are ordered south-to-north in the file.
+	This refers to GPS coordinates of [1] Scottish counties, [2] Scottish regions, [3] Scottish sub-regions, and [4] all sub-sub-regions of Scotland. For example, \textit{Moray} is a County; \textit{Glenfinnan} is a sub-sub-region, in the sub-region \textit{Fort William, Lochaber and Lorn}, in the region \textit{Highlands}. This is acquired by inspecting the `Search all walks' section of Walkhighlands (Walkhighlands, 2022), although did require amendments. It's stored in a local JSON file and hosted on my GitHub. Regions are ordered south-to-north.
 
 		\subsubsection{Landmass}
 
-	Landmass data is of a similar format in that is stores records of GPS coordinate data upon the landmasses of Scotland. However, it extends to be far more complex. It includes data on landmasses themselves, which are anything resembling some significant land-form of Scotland. In this context, a landmass may either be a \textit{Mountain}, \textit{Mountain Range}, or \textit{Stand Alone}. A mountain is a single prominent feature which contains one or more hills without a contour drop of under 2000ft between summits; a mountain range is a group of prominent features which contain hills without a contour drop of under 1200ft between summits; and, a stand alone is a single prominent feature which contains one hill. `Hill' refers to \textit{Munros} and \textit{Corbetts}, not \textit{Munro/Corbett Tops}. Therefore, tops are not limited on stand alones but also do not determine a summit. For example, ``a stand alone landmass may have one Munro and two Munro Tops''. Note that \textit{Munro Tops} and \textit{Corbett Tops} sit at the height of Munros/Corbetts respectively however do not meet the elevation and distance criteria to be classed as their own hills. They must be present at maximum stationary points, not increasing points such as those at which cairns are often found. All attributes of landmasses and hills etc., and their hierarchy can be found in the breakdown of the JSON file in Figure A4.\\
+	This is alike, in that is stores records of GPS coordinate data upon the landmasses of Scotland. It also includes data on landmasses themselves, which are anything resembling some significant land-form of Scotland. A landmass may either be a \textit{Mountain}, \textit{Mountain Range}, or \textit{Stand Alone}. A mountain is a single prominent feature which contains one or more hills without a contour drop under 2000ft between summits; a mountain range is a group of prominent features which contain hills without a contour drop under 1200ft between summits; and, a stand alone is a single prominent feature which contains one hill. `Hill' refers to \textit{Munros} and \textit{Corbetts}, not \textit{Munro/Corbett Tops}. See Figure A4.\\
 
-	Data was gathered, [wait for it...], primarily manually by myself by staring at OS Explorer 376\footnote{Oban \& North Lorn (Figure B4)}, Explorer 377\footnote{Loch Etive \& Glen Orchy} and Explorer 384\footnote{Glen Coe \& Glen Etive}. This provided access to information not yet recorded, such as Corries, Lochains and boulder fields of a landmass, for example. To ensure inclusion of all Munros and Corbetts, reference to Walkhighlands was made (Walkhighlands, 2022); and, to ensure inclusion of all Munro and Corbett Tops, Harold Street (2022) and Peakbagger.com (2022) were also investigated as they include more comprehensive community-driven data. Once again, data is stored in a JSON file hosted on my GitHub. Landmasses and their components are ordered south-to-north in the file, which will become more relevant subsequently.\\
+	Data is gathered manually by myself through OS Explorer 376\footnote{Oban \& North Lorn (Figure B4)}, Explorer 377\footnote{Loch Etive \& Glen Orchy} and Explorer 384\footnote{Glen Coe \& Glen Etive}. This provides access to information not yet recorded. Reference to Walkhighlands, Harold Street (2022), and Peakbagger.com (2022) was made to ensure full-inclusion of community-driven data. Data is stored in the JSON file. Landmasses are ordered south-to-north. Under constraints, some omissions/amendments and notes were made as detailed in the below table.
 
-	Under the time constraint of the project, some omissions, amendments and notes were made as follows:
-
-	\begin{itemize}
-	\setlength\itemsep{0cm}
-		\item The sample size is limited to the South-West Highlands, which refers to the region spanning Glen Etive, Glen Orchy and Glen Coe, a.k.a. the land between the A85 to Oban and the A82 through Glen Orchy, through Glen Coe, to Ballachullish (side note: don't confuse `Glen Coe' with `Glencoe' in the context of this data! Critical Errors will occur. Glencoe is the village, Glen Coe is the glen. And we aren't Mr. Walkhighlands so it isn't [`Glinco']).
-		\item Sub2000s, Donalds, Grahams and Grahams tops do not appear in the data as this would have taken an inappropriate amount of time to collect and the six-thousand-line JSON was enough already.
-		\item Some details for Corbett Tops and Munro Tops, are not provided as even the most of the aforementioned `detailed' sites were lacking some data.
-		\item Munros, Munro Tops, Corbetts and Corbett Tops are ordered primarily by category and secondarily from max elevation highest-to-lowest within their category.
-		\item There is no pre-determined `order' to Corrie hierarchy on landmasses so they are simply ordered by myself from south-to-north.
-		\item Ideally, Corries, Gullies, Lochains and Waterfalls would be named and assigned GPS coordinates in the JSON file. However, OS maps were too inconsistent with naming the features so only the 100\% consistent Corrie category is given this luxury. Others are simply assigned boolean values.
-		\item HTML symbols such as \`{o} (\verb|&ograve;|) and \^{e} (\verb|&ecric;|), which appear frequently in Gaelic spellings, are unfortunately not favoured in the JSON or any other iteration of the relevant words, as much time is saved developing functions and methods to search; loop through and match the data.
-	\end{itemize}
+	\begin{table}[h]
+		\scriptsize
+		\renewcommand{\arraystretch}{1.25}
+	\begin{center}
+	\begin{tabular}{l}
+		The sample size is limited to the South-West Highlands, which refers to the region spanning Glen Etive, Glen Orchy and Glen Coe, a.k.a. the land between the A85 to Oban and the A82 through Glen Orchy, through Glen Coe, to Ballachullish (side note: don't confuse `Glen Coe' with `Glencoe' in the context of this data! Critical Errors will occur. Glencoe is the village, Glen Coe is the glen. And we aren't Mr. Walkhighlands so it isn't [`Glinco']).
+		Sub2000s, Donalds, Grahams and Grahams tops do not appear in the data as this would have taken an inappropriate amount of time to collect and the six-thousand-line JSON was enough already.
+		Some details for Corbett Tops and Munro Tops, are not provided as even the most of the aforementioned `detailed' sites were lacking some data.
+		Munros, Munro Tops, Corbetts and Corbett Tops are ordered primarily by category and secondarily from max elevation highest-to-lowest within their category.
+		There is no pre-determined `order' to Corrie hierarchy on landmasses so they are simply ordered by myself from south-to-north.
+		Ideally, Corries, Gullies, Lochains and Waterfalls would be named and assigned GPS coordinates in the JSON file. However, OS maps were too inconsistent with naming the features so only the 100\% consistent Corrie category is given this luxury. Others are simply assigned boolean values.
+		HTML symbols such as \`{o} (\verb|&ograve;|) and \^{e} (\verb|&ecric;|), which appear frequently in Gaelic spellings, are unfortunately not favoured in the JSON or any other iteration of the relevant words, as much time is saved developing functions and methods to search; loop through and match the data.
+	\end{tabular}
+		\caption{Omissions/Amendments \& Notes}
+	\end{center}
+	\end{table}
 
 		\subsubsection{Route}
 
