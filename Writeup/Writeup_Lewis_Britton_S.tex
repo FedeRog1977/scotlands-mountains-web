@@ -532,23 +532,23 @@
 
 	\subsection{System Architecture \& Concept}
 
-	This system uses the modern `framework' of an attractive front-end which simplifies [for the user] and allows access to more complex data transactions. Although this may not be through a full-back-end in this context, supporting files and data libraries act in this role accordingly. Through an appropriate and relevant front-end, users communicate through various input methods and requests in order to communicate with and manipulate data in the system for a contextualized and beneficial output. That is, data which is displayed in an informative and relevant manner which can aid a user's experience in the real-world context of the system, the field (hills), based on their use of it. This process strictly adheres to analysis of requirements and functionality.\\
+	Through a relevant front-end, users communicate through various input methods and requests to communicate with and manipulate data for a contextualized and beneficial output. That is, data which is displayed in an informative manner which can aid experience in the real-world-context of the system. This strictly adheres to requirements and functionality.\\
 
-	After consideration of the tangibility, feasibility and relevance of requirements, understanding how to most efficiently and easily allow a user to interact with these elements is the most [crucial component]. Therefore, the most logical approach to designing the system is to begin experimentation with the user interface. This then highlights areas in which user-defined requirements and functionality is relevant and what data must be acquired for their implementation. Once the dataset had been identified and mapped, this system took the approach of being as comprehensive as possible while using the least amount of UI [real estate], and therefore the least amount of code, possible given the dataset. This makes for a more efficient system and is therefore why this one is limited to two HTML web pages.\\
+	After consideration of the tangibility, feasibility and relevance of requirements, understanding how to most efficiently allow users to interact with these elements is the most crucial component. Therefore, the most logical approach to design is user interface experimentation. This highlights what data is relevant to requirements and functionality. After dataset gathering, the system takes a comprehensive approach while using the least amount of UI real estate / code. This is reflected in the efficient two-page site this system offers.\\
 
-	Note that this system was originally intended to include three pages, the third being `Ranger' which is a series of user-input-based and pre-defined graphing functions based on the Chart.js (Chart.js, 2022) JavaScript library. This was omitted however, due to time constraints and lack of relevance to the brief. Requirements remain in-tact as the idea was pitched originally to potential users and the component will likely be developed for, at least, personal and friend use post-project-completion. So forth, this stage involves fast prototyping; continuous user, practical and command line testing; and, rapid change. This is discussed at length in the \textit{Evaluation} section. Given all time, technical and financial constraints, the correct protocol was executed.
+	The system was originally intended to include three pages, the third being `Ranger'; a series of user-input-based and pre-defined graphing functions based on the Chart.js (Chart.js, 2022) JavaScript library. This was omitted due to time constraints and lack of relevance to the brief. So forth, this stage involves fast prototyping, continuous developer/user practical and command line testing, and rapid change. Given time, technical and financial constraints, the correct protocol was executed.
 
 	\subsection{User Interface}
 
 		\subsubsection{Logical Design}
 
-	This system is based on a choice and is therefore inclusive of and relevant to all aspects of demographics ranging from age groups, personalities, genders, races, etc., who simply have a passion to practice or learn about the Scottish Highlands. This implies that the system must be as widely available as possible, meaning it should be accessible on both desktop and mobile platforms which meet two criteria: they must [1] be capable of supporting the user's choice of media such as their web browser, and [2] be available on the user's choice of device which is accessible in the field (i.e. if using the system's GPS features while on a hill [conquest]).\\
+	This system is based on choice and is therefore inclusive of all aspects of demographics ranging from age groups, personalities, genders, races, etc., who have a passion to practice or learn about the Scottish Highlands. This implies that the system must be as widely available as possible, meaning it should: [1] be capable of supporting the user's choice of media such as their web browser, and [2] be available on the user's choice of (desktop/mobile) device which is accessible at home and in the field.\\
 
-	Hence, the system design as a web-based application, with JavaScript as the language delivering the required `functionality'. This implies that HTML delivers pure functionality and informative purposes and CSS delivers [bloat] the modern aspect of engagement, interactiveness and [percieved] `attractiveness'. Functionally, this site would look like [Harvard.edu] in 2007, but that approach would only benefit myself and the few others who remain of my kind. This all implies that the desktop site is intended for the use of the `planning and informative' stages of hiking, such as using the map to plan routes and guides to learn about them; and, the mobile site is intended for navigational (GPS) and safety use while in the field. Given a full development team, time and financial input, this system could be developed as a full mobile and application, as well as in-browser, in which GPS features can be used offline as many user's may find themselves lacking internet connection in the field.
+	Hence, web-based application. With JavaScript delivering the required `functionality', HTML delivering pure-functionality, and CSS delivering engagement and interactiveness. Thus, the desktop site is intended for planning stages, and the mobile site is intended for navigational/safety in the field. Given zero-constraints, the system could be developed as a full mobile and application as well as in-browser, in which GPS features could be used offline as many user's may find themselves lacking internet connection in the field.
 
 		\subsubsection{Logic Tree}
 
-	The following recursion tree highlights the paths of interaction with the interface of this system. The tree's nodes do not exhaust listing of the system's functions however, they do exhaust listing of the UI's elements which interact with the functions. Keep noted that this system is very linear and only includes two pages. The hierarchical structure and organization of these pages is what give them their versatile functionality. The system does not perfectly fit the definition of `object oriented' although it heavily relies on JavaScript. Therefore, a navigation map is a more logical demonstration than, for example, a use case diagram of how this system is used.
+	The following recursion tree details paths through the interface. The tree's nodes don't exhaust listing of functions however, they do exhaust listing of the UI's element-interaction with functions. The hierarchical structure of these pages provide versatile functionality. The system doesn't perfectly fit the definition of `object oriented' although it heavily relies on JavaScript. Therefore, a navigation map is a more logical demonstration than a use case diagram.
 
 	\vspace{\fill}
 
@@ -634,11 +634,31 @@
 
 		\subsubsection{Graphic Design \& Communication}
 
-	[\href{http://lewisbritton.com/Blog/Founding-Fathers.html}{Peter goddamn ``Crimp'' Roy}], how I miss him. He would agree that a system's graphic design is often overlooked. Especially in very small scale, more functional developments such as this, where there is lacking knowledge of or specialization in the artistic practices; this aspect is, almost all of the time, outsourced to commercial graphic design teams. In this scenario, all graphic design was crafted in-house using CSS for the site directly and desktop publishing (DTP) and photo manipulation software such as GIMP and Serif Page Plus for additional graphical content. Elements and principals of graphic design such as color schemes, shape, texture, balance, etc., are all used to accordingly represent aspects of the associated landscapes and dynamics.
+	Graphic design is often overlooked, especially small-scale developments with lacking specialization in artistic practices. All graphic design is crafted in-house using CSS, desktop publishing (DTP) and photo manipulation software such as GIMP and Serif Page Plus for additional content. Elements and principals of graphic design are adhered-to to represent aspects of associated landscapes and dynamics.
 
 			\paragraph{Cascading Stylesheet (CSS)}
 
-	Being a website, CSS is the most important styling aspect. It serves two primary functions: [1] make a site relevant and contextualized, and [2] make a site accessible. These were achieved by implementing aspects of \textit{color} to make the surrounding foreground of the site pop in a manner such as that of a mid-2000's military briefing room. That background remains shades of whites and the foreground shades of grey, which also allows the natural colors of the OS map and other features alike to be further \textit{emphasized} and more easily viewed. Gradients were used in appropriate places to continue the theme of \textit{motion}. The element of \textit{motion} was used in the logo's entrance to the site where it's seen to enter in an animation from left to right, highlighting elements of movement discussed in section 5.2.3.4. Fonts used also play a similar role in relevance to themes. Font packages used include the Sans-Serif \textit{NFS} and \textit{Audi Type Variable}, Audi's famous typeface, were used in adding a modern `sporty' feel to a service which traditionally projects itself using Garamond EB and no styling. Both of these fonts are detailed in Figure 5.1.
+	CSS serves to: [1] make the site relevant/contextualized, and [2] make it accessible. Examples of this application of these are detailed in the below table.
+
+	\begin{table}[h]
+		\scriptsize
+		\renewcommand{\arraystretch}{1.25}
+	\begin{center}
+	\begin{tabular}{l|p{10cm}}
+		\textsc{Elements/Principals} & \textsc{Application}\\
+		\hline
+		\hline
+		Color, Emphasis & Make the surrounding foreground of the site pop in a manner such as that of a mid-2000's military briefing room. That background remains shades of whites and the foreground shades of grey, which also allows the natural colors of the OS map and other features alike to be further and more easily viewed\\
+		Depth, Motion & Gradients were used in appropriate places to continue the theme of fast-motion\\
+		Movement, Motion & The logo enters the site with fast movement in an animation from left to right, highlighting elements of motion\\
+		\hline
+		\hline
+	\end{tabular}
+		\caption{Elements \& Principals of Graphic Design}
+	\end{center}
+	\end{table}
+
+	Fonts play a similar role in theme relevance. Packages include Sans-Serif \textit{NFS} and \textit{Audi Type Variable}, Audi's famous typeface, which add a modern `sporty' feel to a service which traditionally projects itself using GaramondEB and no styling. Both of these fonts are detailed in Figure 5.1.
 
 	\begin{figure}[H]
 	\begin{center}
@@ -657,17 +677,17 @@
 	\end{center}
 	\end{figure}
 
-	Furthermore, FontAwesome (FontAwesome, 2021) was used in simplifying the user experience by implementing recognizable and relatable symbols in places where text would create too much [bloat] and unnecessary reading. This also aids accessibility and improves navigation. Common uses of these include: identification with location, maps, map features, weather features, personal features, and equipment.\\ 
+	FontAwesome (FontAwesome, 2021) is used in simplifying the user experience by implementing recognizable and relatable symbols in places where text would create too much bloat. This also aids accessibility and improves navigation efficiency. Common uses include: location, maps, map features, weather features, personal features, and equipment.\\ 
 
-	Finally; hue, saturation and luminance are all appropriately assigned values to elements of the design to allow optimal readability and minimal strain. When viewing the main portion of the site, the OS map, there isn't much exposed blue light. It is of course, as always, recommended that a user adjusts the gamma output of their display accordingly. Improvement can always be made in areas of accessibility. Some may include JavaScript functionality which allows the user to control the font size, colors, element sizes, etc.; features alike. Given the constraints, brief and target users (myself and a marker), the time-reward trade-off was not valuable.
+	Hue, saturation and luminance are all appropriately assigned values to elements of the design to allow optimal readability and minimal strain. It is always recommended that a user adjusts the gamma output of their display accordingly however, blue-light-emitting ratios are kept minimal. Improvement can always be made, including JavaScript functionality which allows the user to control the font size, colors, element sizes, etc. Given the constraints and brief, the time-reward trade-off was not valuable.
 
 			\paragraph{Desktop Publishing (DTP)}
 
-	This is an non-required portion of the project and exists to serve a purpose defined long before completion. The promotional piece is out of date however, is still beautiful and is displayed in Figure A5 for your leisure. Note that some additional graphic design features were due to be implemented however, were omitted due to time constraints/relevance. For example, map symbols were all intended to be custom designs however FontAwesome was favoured instead.
+	This is a non-required portion; the promotional piece is out-of-date and irrelevant however, is displayed in Figure A5 for your leisure. Note, some additional graphic design features are omitted due to constraints/relevance. For example, map symbols were all intended to be custom designs, however FontAwesome was favoured instead.
 
 			\paragraph{Photo Manipulation}
 
-	The primary use of GIMP in this project was to design an appropriate logo to-be implemented on every page of the site, which relates closely to it's themes. This is seen below in Figure 5.2.
+	The primary use of GIMP is to design an appropriate logo to-be advertised throughout the site, relating closely to it's themes. This is seen in Figure 5.2. graphic design justification is detailed in the succeeding table.
 
 	\begin{figure}[H]
 	\begin{center}
@@ -675,10 +695,6 @@
 		\caption{Logo (Made in GIMP)}
 	\end{center}
 	\end{figure}
-
-\newpage
-
-	The logo considers four relevant layers: text, shape, color, effects. The font (\textit{text}) represents an association with the `outdoor/natural' life theme of the system in it's rustic semi-Sans-Serif nature. \textit{Shape} is used in the 30\textdegree\ slant of the text, representing perceived distortion of space around the user and `natural ([420 B L A Z E $\ast$ I T]) high' experienced while moving at a fast-pace in the field. A red \textit{color} is used in the `burning' word to \textit{harmonize} with the word's semantic definition and \textit{emphasise} the `burning desire' for aspects discussed in the \textit{Introduction} section. A reverse-distress overlay (grunge effect) is used on the `roots' word to \textit{emphasise} the diverse combination of `worn', `distressed', `fatigued', `excited' and `accomplished' emotions experienced by the user in the field. This process is shown below in Figure 5.3.
 
 	\begin{figure}[H]
 	\begin{center}
@@ -698,13 +714,32 @@
 	\end{center}
 	\end{figure}
 
+	\begin{table}[h]
+		\scriptsize
+		\renewcommand{\arraystretch}{1.25}
+	\begin{center}
+	\begin{tabular}{l|p{10cm}}
+		\textsc{Elements/Principals} & \textsc{Application}\\
+		\hline
+		\hline
+		Text (font) & An association with the `outdoor/natural' life theme of the system in it's rustic semi-Sans-Serif nature.\\
+		Shape & 30\textdegree\ slant of the text, representing perceived distortion of space around the user and `natural high' experienced while moving at a fast-pace in the field\\
+		Color (red), Emphasis & In the `burning' word to \textit{harmonize} with the word's semantic definition and emphasise the `burning desire'\\
+		Reverse, Emphasis & A reverse-distress overlay (grunge effect) is used on the `roots' word to emphasise the diverse combination of `worn', `distressed', `fatigued', `excited' and `accomplished' emotions experienced by the user in the field. This process is shown above in Figure 5.3\\
+		\hline
+		\hline
+	\end{tabular}
+		\caption{Elements \& Principals of Graphic Design}
+	\end{center}
+	\end{table}
+
 		\subsubsection{Use Cases}
 
-	A use case diagram is irrelevant given the context and structure of the following portions of this report. It's use would be [nugatory] and provide no beneficial context. Hence, referring to all headings under the following \textit{Data Application \& Manipulation} section, the data overview in Figure A4, and functions detailed in Figure A6; use cases involving each unction's relevance to site-present applications can be deduced from this content.
+	A use case diagram is irrelevant given the context and structure of the following portions of this report. It would be nugatory. Hence, referring to all headings under the following \textit{Data Application \& Manipulation} section, the data overview in Figure A4, and functions detailed in Figure A6; use cases involving each function's relevance can be deduced from this content.
 
 	\subsection{Data Application \& Manipulation}
 
-	All data discussed in Section 4 of this report is included in a basic input-output system [(BIOS, wheyy)] which, through functions and others methods, produces the desired outcomes to satisfy user requirements. A summary of this process can be seen Figure A6. Reference to data can be observed in Figure A4.
+	All data discussed in Section 4 of this report is included through functions and others methods, producing desired outcomes which satisfy user requirements. A summary of this process is seen in Figure A6. Reference to data is detailed in Figure A4.\\\\HERE
 
 		\subsubsection{`Overview'}
 
