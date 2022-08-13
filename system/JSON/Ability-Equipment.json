@@ -1,0 +1,781 @@
+{
+    "elementshill": [
+	{
+	    "name": "Elevation",
+	    "desc": "Maximum elevation above sea level of a peak."
+	},
+	{
+	    "name": "Prominence",
+	    "desc": "Vertical distance between the lowest point of elevation on the nearest drop which connects a peak to a higher peak, and the next, higher, peak."
+	},
+	{
+	    "name": "Isolation",
+	    "desc": "Horizontal distance between the peak and the next, higher, peak."
+	}
+    ],
+    "elementsroute": [
+	{
+	    "name": "Total Distance",
+	    "desc": "The total sum of distance covered spanning the entire course of the route"
+	},
+	{
+	    "name": "Total Elevation Gain",
+	    "desc": "The total sum of elevation (height) gained spanning the entire course of the route."
+	},
+	{
+	    "name": "Time/Duration",
+	    "desc": "The total sum of time elapsed spanning the entire course of the route."
+	},
+	{
+	    "name": "Standard Time/Duration",
+	    "desc": "The total sum of time elapsed spanning the entire course of the route, taken by an athlete with an &lsquo;average&rsquo; fitness level."
+	},
+	{
+	    "name": "Moving Time/Duration",
+	    "desc": "The sum of time taken to complete segments of the route between stationary points (idling)."
+	}
+    ],
+    "summitfeats": [
+	{
+	    "name": "Triangulation Station [Pillar (Square Hotine)]",
+	    "image": "./Photos/Conditioning/pillar1.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Pillar (Round Vanessa)]",
+	    "image": "./Photos/Conditioning/pillar2.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Pillar (Stonebuilt)]",
+	    "image": "./Photos/Conditioning/pillar3.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Block]",
+	    "image": "./Photos/Conditioning/block.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Buried Block]",
+	    "image": "./Photos/noimage.png"
+	},
+	{
+	    "name": "Triangulation Station [Concrete Ring]",
+	    "image": "./Photos/Conditioning/ring.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Surface Block]",
+	    "image": "./Photos/Conditioning/block.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Curry Stool]",
+	    "image": "./Photos/Conditioning/curry.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Bolt]",
+	    "image": "./Photos/Conditioning/bolt.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Covered Bolt]",
+	    "image": "./Photos/noimage.png"
+	},
+	{
+	    "name": "Triangulation Station [Platform Bolt]",
+	    "image": "./Photos/Conditioning/platbolt.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Brass Plate]",
+	    "image": "./Photos/Conditioning/brass.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Cannon]",
+	    "image": "./Photos/Conditioning/cannon.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Cut]",
+	    "image": "./Photos/Conditioning/cut.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Berntsen]",
+	    "image": "./Photos/Conditioning/berntsen.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Disc]",
+	    "image": "./Photos/noimage.png"
+	},
+	{
+	    "name": "Triangulation Station [Old-Style Rivet]",
+	    "image": "./Photos/Conditioning/oldrivet.jpg"
+	},
+	{
+	    "name": "Triangulation Station [New-Style Rivet]",
+	    "image": "./Photos/Conditioning/newrivet.jpg"
+	},
+	{
+	    "name": "Triangulation Station [Fundamental Benchmark]",
+	    "image": "./Photos/Conditioning/bench.jpg"
+	},
+	{
+	    "name": "GPS Station",
+	    "image": "./Photos/Conditioning/gps.jpg"
+	},
+	{
+	    "name": "Weather Station",
+	    "image": "./Photos/Conditioning/weather.jpg"
+	},
+	{
+	    "name": "Cairn",
+	    "desc": "A cairn marking a significant point on a landmass. These are of course found at the summit of most, if not every hill, even if they have a summit Triangulation Station. They may also be found at the height of a Munro or Corbett at at Munro or Corbett Top, and may occur in a similar circumstance on Munro and Corbett Top-height sections of landmasses, but where these sections are not considered a tops if present at an increasing stationary point (point of inflection)",
+	    "image": "./Photos/Conditioning/cairn.jpg"
+	}
+    ],
+    "type": [
+	{
+	    "name": "Walk",
+	    "desc": "A low-level walk, usually under or between five-hundred-to-one-thousand-feet, generally consisting of non-varying terrain elevation and surface.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Hillwalk",
+	    "desc": "A walk which may lead up some sort of hill such as a Sub2000, Donald, Graham, Corbett or Munro that does not generally involve any challenging terrain where the participant is required to engage particular skills such as scrambling or climbing.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Ridgewalk",
+	    "desc": "Usually involves all elements of a hillwalk but a large portion or major feature of the route involves traverse across an ar&ecirc;te or prominent, usually rocky but not &lsquo;scrambly&rsquo;, ridge. This does not include plateau &lsquo;ridges&rsquo; which appear on most hills which aren&rsquo;t basic mounds.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Scramble",
+	    "desc": "Usually involves all elements of a hillwalk but a large portion of the route involves using human four wheel drive <i>quattro</i> to ascend more vertical, rocky features. These are generally categorized by rock type/surface and grade (an unnecessary, superficial term which defines new normie metrics for &lsquo;gradient&rsquo;).",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Climb",
+	    "desc": "Can sometimes involve elements of a hillwalk although the type of athlete who is inclined to practice such a sport generally finds isolated climbing routes. They are more vertical (have a greater gradient) and consist of less featured rock formations than those found in scrambles. There are many different types of climbing which involve ropes and other specialist equipment on which information can be found on this site. Many people like to keep it simple though and just free solo.",
+	    "image": "./Photos/Conditioning/.jpg"
+	}
+    ],
+    "stage": [
+	{
+	    "name": "Walk-In",
+	    "desc": "Known as the pre-approach to either a hillwalk or climb etc., considering ridgewalks and scrambles tend not to exist as isolated activities and are generally included in hillwalks. Walk-ins are usually not part of official routes as they tend to join your point of origin with the start of the route. For example, you may walk 2 miles along a road from a car park to the first farm gate on your route, where you will start your approach. Hence, walk-ins often vary from athlete to athlete.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Approach",
+	    "desc": "The section of a route which often leads along some form of path to the start of the hill or feature. It may lead through forests, farms, fields, riversides, fords, etc. It may also involve some elevation gain but usually none as significant as that found when actually on your hill or feature.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "On-Hill",
+	    "desc": "When you are clearly on a landmass or feature and making sharper elevation gain. For example, when you come to the end of a farm track road and take a sharp turn onto a smaller path, footpath erosion, etc., or any other form of route track. These changes are usually marked by a small cairn, even if the route is not popular.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Walk-Out",
+	    "desc": "This is often a repeat of the approach plus the walk-in but of course in the opposite direction. Unless you take a circular loop which bypasses part of the route already completed. For example, the end of The Cairnwell Nine takes you straight from on-hill to car park, but involves an approach from the car park to Beinn Number One when completing the anti-clockwise traverse.",
+	    "image": "./Photos/Conditioning/.jpg"
+	}
+    ],
+    "terraintype": [
+	{
+	    "name": "Road",
+	    "desc": "A piece of land which is primarily intended for road vehicles but appears either in the walk-in or approach stage of a route and is safe for pedestrians to walk on. Be sure to always adhere to basic road-walking etiquette if you find yourself in this position; walk on the right side of the road, facing oncoming vehicles. Move accordingly either to a right-side ditch or to the left side when clear. Do as I say, not as I do. I am Mr. <i>A82 Run-Out</i>.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Forestry Commission Road",
+	    "desc": "A more natural-looking stone or dirt road which leads through, you guessed it, forests and are used for service maintenance primarily. Expect to see plenty of Hiluxes and L200s here. These roads are often intermittently broken by cattle grids, if near or on farmland, and gates. Find more information <a href='https://docs.planning.org.uk/20210121/168/QN8R75CALSV00/3f03cq8ycvqy1h1p.pdf'>here</a>.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Off-Road",
+	    "desc": "The finest road type of all. It doesn&rsquo;t take some normie form of concrete, gravel or stone; this is a road which follows the surface and elevation of the terrain and is generally used for more remote access and late night joy rides. It can be useful for approaches as they often follow relevant hillsides and inclines but do skew off-route further down-the-line so look out for those small cairns. Also look out for me railing my Audi A6 C6 TDV allroad TDI quattro over the dunes. Human road kill is hard to explain.. and dispose of.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Farm Path",
+	    "desc": "As the name suggests, this form of road is very similar to a forestry commission one or something of the sort, except it is used by farmers and farmhouse owners for local access, service and maintenance around the farm. They are also frequently intermittently broken by cattle grids and farm gates. Look out for those Hiluxes and L200s.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Tourist Path",
+	    "desc": "A route surface, often constructed by the local community, council, or Mountaineering Scotland, which provides clear navigation and, usually, slightly &lsquo;easier&rsquo; terrain to walk on such as slabs, rocks and stones. They are most commonly found on very touristy hills, i.e. anything with the English prefixes &lsquo;Ben&rsquo; or &lsquo;Mount&rsquo;, and are generally hated by enthusiasts as they can slow you down torque-wise. They do however, help prevent footpath erosion.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Path",
+	    "desc": "The term &lsquo;path&rsquo; is often perceived horrifically incorrectly by normies. When NPCs living in the matrix hear this word, they expect some sort of red carpet all the way to the summit. However, the term really just refers to any consistent track which leads along the primary route. It could be slabs, rocks, stones, dirt, erosion, etc. which tend to occur more naturally simply due to the volume of hikers. A good example is inconsistently treaded heather on a 0.9 gradient hillside. Most normies think that is the furthest thing from a &lsquo;path:&rsquo; however, it may in fact be the primary route.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Footpath Erosion",
+	    "desc": "Erosion in the surface material, such as flattening of grass and heather or scars in rock, which has been made by frequent repetitions of the route by hikers when there is no other form of path. I&rsquo;d say try to avoid these as very severe examples such as deep scars are often very difficult to walk in, but then you&rsquo;re really just adding to the problem by creating more footpath erosion. Idk, if you care about that hippie nonsense then stay at home or go do something touristy.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Stalkers Path",
+	    "desc": "A form of footpath erosion made and used by stalkers when hunting deer. Don&rsquo;t be fooled by these paths, they are often mistaken for regular footpath erosion but very frequently end up leading athletes somewhere irrelevant or even far off the route.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Shepherds Path",
+	    "desc": "A form of footpath erosion made and used by shepherds to pass and gain leverage upon their flock of sheep when roundin&rsquo;-up, yee-haw. Don&rsquo;t be fooled by these paths, they are often mistaken for regular footpath erosion but very frequently end up leading athletes somewhere irrelevant or even far off the route.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Sheep Path",
+	    "desc": "As the name suggests, this footpath erosion has been formed by the regular passing of sheep. Don&rsquo;t be fooled by these paths, they are often mistaken for human footpath erosion but very frequently end up leading athletes somewhere irrelevant or even far off the route.",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Off-Path",
+	    "desc": "You will usually find yourself on a real hill of there is no form of path or footpath erosion at all. Generally these hills are very remote or unpopular. For example, thirty miles deep into Knoydart, or some Sub2000 that no one has heard of 10 miles past Ben Hope. These are for true enthusiasts and of course involve walking on whatever terrain the hill provides.",
+	    "image": "./Photos/Conditioning/.jpg"
+	}
+    ],
+    "terraindiff": [
+	{
+	    "name": "Grass",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+    	    "name": "Concrete",
+	    "image": "./Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Stone Staircase",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Broken Rock",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Grass with Scattered Rock",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Rocky Talus",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Talus (Coarse Scree)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Scree (Fine Scree)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Crag",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Crag, Grade 1 (Easy)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Crag, Grade 2 (Moderate)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Crag, Grade 3 (Challenging)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Notched Slab",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Notched Slab, Grade 1 (Easy)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Notched Slab, Grade 2 (Moderate)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Notched Slab, Grade 3 (Challenging)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Smooth Slab",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Smooth Slab, Grade 1 (Easy)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Smooth Slab, Grade 2 (Moderate)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Smooth Slab, Grade 3 (Challenging)",
+	    "image": ".Photos/Conditioning/.jpg"
+	}
+    ],
+    "packs": [
+	{
+	    "name": "Duffel (Various Sizes)",
+	    "desc": "Large bag useful for carrying larger goods such as equipment not required on a route, clothing and cans.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Rucksack, Day (Small)",
+	    "desc": "A backpack which is slightly larger than standard, usually thirty-plus liters as opposed to twenty-five or less, which is useful for carrying extra equipment on a route. Particularly in winter when you may require more specialist gear such as crampons, micro spikes, navigation equipment, etc. Rucksacks also have useful external features for attaching ice axes and poles etc.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Rucksack, Travel (Large)",
+	    "desc": "A larger version of a standard rucksack with similar geometry and design features and functionality. Generally fifty-plus liters. These are generally used for camping and larger routes as they include compartments to attach and store gear such as tents, sleeping bags, sleeping mats, and larger navigation gear like maps. Rucksacks also have useful external features for attaching ice axes and poles etc.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Daypack",
+	    "desc": "A small backpack or backpack-like bag, usually from twenty-to-ten or less liters in capacity, which are commonly used for shorter or faster activities such as fell running or short walks where only gear such as water and other small miscellaneous items are required.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Tent",
+	    "desc": "A vessel for resting after your twenty-mile walk-in to Knoydart the night before your forty-mile traverse of all the Munros and Corbetts on Knoydart.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Sleeping Bag",
+	    "desc": "A vessel for sleeping in if you don&rsquo;t prefer or are incapable of experiencing the warmth of another human, for example in the back of L&rdquo;Hotel D&rsquo;ALL or the FIVE-TWO-FIVE Star Hotel. Depending on the company of course. And your comfort with your sexuality.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Sleeping Mat",
+	    "desc": "An inane item that some people view as a necessity to put your sleeping bag on top of before retiring to slumber. Usually air or foam-based and provide too much comfort. Use the floor in my opinion. Or L&rdquo;Hotel D&rsquo;ALL&rsquo;s mattress.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Pillow",
+	    "desc": "I&rsquo;m assuming we&rsquo;re all over the age of like two here so I don&rsquo;t need to explain this. There are options for camping pillows out there but they&rsquo;re unnecessarily overpriced and provide no additional benefit over a normal pillow. Or an empty Pringles tube. Or a folded tee-shirt. Or a beer bottle.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Dry Sacks",
+	    "desc": "Marketing to put wet stuff in to keep it separate from your other gear in packs.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Wash Bag",
+	    "desc": "Marketing to keep and transport your toiletries in, in packs.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Towel(s)",
+	    "desc": "Dry yourself during the winter after practicing ancestral tenet 6: get cold.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Reservoir",
+	    "desc": "A useful, space-saving but difficult-to-clean, vessel for carrying water in a more efficient manner. There is a slot and a tube routing solution for these in most specialist backpacks and rucksacks.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Insulated Bottle(s)",
+	    "desc": "Metallic bottles with insulated walls which are useful for keeping water cool and hot drinks warm over extended periods. Particularly useful in the heights of summer and winter for body temperature regulation.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Thermal Flask",
+	    "desc": "Providing the same functionality as insulated bottles but are generally a little larger and are more optimal for carrying hot food. They often come with attached utensils for more optimal packing. Although these are bloated and just take a sachet of rice or flour and water. Maybe a pinch of salt if you&rsquo;re feeling adventurous.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Food Containers",
+	    "desc": "For storing larger portions of dry food. Don&rsquo;t be fooled, you do not need an airtight container, due to the change in air pressure. So just get something to separate your food from other goods.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Mini Stove",
+	    "desc": "Traditional stoves are cool and of course a lot more functional but modern ones such as the ultra-compact Vangos or a JetBoil are most useful as they ignite and heat the fastest and have a tiny pack size. Traditional stoves are better for open camps etc., the compact ones are good for impulse heating on a hillside for example.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Utensils",
+	    "desc": "I just take my Villeroy &amp; Boch to the hills to be honest. Plating camping cutlery is just another marketing scam.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Lighter / Flint and Steel",
+	    "desc": "If you have anything which requires gas ignition, it is essential that you have some form of lighter or tool which can used to spark and help create a flame.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Tweezers",
+	    "desc": "The reason I carry tweezers is purely ticks. Tick combs are dumb and obviously just another marketing scam. Refrain from purchase. If you aren&rsquo;t confident you can get a tick out fully, just don&rsquo;t try. It&rsquo;s always safer just to leave it in and let it drop off once it&rsquo;s had its fix. But tweezers are the best wayif you do want it off ASAP, in my opinion.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Wet Wipes",
+	    "desc": "You never know when the BBQ from the night before will catch up with you. Although I&rsquo;ve never actually done it myself, there&rsquo;s no shame in the nature sh&ast;&ast; if required. Just cover her up and use compostable wipes. I mainly carry them for wiping off sun cream before re-application though. Or at least I did in my sun cream days.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Sun Cream (Omit)",
+	    "desc": "Some very Scottish people see this as a necessity. I used to until Liver King taught me otherwise. Now I tend to just condition my skin to love the sun. Either short intervals of exposure or one long session of exposure followed by a burn are the easiest ways to condition your skin to take a tan. Of course this is biologically incorrect and medically insensible but its just true.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Midge Repellent (Omit)",
+	    "desc": "Not even relevant. Just deal with them. Take it if you want but you&rsquo;re dumb.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Tick Repellent / Permethrin (Omit)",
+	    "desc": "Once again, just deal with them the proper way and don&rsquo;t ruin your skin or clothes.",
+	    "image": ".Photos/Conditioning/.jpg"
+	}
+    ],
+    "technical": [
+	{
+	    "name": "GPS Device",
+	    "desc": "Any commercial product from Garmin is highly recommended by myself and pretty much the entire community. Not only do they provide consistent GPS tracking and route recording but they can also act as emergency and safety devices with their SOS and navigation features.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Hiking Poles",
+	    "desc": "Another myth. Another scam. I used to use hiking poles because I thought I had bad knees. It turns out they were only making them worse and of course all I had to do was condition them more. I used to get awful knee pain after every one of my hikes, probably around once every two weeks. Now I do multiple a week and really engage the knees; haven&rsquo;t had knee pain since I started the beta.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Ice Axe, Safety (Short)",
+	    "desc": "Safety tool primarily for minor ice axe arrests and chiseling footholds into firm snow and ice. Used as a single piece of apparatus.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Ice Axe, Safety (Long)",
+	    "desc": "Safety tool primarily for major ice axe arrests and chiseling footholds into firm snow and ice. Used as a single piece of apparatus.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Ice Axe(s), Ice Climbing (Notched)",
+	    "desc": "Tool used for creating axe holds in ice walls in conjunction with C3 ice climbing crampons for creating footholds. Not used for arrests or footholds. Used in a pair with an identical piece of apparatus.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Compass",
+	    "desc": "Navigational equipment used for cardinal directions based on geographical orientation. Useful to have whether you carry a map or not. Solely, a compass can be of far greater use in the clag or extreme conditions for example, provided you know your route directions.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Topographical Maps",
+	    "desc": "Either Ordnance Survey or Harvey Maps. These are very useful tools to study and use to learn land features. You must also put in the real world practice in these environments in order to associate these features with landmasses and learn what they mean for your routes, ability and dynamics. Taking a map out on hikes though, in my opinion, is dumb. They aren&rsquo;t gong to be any help in extreme conditions. Just know your route, know the landscape, know your ability, and take a compass.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Whistle",
+	    "desc": "Could be useful to attract attention if you are stuck between a rock and a hard place. Literally. Or buried deep in the snow or something. Always good to have, but most specialist backpacks and rucksacks come with one attached to their straps these days.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Head Torch",
+	    "desc": "Head-mounted bulb useful for illuminating routes at low-luminance times of day in in poor conditions. Also a useful SOS tool.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Helmet",
+	    "desc": "Something which is essential to increase chances of surviving a fall when climbing or doing a very exposed scramble.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Harness and Ropes",
+	    "desc": "Apparatus which allows you to ascend a wall with more peace of mind.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Belay Loop and Carabiners",
+	    "desc": "Apparatus used in conjunction with a harness and rope to connect yourself to the wall and the adjacent climber.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Cams, Nuts and Belay Fixtures",
+	    "desc": "More apparatus to be used in conjunction with a harness, rope, belay loop and carabiners to provide additional security and stability with your connection to the wall. Especially upon failure and falling.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Quickdraws and Slings",
+	    "desc": "More apparatus to be used in conjunction with a harness, rope, belay     loop and carabiners to provide additional security and stability with your connection to the wall. Especially upon failure and falling.",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Chalk Bag and Chalk",
+	    "desc": "Material used for enhanced grip when climbing or interfacing with rock.",
+	    "image": ".Photos/Conditioning/.jpg"
+	}
+    ],
+    "shoes": [
+	{
+	    "name": "Trainers / Trail Runners",
+	    "desc": "Basic shoes for any activity that does not involve movement on non-city terrain types.",
+	    "comp": [],
+	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "City/Approach Shoes (B0)",
+	    "desc": "Basic shoes with a slightly rigid sole which are used for concrete and stone/rock-based terrain types. I.e. not on treacherous mountain terrain. They are generally only produced as low-tops so are not ideal for wet conditions either.",
+	    "comp": [
+		"Micro Crampons"
+	    ],
+	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Hiking Boots, Flexible (B1)",
+	    "desc": "Flexible hiking boots with some support such as ankle and heel.",
+	    "comp": [
+		"Micro Crampons",
+		"Crampons, Flexible (C1)"
+	    ],
+	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Hiking Boots, Semi-Rigid (B2)",
+	    "desc": "Semi-rigid boots with a firm ankle, heel and sole support. Usually intended for more advanced summer routes and low-level winter snow routes. Not suitable for ice climbs.",
+	    "comp": [
+		"Crampons, Flexible (C1)",
+		"Crampons, Semi-Rigid (C2)"
+	    ],
+	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Biking/Mountaineering Boots, Rigid (B3)",
+	    "desc": "Rigid boots with a firm ankle, heel and sole support. Designed for Alpine hiking and climbing. Also suitable for ice climbing. Often made from tough leather or plastic and do not generally bend. Usually have enforced soles and toe caps. Often equipped with more advanced insulation.",
+	    "comp": [
+		"Crampons, Flexible (C1)",
+		"Crampons, Semi-rigid (C2)",
+		"Crampons, Rigid (C3)"
+	    ],
+	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Climbing Shoes",
+	    "desc": "Flat, curved shoes sometimes with rubber toe caps to enhance traction on rock face. These shoes should generally fit snug to the foot and you should be able to feel a great deal of sensation through them. It should be like climbing barefoot but with more traction.",
+	    "comp": [],
+	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Replacement Laces",
+	    "desc": "Self-explanatory. If your laces snap mid-project, this could be extremely dangerous as it will cause it severe loss of traction and control.",
+	    "comp": [],
+	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Micro Spikes",
+	    "desc": "Small spikes to assist with minor snow fall and thin ice in more urban environments, or on easy winter routes.",
+	    "comp": [
+		"Hiking Boots, Flexible (B1)"
+	    ],
+	    "feat": [],
+	    "adv": [
+		"Prolong the life of a boot/shoe&rsquo;s sole",
+		"Provide greater traction on slippery and/or greasy surfaces",
+		"Provide greater (horizontal movement) traction on loose snow or very thin fresh/urban ice"
+	    ],
+	    "dangers": [
+		"Shoes too flexible for crampons: crampons can break apart or be destroyed",
+		"Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death",
+		"Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing",
+		"Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury"
+	    ],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Crampons, Flexible (C1)",
+	    "desc": "Designed to be flexible and have points which can easily fit into varying sizes and shapes of cracks on dry slab etc.",
+	    "comp": [
+		"Hiking Boots, Flexible (B1)",
+		"Hiking Boots, Semi-Rigid (B2)",
+		"Hiking Boots, Rigid (B3)"
+	    ],
+	    "feat": [
+		"Horizontal front spikes",
+		"6-10 overall spikes"
+	    ],
+	    "adv": [
+		"Prolong the life of a boot/shoe&rsquo;s sole",
+		"Provide greater traction on slippery and/or greasy surfaces",
+		"Provide greater inserts upon certain rock faces and cracks etc.",
+		"Provide greater (horizontal movement) traction on loose snow or very thin fresh/urban ice"
+	    ],
+	    "dangers": [
+		"Shoes too flexible for crampons: crampons can break apart or be destroyed",
+		"Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death",
+		"Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing",
+		"Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury"
+	    ],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Crampons, Semi-Rigid (C2)",
+	    "desc": "A general winter mountaineering crampon for light snow activities but will most likely not support the user upon vertical climbs or ice climbs.",
+	    "comp": [
+		"Hiking Boots, Semi-Rigid (B2)",
+		"Hiking Boots, Rigid (B3)"
+	    ],
+	    "feat": [
+		"Semi-horizontal (if existent) and vertical front spikes",
+		"10-12 overall spikes"
+	    ],
+	    "adv": [
+		"Prolong the life of a boot/shoe&rsquo;s sole",
+		"Provide greater traction on slippery and/or greasy surfaces",
+		"Provide greater (horizontal movement) traction on loose snow or very thin fresh/urban ice",
+		"Provide greater (semi-vertical movement) traction on more compact snow in gullies etc.",
+		"Provide greater (horizontal movement) traction across very compact snow/ice"
+	    ],
+	    "dangers": [
+		"Shoes too flexible for crampons: crampons can break apart or be destroyed",
+		"Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death",
+		"Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing",
+		"Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury"
+	    ],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Crampons, Rigid (C3)",
+	    "desc": "Designed to be as firm as possible. Often have snow repelling features such as anti-balling plates made from ABS plastic to stop snow building up on the shoe sole and within the crampon base.",
+	    "comp": [
+		"Hiking Boots, Rigid (B3)"
+	    ],
+	    "feat": [
+		"Horizontal and vertical, or adjustable front spikes. Some may be modular/removable",
+		"10-12 overall spikes"
+	    ],
+	    "adv": [
+		"Prolong the life of a boot/shoe&rsquo;s sole",
+		"Provide greater traction on slippery and/or greasy surfaces",
+		"Provide greater (horizontal movement) traction on loose snow or very thin fresh/urban ice",
+		"Provide greater (semi-vertical movement) traction on more compact snow in gullies etc.",
+		"Provide greater (horizontal movement) traction across very compact snow/ice",
+		"Provide greater (vertical movement) traction and climbing ability on solid ice"
+	    ],
+	    "dangers": [
+		"Shoes too flexible for crampons: crampons can break apart or be destroyed",
+		"Crampons too flexible for boots: loss of grip on appropriate surface (for boot) leading to injury or death",
+		"Crampons too big for boots: crampons may uptrurn on boots leading to an ankle injury or stabbing",
+		"Crampons with adjustable or removable spikes may disperse while in use as they are less durable and thus, cause injury"
+	    ],
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Shoe Brush",
+	    "desc": "It&rsquo;s important to take care of your shoes to prolong their life. Dusting-off any minor dry dirt and material after walks is essential to ensure the stitching and glue stays in-tact. If shoes have been fully submerged in dirt, be sure to give them a thorough wash with cool water and a brush.",
+	    "comp": [],
+	    "feat": [],
+	    "adv": [],
+	    "dangers": [],
+	    "image": ".Photos/Conditioning/.jpg"
+	}
+    ],
+    "clothing": [
+	{
+	    "name": "Base Layers",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Mid Layer Fleeces and Hoodies",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Windbreaker",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Jacket, Shoftshell (Drinking Beer)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Jacket, Hardshell (Waterproof)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Jacket, Duvet",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Jacket, Down",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Jacket, Down (Waterproof)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Leggings",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Mountain Pants",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Mountain Shorts",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Approach Socks",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Hiking Socks",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Gaiters",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Cap",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Beanie",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Windbreaker Gloves",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Fleece Gloves",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Waterproof Gloves",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Sunglasses (Omit)",
+	    "image": ".Photos/Conditioning/.jpg"
+	},
+	{
+	    "name": "Ski Goggles",
+	    "image": ".Photos/Conditioning/.jpg"
+	}
+    ]
+}

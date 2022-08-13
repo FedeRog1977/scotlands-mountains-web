@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<gpx version="1.1" 
+creator="Memory-Map 5.4.2.1089 http://www.memory-map.com"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<rte>
+<name>bstarav5 27 6 15</name>
+<type>Route</type>
+<rtept lat="56.5760894861" lon="-5.0355935686">
+<name>WP0001</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5761188389" lon="-5.0353108914">
+<name>WP0002</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5764311806" lon="-5.0344808449">
+<name>WP0003</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5767174400" lon="-5.0328750229">
+<name>WP0004</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5765405769" lon="-5.0309063185">
+<name>WP0005</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5765187102" lon="-5.0290314798">
+<name>WP0006</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5763715785" lon="-5.0286125097">
+<name>WP0007</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5759025469" lon="-5.0284935290">
+<name>WP0008</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5754608781" lon="-5.0281731509">
+<name>WP0009</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5746521826" lon="-5.0290856459">
+<name>WP0010</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5738730957" lon="-5.0287789807">
+<name>WP0011</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5734410259" lon="-5.0289886930">
+<name>WP0012</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5732369156" lon="-5.0299902483">
+<name>WP0013</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5734444166" lon="-5.0306990352">
+<name>WP0014</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5727574328" lon="-5.0321504783">
+<name>WP0015</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5723395775" lon="-5.0336234442">
+<name>WP0016</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5718936588" lon="-5.0344019837">
+<name>WP0017</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5711611071" lon="-5.0349539483">
+<name>WP0018</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5701696396" lon="-5.0369100614">
+<name>WP0019</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5697230451" lon="-5.0367928003">
+<name>WP0020</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5692942590" lon="-5.0359441635">
+<name>WP0021</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5688255540" lon="-5.0348887898">
+<name>WP0022</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5686118280" lon="-5.0353601810">
+<name>WP0023</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5674986162" lon="-5.0340089067">
+<name>WP0024</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5674530757" lon="-5.0331096462">
+<name>WP0025</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5669833578" lon="-5.0320949881">
+<name>WP0026</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5667161882" lon="-5.0319921681">
+<name>WP0027</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5662035784" lon="-5.0308926931">
+<name>WP0028</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5659637740" lon="-5.0305885355">
+<name>WP0029</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5657932300" lon="-5.0302085111">
+<name>WP0030</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5655438280" lon="-5.0293743960">
+<name>WP0031</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5650952511" lon="-5.0293384957">
+<name>WP0032</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5650355863" lon="-5.0299443244">
+<name>WP0033</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5647186209" lon="-5.0300410725">
+<name>WP0034</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5645480750" lon="-5.0296610632">
+<name>WP0035</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5641229141" lon="-5.0295863290">
+<name>WP0036</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5629114792" lon="-5.0304255834">
+<name>WP0037</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5623841732" lon="-5.0327035041">
+<name>WP0038</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5609791392" lon="-5.0350331048">
+<name>WP0039</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5600430868" lon="-5.0374815631">
+<name>WP0040</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5576985834" lon="-5.0405494028">
+<name>WP0041</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5558640323" lon="-5.0411346373">
+<name>WP0042</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5541010863" lon="-5.0406267992">
+<name>WP0043</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5532514130" lon="-5.0413724623">
+<name>WP0044</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5514722517" lon="-5.0424503536">
+<name>WP0045</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5505717627" lon="-5.0434359918">
+<name>WP0046</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5496956785" lon="-5.0443421646">
+<name>WP0047</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5493922055" lon="-5.0448060537">
+<name>WP0048</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5488076831" lon="-5.0457356132">
+<name>WP0049</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5472533626" lon="-5.0477264000">
+<name>WP0050</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5465217502" lon="-5.0482371540">
+<name>WP0051</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5452433254" lon="-5.0481342794">
+<name>WP0052</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5441647711" lon="-5.0481288642">
+<name>WP0053</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5433708369" lon="-5.0484311370">
+<name>WP0054</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5429915382" lon="-5.0483192491">
+<name>WP0055</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5427164383" lon="-5.0485412117">
+<name>WP0056</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5421557256" lon="-5.0484960923">
+<name>WP0057</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5416319257" lon="-5.0487793994">
+<name>WP0058</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5404686223" lon="-5.0485637474">
+<name>WP0059</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5401446928" lon="-5.0489444858">
+<name>WP0060</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5398969861" lon="-5.0489652325">
+<name>WP0061</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5390687023" lon="-5.0497528417">
+<name>WP0062</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5384008140" lon="-5.0494956925">
+<name>WP0063</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5379651551" lon="-5.0489318178">
+<name>WP0064</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5375529149" lon="-5.0483291628">
+<name>WP0065</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5370991910" lon="-5.0466655834">
+<name>WP0066</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5369973592" lon="-5.0453150597">
+<name>WP0067</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5374522621" lon="-5.0441719765">
+<name>WP0068</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5380506467" lon="-5.0426742874">
+<name>WP0069</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5385075076" lon="-5.0414499418">
+<name>WP0070</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5379804648" lon="-5.0400245894">
+<name>WP0071</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5374468105" lon="-5.0379479103">
+<name>WP0072</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5372020406" lon="-5.0350808949">
+<name>WP0073</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5371950327" lon="-5.0325990366">
+<name>WP0074</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5369055467" lon="-5.0287929384">
+<name>WP0075</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5366063379" lon="-5.0281588779">
+<name>WP0076</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5363285686" lon="-5.0275672165">
+<name>WP0077</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5359785797" lon="-5.0271731733">
+<name>WP0078</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5358235488" lon="-5.0270794379">
+<name>WP0079</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5343025639" lon="-5.0258597519">
+<name>WP0080</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5340353869" lon="-5.0257570724">
+<name>WP0081</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5334026823" lon="-5.0249744461">
+<name>WP0082</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5330477587" lon="-5.0247834271">
+<name>WP0083</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5323896637" lon="-5.0241208275">
+<name>WP0084</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5319237980" lon="-5.0229448596">
+<name>WP0085</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5314197431" lon="-5.0224166081">
+<name>WP0086</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5313223621" lon="-5.0217987831">
+<name>WP0087</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5302577737" lon="-5.0202904769">
+<name>WP0088</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5300901440" lon="-5.0197890879">
+<name>WP0089</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5296435281" lon="-5.0196721684">
+<name>WP0090</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5292291750" lon="-5.0191511384">
+<name>WP0091</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5285816791" lon="-5.0189775625">
+<name>WP0092</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5280376630" lon="-5.0182428947">
+<name>WP0093</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5276553839" lon="-5.0182531232">
+<name>WP0094</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5270295080" lon="-5.0171866402">
+<name>WP0095</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5270511232" lon="-5.0162937083">
+<name>WP0096</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5268063664" lon="-5.0161929018">
+<name>WP0097</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5264301400" lon="-5.0150243378">
+<name>WP0098</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5256354506" lon="-5.0144324964">
+<name>WP0099</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5244096938" lon="-5.0140097277">
+<name>WP00100</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5234598110" lon="-5.0142595105">
+<name>WP00101</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5232160338" lon="-5.0141181436">
+<name>WP00102</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5225870322" lon="-5.0141088000">
+<name>WP00103</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5220420038" lon="-5.0134149022">
+<name>WP00104</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5217289749" lon="-5.0133493632">
+<name>WP00105</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5216919667" lon="-5.0130211400">
+<name>WP00106</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5208456731" lon="-5.0117747692">
+<name>WP00107</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5206555779" lon="-5.0112717604">
+<name>WP00108</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5201621322" lon="-5.0112325729">
+<name>WP00109</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5206555779" lon="-5.0112717604">
+<name>WP00108</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5208456731" lon="-5.0117747692">
+<name>WP00107</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5216919667" lon="-5.0130211400">
+<name>WP00106</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5217289749" lon="-5.0133493632">
+<name>WP00105</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5220420038" lon="-5.0134149022">
+<name>WP00104</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5225870322" lon="-5.0141088000">
+<name>WP00103</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5232160338" lon="-5.0141181436">
+<name>WP00102</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5234598110" lon="-5.0142595105">
+<name>WP00101</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5244096938" lon="-5.0140097277">
+<name>WP00100</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5256354506" lon="-5.0144324964">
+<name>WP0099</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5264301400" lon="-5.0150243378">
+<name>WP0098</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5268063664" lon="-5.0161929018">
+<name>WP0097</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5270511232" lon="-5.0162937083">
+<name>WP0096</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5270295080" lon="-5.0171866402">
+<name>WP0095</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5276553839" lon="-5.0182531232">
+<name>WP0094</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5280376630" lon="-5.0182428947">
+<name>WP0093</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5285816791" lon="-5.0189775625">
+<name>WP0092</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5292291750" lon="-5.0191511384">
+<name>WP0091</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5296435281" lon="-5.0196721684">
+<name>WP0090</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5300901440" lon="-5.0197890879">
+<name>WP0089</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5302577737" lon="-5.0202904769">
+<name>WP0088</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5313223621" lon="-5.0217987831">
+<name>WP0087</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5314197431" lon="-5.0224166081">
+<name>WP0086</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5319237980" lon="-5.0229448596">
+<name>WP0085</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5323896637" lon="-5.0241208275">
+<name>WP0084</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5330477587" lon="-5.0247834271">
+<name>WP0083</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5334026823" lon="-5.0249744461">
+<name>WP0082</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5340353869" lon="-5.0257570724">
+<name>WP0081</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5343025639" lon="-5.0258597519">
+<name>WP0080</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5358235488" lon="-5.0270794379">
+<name>WP0079</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5359785797" lon="-5.0271731733">
+<name>WP0078</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5363344852" lon="-5.0273236329">
+<name>WP00141</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5361678709" lon="-5.0267815362">
+<name>WP00142</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5359684584" lon="-5.0248131777">
+<name>WP00143</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5359521666" lon="-5.0236322844">
+<name>WP00144</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5363134315" lon="-5.0217086626">
+<name>WP00145</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5364080688" lon="-5.0215128286">
+<name>WP00146</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5370870485" lon="-5.0203873411">
+<name>WP00147</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5377006979" lon="-5.0191752534">
+<name>WP00148</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5380947768" lon="-5.0186778407">
+<name>WP00149</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5383885045" lon="-5.0176842861">
+<name>WP00150</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5383615068" lon="-5.0160143313">
+<name>WP00151</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5383451327" lon="-5.0148333620">
+<name>WP00152</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5384886971" lon="-5.0135430797">
+<name>WP00153</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5386215923" lon="-5.0117637987">
+<name>WP00154</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5387016326" lon="-5.0112413402">
+<name>WP00155</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5390206729" lon="-5.0101276876">
+<name>WP00156</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5399131781" lon="-5.0085307215">
+<name>WP00157</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5402965440" lon="-5.0075441575">
+<name>WP00158</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5407218229" lon="-5.0066829418">
+<name>WP00159</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5416912765" lon="-5.0056207901">
+<name>WP00160</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5420335919" lon="-5.0054038546">
+<name>WP00161</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5423719911" lon="-5.0053493344">
+<name>WP00162</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5421525917" lon="-5.0051285194">
+<name>WP00163</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5420561057" lon="-5.0044699530">
+<name>WP00164</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5417618002" lon="-5.0017616190">
+<name>WP00165</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5417052670" lon="-5.0013096415">
+<name>WP00166</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5418517562" lon="-4.9961546555">
+<name>WP00167</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5424866372" lon="-4.9940486930">
+<name>WP00168</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5431117421" lon="-4.9932844322">
+<name>WP00169</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5435184012" lon="-4.9931945121">
+<name>WP00170</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5437475730" lon="-4.9930091998">
+<name>WP00171</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5441669057" lon="-4.9923913812">
+<name>WP00172</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5442449170" lon="-4.9919500155">
+<name>WP00173</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5445969556" lon="-4.9913268636">
+<name>WP00174</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5448407397" lon="-4.9905324139">
+<name>WP00175</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5451225601" lon="-4.9900257530">
+<name>WP00176</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5456169880" lon="-4.9900240931">
+<name>WP00177</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5460246192" lon="-4.9898935235">
+<name>WP00178</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5464273801" lon="-4.9899660003">
+<name>WP00179</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5467852522" lon="-4.9890991328">
+<name>WP00180</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5473069787" lon="-4.9888961776">
+<name>WP00181</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5485804786" lon="-4.9863925743">
+<name>WP00182</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5505719097" lon="-4.9876889495">
+<name>WP00183</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5514964358" lon="-4.9884943411">
+<name>WP00184</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5524677634" lon="-4.9892220808">
+<name>WP00185</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5533825119" lon="-4.9894977558">
+<name>WP00186</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5541031845" lon="-4.9894325631">
+<name>WP00187</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5551553651" lon="-4.9877249999">
+<name>WP00188</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5556106748" lon="-4.9856040073">
+<name>WP00189</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5557139470" lon="-4.9841063740">
+<name>WP00190</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5558465109" lon="-4.9832621884">
+<name>WP00191</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5553734633" lon="-4.9823702988">
+<name>WP00192</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5551119913" lon="-4.9810881304">
+<name>WP00193</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5549578010" lon="-4.9800179009">
+<name>WP00194</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5548455495" lon="-4.9790730666">
+<name>WP00195</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5547917339" lon="-4.9775630950">
+<name>WP00196</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5549135844" lon="-4.9771657187">
+<name>WP00197</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5547075832" lon="-4.9754403113">
+<name>WP00198</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5547891250" lon="-4.9729642872">
+<name>WP00199</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5546932798" lon="-4.9713289434">
+<name>WP00200</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5555251289" lon="-4.9713128232">
+<name>WP00201</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5564770349" lon="-4.9719165847">
+<name>WP00202</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5568535041" lon="-4.9721496215">
+<name>WP00203</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5575068809" lon="-4.9720788125">
+<name>WP00204</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5578715719" lon="-4.9718632451">
+<name>WP00205</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5585756183" lon="-4.9715522090">
+<name>WP00206</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5594374760" lon="-4.9702767324">
+<name>WP00207</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5594518138" lon="-4.9687312350">
+<name>WP00208</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5601185405" lon="-4.9671554627">
+<name>WP00209</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5604859247" lon="-4.9658818014">
+<name>WP00210</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5608289340" lon="-4.9646876111">
+<name>WP00211</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5610375677" lon="-4.9644190329">
+<name>WP00212</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5609797159" lon="-4.9630713305">
+<name>WP00213</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5609913010" lon="-4.9625838108">
+<name>WP00214</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5614017948" lon="-4.9585456699">
+<name>WP00215</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5616316196" lon="-4.9573832469">
+<name>WP00216</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5626580557" lon="-4.9557945689">
+<name>WP00217</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5626109881" lon="-4.9549361119">
+<name>WP00218</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5632012954" lon="-4.9527841443">
+<name>WP00219</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5633394222" lon="-4.9516958920">
+<name>WP00220</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5626745278" lon="-4.9494053331">
+<name>WP00221</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5624691068" lon="-4.9476390692">
+<name>WP00222</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5613390815" lon="-4.9431552184">
+<name>WP00223</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5624691068" lon="-4.9476390692">
+<name>WP00222</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5638960262" lon="-4.9509658919">
+<name>WP00225</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5649957298" lon="-4.9529241180">
+<name>WP00226</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5658970911" lon="-4.9537678754">
+<name>WP00227</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5671424713" lon="-4.9571624729">
+<name>WP00228</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5674340657" lon="-4.9571852546">
+<name>WP00229</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5673279600" lon="-4.9578690176">
+<name>WP00230</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5676118425" lon="-4.9582168767">
+<name>WP00231</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5680155881" lon="-4.9582484326">
+<name>WP00232</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5682536446" lon="-4.9586334289">
+<name>WP00233</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5685763458" lon="-4.9582922615">
+<name>WP00234</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5692248964" lon="-4.9584243764">
+<name>WP00235</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5692825457" lon="-4.9588359937">
+<name>WP00236</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5697048641" lon="-4.9590318565">
+<name>WP00237</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5703295401" lon="-4.9611163095">
+<name>WP00238</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5707571368" lon="-4.9629818379">
+<name>WP00239</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5712722832" lon="-4.9639992891">
+<name>WP00240</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5726855936" lon="-4.9650464260">
+<name>WP00241</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5731951148" lon="-4.9672442630">
+<name>WP00242</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5742935845" lon="-4.9692440776">
+<name>WP00243</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5753999246" lon="-4.9718553946">
+<name>WP00244</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5757558991" lon="-4.9720055079">
+<name>WP00245</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5758819077" lon="-4.9733183906">
+<name>WP00246</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5762301273" lon="-4.9737936598">
+<name>WP00247</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5762137802" lon="-4.9754211212">
+<name>WP00248</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5766800817" lon="-4.9765979273">
+<name>WP00249</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5775900061" lon="-4.9770767149">
+<name>WP00250</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5788180370" lon="-4.9792908642">
+<name>WP00251</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5788807988" lon="-4.9832457983">
+<name>WP00252</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5792827096" lon="-4.9852321472">
+<name>WP00253</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5790535957" lon="-4.9863542785">
+<name>WP00254</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5795880869" lon="-4.9884325876">
+<name>WP00255</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5807817846" lon="-4.9911331983">
+<name>WP00256</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5816623843" lon="-4.9937684781">
+<name>WP00257</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5816847987" lon="-4.9947069190">
+<name>WP00258</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5815403645" lon="-4.9979127214">
+<name>WP00259</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5820434308" lon="-5.0003553686">
+<name>WP00260</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5821448207" lon="-5.0008113874">
+<name>WP00261</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5821896114" lon="-5.0017516211">
+<name>WP00262</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5831315691" lon="-5.0027630741">
+<name>WP00263</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5834533281" lon="-5.0033995155">
+<name>WP00264</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5834854606" lon="-5.0039315132">
+<name>WP00265</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5836560833" lon="-5.0043116047">
+<name>WP00266</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5837476648" lon="-5.0051741442">
+<name>WP00267</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5840322858" lon="-5.0064185744">
+<name>WP00268</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5845734178" lon="-5.0072761420">
+<name>WP00269</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5847635186" lon="-5.0077799928">
+<name>WP00270</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5847388789" lon="-5.0097329786">
+<name>WP00271</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5846110365" lon="-5.0103744524">
+<name>WP00272</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5846099149" lon="-5.0113518326">
+<name>WP00273</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5845005668" lon="-5.0121576827">
+<name>WP00274</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5846164869" lon="-5.0129407444">
+<name>WP00275</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5846222208" lon="-5.0136335758">
+<name>WP00276</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5845469086" lon="-5.0148901387">
+<name>WP00277</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5845799748" lon="-5.0153815089">
+<name>WP00278</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5847592296" lon="-5.0163325453">
+<name>WP00279</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5847161534" lon="-5.0171843991">
+<name>WP00280</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5845981079" lon="-5.0174193503">
+<name>WP00281</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5844176922" lon="-5.0174456854">
+<name>WP00282</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5839181582" lon="-5.0185869244">
+<name>WP00283</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5834575670" lon="-5.0199756026">
+<name>WP00284</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5828049461" lon="-5.0209416493">
+<name>WP00285</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5824867826" lon="-5.0220158332">
+<name>WP00286</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5816606259" lon="-5.0227236042">
+<name>WP00287</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5808938693" lon="-5.0237618841">
+<name>WP00288</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5800686890" lon="-5.0244289435">
+<name>WP00289</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5796920832" lon="-5.0251318437">
+<name>WP00290</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5789021426" lon="-5.0252722877">
+<name>WP00291</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5780993837" lon="-5.0259410740">
+<name>WP00292</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5771728968" lon="-5.0261520152">
+<name>WP00293</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5767174159" lon="-5.0264006212">
+<name>WP00294</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5762210219" lon="-5.0264830730">
+<name>WP00295</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5759166243" lon="-5.0269880668">
+<name>WP00296</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5756649746" lon="-5.0271715264">
+<name>WP00297</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5754074053" lon="-5.0275988184">
+<name>WP00298</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5754608781" lon="-5.0281731509">
+<name>WP0009</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5759025469" lon="-5.0284935290">
+<name>WP0008</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5763715785" lon="-5.0286125097">
+<name>WP0007</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5765187102" lon="-5.0290314798">
+<name>WP0006</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5765405769" lon="-5.0309063185">
+<name>WP0005</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5767174400" lon="-5.0328750229">
+<name>WP0004</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5764311806" lon="-5.0344808449">
+<name>WP0003</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5761188389" lon="-5.0353108914">
+<name>WP0002</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+<rtept lat="56.5760894861" lon="-5.0355935686">
+<name>WP0001</name>
+<sym>Dot</sym>
+<type>Waypoints</type>
+</rtept>
+</rte>
+</gpx>

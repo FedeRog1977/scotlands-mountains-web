@@ -1,0 +1,45 @@
+{
+    "landmass": [
+        {
+            "name": "",
+	    "type": "",
+	    "sub-type": "",
+	    "sub-sub-type": "",
+	    "munro": [
+	        {
+                    "name": "",
+                    "lat": ,
+                    "lon": ,
+                    "OS-grid": "",
+                    "elevation": ,
+                    "prominence": ,
+                    "isolation": ,
+                    "trig":
+                }
+            ],
+	    "munro-top": [],
+	    "corbett": [],
+	    "corbett-top": [],
+	    "corrie": [
+                {
+		    "name": ""
+		}
+ 	    ],
+	    "gully": ,
+	    "lochain": ,
+	    "waterfall": ,
+	    "peat-bog": ,
+	    "mud-bog": ,
+	    "boulder-field": ,
+	    "scree": ,
+	    "shoulder": ,
+	    "arete": ,
+	    "human-features": [],
+	    "parent-landmass": "",
+	    "parent-peak": "",
+	    "region": "",
+	    "sub-region": "",
+	    "informal-region": ""
+        }
+    ]
+}

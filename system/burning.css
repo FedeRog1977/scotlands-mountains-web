@@ -1,0 +1,1104 @@
+@font-face {
+        font-family: Garamond-Serif;
+        src: url(Fonts/EBGaramond-Regular.ttf);
+}
+
+@font-face {
+        font-family: Garamond-Bold;
+        src: url(Fonts/EBGaramond-SemiBold.ttf);
+}
+
+@font-face {
+        font-family: Garamond-Italic;
+        src: url(Fonts/EBGaramond-Italic.ttf);
+}
+
+@font-face {
+        font-family: Audi-Extended;
+        src: url(Fonts/Audi/Extended-Bold.ttf);
+}
+
+@font-face {
+        font-family: Audi-Regular;
+        src: url(Fonts/Audi/Normal.ttf);
+}
+
+@font-face {
+        font-family: Audi-Bold;
+        src: url(Fonts/Audi/Bold.ttf);
+}
+
+@font-face {
+        font-family: Audi-Italic;
+        src: url(Fonts/Audi/Italic.ttf);
+}
+
+@font-face {
+        font-family: Giant;
+        src: url(Fonts/NFS.ttf);
+}
+
+:root {
+	--bg: #F5F5F5;
+	--fg: #FFFFFF; /*#FBEACF;*/
+	--header-footer: linear-gradient(90deg, #808080 -100%, #303030 100%);
+	/*--header-footer: linear-gradient(to bottom left, #87CEEB 10%, #D8F2FF);*/
+	/*--header-footer: linear-gradient(to bottom left, #303030 100%, #303030);*/
+	/*--title: radial-gradient(#87CEEB, #303030 70%);*/
+	--drop: #E8E8E8;
+        --font: #000000;
+        --font2: #96B9EE;
+	--font-header-footer: #808080;
+	--overview-button: rgba(135, 206, 235, 0.5);
+	/*--overview-button: linear-gradient(
+		90deg,
+		rgba(135, 206, 235, 0) 0%,
+		rgba(135, 206, 235, 0.125) 12.5%,
+		rgba(135, 206, 235, 0.25) 25%,
+		rgba(135, 206, 235, 0.5) 50%,
+		rgba(135, 206, 235, 0.25) 62.5%,
+		rgba(135, 206, 235, 0.125) 75%,
+		rgba(135, 206, 235, 0) 100%
+	);*/
+	--font-hover: #87CEEB;
+	--hill-hide: #BEBEBE;
+	--link-trans: 0.25s;
+	--dark-trans: 0.5s;
+}
+
+/* Preliminaries */
+
+h1 {
+	font-family: Audi-Extended;
+	font-size: 22px;
+	font-weight: normal;
+	color: var(--font);
+}
+
+h2 {
+	font-family: Audi-Extended;
+	font-size: 18px;
+	font-weight: normal;
+	color: var(--font);
+}
+
+h3 {
+	font-family: Audi-Extended;
+	font-size: 16px;
+	font-weight: normal;
+	color: var(--font);
+}
+
+body {
+	background-color: var(--bg);
+	margin: 0;
+	padding: 0;
+}
+
+b {
+	font-family: Audi-Bold;
+}
+
+i {
+	font-family: Audi-Italic;
+}
+
+small {
+	font-size: 10px;
+}
+
+/* Header */
+
+.header {
+        background-image: var(--header-footer);
+	height: 150px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+        padding: 0 12.5% 0 6.25%;
+}
+
+	@media only screen and (max-width: 1026px) {
+		.header {
+			padding: 0 6.25% 0 6.25%;
+		}
+	}
+
+        .title {
+                float: left;
+                line-height: 15px;
+		margin: 30px 0 0 0;
+		animation-name: burn-in;
+		animation-duration: 2s;
+        }
+
+		.title h1 {
+			font-family: Giant;
+			font-size: 24px;
+			/*text-shadow: 0 0 20px rgba(135, 206, 235, 0.5);*/
+			letter-spacing: 2px;
+			margin: 0.25em 0 0 0;
+			padding: 0;
+                }
+
+		.title img {
+			max-width: 250px;
+			/*-webkit-filter: drop-shadow(0 0 10px rgba(135, 206, 235, 0.5));*/
+		}
+
+		@keyframes burn-in {
+  			0%   {transform: translate(-100%, 0%); padding-left: -200px;}
+  			50%  {padding-left: 100px;}
+  			100% {padding-left: 0px;}
+		}
+
+	.navigation {
+		font-family: Giant;
+		text-align: right;
+                word-spacing: 15px;
+		padding: 3.75em 0 0 0;
+	}
+
+		.pages-drop {
+        		display: inline-block;
+        		position: auto;
+			margin: 0;
+		        padding: 0;
+		}
+
+			.pages-drop p {
+				margin: 0;
+                                transition: color var(--link-trans);
+			}
+
+			.pages-drop p:hover {
+				color: var(--font-hover);
+				cursor: pointer;
+                                transition: color var(--link-trans);
+			}
+
+			.pages-drop:hover .pages-drop-cont {
+			        display: block;
+			}
+
+			.pages-drop-cont {
+				font-size: 14px;
+				text-align: left;
+                                letter-spacing: 2px;
+				line-height: 25px;
+				background-image: var(--header-footer);
+				box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.5);
+				display: none;
+        			position: fixed;
+        			margin: 0;
+        			padding: 1em;
+			}
+
+		.pages-desktop, .pages-mobile, .pages-mobile-button {
+                        font-size: 24px;
+			letter-spacing: 2px;
+			color: var(--font-header-footer);
+                        transition: color var(--dark-trans);
+                }
+
+		.pages-mobile {
+		        font-family: Giant;
+			letter-spacing: 2px;
+			color: var(--font);
+                        background-color: var(--drop);
+                        text-align: right;
+                        transition: background var(--dark-trans);
+			z-index: -1;
+                        margin: 0;
+                        padding: 1em 6.25% 1em 6.25%;
+                }
+
+			.pages-hiking, .pages-cycling {
+				background-color: var(--bg);
+				margin: 0.25em 0 0.25em 0;
+				padding: 0.25em 0.5em 0.25em 0;
+			}
+
+                        .pages-mobile a:link, .pages-mobile a:visited {
+				color: var(--font);	
+			}
+                        
+			.pages-desktop a:link, .pages-desktop a:visited,
+                        .pages-mobile-button a:link, .pages-mobile-button a:visited {
+				color: var(--font-header-footer);	
+			}
+
+                        .pages-desktop a:link, .pages-desktop a:visited,
+                        .pages-mobile a:link, .pages-mobile a:visited,
+                        .pages-mobile-button a:link, .pages-mobile-button a:visited {
+                                text-decoration: none;
+                                transition: color var(--link-trans);
+                        }
+
+                        .pages-desktop a:hover, .pages-dekstop a:active,
+                        .pages-mobile a:hover, .pages-mobile a:active,
+                        .pages-mobile-button a:hover, .pages-mobile-button a:active {
+                                color: var(--font-hover);
+                                text-decoration: none;
+                                transition: color var(--link-trans);
+                        }
+
+                        .pages-desktop u, .pages-mobile u {
+                                list-style-type: none;
+                                text-decoration: none;
+                                word-spacing: 1px;
+                        }
+
+                        .pages-desktop li:hover, .pages-mobile li:hover {
+                                color: var(--font-hover);
+                        }
+
+                        @media only screen and (max-width: 1026px) {
+                                .pages-desktop {
+                                        display: none;
+                                }
+                        }
+
+                        @media only screen and (min-width: 1026px) {
+                                .pages-mobile, .pages-mobile-button {
+                                        display: none;
+                                }
+                        }
+
+.footer {
+	font-family: Audi-Extended;
+        font-size: 16px;
+        text-align: center;
+        color: var(--font-header-footer);
+        background-image: var(--header-footer);
+        transition: color var(--dark-trans), background var(--dark-trans);
+	/*box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);*/
+        margin: 0;
+        padding: 1.25em 12.5% 1.25em 12.5%;
+}
+
+	@media only screen and (max-width: 1026px) {
+                .footer {
+                        display: none;
+                }
+        }
+
+
+
+
+
+/* Hiding Content */
+
+.hidden {
+        display: none;
+}
+
+
+
+
+
+
+
+
+/* Body */
+
+.bodycage {
+	padding: 0 17.5% 0 17.5%;
+}
+
+	@media only screen and (max-width: 1026px) {
+        	.bodycage {
+			padding: 1.25em;
+        	}
+	}
+
+	.body {
+		font-family: Audi-Regular;
+		font-size: 14px;
+		color: var(--font);
+		background-color: var(--fg);
+		/*border-radius: 0.5em;*/
+		/*box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);*/
+		margin: 0.25em 0 0.25em 0;
+		padding: 1.25em;
+		transition: color var(--link-trans);
+	}
+
+		.body p {
+			text-align: justify;
+		}
+
+		@media only screen and (max-width: 1026px) {
+        	        .body {
+				min-height: 50vh;
+        	        }
+        	}
+
+		.body a:hover, .body a:active {
+			color: var(--font-hover);
+			cursor: pointer;
+			transition: color var(--link-trans);
+		}
+
+
+
+
+
+
+
+/* Images */
+
+.imgstd {
+	width: 100%;
+	max-width: 100%;
+	background-color: var(--bg);
+	border: 1px solid var(--font);
+	border-radius: 0.25em;
+	transition: background var(--dark-trans), border var(--dark-trans);
+	margin: 0;
+	padding: 0.25em;
+}
+
+.imghill {
+	width: 325px;
+	height: 225px;
+	background-color: var(--bg);
+	border: 1px solid var(--font);
+	border-radius: 0.25em;
+	margin: 0;
+	padding: 0.25em;
+}
+
+	@media only screen and (max-width: 768px) {
+		.imghill {
+			width: 275px;
+			height: 190px;
+		}
+	}
+
+.imgcage {
+	width: 100%;
+	margin: 1.25em auto 1.25em auto;
+}
+
+	.imgrow {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.imgrow > * {
+		flex-shrink: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.imgcol {
+		padding: 0.25em;
+	}
+
+		@media only screen and (min-width: 768px) {
+			.imgcol {
+				flex: 1 0;
+			}
+		}
+
+.imgtext-cont, .imgtext-mobile-cont {
+	background-image: url("./Photos/home-bg.jpg");
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 12.5% 12.5% 12.5% 12.5%;
+}
+
+.imgtext-mobile-cont {
+	padding: 1.25em;
+	margin: -1.25em -1.25em 1.25em -1.25em;
+}
+
+	@media only screen and (max-width: 1026px) {
+		.imgtext-cont {
+			display: none;
+		}
+	}
+
+	@media only screen and (min-width: 1026px) {
+		.imgtext-mobile-cont {
+			display: none;
+		}
+	}
+	.imgtext-cont h1, .imgtext-cont p, .imgtext-buttons {
+		margin: 1.25em 0 1.25em 0;
+	}
+
+	.imgtext-cont h1 {
+		color: #FFFFFF;
+		opacity: 0.8;
+	}
+
+	.imgtext-cont p {
+		font-family: Audi-Extended;
+		text-align: justify;
+    		text-align-last: center;
+		color: #FFFFFF;
+		line-height: 25px;
+		opacity: 0.5;
+		margin: 0;
+	}
+
+	.imgtext-mobile-cont p {
+		font-family: Audi-Extended;
+		text-align: justify;
+    		text-align-last: center;
+		color: var(--font);
+		line-height: 25px;
+		opacity: 0.5;
+	}
+
+	.imgtext-left {
+		position: absolute;
+		top: 7.5%;
+		left: 17.5%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imgtext-top {
+		margin: 0 0 25px 0;
+	}
+
+	.imgtext-top-mobile {
+		margin: 25px 0 25px 0;
+	}
+
+	.imgtext-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imgtext-buttons, .imgtext-mobile-buttons {
+		text-align: center;
+	}
+
+		.imgtext-mobile-button {
+			font-family: Audi-Extended;
+			font-size: 18px;
+			color: rgba(0, 0, 0, 0.8);
+			background: rgba(0, 0, 0, 0);
+			border: 2px solid rgba(0, 0, 0, 0.8);
+			margin: 0 0.25em 0 0.25em;
+			padding: 7.5px;
+			transition: color var(--link-trans), border var(--link-trans), background var(--link-trans);
+		}
+
+		.imgtext-button {
+			font-family: Audi-Extended;
+			font-size: 18px;
+			color: rgba(255, 255, 255, 0.8);
+			background: rgba(0, 0, 0, 0);
+			border: 2px solid rgba(255, 255, 255, 0.8);
+			margin: 0 0.25em 0 0.25em;
+			padding: 10px;
+			transition: color var(--link-trans), border var(--link-trans), background var(--link-trans);
+		}
+
+		.imgtext-button:hover {
+			background: rgba(135, 206, 235, 0.8);
+			border: 2px solid rgba(135, 206, 235, 0);
+			cursor: pointer;
+			transition: color var(--link-trans), border var(--link-trans), background var(--link-trans);
+		}
+
+	.imgtext-title {
+	}
+
+		.imgtext-title a {
+			color: #FFFFFF;
+			text-decoration: none;
+			transition: color var(--link-trans);
+		}
+
+		.imgtext-mobile-title a {
+			color: var(--font);
+			text-decoration: none;
+			transition: color var(--link-trans);
+		}
+
+		.imgtext-title a:hover, .imgtext-mobile-title a:hover {
+			color: var(--font-hover);
+			transition: color var(--link-trans);
+		}
+
+/*
+.imgtext-mobile-trans {
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 0.5) 50%,
+		rgba(255, 255, 255, 0) 100%
+	); 
+	margin: -1.25em;
+	padding: 12.5%;
+}
+*/
+
+.imgtext-mobile-desktop {
+}
+
+	@media only screen and (max-width: 1026px) {
+		.imgtext-mobile-desktop {
+			background: linear-gradient(
+				0deg,
+				rgba(255, 255, 255, 1) 0%,
+				rgba(255, 255, 255, 0.5) 50%,
+				rgba(255, 255, 255, 0) 100%
+			); 
+		}
+	}
+
+/* Tables */
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto 0 auto;
+}
+
+	table u, table ul {
+		list-style-type: none;
+	}
+
+	th {
+		font-family: Audi-Extended;
+		text-align: center;
+		font-weight: normal;
+		transition: border var(--dark-trans);
+		padding: 0.25em 0.75em 0.25em 0.75em;
+	}
+
+	td {
+		transition: border var(--dark-trans);
+	}
+
+	.data td {
+		text-align: left;
+		vertical-align: top;
+		width: auto;
+		padding: 0.25em 0.75em 0.25em 0.75em;
+	}
+
+		@media only screen and (max-width: 1026px) {
+			.data {
+				font-size: 0.5vw;
+				width: 100%;
+			}
+		}
+
+/* Inputs */
+
+select, input[type="text"], button {
+	font-family: Audi-Regular;
+	color: #FFFFFF;
+	background-image: var(--header-footer);
+	border: none;
+	border-radius: 0.125em;
+	padding: 0.5em;
+}
+		
+	.optionsRow select {
+		width: 100%;
+	}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+	option {
+		color: var(--font);
+	}
+
+
+
+
+/* Drafting */
+
+.burning {
+	font-family: Giant;
+	font-size: 48px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: #FFFFFF;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.burning-pic {
+	max-width: 500px;
+	-webkit-filter: drop-shadow(0 0 40px rgba(0, 0, 0, 1));
+  	/*filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));*/
+	margin: 0;
+	padding: 0;
+}
+
+.burning-pic-mobile {
+	text-align: center;
+	max-width: 300px;
+	-webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+}
+
+.profile-pic {
+	max-width: 125px;
+	border-radius: 5em;
+	margin: 0 1.75em 0 1.75em;
+}
+
+.elements-profile {
+	font-family: Audi-Extended;
+        font-size: 16px;
+	color: var(--font);
+	transition: color var(--dark-trans);
+}
+			
+	.elements-profile a:link, .elements-profile a:visited {
+		color: var(--font);	
+                text-decoration: none;
+		padding: 0 0 0.5em 0;
+                transition: color var(--link-trans);
+	}
+
+        .elements-profile a:hover, .elements-profile a:active {
+                color: var(--font-hover);
+                transition: color var(--link-trans);
+        }
+
+	.element-heading {
+		text-align: center;
+	}
+
+	.element {
+		background-color: var(--bg);
+		margin: 0.5em 0 0.5em 0;
+		padding: 1.25em 2.5em 1.25em 2.5em;
+	}
+
+		.sub-element {
+			background-color: var(--fg);
+			margin: 1.25em 0 1.25em 0;
+			padding: 1.25em;
+		}
+
+			.sub-sub-element {
+				/*border: 1px dashed var(--font);*/
+				background: var(--fg);
+				margin: 0;
+				padding: 0 2em 0 2em;
+			}
+
+
+#overview .element,
+#conditioning .element,
+#weather .element {
+	text-align: center;
+}
+
+.weatherrow {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.weatherrow > * {
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+	.weathercol {
+		text-align: left;
+		background-color: var(--bg);
+		margin: 0.5em 0.125em 0.5em 0.125em;
+		padding: 0.5em 0 0.5em 0;
+	}
+
+		@media (min-width: 768px) {
+			.weathercol {
+				flex: 2 0;
+			}
+		}
+
+	.weather-int, .weather-std, .weather-atm, .weather-dyt {
+		background-color: var(--fg);
+		margin: 0.75em 0 0.75em 0;
+		padding: 0.125em 0.75em 0.125em 0.75em;
+	}
+
+	.weather-int {
+		margin-top: 0;
+	}
+
+	.weather-std {
+		padding: 0.125em 0 0.125em 0;
+	}
+
+		.hr {
+			font-size: 12px;
+		}
+
+#weather .fa-sun {
+	color: #EE6600;
+}
+
+.fa-moon {
+	color: #0C317A;
+}
+
+.fa-cloud-sun {
+	color: #D3D3D3;
+}
+
+.fa-cloud-moon {
+	color: #D3D3D3;
+}
+
+.fa-cloud {
+	color: #D3D3D3;
+}
+
+.fa-cloud-sun-rain {
+	color: #A0A0A0;
+}
+
+	.elements-profile .fa-cloud-sun {
+		color: #000000;
+	}
+
+.fa-cloud-rain {
+	color: #696969;
+}
+
+.fa-thunderstorm {
+	color: #696969;
+}
+
+.fa-snowflake {
+	color: #D3D3D3;
+}
+
+.fa-smog {
+	color: #D3D3D3;
+}
+
+/* Conquest Map */
+
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+        @media only screen and (max-width: 1026px) {
+        	#map {
+			width: 100%;
+			height: 100%;
+                }
+        }
+
+#scope {
+	font-size: 16px;
+	background-color: rgba(255, 255, 255, 0.75);
+	font-family: Audi-Extended;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+}	
+
+.options-container {
+	z-index: 1;
+	margin: 0.75em;
+}
+
+	#optionsOpt, #menu {
+	        background: var(--fg);
+		border-radius: 0.25em;
+	        position: absolute;
+		height: 25px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+	}
+
+	#optionsOpt {
+		font-size: 18px;
+	}
+
+	#menu {
+		font-size: 16px;
+		font-family: Audi-Extended;
+		margin: 0 0 0 3em;
+		padding: 12.5px 10px 7.5px 10px;
+	}
+
+		#menu input[type="radio"] {
+			cursor: pointer;
+        		margin-top: -1px;
+        		vertical-align: middle;
+    		}
+
+    		#menu label {
+			cursor: pointer;
+    			margin-right: 8px;
+    		}
+
+	#optionsOpt {
+		text-align: center;
+		vertical-align: center;
+		margin: 0 3em 0 0;
+		padding: 12.5px 12.5px 7.5px 13.5px;
+	}
+
+		#optionsOpt a:hover {
+			cursor: pointer;
+		}
+
+	#optionsOptOpen {
+		transition: color var(--link-trans);
+	}
+
+	#optionsOptOpen:hover {
+		color: var(--font-hover);
+		transition: color var(--link-trans);
+	}
+
+#options {
+	font-family: Audi-Regular;
+	text-align: left;
+	background-color: rgba(255, 255, 255, 0.9);
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s; 
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}	
+
+	#options #optionsOptClose {
+		font-size: 36px;
+		cursor: pointer;
+		position: absolute;
+		top: 0.125em;
+		right: 0.5em;
+		margin: 0 0 0 50px;
+		transition: color var(--link-trans);
+	}
+
+	#options #optionsOptClose:hover {
+		color: var(--font-hover);
+		transition: color var(--link-trans);
+	}
+
+	.optionsCont {
+		margin: 1.25em;
+	}
+
+	#options select {
+		max-width: 250px;
+	}
+
+	#options button {
+		color: var(--font);
+		border: 1.5px solid var(--font);
+		border-radius: 0.25em;
+		background: #FFFFFF;
+		height: 40px;
+		width: 40px;
+		margin: 0.625em 0 0.625em 0;
+		padding: 0.25em;
+		transition: color var(--link-trans), border-color var(--link-trans);
+	}
+
+	#options button:hover {
+		cursor: pointer;
+		color: var(--font-hover);
+		border-color: var(--font-hover);
+		transition: color var(--link-trans), border-color var(--link-trans);
+	}
+
+	#options button.hide {
+		color: var(--hill-hide);
+	}
+
+	#options button.hide:hover {
+		color: var(--font-hover);
+	}
+
+	#options button.wide {
+		height: 30px;
+		width: 75px;
+	}
+
+	#options button.wider {
+		height: 30px;
+		width: 100px;
+	}
+
+		.optionsRow {
+			text-align: center;
+			background-color: var(--bg);
+			margin: 0.625em 0.625em 1.25em 0.625em;
+			padding: 1.25em 0.5em 1.25em 0.5em;
+		}
+
+		.flexRow {
+                	display: flex;
+                	flex-wrap: wrap;
+		} 
+        
+		.flexRow > * {
+                	width: 100%;
+                	max-width: 100%;
+        	}
+
+		.optionsCol {
+			text-align: center;
+			display: inline-block;
+		}
+
+			.optionsColItemTwo {
+				display: inline-block;
+				margin: 1.75em;
+			}
+
+			.overview-left, .overview-center, .overview-right {
+				background-color : var(--overview-button);
+				padding: 0.5em;
+			}
+
+			.overview-left {
+				margin: 0 0.125em 0 0;
+			}
+
+                		@media (max-width: 768px) {
+                        		.overview-left {
+						margin: 0.125em 0 0.125em 0;
+                        		}
+                		}
+
+			.overview-center {
+				margin: 0 0.125em 0 0.125em;
+			}
+
+                		@media (max-width: 768px) {
+                        		.overview-center {
+						margin: 0.125em 0 0.125em 0;
+                        		}
+                		}
+
+			.overview-right {
+				margin: 0 0 0 0.125em;
+			}
+
+                		@media (max-width: 768px) {
+                        		.overview-right {
+						margin: 0.125em 0 0.125em 0;
+                        		}
+                		}
+
+                @media (min-width: 768px) {
+                        .optionsCol {
+				flex: 1 0;
+                        }
+                }
+
+		.optionsLabel {
+			font-size: 12px;
+			display: block;
+		}
+
+#statsPre, #statsOut,
+#locationPre, #locationOut,
+#abilityPre, #abilityOut,
+#equipmentPre, #equipmentOut {
+	font-size: 14px;
+	text-align: center;
+}
+
+	.overview-fit {
+		padding: 0 15em 0 15em;
+	}
+
+		@media only screen and (max-width: 1026px) {
+			.overview-fit {
+				padding: 0;
+			}
+		}
+
+	.overview-separate {
+		/*background-color: rgba(135, 206, 235, 0.25);*/
+		background: linear-gradient(
+			90deg,
+			rgba(135, 206, 235, 0) 0%,
+			rgba(135, 206, 235, 0.125) 12.5%,
+			rgba(135, 206, 235, 0.25) 25%,
+			rgba(135, 206, 235, 0.5) 50%,
+			rgba(135, 206, 235, 0.25) 62.5%,
+			rgba(135, 206, 235, 0.125) 75%,
+			rgba(135, 206, 235, 0) 100%
+		); 
+		margin: 1.25em 0 1.25em 0;
+		padding: 0.125em;
+	}
+
+#nearestOut, #refinementsOut {
+	background-color: var(--fg);
+	margin: 0.5em 0 0.5em 0;
+	padding: 1.25em 2.5em 1.25em 2.5em;
+}
+
+#nearestOut a, #statsOut a {
+	font-family: Audi-Extended;
+	color: var(--font);
+	text-decoration: none;
+	transition: color var(--link-trans);
+}
+
+#nearestOut a:hover, #statsOut a:hover {
+	color: var(--font-hover);
+	transition: color var(--link-trans);
+}
+
+.slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 15px;
+        background: var(--fg);
+        border-radius: 0.75em;
+        outline: none;
+        opacity: 70%;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+}
+
+        .slider:hover {
+                opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 15px;
+                background: var(--font);
+                border-radius: 0.75em;
+                cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                background: #04AA6D;
+                cursor: pointer;
+        }
