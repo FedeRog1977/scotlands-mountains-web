@@ -880,31 +880,31 @@ if ((day.wind_deg) >= 348.76) {
 
 		\subsubsection{`Conquest' Map}
 
-	The `Conquest Map' is the heart of this system. It uses the Ordnance Survey Leisure Map API (OS API) (Ordnance Survey, 2022) to display a base map, along with other JavaScript features such as use of the Leaflet (Leaflet, 2022) library and others noted in the \textit{System Construction} section, upon which many previously discussed, and further layers of, data is processed and displayed using various methods and forms of media.
+	The `Conquest Map' uses the Ordnance Survey Leisure Map API (OS API) (Ordnance Survey, 2022) to display a base map, along with other JavaScript features such as use of the Leaflet (Leaflet, 2022) library and others noted in the \textit{System Construction} section, upon which data is processed and displayed.
 
 			\paragraph{Change Map Layer}
 
-	A basic three-option \texttt{radio} input feature is available to the user as soon as they enter the page, giving them the option to fetch three different sets of base map layer data from the OS API: `Leisure', `Road', `Outdoor'. These are the three most relevant topographical maps to the data displayed.
+	Three-option \texttt{radio} input providing the option to fetch three different sets of base map layer data from the OS API: `Leisure', `Road', `Outdoor'. These are the three most relevant topographical maps to the data displayed.
 
 			\paragraph{Show Current Location \& Find Nearest}
 
-	An array of two \texttt{button}s are presented which call functions that display the current location of the user's device and find the nearest hill to the user, respectively. The first of these uses the Geolocation API to fetch the \texttt{lat} and \texttt{lon} attributes and inputs then into a function which outputs the user's location by [1] centering the map crosshair to the coordinates, [2] creating and displaying a marker upon this location, and [3] calculating and presenting an accuracy/tolerance radius around this. Finding the nearest hill involves a similar process in that it fetches the user's coordinates using Geolocation and inputs them into a function which takes into account the coordinates of all routes in the relevant JSON file (Figure A4) and calculates their distance form the current coordinates. It then displays a hill as standard; it's markers, and pop-ups etc., are discussed under section 5.3.4.8
+	Two \texttt{button}s are call functions that display the current location of the user's device and find the nearest hill to the user. The first of these uses the Geolocation API to and a function which outputs the user's location by centering the map crosshair to the coordinates, displaying a marker upon this location, and calculating/presenting an accuracy/tolerance radius. Finding the nearest hill fetches the user's coordinates using Geolocation and uses a function which accounts all route coordinates in the JSON file (Figure A4) and calculates their distance form the current coordinates. It then displays a hill as standard. See section 5.3.4.8
 
 			\paragraph{Show \& Hide Features}
 
-	An array of four \texttt{button}s are presented which call functions that display markers for all Munros, Munro Tops, Corbetts, Corbett Tops, and hide all markers, respectively. These functions operate in a near-identical manner, in which they loop the relevant JSON file to fetch the \texttt{lat} and \texttt{lon} values of all the iterations of either \texttt{munro}, \texttt{munrotop}, \texttt{corbett}, or \texttt{corbetttop}. The output is the creation and display of a Leaflet marker for every hill relative to the button selected, with a bound Leaflet pop-up which accepts inputs such as the name and different statistics and images of the hill from the JSON file, and is displayed upon click [of the marker]. The `hide' function simply loops through the array used to store the markers upon creation and removes their relative layer from the map.
+	Five \texttt{button}s call functions that display markers for all Munros, Munro Tops, Corbetts, Corbett Tops, and hide all markers, respectively. They loop the JSON file to fetch latitude and longitude of all iterations of either Munro, 'Top, Corbett, 'Top. A Leaflet marker for every hill relevant to the button selected is created, with a bound Leaflet pop-up that displays various hill attributes from the JSON file, upon click. The `hide' function loops through the array used to store the markers upon creation and removes their layers from the map.
 
 			\paragraph{Filter Routes By `Ability' \& `Equipment'}
 
-	See section 5.3.2.1 for the breakdown of these components. After the user makes their relevant selections from the relevant HTML \texttt{select} protocol, instead of having all of the attributes of the associated matched items in the JSON file simply printed in a body of text, the selections are added to a pool. The values of this this pool (which are elements of ability and equipment) are then matched with routes under the landmasses of the appropriate JSON file. Once the user submits their request, all routes which either \textbf{do} or \textbf{do not} contain these attributes, based on the user preference through a \texttt{radio} input feature, are located in the appropriate JSON file. It then displays all of these routes as standard; route markers, lines, hill markers and pop-ups etc., are discussed under sections 5.3.4.7 and 5.3.4.8. Unlike when seeking an individual route, the map crosshair is not centered to any particular route as there may be more than one.
+	See section 5.3.2.1 first. The user uses \texttt{select} protocol to add attributes to an array.  This array represents features which they wish a route to include. Values of this array (elements of ability and equipment) are matched with routes in the JSON file. Once the request is submitted, all routes which either contain these attributes are located in the JSON file, and names of these routes are displayed accordingly. Given less constraint, an additional function would be developed which could be used as part of \texttt{button}s listing these routes, instead of plain text, which would display the route directly.
 
 			\paragraph{Score Route}
 
-	See section 5.3.1.1 for the breakdown of this component. No attributes differ.
+	See section 5.3.1.1. No attributes differ.
 
 			\paragraph{Describe Route Score}
 
-	See section 5.3.1.2 for the breakdown of this component. No attributes differ.
+	See section 5.3.1.2. No attributes differ.
 
 			\paragraph{Search Route}
 
