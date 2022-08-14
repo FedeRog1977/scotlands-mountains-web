@@ -739,40 +739,59 @@
 
 	\subsection{Data Application \& Manipulation}
 
-	All data discussed in Section 4 of this report is included through functions and others methods, producing desired outcomes which satisfy user requirements. A summary of this process is seen in Figure A6. Reference to data is detailed in Figure A4.\\\\HERE
+	All data discussed in Section 4 of this report is included through functions and others methods, producing desired outcomes which satisfy user requirements. A summary of this process is seen in Figure A6. Reference to data is detailed in Figure A4.
 
 		\subsubsection{`Overview'}
 
-	The `Overview' portion of the home page of this site refers to a more basic iteration of the route search and landmass search functions, seen subsequently in the `Conquest Map'. For the sake of continuity, all basic features of these functions' use of data is discussed under this heading; additional data required for the `Conquest Map' version are discussed latterly.
+	The `Overview' portion of the home page of this site refers to a more basic iteration of the route search and landmass search functions, seen subsequently in the `Conquest Map'. For the sake of continuity, all basic features of these functions' use of data is discussed under this heading; additional data required for the `Conquest Map' versions are discussed latterly.
 
 			\paragraph{Score Route}
 
-	This function exists purely to serve the Search Route function and has no purpose as a stand-alone. As it involves quite the lengthy arithmetic process however, it is granted its own sub-sub-sub-section. Although, to my judgement, this metric is fairly mathematically sound although will be constantly developed as I generate more ideas, it is still very subjective and based on my own experiences with and discussions about the Scottish hills and their conditions. Therefore, this `score' is not a definitive metric to describe the condition of a route to the masses. It should be judged and considered on an individual basis.\\
+	This function serves the \textit{Search Route} function. This metric is constantly under development as more/greater ideas are generated. It's still very subjective; based on my own and others' experiences. Therefore, the `score' is not a definitive metric to describe the condition of a route, it should be considered on an individual basis.\\
 
-	Scoring a route takes into account [1] four groups of subjective scores based on weights and values of the four route element factors under routes in the JSON file (type, stages, terrain types, terrain difficulties), and [2] a more objective and logical multiplier based on total number of [Munro, `Top, Corbett, `Top] tops covered on-route, the total elevation gained, and the total distance covered. Actual values of the weights were gathered through personal field consideration/conversation and are therefore subject to bias and constant adjustment. The multiplier was developed purely by myself. Parameters follow:
+	Scoring a route accounts [1] four groups of subjective scores based on weights and values of the four route element factors in the JSON file, and [2] a more objective multiplier based on total number of tops on-route, the total elevation gained, and the total distance covered. Actual values of weights are gathered through personal field practice and are therefore subject to bias and continuous adjustment. The multiplier is developed purely by myself. The imperial system is used therefore, as this computation calls mathematical scalability, conversion constants are required for elevation and distance. These are justified to four significant figures. The relevant mathematical notation is detailed in Figure B5. All parameters follow in the below table.
 
-	\begin{enumerate}
-	\setlength\itemsep{0cm}
-		\item Conversion constants (ft--m, mi--km) -- values
-		\item Number of tops -- value
-		\item Elevation -- value
-		\item Distance -- value
-		\item Route type (weight, \{weights, `values'\}, `score') -- matrix
-		\item Route stages (weight, \{weights, `values'\}, `score') -- matrix
-		\item Terrain types (weight, \{weights, `values'\}, `score') -- matrix
-		\item Terrain difficulties (weight, \{weights, `values'\}, `score') -- matrix
-	\end{enumerate}
+	\begin{table}[h]
+		\scriptsize
+		\renewcommand{\arraystretch}{1.25}
+	\begin{center}
+	\begin{tabular}{l|l}
+		\textsc{Representation} & \textsc{Element}\\
+		\hline
+		\hline
+		Values & Conversion constants (ft--m, mi--km)\\
+		Value & Number of tops\\
+		Value & Elevation\\
+		Value & Distance\\
+		Matrix of Values & Route type (weight, \{weights, `values'\}, `score')\\
+		Matrix of Values & Route stages (weight, \{weights, `values'\}, `score')\\
+		Matrix of Values & Terrain types (weight, \{weights, `values'\}, `score')\\
+		Matrix of Values & Terrain difficulties (weight, \{weights, `values'\}, `score')\\
+		\hline
+		\hline
+	\end{tabular}
+		\caption{Score Route Parameters}
+	\end{center}
+	\end{table}	
 
-	This site uses the functional imperial system therefore, as this computation calls for the one and only reasonable use of the metric system (mathematical scalability), conversion constants are required for elevation and distance. These are justified to four significant figures. The relevant mathematical notation is detailed in Figure B5.
+	Given project constraints, some restrictions are applied as follow in the below table.
 
-	Given the time constraint of the project, some restrictions have been applied and notes made, as follows:
-
-	\begin{itemize}
-	\setlength\itemsep{0cm}
-		\item Writing the score route function would be too-lengthy-a-process if calculating the score of each of the four route elements based on the individual values of the 5, 4, 11 and 20 sub-elements respectively using the factorial method, so the latter 3 are calculated simply by volume/variety. This does not accurately reflect the difficulty of terrain for example as a route with grass and concrete will be considered more difficult than a route with grade 3 slab, simply because it has one more element. In this context it doesn't matter too much as the math has been demonstrated successfully however.
-		\item If using the exhaustive method, volume is accounted for by the inclusion and exclusion of values which, if all-inclusive, should add up to N sub-elements in that group. But this is rare.
-		\item All four of the route elements do not include consistent examinations of their sub-elements (value ($V_{i,j,k,l}$)) when scoring a route. That is, for example using the route type array, sub-element $i=1$ and $i=5$ may not be examined together if they do not appear as a combination in the JSON file and therefore don't critically need to be examined. Equally, in the route stage array, perhaps sub-element $j=3$ isn't examined soley because it doesn't appear on its own in the JSON file. In a perfect world, every combination and isolation would be examined however, with the time allocated here, it is not worth the effort.
-	\end{itemize}
+	\begin{table}[h]
+		\scriptsize
+		\renewcommand{\arraystretch}{1.25}
+	\begin{center}
+	\begin{tabular}{l|p{12cm}}
+		\hline
+		\hline
+		1 & Writing the score route function would be too-lengthy-a-process if calculating the score of each of the four route elements based on the individual values of the 5, 4, 11 and 20 sub-elements respectively using the factorial method, so the latter 3 are calculated simply by volume/variety. This does not accurately reflect the difficulty of terrain for example as a route with grass and concrete will be considered more difficult than a route with grade 3 slab, simply because it has one more element. In this context it doesn't matter too much as the math has been demonstrated successfully however.\\
+		2 & If using the exhaustive method, volume is accounted for by the inclusion and exclusion of values which, if all-inclusive, should add up to N sub-elements in that group. But this is rare.\\
+		3 & All four of the route elements do not include consistent examinations of their sub-elements (value ($V_{i,j,k,l}$)) when scoring a route. That is, for example using the route type array, sub-element $i=1$ and $i=5$ may not be examined together if they do not appear as a combination in the JSON file and therefore don't critically need to be examined. Equally, in the route stage array, perhaps sub-element $j=3$ isn't examined soley because it doesn't appear on its own in the JSON file. In a perfect world, every combination and isolation would be examined however, with the time allocated here, it is not worth the effort.\\
+		\hline
+		\hline
+	\end{tabular}
+		\caption{Score Route Constraints}
+	\end{center}
+	\end{table}
 
 			\paragraph{Describe Route Score}
 

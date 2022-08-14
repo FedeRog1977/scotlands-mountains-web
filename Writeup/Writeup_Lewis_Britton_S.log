@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.28)  13 AUG 2022 23:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.28)  14 AUG 2022 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1382,12 +1382,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [15
 
 ]
-<../System/Photos/nfs.png, id=674, 550.055pt x 72.27pt>
+<../System/Photos/nfs.png, id=678, 550.055pt x 72.27pt>
 File: ../System/Photos/nfs.png Graphic file (type png)
 <use ../System/Photos/nfs.png>
 Package pdftex.def Info: ../System/Photos/nfs.png  used on input line 667.
 (pdftex.def)             Requested size: 213.3959pt x 28.45204pt.
-<../System/Photos/audi.png, id=675, 562.1pt x 388.45125pt>
+<../System/Photos/audi.png, id=679, 562.1pt x 388.45125pt>
 File: ../System/Photos/audi.png Graphic file (type png)
 <use ../System/Photos/audi.png>
 Package pdftex.def Info: ../System/Photos/audi.png  used on input line 673.
@@ -1408,18 +1408,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [16
 
  <../System/Photos/nfs.png> <../System/Photos/audi.png>]
-<../System/Photos/Logo.png, id=681, 1027.84pt x 231.86626pt>
+<../System/Photos/Logo.png, id=685, 1027.84pt x 231.86626pt>
 File: ../System/Photos/Logo.png Graphic file (type png)
 <use ../System/Photos/Logo.png>
 Package pdftex.def Info: ../System/Photos/Logo.png  used on input line 694.
 (pdftex.def)             Requested size: 227.61543pt x 56.90501pt.
-<../Promotional/Photos/roots2.png, id=683, 695.85686pt x 152.79942pt>
+<../Promotional/Photos/roots2.png, id=687, 695.85686pt x 152.79942pt>
 File: ../Promotional/Photos/roots2.png Graphic file (type png)
 <use ../Promotional/Photos/roots2.png>
 Package pdftex.def Info: ../Promotional/Photos/roots2.png  used on input line 7
 03.
 (pdftex.def)             Requested size: 142.25871pt x 35.56512pt.
-<../Promotional/Photos/Roots2.png, id=684, 1014.79124pt x 221.82875pt>
+<../Promotional/Photos/Roots2.png, id=688, 1014.79124pt x 221.82875pt>
 File: ../Promotional/Photos/Roots2.png Graphic file (type png)
 <use ../Promotional/Photos/Roots2.png>
 Package pdftex.def Info: ../Promotional/Photos/Roots2.png  used on input line 7
@@ -1439,11 +1439,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17 <../System/Photos/Logo.png> <../Promotional/Photos/roots2.png> <../Promotio
 nal/Photos/Roots2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 750--751
 
  []
@@ -1475,6 +1470,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [20]
+Underfull \hbox (badness 10000) in paragraph at lines 818--819
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1484,10 +1483,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 799--800
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1497,6 +1492,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [22]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 830.
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 831.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1506,11 +1506,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [23]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 811.
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 812.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1520,6 +1515,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [24]
+Underfull \hbox (badness 10000) in paragraph at lines 911--912
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 913--914
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1529,15 +1533,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 892--893
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--895
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1547,6 +1542,192 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [26]
+Underfull \hbox (badness 10000) in paragraph at lines 938--938
+[]|\T1/cmr/m/n/8 Weather app$[]$, \T1/cmtt/m/n/8 getLatLon()$[]$\T1/cmr/m/n/8 ,
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 938--938
+\T1/cmtt/m/n/8 findLocation()$[]$\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showLocation()\
+T1/cmr/m/n/8 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 939--940
+[]|\T1/cmtt/m/n/8 scoreRoute()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 describeRoute()\T1
+/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 7869) in paragraph at lines 939--940
+\T1/cmtt/m/n/8 searchLocation()\T1/cmr/m/n/8 : com-pute a rel-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 942--943
+[]|\T1/cmtt/m/n/8 selectMunroOpt()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 inpMunroOpt()\
+T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 942--943
+\T1/cmtt/m/n/8 selectCorbettOpt()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 inpCorbettOpt()
+\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 942--943
+\T1/cmr/m/n/8 and pass co-or-di-nates, in-put Munro to
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 942--943
+\T1/cmr/m/n/8 to fetch and pass co-or-di-nates, in-put
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+[]|\T1/cmr/m/n/8 `Conquest Map'$[]$, \T1/cmtt/m/n/8 findLocation()$[]$\T1/cmr/m
+/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmtt/m/n/8 showLocation()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 createHillMarker()\
+T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmtt/m/n/8 createRouteMarker()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 hideMarkers()\
+T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmtt/m/n/8 getLatLon()$[]$\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 getDistanceCurr()\
+T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmtt/m/n/8 getDistance()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 searchRoute()\T1/cmr
+/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 943--943
+\T1/cmr/m/n/8 find dis-tance form cur-rent co-or-di-nates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+[]|\T1/cmtt/m/n/8 showNearest()\T1/cmr/m/n/8 , show pan co-or-di-
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 943--944
+\T1/cmr/m/n/8 nates, \T1/cmtt/m/n/8 showMunros()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 
+showMunroTops()\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+\T1/cmtt/m/n/8 showCorbetts()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showCorbettTops\T1/
+cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showMunro()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showMu
+nroTop()\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+\T1/cmtt/m/n/8 showCorbett()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showCorbettTop()\T1/
+cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+\T1/cmtt/m/n/8 searchAbility()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 searchEquipment()\
+T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+\T1/cmtt/m/n/8 refineRouteAbility()\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 943--944
+\T1/cmtt/m/n/8 refineRouteEquipment()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 scoreRoute(
+)\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+\T1/cmtt/m/n/8 describeScore()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 searchLocation()\T
+1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 943--944
+\T1/cmtt/m/n/8 galacticConquest()\T1/cmr/m/n/8 : find near-est hill
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 943--944
+\T1/cmr/m/n/8 co-or-di-nates on map, print all Cor-bett
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 943--944
+\T1/cmr/m/n/8 co-or-di-nates on map, print all Cor-bett
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 943--944
+\T1/cmr/m/n/8 de-fined Cor-bett co-or-di-nates on map,
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 943--944
+\T1/cmr/m/n/8 print de-fined Cor-bett Top co-or-di-nates
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 943--944
+\T1/cmr/m/n/8 ing ability-based in-puts, re-fine routes
+ []
+
+
+Underfull \hbox (badness 7081) in paragraph at lines 943--944
+\T1/cmr/m/n/8 by declar-ing equipment-based in-puts,
+ []
+
+
+Underfull \hbox (badness 2556) in paragraph at lines 943--944
+\T1/cmr/m/n/8 route score based on the al-go-rith-mic
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 944--944
+\T1/cmr/m/n/8 layer choos-ing from `OS Leisure', `OS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+[]|\T1/cmr/m/n/8 Written us-ing HTML5, CSS and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\T1/cmr/m/n/8 JavaScript which are sup-ported by
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1556,192 +1737,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 919--919
-[]|\T1/cmr/m/n/8 Weather app$[]$, \T1/cmtt/m/n/8 getLatLon()$[]$\T1/cmr/m/n/8 ,
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 919--919
-\T1/cmtt/m/n/8 findLocation()$[]$\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showLocation()\
-T1/cmr/m/n/8 :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 920--921
-[]|\T1/cmtt/m/n/8 scoreRoute()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 describeRoute()\T1
-/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 7869) in paragraph at lines 920--921
-\T1/cmtt/m/n/8 searchLocation()\T1/cmr/m/n/8 : com-pute a rel-a-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 923--924
-[]|\T1/cmtt/m/n/8 selectMunroOpt()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 inpMunroOpt()\
-T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 923--924
-\T1/cmtt/m/n/8 selectCorbettOpt()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 inpCorbettOpt()
-\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 923--924
-\T1/cmr/m/n/8 and pass co-or-di-nates, in-put Munro to
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 923--924
-\T1/cmr/m/n/8 to fetch and pass co-or-di-nates, in-put
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--924
-[]|\T1/cmr/m/n/8 `Conquest Map'$[]$, \T1/cmtt/m/n/8 findLocation()$[]$\T1/cmr/m
-/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--924
-\T1/cmtt/m/n/8 showLocation()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 createHillMarker()\
-T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--924
-\T1/cmtt/m/n/8 createRouteMarker()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 hideMarkers()\
-T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--924
-\T1/cmtt/m/n/8 getLatLon()$[]$\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 getDistanceCurr()\
-T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--924
-\T1/cmtt/m/n/8 getDistance()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 searchRoute()\T1/cmr
-/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 924--924
-\T1/cmr/m/n/8 find dis-tance form cur-rent co-or-di-nates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
-[]|\T1/cmtt/m/n/8 showNearest()\T1/cmr/m/n/8 , show pan co-or-di-
- []
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 924--925
-\T1/cmr/m/n/8 nates, \T1/cmtt/m/n/8 showMunros()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 
-showMunroTops()\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
-\T1/cmtt/m/n/8 showCorbetts()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showCorbettTops\T1/
-cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
-\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showMunro()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showMu
-nroTop()\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
-\T1/cmtt/m/n/8 showCorbett()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 showCorbettTop()\T1/
-cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
-\T1/cmtt/m/n/8 searchAbility()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 searchEquipment()\
-T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
-\T1/cmtt/m/n/8 refineRouteAbility()\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 924--925
-\T1/cmtt/m/n/8 refineRouteEquipment()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 scoreRoute(
-)\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
-\T1/cmtt/m/n/8 describeScore()\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 searchLocation()\T
-1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 924--925
-\T1/cmtt/m/n/8 galacticConquest()\T1/cmr/m/n/8 : find near-est hill
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 924--925
-\T1/cmr/m/n/8 co-or-di-nates on map, print all Cor-bett
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 924--925
-\T1/cmr/m/n/8 co-or-di-nates on map, print all Cor-bett
- []
-
-
-Underfull \hbox (badness 4378) in paragraph at lines 924--925
-\T1/cmr/m/n/8 de-fined Cor-bett co-or-di-nates on map,
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 924--925
-\T1/cmr/m/n/8 print de-fined Cor-bett Top co-or-di-nates
- []
-
-
-Underfull \hbox (badness 2671) in paragraph at lines 924--925
-\T1/cmr/m/n/8 ing ability-based in-puts, re-fine routes
- []
-
-
-Underfull \hbox (badness 7081) in paragraph at lines 924--925
-\T1/cmr/m/n/8 by declar-ing equipment-based in-puts,
- []
-
-
-Underfull \hbox (badness 2556) in paragraph at lines 924--925
-\T1/cmr/m/n/8 route score based on the al-go-rith-mic
- []
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 925--925
-\T1/cmr/m/n/8 layer choos-ing from `OS Leisure', `OS
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 935--935
-[]|\T1/cmr/m/n/8 Written us-ing HTML5, CSS and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 935--935
-\T1/cmr/m/n/8 JavaScript which are sup-ported by
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1760,6 +1755,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [29]
+Overfull \hbox (1.49623pt too wide) in paragraph at lines 976--1000
+ [] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1769,10 +1768,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [30]
-Overfull \hbox (1.49623pt too wide) in paragraph at lines 957--981
- [] 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1800,6 +1795,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1809,10 +1808,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1065
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1822,16 +1817,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [35]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1089
+Underfull \hbox (badness 10000) in paragraph at lines 1107--1108
 
  []
 
@@ -1843,7 +1829,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[37]
+[36]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[37
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1171--1172
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1855,10 +1856,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [38
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1153
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1867,9 +1864,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[39
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1227
 
-]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1240--1241
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1879,12 +1883,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1207--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1221--1222
+Underfull \hbox (badness 10000) in paragraph at lines 1250--1251
 
  []
 
@@ -1897,12 +1901,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1223--1224
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1231--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1269
 
  []
 
@@ -1915,7 +1914,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1249--1250
+Underfull \hbox (badness 10000) in paragraph at lines 1274--1275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1279
 
  []
 
@@ -1928,17 +1937,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 1255--1256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1257--1258
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1259--1260
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1291
 
  []
 
@@ -1951,10 +1950,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 1271--1272
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1973,46 +1968,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [46]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[47]
-Overfull \hbox (3.21382pt too wide) in paragraph at lines 1319--1319
+Overfull \hbox (3.21382pt too wide) in paragraph at lines 1338--1338
 []|\T1/cmr/m/sc/8 Vio.| 
  []
 
 
-Overfull \hbox (3.37767pt too wide) in paragraph at lines 1319--1319
+Overfull \hbox (3.37767pt too wide) in paragraph at lines 1338--1338
 []|\T1/cmr/m/sc/8 Sev.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1323--1323
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1342
 []|$[]$\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1323--1324
+Underfull \hbox (badness 2261) in paragraph at lines 1342--1343
 \T1/cmr/m/n/8 to dis-play the hi-er-ar-chy of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1324--1324
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1343
 []|$[]$\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1324--1325
+Underfull \hbox (badness 2261) in paragraph at lines 1343--1344
 \T1/cmr/m/n/8 to dis-play the hi-er-ar-chy of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1347
 []|$[]$\T1/cmr/m/n/8 ,
  []
 
@@ -2025,22 +2011,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [1]
-Overfull \hbox (3.21382pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (3.21382pt too wide) in paragraph at lines 1364--1364
 []|\T1/cmr/m/sc/8 Vio.| 
  []
 
 
-Overfull \hbox (3.37767pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (3.37767pt too wide) in paragraph at lines 1364--1364
 []|\T1/cmr/m/sc/8 Sev.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1350
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1369
 []|\T1/cmr/m/n/8 Include a com-pre-hen-sive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1353--1353
+Underfull \hbox (badness 10000) in paragraph at lines 1372--1372
 []|$[]$\T1/cmr/m/n/8 ,
  []
 
@@ -2053,247 +2039,247 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-Overfull \hbox (0.87968pt too wide) in paragraph at lines 1371--1371
+Overfull \hbox (0.87968pt too wide) in paragraph at lines 1390--1390
 []|\T1/cmr/m/sc/8 Relevance| 
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 1376--1377
+Underfull \hbox (badness 3815) in paragraph at lines 1395--1396
 []|\T1/cmr/m/n/8 Utilize \T1/cmr/m/it/8 Ge-olo-ca-tion \T1/cmr/m/n/8 API to
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 1377--1377
+Underfull \hbox (badness 1546) in paragraph at lines 1396--1396
 []|\T1/cmr/m/n/8 ``I wish to be able to [use
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1377--1377
+Underfull \hbox (badness 10000) in paragraph at lines 1396--1396
 \T1/cmr/m/n/8 Weather
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 1377--1378
+Underfull \hbox (badness 3815) in paragraph at lines 1396--1397
 []|\T1/cmr/m/n/8 Utilize \T1/cmr/m/it/8 Ge-olo-ca-tion \T1/cmr/m/n/8 API to
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 1378--1378
+Underfull \hbox (badness 1748) in paragraph at lines 1397--1397
 \T1/cmr/m/n/8 to [see all the rel-e-vant at-
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 1378--1378
+Underfull \hbox (badness 1810) in paragraph at lines 1397--1397
 \T1/cmr/m/n/8 tributes of a route on one
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1378--1378
+Underfull \hbox (badness 10000) in paragraph at lines 1397--1397
 \T1/cmr/m/n/8 Route
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 1379--1379
+Underfull \hbox (badness 2012) in paragraph at lines 1398--1398
 []|\T1/cmr/m/n/8 ``I wish to be able to [in-
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 1379--1379
+Underfull \hbox (badness 2418) in paragraph at lines 1398--1398
 \T1/cmr/m/n/8 abil-ity] which con-tribute to
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 1379--1379
+Underfull \hbox (badness 1052) in paragraph at lines 1398--1398
 \T1/cmr/m/n/8 my [sug-gested routes] there-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1380--1380
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
 \T1/cmr/m/n/8 Equipment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1381--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1400--1400
 \T1/cmr/m/n/8 Weather
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 1381--1382
+Underfull \hbox (badness 3482) in paragraph at lines 1400--1401
 \T1/cmr/m/n/8 vi-ously, to dis-play weather
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 1382--1382
+Underfull \hbox (badness 1552) in paragraph at lines 1401--1401
 \T1/cmr/m/n/8 pan co-or-di-nates ad-ja-cent to
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 1382--1383
+Underfull \hbox (badness 1005) in paragraph at lines 1401--1402
 \T1/cmr/m/n/8 Utilize \T1/cmr/m/it/8 Leaflet \T1/cmr/m/n/8 JavaScript li-
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 1383--1383
+Underfull \hbox (badness 1342) in paragraph at lines 1402--1402
 \T1/cmr/m/n/8 [in-ter-act with the OS map]
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 1383--1383
+Underfull \hbox (badness 2073) in paragraph at lines 1402--1402
 \T1/cmr/m/n/8 which al-lows me to [tog-gle
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 1383--1384
+Underfull \hbox (badness 1005) in paragraph at lines 1402--1403
 []|\T1/cmr/m/n/8 Utilize \T1/cmr/m/it/8 Leaflet \T1/cmr/m/n/8 JavaScript li-
  []
 
 
-Underfull \hbox (badness 4739) in paragraph at lines 1383--1384
+Underfull \hbox (badness 4739) in paragraph at lines 1402--1403
 \T1/cmr/m/n/8 brary to dis-play and tog-
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 1383--1384
+Underfull \hbox (badness 2573) in paragraph at lines 1402--1403
 \T1/cmr/m/n/8 ing the lo-ca-tion of var-i-ous
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 1383--1384
+Underfull \hbox (badness 1968) in paragraph at lines 1402--1403
 \T1/cmr/m/n/8 Munros, Munro Tops, Cor-
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 1384--1384
+Underfull \hbox (badness 1342) in paragraph at lines 1403--1403
 \T1/cmr/m/n/8 [in-ter-act with the OS map]
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 1384--1384
+Underfull \hbox (badness 6792) in paragraph at lines 1403--1403
 \T1/cmr/m/n/8 which al-lows me to [tog-
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 1384--1384
+Underfull \hbox (badness 1077) in paragraph at lines 1403--1403
 \T1/cmr/m/n/8 on search cri-te-ria] there-fore,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1385
+Underfull \hbox (badness 10000) in paragraph at lines 1403--1404
 []|\T1/cmr/m/n/8 Utilize \T1/cmr/m/it/8 Leaflet \T1/cmr/m/n/8 JavaScript
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1385
+Underfull \hbox (badness 10000) in paragraph at lines 1403--1404
 \T1/cmr/m/n/8 Utilize \T1/cmr/m/it/8 Map-box GL-JS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1385
+Underfull \hbox (badness 10000) in paragraph at lines 1403--1404
 \T1/cmr/m/n/8 JavaScript li-brary to con-
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 1385--1386
+Underfull \hbox (badness 3815) in paragraph at lines 1404--1405
 []|\T1/cmr/m/n/8 Utilize \T1/cmr/m/it/8 Ge-olo-ca-tion \T1/cmr/m/n/8 API to
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 1389--1390
+Underfull \hbox (badness 1194) in paragraph at lines 1408--1409
 []|\T1/cmr/m/n/8 Include some form of in-put
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 1389--1390
+Underfull \hbox (badness 2253) in paragraph at lines 1408--1409
 \T1/cmr/m/n/8 which \T1/cmr/m/it/8 Leaflet \T1/cmr/m/n/8 JavaScript li-
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 1389--1390
+Underfull \hbox (badness 1742) in paragraph at lines 1408--1409
 \T1/cmr/m/n/8 brary to al-low the user to
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 1390--1390
+Underfull \hbox (badness 1087) in paragraph at lines 1409--1409
 \T1/cmr/m/n/8 point the cen-ter co-or-di-nates
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1394--1395
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1414
 []|\T1/cmr/m/n/8 Implement a back-end
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1394--1395
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1414
 \T1/cmr/m/n/8 database sys-tem to store
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 1395--1395
+Underfull \hbox (badness 2359) in paragraph at lines 1414--1414
 \T1/cmr/m/n/8 trollers which will give me
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1395--1396
+Underfull \hbox (badness 10000) in paragraph at lines 1414--1415
 []|\T1/cmr/m/n/8 Implement ap-pro-pri-ate au-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1396--1397
+Underfull \hbox (badness 10000) in paragraph at lines 1415--1416
 []|\T1/cmr/m/n/8 Allow already-implemented
  []
 
 
-Underfull \hbox (badness 6575) in paragraph at lines 1396--1397
+Underfull \hbox (badness 6575) in paragraph at lines 1415--1416
 \T1/cmr/m/n/8 and equip-ment ser-vices to
  []
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 1396--1397
+Underfull \hbox (badness 2591) in paragraph at lines 1415--1416
 \T1/cmr/m/n/8 ac-cess and use stored user
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 1396--1397
+Underfull \hbox (badness 3148) in paragraph at lines 1415--1416
 \T1/cmr/m/n/8 data, as op-posed to us-ing
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 1397--1397
+Underfull \hbox (badness 1859) in paragraph at lines 1416--1416
 \T1/cmr/m/n/8 `pri-or-ity at-tributes'] rel-e-vant
  []
 
 
-Underfull \hbox (badness 4291) in paragraph at lines 1397--1397
+Underfull \hbox (badness 4291) in paragraph at lines 1416--1416
 \T1/cmr/m/n/8 rel-e-vant route rec-om-men-da-
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 1397--1398
+Underfull \hbox (badness 1910) in paragraph at lines 1416--1417
 []|\T1/cmr/m/n/8 Implement ap-pro-pri-ate mea-
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 1405--1405
+Underfull \hbox (badness 1546) in paragraph at lines 1424--1424
 []|\T1/cmr/m/n/8 ``I wish to be able to [use
  []
 
 
-Underfull \hbox (badness 3460) in paragraph at lines 1405--1405
+Underfull \hbox (badness 3460) in paragraph at lines 1424--1424
 \T1/cmr/m/n/8 con-tent] re-gard-less of what
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1405--1405
+Underfull \hbox (badness 10000) in paragraph at lines 1424--1424
 \T1/cmr/m/n/8 Browser
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 1406--1407
+Underfull \hbox (badness 2707) in paragraph at lines 1425--1426
 []|\T1/cmr/m/n/8 Implement the cor-rect CSS
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 1408--1408
+Underfull \hbox (badness 1430) in paragraph at lines 1427--1427
 \T1/cmr/m/n/8 graphic de-sign] which [show
  []
 
@@ -2333,37 +2319,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-Underfull \hbox (badness 3375) in paragraph at lines 1462--1462
+Underfull \hbox (badness 3375) in paragraph at lines 1481--1481
 \T1/cmr/m/n/6 Munro Top, Cor-bett and Cor-bett Top
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 1464--1464
+Underfull \hbox (badness 1442) in paragraph at lines 1483--1483
 []|\T1/cmr/m/n/6 Provide promi-nence (ft) of each Munro,
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 1464--1464
+Underfull \hbox (badness 3375) in paragraph at lines 1483--1483
 \T1/cmr/m/n/6 Munro Top, Cor-bett and Cor-bett Top
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 1494--1494
+Underfull \hbox (badness 1112) in paragraph at lines 1513--1513
 []|\T1/cmr/m/n/6 Provide stan-dard time (hrs) taken by a
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 1545--1546
+Underfull \hbox (badness 1168) in paragraph at lines 1564--1565
 \T1/cmr/m/n/6 Call API 1.0, based on an-gu-lar
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 1563--1563
+Underfull \hbox (badness 4454) in paragraph at lines 1582--1582
 []|[] \T1/cmr/m/n/6 (for De-scrip-tion) --
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 1563--1564
+Underfull \hbox (badness 1168) in paragraph at lines 1582--1583
 \T1/cmr/m/n/6 Call API 1.0, based on an-gu-lar
  []
 
@@ -2439,10 +2425,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-<../System/Photos/poster.jpg, id=940, 845.0772pt x 1195.1049pt>
+<../System/Photos/poster.jpg, id=932, 845.0772pt x 1195.1049pt>
 File: ../System/Photos/poster.jpg Graphic file (type jpg)
 <use ../System/Photos/poster.jpg>
-Package pdftex.def Info: ../System/Photos/poster.jpg  used on input line 1583.
+Package pdftex.def Info: ../System/Photos/poster.jpg  used on input line 1602.
 (pdftex.def)             Requested size: 398.33397pt x 569.06665pt.
 
 
@@ -2454,351 +2440,351 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15 <../System/Photos/poster.jpg>]
-Underfull \hbox (badness 5652) in paragraph at lines 1601--1601
+Underfull \hbox (badness 5652) in paragraph at lines 1620--1620
 \T1/cmr/m/n/8 (num-ber), num-ber of tops
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 1611--1611
+Underfull \hbox (badness 3861) in paragraph at lines 1630--1630
 \T1/cmr/m/n/8 dif-fi-culty (\T1/cmtt/m/n/8 describeRoute()\T1/cmr/m/n/8 ), rout
 e types,
  []
 
 
-Underfull \hbox (badness 3049) in paragraph at lines 1630--1630
+Underfull \hbox (badness 3049) in paragraph at lines 1649--1649
 \T1/cmr/m/n/8 po-nent de-scrip-tion, equip-ment com-po-nent
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 1630--1630
+Underfull \hbox (badness 2119) in paragraph at lines 1649--1649
 \T1/cmr/m/n/8 equip-ment com-po-nent fea-tures, equip-ment
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 1639--1639
+Underfull \hbox (badness 1910) in paragraph at lines 1658--1658
 []|\T1/cmr/m/n/8 Munro lat-i-tude, Munro lon-gi-tude, Munro
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1639--1640
+Underfull \hbox (badness 10000) in paragraph at lines 1658--1659
 []|\T1/cmr/m/n/8 Number [2],
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 1644--1644
+Underfull \hbox (badness 1910) in paragraph at lines 1663--1663
 []|\T1/cmr/m/n/8 Munro lat-i-tude, Munro lon-gi-tude, Munro
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1644--1645
+Underfull \hbox (badness 10000) in paragraph at lines 1663--1664
 []|\T1/cmr/m/n/8 Number [2],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
+Underfull \hbox (badness 10000) in paragraph at lines 1668--1669
 []|\T1/cmr/m/n/8 Number [2],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1654--1655
+Underfull \hbox (badness 10000) in paragraph at lines 1673--1674
 []|\T1/cmr/m/n/8 Number [2],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1659--1660
+Underfull \hbox (badness 10000) in paragraph at lines 1678--1679
 []|\T1/cmr/m/n/8 Number [2],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1672--1673
+Underfull \hbox (badness 10000) in paragraph at lines 1691--1692
 []|\T1/cmr/m/n/8 Alter style
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1677--1678
+Underfull \hbox (badness 10000) in paragraph at lines 1696--1697
 []|\T1/cmr/m/n/8 Alter style
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1688
+Underfull \hbox (badness 10000) in paragraph at lines 1706--1707
 []|\T1/cmr/m/n/8 (\T1/cmtt/m/n/8 map.locate\T1/cmr/m/n/8 ),
  []
 
 
-Overfull \hbox (9.18947pt too wide) in paragraph at lines 1687--1688
+Overfull \hbox (9.18947pt too wide) in paragraph at lines 1706--1707
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 findLocation()\T1/cmr/m/n/8 )| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1692--1692
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1711
 []|\T1/cmr/m/n/8 Current lat-i-tude, Cur-rent lon-gi-tude,
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 1692--1692
+Underfull \hbox (badness 2564) in paragraph at lines 1711--1711
 \T1/cmr/m/n/8 marker (des-ti-na-tion co-or-di-nates), dis-tance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1692--1693
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1712
 []|\T1/cmtt/m/n/8 map.setView\T1/cmr/m/n/8 ,
  []
 
 
-Overfull \hbox (28.54585pt too wide) in paragraph at lines 1692--1693
+Overfull \hbox (28.54585pt too wide) in paragraph at lines 1711--1712
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1701--1702
+Underfull \hbox (badness 10000) in paragraph at lines 1720--1721
 []|\T1/cmr/m/n/8 Leaflet layer
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 1706--1706
+Underfull \hbox (badness 1077) in paragraph at lines 1725--1725
 \T1/cmr/m/n/8 hill lon-gi-tude (num-ber), hill
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 1711--1711
+Underfull \hbox (badness 2012) in paragraph at lines 1730--1730
 \T1/cmr/m/n/8 tance (num-ber), route time
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 1711--1711
+Underfull \hbox (badness 1057) in paragraph at lines 1730--1730
 \T1/cmr/m/n/8 route Munros (ar-ray), route
  []
 
 
-Underfull \hbox (badness 3503) in paragraph at lines 1711--1711
+Underfull \hbox (badness 3503) in paragraph at lines 1730--1730
 \T1/cmr/m/n/8 Munro Tops (ar-ray), route
  []
 
 
-Overfull \hbox (26.18532pt too wide) in paragraph at lines 1716--1717
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1735--1736
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 )| 
  []
 
 
-Overfull \hbox (26.18532pt too wide) in paragraph at lines 1721--1722
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1740--1741
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 )| 
  []
 
 
-Overfull \hbox (26.18532pt too wide) in paragraph at lines 1726--1727
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1745--1746
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 )| 
  []
 
 
-Overfull \hbox (26.18532pt too wide) in paragraph at lines 1731--1732
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1750--1751
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 )| 
  []
 
 
-Overfull \hbox (26.18532pt too wide) in paragraph at lines 1736--1737
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1755--1756
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 )| 
  []
 
 
-Overfull \hbox (26.18532pt too wide) in paragraph at lines 1741--1742
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1760--1761
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 )| 
  []
 
 
-Overfull \hbox (26.18532pt too wide) in paragraph at lines 1746--1747
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1765--1766
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 )| 
  []
 
 
-Overfull \hbox (26.18532pt too wide) in paragraph at lines 1751--1752
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1770--1771
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createHillMarker()\T1/cmr/m/n/8 )| 
  []
 
 
-Overfull \hbox (6.82893pt too wide) in paragraph at lines 1756--1757
+Overfull \hbox (6.82893pt too wide) in paragraph at lines 1775--1776
 []|\T1/cmtt/m/n/8 map.removeLayer| 
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 1773--1773
+Underfull \hbox (badness 3861) in paragraph at lines 1792--1792
 \T1/cmr/m/n/8 dif-fi-culty (\T1/cmtt/m/n/8 describeRoute()\T1/cmr/m/n/8 ), rout
 e types,
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 1783--1783
+Underfull \hbox (badness 4569) in paragraph at lines 1802--1802
 \T1/cmr/m/n/8 des-ti-na-tion lon-gi-tude (num-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1783--1783
+Underfull \hbox (badness 10000) in paragraph at lines 1802--1802
 \T1/cmr/m/n/8 marker (cur-rent co-or-di-nates), Leaflet
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 1783--1783
+Underfull \hbox (badness 2564) in paragraph at lines 1802--1802
 \T1/cmr/m/n/8 marker (des-ti-na-tion co-or-di-nates), dis-tance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1788--1788
+Underfull \hbox (badness 10000) in paragraph at lines 1807--1807
 []|\T1/cmr/m/n/8 Current lat-i-tude, Cur-rent lon-gi-tude,
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 1788--1788
+Underfull \hbox (badness 2564) in paragraph at lines 1807--1807
 \T1/cmr/m/n/8 marker (des-ti-na-tion co-or-di-nates), dis-tance
  []
 
 
-Underfull \hbox (badness 5652) in paragraph at lines 1793--1793
+Underfull \hbox (badness 5652) in paragraph at lines 1812--1812
 \T1/cmr/m/n/8 (num-ber), num-ber of tops
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 1803--1803
+Underfull \hbox (badness 3861) in paragraph at lines 1822--1822
 \T1/cmr/m/n/8 dif-fi-culty (\T1/cmtt/m/n/8 describeRoute()\T1/cmr/m/n/8 ), rout
 e types,
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 1808--1808
+Underfull \hbox (badness 3861) in paragraph at lines 1827--1827
 \T1/cmr/m/n/8 dif-fi-culty (\T1/cmtt/m/n/8 describeRoute()\T1/cmr/m/n/8 ), rout
 e types,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1813--1814
+Underfull \hbox (badness 10000) in paragraph at lines 1832--1833
 []|\T1/cmtt/m/n/8 map.setView\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1813--1814
+Underfull \hbox (badness 10000) in paragraph at lines 1832--1833
 \T1/cmr/m/n/8 Leaflet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1813--1814
+Underfull \hbox (badness 10000) in paragraph at lines 1832--1833
 \T1/cmr/m/n/8 marker(s)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1813--1814
+Underfull \hbox (badness 10000) in paragraph at lines 1832--1833
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 showMunro\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1813--1814
+Underfull \hbox (badness 10000) in paragraph at lines 1832--1833
 \T1/cmtt/m/n/8 showMunroTop\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1813--1814
+Underfull \hbox (badness 10000) in paragraph at lines 1832--1833
 \T1/cmtt/m/n/8 showCorbett\T1/cmr/m/n/8 ,
  []
 
 
-Overfull \hbox (8.24525pt too wide) in paragraph at lines 1813--1814
+Overfull \hbox (8.24525pt too wide) in paragraph at lines 1832--1833
 \T1/cmtt/m/n/8 showCorbettTop\T1/cmr/m/n/8 ),
  []
 
 
-Overfull \hbox (32.79482pt too wide) in paragraph at lines 1813--1814
+Overfull \hbox (32.79482pt too wide) in paragraph at lines 1832--1833
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createRouteMarker()\T1/cmr/m/n/8 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1819
+Underfull \hbox (badness 10000) in paragraph at lines 1837--1838
 []|\T1/cmtt/m/n/8 map.setView\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1819
+Underfull \hbox (badness 10000) in paragraph at lines 1837--1838
 \T1/cmr/m/n/8 Leaflet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1819
+Underfull \hbox (badness 10000) in paragraph at lines 1837--1838
 \T1/cmr/m/n/8 marker(s)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1819
+Underfull \hbox (badness 10000) in paragraph at lines 1837--1838
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 showMunro\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1819
+Underfull \hbox (badness 10000) in paragraph at lines 1837--1838
 \T1/cmtt/m/n/8 showMunroTop\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1819
+Underfull \hbox (badness 10000) in paragraph at lines 1837--1838
 \T1/cmtt/m/n/8 showCorbett\T1/cmr/m/n/8 ,
  []
 
 
-Overfull \hbox (8.24525pt too wide) in paragraph at lines 1818--1819
+Overfull \hbox (8.24525pt too wide) in paragraph at lines 1837--1838
 \T1/cmtt/m/n/8 showCorbettTop\T1/cmr/m/n/8 ),
  []
 
 
-Overfull \hbox (32.79482pt too wide) in paragraph at lines 1818--1819
+Overfull \hbox (32.79482pt too wide) in paragraph at lines 1837--1838
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createRouteMarker()\T1/cmr/m/n/8 ),
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 1823--1823
+Underfull \hbox (badness 4441) in paragraph at lines 1842--1842
 \T1/cmr/m/n/8 par-ent land-mass, land-mass par-ent peak,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1823--1824
+Underfull \hbox (badness 10000) in paragraph at lines 1842--1843
 []|\T1/cmtt/m/n/8 innerHTML\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1828--1829
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
 []|\T1/cmr/m/n/8 Leaflet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1828--1829
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
 \T1/cmr/m/n/8 marker(s)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1828--1829
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 showMunro\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1828--1829
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
 \T1/cmtt/m/n/8 showMunroTop\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1828--1829
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
 \T1/cmtt/m/n/8 showCorbett\T1/cmr/m/n/8 ,
  []
 
 
-Overfull \hbox (8.24525pt too wide) in paragraph at lines 1828--1829
+Overfull \hbox (8.24525pt too wide) in paragraph at lines 1847--1848
 \T1/cmtt/m/n/8 showCorbettTop\T1/cmr/m/n/8 ),
  []
 
 
-Overfull \hbox (32.79482pt too wide) in paragraph at lines 1828--1829
+Overfull \hbox (32.79482pt too wide) in paragraph at lines 1847--1848
 \T1/cmr/m/n/8 (\T1/cmtt/m/n/8 createRouteMarker()\T1/cmr/m/n/8 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1828--1829
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
 \T1/cmr/m/n/8 Leaflet line,
  []
 
 
-Overfull \hbox (6.82893pt too wide) in paragraph at lines 1833--1834
+Overfull \hbox (6.82893pt too wide) in paragraph at lines 1852--1853
 []|\T1/cmtt/m/n/8 map.removeLayer| 
  []
 
@@ -2865,143 +2851,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [22]
-Overfull \hbox (3.21382pt too wide) in paragraph at lines 1848--1848
+Overfull \hbox (3.21382pt too wide) in paragraph at lines 1867--1867
 []|\T1/cmr/m/sc/8 Vio.| 
  []
 
 
-Overfull \hbox (3.37767pt too wide) in paragraph at lines 1848--1848
+Overfull \hbox (3.37767pt too wide) in paragraph at lines 1867--1867
 []|\T1/cmr/m/sc/8 Sev.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1856--1856
+Underfull \hbox (badness 10000) in paragraph at lines 1875--1875
 []|$[]$\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1856--1856
+Underfull \hbox (badness 10000) in paragraph at lines 1875--1875
 []$\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 1856--1857
+Underfull \hbox (badness 5862) in paragraph at lines 1875--1876
 []|\T1/cmr/m/n/8 Remove drop-down el-e-ment
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 1856--1857
+Underfull \hbox (badness 2418) in paragraph at lines 1875--1876
 \T1/cmr/m/n/8 and re-place drop-down link
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1857--1857
+Underfull \hbox (badness 10000) in paragraph at lines 1876--1876
 []|$[]$\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1857--1857
+Underfull \hbox (badness 10000) in paragraph at lines 1876--1876
 []$\T1/cmr/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 1857--1858
+Underfull \hbox (badness 2564) in paragraph at lines 1876--1877
 \T1/cmr/m/n/8 tions ap-pear later in more
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1858--1858
-[]|$[]$\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1859--1859
-[]|$[]$\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 1859--1860
-[]|\T1/cmr/m/n/8 Give the map layer op-tions
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1860--1860
-[]|$[]$\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1861--1861
-[]|$[]$\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1862--1862
-[]|$[]$\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1862--1862
-[]$\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 1863--1864
-\T1/cmr/m/n/8 so-lu-tion as this is an is-sue
- []
-
-
-Underfull \hbox (badness 4699) in paragraph at lines 1863--1864
-\T1/cmr/m/n/8 based on the struc-ture of
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 1863--1864
-\T1/cmr/m/n/8 par-tic-u-lar GPX files. This
- []
-
-
-Underfull \hbox (badness 3460) in paragraph at lines 1863--1864
-\T1/cmr/m/n/8 down-loaded from Walkhigh-
- []
-
-
-Underfull \hbox (badness 3492) in paragraph at lines 1863--1864
-\T1/cmr/m/n/8 walk re-port (user do-nated)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1863--1864
-\T1/cmr/m/n/8 Walkhighlands re-place-ments
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1872--1872
-[]|$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1872--1872
-[]$\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 5203) in paragraph at lines 1872--1873
-\T1/cmr/m/n/8 in-te-grates more ap-pro-pri-ate
- []
-
-
-Underfull \hbox (badness 1237) in paragraph at lines 1874--1875
-\T1/cmr/m/n/8 which doesn't lose as much
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1876--1876
-[]|$[]$\T1/cmr/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1876--1876
-[]$\T1/cmr/m/n/8 ,
  []
 
 
@@ -3010,12 +2901,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 1877--1877
  []
 
 
-Underfull \hbox (badness 3646) in paragraph at lines 1877--1878
+Underfull \hbox (badness 10000) in paragraph at lines 1878--1878
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 1878--1879
+[]|\T1/cmr/m/n/8 Give the map layer op-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1879--1879
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1880--1880
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1881--1881
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1881--1881
+[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 1882--1883
+\T1/cmr/m/n/8 so-lu-tion as this is an is-sue
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 1882--1883
+\T1/cmr/m/n/8 based on the struc-ture of
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 1882--1883
+\T1/cmr/m/n/8 par-tic-u-lar GPX files. This
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 1882--1883
+\T1/cmr/m/n/8 down-loaded from Walkhigh-
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 1882--1883
+\T1/cmr/m/n/8 walk re-port (user do-nated)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1882--1883
+\T1/cmr/m/n/8 Walkhighlands re-place-ments
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1891--1891
+[]|$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1891--1891
+[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 5203) in paragraph at lines 1891--1892
+\T1/cmr/m/n/8 in-te-grates more ap-pro-pri-ate
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 1893--1894
+\T1/cmr/m/n/8 which doesn't lose as much
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1895
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1895
+[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1896--1896
+[]|$[]$\T1/cmr/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 1896--1897
 []|\T1/cmr/m/n/8 Add slight trans-parency to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1878--1878
+Underfull \hbox (badness 10000) in paragraph at lines 1897--1897
 []|$[]$\T1/cmr/m/n/8 ,
  []
 
@@ -3046,17 +3032,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1921--1922
+Underfull \hbox (badness 10000) in paragraph at lines 1940--1941
 []|\T1/cmr/m/n/8 As ex-pected,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1921--1922
+Underfull \hbox (badness 10000) in paragraph at lines 1940--1941
 \T1/cmr/m/n/8 mi-nor is-sue
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2087--2087
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2106
 []|\T1/cmtt/m/n/8 a\T1/cmr/m/n/8 , \T1/cmtt/m/n/8 button\T1/cmr/m/n/8 , \T1/cmt
 t/m/n/8 select\T1/cmr/m/n/8 ,
  []
@@ -3124,23 +3110,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [32]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 2184.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 2203.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2184.
+(Font)              size <5> substituted on input line 2203.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 2184.
+(Font)              size <5> substituted on input line 2203.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2184.
+(Font)              size <5> substituted on input line 2203.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 2184.
+(Font)              size <5> substituted on input line 2203.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3160,98 +3146,98 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 2221--2222
+Underfull \hbox (badness 10000) in paragraph at lines 2240--2241
 
  []
 
 
-Underfull \hbox (badness 6316) in paragraph at lines 2232--2232
+Underfull \hbox (badness 6316) in paragraph at lines 2251--2251
 []|\T1/cmr/m/n/8 A rich, al-most gamey,
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 2232--2232
+Underfull \hbox (badness 1354) in paragraph at lines 2251--2251
 \T1/cmr/m/n/8 and ef-fec-tive dis-tri-bu-tion
  []
 
 
-Underfull \hbox (badness 7759) in paragraph at lines 2232--2232
+Underfull \hbox (badness 7759) in paragraph at lines 2251--2251
 \T1/cmr/m/n/8 the H.o.B. dis-con-tin-ued
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2232--2232
+Underfull \hbox (badness 10000) in paragraph at lines 2251--2251
 \T1/cmr/m/n/8 (R.I.P.) veni-son Lorne
  []
 
-<../System/Photos/bruar_lorne.jpg, id=1035, 410.53375pt x 410.53375pt>
+<../System/Photos/bruar_lorne.jpg, id=1026, 410.53375pt x 410.53375pt>
 File: ../System/Photos/bruar_lorne.jpg Graphic file (type jpg)
 <use ../System/Photos/bruar_lorne.jpg>
 Package pdftex.def Info: ../System/Photos/bruar_lorne.jpg  used on input line 2
-232.
+251.
 (pdftex.def)             Requested size: 71.13188pt x 71.13036pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 2233--2233
+Underfull \hbox (badness 1092) in paragraph at lines 2252--2252
 \T1/cmr/m/n/8 `meaty' flavour. Proper
  []
 
-<../System/Photos/sh_lorne.png, id=1036, 803.0pt x 607.26875pt>
+<../System/Photos/sh_lorne.png, id=1027, 803.0pt x 607.26875pt>
 File: ../System/Photos/sh_lorne.png Graphic file (type png)
 <use ../System/Photos/sh_lorne.png>
-Package pdftex.def Info: ../System/Photos/sh_lorne.png  used on input line 2233
+Package pdftex.def Info: ../System/Photos/sh_lorne.png  used on input line 2252
 .
 (pdftex.def)             Requested size: 71.13188pt x 53.79007pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2234--2234
+Underfull \hbox (badness 10000) in paragraph at lines 2253--2253
 []|\T1/cmr/m/n/8 Very sim-i-lar to Mr.
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 2234--2234
+Underfull \hbox (badness 1852) in paragraph at lines 2253--2253
 \T1/cmr/m/n/8 Howie's how-ever a lit-tle
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 2234--2234
+Underfull \hbox (badness 3679) in paragraph at lines 2253--2253
 \T1/cmr/m/n/8 For some rea-son bet-ter
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 2234--2234
+Underfull \hbox (badness 2065) in paragraph at lines 2253--2253
 \T1/cmr/m/n/8 when part of the M&S
  []
 
-<../System/Photos/ms_lorne.jpeg, id=1037, 376.40625pt x 376.40625pt>
+<../System/Photos/ms_lorne.jpeg, id=1028, 376.40625pt x 376.40625pt>
 File: ../System/Photos/ms_lorne.jpeg Graphic file (type jpg)
 <use ../System/Photos/ms_lorne.jpeg>
-Package pdftex.def Info: ../System/Photos/ms_lorne.jpeg  used on input line 223
-4.
+Package pdftex.def Info: ../System/Photos/ms_lorne.jpeg  used on input line 225
+3.
 (pdftex.def)             Requested size: 71.13188pt x 71.1331pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2235--2235
+Underfull \hbox (badness 10000) in paragraph at lines 2254--2254
 []|\T1/cmr/m/n/8 Slightly un-der-whelm-ing
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 2235--2235
+Underfull \hbox (badness 1565) in paragraph at lines 2254--2254
 \T1/cmr/m/n/8 meaty flavour, bor-der-ing
  []
 
-<../System/Photos/sh_lorne2.png, id=1038, 803.0pt x 607.26875pt>
+<../System/Photos/sh_lorne2.png, id=1029, 803.0pt x 607.26875pt>
 File: ../System/Photos/sh_lorne2.png Graphic file (type png)
 <use ../System/Photos/sh_lorne2.png>
-Package pdftex.def Info: ../System/Photos/sh_lorne2.png  used on input line 223
-5.
+Package pdftex.def Info: ../System/Photos/sh_lorne2.png  used on input line 225
+4.
 (pdftex.def)             Requested size: 71.13188pt x 53.79007pt.
 
-Underfull \hbox (badness 1062) in paragraph at lines 2236--2236
+Underfull \hbox (badness 1062) in paragraph at lines 2255--2255
 \T1/cmr/m/n/8 the deep fried in but-ter
  []
 
-<../System/Photos/ma_lorne.jpg, id=1039, 642.4pt x 642.4pt>
+<../System/Photos/ma_lorne.jpg, id=1030, 642.4pt x 642.4pt>
 File: ../System/Photos/ma_lorne.jpg Graphic file (type jpg)
 <use ../System/Photos/ma_lorne.jpg>
-Package pdftex.def Info: ../System/Photos/ma_lorne.jpg  used on input line 2236
+Package pdftex.def Info: ../System/Photos/ma_lorne.jpg  used on input line 2255
 .
 (pdftex.def)             Requested size: 71.13188pt x 71.12492pt.
 
@@ -3265,22 +3251,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [35 <../System/Photos/bruar_lorne.jpg> <../System/Photos/sh_lorne.png> <../Syst
 em/Photos/ms_lorne.jpeg> <../System/Photos/sh_lorne2.png> <../System/Photos/ma_
 lorne.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 2252--2255
+Underfull \hbox (badness 10000) in paragraph at lines 2271--2274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2261--2264
+Underfull \hbox (badness 10000) in paragraph at lines 2280--2283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2269--2272
+Underfull \hbox (badness 10000) in paragraph at lines 2288--2291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2277--2280
+Underfull \hbox (badness 10000) in paragraph at lines 2296--2299
 
  []
 
@@ -3293,27 +3279,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 2281--2282
+Underfull \hbox (badness 10000) in paragraph at lines 2300--2301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2283--2284
+Underfull \hbox (badness 10000) in paragraph at lines 2302--2303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2295
+Underfull \hbox (badness 10000) in paragraph at lines 2311--2314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2296--2297
+Underfull \hbox (badness 10000) in paragraph at lines 2315--2316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2302--2305
+Underfull \hbox (badness 10000) in paragraph at lines 2321--2324
 
  []
 
@@ -3326,17 +3312,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 2325--2326
+Underfull \hbox (badness 10000) in paragraph at lines 2344--2345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2327--2328
+Underfull \hbox (badness 10000) in paragraph at lines 2346--2347
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2333--2334
+Underfull \hbox (badness 10000) in paragraph at lines 2352--2353
 
  []
 
@@ -3349,22 +3335,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 2335--2337
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2343--2345
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2346--2347
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 2354--2356
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2362--2364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2365--2366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2373--2375
 
  []
 
@@ -3377,12 +3363,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 2367--2369
+Underfull \hbox (badness 10000) in paragraph at lines 2386--2388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2370--2371
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2390
 
  []
 
@@ -3395,10 +3381,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [40]
-<../System/Photos/pink.png, id=1068, 591.20876pt x 616.3025pt>
+<../System/Photos/pink.png, id=1059, 591.20876pt x 616.3025pt>
 File: ../System/Photos/pink.png Graphic file (type png)
 <use ../System/Photos/pink.png>
-Package pdftex.def Info: ../System/Photos/pink.png  used on input line 2378.
+Package pdftex.def Info: ../System/Photos/pink.png  used on input line 2397.
 (pdftex.def)             Requested size: 398.34505pt x 398.34431pt.
 
 
@@ -3410,67 +3396,67 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [41 <../System/Photos/pink.png>]
-Underfull \hbox (badness 2221) in paragraph at lines 2397--2402
+Underfull \hbox (badness 2221) in paragraph at lines 2416--2421
 []\T1/cmr/m/n/10.95 Elastic. (2022). \T1/cmr/m/sl/10.95 Elas-tic Stack: Elas-ti
 c-search, Kibana, Beats. \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 7415) in paragraph at lines 2404--2409
+Underfull \hbox (badness 7415) in paragraph at lines 2423--2428
 []\T1/cmr/m/n/10.95 FontAwesome. (2021). \T1/cmr/m/sl/10.95 Search v5 Icons | F
 ont Awe-some. \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2418--2423
+Underfull \hbox (badness 10000) in paragraph at lines 2437--2442
 []\T1/cmr/m/n/10.95 Knuth, D. E. (2020). \T1/cmr/m/sl/10.95 Com-puter Mus-ings.
  \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2418--2423
+Underfull \hbox (badness 10000) in paragraph at lines 2437--2442
 \T1/cmtt/m/n/10.95 https://www-cs-faculty.stanford.edu/knuth/musings.html. \T1/
 cmr/m/n/10.95 (Ac-cessed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2439--2444
+Underfull \hbox (badness 10000) in paragraph at lines 2458--2463
 \T1/cmtt/m/n/10.95 https://developer.mozilla.org/en-US/docs/Web/API/Geolocation
 _API \T1/cmr/m/n/10.95 (Ac-
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 2446--2451
+Underfull \hbox (badness 3884) in paragraph at lines 2465--2470
 []\T1/cmr/m/n/10.95 Moolenaar, B. (2020). \T1/cmr/m/sl/10.95 Bram Moole-naar's 
 Web-site - home. \T1/cmr/m/n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2458--2463
+Underfull \hbox (badness 10000) in paragraph at lines 2477--2482
 []\T1/cmr/m/n/10.95 OpenWeather. (2022). \T1/cmr/m/sl/10.95 One Call API: weath
 er data for any
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2458--2463
+Underfull \hbox (badness 10000) in paragraph at lines 2477--2482
 \T1/cmr/m/sl/10.95 ge-o-graph-i-cal co-or-di-nate - Open-Weath-erMap. \T1/cmr/m
 /n/10.95 Avail-able At:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2465--2470
+Underfull \hbox (badness 10000) in paragraph at lines 2484--2489
 []\T1/cmr/m/n/10.95 Ordnance Sur-vey. (2022). \T1/cmr/m/sl/10.95 Ex-am-ples | O
 S Data Hub. \T1/cmr/m/n/10.95 Avail-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2465--2470
+Underfull \hbox (badness 10000) in paragraph at lines 2484--2489
 \T1/cmr/m/n/10.95 able At: \T1/cmtt/m/n/10.95 https://labs.os.uk/public/os-data
 -hub-exam
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2472--2477
+Underfull \hbox (badness 10000) in paragraph at lines 2491--2496
 []\T1/cmr/m/n/10.95 Peakbagger.com (2022). \T1/cmr/m/sl/10.95 Search - Peak-bag
 -ger.com. \T1/cmr/m/n/10.95 Avail-able At:
  []
@@ -3488,91 +3474,91 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2477 
+l.2496 
        ]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2478 	\bibitem{}
+l.2497 	\bibitem{}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2483 	\bibitem{}
+l.2502 	\bibitem{}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2488 	\bibitem{}
+l.2507 	\bibitem{}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2495 	\bibitem{}
+l.2514 	\bibitem{}
                   
 
 Package caption Warning: Unused \captionsetup[subtable] on input line 65.
@@ -3591,7 +3577,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2504 \end{document}
+l.2523 \end{document}
                      ] (./Writeup_Lewis_Britton_S.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3605,9 +3591,9 @@ Package rerunfilecheck Info: File `Writeup_Lewis_Britton_S.out' has not changed
 (rerunfilecheck)             Checksum: 40D12390F8B107ED25DBC29BB3A49B99;15031.
  ) 
 Here is how much of TeX's memory you used:
- 28552 strings out of 478238
- 518795 string characters out of 5850456
- 1049402 words of memory out of 5000000
+ 28545 strings out of 478238
+ 518774 string characters out of 5850456
+ 1049400 words of memory out of 5000000
  46000 multiletter control sequences out of 15000+600000
  506832 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3671,10 +3657,10 @@ share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dis
 t/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/public/tipa/tipa
 10.pfb>
-Output written on Writeup_Lewis_Britton_S.pdf (100 pages, 5800307 bytes).
+Output written on Writeup_Lewis_Britton_S.pdf (99 pages, 5800073 bytes).
 PDF statistics:
- 1337 PDF objects out of 1440 (max. 8388607)
- 1113 compressed objects within 12 object streams
- 265 named destinations out of 1000 (max. 500000)
+ 1327 PDF objects out of 1440 (max. 8388607)
+ 1104 compressed objects within 12 object streams
+ 258 named destinations out of 1000 (max. 500000)
  833 words of extra memory for PDF output out of 10000 (max. 10000000)
 
