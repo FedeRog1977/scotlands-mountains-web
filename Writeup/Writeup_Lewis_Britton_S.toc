@@ -72,25 +72,23 @@
 \contentsline {subsubsection}{\numberline {6.3.4}Leaflet}{33}{subsubsection.6.3.4}%
 \contentsline {subsubsection}{\numberline {6.3.5}Mapbox GL-JS}{33}{subsubsection.6.3.5}%
 \contentsline {subsubsection}{\numberline {6.3.6}Chart.js}{33}{subsubsection.6.3.6}%
-\contentsline {subsection}{\numberline {6.4}Project Management}{35}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Life-Cycle}{35}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}Supporting Tools}{37}{subsubsection.6.4.2}%
-\contentsline {section}{\numberline {7}Evaluation}{38}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Requirements Satisfaction III}{38}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Design \& Construction Review}{39}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Prototyping -- Pages}{39}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Prototyping -- Scalability}{39}{subsubsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.3}Testing}{39}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}`Test-Driven' Development}{39}{subsubsection.7.3.1}%
-\contentsline {paragraph}{\numberline {7.3.1.1}Heuristic Evaluations}{40}{paragraph.7.3.1.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}User Acceptance (UAT), Accessibility \& Usability}{40}{subsubsection.7.3.2}%
-\contentsline {paragraph}{\numberline {7.3.2.1}Isolated Testing}{41}{paragraph.7.3.2.1}%
-\contentsline {paragraph}{\numberline {7.3.2.2}Comprehensive Testing}{41}{paragraph.7.3.2.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Unit Testing \& Suites}{41}{subsubsection.7.3.3}%
-\contentsline {paragraph}{\numberline {7.3.3.1}HTML, CSS \& JavaScript Benchmarking}{41}{paragraph.7.3.3.1}%
-\contentsline {paragraph}{\numberline {7.3.3.2}JSON Benchmarking}{42}{paragraph.7.3.3.2}%
-\contentsline {subsection}{\numberline {7.4}Restrictions}{43}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Enhancements}{43}{subsection.7.5}%
-\contentsline {subsubsection}{\numberline {7.5.1}Design}{43}{subsubsection.7.5.1}%
-\contentsline {subsubsection}{\numberline {7.5.2}Construction}{44}{subsubsection.7.5.2}%
-\contentsline {subsection}{\numberline {7.6}Development Conclusions}{45}{subsection.7.6}%
+\contentsline {subsection}{\numberline {6.4}Project Management}{34}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Life-Cycle}{34}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Supporting Tools}{36}{subsubsection.6.4.2}%
+\contentsline {section}{\numberline {7}Evaluation}{37}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Requirements Satisfaction III}{37}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Design \& Construction Review}{38}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Prototyping -- Pages}{38}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Prototyping -- Scalability}{38}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Testing}{38}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}`Test-Driven' Development}{38}{subsubsection.7.3.1}%
+\contentsline {paragraph}{\numberline {7.3.1.1}Heuristic Evaluations}{39}{paragraph.7.3.1.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}User Acceptance (UAT), Accessibility \& Usability}{39}{subsubsection.7.3.2}%
+\contentsline {paragraph}{\numberline {7.3.2.1}Isolated Testing}{40}{paragraph.7.3.2.1}%
+\contentsline {paragraph}{\numberline {7.3.2.2}Comprehensive Testing}{40}{paragraph.7.3.2.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Unit Testing \& Suites}{40}{subsubsection.7.3.3}%
+\contentsline {paragraph}{\numberline {7.3.3.1}HTML, CSS \& JavaScript Benchmarking}{40}{paragraph.7.3.3.1}%
+\contentsline {paragraph}{\numberline {7.3.3.2}JSON Benchmarking}{41}{paragraph.7.3.3.2}%
+\contentsline {subsection}{\numberline {7.4}Restrictions}{42}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Enhancements}{42}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Development Conclusions}{44}{subsection.7.6}%

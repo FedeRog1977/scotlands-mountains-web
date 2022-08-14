@@ -177,7 +177,7 @@
         \vspace{\fill}
 
 	\begin{center}
-		\fbox{\textsc{... Words}}
+		\fbox{\textsc{8690 Words}}
 	\end{center}
 
 	\begin{center}
@@ -1046,7 +1046,7 @@ if ((day.wind_deg) >= 348.76) {
 
 		\subsubsection{Development Environment}
 
-	Throughout this development process, there appears no use of any proprietary software as it remains an unreliable, unnecessary, expensive and bloated method of completing tasks. Especially those which may be executed using, for example, one command in the command line or in Vim; or, a set of processes which may be executed more efficiently using, for example, a widely applicable Vim command. Using [free and open source software] such as the operating system ([Artix Linux]), environment (command line / Vim), APIs and libraries significantly increases freedom and extensibility of the project. Hence, the use of dwm's window tiling manager to allow efficient, continuous and conjunctive writing of HTML, CSS, JavaScript and {\TeX}\ documents alongside browser testing (Brave Browser). Any supporting non-essential documentation such as notes are written in plain text (\texttt{.txt}) files using Vim and comma-separated (\texttt{.csv}) files using SC-IM. [All. Plain. Text.]
+	Throughout this development process, there appears no use of any proprietary software as it remains an unreliable, unnecessary, expensive and bloated method of completing tasks. Especially those which may be executed using, for example, one command in the command line or in Vim; or, a set of processes which may be executed more efficiently using, for example, a widely applicable Vim command. Using free and open source software such as the operating system (Artix Linux), environment (command line / Vim), APIs and libraries significantly increases freedom and extensibility of the project. Hence, the use of dwm's window tiling manager to allow efficient, continuous and conjunctive writing of HTML, CSS, JavaScript and {\TeX}\ documents alongside browser testing (Brave Browser). Any supporting non-essential documentation such as notes are written in plain text (\texttt{.txt}) files using Vim and comma-separated (\texttt{.csv}) files using SC-IM. [All. Plain. Text.]
 
 		\subsubsection{User Interface}
 
@@ -1058,7 +1058,7 @@ if ((day.wind_deg) >= 348.76) {
 
 	\subsection{Application Programming Interfaces \& Libraries}
 
-	Application Programming Interfaces (APIs) and JavaScript libraries are included in the development process of this system in order to use and build upon unique layers of existing web material and interface with them using various, in some cases, [free and open-source] JavaScript libraries. Libraries of course being additional pre-defined functions and methods etc., which can be used with the addition of various scripts and stylesheets in order to enable and initialize use of APIs.
+	Application Programming Interfaces (APIs) and JavaScript libraries are included in the development process of this system in order to use and build upon unique layers of existing web material and interface with them using various, in some cases, free and open-source JavaScript libraries. Libraries of course being additional pre-defined functions and methods etc., which can be used with the addition of various scripts and stylesheets in order to enable and initialize use of APIs.
 
 		\subsubsection{Geolocation}
 
@@ -1084,31 +1084,40 @@ if ((day.wind_deg) >= 348.76) {
 	
 		Chart.js (Chart.js, 2022) is a JavaScript library for graphing statistics. It was originally intended for use in the `Ranger' section of the site, which would have acted as another page equivalent to the `Conquest Map' based on user-input-based data analysis. Some of it's features would also be available to view and used to manipulate route searching in `Conquest Map', much like `Ability' and `Equipment'.\\
 
-		The separate graphing page, or `calculator', would have included features based on elevation profile, speed input, power input, heart rate input, etc., which could be analysed through the graphing and charting of protocol such as the following:
+		The separate graphing page, or `calculator', would have included features based on elevation profile, speed input, power input, heart rate input, etc., which could be analysed through the graphing and charting of protocol such as that displayed in the following table.
 
-		\begin{itemize}
-		\setlength\itemsep{0cm}
-			\item Select: constant speed (max); Output: required time and power
-			\item Select: constant speed (average); Output: required time and power
-			\item Select: constant power Output; Output: required speed and time
-			\item Input: target speed; Output: Required time and power
-			\item Input: target power output; Output: required time and power
-			\item Input: target energy output; Output: required time and power
-		\end{itemize}
-
-		As previously noted, this portion was omitted due to time constraints and lack of relevance to the brief. Although it could make a future appearance beyond the constraints of this project.
+		\begin{table}[h]
+			\scriptsize
+			\renewcommand{\arraystretch}{1.25}
+		\begin{center}
+		\begin{tabular}{l|ll}
+			\textsc{Input Type} & \textsc{Input} & \textsc{Output}\\ 
+			\hline
+			\hline
+			\texttt{Select} & Constant speed (max) & Required time and power\\
+			\texttt{Select} & Constant speed (average) & Required time and power \\
+			\texttt{Select} & Constant power & required speed and time\\
+			\texttt{Input} & Target speed & Required time and power\\
+			\texttt{Input} & Target power & Required speed and time\\
+			\texttt{Input} & Target energy & Required time and power \\
+			\hline
+			\hline
+		\end{tabular}
+			\caption{`Ranger' Extensions}
+		\end{center}
+		\end{table}
 
 \newpage
 
 	\subsection{Project Management}
 
-	The primary goal in constructing this site remains to be the delivery of a functional web application, relative to the brief and requirements, by the project deadline in August. To ensure that the appropriate time and resources are allocated to each segment of the system's construction, continuous planning and documentation was applied. Not extensively or in any professional manner however, as this is still a [solo project]. This process does ensure a clear understanding of resource/environment management, system layers, and the scale and scope of elements.
+	The primary goal in constructing this site remains to be the delivery of a functional web application, relative to the brief and requirements, by the project deadline in August. To ensure that the appropriate time and resources are allocated to each segment of the system's construction, continuous planning and documentation was applied. Not extensively or in any professional manner however, as this is still a solo project. This process does ensure a clear understanding of resource/environment management, system layers, and the scale and scope of elements.
 
 		\subsubsection{Life-Cycle}
 
 	No formal framework is used in this scenario. However, the project is divided into intuitive sections which segment: project planning; gathering of supporting data; user interface functionality and data use; and, continuous testing and documentation. With reference to the testing stages, each element developed is tested as soon as is necessary by the developer (myself), to instantly correct minor issues. In the latter stages, the system is tested as-a-whole by myself and externals, and analysed in more depth. This style of testing does indeed have some relevance to the `sprint' concept of `Agile' in that project stages are assigned periods which involve continuous reference to the user-centered approach of requirements and testing. Each stage of this also considers the discussed MoSCoW hierarchy.\\
 
-	Throughout this project I adhere to a very minimal and efficient schedule kept using my [Calcurse] calendar client. An overview of this schedule can be seen in the below GANTT Chart, in Table 6.5. It illustrates all of the major project aspects listed above. Note that a chart such as this is always subject to amendment. This illustrative method is useful for both milestones and available tolerances. The chart runs from the dedicated project timespan: the first full week in May (w/c 2$^\textrm{nd}$) until the final full week in July (w/e 31$^\textrm{st}$) (13 weeks). Secondly, I maintain a plain text notes file which allows me to clearly list `to-do' items, issues, constraints, test results, and things alike; for review, amendment and write-up at a later date.
+	Throughout this project I adhere to a very minimal and efficient schedule kept using my Calcurse calendar client. An overview of this schedule can be seen in the below GANTT Chart, in Table 6.5. It illustrates all of the major project aspects listed above. Note that a chart such as this is always subject to amendment. This illustrative method is useful for both milestones and available tolerances. The chart runs from the dedicated project timespan: the first full week in May (w/c 2$^\textrm{nd}$) until the final full week in July (w/e 31$^\textrm{st}$) (13 weeks). Secondly, I maintain a plain text notes file which allows me to clearly list `to-do' items, issues, constraints, test results, and things alike; for review, amendment and write-up at a later date.
 
 	\vspace{\fill}
 
@@ -1170,7 +1179,7 @@ if ((day.wind_deg) >= 348.76) {
 
 		\subsubsection{Supporting Tools}
 
-	Following from section 6.2 and it's Table 6.4, the `transcription' section remains not-discussed. For this purpose, a more [neomodernist] installment of [Donald E. Knuth's {\TeX}] ({\LaTeX}) is used to compose and transcribe formal final report material. Again, plain text (\texttt{.tex}) files are the option favoured as it's most efficient and easiest to work with. These are compiled using (PDF){\LaTeX}\ in this case, into versatile PDF (\texttt{.pdf}) documents. Although some mathematical and \texttt{tikz} elements could benefit from the use of (\textsc{Xe}){\LaTeX}. My [neoMutt] e-mail client is used in the distribution of surveys etc. to testers and people alike.\\
+	Following from section 6.2 and it's Table 6.4, the `transcription' section remains not-discussed. For this purpose, a more neomodernist installment of Donald E. Knuth's {\TeX} ({\LaTeX}) is used to compose and transcribe formal final report material. Again, plain text (\texttt{.tex}) files are the option favoured as it's most efficient and easiest to work with. These are compiled using (PDF){\LaTeX}\ in this case, into versatile PDF (\texttt{.pdf}) documents. Although some mathematical and \texttt{tikz} elements could benefit from the use of (\textsc{Xe}){\LaTeX}. My neoMutt e-mail client is used in the distribution of surveys etc. to testers and people alike.\\
 
 	Finally, \href{https://github.com/FedeRog1977}{GitHub} is favoured as the version control manager for this site and it's documentation. This provides `assurance' of the safety of documents and insurance in the case of local issues. For example, in a scenario requiring Git Revert or simply restoring a backup. As this is a web application, the directory tree is equivalent to the system tree of the site. In the future, this site could also be deployed using GitHub pages, much like \href{http://lewisbritton.com/}{lewisbritton.com}. If code from this site, such as the region and landmass data JSON file, were to be published on a more professional basis, a Markdown (\texttt{.md}) README file would be composed and added to my GitHub.
 
@@ -1251,7 +1260,7 @@ if ((day.wind_deg) >= 348.76) {
 
 	User Acceptance Testing essentially describes the satisfaction of conditions which must be met in order to accept or reject fulfillment of [1] the requirements, and [2] additional accessibility and other aesthetic features. Surveying, of student and professional developers and myself, is the selected method of data collection. Reviewing critique upon intervals and comprehensively, with the appropriate sample size, provides accurate and relevant quantitative and qualitative results and highlights consistency of the usability and `flow' of the final aggregate system. Reference to the recursion tree (section 5.2.2) also aids testers here. In larger-scale developments, this would likely be outsourced.\\
 
-	With reference to the GANTT chart in Table 6.5, this portion refers to the isolated and comprehensive element testing completed by [1] externals and [2] the developer (myself), post-completion. Alike the former, developer testing has been described, external testing is issued in the same manner. Decisions were made on a tangibility-basis. This process was documented as described under the following headings. Note that, with reference to the discussed Figure A8, some \texttt{function}s do not appear as they do in Figure A6 and vice-versa. This is because Figure A6 details all `functional' functions which are used by the system, where Figure A8 details all functions which a user interacts with.
+	With reference to the GANTT chart in Table 6.5, this portion refers to the isolated and comprehensive element testing completed by [1] externals and [2] the developer (myself), post-completion. Alike the former, developer testing has been described, external testing is issued in the same manner. Decisions were made on a tangibility-basis. This process was documented as described under the following headings. Note that, with reference to the discussed Figure A8, some functions do not appear as they do in Figure A6 and vice-versa. This is because Figure A6 details all `functional' functions which are used by the system, where Figure A8 details all functions which a user interacts with.
 
 			\paragraph{Isolated Testing}
 
@@ -1269,7 +1278,7 @@ if ((day.wind_deg) >= 348.76) {
 
  	Popular tools such as Unit.js and Mocha appear within frameworks such as Node.js and in browsers such as Chromium. This system is of course anti-bloatware and anti-spyware and thus, avoids `big-tech' proprietary software. These tools are designed to allow developers to write `test cases' which simulate an interface instance with the HTML and JavaScript elements. In this case, a three-thousand-line table of results with stats to five significant figures is of no benefit. On a larger-scale project with scalability, this would be relevant. Human interaction with elements on this scale leads to faster problem solving. On a separate note, all JavaScript functions are tested, given test inputs where appropriate, not only as part of their HTML elements but also in the `console' in-browser to ensure they function solely. This is not documented as results are subjective and no issues occurred.\\
 
-	I gave in to the \href{https://www.youtube.com/watch?v=ZL9fnVtz_lc}{Heat} and installed the command line tool \texttt{npm node} which allows you to interface with features of the Node.js API such as script validators. \texttt{amphtml-validator} was used to validate the integrity of HTML, CSS and JavaScript files. No major issues occured when running this protocol. Any issues indicated were either related to justified syntax `disagreements' and various unrecognised Leaflet syntax. There is likely a way of amending the package to account for Leaflet however, it was irrelevant as all issues were readable and the tool will not be used in the future.
+	I gave in to the \href{https://www.youtube.com/watch?v=ZL9fnVtz_lc}{heat} and installed the command line tool \texttt{npm node} which allows you to interface with features of the Node.js API such as script validators. \texttt{amphtml-validator} was used to validate the integrity of HTML, CSS and JavaScript files. No major issues occured when running this protocol. Any issues indicated were either related to justified syntax `disagreements' and various unrecognised Leaflet syntax. There is likely a way of amending the package to account for Leaflet however, it was irrelevant as all issues were readable and the tool will not be used in the future.
 
 			\paragraph{JSON Benchmarking}
 
@@ -1281,32 +1290,38 @@ if ((day.wind_deg) >= 348.76) {
 
 	\subsection{Restrictions}
 
-	Some alterations and omissions were made based upon the given constraints of the project. For detailed descriptions and justifications of these, revise the list under section 4.1.3, in \textit{Data Gathering} and various locations throughout the \textit{System Design} and \texttt{System Construction} sections. None of these directly impact the requirements of the system; all requirements are still delivered. This note excludes the `Ranger' portion of the site as the decision was made early to omit all of its features as they were non-essential.
+	Some alterations and omissions were made based upon the given constraints of the project. For detailed descriptions and justifications of these, revise the list under section 4.1.3, in \textit{Data Gathering} and various locations throughout the \textit{System Design} and \textit{System Construction} sections. None of these directly impact the requirements of the system; all requirements are still delivered. This note excludes the `Ranger' portion of the site as the decision was made early to omit all of its features as they were non-essential.
 
 	\subsection{Enhancements}
 
-		\subsubsection{Design}
-	
-	\begin{itemize}
-	\setlength\itemsep{0cm}
-		\item Most importantly, given more time, the `Ranger' graphing system would have been a major part of this site; allowing users the freedom to analyse statistics in far more detail. However due to the constraints; the fact these features aren't relevant to the brief; and more-detailed focus on the integrity of individual elements of the existing system, it's structure and write-up; the system remains without.\\
-		\item On a wider scope, the cycling equivalent of all the hiking features, and more, should be added to the site to make it more comprehensive and inclusive
-		\item When showing a route on `Conquest Map', currently all hills covered on that route are shown. Functionality which allows the user to specify/refine which kind of hills (Munros, Munro Tops, etc.) they would like to see on that route would be useful.
-		\item As discussed under section 5.2.3.2, additional graphic design would have been favoured in places such as the `Conquest Map' and on the home page, simply as aesthetic pieces, if it weren't for the time constraint and lack of relevance.
-		\item For symmetry and continuity leading form the `Drafting' portion to the `Conquest Map', weather elements should be implemented with different effect on route outputs, just like those relating to ability and equipments
-		\item Improve the overall functionality relating to re-starting the process of refining routes; involving a better hierarchy of clearing and re-ordering restrictions
-		\item Complete the cloud types suggested reading under `Weather' to provide a better understanding of how clouds and their precipitation can effect routes
-		\item Complete the comprehensive collection of photos relating to ability and equipment components, for display on request under `Conditioning'
-	\end{itemize}
-	
-		\subsubsection{Construction}
+	The following table details extensions to-be-made to this site given zero-constraint.
 
-	\begin{itemize}
-	\setlength\itemsep{0cm}
-		\item Some variable and function names which were created during different time periods in the project could use revision as they are slightly inconsistent in places. For example, input functions which serve the same purpose (searching the JSON file for a Munro name) in the weather app and `Overview'/`Conquest Map' sections have inconsistent syntax in their names: \texttt{inpMunroOpt()} and \texttt{searchLocation()}, respectively. Although one of these does just search Munros and the other, all hills; naming convention should still be consistent, for example: \texttt{searchMunro()} and \texttt{searchLocation()}, respectively. Minor consistency/continuity issues like this should be fixed given greater time allocated to non-functional code readability issues.
-		\item Just as the function \texttt{showNearest()} takes an input parameter to determine what kind of hill is being examined (Munro, Munro Top, Corbett, Corbett Top), so too should the two sets of functions: \texttt{showMunros()}, \texttt{showMunroTops()}, \texttt{showCorbe- tts()}, \texttt{showCorbettTops()}; \texttt{showMunro()}, \texttt{showMunroTop()}, \texttt{showCorbett()}, \texttt{sh- owCorbettTop()}; respectively, as they simply repeat logic which iterates through different attributes. This is due to developer skill development throughout development and is justified due to the nature of this university course and time constraints.
-		\item I don't even know what happened but the majority of the tables' double \verb|\hline|'s got messed up in compilation, in this document. They just appear as a thick line. Probably something to do with all the bloated packages I've used. This seems minor but it bothers me more then any of the other issues.
-	\end{itemize}
+	\begin{center}
+		\scriptsize
+	\begin{longtable}{l|p{12cm}}
+		\hline
+		\hline
+		\multicolumn{2}{c}{\textsc{Design}}\\
+		\hline
+		1 & Most importantly, given more time, the `Ranger' graphing system would have been a major part of this site; allowing users the freedom to analyse statistics in far more detail. However due to the constraints; the fact these features aren't relevant to the brief; and more-detailed focus on the integrity of individual elements of the existing system, it's structure and write-up; the system remains without.\\
+		2 & On a wider scope, the cycling equivalent of all the hiking features, and more, should be added to the site to make it more comprehensive and inclusive.\\
+		3 & When showing a route on `Conquest Map', currently all hills covered on that route are shown. Functionality which allows the user to specify/refine which kind of hills (Munros, Munro Tops, etc.) they would like to see on that route would be useful.\\
+		4 & As discussed under section 5.2.3.2, additional graphic design would have been favoured in places such as the `Conquest Map' and on the home page, simply as aesthetic pieces, if it weren't for the time constraint and lack of relevance.\\
+		4 & For symmetry and continuity leading form the `Drafting' portion to the `Conquest Map', weather elements should be implemented with different effect on route outputs, just like those relating to ability and equipments.\\
+		5 & Improve the overall functionality relating to re-starting the process of refining routes; involving a better hierarchy of clearing and re-ordering restrictions.\\
+		6 & Complete the cloud types suggested reading under `Weather' to provide a better understanding of how clouds and their precipitation can effect routes.\\
+		8 & Complete the comprehensive collection of photos relating to ability and equipment components, for display on request under `Conditioning'.\newline\newline\newline\newline\newline\\
+		\hline
+		\multicolumn{2}{c}{\textsc{Construction}}\\
+		\hline
+		1 & Some variable and function names which were created during different time periods in the project could use revision as they are slightly inconsistent in places. For example, input functions which serve the same purpose (searching the JSON file for a Munro name) in the weather app and `Overview'/`Conquest Map' sections have inconsistent syntax in their names: \texttt{inpMunroOpt()} and \texttt{searchLocation()}, respectively. Although one of these does just search Munros and the other, all hills; naming convention should still be consistent, for example: \texttt{searchMunro()} and \texttt{searchLocation()}, respectively. Minor consistency/continuity issues like this should be fixed given greater time allocated to non-functional code readability issues.\\
+		2 & Just as the function \texttt{showNearest()} takes an input parameter to determine what kind of hill is being examined (Munro, Munro Top, Corbett, Corbett Top), so too should the two sets of functions: \texttt{showMunros()}, \texttt{showMunroTops()}, \texttt{showCorbe- tts()}, \texttt{showCorbettTops()}; \texttt{showMunro()}, \texttt{showMunroTop()}, \texttt{showCorbett()}, \texttt{showCorbettTop()}; respectively, as they simply repeat logic which iterates through different attributes. This is due to developer skill development throughout development and is justified due to the nature of this university course and time constraints.\\
+		3 & I don't even know what happened but the majority of the tables' double \verb|\hline|'s got messed up in compilation, in this document. They just appear as a thick line. Probably something to do with all the bloated packages I've used. This seems minor but it bothers me more then any of the other issues.\\
+		\hline
+		\hline
+		\caption{Enhancements}
+	\end{longtable}
+	\end{center}
 
 \newpage
 
