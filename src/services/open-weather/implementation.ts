@@ -31,6 +31,7 @@ type Config = {
   apiKey: string;
   validator: Validator;
 };
+
 export class Implementation implements Interface {
   private readonly baseUrl: string;
 
