@@ -1,0 +1,1301 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1" creator="Quo v2" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <desc>GPX file generated with Quo.</desc>
+    <link href="http://www.mapyx.com">
+      <text>Mapyx</text>
+    </link>
+    <time>2015-03-11T08:48:05.453125+00:00</time>
+  </metadata>
+  <rte>
+    <name>scnl gullies actual</name>
+    <desc />
+    <extensions>
+      <drawing v="True" pv="True" pw="4" pc="255|255|255" pt="0" lv="True" lw="4" lc="0|0|255" lt="0" ls="0" lcs="3" fc="255|255|255" ft="120" fs="-1" fsc="0|0|0" xmlns="" />
+    </extensions>
+    <rtept lat="56.6680739913" lon="-4.9909705482">
+      <ele>166.45</ele>
+      <time>2015-03-10T09:00:48</time>
+      <name>WPT 001</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6679605842" lon="-4.9910201691">
+      <ele>162.12</ele>
+      <time>2015-03-10T09:03:17</time>
+      <name>WPT 002</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6677542217" lon="-4.9908117112">
+      <ele>152.99</ele>
+      <time>2015-03-10T09:03:48</time>
+      <name>WPT 003</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6674803849" lon="-4.990971135">
+      <ele>140.49</ele>
+      <time>2015-03-10T09:04:15</time>
+      <name>WPT 004</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6670845076" lon="-4.9908666126">
+      <ele>127.03</ele>
+      <time>2015-03-10T09:04:49</time>
+      <name>WPT 005</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6667019576" lon="-4.9911279604">
+      <ele>125.59</ele>
+      <time>2015-03-10T09:05:58</time>
+      <name>WPT 006</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.666133916" lon="-4.9920470361">
+      <ele>126.07</ele>
+      <time>2015-03-10T09:06:54</time>
+      <name>WPT 007</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6657417268" lon="-4.9924812187">
+      <ele>123.19</ele>
+      <time>2015-03-10T09:07:29</time>
+      <name>WPT 008</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6654092167" lon="-4.9926629383">
+      <ele>121.74</ele>
+      <time>2015-03-10T09:07:59</time>
+      <name>WPT 009</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.665246021" lon="-4.9929223582">
+      <ele>122.22</ele>
+      <time>2015-03-10T09:08:20</time>
+      <name>WPT 010</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6646516602" lon="-4.9929211847">
+      <ele>135.68</ele>
+      <time>2015-03-10T09:09:24</time>
+      <name>WPT 011</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6641903203" lon="-4.9934538547">
+      <ele>134.24</ele>
+      <time>2015-03-10T09:10:37</time>
+      <name>WPT 012</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6638438124" lon="-4.9934038986">
+      <ele>159.72</ele>
+      <time>2015-03-10T09:11:47</time>
+      <name>WPT 013</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6629373096" lon="-4.994431017">
+      <ele>190.48</ele>
+      <time>2015-03-10T09:14:25</time>
+      <name>WPT 014</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.662969077" lon="-4.9948875792">
+      <ele>193.36</ele>
+      <time>2015-03-10T09:15:04</time>
+      <name>WPT 015</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6625729483" lon="-4.9979891349">
+      <ele>214.51</ele>
+      <time>2015-03-10T09:19:14</time>
+      <name>WPT 016</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6621898953" lon="-4.99847495">
+      <ele>243.83</ele>
+      <time>2015-03-10T09:21:11</time>
+      <name>WPT 017</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.661720844" lon="-4.9986068811">
+      <ele>258.73</ele>
+      <time>2015-03-10T09:22:19</time>
+      <name>WPT 018</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6616622545" lon="-4.9992573168">
+      <ele>262.58</ele>
+      <time>2015-03-10T09:23:16</time>
+      <name>WPT 019</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6613753419" lon="-4.9998256937">
+      <ele>273.63</ele>
+      <time>2015-03-10T09:24:44</time>
+      <name>WPT 020</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6609849129" lon="-5.0000851136">
+      <ele>289.49</ele>
+      <time>2015-03-10T09:26:36</time>
+      <name>WPT 021</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6607611999" lon="-5.0004728604">
+      <ele>298.15</ele>
+      <time>2015-03-10T09:27:41</time>
+      <name>WPT 022</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6604129318" lon="-5.0006477069">
+      <ele>326.5</ele>
+      <time>2015-03-10T09:29:21</time>
+      <name>WPT 023</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6601643246" lon="-5.0005555898">
+      <ele>347.65</ele>
+      <time>2015-03-10T09:30:20</time>
+      <name>WPT 024</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6596873105" lon="-5.0015288126">
+      <ele>361.11</ele>
+      <time>2015-03-10T09:32:08</time>
+      <name>WPT 025</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6594616696" lon="-5.0017299782">
+      <ele>368.8</ele>
+      <time>2015-03-10T09:32:51</time>
+      <name>WPT 026</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6587163508" lon="-5.002999166">
+      <ele>363.04</ele>
+      <time>2015-03-10T09:37:13</time>
+      <name>WPT 027</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6581781488" lon="-5.0044405181">
+      <ele>389.95</ele>
+      <time>2015-03-10T09:39:20</time>
+      <name>WPT 028</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6577592213" lon="-5.0049130898">
+      <ele>424.08</ele>
+      <time>2015-03-10T09:41:16</time>
+      <name>WPT 029</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6574289743" lon="-5.00550217">
+      <ele>445.71</ele>
+      <time>2015-03-10T09:42:47</time>
+      <name>WPT 030</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.65743283" lon="-5.0057051796">
+      <ele>441.86</ele>
+      <time>2015-03-10T09:44:38</time>
+      <name>WPT 031</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6569667123" lon="-5.0060654338">
+      <ele>468.78</ele>
+      <time>2015-03-10T09:48:38</time>
+      <name>WPT 032</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6564498004" lon="-5.0070636347">
+      <ele>488.97</ele>
+      <time>2015-03-10T09:51:52</time>
+      <name>WPT 033</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6561441123" lon="-5.0078573171">
+      <ele>503.87</ele>
+      <time>2015-03-10T09:53:31</time>
+      <name>WPT 034</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6558866203" lon="-5.0080226921">
+      <ele>524.54</ele>
+      <time>2015-03-10T09:55:05</time>
+      <name>WPT 035</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6556802578" lon="-5.0085337367">
+      <ele>532.23</ele>
+      <time>2015-03-10T09:56:54</time>
+      <name>WPT 036</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6552159004" lon="-5.009224657">
+      <ele>559.14</ele>
+      <time>2015-03-10T09:59:15</time>
+      <name>WPT 037</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.654939549" lon="-5.0094672292">
+      <ele>565.39</ele>
+      <time>2015-03-10T10:01:00</time>
+      <name>WPT 038</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6537734587" lon="-5.0114159379">
+      <ele>635.57</ele>
+      <time>2015-03-10T10:08:25</time>
+      <name>WPT 039</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6536763962" lon="-5.0119750109">
+      <ele>651.91</ele>
+      <time>2015-03-10T10:09:39</time>
+      <name>WPT 040</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6535247676" lon="-5.0121300761">
+      <ele>657.2</ele>
+      <time>2015-03-10T10:10:42</time>
+      <name>WPT 041</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.653938666" lon="-5.012648413">
+      <ele>653.83</ele>
+      <time>2015-03-10T10:19:53</time>
+      <name>WPT 042</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6540094092" lon="-5.0130180549">
+      <ele>661.04</ele>
+      <time>2015-03-10T10:20:45</time>
+      <name>WPT 043</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6540129296" lon="-5.0135199632">
+      <ele>670.18</ele>
+      <time>2015-03-10T10:22:13</time>
+      <name>WPT 044</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6539312899" lon="-5.0137547404">
+      <ele>675.94</ele>
+      <time>2015-03-10T10:22:43</time>
+      <name>WPT 045</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6540051345" lon="-5.0143073592">
+      <ele>686.52</ele>
+      <time>2015-03-10T10:23:57</time>
+      <name>WPT 046</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6538571939" lon="-5.0144102052">
+      <ele>692.77</ele>
+      <time>2015-03-10T10:24:58</time>
+      <name>WPT 047</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6538190562" lon="-5.014674319">
+      <ele>702.38</ele>
+      <time>2015-03-10T10:25:41</time>
+      <name>WPT 048</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6535544395" lon="-5.0146759953">
+      <ele>720.65</ele>
+      <time>2015-03-10T10:26:59</time>
+      <name>WPT 049</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6535462253" lon="-5.0148785859">
+      <ele>725.93</ele>
+      <time>2015-03-10T10:27:36</time>
+      <name>WPT 050</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6533717141" lon="-5.014915131">
+      <ele>739.87</ele>
+      <time>2015-03-10T10:29:08</time>
+      <name>WPT 051</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6528435703" lon="-5.0158536527">
+      <ele>777.84</ele>
+      <time>2015-03-10T10:32:12</time>
+      <name>WPT 052</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6526646167" lon="-5.0163558125">
+      <ele>790.82</ele>
+      <time>2015-03-10T10:33:41</time>
+      <name>WPT 053</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6524847411" lon="-5.0175527483">
+      <ele>797.07</ele>
+      <time>2015-03-10T10:38:38</time>
+      <name>WPT 054</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6523173545" lon="-5.0177346356">
+      <ele>794.19</ele>
+      <time>2015-03-10T10:40:32</time>
+      <name>WPT 055</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6521560866" lon="-5.0181342009">
+      <ele>795.15</ele>
+      <time>2015-03-10T10:41:05</time>
+      <name>WPT 056</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6521336231" lon="-5.0184491929">
+      <ele>805.72</ele>
+      <time>2015-03-10T10:41:41</time>
+      <name>WPT 057</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6518498119" lon="-5.0189749897">
+      <ele>822.06</ele>
+      <time>2015-03-10T10:43:18</time>
+      <name>WPT 058</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.651699692" lon="-5.0190808531">
+      <ele>830.24</ele>
+      <time>2015-03-10T10:43:50</time>
+      <name>WPT 059</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6516298708" lon="-5.0194687676">
+      <ele>836.48</ele>
+      <time>2015-03-10T10:50:30</time>
+      <name>WPT 060</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6500514746" lon="-5.0198714342">
+      <ele>953.28</ele>
+      <time>2015-03-10T11:08:10</time>
+      <name>WPT 061</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6498324554" lon="-5.0203822274">
+      <ele>979.72</ele>
+      <time>2015-03-10T11:16:56</time>
+      <name>WPT 062</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6495178826" lon="-5.0216406025">
+      <ele>1054.7</ele>
+      <time>2015-03-10T11:29:22</time>
+      <name>WPT 063</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6492359154" lon="-5.0214875489">
+      <ele>1089.31</ele>
+      <time>2015-03-10T11:36:36</time>
+      <name>WPT 064</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6489814408" lon="-5.0218530837">
+      <ele>1099.4</ele>
+      <time>2015-03-10T11:38:12</time>
+      <name>WPT 065</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6488798521" lon="-5.0218018703">
+      <ele>1109.5</ele>
+      <time>2015-03-10T11:39:46</time>
+      <name>WPT 066</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6489418782" lon="-5.0218861084">
+      <ele>1111.42</ele>
+      <time>2015-03-10T11:41:25</time>
+      <name>WPT 067</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.648835009" lon="-5.0217874534">
+      <ele>1113.34</ele>
+      <time>2015-03-10T11:44:47</time>
+      <name>WPT 068</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6493765637" lon="-5.0228605047">
+      <ele>1076.81</ele>
+      <time>2015-03-10T11:54:31</time>
+      <name>WPT 069</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6496049706" lon="-5.0235608127">
+      <ele>1055.18</ele>
+      <time>2015-03-10T11:58:49</time>
+      <name>WPT 070</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6497962456" lon="-5.0232050009">
+      <ele>1045.57</ele>
+      <time>2015-03-10T12:09:13</time>
+      <name>WPT 071</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6498676479131" lon="-5.02297011411267">
+      <ele>1048.02666164371</ele>
+      <time>2015-03-10T12:11:26</time>
+      <name>WPT 072</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6499258295932" lon="-5.022795280834">
+      <ele>1052.69787259662</ele>
+      <time>2015-03-10T12:11:47</time>
+      <name>WPT 073</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6499471361048" lon="-5.02265828818168">
+      <ele>1056.25939114931</ele>
+      <time>2015-03-10T12:13:54</time>
+      <name>WPT 074</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6500261612" lon="-5.0224338658">
+      <ele>976.84</ele>
+      <time>2015-03-10T12:17:19</time>
+      <name>WPT 075</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6503002495" lon="-5.021844618">
+      <ele>956.65</ele>
+      <time>2015-03-10T12:25:27</time>
+      <name>WPT 076</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6504932847" lon="-5.0219372381">
+      <ele>945.59</ele>
+      <time>2015-03-10T12:29:57</time>
+      <name>WPT 077</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6505318414" lon="-5.0221502222">
+      <ele>940.79</ele>
+      <time>2015-03-10T12:32:18</time>
+      <name>WPT 078</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6503307596" lon="-5.0228240434">
+      <ele>950.88</ele>
+      <time>2015-03-10T12:38:03</time>
+      <name>WPT 079</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6503176" lon="-5.0232665241">
+      <ele>967.7</ele>
+      <time>2015-03-10T12:40:17</time>
+      <name>WPT 080</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6502450127" lon="-5.0234845374">
+      <ele>996.54</ele>
+      <time>2015-03-10T12:46:30</time>
+      <name>WPT 081</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6502222161834" lon="-5.02354514840525">
+      <ele>1032.46517025145</ele>
+      <time>2015-03-10T12:46:53</time>
+      <name>WPT 082</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6501372214" lon="-5.0239939056">
+      <ele>1041.73</ele>
+      <time>2015-03-10T13:10:20</time>
+      <name>WPT 083</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6498607863" lon="-5.0235767383">
+      <ele>1052.78</ele>
+      <time>2015-03-10T13:14:18</time>
+      <name>WPT 084</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6498753708" lon="-5.0237480644">
+      <ele>1053.26</ele>
+      <time>2015-03-10T13:15:54</time>
+      <name>WPT 085</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6501669772" lon="-5.0239431951">
+      <ele>1048.94</ele>
+      <time>2015-03-10T13:17:09</time>
+      <name>WPT 086</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6505654529" lon="-5.0239271857">
+      <ele>1037.4</ele>
+      <time>2015-03-10T13:23:08</time>
+      <name>WPT 087</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6509121284" lon="-5.0240726955">
+      <ele>1029.71</ele>
+      <time>2015-03-10T13:24:03</time>
+      <name>WPT 088</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6512019746" lon="-5.023933975">
+      <ele>1025.86</ele>
+      <time>2015-03-10T13:24:44</time>
+      <name>WPT 089</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6515059024" lon="-5.0241348054">
+      <ele>1017.69</ele>
+      <time>2015-03-10T13:25:44</time>
+      <name>WPT 090</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6515693534" lon="-5.0240695104">
+      <ele>1011.93</ele>
+      <time>2015-03-10T13:26:29</time>
+      <name>WPT 091</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6515871231" lon="-5.0243213866">
+      <ele>1010.96</ele>
+      <time>2015-03-10T13:27:57</time>
+      <name>WPT 092</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6517545935" lon="-5.0245547388">
+      <ele>1002.79</ele>
+      <time>2015-03-10T13:28:54</time>
+      <name>WPT 093</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6520490497" lon="-5.0240597036">
+      <ele>1004.72</ele>
+      <time>2015-03-10T13:30:08</time>
+      <name>WPT 094</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.652313415" lon="-5.0242976658">
+      <ele>993.66</ele>
+      <time>2015-03-10T13:31:44</time>
+      <name>WPT 095</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6524348687" lon="-5.0242330413">
+      <ele>990.78</ele>
+      <time>2015-03-10T13:32:20</time>
+      <name>WPT 096</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6528423131" lon="-5.0243797246">
+      <ele>974.91</ele>
+      <time>2015-03-10T13:33:38</time>
+      <name>WPT 097</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6530749109" lon="-5.024228096">
+      <ele>968.67</ele>
+      <time>2015-03-10T13:34:35</time>
+      <name>WPT 098</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6532792617" lon="-5.0244285911">
+      <ele>964.34</ele>
+      <time>2015-03-10T13:35:47</time>
+      <name>WPT 099</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6532749031" lon="-5.0245968997">
+      <ele>962.9</ele>
+      <time>2015-03-10T13:36:19</time>
+      <name>WPT 100</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6534178983" lon="-5.0245968997">
+      <ele>963.38</ele>
+      <time>2015-03-10T13:37:14</time>
+      <name>WPT 101</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6542072222" lon="-5.0241420139">
+      <ele>945.11</ele>
+      <time>2015-03-10T13:39:09</time>
+      <name>WPT 102</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6545761097" lon="-5.0240871962">
+      <ele>933.58</ele>
+      <time>2015-03-10T13:40:06</time>
+      <name>WPT 103</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6549403872" lon="-5.0234412868">
+      <ele>925.89</ele>
+      <time>2015-03-10T13:41:27</time>
+      <name>WPT 104</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6551211849" lon="-5.0233103614">
+      <ele>914.83</ele>
+      <time>2015-03-10T13:42:00</time>
+      <name>WPT 105</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6550413892" lon="-5.0229155738">
+      <ele>906.66</ele>
+      <time>2015-03-10T13:43:03</time>
+      <name>WPT 106</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6551024932" lon="-5.023325365">
+      <ele>905.22</ele>
+      <time>2015-03-10T13:44:18</time>
+      <name>WPT 107</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6552907508" lon="-5.0230370276">
+      <ele>899.45</ele>
+      <time>2015-03-10T13:46:54</time>
+      <name>WPT 108</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6550958715" lon="-5.0233234372">
+      <ele>905.22</ele>
+      <time>2015-03-10T13:54:13</time>
+      <name>WPT 109</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6552204266" lon="-5.0229888316">
+      <ele>899.45</ele>
+      <time>2015-03-10T14:03:29</time>
+      <name>WPT 110</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6551090311" lon="-5.0224379729">
+      <ele>885.99</ele>
+      <time>2015-03-10T14:04:46</time>
+      <name>WPT 111</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6545382235" lon="-5.0223419163">
+      <ele>869.65</ele>
+      <time>2015-03-10T14:08:19</time>
+      <name>WPT 112</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6540323757" lon="-5.0226818025">
+      <ele>870.13</ele>
+      <time>2015-03-10T14:10:15</time>
+      <name>WPT 113</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6536460537" lon="-5.0226484425">
+      <ele>886.95</ele>
+      <time>2015-03-10T14:12:18</time>
+      <name>WPT 114</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6532670241" lon="-5.022942815">
+      <ele>891.76</ele>
+      <time>2015-03-10T14:14:27</time>
+      <name>WPT 115</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6531721847333" lon="-5.02296060963106">
+      <ele>924.987061108616</ele>
+      <time>2015-03-10T14:15:08</time>
+      <name>WPT 116</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.653165184" lon="-5.0229618419">
+      <ele>897.05</ele>
+      <time>2015-03-10T14:15:53</time>
+      <name>WPT 117</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6529027466" lon="-5.0229988899">
+      <ele>885.03</ele>
+      <time>2015-03-10T14:16:41</time>
+      <name>WPT 118</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6528541315" lon="-5.0229569804">
+      <ele>879.74</ele>
+      <time>2015-03-10T14:17:59</time>
+      <name>WPT 119</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6529040877" lon="-5.022766795">
+      <ele>880.22</ele>
+      <time>2015-03-10T14:18:43</time>
+      <name>WPT 120</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6528429836" lon="-5.0227558147">
+      <ele>876.38</ele>
+      <time>2015-03-10T14:19:35</time>
+      <name>WPT 121</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6524983134529" lon="-5.02280057014522">
+      <ele>952.506166344141</ele>
+      <time>2015-03-10T14:22:22</time>
+      <name>WPT 122</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.65239539" lon="-5.0228232052">
+      <ele>880.71</ele>
+      <time>2015-03-10T14:24:38</time>
+      <name>WPT 123</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6521696653" lon="-5.0232117064">
+      <ele>888.88</ele>
+      <time>2015-03-10T14:26:47</time>
+      <name>WPT 124</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6521386523" lon="-5.0234126206">
+      <ele>936.94</ele>
+      <time>2015-03-10T14:32:53</time>
+      <name>WPT 125</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.652006930728" lon="-5.02371258198359">
+      <ele>991.918458541171</ele>
+      <time>2015-03-10T14:39:59</time>
+      <name>WPT 126</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6520340428512" lon="-5.02370659460936">
+      <ele>990.690630994078</ele>
+      <time>2015-03-10T14:42:51</time>
+      <name>WPT 127</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6519944835" lon="-5.0237534288">
+      <ele>954.73</ele>
+      <time>2015-03-10T14:43:10</time>
+      <name>WPT 128</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.651982720814" lon="-5.02378407538806">
+      <ele>993.61870788652</ele>
+      <time>2015-03-10T14:44:11</time>
+      <name>WPT 129</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6519362803135" lon="-5.02384562864726">
+      <ele>996.049704875865</ele>
+      <time>2015-03-10T15:01:47</time>
+      <name>WPT 130</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6519134559394" lon="-5.02386011857525">
+      <ele>997.074403030267</ele>
+      <time>2015-03-10T15:06:37</time>
+      <name>WPT 131</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6518707093083" lon="-5.02395460423342">
+      <ele>999.427271137327</ele>
+      <time>2015-03-10T15:20:54</time>
+      <name>WPT 132</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6517743321971" lon="-5.02403663399544">
+      <ele>1002.1469768622</ele>
+      <time>2015-03-10T15:22:19</time>
+      <name>WPT 133</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6516929283693" lon="-5.02424224993278">
+      <ele>1004.93131466293</ele>
+      <time>2015-03-10T15:25:26</time>
+      <name>WPT 134</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.651687979015" lon="-5.02444583170749">
+      <ele>1000.67223110935</ele>
+      <time>2015-03-10T15:26:32</time>
+      <name>WPT 135</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6520162765" lon="-5.0243829936">
+      <ele>1009.52</ele>
+      <time>2015-03-10T15:28:28</time>
+      <name>WPT 136</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.652236972" lon="-5.0246614404">
+      <ele>989.33</ele>
+      <time>2015-03-10T15:30:45</time>
+      <name>WPT 137</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6530552972" lon="-5.024282746">
+      <ele>970.59</ele>
+      <time>2015-03-10T15:32:35</time>
+      <name>WPT 138</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.653363416" lon="-5.0244386494">
+      <ele>961.46</ele>
+      <time>2015-03-10T15:33:04</time>
+      <name>WPT 139</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6539853532" lon="-5.0241626333">
+      <ele>940.79</ele>
+      <time>2015-03-10T15:34:12</time>
+      <name>WPT 140</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6547812149" lon="-5.0233486667">
+      <ele>924.93</ele>
+      <time>2015-03-10T15:37:04</time>
+      <name>WPT 141</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6551037505" lon="-5.023187818">
+      <ele>907.14</ele>
+      <time>2015-03-10T15:37:51</time>
+      <name>WPT 142</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.655334169" lon="-5.0226552319">
+      <ele>897.53</ele>
+      <time>2015-03-10T15:38:23</time>
+      <name>WPT 143</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6553777549" lon="-5.0222844165">
+      <ele>890.8</ele>
+      <time>2015-03-10T15:38:44</time>
+      <name>WPT 144</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6550578177" lon="-5.0216838531">
+      <ele>873.5</ele>
+      <time>2015-03-10T15:39:37</time>
+      <name>WPT 145</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6549105477" lon="-5.0210855529">
+      <ele>860.52</ele>
+      <time>2015-03-10T15:44:17</time>
+      <name>WPT 146</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6544072144" lon="-5.0201922935">
+      <ele>834.56</ele>
+      <time>2015-03-10T15:48:22</time>
+      <name>WPT 147</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6541107465" lon="-5.0198436063">
+      <ele>825.91</ele>
+      <time>2015-03-10T15:48:55</time>
+      <name>WPT 148</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6537878755" lon="-5.01981779">
+      <ele>822.06</ele>
+      <time>2015-03-10T15:50:01</time>
+      <name>WPT 149</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6536530107" lon="-5.0195100065">
+      <ele>816.3</ele>
+      <time>2015-03-10T15:50:22</time>
+      <name>WPT 150</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6533682775" lon="-5.0182631146">
+      <ele>811.49</ele>
+      <time>2015-03-10T15:53:11</time>
+      <name>WPT 151</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6530343425" lon="-5.0173673406">
+      <ele>798.51</ele>
+      <time>2015-03-10T15:55:08</time>
+      <name>WPT 152</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6529174987" lon="-5.0166095328">
+      <ele>794.19</ele>
+      <time>2015-03-10T15:56:40</time>
+      <name>WPT 153</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6527791135" lon="-5.0163263083">
+      <ele>787.94</ele>
+      <time>2015-03-10T15:57:08</time>
+      <name>WPT 154</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6526358668" lon="-5.0162461773">
+      <ele>783.13</ele>
+      <time>2015-03-10T15:57:28</time>
+      <name>WPT 155</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6533557046" lon="-5.0149025582">
+      <ele>743.72</ele>
+      <time>2015-03-10T16:00:06</time>
+      <name>WPT 156</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6535782441" lon="-5.0148669351">
+      <ele>733.14</ele>
+      <time>2015-03-10T16:01:04</time>
+      <name>WPT 157</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6535909846" lon="-5.0146420486">
+      <ele>725.45</ele>
+      <time>2015-03-10T16:01:47</time>
+      <name>WPT 158</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6539196391" lon="-5.0143378694">
+      <ele>705.75</ele>
+      <time>2015-03-10T16:02:55</time>
+      <name>WPT 159</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6539594531" lon="-5.0133826677">
+      <ele>675.46</ele>
+      <time>2015-03-10T16:04:15</time>
+      <name>WPT 160</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6538953315" lon="-5.0126616564">
+      <ele>658.16</ele>
+      <time>2015-03-10T16:05:06</time>
+      <name>WPT 161</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6537759732" lon="-5.0123910047">
+      <ele>651.43</ele>
+      <time>2015-03-10T16:05:23</time>
+      <name>WPT 162</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6537582874" lon="-5.0120527111">
+      <ele>646.62</ele>
+      <time>2015-03-10T16:05:46</time>
+      <name>WPT 163</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6536764801" lon="-5.0119584985">
+      <ele>646.14</ele>
+      <time>2015-03-10T16:08:41</time>
+      <name>WPT 164</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6536925733" lon="-5.0116445124">
+      <ele>649.51</ele>
+      <time>2015-03-10T16:08:59</time>
+      <name>WPT 165</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6544657201" lon="-5.0104868878">
+      <ele>613.46</ele>
+      <time>2015-03-10T16:11:30</time>
+      <name>WPT 166</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6545340326" lon="-5.0101001468">
+      <ele>595.67</ele>
+      <time>2015-03-10T16:12:03</time>
+      <name>WPT 167</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6548334341" lon="-5.0095490366">
+      <ele>572.12</ele>
+      <time>2015-03-10T16:13:09</time>
+      <name>WPT 168</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.655391166" lon="-5.0088932365">
+      <ele>557.7</ele>
+      <time>2015-03-10T16:14:16</time>
+      <name>WPT 169</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6561462078" lon="-5.0077652">
+      <ele>523.09</ele>
+      <time>2015-03-10T16:16:41</time>
+      <name>WPT 170</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6567832325" lon="-5.0065385923">
+      <ele>492.81</ele>
+      <time>2015-03-10T16:18:47</time>
+      <name>WPT 171</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6569493618" lon="-5.0060242787">
+      <ele>478.87</ele>
+      <time>2015-03-10T16:19:25</time>
+      <name>WPT 172</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6573596559" lon="-5.0056616776">
+      <ele>471.66</ele>
+      <time>2015-03-10T16:23:51</time>
+      <name>WPT 173</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6578412008678" lon="-5.00465863646261">
+      <ele>512.826172377441</ele>
+      <time>2015-03-10T16:29:06</time>
+      <name>WPT 174</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6581142811627" lon="-5.00451716932997">
+      <ele>498.335626270764</ele>
+      <time>2015-03-10T16:29:24</time>
+      <name>WPT 175</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6583843645864" lon="-5.00375526204578">
+      <ele>492.900858648815</ele>
+      <time>2015-03-10T16:29:47</time>
+      <name>WPT 176</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6586887569137" lon="-5.00306135895433">
+      <ele>489.265735972856</ele>
+      <time>2015-03-10T16:30:07</time>
+      <name>WPT 177</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.658892422075" lon="-5.00281642616692">
+      <ele>481.465644358289</ele>
+      <time>2015-03-10T16:30:43</time>
+      <name>WPT 178</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6590867920694" lon="-5.00221168182354">
+      <ele>482.254379588752</ele>
+      <time>2015-03-10T16:31:00</time>
+      <name>WPT 179</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6590354498" lon="-5.0023115985">
+      <ele>380.82</ele>
+      <time>2015-03-10T16:31:35</time>
+      <name>WPT 180</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6593036819332" lon="-5.00216365117832">
+      <ele>463.159583752441</ele>
+      <time>2015-03-10T16:31:55</time>
+      <name>WPT 181</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6593287001791" lon="-5.00187185562934">
+      <ele>443.702308470747</ele>
+      <time>2015-03-10T16:32:14</time>
+      <name>WPT 182</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6595152059741" lon="-5.00159290456176">
+      <ele>389.973854384471</ele>
+      <time>2015-03-10T16:32:33</time>
+      <name>WPT 183</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6598515435958" lon="-5.00106472106329">
+      <ele>307.226518455366</ele>
+      <time>2015-03-10T16:34:04</time>
+      <name>WPT 184</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6601519927542" lon="-5.00053367467519">
+      <ele>240.306550978693</ele>
+      <time>2015-03-10T16:35:23</time>
+      <name>WPT 185</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6604016253541" lon="-5.00061881193749">
+      <ele>242.708807143779</ele>
+      <time>2015-03-10T16:35:48</time>
+      <name>WPT 186</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.660709801927" lon="-5.00051274153444">
+      <ele>227.380049798864</ele>
+      <time>2015-03-10T16:36:09</time>
+      <name>WPT 187</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.661006320727" lon="-5.0001445880611">
+      <ele>265.835804950373</ele>
+      <time>2015-03-10T16:36:50</time>
+      <name>WPT 188</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.661135065358" lon="-5.00002424655831">
+      <ele>275.824242417997</ele>
+      <time>2015-03-10T16:38:09</time>
+      <name>WPT 189</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6610796646345" lon="-5.00008513070375">
+      <ele>270.747200134113</ele>
+      <time>2015-03-10T16:38:27</time>
+      <name>WPT 190</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6611577220769" lon="-4.99983018125437">
+      <ele>295.708546070797</ele>
+      <time>2015-03-10T16:38:47</time>
+      <name>WPT 191</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6610763595" lon="-4.9998465646">
+      <ele>301.03</ele>
+      <time>2015-03-10T16:39:04</time>
+      <name>WPT 192</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6612339392" lon="-4.9997722171">
+      <ele>290.46</ele>
+      <time>2015-03-10T16:39:39</time>
+      <name>WPT 193</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6613354441" lon="-4.9998650048">
+      <ele>289.01</ele>
+      <time>2015-03-10T16:39:56</time>
+      <name>WPT 194</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6616915073" lon="-4.9991612602">
+      <ele>273.63</ele>
+      <time>2015-03-10T16:41:35</time>
+      <name>WPT 195</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6617671121" lon="-4.9986202084">
+      <ele>268.35</ele>
+      <time>2015-03-10T16:42:28</time>
+      <name>WPT 196</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6622393485" lon="-4.9985187035">
+      <ele>265.94</ele>
+      <time>2015-03-10T16:43:29</time>
+      <name>WPT 197</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6624436155" lon="-4.9982335512">
+      <ele>255.37</ele>
+      <time>2015-03-10T16:44:38</time>
+      <name>WPT 198</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.662603626" lon="-4.99818963">
+      <ele>248.64</ele>
+      <time>2015-03-10T16:45:14</time>
+      <name>WPT 199</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6627326235" lon="-4.9978545215">
+      <ele>241.43</ele>
+      <time>2015-03-10T16:45:50</time>
+      <name>WPT 200</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6628420074" lon="-4.995968258">
+      <ele>219.8</ele>
+      <time>2015-03-10T16:48:15</time>
+      <name>WPT 201</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6630190331" lon="-4.9947254732">
+      <ele>208.74</ele>
+      <time>2015-03-10T16:49:13</time>
+      <name>WPT 202</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6629612818" lon="-4.9944186956">
+      <ele>204.9</ele>
+      <time>2015-03-10T16:49:31</time>
+      <name>WPT 203</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6638645995" lon="-4.9933958519">
+      <ele>172.69</ele>
+      <time>2015-03-10T16:51:45</time>
+      <name>WPT 204</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6642784141" lon="-4.9934450537">
+      <ele>156.35</ele>
+      <time>2015-03-10T16:52:58</time>
+      <name>WPT 205</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6646454576" lon="-4.99293359">
+      <ele>150.1</ele>
+      <time>2015-03-10T16:54:03</time>
+      <name>WPT 206</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6652658023" lon="-4.992896961">
+      <ele>130.4</ele>
+      <time>2015-03-10T16:55:56</time>
+      <name>WPT 207</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6654248908" lon="-4.992628824">
+      <ele>127.03</ele>
+      <time>2015-03-10T16:56:57</time>
+      <name>WPT 208</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6654973943" lon="-4.9926942028">
+      <ele>124.63</ele>
+      <time>2015-03-10T16:57:16</time>
+      <name>WPT 209</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6659765877" lon="-4.9921279214">
+      <ele>126.55</ele>
+      <time>2015-03-10T16:58:19</time>
+      <name>WPT 210</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6666852776" lon="-4.9909755774">
+      <ele>128.47</ele>
+      <time>2015-03-10T16:59:48</time>
+      <name>WPT 211</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6677268129" lon="-4.9905589968">
+      <ele>142.89</ele>
+      <time>2015-03-10T17:02:50</time>
+      <name>WPT 212</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6678848956" lon="-4.9906254653">
+      <ele>148.66</ele>
+      <time>2015-03-10T17:03:34</time>
+      <name>WPT 213</name>
+      <desc />
+    </rtept>
+    <rtept lat="56.6680631787" lon="-4.9909514375">
+      <ele>158.27</ele>
+      <time>2015-03-10T17:06:03</time>
+      <name>WPT 214</name>
+      <desc />
+    </rtept>
+  </rte>
+</gpx>

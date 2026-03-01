@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<gpx version="1.1"
+  creator="The Hug - http://maps.the-hug.net/"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1
+  http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <rte>
+    <name>New Route</name>
+    <rtept lat="56.668352474461" lon="-4.991257411814">
+      <name>1:</name>
+    </rtept>
+    <rtept lat="56.670534999954" lon="-4.9902060941455">
+      <name>2:</name>
+    </rtept>
+    <rtept lat="56.67195298624" lon="-4.9891756858927">
+      <name>3:</name>
+    </rtept>
+    <rtept lat="56.673361003899" lon="-4.9904302007612">
+      <name>4:</name>
+    </rtept>
+    <rtept lat="56.675092803903" lon="-4.991302307426">
+      <name>5:</name>
+    </rtept>
+    <rtept lat="56.676506882134" lon="-4.9904347956427">
+      <name>6:</name>
+    </rtept>
+    <rtept lat="56.677756904539" lon="-4.9917178002914">
+      <name>7:</name>
+    </rtept>
+    <rtept lat="56.678394233043" lon="-4.9951158769419">
+      <name>8:</name>
+    </rtept>
+    <rtept lat="56.67891653372" lon="-4.9976884477554">
+      <name>9:</name>
+    </rtept>
+    <rtept lat="56.679428954304" lon="-5.0006685501233">
+      <name>10:</name>
+    </rtept>
+    <rtept lat="56.680684579571" lon="-5.002646486434">
+      <name>11:</name>
+    </rtept>
+    <rtept lat="56.680098665356" lon="-5.0064373825504">
+      <name>12:</name>
+    </rtept>
+    <rtept lat="56.67989120128" lon="-5.0094418866344">
+      <name>13:</name>
+    </rtept>
+    <rtept lat="56.679716681851" lon="-5.0129388922793">
+      <name>14:</name>
+    </rtept>
+    <rtept lat="56.680259761661" lon="-5.0164932926428">
+      <name>15:</name>
+    </rtept>
+    <rtept lat="56.680325146279" lon="-5.0193563184122">
+      <name>16:</name>
+    </rtept>
+    <rtept lat="56.680827811378" lon="-5.0208663250265">
+      <name>17:</name>
+    </rtept>
+    <rtept lat="56.681425422207" lon="-5.0240170616939">
+      <name>18:</name>
+    </rtept>
+    <rtept lat="56.680281512941" lon="-5.0267014405905">
+      <name>19:</name>
+    </rtept>
+    <rtept lat="56.679625005486" lon="-5.0296697795049">
+      <name>20:</name>
+    </rtept>
+    <rtept lat="56.678878717451" lon="-5.0326307959997">
+      <name>21:</name>
+    </rtept>
+    <rtept lat="56.679115199838" lon="-5.0358341357146">
+      <name>22:</name>
+    </rtept>
+    <rtept lat="56.679358626082" lon="-5.0405894255728">
+      <name>23:</name>
+    </rtept>
+    <rtept lat="56.67889416393" lon="-5.0448793535811">
+      <name>24:</name>
+    </rtept>
+    <rtept lat="56.67772186375" lon="-5.0487036979148">
+      <name>25:</name>
+    </rtept>
+    <rtept lat="56.675310734627" lon="-5.0462227685565">
+      <name>26:</name>
+    </rtept>
+    <rtept lat="56.673888355009" lon="-5.0437403445701">
+      <name>27:</name>
+    </rtept>
+    <rtept lat="56.671753252332" lon="-5.0428332955519">
+      <name>28:</name>
+    </rtept>
+    <rtept lat="56.670331838236" lon="-5.042147185887">
+      <name>29:</name>
+    </rtept>
+    <rtept lat="56.668906435804" lon="-5.0416240627969">
+      <name>30:</name>
+    </rtept>
+    <rtept lat="56.667444141058" lon="-5.0407715102979">
+      <name>31:</name>
+    </rtept>
+    <rtept lat="56.666022713093" lon="-5.0400855619632">
+      <name>32:</name>
+    </rtept>
+    <rtept lat="56.664606317771" lon="-5.041032430109">
+      <name>33:</name>
+    </rtept>
+  </rte>
+</gpx>

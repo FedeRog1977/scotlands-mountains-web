@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Walkhighlands">
+<metadata>
+	<desc>GPX file from Walkhighlands; file is copyright Walkhighlands and must not be publicly shared on other websites. Do not remove this notice.</desc>
+	<copyright author="Walkhighlands"><year>2019</year></copyright>
+</metadata>
+<rte>
+<name>Beinn Mhic Chasgaig, Glen Etive</name>
+<rtept lat="56.617965" lon="-4.940028">
+<ele>144</ele>
+<name>BMC001</name>
+</rtept>
+<rtept lat="56.618387" lon="-4.939227">
+<ele>119</ele>
+<name>BMC002</name>
+</rtept>
+<rtept lat="56.618742" lon="-4.938426">
+<ele>118</ele>
+<name>BMC003</name>
+</rtept>
+<rtept lat="56.618423" lon="-4.938025">
+<ele>113</ele>
+<name>BMC004</name>
+</rtept>
+<rtept lat="56.618028" lon="-4.938085">
+<ele>120</ele>
+<name>BMC005</name>
+</rtept>
+<rtept lat="56.617514" lon="-4.937858">
+<ele>125</ele>
+<name>BMC006</name>
+</rtept>
+<rtept lat="56.616786" lon="-4.938382">
+<ele>132</ele>
+<name>BMC007</name>
+</rtept>
+<rtept lat="56.615777" lon="-4.93858">
+<ele>125</ele>
+<name>BMC008</name>
+</rtept>
+<rtept lat="56.615392" lon="-4.938863">
+<ele>126</ele>
+<name>BMC009</name>
+</rtept>
+<rtept lat="56.614932" lon="-4.940054">
+<ele>121</ele>
+<name>BMC010</name>
+</rtept>
+<rtept lat="56.614409" lon="-4.939768">
+<ele>130</ele>
+<name>BMC011</name>
+</rtept>
+<rtept lat="56.614179" lon="-4.938703">
+<ele>117</ele>
+<name>BMC012</name>
+</rtept>
+<rtept lat="56.613341" lon="-4.937826">
+<ele>136</ele>
+<name>BMC013</name>
+</rtept>
+<rtept lat="56.612802" lon="-4.937762">
+<ele>141</ele>
+<name>BMC014</name>
+</rtept>
+<rtept lat="56.612477" lon="-4.937945">
+<ele>151</ele>
+<name>BMC015</name>
+</rtept>
+<rtept lat="56.612116" lon="-4.937634">
+<ele>146</ele>
+<name>BMC016</name>
+</rtept>
+<rtept lat="56.611341" lon="-4.937581">
+<ele>158</ele>
+<name>BMC017</name>
+</rtept>
+<rtept lat="56.610808" lon="-4.937216">
+<ele>160</ele>
+<name>BMC018</name>
+</rtept>
+<rtept lat="56.610011" lon="-4.937301">
+<ele>164</ele>
+<name>BMC019</name>
+</rtept>
+<rtept lat="56.60959" lon="-4.936881">
+<ele>161</ele>
+<name>BMC020</name>
+</rtept>
+<rtept lat="56.609279" lon="-4.936855">
+<ele>164</ele>
+<name>BMC021</name>
+</rtept>
+<rtept lat="56.608734" lon="-4.936037">
+<ele>159</ele>
+<name>BMC022</name>
+</rtept>
+<rtept lat="56.607805" lon="-4.936495">
+<ele>173</ele>
+<name>BMC023</name>
+</rtept>
+<rtept lat="56.607462" lon="-4.936051">
+<ele>185</ele>
+<name>BMC024</name>
+</rtept>
+<rtept lat="56.607527" lon="-4.935502">
+<ele>170</ele>
+<name>BMC025</name>
+</rtept>
+<rtept lat="56.607416" lon="-4.934538">
+<ele>180</ele>
+<name>BMC026</name>
+</rtept>
+<rtept lat="56.607136" lon="-4.934254">
+<ele>203</ele>
+<name>BMC027</name>
+</rtept>
+<rtept lat="56.606711" lon="-4.934567">
+<ele>201</ele>
+<name>BMC028</name>
+</rtept>
+<rtept lat="56.606603" lon="-4.933321">
+<ele>207</ele>
+<name>BMC029</name>
+</rtept>
+<rtept lat="56.606001" lon="-4.93193">
+<ele>214</ele>
+<name>BMC030</name>
+</rtept>
+<rtept lat="56.60563" lon="-4.929473">
+<ele>248</ele>
+<name>BMC031</name>
+</rtept>
+<rtept lat="56.604853" lon="-4.926347">
+<ele>244</ele>
+<name>BMC032</name>
+</rtept>
+<rtept lat="56.604027" lon="-4.924628">
+<ele>261</ele>
+<name>BMC033</name>
+</rtept>
+<rtept lat="56.603711" lon="-4.923575">
+<ele>256</ele>
+<name>BMC034</name>
+</rtept>
+<rtept lat="56.60339" lon="-4.921786">
+<ele>277</ele>
+<name>BMC035</name>
+</rtept>
+<rtept lat="56.602902" lon="-4.920964">
+<ele>276</ele>
+<name>BMC036</name>
+</rtept>
+<rtept lat="56.602896" lon="-4.920387">
+<ele>286</ele>
+<name>BMC037</name>
+</rtept>
+<rtept lat="56.602709" lon="-4.919728">
+<ele>284</ele>
+<name>BMC038</name>
+</rtept>
+<rtept lat="56.60288" lon="-4.918872">
+<ele>284</ele>
+<name>BMC039</name>
+</rtept>
+<rtept lat="56.602583" lon="-4.917824">
+<ele>283</ele>
+<name>BMC040</name>
+</rtept>
+<rtept lat="56.602136" lon="-4.913725">
+<ele>307</ele>
+<name>BMC041</name>
+</rtept>
+<rtept lat="56.601723" lon="-4.912091">
+<ele>321</ele>
+<name>BMC042</name>
+</rtept>
+<rtept lat="56.601651" lon="-4.911257">
+<ele>324</ele>
+<name>BMC043</name>
+</rtept>
+<rtept lat="56.601351" lon="-4.910481">
+<ele>329</ele>
+<name>BMC044</name>
+</rtept>
+<rtept lat="56.601193" lon="-4.9074">
+<ele>353</ele>
+<name>BMC045</name>
+</rtept>
+<rtept lat="56.601251" lon="-4.906861">
+<ele>358</ele>
+<name>BMC046</name>
+</rtept>
+<rtept lat="56.601535" lon="-4.906571">
+<ele>349</ele>
+<name>BMC047</name>
+</rtept>
+<rtept lat="56.601574" lon="-4.905867">
+<ele>360</ele>
+<name>BMC048</name>
+</rtept>
+<rtept lat="56.601442" lon="-4.905337">
+<ele>371</ele>
+<name>BMC049</name>
+</rtept>
+<rtept lat="56.601582" lon="-4.904358">
+<ele>386</ele>
+<name>BMC050</name>
+</rtept>
+<rtept lat="56.602261" lon="-4.902712">
+<ele>420</ele>
+<name>BMC051</name>
+</rtept>
+<rtept lat="56.602253" lon="-4.901677">
+<ele>429</ele>
+<name>BMC052</name>
+</rtept>
+<rtept lat="56.602478" lon="-4.899869">
+<ele>447</ele>
+<name>BMC053</name>
+</rtept>
+<rtept lat="56.603501" lon="-4.898786">
+<ele>485</ele>
+<name>BMC054</name>
+</rtept>
+<rtept lat="56.603813" lon="-4.898124">
+<ele>503</ele>
+<name>BMC055</name>
+</rtept>
+<rtept lat="56.604157" lon="-4.897794">
+<ele>525</ele>
+<name>BMC056</name>
+</rtept>
+<rtept lat="56.60452" lon="-4.896947">
+<ele>550</ele>
+<name>BMC057</name>
+</rtept>
+<rtept lat="56.604739" lon="-4.896768">
+<ele>565</ele>
+<name>BMC058</name>
+</rtept>
+<rtept lat="56.605419" lon="-4.897056">
+<ele>626</ele>
+<name>BMC059</name>
+</rtept>
+<rtept lat="56.605439" lon="-4.896775">
+<ele>626</ele>
+<name>BMC060</name>
+</rtept>
+<rtept lat="56.605689" lon="-4.89645">
+<ele>645</ele>
+<name>BMC061</name>
+</rtept>
+<rtept lat="56.606243" lon="-4.896431">
+<ele>694</ele>
+<name>BMC062</name>
+</rtept>
+<rtept lat="56.606317" lon="-4.896132">
+<ele>699</ele>
+<name>BMC063</name>
+</rtept>
+<rtept lat="56.606827" lon="-4.895698">
+<ele>708</ele>
+<name>BMC064</name>
+</rtept>
+<rtept lat="56.607114" lon="-4.896528">
+<ele>717</ele>
+<name>BMC065</name>
+</rtept>
+<rtept lat="56.607129" lon="-4.897113">
+<ele>733</ele>
+<name>BMC066</name>
+</rtept>
+<rtept lat="56.607608" lon="-4.898186">
+<ele>780</ele>
+<name>BMC067</name>
+</rtept>
+<rtept lat="56.607668" lon="-4.89879">
+<ele>796</ele>
+<name>BMC068</name>
+</rtept>
+<rtept lat="56.608607" lon="-4.9004">
+<ele>847</ele>
+<name>BMC069</name>
+</rtept>
+<rtept lat="56.608909" lon="-4.900279">
+<ele>854</ele>
+<name>BMC070</name>
+</rtept>
+<rtept lat="56.6097600208958" lon="-4.90033531519015">
+<ele>856.737517398103</ele>
+<name>BMC071</name>
+</rtept>
+<rtept lat="56.6101915392082" lon="-4.89956158553205">
+<ele>858.811897429628</ele>
+<name>BMC072</name>
+</rtept>
+<rtept lat="56.6101818078455" lon="-4.89959343846362">
+<ele>858.776624605468</ele>
+<name>BMC073</name>
+</rtept>
+<rtept lat="56.609773" lon="-4.900383">
+<ele>867</ele>
+<name>BMC074</name>
+</rtept>
+<rtept lat="56.609505" lon="-4.900697">
+<ele>865</ele>
+<name>BMC075</name>
+</rtept>
+<rtept lat="56.6092" lon="-4.901783">
+<ele>861</ele>
+<name>BMC076</name>
+</rtept>
+<rtept lat="56.608777" lon="-4.902117">
+<ele>850</ele>
+<name>BMC077</name>
+</rtept>
+<rtept lat="56.608396" lon="-4.903311">
+<ele>838</ele>
+<name>BMC078</name>
+</rtept>
+<rtept lat="56.60821" lon="-4.904549">
+<ele>829</ele>
+<name>BMC079</name>
+</rtept>
+<rtept lat="56.607664" lon="-4.905575">
+<ele>814</ele>
+<name>BMC080</name>
+</rtept>
+<rtept lat="56.607609" lon="-4.90616">
+<ele>813</ele>
+<name>BMC081</name>
+</rtept>
+<rtept lat="56.607197" lon="-4.907216">
+<ele>802</ele>
+<name>BMC082</name>
+</rtept>
+<rtept lat="56.607251" lon="-4.908683">
+<ele>777</ele>
+<name>BMC083</name>
+</rtept>
+<rtept lat="56.607713" lon="-4.909922">
+<ele>752</ele>
+<name>BMC084</name>
+</rtept>
+<rtept lat="56.607654" lon="-4.911078">
+<ele>716</ele>
+<name>BMC085</name>
+</rtept>
+<rtept lat="56.607298" lon="-4.912191">
+<ele>683</ele>
+<name>BMC086</name>
+</rtept>
+<rtept lat="56.607311" lon="-4.912481">
+<ele>676</ele>
+<name>BMC087</name>
+</rtept>
+<rtept lat="56.607553" lon="-4.91287">
+<ele>664</ele>
+<name>BMC088</name>
+</rtept>
+<rtept lat="56.607482" lon="-4.913711">
+<ele>633</ele>
+<name>BMC089</name>
+</rtept>
+<rtept lat="56.607117" lon="-4.914352">
+<ele>619</ele>
+<name>BMC090</name>
+</rtept>
+<rtept lat="56.607074" lon="-4.91547">
+<ele>585</ele>
+<name>BMC091</name>
+</rtept>
+<rtept lat="56.606831" lon="-4.916396">
+<ele>552</ele>
+<name>BMC092</name>
+</rtept>
+<rtept lat="56.606943" lon="-4.916857">
+<ele>540</ele>
+<name>BMC093</name>
+</rtept>
+<rtept lat="56.606709" lon="-4.91735">
+<ele>513</ele>
+<name>BMC094</name>
+</rtept>
+<rtept lat="56.606772" lon="-4.917899">
+<ele>494</ele>
+<name>BMC095</name>
+</rtept>
+<rtept lat="56.606079" lon="-4.919112">
+<ele>446</ele>
+<name>BMC096</name>
+</rtept>
+<rtept lat="56.60609" lon="-4.9194">
+<ele>448</ele>
+<name>BMC097</name>
+</rtept>
+<rtept lat="56.606437" lon="-4.919624">
+<ele>435</ele>
+<name>BMC098</name>
+</rtept>
+<rtept lat="56.606448" lon="-4.920058">
+<ele>414</ele>
+<name>BMC099</name>
+</rtept>
+<rtept lat="56.606123" lon="-4.920307">
+<ele>388</ele>
+<name>BMC100</name>
+</rtept>
+<rtept lat="56.605909" lon="-4.921422">
+<ele>355</ele>
+<name>BMC101</name>
+</rtept>
+<rtept lat="56.605363" lon="-4.922719">
+<ele>325</ele>
+<name>BMC102</name>
+</rtept>
+<rtept lat="56.605121" lon="-4.922787">
+<ele>312</ele>
+<name>BMC103</name>
+</rtept>
+<rtept lat="56.605023" lon="-4.923308">
+<ele>291</ele>
+<name>BMC104</name>
+</rtept>
+<rtept lat="56.60428" lon="-4.924265">
+<ele>255</ele>
+<name>BMC105</name>
+</rtept>
+<rtept lat="56.6039223212062" lon="-4.92427559896863">
+<ele>255.037031033132</ele>
+<name>BMC106</name>
+</rtept>
+<rtept lat="56.604027" lon="-4.924628">
+<ele>261</ele>
+<name>BMC107</name>
+</rtept>
+<rtept lat="56.604853" lon="-4.926347">
+<ele>244</ele>
+<name>BMC108</name>
+</rtept>
+<rtept lat="56.60563" lon="-4.929473">
+<ele>248</ele>
+<name>BMC109</name>
+</rtept>
+<rtept lat="56.606001" lon="-4.93193">
+<ele>214</ele>
+<name>BMC110</name>
+</rtept>
+<rtept lat="56.606603" lon="-4.933321">
+<ele>207</ele>
+<name>BMC111</name>
+</rtept>
+<rtept lat="56.606711" lon="-4.934567">
+<ele>201</ele>
+<name>BMC112</name>
+</rtept>
+<rtept lat="56.607136" lon="-4.934254">
+<ele>203</ele>
+<name>BMC113</name>
+</rtept>
+<rtept lat="56.607416" lon="-4.934538">
+<ele>180</ele>
+<name>BMC114</name>
+</rtept>
+<rtept lat="56.607527" lon="-4.935502">
+<ele>170</ele>
+<name>BMC115</name>
+</rtept>
+<rtept lat="56.607462" lon="-4.936051">
+<ele>185</ele>
+<name>BMC116</name>
+</rtept>
+<rtept lat="56.607805" lon="-4.936495">
+<ele>173</ele>
+<name>BMC117</name>
+</rtept>
+<rtept lat="56.608734" lon="-4.936037">
+<ele>159</ele>
+<name>BMC118</name>
+</rtept>
+<rtept lat="56.609279" lon="-4.936855">
+<ele>164</ele>
+<name>BMC119</name>
+</rtept>
+<rtept lat="56.60959" lon="-4.936881">
+<ele>161</ele>
+<name>BMC120</name>
+</rtept>
+<rtept lat="56.610011" lon="-4.937301">
+<ele>164</ele>
+<name>BMC121</name>
+</rtept>
+<rtept lat="56.610808" lon="-4.937216">
+<ele>160</ele>
+<name>BMC122</name>
+</rtept>
+<rtept lat="56.611341" lon="-4.937581">
+<ele>158</ele>
+<name>BMC123</name>
+</rtept>
+<rtept lat="56.612116" lon="-4.937634">
+<ele>146</ele>
+<name>BMC124</name>
+</rtept>
+<rtept lat="56.612477" lon="-4.937945">
+<ele>151</ele>
+<name>BMC125</name>
+</rtept>
+<rtept lat="56.612802" lon="-4.937762">
+<ele>141</ele>
+<name>BMC126</name>
+</rtept>
+<rtept lat="56.613341" lon="-4.937826">
+<ele>136</ele>
+<name>BMC127</name>
+</rtept>
+<rtept lat="56.614179" lon="-4.938703">
+<ele>117</ele>
+<name>BMC128</name>
+</rtept>
+<rtept lat="56.614409" lon="-4.939768">
+<ele>130</ele>
+<name>BMC129</name>
+</rtept>
+<rtept lat="56.614932" lon="-4.940054">
+<ele>121</ele>
+<name>BMC130</name>
+</rtept>
+<rtept lat="56.615392" lon="-4.938863">
+<ele>126</ele>
+<name>BMC131</name>
+</rtept>
+<rtept lat="56.615777" lon="-4.93858">
+<ele>125</ele>
+<name>BMC132</name>
+</rtept>
+<rtept lat="56.616786" lon="-4.938382">
+<ele>132</ele>
+<name>BMC133</name>
+</rtept>
+<rtept lat="56.617514" lon="-4.937858">
+<ele>125</ele>
+<name>BMC134</name>
+</rtept>
+<rtept lat="56.618028" lon="-4.938085">
+<ele>120</ele>
+<name>BMC135</name>
+</rtept>
+<rtept lat="56.618423" lon="-4.938025">
+<ele>113</ele>
+<name>BMC136</name>
+</rtept>
+<rtept lat="56.618742" lon="-4.938426">
+<ele>118</ele>
+<name>BMC137</name>
+</rtept>
+<rtept lat="56.618387" lon="-4.939227">
+<ele>119</ele>
+<name>BMC138</name>
+</rtept>
+<rtept lat="56.617965" lon="-4.940028">
+<ele>144</ele>
+<name>BMC139</name>
+</rtept>
+</rte>
+</gpx>

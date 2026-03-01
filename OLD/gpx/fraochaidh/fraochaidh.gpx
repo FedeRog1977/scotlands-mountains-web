@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Walkhighlands">
+<metadata>
+	<desc>GPX file from Walkhighlands; file is copyright Walkhighlands and must not be publicly shared on other websites. Do not remove this notice.</desc>
+	<copyright author="Walkhighlands"><year>2019</year></copyright>
+</metadata>
+<rte>
+<name>Fraochaidh, from Ballachulish</name>
+<rtept lat="56.6783372462802" lon="-5.1297976765688">
+<ele>12.1216547107816</ele>
+<name>Fr001</name>
+</rtept>
+<rtept lat="56.6782269510029" lon="-5.12946517971843">
+<ele>10.4482075274944</ele>
+<name>Fr002</name>
+</rtept>
+<rtept lat="56.6755312718069" lon="-5.1328518642706">
+<ele>18.3094361858606</ele>
+<name>Fr003</name>
+</rtept>
+<rtept lat="56.6741519575176" lon="-5.13343777929303">
+<ele>17.6525160641491</ele>
+<name>Fr004</name>
+</rtept>
+<rtept lat="56.6740091709757" lon="-5.1343958340378">
+<ele>18.4036859541655</ele>
+<name>Fr005</name>
+</rtept>
+<rtept lat="56.6723085350163" lon="-5.13420169795594">
+<ele>30.8497447605326</ele>
+<name>Fr006</name>
+</rtept>
+<rtept lat="56.67165712294" lon="-5.13436798734448">
+<ele>37.2418644802882</ele>
+<name>Fr007</name>
+</rtept>
+<rtept lat="56.6705611026652" lon="-5.13425241516542">
+<ele>45.439248588616</ele>
+<name>Fr008</name>
+</rtept>
+<rtept lat="56.6700179513535" lon="-5.13440320335052">
+<ele>51.020478023877</ele>
+<name>Fr009</name>
+</rtept>
+<rtept lat="56.6698216570485" lon="-5.13416647967945">
+<ele>51.0888582333974</ele>
+<name>Fr010</name>
+</rtept>
+<rtept lat="56.6691176535055" lon="-5.13427941068449">
+<ele>61.0834902200582</ele>
+<name>Fr011</name>
+</rtept>
+<rtept lat="56.6678643415211" lon="-5.13478749408609">
+<ele>78.2298878670728</ele>
+<name>Fr012</name>
+</rtept>
+<rtept lat="56.6660861171977" lon="-5.13606001477551">
+<ele>113.611269195375</ele>
+<name>Fr013</name>
+</rtept>
+<rtept lat="56.6628272916965" lon="-5.13642575657022">
+<ele>141.737181442174</ele>
+<name>Fr014</name>
+</rtept>
+<rtept lat="56.6620106638217" lon="-5.13699448391734">
+<ele>155.953220320949</ele>
+<name>Fr015</name>
+</rtept>
+<rtept lat="56.6618247491751" lon="-5.13688108627106">
+<ele>154.853584994814</ele>
+<name>Fr016</name>
+</rtept>
+<rtept lat="56.66164551323" lon="-5.13703757879354">
+<ele>160.04243565439</ele>
+<name>Fr017</name>
+</rtept>
+<rtept lat="56.6612198612786" lon="-5.13680631191153">
+<ele>161.421798582203</ele>
+<name>Fr018</name>
+</rtept>
+<rtept lat="56.6603041629906" lon="-5.13729331845405">
+<ele>175.218061159498</ele>
+<name>Fr019</name>
+</rtept>
+<rtept lat="56.6600099872752" lon="-5.13719540745756">
+<ele>176.172545728026</ele>
+<name>Fr020</name>
+</rtept>
+<rtept lat="56.6594796720229" lon="-5.13737166747798">
+<ele>176.092930831082</ele>
+<name>Fr021</name>
+</rtept>
+<rtept lat="56.6584464661768" lon="-5.13824059314022">
+<ele>181.562381897081</ele>
+<name>Fr022</name>
+</rtept>
+<rtept lat="56.6582470968908" lon="-5.1381260817352">
+<ele>183.566893462897</ele>
+<name>Fr023</name>
+</rtept>
+<rtept lat="56.6581695455019" lon="-5.13745860115592">
+<ele>182.033543774814</ele>
+<name>Fr024</name>
+</rtept>
+<rtept lat="56.6569103086928" lon="-5.13686427071804">
+<ele>187.505322906254</ele>
+<name>Fr025</name>
+</rtept>
+<rtept lat="56.6557927755169" lon="-5.13733444465561">
+<ele>189.034951699118</ele>
+<name>Fr026</name>
+</rtept>
+<rtept lat="56.6552213760107" lon="-5.13807032623942">
+<ele>195.38526390605</ele>
+<name>Fr027</name>
+</rtept>
+<rtept lat="56.6550463495384" lon="-5.13859434620287">
+<ele>202.16526390605</ele>
+<name>Fr028</name>
+</rtept>
+<rtept lat="56.652802582599" lon="-5.14014577871418">
+<ele>199.711495892996</ele>
+<name>Fr029</name>
+</rtept>
+<rtept lat="56.6511172051981" lon="-5.141743509521">
+<ele>197.511955680086</ele>
+<name>Fr030</name>
+</rtept>
+<rtept lat="56.6500348406706" lon="-5.14348922643686">
+<ele>198.756226827547</ele>
+<name>Fr031</name>
+</rtept>
+<rtept lat="56.649928304961" lon="-5.14396990119565">
+<ele>205.29833699133</ele>
+<name>Fr032</name>
+</rtept>
+<rtept lat="56.6489867091057" lon="-5.14521322104741">
+<ele>203.190738057918</ele>
+<name>Fr033</name>
+</rtept>
+<rtept lat="56.6485086999229" lon="-5.14651959774984">
+<ele>211.103558755903</ele>
+<name>Fr034</name>
+</rtept>
+<rtept lat="56.6480425608057" lon="-5.14682340972637">
+<ele>207.606032506214</ele>
+<name>Fr035</name>
+</rtept>
+<rtept lat="56.647967249664" lon="-5.14713532106225">
+<ele>211.5190701097</ele>
+<name>Fr036</name>
+</rtept>
+<rtept lat="56.6476515921944" lon="-5.14735376431663">
+<ele>212.746528485302</ele>
+<name>Fr037</name>
+</rtept>
+<rtept lat="56.6473566645153" lon="-5.14781868956827">
+<ele>219.369667573029</ele>
+<name>Fr038</name>
+</rtept>
+<rtept lat="56.647045332902" lon="-5.14786615595721">
+<ele>217.963709637892</ele>
+<name>Fr039</name>
+</rtept>
+<rtept lat="56.6464192861469" lon="-5.14916008500749">
+<ele>225.920057455082</ele>
+<name>Fr040</name>
+</rtept>
+<rtept lat="56.6454813522258" lon="-5.15025662375176">
+<ele>227.49468459805</ele>
+<name>Fr041</name>
+</rtept>
+<rtept lat="56.6440744901937" lon="-5.15469132966967">
+<ele>238.730720475211</ele>
+<name>Fr042</name>
+</rtept>
+<rtept lat="56.6434887408578" lon="-5.15598841715696">
+<ele>236.910505719229</ele>
+<name>Fr043</name>
+</rtept>
+<rtept lat="56.6429283919952" lon="-5.15628419951516">
+<ele>237.918368333962</ele>
+<name>Fr044</name>
+</rtept>
+<rtept lat="56.6414019967102" lon="-5.15559375152023">
+<ele>275.117758838957</ele>
+<name>Fr045</name>
+</rtept>
+<rtept lat="56.6411144754558" lon="-5.15576549677409">
+<ele>282.679096507328</ele>
+<name>Fr046</name>
+</rtept>
+<rtept lat="56.6398747156414" lon="-5.15573529941783">
+<ele>324.32033284669</ele>
+<name>Fr047</name>
+</rtept>
+<rtept lat="56.6394484784584" lon="-5.15552838409792">
+<ele>341.057293207777</ele>
+<name>Fr048</name>
+</rtept>
+<rtept lat="56.6382114626612" lon="-5.15645275156775">
+<ele>384.464485396389</ele>
+<name>Fr049</name>
+</rtept>
+<rtept lat="56.6374720330722" lon="-5.15636647836535">
+<ele>397.551804804703</ele>
+<name>Fr050</name>
+</rtept>
+<rtept lat="56.637367747526" lon="-5.1572875962195">
+<ele>403.003078537994</ele>
+<name>Fr051</name>
+</rtept>
+<rtept lat="56.6361882179389" lon="-5.15992946560695">
+<ele>436.099314174208</ele>
+<name>Fr052</name>
+</rtept>
+<rtept lat="56.6359118910592" lon="-5.16125210775092">
+<ele>449.532038226732</ele>
+<name>Fr053</name>
+</rtept>
+<rtept lat="56.6351354220576" lon="-5.1620924277992">
+<ele>457.843818113956</ele>
+<name>Fr054</name>
+</rtept>
+<rtept lat="56.6338855169852" lon="-5.16458129849467">
+<ele>502.128083620147</ele>
+<name>Fr055</name>
+</rtept>
+<rtept lat="56.6330878435591" lon="-5.16784192719647">
+<ele>564.105645832048</ele>
+<name>Fr056</name>
+</rtept>
+<rtept lat="56.6330435166717" lon="-5.16852327481254">
+<ele>574.669960219321</ele>
+<name>Fr057</name>
+</rtept>
+<rtept lat="56.6323517354183" lon="-5.17000661276357">
+<ele>589.157141759039</ele>
+<name>Fr058</name>
+</rtept>
+<rtept lat="56.6321040818912" lon="-5.17125806209382">
+<ele>601.233233271182</ele>
+<name>Fr059</name>
+</rtept>
+<rtept lat="56.6322096125129" lon="-5.17187857507572">
+<ele>601.593233271182</ele>
+<name>Fr060</name>
+</rtept>
+<rtept lat="56.6321822078005" lon="-5.17295278219722">
+<ele>611.879892519713</ele>
+<name>Fr061</name>
+</rtept>
+<rtept lat="56.6317254728526" lon="-5.17394197956862">
+<ele>617.521457111997</ele>
+<name>Fr062</name>
+</rtept>
+<rtept lat="56.6312379689713" lon="-5.17402334355506">
+<ele>614.995338860833</ele>
+<name>Fr063</name>
+</rtept>
+<rtept lat="56.6279086418458" lon="-5.17582299860317">
+<ele>601.755939995328</ele>
+<name>Fr064</name>
+</rtept>
+<rtept lat="56.6276260823945" lon="-5.17579924515401">
+<ele>609.755509956306</ele>
+<name>Fr065</name>
+</rtept>
+<rtept lat="56.6262415409138" lon="-5.17668581322025">
+<ele>606.663313841053</ele>
+<name>Fr066</name>
+</rtept>
+<rtept lat="56.6246969981489" lon="-5.17829270098789">
+<ele>641.279689475407</ele>
+<name>Fr067</name>
+</rtept>
+<rtept lat="56.6214522951381" lon="-5.18073475355765">
+<ele>710.87776860454</ele>
+<name>Fr068</name>
+</rtept>
+<rtept lat="56.6207082841179" lon="-5.18240869874846">
+<ele>715.442940654201</ele>
+<name>Fr069</name>
+</rtept>
+<rtept lat="56.6200364872422" lon="-5.1828412893234">
+<ele>711.692960384518</ele>
+<name>Fr070</name>
+</rtept>
+<rtept lat="56.6193132566656" lon="-5.18449242589257">
+<ele>696.261976065285</ele>
+<name>Fr071</name>
+</rtept>
+<rtept lat="56.618504725769" lon="-5.18552487503616">
+<ele>676.186253085671</ele>
+<name>Fr072</name>
+</rtept>
+<rtept lat="56.6182062121986" lon="-5.185597541279">
+<ele>670.416511251369</ele>
+<name>Fr073</name>
+</rtept>
+<rtept lat="56.6164448731129" lon="-5.18750338606433">
+<ele>637.479511340233</ele>
+<name>Fr074</name>
+</rtept>
+<rtept lat="56.6161053682927" lon="-5.18864863272727">
+<ele>640.044604392826</ele>
+<name>Fr075</name>
+</rtept>
+<rtept lat="56.6151825814947" lon="-5.19045383504805">
+<ele>642.805818250982</ele>
+<name>Fr076</name>
+</rtept>
+<rtept lat="56.6150295411727" lon="-5.19168812975031">
+<ele>649.546610776986</ele>
+<name>Fr077</name>
+</rtept>
+<rtept lat="56.6149909808544" lon="-5.19371465116822">
+<ele>662.41259902945</ele>
+<name>Fr078</name>
+</rtept>
+<rtept lat="56.6146016476976" lon="-5.19522241305476">
+<ele>658.258185554659</ele>
+<name>Fr079</name>
+</rtept>
+<rtept lat="56.6144320341302" lon="-5.19552598698017">
+<ele>653.91897889646</ele>
+<name>Fr080</name>
+</rtept>
+<rtept lat="56.6145462290096" lon="-5.19580464547252">
+<ele>650.580496929941</ele>
+<name>Fr081</name>
+</rtept>
+<rtept lat="56.6150556362423" lon="-5.19592108378991">
+<ele>644.12819043987</ele>
+<name>Fr082</name>
+</rtept>
+<rtept lat="56.6153055631612" lon="-5.19721389764778">
+<ele>644.044796134575</ele>
+<name>Fr083</name>
+</rtept>
+<rtept lat="56.6155139388001" lon="-5.19750053574393">
+<ele>651.923730002852</ele>
+<name>Fr084</name>
+</rtept>
+<rtept lat="56.6158339576582" lon="-5.20183182447388">
+<ele>699.618979246742</ele>
+<name>Fr085</name>
+</rtept>
+<rtept lat="56.6159990687581" lon="-5.20275068041038">
+<ele>709.036590315579</ele>
+<name>Fr086</name>
+</rtept>
+<rtept lat="56.6162621301051" lon="-5.20353111121877">
+<ele>719.201865167749</ele>
+<name>Fr087</name>
+</rtept>
+<rtept lat="56.6164460964253" lon="-5.20371789831512">
+<ele>723.689224891179</ele>
+<name>Fr088</name>
+</rtept>
+<rtept lat="56.6163878748037" lon="-5.20388415606878">
+<ele>727.421739043636</ele>
+<name>Fr089</name>
+</rtept>
+<rtept lat="56.6167600697305" lon="-5.20513852909107">
+<ele>773.975817620144</ele>
+<name>Fr090</name>
+</rtept>
+<rtept lat="56.6167199470037" lon="-5.20564871060995">
+<ele>785.219537902015</ele>
+<name>Fr091</name>
+</rtept>
+<rtept lat="56.6168294734748" lon="-5.20558463140016">
+<ele>786.068978540119</ele>
+<name>Fr092</name>
+</rtept>
+<rtept lat="56.6172439037741" lon="-5.2067692504585">
+<ele>834.292249992274</ele>
+<name>Fr093</name>
+</rtept>
+<rtept lat="56.6165364026451" lon="-5.21067113988721">
+<ele>856.70550539988</ele>
+<name>Fr094</name>
+</rtept>
+<rtept lat="56.6157581513657" lon="-5.21261040414114">
+<ele>862.331881187042</ele>
+<name>Fr095</name>
+</rtept>
+<rtept lat="56.6157060140561" lon="-5.21358420466711">
+<ele>874.773326924022</ele>
+<name>Fr096</name>
+</rtept>
+<rtept lat="56.6157581513657" lon="-5.21261040414114">
+<ele>862.331881187042</ele>
+<name>Fr097</name>
+</rtept>
+<rtept lat="56.6165364026451" lon="-5.21067113988721">
+<ele>856.70550539988</ele>
+<name>Fr098</name>
+</rtept>
+<rtept lat="56.6172439037741" lon="-5.2067692504585">
+<ele>834.292249992274</ele>
+<name>Fr099</name>
+</rtept>
+<rtept lat="56.6168294734748" lon="-5.20558463140016">
+<ele>786.068978540119</ele>
+<name>Fr100</name>
+</rtept>
+<rtept lat="56.6167199470037" lon="-5.20564871060995">
+<ele>785.219537902015</ele>
+<name>Fr101</name>
+</rtept>
+<rtept lat="56.6167600697305" lon="-5.20513852909107">
+<ele>773.975817620144</ele>
+<name>Fr102</name>
+</rtept>
+<rtept lat="56.6163878748037" lon="-5.20388415606878">
+<ele>727.421739043636</ele>
+<name>Fr103</name>
+</rtept>
+<rtept lat="56.6164460964253" lon="-5.20371789831512">
+<ele>723.689224891179</ele>
+<name>Fr104</name>
+</rtept>
+<rtept lat="56.6162621301051" lon="-5.20353111121877">
+<ele>719.201865167749</ele>
+<name>Fr105</name>
+</rtept>
+<rtept lat="56.6159990687581" lon="-5.20275068041038">
+<ele>709.036590315579</ele>
+<name>Fr106</name>
+</rtept>
+<rtept lat="56.6158339576582" lon="-5.20183182447388">
+<ele>699.618979246742</ele>
+<name>Fr107</name>
+</rtept>
+<rtept lat="56.6155139388001" lon="-5.19750053574393">
+<ele>651.923730002852</ele>
+<name>Fr108</name>
+</rtept>
+<rtept lat="56.6153055631612" lon="-5.19721389764778">
+<ele>644.044796134575</ele>
+<name>Fr109</name>
+</rtept>
+<rtept lat="56.6150556362423" lon="-5.19592108378991">
+<ele>644.12819043987</ele>
+<name>Fr110</name>
+</rtept>
+<rtept lat="56.6145462290096" lon="-5.19580464547252">
+<ele>650.580496929941</ele>
+<name>Fr111</name>
+</rtept>
+<rtept lat="56.6144320341302" lon="-5.19552598698017">
+<ele>653.91897889646</ele>
+<name>Fr112</name>
+</rtept>
+<rtept lat="56.6146016476976" lon="-5.19522241305476">
+<ele>658.258185554659</ele>
+<name>Fr113</name>
+</rtept>
+<rtept lat="56.6149909808544" lon="-5.19371465116822">
+<ele>662.41259902945</ele>
+<name>Fr114</name>
+</rtept>
+<rtept lat="56.6150295411727" lon="-5.19168812975031">
+<ele>649.546610776986</ele>
+<name>Fr115</name>
+</rtept>
+<rtept lat="56.6151825814947" lon="-5.19045383504805">
+<ele>642.805818250982</ele>
+<name>Fr116</name>
+</rtept>
+<rtept lat="56.6161053682927" lon="-5.18864863272727">
+<ele>640.044604392826</ele>
+<name>Fr117</name>
+</rtept>
+<rtept lat="56.6164448731129" lon="-5.18750338606433">
+<ele>637.479511340233</ele>
+<name>Fr118</name>
+</rtept>
+<rtept lat="56.6182062121986" lon="-5.185597541279">
+<ele>670.416511251369</ele>
+<name>Fr119</name>
+</rtept>
+<rtept lat="56.618504725769" lon="-5.18552487503616">
+<ele>676.186253085671</ele>
+<name>Fr120</name>
+</rtept>
+<rtept lat="56.6193132566656" lon="-5.18449242589257">
+<ele>696.261976065285</ele>
+<name>Fr121</name>
+</rtept>
+<rtept lat="56.6200364872422" lon="-5.1828412893234">
+<ele>711.692960384518</ele>
+<name>Fr122</name>
+</rtept>
+<rtept lat="56.6207082841179" lon="-5.18240869874846">
+<ele>715.442940654201</ele>
+<name>Fr123</name>
+</rtept>
+<rtept lat="56.6214522951381" lon="-5.18073475355765">
+<ele>710.87776860454</ele>
+<name>Fr124</name>
+</rtept>
+<rtept lat="56.6246969981489" lon="-5.17829270098789">
+<ele>641.279689475407</ele>
+<name>Fr125</name>
+</rtept>
+<rtept lat="56.6262415409138" lon="-5.17668581322025">
+<ele>606.663313841053</ele>
+<name>Fr126</name>
+</rtept>
+<rtept lat="56.6276260823945" lon="-5.17579924515401">
+<ele>609.755509956306</ele>
+<name>Fr127</name>
+</rtept>
+<rtept lat="56.6279086418458" lon="-5.17582299860317">
+<ele>601.755939995328</ele>
+<name>Fr128</name>
+</rtept>
+<rtept lat="56.6312379689713" lon="-5.17402334355506">
+<ele>614.995338860833</ele>
+<name>Fr129</name>
+</rtept>
+<rtept lat="56.6317254728526" lon="-5.17394197956862">
+<ele>617.521457111997</ele>
+<name>Fr130</name>
+</rtept>
+<rtept lat="56.6321822078005" lon="-5.17295278219722">
+<ele>611.879892519713</ele>
+<name>Fr131</name>
+</rtept>
+<rtept lat="56.6322096125129" lon="-5.17187857507572">
+<ele>601.593233271182</ele>
+<name>Fr132</name>
+</rtept>
+<rtept lat="56.6321040818912" lon="-5.17125806209382">
+<ele>601.233233271182</ele>
+<name>Fr133</name>
+</rtept>
+<rtept lat="56.6323517354183" lon="-5.17000661276357">
+<ele>589.157141759039</ele>
+<name>Fr134</name>
+</rtept>
+<rtept lat="56.6330435166717" lon="-5.16852327481254">
+<ele>574.669960219321</ele>
+<name>Fr135</name>
+</rtept>
+<rtept lat="56.6330878435591" lon="-5.16784192719647">
+<ele>564.105645832048</ele>
+<name>Fr136</name>
+</rtept>
+<rtept lat="56.6338855169852" lon="-5.16458129849467">
+<ele>502.128083620147</ele>
+<name>Fr137</name>
+</rtept>
+<rtept lat="56.6351354220576" lon="-5.1620924277992">
+<ele>457.843818113956</ele>
+<name>Fr138</name>
+</rtept>
+<rtept lat="56.6359118910592" lon="-5.16125210775092">
+<ele>449.532038226732</ele>
+<name>Fr139</name>
+</rtept>
+<rtept lat="56.6361882179389" lon="-5.15992946560695">
+<ele>436.099314174208</ele>
+<name>Fr140</name>
+</rtept>
+<rtept lat="56.637367747526" lon="-5.1572875962195">
+<ele>403.003078537994</ele>
+<name>Fr141</name>
+</rtept>
+<rtept lat="56.6374720330722" lon="-5.15636647836535">
+<ele>397.551804804703</ele>
+<name>Fr142</name>
+</rtept>
+<rtept lat="56.6382114626612" lon="-5.15645275156775">
+<ele>384.464485396389</ele>
+<name>Fr143</name>
+</rtept>
+<rtept lat="56.6394484784584" lon="-5.15552838409792">
+<ele>341.057293207777</ele>
+<name>Fr144</name>
+</rtept>
+<rtept lat="56.6398747156414" lon="-5.15573529941783">
+<ele>324.32033284669</ele>
+<name>Fr145</name>
+</rtept>
+<rtept lat="56.6411144754558" lon="-5.15576549677409">
+<ele>282.679096507328</ele>
+<name>Fr146</name>
+</rtept>
+<rtept lat="56.6414019967102" lon="-5.15559375152023">
+<ele>275.117758838957</ele>
+<name>Fr147</name>
+</rtept>
+<rtept lat="56.6429283919952" lon="-5.15628419951516">
+<ele>237.918368333962</ele>
+<name>Fr148</name>
+</rtept>
+<rtept lat="56.6434887408578" lon="-5.15598841715696">
+<ele>236.910505719229</ele>
+<name>Fr149</name>
+</rtept>
+<rtept lat="56.6440744901937" lon="-5.15469132966967">
+<ele>238.730720475211</ele>
+<name>Fr150</name>
+</rtept>
+<rtept lat="56.6454813522258" lon="-5.15025662375176">
+<ele>227.49468459805</ele>
+<name>Fr151</name>
+</rtept>
+<rtept lat="56.6464192861469" lon="-5.14916008500749">
+<ele>225.920057455082</ele>
+<name>Fr152</name>
+</rtept>
+<rtept lat="56.647045332902" lon="-5.14786615595721">
+<ele>217.963709637892</ele>
+<name>Fr153</name>
+</rtept>
+<rtept lat="56.6473566645153" lon="-5.14781868956827">
+<ele>219.369667573029</ele>
+<name>Fr154</name>
+</rtept>
+<rtept lat="56.6476515921944" lon="-5.14735376431663">
+<ele>212.746528485302</ele>
+<name>Fr155</name>
+</rtept>
+<rtept lat="56.647967249664" lon="-5.14713532106225">
+<ele>211.5190701097</ele>
+<name>Fr156</name>
+</rtept>
+<rtept lat="56.6480425608057" lon="-5.14682340972637">
+<ele>207.606032506214</ele>
+<name>Fr157</name>
+</rtept>
+<rtept lat="56.6485086999229" lon="-5.14651959774984">
+<ele>211.103558755903</ele>
+<name>Fr158</name>
+</rtept>
+<rtept lat="56.6489867091057" lon="-5.14521322104741">
+<ele>203.190738057918</ele>
+<name>Fr159</name>
+</rtept>
+<rtept lat="56.649928304961" lon="-5.14396990119565">
+<ele>205.29833699133</ele>
+<name>Fr160</name>
+</rtept>
+<rtept lat="56.6500348406706" lon="-5.14348922643686">
+<ele>198.756226827547</ele>
+<name>Fr161</name>
+</rtept>
+<rtept lat="56.6511172051981" lon="-5.141743509521">
+<ele>197.511955680086</ele>
+<name>Fr162</name>
+</rtept>
+<rtept lat="56.652802582599" lon="-5.14014577871418">
+<ele>199.711495892996</ele>
+<name>Fr163</name>
+</rtept>
+<rtept lat="56.6550463495384" lon="-5.13859434620287">
+<ele>202.16526390605</ele>
+<name>Fr164</name>
+</rtept>
+<rtept lat="56.6552213760107" lon="-5.13807032623942">
+<ele>195.38526390605</ele>
+<name>Fr165</name>
+</rtept>
+<rtept lat="56.6557927755169" lon="-5.13733444465561">
+<ele>189.034951699118</ele>
+<name>Fr166</name>
+</rtept>
+<rtept lat="56.6569103086928" lon="-5.13686427071804">
+<ele>187.505322906254</ele>
+<name>Fr167</name>
+</rtept>
+<rtept lat="56.6581695455019" lon="-5.13745860115592">
+<ele>182.033543774814</ele>
+<name>Fr168</name>
+</rtept>
+<rtept lat="56.6582470968908" lon="-5.1381260817352">
+<ele>183.566893462897</ele>
+<name>Fr169</name>
+</rtept>
+<rtept lat="56.6584464661768" lon="-5.13824059314022">
+<ele>181.562381897081</ele>
+<name>Fr170</name>
+</rtept>
+<rtept lat="56.6594796720229" lon="-5.13737166747798">
+<ele>176.092930831082</ele>
+<name>Fr171</name>
+</rtept>
+<rtept lat="56.6600099872752" lon="-5.13719540745756">
+<ele>176.172545728026</ele>
+<name>Fr172</name>
+</rtept>
+<rtept lat="56.6603041629906" lon="-5.13729331845405">
+<ele>175.218061159498</ele>
+<name>Fr173</name>
+</rtept>
+<rtept lat="56.6612198612786" lon="-5.13680631191153">
+<ele>161.421798582203</ele>
+<name>Fr174</name>
+</rtept>
+<rtept lat="56.66164551323" lon="-5.13703757879354">
+<ele>160.04243565439</ele>
+<name>Fr175</name>
+</rtept>
+<rtept lat="56.6618247491751" lon="-5.13688108627106">
+<ele>154.853584994814</ele>
+<name>Fr176</name>
+</rtept>
+<rtept lat="56.6620106638217" lon="-5.13699448391734">
+<ele>155.953220320949</ele>
+<name>Fr177</name>
+</rtept>
+<rtept lat="56.6628272916965" lon="-5.13642575657022">
+<ele>141.737181442174</ele>
+<name>Fr178</name>
+</rtept>
+<rtept lat="56.6660861171977" lon="-5.13606001477551">
+<ele>113.611269195375</ele>
+<name>Fr179</name>
+</rtept>
+<rtept lat="56.6678643415211" lon="-5.13478749408609">
+<ele>78.2298878670728</ele>
+<name>Fr180</name>
+</rtept>
+<rtept lat="56.6691176535055" lon="-5.13427941068449">
+<ele>61.0834902200582</ele>
+<name>Fr181</name>
+</rtept>
+<rtept lat="56.6698216570485" lon="-5.13416647967945">
+<ele>51.0888582333974</ele>
+<name>Fr182</name>
+</rtept>
+<rtept lat="56.6700179513535" lon="-5.13440320335052">
+<ele>51.020478023877</ele>
+<name>Fr183</name>
+</rtept>
+<rtept lat="56.6705611026652" lon="-5.13425241516542">
+<ele>45.439248588616</ele>
+<name>Fr184</name>
+</rtept>
+<rtept lat="56.67165712294" lon="-5.13436798734448">
+<ele>37.2418644802882</ele>
+<name>Fr185</name>
+</rtept>
+<rtept lat="56.6723085350163" lon="-5.13420169795594">
+<ele>30.8497447605326</ele>
+<name>Fr186</name>
+</rtept>
+<rtept lat="56.6740091709757" lon="-5.1343958340378">
+<ele>18.4036859541655</ele>
+<name>Fr187</name>
+</rtept>
+<rtept lat="56.6741519575176" lon="-5.13343777929303">
+<ele>17.6525160641491</ele>
+<name>Fr188</name>
+</rtept>
+<rtept lat="56.6755312718069" lon="-5.1328518642706">
+<ele>18.3094361858606</ele>
+<name>Fr189</name>
+</rtept>
+<rtept lat="56.6783372462802" lon="-5.1297976765688">
+<ele>12.1216547107816</ele>
+<name>Fr190</name>
+</rtept>
+</rte>
+</gpx>
