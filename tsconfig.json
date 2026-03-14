@@ -10,11 +10,16 @@
     ],
     "strictNullChecks": true,
     "paths": {
-      "~/libs/components/*": ["./src/libs/components/*/index.ts"],
-      "~/libs/components/reset": ["./src/libs/components/reset.css"],
-      "~/libs/constants": ["./src/libs/constants/index.ts"],
-      "~/libs/types": ["./src/libs/types/index.ts"],
-      "~/libs/utils": ["./src/libs/utils/index.ts"],
+      "~/actions": ["./src/actions/index.ts"],
+      "~/components/core/*": ["./src/components/core/*/index.ts"],
+      "~/components/layouts/*": ["./src/components/layouts/*/index.ts"],
+      "~/components/reset": ["./src/components/reset.css"],
+      "~/components/templates": ["./src/components/templates/index.ts"],
+      "~/constants": ["./src/constants/index.ts"],
+      "~/facade": ["./src/facade/index.ts"],
+      "~/schema/*": ["./src/schema/*/index.ts"],
+      "~/types": ["./src/types/index.ts"],
+      "~/utils": ["./src/utils/index.ts"],
       "~/services/*": ["./src/services/*/index.ts"]
     }
   },

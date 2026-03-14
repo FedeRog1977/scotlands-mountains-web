@@ -15,7 +15,7 @@ type OSMapProps = {
  */
 // @ts-expect-error: False `dynamic` error
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-const OSMap: FC<OSMapProps> = dynamic(async () => import('./os-map-component.js'), {
+const OSMap: FC<OSMapProps> = dynamic(async () => import('./os-map-component.jsx'), {
   ssr: false,
 });
 

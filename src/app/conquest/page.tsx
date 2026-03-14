@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import { redirect } from 'next/navigation.js';
 import { ReactElement } from 'react';
-import { facade } from '../_facade/index.js';
-import { ConquestMapTemplate } from '../_ui/conquest-map-template/conquest-map-template.js';
+import { ConquestTemplate } from '~/components/templates';
+import { facade } from '~/facade';
 
 type SearchParams = {
   query: string;
@@ -27,7 +27,7 @@ const Conquest = async ({ searchParams }: ConquestProps): Promise<ReactElement> 
 
   const mapUrl = facade.getMap('Leisure_27700');
 
-  return <ConquestMapTemplate mapUrl={mapUrl} appVersion={process.env.APP_VERSION} />;
+  return <ConquestTemplate mapUrl={mapUrl} appVersion={process.env.APP_VERSION} />;
 };
 
 export default Conquest;

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link.js';
 import { redirect } from 'next/navigation.js';
 import { ReactElement } from 'react';
-import { Layout } from '~/libs/components/layout';
+import { Layout } from '~/components/layouts/page-layout';
 
 type SearchParams = {
   query: string;

@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-import { JSONSchema } from '~/libs/types';
+import { JSONSchema } from '~/types';
 import { WeatherResponse } from '../types/weather-response.js';
 
 const weatherValidationSchema: JSONSchema<

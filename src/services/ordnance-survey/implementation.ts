@@ -1,4 +1,4 @@
-import { OSMapLayer } from '~/libs/types';
+import { OSMapLayer } from '~/types';
 
 // import { Validator } from '~/services/validator-ajv';
 import { Interface } from './interface.js';

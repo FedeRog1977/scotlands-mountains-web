@@ -15,8 +15,8 @@ import {
   IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
 import fetch from 'node-fetch';
-import { getParsedDate, getSuffixedString, getUppercaseFirst } from '~/libs/utils';
 import { Validator } from '~/services/validator-ajv';
+import { getParsedDate, getSuffixedString, getUppercaseFirst } from '~/utils';
 import { weatherResponseValidationSchema } from './constants/weather-response-validation-schema.js';
 import { Interface } from './interface.js';
 import { Current } from './types/current.js';

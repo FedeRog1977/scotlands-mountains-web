@@ -1,4 +1,4 @@
-import { JSONSchema } from '~/libs/types';
+import { JSONSchema } from '~/types';
 import { ValidateOptions } from './types/validate-options.js';
 
 export interface Interface {

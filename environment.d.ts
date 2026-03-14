@@ -1,4 +1,4 @@
-import { ENV, SemanticVersion } from '~/libs/types';
+import { ENV, SemanticVersion } from '~/types';
 
 declare global {
   namespace NodeJS {

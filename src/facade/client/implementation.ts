@@ -1,6 +1,6 @@
-import { OSMapLayer } from '~/libs/types';
 import { OpenWeatherService, Current } from '~/services/open-weather';
 import { OrdnanceSurveyService } from '~/services/ordnance-survey';
+import { OSMapLayer } from '~/types';
 import { Interface } from '../interface.js';
 
 type Config = {

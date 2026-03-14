@@ -1,5 +1,5 @@
-import { OSMapLayer } from '~/libs/types';
 import { Current } from '~/services/open-weather';
+import { OSMapLayer } from '~/types';
 
 export interface Interface {
   getCurrentWeather: (lat: string, lon: string) => Promise<Current>;

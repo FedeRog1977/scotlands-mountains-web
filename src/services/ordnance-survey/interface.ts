@@ -1,4 +1,4 @@
-import { OSMapLayer } from '~/libs/types';
+import { OSMapLayer } from '~/types';
 
 export interface Interface {
   getMap: (layer: OSMapLayer) => string;

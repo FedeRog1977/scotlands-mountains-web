@@ -1,4 +1,4 @@
-import { JSONSchema } from '~/libs/types';
+import { JSONSchema } from '~/types';
 import { ValidationError } from './errors/validation-error.js';
 import { ajvErrors } from './forks/ajv-errors.js';
 import { Ajv, AnySchema, ValidateFunction, DefinedError } from './forks/ajv.js';

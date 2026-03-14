@@ -1,7 +1,7 @@
-import './layout.css';
+import './page-layout.css';
 import { createElement, ElementType, FC, ReactNode } from 'react';
-import { Footer } from '../footer/footer.jsx';
-import { Header } from '../header/header.jsx';
+import { Footer } from '~/components/core/footer';
+import { Header } from '~/components/core/header';
 
 type LayoutProps = {
   children: ReactNode;

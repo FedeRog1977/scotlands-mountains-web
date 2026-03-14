@@ -1,4 +1,4 @@
-import { baseUrls } from '~/libs/constants';
+import { baseUrls } from '~/constants';
 import { OpenWeatherServiceClient } from '~/services/open-weather';
 import { OrdnanceSurveyServiceClient } from '~/services/ordnance-survey';
 import { ValidatorAjv } from '~/services/validator-ajv';
