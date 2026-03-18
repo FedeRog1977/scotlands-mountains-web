@@ -15,9 +15,7 @@
  * default options, also in alphabetical order (default options are commented out).
  */
 
-/**
- * @type {import('prettier').Config}
- */
+/** @type {import('prettier').Config} */
 module.exports = {
   /**
    * Specify the line length that the printer will wrap on.
