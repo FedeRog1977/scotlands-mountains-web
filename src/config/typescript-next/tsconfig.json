@@ -2,17 +2,11 @@
   // "extends": "../typescript/tsconfig.json",
   "compilerOptions": {
     /**
-     * Specify what JSX code is generated.
-     *
-     * Note: uses "preserve" as Next.js implements its own JSX transform.
-     */
-    "jsx": "preserve",
-
-    /**
      * Temp workaround for Vercel
      */
     "incremental": true,
     "target": "ESNext",
+    "jsx": "preserve",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "resolveJsonModule": true,

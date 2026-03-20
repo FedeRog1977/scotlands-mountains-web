@@ -1,15 +1,7 @@
 /**
- * This file documents a comprehensive collection of the file configuration options supported by `typescript`.
+ * This file documents a comprehensive collection of the file configuration options supported by TypeScript.
  *
- * Each option is detailed for the understanding of:
- *
- * - Options which are available
- * - Options which have been overridden
- * - Options which have remain default
- *
- * This file is correct as of `typescript@5.0.4`.
- *
- * The order of the file reflects the default structure of categories that `typescript` generates.
+ * The order of the file reflects the default structure of categories that TypeScript generates.
  */
 
 {
@@ -71,8 +63,11 @@
 
     /**
      * Specify what JSX code is generated.
+     *
+     * Next uses `"preserve"` as Next.js implements its own JSX transform.
+     * React uses `"react-jsx"` instead of `"react"` to support React 17 New JSX Transform
      */
-    // "jsx": "preserve",
+    "jsx": "preserve",
 
     /**
      * Enable experimental support for TC39 stage 2 draft decorators.
