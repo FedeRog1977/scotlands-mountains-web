@@ -14,7 +14,7 @@ Next.js 15 and React web applications for Scotland's Mountains Web.
 - Component framework: React
 - Runtime environment: Node.js
 - Post-transpiled programming language: JavaScript
-- Pre-transpiled programming language: TypeScript
+- Pre-transpiled programming language: ECMAScript with TypeScript
   - Target: `ESNext`
   - Type: `module`
   - Module resolution: `NodeNext`
